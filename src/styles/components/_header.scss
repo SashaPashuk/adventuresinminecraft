@@ -1,0 +1,41 @@
+.header {
+  color: #fff;
+  margin-bottom: 16px;
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0 1px;
+    border-bottom: 1px solid #393330;
+  }
+  .nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    &-item {
+      margin-right: 30px;
+      position: relative;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover a {
+        color: #ffb448;
+        transition: color 0.3s ease-in-out;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -30px;
+          width: 100%;
+          height: 3px;
+          background-color: #ffb448;
+        }
+      }
+    }
+    &-link {
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}

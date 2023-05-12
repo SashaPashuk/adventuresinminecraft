@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventuresin Minecraft home page</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    @@include('components/header.html')
+    <div class="first-screen">
+      <div class="container">
+        <div class="first-screen__row">
+          <h1 class="first-screen__title">Открой для себя мир Minecraft</h1>
+          <h2 class="first-screen__subtitle">
+            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+            начала XVI века
+          </h2>
+          <button class="first-screen__button">Играть сейчас</button>
+        </div>
+      </div>
+    </div>
+    @@include('components/footer.html')
+    <script src="js/index.js"></script>
+  </body>
+</html>

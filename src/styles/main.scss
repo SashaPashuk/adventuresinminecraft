@@ -1,0 +1,54 @@
+@import "mixins";
+@import "varibles";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font;
+  background-color: $primary-color;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+@import "global-classes";
+// import components styles
+@import "components/header";
+@import "components/footer";
+// import pages styles
+@import "pages/home";
+
+// import css libs
+@import "css-libs/bootstrap-grid.min.css";
+@import "css-libs/normalize.css";
