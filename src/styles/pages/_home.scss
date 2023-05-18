@@ -1,4 +1,5 @@
 .first-screen {
+  margin-bottom: 70px;
   &__row {
     display: flex;
     flex-direction: column;
@@ -36,5 +37,115 @@
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    &:hover {
+      box-shadow: $shadow-active;
+    }
+    &:active {
+      background: $shade-white;
+      color: $primary-orange;
+      box-shadow: $shadow-defauld;
+    }
+  }
+}
+
+.products {
+  margin-top: 16px;
+  margin-bottom: 60px;
+  &-svitch {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    &__button {
+      position: relative;
+      background: $shade-grey;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-right: 24px;
+      &:last-child {
+        margin-right: 0;
+      }
+      :hover {
+        box-shadow: 10px 10px 30px rgba(248, 152, 14, 0.33);
+      }
+      span {
+        display: inline-block;
+        width: 150px;
+        padding: 12px 0;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: $shade-white;
+      }
+      input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+        &:checked + span {
+          background: $primary-gradient;
+        }
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &-card {
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 19px 25px 19px;
+    background-color: $shade-black;
+    box-shadow: $shadow-defauld;
+    border-radius: 20px;
+    margin: 12px 8px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    &:hover {
+      box-shadow: $shadow-hover;
+    }
+    &:active {
+      box-shadow: $shadow-active;
+    }
+    &__img {
+      margin-bottom: 16px;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      color: $shade-white;
+      margin-bottom: 12px;
+    }
+    &__block {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__price {
+      background: $primary-orange-contrast9;
+      border: 2px solid $primary-orange-contrast22;
+      border-radius: 5px;
+      padding: 5px 6px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: $primary-orange;
+    }
+    &__buy {
+      width: 64px;
+      height: 34px;
+      background-image: url("../assets/images/icons/shopping_icon.svg"),
+        $primary-gradient;
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+    }
   }
 }

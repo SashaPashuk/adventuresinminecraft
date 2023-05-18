@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventuresin Minecraft home page</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    @@include('../components/header.html')
+    <div class="contact">
+      <div class="container">
+        <div class="contact__row">
+          <img
+            class="contact__img"
+            src="../assets/images/contact_page_img.png"
+            alt=""
+          />
+          <div class="contact__info info">
+            <h3 class="info__title">Контакты</h3>
+            <p class="info__subtitle">
+              Свяжитесь с нами если у вас остались вопросы:
+            </p>
+            <div class="info__block">
+              <div class="info__block-img">
+                <img src="../assets/images/icons/email_icon.svg" alt="" />
+              </div>
+              <a href="mailto:adventuresinminecraft@gmail.com"
+                >adventuresinminecraft@gmail.com</a
+              >
+            </div>
+            <div class="info__block">
+              <div class="info__block-img">
+                <img src="../assets/images/icons/telegram_icon.svg" alt="" />
+              </div>
+              <a href="https://t.me/myusername">Telegram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('../components/footer.html')
+    <script src="../js/index.js"></script>
+  </body>
+</html>

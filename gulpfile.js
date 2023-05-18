@@ -6,14 +6,12 @@ const autoprefixer = require("gulp-autoprefixer");
 const cleanCSS = require("gulp-clean-css");
 const imagemin = require("gulp-imagemin");
 const fileInclude = require("gulp-file-include");
-const svgmin = require("gulp-svgmin");
 
 const src = {
   html: "src/**/*.html",
   css: "src/styles/**/*.scss",
   js: "src/js/*.js",
-  images: "src/assets/images/*",
-  svgs: "src/assets/images/icons/*.svg",
+  images: "src/assets/images/**/*",
 };
 
 const dist = {
@@ -61,14 +59,6 @@ function images() {
     .pipe(browserSync.stream());
 }
 
-function svgs() {
-  return gulp
-    .src(src.svgs)
-    .pipe(svgmin())
-    .pipe(gulp.dest(dist.images))
-    .pipe(browserSync.stream());
-}
-
 function serve() {
   browserSync.init({
     server: {
@@ -99,10 +89,6 @@ function serve() {
   gulp.watch(src.css, css);
   gulp.watch(src.js, js);
   gulp.watch(src.images, images);
-  gulp.watch(src.svgs, svgs);
 }
 
-exports.default = gulp.series(
-  gulp.parallel(html, css, js, images, svgs),
-  serve
-);
+exports.default = gulp.series(gulp.parallel(html, css, js, images), serve);

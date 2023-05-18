@@ -46,8 +46,12 @@ img {
 // import components styles
 @import "components/header";
 @import "components/footer";
+@import "components/latest-purchases";
 // import pages styles
 @import "pages/home";
+@import "pages/product";
+@import "pages/starting-tips";
+@import "pages/contact";
 
 // import css libs
 @import "css-libs/bootstrap-grid.min.css";

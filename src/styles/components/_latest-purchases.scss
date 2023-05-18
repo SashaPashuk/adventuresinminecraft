@@ -1,0 +1,16 @@
+.latest-purchases {
+  margin-bottom: 36px;
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: $shade-white;
+    margin-bottom: 10px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

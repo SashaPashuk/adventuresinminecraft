@@ -1,0 +1,101 @@
+.starting-tips {
+  margin: 48px 0;
+  &__row {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 16px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 272px;
+    min-height: 332px;
+    padding: 35px 32px 48px 23px;
+    background: $shade-black;
+    box-shadow: 20px 20px 30px $shadow-defauld;
+    border-radius: 20px;
+    &-img {
+      width: 93px;
+      height: 93px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $shade-grey;
+      border-radius: 50%;
+      margin-bottom: 24px;
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+    &-title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: $shade-white;
+      margin-bottom: 12px;
+    }
+    &-text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: $shade-white;
+    }
+    &-arrow {
+      position: relative;
+      width: 100%;
+      border-top: 2px dashed $shade-grey;
+      margin: 0 10px;
+      &:before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        right: -9px;
+        width: 0;
+        height: 0;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 10px solid $shade-grey;
+        margin-right: 5px;
+      }
+    }
+  }
+  &__button {
+    max-width: 172px;
+    margin: 0 auto;
+    margin-top: 36px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: $shade-white;
+    padding: 12px 23px;
+    background: $primary-gradient;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      box-shadow: $shadow-active;
+    }
+    &:active {
+      color: $primary-orange;
+      background: $shade-white;
+      box-shadow: $shadow-defauld;
+    }
+  }
+}

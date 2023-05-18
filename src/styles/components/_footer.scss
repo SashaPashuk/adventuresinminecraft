@@ -1,12 +1,7 @@
 .footer {
-  margin-top: auto;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
   &-head {
-    border-top: 1px solid $shade-grey;
     &__row {
+      border-top: 1px solid $shade-grey;
       padding: 24px 0;
       display: flex;
       justify-content: space-between;
@@ -37,6 +32,9 @@
         font-size: 16px;
         line-height: 24px;
       }
+      &:hover a {
+        color: $primary-light-orange;
+      }
     }
   }
   &-bottom {
@@ -56,6 +54,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: scale 0.3s ease-in-out;
         &__link {
           margin-right: 20px;
           &:last-child {
@@ -64,6 +63,9 @@
           img {
             width: 20px;
             height: 20px;
+          }
+          &:hover {
+            scale: 1.1;
           }
         }
       }
