@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventuresin Minecraft donation description page</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__row">
+      <div class="logo">
+        <a class="logo__link" href="/">
+          <img src="../assets/images/logo.svg" alt="" />
+        </a>
+      </div>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/home">Магазин</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/rules">Правила</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/donation-description">Описание доната</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/faq">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/starting-tips">Как начать играть?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/contact">Контакты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link lang-switch" href="#">EN</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <div class="donation-description">
+      <div class="container">
+        <h2 class="donation-description__title">Описание доната</h2>
+        <div class="donation-description__switch switch">
+          <button
+            class="switch__button switch__button--active"
+            data-name="survival"
+          >
+            Выживание
+          </button>
+          <button class="switch__button" data-name="anarchy">Анархия</button>
+        </div>
+        <div id="survival" class="donation-description__section">
+          <div class="donation-description__nav">
+            <button
+              class="donation-description__nav-btn donation-description__nav-btn--active"
+              data-name="survival_vip"
+            >
+              Вип
+            </button>
+            <button
+              class="donation-description__nav-btn"
+              data-name="survival_premium"
+            >
+              Премиум
+            </button>
+            <button
+              class="donation-description__nav-btn"
+              data-name="survival_creative"
+            >
+              Креатив
+            </button>
+            <button
+              class="donation-description__nav-btn"
+              data-name="survival_lord"
+            >
+              Лорд
+            </button>
+            <button
+              class="donation-description__nav-btn"
+              data-name="survival_elite"
+            >
+              Элита
+            </button>
+            <button
+              class="donation-description__nav-btn"
+              data-name="survival_moder"
+            >
+              Модер
+            </button>
+            <button
+              class="donation-description__nav-btn"
+              data-name="survival_legend"
+            >
+              Легенда
+            </button>
+            <button
+              class="donation-description__nav-btn"
+              data-name="survival_king"
+            >
+              Король
+            </button>
+            <button
+              class="donation-description__nav-btn"
+              data-name="survival_operator"
+            >
+              Оператор
+            </button>
+          </div>
+          <div
+            id="survival_vip"
+            class="donation-description__block description-block"
+          >
+            <h4 class="description-block__title">Вип</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="survival_premium"
+            class="donation-description__block description-block d-none"
+          >
+            <h4 class="description-block__title">Премиум</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="survival_creative"
+            class="donation-description__block description-block d-none"
+          >
+            <h4 class="description-block__title">Креатив</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="survival_lord"
+            class="donation-description__block description-block d-none"
+          >
+            <h4 class="description-block__title">Лорд</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="survival_elite"
+            class="donation-description__block description-block d-none"
+          >
+            <h4 class="description-block__title">Элита</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="survival_moder"
+            class="donation-description__block description-block d-none"
+          >
+            <h4 class="description-block__title">Модер</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="survival_legend"
+            class="donation-description__block description-block d-none"
+          >
+            <h4 class="description-block__title">Легенда</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="survival_king"
+            class="donation-description__block description-block d-none"
+          >
+            <h4 class="description-block__title">Король</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="survival_operator"
+            class="donation-description__block description-block d-none"
+          >
+            <h4 class="description-block__title">Оператор</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="anarchy" class="donation-description__section d-none">
+          <div class="donation-description__nav">
+            <button
+              class="donation-description__nav-btn donation-description__nav-btn--active"
+              data-name="anarchy_vip"
+            >
+              Вип
+            </button>
+            <button
+              class="donation-description__nav-btn"
+              data-name="anarchy_premium"
+            >
+              Премиум
+            </button>
+            <button
+              class="donation-description__nav-btn"
+              data-name="anarchy_creative"
+            >
+              Креатив
+            </button>
+            <button
+              class="donation-description__nav-btn"
+              data-name="anarchy_lord"
+            >
+              Лорд
+            </button>
+            <button
+              class="donation-description__nav-btn"
+              data-name="anarchy_elite"
+            >
+              Элита
+            </button>
+            <button
+              class="donation-description__nav-btn"
+              data-name="anarchy_moder"
+            >
+              Модер
+            </button>
+            <button
+              class="donation-description__nav-btn"
+              data-name="anarchy_legend"
+            >
+              Легенда
+            </button>
+            <button
+              class="donation-description__nav-btn"
+              data-name="anarchy_king"
+            >
+              Король
+            </button>
+            <button
+              class="donation-description__nav-btn"
+              data-name="anarchy_operator"
+            >
+              Оператор
+            </button>
+          </div>
+          <div
+            id="anarchy_vip"
+            class="donation-description__block description-block"
+          >
+            <h4 class="description-block__title">Вип</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="anarchy_premium"
+            class="donation-description__block description-block d-none"
+          >
+            <h4 class="description-block__title">Премиум</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="anarchy_creative"
+            class="donation-description__block description-block d-none"
+          >
+            <h4 class="description-block__title">Креатив</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="anarchy_lord"
+            class="donation-description__block description-block d-none"
+          >
+            <h4 class="description-block__title">Лорд</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="anarchy_elite"
+            class="donation-description__block description-block d-none"
+          >
+            <h4 class="description-block__title">Элита</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="anarchy_moder"
+            class="donation-description__block description-block d-none"
+          >
+            <h4 class="description-block__title">Модер</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="anarchy_legend"
+            class="donation-description__block description-block d-none"
+          >
+            <h4 class="description-block__title">Легенда</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="anarchy_king"
+            class="donation-description__block description-block d-none"
+          >
+            <h4 class="description-block__title">Король</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="anarchy_operator"
+            class="donation-description__block description-block d-none"
+          >
+            <h4 class="description-block__title">Оператор</h4>
+            <div class="description-block__row">
+              <ul class="description-block__list">
+                <li>Восстановить здоровье /heal</li>
+                <li>Отключить телепорт к себе /tptoggle</li>
+                <li>Ставить 4 точки дома /sethome</li>
+                <li>Восстанавливать голод /feed</li>
+                <li>Посмотреть рецепт крафта /recipe</li>
+                <li>Открыть верстак /workbench</li>
+                <li>Починить все вещи /fix all</li>
+              </ul>
+              <ul class="description-block__list">
+                <li>Набор VIP /kit vip</li>
+                <li>Летать с пером полета /flyfeather</li>
+                <li>Игнорировать ЛС с игроком /ignore</li>
+                <li>Телепорт назад или к месту смерти /back</li>
+                <li>Одеть блок или предмет на голову /hat</li>
+                <li>Открыть эндер сундук /enderchest</li>
+                <li>Очищать себе инвентарь /ci</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+  <div class="footer-head">
+    <div class="container">
+      <div class="footer-head__row">
+        <div class="footer__logo">
+          <a href="/">
+            <img src="../assets/images/logo.svg" alt="" />
+          </a>
+        </div>
+        <div class="footer__nav">
+          <ul class="footer__nav-left">
+            <li class="footer__nav-item"><a href="/home">Магазин</a></li>
+            <li class="footer__nav-item"><a href="/pages/rules">Правила</a></li>
+            <li class="footer__nav-item">
+              <a href="/donation-description">Описание доната</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="/pages/contact">Контакты</a>
+            </li>
+          </ul>
+          <ul class="footer__nav-center">
+            <li class="footer__nav-item"><a href="/pages/faq">FAQ</a></li>
+            <li class="footer__nav-item">
+              <a href="/pages/starting-tips">Как начать играть?</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="/pages/donate-privileges">Привелегии доната</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="/pages/launcher-download">Лаунчера</a>
+            </li>
+          </ul>
+          <ul class="footer__nav-rigt">
+            <li class="footer__nav-item"><a href="/team">Команда</a></li>
+            <li class="footer__nav-item"><a href="/mods">Моды</a></li>
+            <li class="footer__nav-item"><a href="#">Lorem Ipsum</a></li>
+            <li class="footer__nav-item"><a href="#">Lorem Ipsum</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__row">
+        <p class="copiryted">
+          © 2023 Adventures in Minecraft - сервис обмена криптовалют
+        </p>
+        <div class="socials">
+          <a class="socials__link" href="#"
+            ><img src="/assets/images/icons/facebook_icon.svg" alt="" /></a
+          ><a class="socials__link" href="#"
+            ><img src="/assets/images/icons/twitter_icon.svg" alt="" /></a
+          ><a class="socials__link" href="#"
+            ><img src="/assets/images/icons/instagram_icon.svg" alt="" /></a
+          ><a class="socials__link" href="#"
+            ><img src="/assets/images/icons/linkedin_icon.svg" alt="" /></a
+          ><a class="socials__link" href="#"
+            ><img src="/assets/images/icons/telegram_icon.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>
