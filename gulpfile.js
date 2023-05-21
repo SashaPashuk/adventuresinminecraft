@@ -6,11 +6,12 @@ const autoprefixer = require("gulp-autoprefixer");
 const cleanCSS = require("gulp-clean-css");
 const imagemin = require("gulp-imagemin");
 const fileInclude = require("gulp-file-include");
+const uglify = require("gulp-uglify");
 
 const src = {
   html: "src/**/*.html",
   css: "src/styles/**/*.scss",
-  js: "src/js/*.js",
+  js: "src/js/**/*.js",
   images: "src/assets/images/**/*",
 };
 
@@ -48,7 +49,27 @@ function css() {
 }
 
 function js() {
-  return gulp.src(src.js).pipe(concat("index.js")).pipe(gulp.dest(dist.js));
+  return gulp
+    .src([src.js, "!src/js/header.js", "!src/js/footer.js"]) // Вибираємо всі файли js, крім header.js і footer.js
+    .pipe(uglify()) // Мінімізуємо код JavaScript
+    .pipe(gulp.dest(dist.js))
+    .pipe(browserSync.stream());
+}
+
+function headerJs() {
+  return gulp
+    .src("src/js/header.js")
+    .pipe(concat("header.js"))
+    .pipe(gulp.dest(dist.js))
+    .pipe(browserSync.stream());
+}
+
+function footerJs() {
+  return gulp
+    .src("src/js/footer.js")
+    .pipe(concat("footer.js"))
+    .pipe(gulp.dest(dist.js))
+    .pipe(browserSync.stream());
 }
 
 function images() {
@@ -88,7 +109,12 @@ function serve() {
   gulp.watch(dist.pages, html);
   gulp.watch(src.css, css);
   gulp.watch(src.js, js);
+  gulp.watch("src/js/header.js", headerJs);
+  gulp.watch("src/js/footer.js", footerJs);
   gulp.watch(src.images, images);
 }
 
-exports.default = gulp.series(gulp.parallel(html, css, js, images), serve);
+exports.default = gulp.series(
+  gulp.parallel(html, css, js, headerJs, footerJs, images),
+  serve
+);

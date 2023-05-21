@@ -7,15 +7,15 @@ rulesButtons.forEach((button) => {
     const targetBlock = document.getElementById(blockId);
 
     if (targetBlock) {
-      // hidden all blocks
+      // Сховати всі блоки
       rulesBlocks.forEach((block) => {
         block.classList.add("d-none");
       });
 
-      // visible elect block
+      // Показати вибраний блок
       targetBlock.classList.remove("d-none");
 
-      // change the active button
+      // Змінити активну кнопку
       rulesButtons.forEach((btn) => {
         btn.classList.remove("rules__nav-btn--active");
       });
