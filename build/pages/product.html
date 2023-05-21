@@ -19,7 +19,7 @@
   <div class="container">
     <div class="header__row">
       <div class="logo">
-        <a class="logo__link" href="/">
+        <a class="logo__link" href="/home.html">
           <img src="../assets/images/logo.svg" alt="" />
         </a>
       </div>
@@ -58,7 +58,27 @@
       <div class="container">
         <div class="product-info__row">
           <div class="product-info__slider slider">
-            
+            <img
+              class="slider__main-img"
+              src="../assets/images/product-image/img_product1.png"
+              alt=""
+            />
+            <div class="slider__row">
+              <img
+                src="../assets/images/product-image/img_product2.png"
+                alt=""
+              />
+              <img
+                src="../assets/images/product-image/img_product3.png"
+                alt=""
+              />
+              <img
+                src="../assets/images/product-image/img_product1.png"
+                alt=""
+              />
+              <button class="slider__button slider__button-prev"></button>
+              <button class="slider__button slider__button-next"></button>
+            </div>
           </div>
           <div class="product-info__content content">
             <h2 class="content__title">Назва товару</h2>
@@ -72,25 +92,21 @@
             </p>
             <div class="content__price-block price-block">
               <span class="price-block__title">Цeна:</span>
-              <span class="price-block__price">€15</span>
+              <span class="price-block__price" id="product_price">€15</span>
             </div>
 
             <div class="content__buy-block buy-block">
               <p class="buy-block__quantity-title quantity-title">Кількість:</p>
               <div class="buy-block__quantity-control quantity-control">
-                <div
-                  class="quantity-control__number-purchases number-purchases"
-                >
-                  <img class="number-purchases__main-img" src="" alt="" />
-                  <div class="number-purchases__list">
-                    <div class="class=number-purchases__item">
-                      <img src="" alt="" />
-                    </div>
-                  </div>
+                <div class="quantity-control__number">
+                  <button class="quantity-control__number-btn quantity-control__number-btn-reduce"></button>
+                  <span class="quantity-control__number-title">1</span>
+                  <button class="quantity-control__number-btn quantity-control__number-btn-increase"></button>
                 </div>
                 <button class="buy-block__buy-btn buy-btn">Купить</button>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -165,7 +181,7 @@
     <div class="container">
       <div class="footer-head__row">
         <div class="footer__logo">
-          <a href="/">
+          <a href="/home.html">
             <img src="../assets/images/logo.svg" alt="" />
           </a>
         </div>

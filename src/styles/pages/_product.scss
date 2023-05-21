@@ -9,6 +9,48 @@
   }
   &__slider {
     min-width: 584px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 70px;
+    .slider {
+      &__main-img {
+        width: 580px;
+        height: 370px;
+        margin-bottom: 15px;
+      }
+      &__row {
+        position: relative;
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          width: 154px;
+          height: 92px;
+        }
+      }
+      &__button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 20px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        background-image: url("../../assets/images/icons/arrow_left.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        &-prev {
+          left: -25px;
+        }
+        &-next {
+          right: -25px;
+          background-image: url("../../assets/images/icons/arrow_right.svg");
+        }
+      }
+    }
   }
   &__content {
     margin-top: 13px;
@@ -74,6 +116,43 @@
         margin-bottom: 8px;
       }
       &__quantity-control {
+        display: flex;
+        align-items: center;
+        .quantity-control {
+          &__number {
+            border: 2px solid $shade-grey;
+            color: $shade-white;
+            border-radius: 10px;
+            padding: 12px 16px;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            &-btn {
+              width: 10px;
+              height: 15px;
+              border: none;
+              background: transparent;
+              cursor: pointer;
+              &-reduce {
+                background-image: url("../../assets/images/icons/arrow_left.svg");
+                background-repeat: no-repeat;
+                background-position: center center;
+              }
+              &-increase {
+                background-image: url("../../assets/images/icons/arrow_right.svg");
+                background-repeat: no-repeat;
+                background-position: center center;
+              }
+            }
+            &-title {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 24px;
+              color: $shade-white;
+              padding: 0 35px;
+            }
+          }
+        }
       }
       &__buy-btn {
         font-weight: 700;
