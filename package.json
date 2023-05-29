@@ -2,7 +2,7 @@
     "name": "adventuresinminecraft",
     "version": "1.0.0",
     "description": "My project",
-    "main": "index.js",
+    "main": "main.js",
     "scripts": {
         "gulp": "gulp"
     },

@@ -1,4 +1,3 @@
-@import "mixins";
 @import "varibles";
 
 * {
@@ -10,6 +9,9 @@
 body {
   font-family: $primary-font;
   background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 nav,
@@ -17,6 +19,10 @@ footer,
 header,
 aside {
   display: block;
+}
+
+main {
+  flex: 1;
 }
 
 button {
@@ -42,23 +48,21 @@ img {
   max-width: 100%;
 }
 
-@import "global-classes";
 // import components styles
 @import "components/header";
 @import "components/footer";
 @import "components/latest-purchases";
 // import pages styles
 @import "pages/home";
+@import "pages/product";
 @import "pages/rules";
 @import "pages/donation-description";
-@import "pages/product";
+@import "pages/contact";
 @import "pages/faq";
 @import "pages/starting-tips";
-@import "pages/contact";
-@import "pages/team";
-@import "pages/launcher-download";
 @import "pages/donate-privileges";
-@import "pages/mods";
+@import "pages/launcher-download";
+@import "pages/team";
 
 // import css libs
 @import "css-libs/bootstrap-grid.min.css";

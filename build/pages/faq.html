@@ -16,320 +16,323 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__row">
-          <div class="logo">
-            <a class="logo__link" href="/home.html">
-              <img src="../assets/images/logo.svg" alt="" />
-            </a>
+  <div class="container">
+    <div class="header__row">
+      <div class="logo">
+        <a class="logo__link" href="/">
+          <img src="../assets/images/logo.svg" alt="" />
+        </a>
+      </div>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/home.html">Магазин</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/rules.html">Правила</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/donation-description.html"
+            >Описание доната</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/starting-tips.html"
+            >Как начать играть?</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/contact.html">Контакты</a>
+        </li>
+        <li class="nav-item lang-item">
+          <a class="nav-link lang-switch" href="#">RU</a>
+          <!-- <ul class="lang-popup">
+            <li>
+              <a
+                class="lang-popup__item"
+                href="https://adventuresinminecraft.com/en/"
+                >EN</a
+              >
+            </li>
+            <li><a class="lang-popup__item" href="#">DE</a></li>
+          </ul> -->
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <div class="faq">
+        <div class="container">
+          <div class="faq__row">
+            <h2 class="faq__title">Часто задаваемые вопросы</h2>
+            <div class="faq__button-items">
+              <button
+                class="faq__button faq__button--active"
+                data-name="technical_questions"
+              >
+                <div class="faq__button-img"></div>
+                <p class="faq__button-title">Технические вопросы</p>
+              </button>
+              <button class="faq__button" data-name="who_are_we">
+                <div class="faq__button-img"></div>
+                <p class="faq__button-title">Кто мы?</p>
+              </button>
+              <button class="faq__button" data-name="how_it_works">
+                <div class="faq__button-img"></div>
+                <p class="faq__button-title">Как это работает?</p>
+              </button>
+            </div>
+            <div id="technical_questions" class="faq__block">
+              <p class="faq__block-title">Технические вопросы</p>
+              <ul class="faq__question-list">
+                <li class="question" data-cy="item">
+                  <input
+                    type="checkbox"
+                    id="question_1"
+                    class="question__input"
+                    data-cy="item_input"
+                  />
+                  <label class="question__label" for="question_1"
+                    >Lorem Ipsum является стандартной "рыбой"?
+                  </label>
+                  <div class="question-answer" data-cy="item_answer">
+                    <p class="question-answer__text">
+                      Lorem Ipsum - это текст-"рыба", часто используемый в
+                      печати и вэб-дизайне. Lorem Ipsum является стандартной
+                      "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                  </div>
+                </li>
+                <li class="question" data-cy="item">
+                  <input
+                    type="checkbox"
+                    id="question_2"
+                    class="question__input"
+                    data-cy="item_input"
+                  />
+                  <label class="question__label" for="question_2"
+                    >Lorem Ipsum является стандартной "рыбой"?
+                  </label>
+                  <div class="question-answer" data-cy="item_answer">
+                    <p class="question-answer__text">
+                      Lorem Ipsum - это текст-"рыба", часто используемый в
+                      печати и вэб-дизайне. Lorem Ipsum является стандартной
+                      "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                  </div>
+                </li>
+                <li class="question" data-cy="item">
+                  <input
+                    type="checkbox"
+                    id="question_3"
+                    class="question__input"
+                    data-cy="item_input"
+                  />
+                  <label class="question__label" for="question_3"
+                    >Lorem Ipsum является стандартной "рыбой"?
+                  </label>
+                  <div class="question-answer" data-cy="item_answer">
+                    <p class="question-answer__text">
+                      Lorem Ipsum - это текст-"рыба", часто используемый в
+                      печати и вэб-дизайне. Lorem Ipsum является стандартной
+                      "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div id="who_are_we" class="faq__block d-none">
+              <p class="faq__block-title">Кто мы?</p>
+              <ul class="faq__question-list">
+                <li class="question" data-cy="item">
+                  <input
+                    type="checkbox"
+                    id="question_4"
+                    class="question__input"
+                    data-cy="item_input"
+                  />
+                  <label class="question__label" for="question_4"
+                    >Lorem Ipsum является стандартной "рыбой"?
+                  </label>
+                  <div class="question-answer" data-cy="item_answer">
+                    <p class="question-answer__text">
+                      Lorem Ipsum - это текст-"рыба", часто используемый в
+                      печати и вэб-дизайне. Lorem Ipsum является стандартной
+                      "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                  </div>
+                </li>
+                <li class="question" data-cy="item">
+                  <input
+                    type="checkbox"
+                    id="question_5"
+                    class="question__input"
+                    data-cy="item_input"
+                  />
+                  <label class="question__label" for="question_5"
+                    >Lorem Ipsum является стандартной "рыбой"?
+                  </label>
+                  <div class="question-answer" data-cy="item_answer">
+                    <p class="question-answer__text">
+                      Lorem Ipsum - это текст-"рыба", часто используемый в
+                      печати и вэб-дизайне. Lorem Ipsum является стандартной
+                      "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                  </div>
+                </li>
+                <li class="question" data-cy="item">
+                  <input
+                    type="checkbox"
+                    id="question_6"
+                    class="question__input"
+                    data-cy="item_input"
+                  />
+                  <label class="question__label" for="question_6"
+                    >Lorem Ipsum является стандартной "рыбой"?
+                  </label>
+                  <div class="question-answer" data-cy="item_answer">
+                    <p class="question-answer__text">
+                      Lorem Ipsum - это текст-"рыба", часто используемый в
+                      печати и вэб-дизайне. Lorem Ipsum является стандартной
+                      "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div id="how_it_works" class="faq__block d-none">
+              <p class="faq__block-title">Как это работает?</p>
+              <ul class="faq__question-list">
+                <li class="question" data-cy="item">
+                  <input
+                    type="checkbox"
+                    id="question_7"
+                    class="question__input"
+                    data-cy="item_input"
+                  />
+                  <label class="question__label" for="question_7"
+                    >Lorem Ipsum является стандартной "рыбой"?
+                  </label>
+                  <div class="question-answer" data-cy="item_answer">
+                    <p class="question-answer__text">
+                      Lorem Ipsum - это текст-"рыба", часто используемый в
+                      печати и вэб-дизайне. Lorem Ipsum является стандартной
+                      "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                  </div>
+                </li>
+                <li class="question" data-cy="item">
+                  <input
+                    type="checkbox"
+                    id="question_8"
+                    class="question__input"
+                    data-cy="item_input"
+                  />
+                  <label class="question__label" for="question_8"
+                    >Lorem Ipsum является стандартной "рыбой"?
+                  </label>
+                  <div class="question-answer" data-cy="item_answer">
+                    <p class="question-answer__text">
+                      Lorem Ipsum - это текст-"рыба", часто используемый в
+                      печати и вэб-дизайне. Lorem Ipsum является стандартной
+                      "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                  </div>
+                </li>
+                <li class="question" data-cy="item">
+                  <input
+                    type="checkbox"
+                    id="question_9"
+                    class="question__input"
+                    data-cy="item_input"
+                  />
+                  <label class="question__label" for="question_9"
+                    >Lorem Ipsum является стандартной "рыбой"?
+                  </label>
+                  <div class="question-answer" data-cy="item_answer">
+                    <p class="question-answer__text">
+                      Lorem Ipsum - это текст-"рыба", часто используемый в
+                      печати и вэб-дизайне. Lorem Ipsum является стандартной
+                      "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/home.html">Магазин</a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+  <div class="footer-head">
+    <div class="container">
+      <div class="footer-head__row">
+        <div class="footer__logo">
+          <a href="/">
+            <img src="../assets/images/logo.svg" alt="" />
+          </a>
+        </div>
+        <div class="footer__nav">
+          <ul class="footer__nav-left">
+            <li class="footer__nav-item"><a href="/home.html">Магазин</a></li>
+            <li class="footer__nav-item">
+              <a href="/pages/rules.html">Правила</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/rules.html">Правила</a>
+            <li class="footer__nav-item">
+              <a href="/donation-description.html">Описание доната</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/donation-description.html"
-                >Описание доната</a
-              >
+            <li class="footer__nav-item">
+              <a href="/pages/contact.html">Контакты</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/faq.html">FAQ</a>
+          </ul>
+          <ul class="footer__nav-center">
+            <li class="footer__nav-item"><a href="/pages/faq.html">FAQ</a></li>
+            <li class="footer__nav-item">
+              <a href="/pages/starting-tips.html">Как начать играть?</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/starting-tips.html"
-                >Как начать играть?</a
-              >
+            <li class="footer__nav-item">
+              <a href="/pages/donate-privileges.html">Привелегии доната</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/contact.html">Контакты</a>
+            <li class="footer__nav-item">
+              <a href="/pages/launcher-download.html">Лаунчера</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link lang-switch" href="#">EN</a>
+          </ul>
+          <ul class="footer__nav-rigt">
+            <li class="footer__nav-item">
+              <a href="/pages/team.html">Команда</a>
             </li>
           </ul>
         </div>
       </div>
-    </header>
-
-    <div class="faq">
-      <div class="container">
-        <div class="faq__row">
-          <h2 class="faq__title">Часто задаваемые вопросы</h2>
-          <div class="faq__button-items">
-            <button
-              class="faq__button faq__button--active"
-              data-name="technical_questions"
-            >
-              <div class="faq__button-img"></div>
-              <p class="faq__button-title">Технические вопросы</p>
-            </button>
-            <button class="faq__button" data-name="who_are_we">
-              <div class="faq__button-img"></div>
-              <p class="faq__button-title">Кто мы?</p>
-            </button>
-            <button class="faq__button" data-name="how_it_works">
-              <div class="faq__button-img"></div>
-              <p class="faq__button-title">Как это работает?</p>
-            </button>
-          </div>
-          <div id="technical_questions" class="faq__block">
-            <p class="faq__block-title">Технические вопросы</p>
-            <ul class="faq__question-list">
-              <li class="question" data-cy="item">
-                <input
-                  type="checkbox"
-                  id="question_1"
-                  class="question__input"
-                  data-cy="item_input"
-                />
-                <label class="question__label" for="question_1"
-                  >Lorem Ipsum является стандартной "рыбой"?
-                </label>
-                <div class="question-answer" data-cy="item_answer">
-                  <p class="question-answer__text">
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати
-                    и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
-                    текстов на латинице с начала XVI века.
-                  </p>
-                </div>
-              </li>
-              <li class="question" data-cy="item">
-                <input
-                  type="checkbox"
-                  id="question_2"
-                  class="question__input"
-                  data-cy="item_input"
-                />
-                <label class="question__label" for="question_2"
-                  >Lorem Ipsum является стандартной "рыбой"?
-                </label>
-                <div class="question-answer" data-cy="item_answer">
-                  <p class="question-answer__text">
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати
-                    и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
-                    текстов на латинице с начала XVI века.
-                  </p>
-                </div>
-              </li>
-              <li class="question" data-cy="item">
-                <input
-                  type="checkbox"
-                  id="question_3"
-                  class="question__input"
-                  data-cy="item_input"
-                />
-                <label class="question__label" for="question_3"
-                  >Lorem Ipsum является стандартной "рыбой"?
-                </label>
-                <div class="question-answer" data-cy="item_answer">
-                  <p class="question-answer__text">
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати
-                    и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
-                    текстов на латинице с начала XVI века.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div id="who_are_we" class="faq__block d-none">
-            <p class="faq__block-title">Кто мы?</p>
-            <ul class="faq__question-list">
-              <li class="question" data-cy="item">
-                <input
-                  type="checkbox"
-                  id="question_4"
-                  class="question__input"
-                  data-cy="item_input"
-                />
-                <label class="question__label" for="question_4"
-                  >Lorem Ipsum является стандартной "рыбой"?
-                </label>
-                <div class="question-answer" data-cy="item_answer">
-                  <p class="question-answer__text">
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати
-                    и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
-                    текстов на латинице с начала XVI века.
-                  </p>
-                </div>
-              </li>
-              <li class="question" data-cy="item">
-                <input
-                  type="checkbox"
-                  id="question_5"
-                  class="question__input"
-                  data-cy="item_input"
-                />
-                <label class="question__label" for="question_5"
-                  >Lorem Ipsum является стандартной "рыбой"?
-                </label>
-                <div class="question-answer" data-cy="item_answer">
-                  <p class="question-answer__text">
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати
-                    и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
-                    текстов на латинице с начала XVI века.
-                  </p>
-                </div>
-              </li>
-              <li class="question" data-cy="item">
-                <input
-                  type="checkbox"
-                  id="question_6"
-                  class="question__input"
-                  data-cy="item_input"
-                />
-                <label class="question__label" for="question_6"
-                  >Lorem Ipsum является стандартной "рыбой"?
-                </label>
-                <div class="question-answer" data-cy="item_answer">
-                  <p class="question-answer__text">
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати
-                    и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
-                    текстов на латинице с начала XVI века.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div id="how_it_works" class="faq__block d-none">
-            <p class="faq__block-title">Как это работает?</p>
-            <ul class="faq__question-list">
-              <li class="question" data-cy="item">
-                <input
-                  type="checkbox"
-                  id="question_7"
-                  class="question__input"
-                  data-cy="item_input"
-                />
-                <label class="question__label" for="question_7"
-                  >Lorem Ipsum является стандартной "рыбой"?
-                </label>
-                <div class="question-answer" data-cy="item_answer">
-                  <p class="question-answer__text">
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати
-                    и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
-                    текстов на латинице с начала XVI века.
-                  </p>
-                </div>
-              </li>
-              <li class="question" data-cy="item">
-                <input
-                  type="checkbox"
-                  id="question_8"
-                  class="question__input"
-                  data-cy="item_input"
-                />
-                <label class="question__label" for="question_8"
-                  >Lorem Ipsum является стандартной "рыбой"?
-                </label>
-                <div class="question-answer" data-cy="item_answer">
-                  <p class="question-answer__text">
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати
-                    и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
-                    текстов на латинице с начала XVI века.
-                  </p>
-                </div>
-              </li>
-              <li class="question" data-cy="item">
-                <input
-                  type="checkbox"
-                  id="question_9"
-                  class="question__input"
-                  data-cy="item_input"
-                />
-                <label class="question__label" for="question_9"
-                  >Lorem Ipsum является стандартной "рыбой"?
-                </label>
-                <div class="question-answer" data-cy="item_answer">
-                  <p class="question-answer__text">
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати
-                    и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
-                    текстов на латинице с начала XVI века.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__row">
+        <p class="copiryted">
+          © 2023 Adventures in Minecraft - сервис обмена криптовалют
+        </p>
+        <div class="socials">
+          <a class="socials__link" href="#"
+            ><img src="/assets/images/icons/facebook_icon.svg" alt="" /></a
+          ><a class="socials__link" href="#"
+            ><img src="/assets/images/icons/twitter_icon.svg" alt="" /></a
+          ><a class="socials__link" href="#"
+            ><img src="/assets/images/icons/instagram_icon.svg" alt="" /></a
+          ><a class="socials__link" href="#"
+            ><img src="/assets/images/icons/linkedin_icon.svg" alt="" /></a
+          ><a class="socials__link" href="#"
+            ><img src="/assets/images/icons/telegram_icon.svg" alt=""
+          /></a>
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="footer-head">
-        <div class="container">
-          <div class="footer-head__row">
-            <div class="footer__logo">
-              <a href="/home.html">
-                <img src="../assets/images/logo.svg" alt="" />
-              </a>
-            </div>
-            <div class="footer__nav">
-              <ul class="footer__nav-left">
-                <li class="footer__nav-item">
-                  <a href="/home.html">Магазин</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="/pages/rules.html">Правила</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="/donation-description.html">Описание доната</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="/pages/contact.html">Контакты</a>
-                </li>
-              </ul>
-              <ul class="footer__nav-center">
-                <li class="footer__nav-item">
-                  <a href="/pages/faq.html">FAQ</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="/pages/starting-tips.html">Как начать играть?</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="/pages/donate-privileges.html">Привелегии доната</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="/pages/launcher-download.html">Лаунчера</a>
-                </li>
-              </ul>
-              <ul class="footer__nav-rigt">
-                <li class="footer__nav-item">
-                  <a href="/pages/team.html">Команда</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="/pages/mods.html">Моды</a>
-                </li>
-                <li class="footer__nav-item"><a href="#">Lorem Ipsum</a></li>
-                <li class="footer__nav-item"><a href="#">Lorem Ipsum</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="footer-bottom__row">
-            <p class="copiryted">
-              © 2023 Adventures in Minecraft - сервис обмена криптовалют
-            </p>
-            <div class="socials">
-              <a class="socials__link" href="#"
-                ><img src="/assets/images/icons/facebook_icon.svg" alt="" /></a
-              ><a class="socials__link" href="#"
-                ><img src="/assets/images/icons/twitter_icon.svg" alt="" /></a
-              ><a class="socials__link" href="#"
-                ><img src="/assets/images/icons/instagram_icon.svg" alt="" /></a
-              ><a class="socials__link" href="#"
-                ><img src="/assets/images/icons/linkedin_icon.svg" alt="" /></a
-              ><a class="socials__link" href="#"
-                ><img src="/assets/images/icons/telegram_icon.svg" alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+  </div>
+</footer>
 
     <script src="../js/main.js"></script>
     <script src="../js/faq.js"></script>

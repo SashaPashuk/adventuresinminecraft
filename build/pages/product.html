@@ -16,244 +16,249 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__row">
-          <div class="logo">
-            <a class="logo__link" href="/home.html">
-              <img src="../assets/images/logo.svg" alt="" />
-            </a>
+  <div class="container">
+    <div class="header__row">
+      <div class="logo">
+        <a class="logo__link" href="/">
+          <img src="../assets/images/logo.svg" alt="" />
+        </a>
+      </div>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/home.html">Магазин</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/rules.html">Правила</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/donation-description.html"
+            >Описание доната</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/starting-tips.html"
+            >Как начать играть?</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/contact.html">Контакты</a>
+        </li>
+        <li class="nav-item lang-item">
+          <a class="nav-link lang-switch" href="#">RU</a>
+          <!-- <ul class="lang-popup">
+            <li>
+              <a
+                class="lang-popup__item"
+                href="https://adventuresinminecraft.com/en/"
+                >EN</a
+              >
+            </li>
+            <li><a class="lang-popup__item" href="#">DE</a></li>
+          </ul> -->
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <div class="product-info">
+        <div class="container">
+          <div class="product-info__row">
+            <div class="product-info__slider slider">
+              <img
+                class="slider__main-img"
+                src="../assets/images/product-image/img_product1.png"
+                alt=""
+              />
+              <div class="slider__row">
+                <img
+                  src="../assets/images/product-image/img_product2.png"
+                  alt=""
+                />
+                <img
+                  src="../assets/images/product-image/img_product3.png"
+                  alt=""
+                />
+                <img
+                  src="../assets/images/product-image/img_product1.png"
+                  alt=""
+                />
+                <button class="slider__button slider__button-prev"></button>
+                <button class="slider__button slider__button-next"></button>
+              </div>
+            </div>
+            <div class="product-info__content content">
+              <h2 class="content__title">Назва товару</h2>
+              <h4 class="content__subtitle">Описание товара:</h4>
+              <p class="content__text">
+                Lorem Ipsum являється стандартною "рибою" для текстів на
+                латиниці з початку XVI століття. Тоді невідомий друкар створив
+                велику колекцію розмірів та форм шрифтів, використовуючи Lorem
+                Ipsum для друку зразків. Lorem Ipsum не тільки успішно пережив
+                без помітних змін п'ять століть, але й перейшов в електронний
+                дизайн.
+              </p>
+              <div class="content__price-block price-block">
+                <span class="price-block__title">Цeна:</span>
+                <span class="price-block__price" id="product_price">€15</span>
+              </div>
+
+              <div class="content__buy-block buy-block">
+                <p class="buy-block__quantity-title quantity-title">
+                  Кількість:
+                </p>
+                <div class="buy-block__quantity-control quantity-control">
+                  <div class="quantity-control__number">
+                    <button
+                      class="quantity-control__number-btn quantity-control__number-btn-reduce"
+                    ></button>
+                    <span class="quantity-control__number-title">1</span>
+                    <button
+                      class="quantity-control__number-btn quantity-control__number-btn-increase"
+                    ></button>
+                  </div>
+                  <button class="buy-block__buy-btn buy-btn">Купить</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/home.html">Магазин</a>
+        </div>
+      </div>
+    </main>
+    <div class="latest-purchases">
+  <div class="container">
+    <p class="latest-purchases__title">Последние покупки</p>
+    <div class="latest-purchases__list">
+      <a class="latest-purchases__link" href="/pages/product.html">
+        <div class="products-card">
+          <img
+            class="products-card__img"
+            src="../assets/images/product-image/img_product1.png"
+            alt=""
+          />
+          <p class="products-card__title">Название товара</p>
+          <div class="products-card__block">
+            <p class="products-card__price">€15.00</p>
+            <button class="products-card__buy"></button>
+          </div>
+        </div>
+      </a>
+      <a class="latest-purchases__link" href="/pages/product.html">
+        <div class="products-card">
+          <img
+            class="products-card__img"
+            src="../assets/images/product-image/img_product2.png"
+            alt=""
+          />
+          <p class="products-card__title">Название товара</p>
+          <div class="products-card__block">
+            <p class="products-card__price">€15.00</p>
+            <button class="products-card__buy"></button>
+          </div>
+        </div>
+      </a>
+      <a class="latest-purchases__link" href="/pages/product.html">
+        <div class="products-card">
+          <img
+            class="products-card__img"
+            src="../assets/images/product-image/img_product3.png"
+            alt=""
+          />
+          <p class="products-card__title">Название товара</p>
+          <div class="products-card__block">
+            <p class="products-card__price">€15.00</p>
+            <button class="products-card__buy"></button>
+          </div>
+        </div>
+      </a>
+      <a class="latest-purchases__link" href="/pages/product.html">
+        <div class="products-card">
+          <img
+            class="products-card__img"
+            src="../assets/images/product-image/img-product4.png"
+            alt=""
+          />
+          <p class="products-card__title">Название товара</p>
+          <div class="products-card__block">
+            <p class="products-card__price">€15.00</p>
+            <button class="products-card__buy"></button>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+    <footer class="footer">
+  <div class="footer-head">
+    <div class="container">
+      <div class="footer-head__row">
+        <div class="footer__logo">
+          <a href="/">
+            <img src="../assets/images/logo.svg" alt="" />
+          </a>
+        </div>
+        <div class="footer__nav">
+          <ul class="footer__nav-left">
+            <li class="footer__nav-item"><a href="/home.html">Магазин</a></li>
+            <li class="footer__nav-item">
+              <a href="/pages/rules.html">Правила</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/rules.html">Правила</a>
+            <li class="footer__nav-item">
+              <a href="/donation-description.html">Описание доната</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/donation-description.html"
-                >Описание доната</a
-              >
+            <li class="footer__nav-item">
+              <a href="/pages/contact.html">Контакты</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/faq.html">FAQ</a>
+          </ul>
+          <ul class="footer__nav-center">
+            <li class="footer__nav-item"><a href="/pages/faq.html">FAQ</a></li>
+            <li class="footer__nav-item">
+              <a href="/pages/starting-tips.html">Как начать играть?</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/starting-tips.html"
-                >Как начать играть?</a
-              >
+            <li class="footer__nav-item">
+              <a href="/pages/donate-privileges.html">Привелегии доната</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/contact.html">Контакты</a>
+            <li class="footer__nav-item">
+              <a href="/pages/launcher-download.html">Лаунчера</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link lang-switch" href="#">EN</a>
+          </ul>
+          <ul class="footer__nav-rigt">
+            <li class="footer__nav-item">
+              <a href="/pages/team.html">Команда</a>
             </li>
           </ul>
         </div>
       </div>
-    </header>
-
-    <div class="product-info">
-      <div class="container">
-        <div class="product-info__row">
-          <div class="product-info__slider slider">
-            <img
-              class="slider__main-img"
-              src="../assets/images/product-image/img_product1.png"
-              alt=""
-            />
-            <div class="slider__row">
-              <img
-                src="../assets/images/product-image/img_product2.png"
-                alt=""
-              />
-              <img
-                src="../assets/images/product-image/img_product3.png"
-                alt=""
-              />
-              <img
-                src="../assets/images/product-image/img_product1.png"
-                alt=""
-              />
-              <button class="slider__button slider__button-prev"></button>
-              <button class="slider__button slider__button-next"></button>
-            </div>
-          </div>
-          <div class="product-info__content content">
-            <h2 class="content__title">Назва товару</h2>
-            <h4 class="content__subtitle">Описание товара:</h4>
-            <p class="content__text">
-              Lorem Ipsum являється стандартною "рибою" для текстів на латиниці
-              з початку XVI століття. Тоді невідомий друкар створив велику
-              колекцію розмірів та форм шрифтів, використовуючи Lorem Ipsum для
-              друку зразків. Lorem Ipsum не тільки успішно пережив без помітних
-              змін п'ять століть, але й перейшов в електронний дизайн.
-            </p>
-            <div class="content__price-block price-block">
-              <span class="price-block__title">Цeна:</span>
-              <span class="price-block__price" id="product_price">€15</span>
-            </div>
-
-            <div class="content__buy-block buy-block">
-              <p class="buy-block__quantity-title quantity-title">Кількість:</p>
-              <div class="buy-block__quantity-control quantity-control">
-                <div class="quantity-control__number">
-                  <button
-                    class="quantity-control__number-btn quantity-control__number-btn-reduce"
-                  ></button>
-                  <span class="quantity-control__number-title">1</span>
-                  <button
-                    class="quantity-control__number-btn quantity-control__number-btn-increase"
-                  ></button>
-                </div>
-                <button class="buy-block__buy-btn buy-btn">Купить</button>
-              </div>
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__row">
+        <p class="copiryted">
+          © 2023 Adventures in Minecraft - сервис обмена криптовалют
+        </p>
+        <div class="socials">
+          <a class="socials__link" href="#"
+            ><img src="/assets/images/icons/facebook_icon.svg" alt="" /></a
+          ><a class="socials__link" href="#"
+            ><img src="/assets/images/icons/twitter_icon.svg" alt="" /></a
+          ><a class="socials__link" href="#"
+            ><img src="/assets/images/icons/instagram_icon.svg" alt="" /></a
+          ><a class="socials__link" href="#"
+            ><img src="/assets/images/icons/linkedin_icon.svg" alt="" /></a
+          ><a class="socials__link" href="#"
+            ><img src="/assets/images/icons/telegram_icon.svg" alt=""
+          /></a>
         </div>
       </div>
     </div>
-
-    <div class="latest-purchases">
-      <div class="container">
-        <p class="latest-purchases__title">Последние покупки</p>
-        <div class="latest-purchases__list">
-          <a class="latest-purchases__link" href="/pages/product.html">
-            <div class="products-card">
-              <img
-                class="products-card__img"
-                src="../assets/images/product-image/img_product1.png"
-                alt=""
-              />
-              <p class="products-card__title">Название товара</p>
-              <div class="products-card__block">
-                <p class="products-card__price">€15.00</p>
-                <button class="products-card__buy"></button>
-              </div>
-            </div>
-          </a>
-          <a class="latest-purchases__link" href="/pages/product.html">
-            <div class="products-card">
-              <img
-                class="products-card__img"
-                src="../assets/images/product-image/img_product2.png"
-                alt=""
-              />
-              <p class="products-card__title">Название товара</p>
-              <div class="products-card__block">
-                <p class="products-card__price">€15.00</p>
-                <button class="products-card__buy"></button>
-              </div>
-            </div>
-          </a>
-          <a class="latest-purchases__link" href="/pages/product.html">
-            <div class="products-card">
-              <img
-                class="products-card__img"
-                src="../assets/images/product-image/img_product3.png"
-                alt=""
-              />
-              <p class="products-card__title">Название товара</p>
-              <div class="products-card__block">
-                <p class="products-card__price">€15.00</p>
-                <button class="products-card__buy"></button>
-              </div>
-            </div>
-          </a>
-          <a class="latest-purchases__link" href="/pages/product.html">
-            <div class="products-card">
-              <img
-                class="products-card__img"
-                src="../assets/images/product-image/img-product4.png"
-                alt=""
-              />
-              <p class="products-card__title">Название товара</p>
-              <div class="products-card__block">
-                <p class="products-card__price">€15.00</p>
-                <button class="products-card__buy"></button>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <footer class="footer">
-      <div class="footer-head">
-        <div class="container">
-          <div class="footer-head__row">
-            <div class="footer__logo">
-              <a href="/home.html">
-                <img src="../assets/images/logo.svg" alt="" />
-              </a>
-            </div>
-            <div class="footer__nav">
-              <ul class="footer__nav-left">
-                <li class="footer__nav-item">
-                  <a href="/home.html">Магазин</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="/pages/rules.html">Правила</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="/donation-description.html">Описание доната</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="/pages/contact.html">Контакты</a>
-                </li>
-              </ul>
-              <ul class="footer__nav-center">
-                <li class="footer__nav-item">
-                  <a href="/pages/faq.html">FAQ</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="/pages/starting-tips.html">Как начать играть?</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="/pages/donate-privileges.html">Привелегии доната</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="/pages/launcher-download.html">Лаунчера</a>
-                </li>
-              </ul>
-              <ul class="footer__nav-rigt">
-                <li class="footer__nav-item">
-                  <a href="/pages/team.html">Команда</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="/pages/mods.html">Моды</a>
-                </li>
-                <li class="footer__nav-item"><a href="#">Lorem Ipsum</a></li>
-                <li class="footer__nav-item"><a href="#">Lorem Ipsum</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="footer-bottom__row">
-            <p class="copiryted">
-              © 2023 Adventures in Minecraft - сервис обмена криптовалют
-            </p>
-            <div class="socials">
-              <a class="socials__link" href="#"
-                ><img src="/assets/images/icons/facebook_icon.svg" alt="" /></a
-              ><a class="socials__link" href="#"
-                ><img src="/assets/images/icons/twitter_icon.svg" alt="" /></a
-              ><a class="socials__link" href="#"
-                ><img src="/assets/images/icons/instagram_icon.svg" alt="" /></a
-              ><a class="socials__link" href="#"
-                ><img src="/assets/images/icons/linkedin_icon.svg" alt="" /></a
-              ><a class="socials__link" href="#"
-                ><img src="/assets/images/icons/telegram_icon.svg" alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+  </div>
+</footer>
 
     <script src="../js/main.js"></script>
     <script src="../js/product.js"></script>

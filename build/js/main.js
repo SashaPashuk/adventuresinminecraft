@@ -1,0 +1,1 @@
+const menuItems=document.querySelectorAll(".nav-link");menuItems.forEach(function(t){t.getAttribute("href")===window.location.pathname&&t.classList.add("active")});

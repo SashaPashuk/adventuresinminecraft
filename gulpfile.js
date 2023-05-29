@@ -50,24 +50,8 @@ function css() {
 
 function js() {
   return gulp
-    .src([src.js, "!src/js/header.js", "!src/js/footer.js"]) // Вибираємо всі файли js, крім header.js і footer.js
+    .src(src.js)
     .pipe(uglify()) // Мінімізуємо код JavaScript
-    .pipe(gulp.dest(dist.js))
-    .pipe(browserSync.stream());
-}
-
-function headerJs() {
-  return gulp
-    .src("src/js/header.js")
-    .pipe(concat("header.js"))
-    .pipe(gulp.dest(dist.js))
-    .pipe(browserSync.stream());
-}
-
-function footerJs() {
-  return gulp
-    .src("src/js/footer.js")
-    .pipe(concat("footer.js"))
     .pipe(gulp.dest(dist.js))
     .pipe(browserSync.stream());
 }
@@ -109,12 +93,7 @@ function serve() {
   gulp.watch(dist.pages, html);
   gulp.watch(src.css, css);
   gulp.watch(src.js, js);
-  gulp.watch("src/js/header.js", headerJs);
-  gulp.watch("src/js/footer.js", footerJs);
   gulp.watch(src.images, images);
 }
 
-exports.default = gulp.series(
-  gulp.parallel(html, css, js, headerJs, footerJs, images),
-  serve
-);
+exports.default = gulp.series(gulp.parallel(html, css, js, images), serve);
