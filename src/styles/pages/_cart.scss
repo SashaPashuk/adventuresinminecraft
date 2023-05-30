@@ -1,0 +1,167 @@
+.cartPage {
+    &-container {}
+
+    &-title {
+        margin-top: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        color: #FFFFFF;
+
+    }
+
+    &-list {
+        margin-top: 24px;
+        display: grid;
+
+        &-item {
+            padding: 24px 27px;
+            background: #28231F;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            .cart-container {
+                align-self: center;
+                margin-top: 0;
+            }
+
+            &-amount {
+                &-actions {
+                    border: 2px solid #393330;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: fit-content;
+                    padding: 12px 16px;
+
+                    span {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 150%;
+                        color: #FFFFFF !important;
+                    }
+
+                    img {
+                        height: 14px;
+                    }
+                }
+            }
+
+            h3 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                color: #FFFFFF;
+                align-self: center;
+            }
+
+            &>div {
+                margin-top: 38px;
+                display: grid;
+
+                span {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #FFF;
+                    width: max-content;
+
+                    &:first-child {
+                        color: #FFB448;
+                    }
+                }
+
+            }
+
+            &-expiration {
+                &-actions {
+                    display: flex;
+                    margin-top: 0;
+
+                    button {
+                        padding: 2px 6px;
+                        height: fit-content;
+                        background: linear-gradient(180deg, #FFB448 0%, #F8980E 100%);
+                        border-radius: 10px;
+                        border: none;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 150%;
+                        color: #FFFFFF;
+                        width: max-content;
+
+                        &:first-child {
+                            background: #393330;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-summary {
+        margin-top: 31px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        &>.button-shade {
+            width: fit-content;
+        }
+
+        &-payment {
+            display: flex;
+
+            &>div {
+                display: grid;
+
+                &>span {
+                    width: max-content;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+
+                    &:first-child {
+                        font-weight: 500;
+                        color: #FFB448;
+                    }
+                }
+            }
+
+            &>input {
+                width: 272px;
+                height: 48px;
+                padding: 12px 26px;
+                border: 2px solid #393330;
+                border-radius: 10px;
+                background-color: #201a16;
+                margin-right: 8px;
+                margin-left: 25px;
+
+                &::placeholder {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}

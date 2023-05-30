@@ -50,31 +50,17 @@
                 }
 
                 span {
-                    &:first-child {
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 16px;
-                        line-height: 150%;
-                        /* identical to box height, or 24px */
-
-
-                        /* Primary/light orange */
-
-                        color: #FFB448;
-                    }
-
                     font-family: 'Montserrat';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 16px;
                     line-height: 150%;
-                    /* identical to box height, or 24px */
-
-
-                    /* Shade/white */
-
                     color: #FFFFFF;
+
+                    &:first-child {
+                        font-weight: 500;
+                        color: #FFB448;
+                    }
                 }
             }
 

@@ -114,8 +114,50 @@
 </header>
 
     <main>
-      <div class="product-info">
-        <div class="container"><h1 style="color: aliceblue">CART</h1></div>
+      <div class="container cartPage-container">
+        <h2 class="cartPage-title">История заказов</h2>
+        <ul class="cartPage-list">
+          <li class="cartPage-list-item">
+            <img src="../assets/images/product-image/img_product2.png" alt="" />
+            <h3>Название товара</h3>
+            <div class="cartPage-list-item-amount">
+              <span>Количество:</span>
+              <div class="cartPage-list-item-amount-actions">
+                <img src="../assets/images/icons/arrow_left.svg" alt="" />
+                <span>2</span>
+                <img src="../assets/images/icons/arrow_right.svg" alt="" />
+              </div>
+            </div>
+            <div class="cartPage-list-item-expiration">
+              <span>Срок действия покупки:</span>
+              <div class="cartPage-list-item-expiration-actions">
+                <button>30 Дней</button>
+                <button>Навсегда</button>
+              </div>
+            </div>
+            <div>
+              <span>Цена:</span>
+              <span>€15</span>
+            </div>
+            <div class="cart-container">
+              <img
+                class="cart-container-icon"
+                src="../assets/images/icons/delete-icon.svg"
+                alt=""
+              />
+            </div>
+          </li>
+        </ul>
+        <div class="cartPage-summary">
+          <a href="/home.html" class="button-shade"> Продолжить покупку </a>
+          <div class="cartPage-summary-payment">
+            <div><span>Всего к оплате</span><span>€245</span></div>
+            <input type="text" placeholder="Ваш никнейм" />
+            <button id="cart-payment-button" class="button-primary">
+              Оплатить
+            </button>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -186,5 +228,6 @@
 </footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
   </body>
 </html>

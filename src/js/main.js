@@ -30,3 +30,14 @@ const closeModalElement = document.querySelector(
 closeModalElement?.addEventListener("click", () => {
   window.history.back();
 });
+
+// close success payment modal logic
+
+const closeSuccessPaymentModalElement = document.querySelector(
+  ".successPayment-modal-container-close-icon"
+);
+
+closeSuccessPaymentModalElement?.addEventListener("click", () => {
+  console.log("ss");
+  window.history.back();
+});

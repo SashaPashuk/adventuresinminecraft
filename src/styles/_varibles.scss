@@ -26,6 +26,8 @@ $primary-font: "Montserrat", sans-serif;
     border: none;
     border-radius: 10px;
     color: $shade-white;
+    display: flex;
+    align-self: center;
 }
 
 .button-primary {

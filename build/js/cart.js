@@ -1,0 +1,1 @@
+const cartPaymentButtonElement=document.querySelector("#cart-payment-button");cartPaymentButtonElement?.addEventListener("click",t=>{t.preventDefault(),window.location.href="/pages/success-payment.html"});
