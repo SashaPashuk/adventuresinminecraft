@@ -52,6 +52,10 @@ img {
   max-width: 100%;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .cart-container {
   width: 36px;
   height: 36px;
@@ -100,6 +104,7 @@ img {
 @import "pages/team";
 @import "pages/exit-confirmation";
 @import "pages/change-password";
+@import "pages/order-history";
 
 // import css libs
 @import "css-libs/bootstrap-grid.min.css";

@@ -6,7 +6,7 @@
         cursor: pointer;
         position: relative;
 
-        img {
+        svg {
             margin-left: 10px;
         }
     }
@@ -20,6 +20,7 @@
         background: #28231F;
         box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.53);
         border-radius: 10px;
+        padding: 5px;
 
         li {
             padding: 7px 12px;
@@ -43,8 +44,9 @@
 
     &-open {
         .dropdown-selection {
-            img {
+            svg {
                 transform: rotate(180deg);
+                color: #F8980E;
             }
         }
 
