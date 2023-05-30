@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="container">
+  <div class="container-custom">
     <div class="header__row">
       <div class="logo">
         <a class="logo__link" href="/">
@@ -28,6 +28,43 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/pages/contact.html">Контакты</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="button-shade" href="/pages/login.html">Войти</a>
+        </li>
+        <li class="nav-item">
+          <a class="button-primary" href="/pages/registration.html"
+            >Регистрация</a
+          >
+        </li> -->
+        <li class="nav-item">
+          <div class="dropdown">
+            <div class="dropdown-selection">
+              <span>User Name</span>
+              <img src="../assets/images/icons/arrow.svg" alt="" />
+            </div>
+            <ul class="dropdown-container">
+              <li>
+                <a href="/pages/order-history-page.html">История заказов</a>
+              </li>
+              <li>
+                <a href="/pages/change-password-page.html">Изменить пароль</a>
+              </li>
+              <li><a href="/pages/exit-confirmation-page.html">Выйти</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="/pages/cart-page.html">
+            <div class="cart-container">
+              <img
+                class="cart-container-icon"
+                src="../assets/images/icons/cart-icon.svg"
+                alt=""
+              />
+              <span class="cart-container-count">2</span>
+            </div>
+          </a>
         </li>
         <li class="nav-item lang-item">
           <a class="nav-link lang-switch" href="#">RU</a>

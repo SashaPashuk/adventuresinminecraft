@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('../components/head.html')
+  <body>
+    <main>
+      <div class="page-covered-image">
+        <div class="container">
+          <img class="page-auth-logo" src="../assets/images/logo.svg" alt="" />
+          <div class="form_container">
+            <h2 class="form_title">Вход</h2>
+            <form method="post" id="login-form">
+              <input type="text" placeholder="Ваш Email" />
+
+              <label for="password" class="input-container">
+                <input type="text" placeholder="Ваш пароль" name="password" />
+                <span>Забыли пароль?</span>
+              </label>
+              <button
+                type="submit"
+                id="login-button"
+                form="login-form"
+                class="button-primary"
+              >
+                Войти
+              </button>
+            </form>
+            <p class="form_caption">
+              У вас нет аккаунта?
+              <a href="/pages/registration.html">Зарегистрироваться</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../js/main.js"></script>
+    <script src="../js/login.js"></script>
+  </body>
+</html>

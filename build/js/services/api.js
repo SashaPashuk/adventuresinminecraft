@@ -1,0 +1,1 @@
+const API_URL="https://api.adventuresinminecraft.com/api/v1",sendAPIRequest=async(e,t,s,i)=>(await fetch(API_URL+t,{method:e,body:JSON.stringify(s)||void 0})).json();export default{signup:e=>sendAPIRequest("POST","/user/register",e)};

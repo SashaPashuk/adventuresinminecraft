@@ -28,17 +28,21 @@ main {
 button {
   cursor: pointer;
 }
+
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
+
 a,
 a:visited {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 ul,
 li {
   list-style: none;
@@ -48,8 +52,39 @@ img {
   max-width: 100%;
 }
 
+.cart-container {
+  width: 36px;
+  height: 36px;
+  background: #393330;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &-count {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background: linear-gradient(180deg, #FFB448 0%, #F8980E 100%);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    vertical-align: baseline;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+}
+
 // import components styles
 @import "components/header";
+@import "components/form";
+@import "components/dropdown";
 @import "components/footer";
 @import "components/latest-purchases";
 // import pages styles
@@ -63,6 +98,8 @@ img {
 @import "pages/donate-privileges";
 @import "pages/launcher-download";
 @import "pages/team";
+@import "pages/exit-confirmation";
+@import "pages/change-password";
 
 // import css libs
 @import "css-libs/bootstrap-grid.min.css";
