@@ -4,17 +4,18 @@
   <body>
     <main>
       <div class="page-covered-image">
-        <div class="container">
+        <div class="container" id="login-from-container">
           <img class="page-auth-logo" src="../assets/images/logo.svg" alt="" />
           <div class="form_container">
             <h2 class="form_title">Вход</h2>
             <form method="post" id="login-form">
-              <input type="text" placeholder="Ваш Email" />
+              <input type="text" placeholder="Ваш Email" name="username" />
+              <label for="username" class="input-error"></label>
 
-              <label for="password" class="input-container">
-                <input type="text" placeholder="Ваш пароль" name="password" />
-                <span>Забыли пароль?</span>
-              </label>
+              <input type="text" placeholder="Ваш пароль" name="password" />
+              <label for="password" class="input-error"></label>
+              <label for="password" class="input-tip"> Забыли пароль? </label>
+
               <button
                 type="submit"
                 id="login-button"
@@ -30,9 +31,28 @@
             </p>
           </div>
         </div>
+        <div class="container hidden" id="code-from-container">
+          <img class="page-auth-logo" src="../assets/images/logo.svg" alt="" />
+          <div class="form_container">
+            <h2 class="form_title">Вход</h2>
+            <form method="post" id="code-form">
+              <input type="text" placeholder="Ваш код" name="code" />
+              <label for="code" class="input-error"></label>
+
+              <button
+                type="submit"
+                id="code-button"
+                form="code-form"
+                class="button-primary"
+              >
+                Подтвердить вход
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </main>
     <script src="../js/main.js"></script>
-    <script src="../js/login.js"></script>
+    <script type="module" src="../js/login.js"></script>
   </body>
 </html>

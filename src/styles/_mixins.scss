@@ -1,0 +1,9 @@
+@mixin button {
+    padding: 12px 23px;
+    border: none;
+    border-radius: 10px;
+    color: $shade-white;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}

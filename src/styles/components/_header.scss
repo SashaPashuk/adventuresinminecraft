@@ -25,6 +25,7 @@
 
     &-item {
       margin-right: 30px;
+      width: max-content;
       position: relative;
 
       &:last-child {
@@ -34,6 +35,10 @@
       &:hover .nav-link {
         color: $primary-light-orange;
         transition: color 0.3s ease-in-out;
+      }
+
+      &-user-logic {
+        margin-right: 12px;
       }
     }
 

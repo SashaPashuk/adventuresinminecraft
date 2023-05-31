@@ -9,9 +9,15 @@
           <div class="form_container">
             <h2 class="form_title">Регистрация</h2>
             <form method="post" id="signup-form">
-              <input type="text" placeholder="Ваш Email" />
-              <input type="text" placeholder="Пароль" />
-              <input type="text" placeholder="Повторите пароль" />
+              <input type="text" placeholder="Ваш Email" name="email" />
+              <label for="email" class="input-error"></label>
+              <input type="text" placeholder="Пароль" name="password" />
+              <label for="password" class="input-error"></label>
+              <input
+                type="text"
+                placeholder="Повторите пароль"
+                name="samePassword"
+              />
 
               <button
                 type="submit"

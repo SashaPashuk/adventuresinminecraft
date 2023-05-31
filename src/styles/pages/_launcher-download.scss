@@ -1,15 +1,18 @@
 .launcher-download {
   margin: 87px 0 128px 0;
+
   &__row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
   }
+
   &__info {
     max-width: 410px;
     width: 100%;
     margin-right: 55px;
+
     &-title {
       font-weight: 700;
       font-size: 24px;
@@ -17,6 +20,7 @@
       color: $shade-white;
       margin-bottom: 12px;
     }
+
     &-text {
       font-weight: 400;
       font-size: 16px;
@@ -24,12 +28,14 @@
       color: $shade-white;
     }
   }
+
   &__list {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   &__item {
     max-width: 215px;
     width: 100%;
@@ -41,9 +47,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     &:last-child {
       margin-right: 0;
     }
+
     &-img {
       width: 93px;
       height: 93px;
@@ -54,6 +62,7 @@
       align-items: center;
       margin-bottom: 16px;
     }
+
     &-title {
       font-weight: 700;
       font-size: 16px;
@@ -61,6 +70,7 @@
       color: $shade-white;
       margin-bottom: 8px;
     }
+
     &-subtitle {
       font-weight: 400;
       font-size: 16px;
@@ -68,6 +78,7 @@
       color: $shade-white;
       margin-bottom: 16px;
     }
+
     &-button {
       font-weight: 700;
       font-size: 16px;
@@ -79,5 +90,34 @@
       border: none;
       cursor: pointer;
     }
+  }
+}
+
+.cart-container {
+  width: 36px;
+  height: 36px;
+  background: #393330;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &-count {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background: linear-gradient(180deg, #FFB448 0%, #F8980E 100%);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    vertical-align: baseline;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
   }
 }

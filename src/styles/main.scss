@@ -1,4 +1,5 @@
 @import "varibles";
+@import "mixins";
 
 * {
   margin: 0;
@@ -52,37 +53,59 @@ img {
   max-width: 100%;
 }
 
+// overall css classes
+
+.container-custom {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.page-auth-logo {
+  position: absolute;
+  width: 265.69px;
+  height: 101.32px;
+  left: calc(50% - 265.69px/2 - 0.16px);
+  top: calc(50% - 101.32px/2 - 276.34px);
+}
+
+.page-covered-image {
+  background-image: url(../assets/images/login-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 .hidden {
   display: none !important;
 }
 
-.cart-container {
-  width: 36px;
-  height: 36px;
-  background: #393330;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+.button-primary {
+  @include button;
+  background: linear-gradient(180deg, #FFB448 0%, #F8980E 100%);
+}
 
-  &-count {
-    position: absolute;
-    right: -10px;
-    top: -10px;
-    background: linear-gradient(180deg, #FFB448 0%, #F8980E 100%);
-    border-radius: 100%;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    vertical-align: baseline;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 20px;
-    color: #FFFFFF;
-  }
+.button-shade {
+  @include button;
+  background: $shade-grey;
+}
+
+.input-error {
+  color: tomato;
+  font-family: $primary-font;
+  font-size: 12px;
+}
+
+.input-tip {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #F8980E;
 }
 
 // import components styles

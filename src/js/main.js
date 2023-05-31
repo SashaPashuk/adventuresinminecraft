@@ -1,8 +1,28 @@
 const menuItems = document.querySelectorAll(".nav-link");
+const navItemsForUserLogic = document.querySelectorAll(".nav-item-user-logic");
+const navItemForUserDropdownLogic = document.querySelector(
+  ".nav-item-user-dd-logic"
+);
+const usernameElement = document.querySelector("#username");
 
 menuItems.forEach(function (item) {
   if (item.getAttribute("href") === window.location.pathname) {
     item.classList.add("active");
+  }
+});
+
+// user logic
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tokensData = localStorage.getItem("tokens");
+  const usernameData = localStorage.getItem("username");
+
+  if (tokensData) {
+    navItemsForUserLogic?.forEach((item) => item.classList.add("hidden"));
+    usernameElement.innerHTML = usernameData.slice(0, 15) + "...";
+    usernameElement.setAttribute("title", usernameData);
+  } else {
+    navItemForUserDropdownLogic?.classList.add("hidden");
   }
 });
 
@@ -41,3 +61,12 @@ closeSuccessPaymentModalElement?.addEventListener("click", () => {
   console.log("ss");
   window.history.back();
 });
+
+// logout logic
+const logoutButtonElement = document.querySelector("#logout-button");
+
+logoutButtonElement?.addEventListener("click", () => {
+  localStorage.removeItem("tokens");
+});
+
+// load items logic

@@ -1,0 +1,1 @@
+const RU={header:{shop:""}};
