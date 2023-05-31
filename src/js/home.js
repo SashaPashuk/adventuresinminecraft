@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   result.then((data) => {
     renderProductListItems(data.results);
+    addHandlersToProductCartButtons();
   });
 });
 
@@ -43,22 +44,24 @@ const getRandomImage = () => {
 const renderProductListItems = (items) => {
   let html = "";
 
-  items.forEach(({ price, market_name }) => {
+  items.forEach(({ price, market_name, id }) => {
     const item = `
         <a href="/pages/product.html">
             <div class="products-card">
-            <img
-                class="products-card__img"
-                src=${getRandomImage()}
-                alt=""
-            />
-            <p class="products-card__title">${
-              market_name || "Название товара"
-            }</p>
-            <div class="products-card__block">
-                <p class="products-card__price">€${Number(price).toFixed(2)}</p>
-                <button class="products-card__buy"></button>
-            </div>
+              <img
+                  class="products-card__img"
+                  src=${getRandomImage()}
+                  alt=""
+              />
+              <p class="products-card__title">
+                ${market_name || "Название товара"}
+              </p>
+              <div class="products-card__block">
+                  <p class="products-card__price">
+                    €${Number(price).toFixed(2)}
+                  </p>
+                  <button class="products-card__buy" data-id=${id}></button>
+              </div>
             </div>
         </a>
       `;
@@ -67,4 +70,19 @@ const renderProductListItems = (items) => {
   });
 
   productListContainerElements.innerHTML = html;
+};
+
+const addHandlersToProductCartButtons = () => {
+  const productsCartButtonElements = document.querySelectorAll(
+    ".products-card__buy"
+  );
+
+  productsCartButtonElements.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      console.log(button.getAttribute("data-id"));
+      API.addShopItemToCart(button.getAttribute("data-id"));
+    });
+  });
 };

@@ -91,7 +91,7 @@ codeButtonElement?.addEventListener("click", (e) => {
 
     if (data?.refresh && data?.access) {
       localStorage.removeItem("login");
-      localStorage.setItem("username", loginData.username);
+      localStorage.setItem("username", JSON.parse(loginData).username);
       localStorage.setItem("tokens", JSON.stringify(data));
       window.location.href = "/home.html";
     }

@@ -1,5 +1,11 @@
 const API_URL = "https://api.adventuresinminecraft.com/api/v1";
 
+const getTokens = () => {
+  const tokens = localStorage.getItem("tokens");
+
+  return JSON.parse(tokens);
+};
+
 /**
  * Send API request to SERVER API
  * @param {'GET' | 'DELETE' | 'POST' | 'PUT' | 'PATCH'} method
@@ -8,13 +14,18 @@ const API_URL = "https://api.adventuresinminecraft.com/api/v1";
  * @param {RequestInit} [config]
  * @returns
  */
-const sendAPIRequest = async (method, pathname, body, config) => {
+const sendAPIRequest = async ({ method, pathname, body, hasToken }) => {
+  const token = hasToken
+    ? { Authorization: `Bearer ${getTokens().access}` }
+    : {};
+
   return (
     await fetch(API_URL + pathname, {
       method,
-      body: JSON.stringify(body) || undefined,
+      body: (body && JSON.stringify(body)) || undefined,
       headers: {
         "Content-Type": "application/json",
+        ...token,
       },
       redirect: "follow",
     })
@@ -29,7 +40,11 @@ export default {
    * @returns
    */
   signup: (body) => {
-    return sendAPIRequest("POST", "/user/register/", body);
+    return sendAPIRequest({
+      method: "POST",
+      pathname: "/user/register/",
+      body,
+    });
   },
   /**
    * @param {Object} body
@@ -39,7 +54,11 @@ export default {
    * @returns
    */
   login: (body) => {
-    return sendAPIRequest("POST", "/user/login/", body);
+    return sendAPIRequest({
+      method: "POST",
+      pathname: "/user/login/",
+      body,
+    });
   },
   /**
    * @param {Object} body
@@ -47,13 +66,17 @@ export default {
    * @returns
    */
   refreshToken: (body) => {
-    return sendAPIRequest("POST", "/user/refresh_token/", body);
+    return sendAPIRequest({
+      method: "POST",
+      pathname: "/user/refresh_token/",
+      body,
+    });
   },
   /**
    * @returns
    */
   getShopOrderItems: () => {
-    return sendAPIRequest("GET", "/shop/order_items/");
+    return sendAPIRequest({ method: "GET", pathname: "/shop/order_items/" });
   },
   /**
    * @param {String} languageCode
@@ -62,9 +85,20 @@ export default {
    * @returns
    */
   getShopItems: (languageCode, params) => {
-    return sendAPIRequest(
-      "GET",
-      `/shop/${languageCode}/list/?type=${params.type}`
-    );
+    return sendAPIRequest({
+      method: "GET",
+      pathname: `/shop/${languageCode}/list/?type=${params.type}`,
+    });
+  },
+  /**
+   * @param {String} itemId
+   * @returns
+   */
+  addShopItemToCart: (itemId) => {
+    return sendAPIRequest({
+      method: "POST",
+      pathname: `/shop/add_to_basket/${itemId}/`,
+      hasToken: true,
+    });
   },
 };
