@@ -1,0 +1,1 @@
+const ITEM_SUCCESSFULLY_DELETED_FROM_CART="Предмет успешно удален с корзины.",ITEM_SUCCESSFULLY_ADDED_TO_CART="Предмет успешно добавлен в корзину.",ITEM_ALREADY_ADDED_TO_CART="Предмет уже добавлен в корзину.";export{ITEM_SUCCESSFULLY_DELETED_FROM_CART,ITEM_SUCCESSFULLY_ADDED_TO_CART,ITEM_ALREADY_ADDED_TO_CART};

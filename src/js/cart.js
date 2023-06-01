@@ -1,5 +1,10 @@
 import API from "../js/services/api.js";
-import { ITEM_DELETED_FROM_CART_SUCCESS } from "./contants/errors.js";
+import { addToastNotification } from "./utils/helpers.js";
+import {
+  ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR,
+  ITEM_DELETED_FROM_CART_SUCCESS,
+} from "./contants/errors.js";
+import { ITEM_SUCCESSFULLY_DELETED_FROM_CART } from "./contants/notifications.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const result = API.getShopOrderItems();
@@ -90,8 +95,11 @@ const addHandlersToProductIncreaseDecreasButtons = () => {
         item.getAttribute("data-cart-id"),
         { amount: Number(amount.innerHTML) + 1 }
       );
-      console.log("response", response);
-      if (response !== "Amount cannot be changed.") {
+
+      response === ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR &&
+        addToastNotification({ message: response });
+
+      if (response !== ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR) {
         modifyOverallSum(
           "increase",
           Number(item.querySelector(".cartPage-list-item-sum")?.innerHTML || 0)
@@ -104,8 +112,11 @@ const addHandlersToProductIncreaseDecreasButtons = () => {
         item.getAttribute("data-cart-id"),
         { amount: Number(amount.innerHTML) + 1 }
       );
-      console.log("response", response);
-      if (response !== "Amount cannot be changed.") {
+
+      response === ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR &&
+        addToastNotification({ message: response });
+
+      if (response !== ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR) {
         modifyOverallSum(
           "decrease",
           Number(item.querySelector(".cartPage-list-item-sum")?.innerHTML || 0)
@@ -144,6 +155,9 @@ const addHandlersToProductDeleteButtons = () => {
                 0
             )
           );
+          addToastNotification({
+            message: ITEM_SUCCESSFULLY_DELETED_FROM_CART,
+          });
           cartElement?.remove();
           cartContainerCountElement.innerHTML =
             Number(cartContainerCountElement.innerHTML) - 1;

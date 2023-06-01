@@ -108,6 +108,29 @@ img {
   color: #F8980E;
 }
 
+.toast-container {
+  position: fixed;
+  right: 0;
+  top: 3%;
+  color: $shade-white;
+  padding: 14px 16px;
+  background: $shade-grey;
+  font-size: 14px;
+  border-radius: 10px;
+
+  animation: slidein 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 0%;
+  }
+
+  to {
+    margin-right: 2%;
+  }
+}
+
 // import components styles
 @import "components/header";
 @import "components/form";

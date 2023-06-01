@@ -1,5 +1,10 @@
 import API from "../js/services/api.js";
+import { addToastNotification } from "./utils/helpers.js";
 import { ITEM_ADDED_TO_CART_ERROR } from "./contants/errors.js";
+import {
+  ITEM_ALREADY_ADDED_TO_CART,
+  ITEM_SUCCESSFULLY_ADDED_TO_CART,
+} from "./contants/notifications.js";
 
 const ITEM_TYPES = { Survival: "Survival", Anarchy: "Anarchy" };
 
@@ -89,8 +94,12 @@ const addHandlersToProductCartButtons = () => {
       const response = API.addShopItemToCart(button.getAttribute("data-id"));
 
       response.then((data) => {
-        console.log("data", data);
+        data === ITEM_ADDED_TO_CART_ERROR &&
+          addToastNotification({ message: ITEM_ALREADY_ADDED_TO_CART });
+
         if (data !== ITEM_ADDED_TO_CART_ERROR) {
+          addToastNotification({ message: ITEM_SUCCESSFULLY_ADDED_TO_CART });
+
           cartContainerCountElement.innerHTML =
             Number(cartContainerCountElement.innerHTML) + 1;
         }
