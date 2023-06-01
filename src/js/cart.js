@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderCartItems(data);
     addHandlersToProductDeleteButtons();
     addHandlersToProductIncreaseDecreasButtons();
+    addOverallSum(data);
   });
 });
 
@@ -39,7 +40,10 @@ const renderCartItems = (items) => {
           </div>
           <div>
             <span>Цена:</span>
-            <span>€${sum_item_price}</span>
+            <div>
+              <span>€</span>
+              <span class="cartPage-list-item-sum">${sum_item_price}</span>
+            </div>
           </div>
           <div class="cart-container">
             <img
@@ -64,7 +68,13 @@ const cartPaymentButtonElement = document.querySelector("#cart-payment-button");
 
 cartPaymentButtonElement?.addEventListener("click", (e) => {
   e.preventDefault();
-  window.location.href = "/pages/success-payment.html";
+  const sumContainer = document.querySelector(".cartPage-summary-payment-sum");
+  const paymentInputElement = document.querySelector(
+    ".cartPage-summary-payment input"
+  );
+  // console.log("paymentInputElement", paymentInputElement.value);
+  // console.log("sumContainer", sumContainer.innerHTML);
+  // window.location.href = "/pages/success-payment.html";
 });
 
 const addHandlersToProductIncreaseDecreasButtons = () => {
@@ -81,6 +91,12 @@ const addHandlersToProductIncreaseDecreasButtons = () => {
         { amount: Number(amount.innerHTML) + 1 }
       );
       console.log("response", response);
+      if (response !== "Amount cannot be changed.") {
+        modifyOverallSum(
+          "increase",
+          Number(item.querySelector(".cartPage-list-item-sum")?.innerHTML || 0)
+        );
+      }
     });
 
     decrease.addEventListener("click", async () => {
@@ -89,6 +105,12 @@ const addHandlersToProductIncreaseDecreasButtons = () => {
         { amount: Number(amount.innerHTML) + 1 }
       );
       console.log("response", response);
+      if (response !== "Amount cannot be changed.") {
+        modifyOverallSum(
+          "decrease",
+          Number(item.querySelector(".cartPage-list-item-sum")?.innerHTML || 0)
+        );
+      }
     });
   });
 };
@@ -115,6 +137,13 @@ const addHandlersToProductDeleteButtons = () => {
 
       response.then((data) => {
         if (data === ITEM_DELETED_FROM_CART_SUCCESS) {
+          modifyOverallSum(
+            "decrease",
+            Number(
+              cartElement.querySelector(".cartPage-list-item-sum")?.innerHTML ||
+                0
+            )
+          );
           cartElement?.remove();
           cartContainerCountElement.innerHTML =
             Number(cartContainerCountElement.innerHTML) - 1;
@@ -122,4 +151,26 @@ const addHandlersToProductDeleteButtons = () => {
       });
     });
   });
+};
+
+const addOverallSum = (data) => {
+  const sum = data.reduce((acc, cur) => (acc += cur.sum_item_price), 0);
+  const sumContainer = document.querySelector(".cartPage-summary-payment-sum");
+
+  sumContainer.innerHTML = sum;
+};
+
+const modifyOverallSum = (action, amount) => {
+  const sumContainer = document.querySelector(".cartPage-summary-payment-sum");
+
+  switch (action) {
+    case "increase":
+      sumContainer.innerHTML = Number(sumContainer.innerHTML) + amount;
+      break;
+    case "decrease":
+      sumContainer.innerHTML = Number(sumContainer.innerHTML) - amount;
+      break;
+    default:
+      break;
+  }
 };

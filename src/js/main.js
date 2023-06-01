@@ -21,8 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (tokensData) {
     navItemsForUserLogic?.forEach((item) => item.classList.add("hidden"));
-    usernameElement.innerHTML = usernameData.slice(0, 15) + "...";
-    usernameElement.setAttribute("title", usernameData);
+
+    if (usernameElement) {
+      usernameElement.innerHTML = usernameData.slice(0, 15) + "...";
+      usernameElement.setAttribute("title", usernameData);
+    }
   } else {
     navItemForUserDropdownLogic?.classList.add("hidden");
   }
@@ -35,7 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
       ".cart-container-count"
     );
 
-    cartContainerCountElement.innerHTML = data.length || 0;
+    if (cartContainerCountElement) {
+      cartContainerCountElement.innerHTML = data.length || 0;
+    }
   });
 });
 
