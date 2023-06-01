@@ -15,21 +15,63 @@ const getTokens = () => {
  * @returns
  */
 const sendAPIRequest = async ({ method, pathname, body, hasToken }) => {
-  const token = hasToken
-    ? { Authorization: `Bearer ${getTokens().access}` }
-    : {};
+  const makeRequest = async () => {
+    const token = hasToken
+      ? { Authorization: `Bearer ${getTokens().access}` }
+      : {};
 
-  return (
-    await fetch(API_URL + pathname, {
-      method,
-      body: (body && JSON.stringify(body)) || undefined,
+    return (
+      await fetch(API_URL + pathname, {
+        method,
+        body: (body && JSON.stringify(body)) || undefined,
+        headers: {
+          "Content-Type": "application/json",
+          ...token,
+        },
+        redirect: "follow",
+      })
+    ).json();
+  };
+
+  const response = await makeRequest();
+
+  if (response?.code === "token_not_valid") {
+    const response = await sendAPIRequestToRefreshToken();
+    // console.log("response - refresh", response);
+    if (response?.access) {
+      return makeRequest();
+    } else {
+      window.location.href = "/pages/login.html";
+      localStorage.removeItem("tokens");
+    }
+  }
+
+  return response;
+};
+
+const sendAPIRequestToRefreshToken = async () => {
+  const tokens = getTokens();
+
+  const response = (
+    await fetch(API_URL + "/user/refresh_token/", {
+      method: "POST",
+      body: JSON.stringify({ refresh: tokens.refresh }),
       headers: {
         "Content-Type": "application/json",
-        ...token,
+        Authorization: `Bearer ${tokens.access}`,
       },
       redirect: "follow",
     })
   ).json();
+
+  response.then((data) => {
+    localStorage.setItem(
+      "tokens",
+      JSON.stringify({ ...tokens, access: data.access })
+    );
+  });
+
+  return response;
 };
 
 export default {
@@ -61,22 +103,14 @@ export default {
     });
   },
   /**
-   * @param {Object} body
-   * @param {String} body.refresh
-   * @returns
-   */
-  refreshToken: (body) => {
-    return sendAPIRequest({
-      method: "POST",
-      pathname: "/user/refresh_token/",
-      body,
-    });
-  },
-  /**
    * @returns
    */
   getShopOrderItems: () => {
-    return sendAPIRequest({ method: "GET", pathname: "/shop/order_items/" });
+    return sendAPIRequest({
+      method: "GET",
+      pathname: "/shop/order_items/",
+      hasToken: true,
+    });
   },
   /**
    * @param {String} languageCode
@@ -98,6 +132,31 @@ export default {
     return sendAPIRequest({
       method: "POST",
       pathname: `/shop/add_to_basket/${itemId}/`,
+      hasToken: true,
+    });
+  },
+  /**
+   * @param {String} itemId
+   * @returns
+   */
+  deleteShopItemFromCart: (itemId) => {
+    return sendAPIRequest({
+      method: "POST",
+      pathname: `/shop/delete_from_basket/${itemId}/`,
+      hasToken: true,
+    });
+  },
+  /**
+   * @param {String} itemId
+   * @param {Object} body
+   * @param {Number} body.amount
+   * @returns
+   */
+  updateShopItemInCart: (itemId, body) => {
+    return sendAPIRequest({
+      method: "POST",
+      pathname: `/shop/order_item_change/${itemId}/`,
+      body,
       hasToken: true,
     });
   },

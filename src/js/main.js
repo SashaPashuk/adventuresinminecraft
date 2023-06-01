@@ -1,3 +1,5 @@
+import API from "../js/services/api.js";
+
 const menuItems = document.querySelectorAll(".nav-link");
 const navItemsForUserLogic = document.querySelectorAll(".nav-item-user-logic");
 const navItemForUserDropdownLogic = document.querySelector(
@@ -24,6 +26,17 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     navItemForUserDropdownLogic?.classList.add("hidden");
   }
+
+  // show amount of items in cart
+  const orderItemsResult = API.getShopOrderItems();
+
+  orderItemsResult.then((data) => {
+    const cartContainerCountElement = document.querySelector(
+      ".cart-container-count"
+    );
+
+    cartContainerCountElement.innerHTML = data.length || 0;
+  });
 });
 
 // dropdown logic
@@ -58,7 +71,6 @@ const closeSuccessPaymentModalElement = document.querySelector(
 );
 
 closeSuccessPaymentModalElement?.addEventListener("click", () => {
-  console.log("ss");
   window.history.back();
 });
 

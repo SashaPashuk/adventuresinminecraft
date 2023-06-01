@@ -1,4 +1,5 @@
 import API from "../js/services/api.js";
+import { ITEM_ADDED_TO_CART_ERROR } from "./contants/errors.js";
 
 const ITEM_TYPES = { Survival: "Survival", Anarchy: "Anarchy" };
 
@@ -76,13 +77,24 @@ const addHandlersToProductCartButtons = () => {
   const productsCartButtonElements = document.querySelectorAll(
     ".products-card__buy"
   );
+  const cartContainerCountElement = document.querySelector(
+    ".cart-container-count"
+  );
 
   productsCartButtonElements.forEach((button) => {
     button.addEventListener("click", (e) => {
       e.stopPropagation();
       e.preventDefault();
-      console.log(button.getAttribute("data-id"));
-      API.addShopItemToCart(button.getAttribute("data-id"));
+
+      const response = API.addShopItemToCart(button.getAttribute("data-id"));
+
+      response.then((data) => {
+        console.log("data", data);
+        if (data !== ITEM_ADDED_TO_CART_ERROR) {
+          cartContainerCountElement.innerHTML =
+            Number(cartContainerCountElement.innerHTML) + 1;
+        }
+      });
     });
   });
 };
