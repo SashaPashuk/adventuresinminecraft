@@ -1,10 +1,11 @@
+import API from "./services/api.js";
+
 import {
   FIELD_NOT_EMPTY_ERROR,
   ACTIVE_CODE_INCORRECT,
   EMAIL_CODE_MIN_CHARACTERS_ERROR,
   EMAIL_CODE_MAX_CHARACTERS_ERROR,
 } from "./contants/errors.js";
-import API from "./services/api.js";
 
 const loginButtonElement = document.querySelector("#login-button");
 const loginFormElement = document.querySelector("#login-form");
@@ -57,7 +58,7 @@ loginButtonElement?.addEventListener("click", (e) => {
       localStorage.removeItem("login");
       localStorage.setItem("username", formData.username);
       localStorage.setItem("tokens", JSON.stringify(data));
-      window.location.href = "/home.html";
+      window.location.href = "/home";
     }
   });
 });
@@ -93,7 +94,7 @@ codeButtonElement?.addEventListener("click", (e) => {
       localStorage.removeItem("login");
       localStorage.setItem("username", JSON.parse(loginData).username);
       localStorage.setItem("tokens", JSON.stringify(data));
-      window.location.href = "/home.html";
+      window.location.href = "/home";
     }
   });
 });

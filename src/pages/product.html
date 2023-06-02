@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
-    <title>Adventuresin Minecraft</title>
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  @@include('../components/head.html')
   <body>
     @@include('../components/header.html')
     <main>
@@ -43,40 +30,7 @@
                 <button class="slider__button slider__button-next"></button>
               </div>
             </div>
-            <div class="product-info__content content">
-              <h2 class="content__title">Назва товару</h2>
-              <h4 class="content__subtitle">Описание товара:</h4>
-              <p class="content__text">
-                Lorem Ipsum являється стандартною "рибою" для текстів на
-                латиниці з початку XVI століття. Тоді невідомий друкар створив
-                велику колекцію розмірів та форм шрифтів, використовуючи Lorem
-                Ipsum для друку зразків. Lorem Ipsum не тільки успішно пережив
-                без помітних змін п'ять століть, але й перейшов в електронний
-                дизайн.
-              </p>
-              <div class="content__price-block price-block">
-                <span class="price-block__title">Цeна:</span>
-                <span class="price-block__price" id="product_price">€15</span>
-              </div>
-
-              <div class="content__buy-block buy-block">
-                <p class="buy-block__quantity-title quantity-title">
-                  Кількість:
-                </p>
-                <div class="buy-block__quantity-control quantity-control">
-                  <div class="quantity-control__number">
-                    <button
-                      class="quantity-control__number-btn quantity-control__number-btn-reduce"
-                    ></button>
-                    <span class="quantity-control__number-title">1</span>
-                    <button
-                      class="quantity-control__number-btn quantity-control__number-btn-increase"
-                    ></button>
-                  </div>
-                  <button class="buy-block__buy-btn buy-btn">Купить</button>
-                </div>
-              </div>
-            </div>
+            <div class="product-info__content content"></div>
           </div>
         </div>
       </div>
@@ -84,6 +38,6 @@
     @@include('../components/latest-purchases.html')
     @@include('../components/footer.html')
     <script type="module" src="../js/main.js"></script>
-    <script src="../js/product.js"></script>
+    <script type="module" src="../js/product.js"></script>
   </body>
 </html>

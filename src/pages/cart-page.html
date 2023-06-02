@@ -10,14 +10,29 @@
         <div class="cartPage-summary">
           <a href="/home.html" class="button-shade">Продолжить покупку</a>
           <div class="cartPage-summary-payment">
-            <div>
+            <div class="cartPage-summary-payment-overall">
               <span>Всего к оплате</span>
               <div class="cartPage-summary-payment-sumContainer">
                 <span>€</span>
                 <span class="cartPage-summary-payment-sum">0</span>
               </div>
             </div>
-            <input type="text" placeholder="Ваш никнейм" />
+            <div>
+              <input
+                id="cart-payment-nickname"
+                type="text"
+                placeholder="Ваш никнейм"
+                name="nickname"
+              />
+              <label for="nickname" class="input-error"></label>
+            </div>
+            <div class="dropdown-custom">
+              <div class="dropdown-custom__selection open">
+                <span id="dropdown-selected-item">Сервер</span>
+                <img src="../assets/images/icons/arrow_down.svg" alt="" />
+              </div>
+              <ul class="dropdown-custom__container hidden"></ul>
+            </div>
             <button id="cart-payment-button" class="button-primary">
               Оплатить
             </button>

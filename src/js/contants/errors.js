@@ -18,6 +18,7 @@ export const EMAIL_CODE_MAX_CHARACTERS_ERROR =
   "Ensure this field has no more than 6 characters.";
 
 export const ITEM_ADDED_TO_CART_ERROR = "Item already added to busket.";
+export const ITEM_ADDED_TO_CART_SUCCESS = "Item has been added to basket.";
 export const ITEM_DELETED_FROM_CART_SUCCESS =
   "Item has been removed from the basket.";
 

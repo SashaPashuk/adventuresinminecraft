@@ -95,7 +95,7 @@
 
             }
 
-            &-expiration {
+            &-usage {
                 &-actions {
                     display: flex;
                     margin-top: 0;
@@ -103,7 +103,6 @@
                     button {
                         padding: 2px 6px;
                         height: fit-content;
-                        background: linear-gradient(180deg, #FFB448 0%, #F8980E 100%);
                         border-radius: 10px;
                         border: none;
                         font-family: 'Montserrat';
@@ -111,13 +110,18 @@
                         font-weight: 500;
                         font-size: 16px;
                         line-height: 150%;
-                        color: #FFFFFF;
                         width: max-content;
+                        background: #393330;
+                        color: #FFFFFF;
 
                         &:first-child {
-                            background: #393330;
                             margin-right: 10px;
                         }
+
+                    }
+
+                    .selected {
+                        background: linear-gradient(180deg, #FFB448 0%, #F8980E 100%);
                     }
                 }
             }
@@ -131,10 +135,21 @@
 
         &>.button-shade {
             width: fit-content;
+            align-self: flex-start;
         }
 
         &-payment {
             display: flex;
+            align-self: flex-start;
+
+            .button-primary {
+                align-self: flex-start;
+                margin-left: 10px;
+            }
+
+            &-overall {
+                margin-right: 25px;
+            }
 
             &-sumContainer {
                 width: max-content;
@@ -147,7 +162,9 @@
             }
 
             &>div {
-                display: grid;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
 
                 &>span {
                     width: max-content;
@@ -165,7 +182,7 @@
                 }
             }
 
-            &>input {
+            &>div>input {
                 width: 272px;
                 height: 48px;
                 padding: 12px 26px;
@@ -173,7 +190,6 @@
                 border-radius: 10px;
                 background-color: #201a16;
                 margin-right: 8px;
-                margin-left: 25px;
                 color: #FFFFFF;
 
                 &::placeholder {

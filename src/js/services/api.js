@@ -1,5 +1,7 @@
 const API_URL = "https://api.adventuresinminecraft.com/api/v1";
 
+import * as Types from "../types/types.js";
+
 const getTokens = () => {
   const tokens = localStorage.getItem("tokens");
 
@@ -17,7 +19,9 @@ const getTokens = () => {
 const sendAPIRequest = async ({ method, pathname, body, hasToken }) => {
   const makeRequest = async () => {
     const token = hasToken
-      ? { Authorization: `Bearer ${getTokens().access}` }
+      ? getTokens()?.access
+        ? { Authorization: `Bearer ${getTokens().access}` }
+        : {}
       : {};
 
     return (
@@ -79,7 +83,7 @@ export default {
    * @param {Object} body
    * @param {String} body.password
    * @param {String} body.email
-   * @returns
+   * @returns {Promise}
    */
   signup: (body) => {
     return sendAPIRequest({
@@ -93,7 +97,7 @@ export default {
    * @param {String} body.email_code
    * @param {String} body.username
    * @param {String} body.password
-   * @returns
+   * @returns {Promise}
    */
   login: (body) => {
     return sendAPIRequest({
@@ -102,8 +106,19 @@ export default {
       body,
     });
   },
+
   /**
-   * @returns
+   * @returns {Promise}
+   */
+  getShopOrdersRequest: () => {
+    return sendAPIRequest({
+      method: "GET",
+      pathname: "/shop/orders/",
+      hasToken: true,
+    });
+  },
+  /**
+   * @returns {Promise}
    */
   getShopOrderItems: () => {
     return sendAPIRequest({
@@ -116,7 +131,7 @@ export default {
    * @param {String} languageCode
    * @param {Object} params
    * @param {String} params.type
-   * @returns
+   * @returns {Promise}
    */
   getShopItems: (languageCode, params) => {
     return sendAPIRequest({
@@ -126,18 +141,23 @@ export default {
   },
   /**
    * @param {String} itemId
+   * @param {Object} body
+   * @param {number} body.amount
+   * @param {string} body.item_id
+   * @param {string} body.time_to_use 30 Days | Forever
    * @returns
    */
-  addShopItemToCart: (itemId) => {
+  addShopItemToCart: (body) => {
     return sendAPIRequest({
       method: "POST",
-      pathname: `/shop/add_to_basket/${itemId}/`,
+      pathname: `/shop/add_to_basket/`,
+      body,
       hasToken: true,
     });
   },
   /**
    * @param {String} itemId
-   * @returns
+   * @returns {Promise}
    */
   deleteShopItemFromCart: (itemId) => {
     return sendAPIRequest({
@@ -150,13 +170,41 @@ export default {
    * @param {String} itemId
    * @param {Object} body
    * @param {Number} body.amount
-   * @returns
+   * @returns {Promise}
    */
   updateShopItemInCart: (itemId, body) => {
     return sendAPIRequest({
       method: "POST",
       pathname: `/shop/order_item_change/${itemId}/`,
       body,
+      hasToken: true,
+    });
+  },
+  /**
+   * @promise {Types.IServer[]}
+   */
+  getShopServersRequest: () => {
+    return sendAPIRequest({
+      method: "GET",
+      pathname: `/shop/servers/`,
+      hasToken: true,
+    });
+  },
+
+  /**
+   * @param {Object} body
+   * @param {String} body.user_nickname
+   * @param {String} body.server
+   * @returns {Promise}
+   */
+  createPaymentRequest: (body) => {
+    return sendAPIRequest({
+      method: "POST",
+      pathname: `/payment/create_payment/`,
+      body: {
+        ...body,
+        return_url: "http://localhost:3000/pages/success-payment",
+      },
       hasToken: true,
     });
   },

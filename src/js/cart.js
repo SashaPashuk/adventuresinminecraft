@@ -1,88 +1,109 @@
 import API from "../js/services/api.js";
-import { addToastNotification } from "./utils/helpers.js";
 import {
+  addToastNotification,
+  renderCartItemsHTML,
+  renderServerDropdownItemsHTML,
+} from "./utils/helpers.js";
+import {
+  FIELD_NOT_EMPTY_ERROR,
   ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR,
   ITEM_DELETED_FROM_CART_SUCCESS,
 } from "./contants/errors.js";
 import { ITEM_SUCCESSFULLY_DELETED_FROM_CART } from "./contants/notifications.js";
+import { SHOP_ITEM_TIME_USAGE } from "./contants/constants.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-  const result = API.getShopOrderItems();
+// Event Listeners
 
-  result.then((data) => {
-    renderCartItems(data);
-    addHandlersToProductDeleteButtons();
-    addHandlersToProductIncreaseDecreasButtons();
-    addOverallSum(data);
-  });
+document.addEventListener("DOMContentLoaded", async () => {
+  const shopOrderItemsResponse = await API.getShopOrderItems();
+  const shopServersResponse = await API.getShopServersRequest();
+
+  renderCartItemsHTML(shopOrderItemsResponse);
+  renderOverallPaymentSumHTML(shopOrderItemsResponse);
+  renderServerDropdownItemsHTML(shopServersResponse);
+
+  addProductDeleteButtonEventListener();
+  addProductIncreaseDecreasButtonsEventListener();
+  addCartPaymentButtonEventListener();
+  addServersDropdownEventListener();
+  // TODO: unsupported on BE side, only show now
+  // addOrderItemsUsageButtonsEventListener();
 });
 
-// render HTML
-const cartListContainerElements = document.querySelector(".cartPage-list");
+const addCartPaymentButtonEventListener = () => {
+  const cartPaymentButtonElement = document.querySelector(
+    "#cart-payment-button"
+  );
 
-const renderCartItems = (items) => {
-  let html = "";
+  cartPaymentButtonElement?.addEventListener("click", async (e) => {
+    e.preventDefault();
 
-  items?.forEach(({ product_id, amount, sum_item_price }) => {
-    const item = `
-        <li class="cartPage-list-item" data-cart-id=${product_id}>
-          <img src="../assets/images/product-image/img_product2.png" alt="" />
-          <h3>Название товара</h3>
-          <div class="cartPage-list-item-amount">
-            <span>Количество:</span>
-            <div class="cartPage-list-item-amount-actions">
-              <img src="../assets/images/icons/arrow_left.svg" alt="" class='cart-item-decrease-button' />
-              <span class="cart-item-amount">${amount}</span>
-              <img src="../assets/images/icons/arrow_right.svg" alt="" class='cart-item-increase-button' />
-            </div>
-          </div>
-          <div class="cartPage-list-item-expiration">
-            <span>Срок действия покупки:</span>
-            <div class="cartPage-list-item-expiration-actions">
-              <button>30 Дней</button>
-              <button>Навсегда</button>
-            </div>
-          </div>
-          <div>
-            <span>Цена:</span>
-            <div>
-              <span>€</span>
-              <span class="cartPage-list-item-sum">${sum_item_price}</span>
-            </div>
-          </div>
-          <div class="cart-container">
-            <img
-              class="cart-container-icon cart-item-delete-button"
-              src="../assets/images/icons/delete-icon.svg"
-              data-id=${product_id}
-              alt=""
-            />
-          </div>
-      </li>
-    `;
+    const paymentSummaryElement = document.querySelector(
+      ".cartPage-summary-payment"
+    );
+    const cartPaymentNicknameElement = document.querySelector(
+      "#cart-payment-nickname"
+    );
+    const selectedServer = document.querySelector("#dropdown-selected-item");
 
-    html += item;
+    const createdPaymentResponse = await API.createPaymentRequest({
+      user_nickname: cartPaymentNicknameElement.value,
+      server: selectedServer.innerHTML,
+    });
+
+    const nicknameErrors =
+      (createdPaymentResponse?.user_nickname &&
+        createdPaymentResponse?.user_nickname[0]) ||
+      "";
+
+    if ([FIELD_NOT_EMPTY_ERROR].includes(nicknameErrors)) {
+      const labelForNicknameError = paymentSummaryElement?.querySelector(
+        'label[for="nickname"]'
+      );
+      labelForNicknameError.innerHTML = "Enter valid nickname.";
+    }
+
+    if (createdPaymentResponse?.redirect_url) {
+      window.open(createdPaymentResponse.redirect_url, "_blank");
+      window.location.reload();
+    }
   });
-
-  cartListContainerElements.innerHTML = html;
 };
 
-// add event listeners
-
-const cartPaymentButtonElement = document.querySelector("#cart-payment-button");
-
-cartPaymentButtonElement?.addEventListener("click", (e) => {
-  e.preventDefault();
-  const sumContainer = document.querySelector(".cartPage-summary-payment-sum");
-  const paymentInputElement = document.querySelector(
-    ".cartPage-summary-payment input"
+const addServersDropdownEventListener = () => {
+  const dropdownServersSelectionElement = document.querySelector(
+    ".dropdown-custom__selection"
   );
-  // console.log("paymentInputElement", paymentInputElement.value);
-  // console.log("sumContainer", sumContainer.innerHTML);
-  // window.location.href = "/pages/success-payment.html";
-});
+  const dropdownServersContainerElement = document.querySelector(
+    ".dropdown-custom__container"
+  );
 
-const addHandlersToProductIncreaseDecreasButtons = () => {
+  dropdownServersSelectionElement?.addEventListener("click", () => {
+    dropdownServersContainerElement.classList.toggle("hidden");
+    dropdownServersSelectionElement.classList.toggle(
+      "dropdown-custom__selection-open"
+    );
+
+    const dropdownServersContainerItemsElements = document.querySelectorAll(
+      ".dropdown-custom__container__item"
+    );
+
+    const addDropdownHandlers = () => {
+      const selected = dropdownServersSelectionElement?.querySelector("span");
+
+      dropdownServersContainerItemsElements?.forEach((item) => {
+        item.addEventListener("click", () => {
+          selected.innerHTML = item.innerHTML;
+          dropdownServersContainerElement.classList.add("hidden");
+        });
+      });
+    };
+
+    addDropdownHandlers();
+  });
+};
+
+const addProductIncreaseDecreasButtonsEventListener = () => {
   const productsCartElements = document.querySelectorAll(".cartPage-list-item");
 
   productsCartElements?.forEach((item) => {
@@ -100,7 +121,7 @@ const addHandlersToProductIncreaseDecreasButtons = () => {
         addToastNotification({ message: response });
 
       if (response !== ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR) {
-        modifyOverallSum(
+        modifyOverallPaymentSumHTML(
           "increase",
           Number(item.querySelector(".cartPage-list-item-sum")?.innerHTML || 0)
         );
@@ -117,7 +138,7 @@ const addHandlersToProductIncreaseDecreasButtons = () => {
         addToastNotification({ message: response });
 
       if (response !== ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR) {
-        modifyOverallSum(
+        modifyOverallPaymentSumHTML(
           "decrease",
           Number(item.querySelector(".cartPage-list-item-sum")?.innerHTML || 0)
         );
@@ -126,7 +147,7 @@ const addHandlersToProductIncreaseDecreasButtons = () => {
   });
 };
 
-const addHandlersToProductDeleteButtons = () => {
+const addProductDeleteButtonEventListener = () => {
   const productsCartButtonElements = document.querySelectorAll(
     ".cart-item-delete-button"
   );
@@ -148,7 +169,7 @@ const addHandlersToProductDeleteButtons = () => {
 
       response.then((data) => {
         if (data === ITEM_DELETED_FROM_CART_SUCCESS) {
-          modifyOverallSum(
+          modifyOverallPaymentSumHTML(
             "decrease",
             Number(
               cartElement.querySelector(".cartPage-list-item-sum")?.innerHTML ||
@@ -167,14 +188,44 @@ const addHandlersToProductDeleteButtons = () => {
   });
 };
 
-const addOverallSum = (data) => {
+const addOrderItemsUsageButtonsEventListener = (items) => {
+  const productsCartElements = document.querySelectorAll(".cartPage-list-item");
+
+  productsCartElements?.forEach((item) => {
+    const buttonsContainer = item.querySelector(
+      ".cartPage-list-item-usage-actions"
+    );
+    const buttons = item.querySelectorAll(
+      ".cartPage-list-item-usage-actions button"
+    );
+    const usageDaysButton = buttonsContainer.querySelector("#item-usage-days");
+    const usageForeverButton = buttonsContainer.querySelector(
+      "#item-usage-forever"
+    );
+
+    buttons?.forEach((button) => {
+      button.addEventListener("click", () => {
+        if (button.getAttribute("data-type") === "30") {
+          usageDaysButton.classList.add("selected");
+          usageForeverButton.classList.remove("selected");
+        } else {
+          usageDaysButton.classList.remove("selected");
+          usageForeverButton.classList.add("selected");
+        }
+      });
+    });
+  });
+};
+// Render HTML Functions
+
+const renderOverallPaymentSumHTML = (data) => {
   const sum = data.reduce((acc, cur) => (acc += cur.sum_item_price), 0);
   const sumContainer = document.querySelector(".cartPage-summary-payment-sum");
 
   sumContainer.innerHTML = sum;
 };
 
-const modifyOverallSum = (action, amount) => {
+const modifyOverallPaymentSumHTML = (action, amount) => {
   const sumContainer = document.querySelector(".cartPage-summary-payment-sum");
 
   switch (action) {
