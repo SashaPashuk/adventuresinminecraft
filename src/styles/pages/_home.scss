@@ -81,7 +81,7 @@
       input[type="radio"] {
         position: absolute;
         opacity: 0;
-        &:checked + span {
+        &.checked + span {
           background: $primary-gradient;
         }
       }

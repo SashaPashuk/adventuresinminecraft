@@ -62,7 +62,7 @@ const addRepeatOrderEventListener = (shopOrdersResponse) => {
           time_to_use: orderItem.time_to_use,
           item_id: orderItem.product_id,
         });
-        console.log(result);
+
         result === ITEM_ADDED_TO_CART_ERROR &&
           addToastNotification({
             message: ITEM_ALREADY_ADDED_TO_CART_WITH_NAME(

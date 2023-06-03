@@ -28,12 +28,34 @@ export const addToastNotification = ({ message, duration = 2000 }) => {
 
 // Render HTML Functions
 
-export const renderShopItemInfoHTML = ({ description, price, market_name }) => {
+/**
+ * @param {string} shopItemName
+ * @param {string} shopItemType
+ * @returns {HTMLImageElement}
+ */
+export const renderShopItemImgHTML = ({
+  shopItemName,
+  shopItemType,
+  imageClass,
+}) => {
+  const classAttribute = imageClass ? `class="${imageClass}"` : "";
+
+  return `<img ${classAttribute} src="../assets/images/products/${shopItemType}/${shopItemName}.png" alt=${shopItemName}-image />`;
+};
+
+export const renderShopItemInfoHTML = ({
+  description,
+  price,
+  market_name,
+  type,
+}) => {
+  // TODO: remove getImageNameTemporarySolution and leave just market_name field from DB shop item
+  const shopItemName = getImageNameTemporarySolution(type.toLowerCase());
+
   const productInfoContainerElement = document.querySelector(
     ".product-info__content"
   );
-
-  const item = `
+  const itemInfo = `
     <h2 class="content__title">${market_name}</h2>
     <h4 class="content__subtitle">Описание товара:</h4>
     <p class="content__text">${description}</p>
@@ -63,7 +85,19 @@ export const renderShopItemInfoHTML = ({ description, price, market_name }) => {
     </div>
   `;
 
-  productInfoContainerElement.innerHTML = item;
+  const productSliderContainerElement = document.querySelector(
+    ".product-info__slider"
+  );
+  const itemSlider = `
+    ${renderShopItemImgHTML({
+      shopItemName,
+      shopItemType: type.toLowerCase(),
+      imageClass: "slider__main-img",
+    })}
+  `;
+
+  productSliderContainerElement.innerHTML = itemSlider;
+  productInfoContainerElement.innerHTML = itemInfo;
 };
 
 export const renderCartItemsHTML = (items) => {
@@ -73,7 +107,6 @@ export const renderCartItemsHTML = (items) => {
   items?.forEach(({ product_id, amount, price, time_to_use }) => {
     const item = `
         <li class="cartPage-list-item" data-cart-id=${product_id}>
-          <img src="../assets/images/product-image/img_product2.png" alt="" />
           <h3>Название товара</h3>
           <div class="cartPage-list-item-amount">
             <span>Количество:</span>
@@ -184,13 +217,7 @@ export const renderOrderHistoryItemsHTML = (data) => {
           ${order_item.map(({ amount, price, sum_item_price, time_to_use }) => {
             return `
               <li class="orderHistory-orders-order-details-list-item">
-                <div>
-                  <img
-                    src="../assets/images/product-image/img_product2.png"
-                    alt=""
-                  />
-                  <span>Название товара</span>
-                </div>
+                <h3>Название товара</h3>
                 <div>
                   <span>Срок действия покупки:</span>
                   <span>${time_to_use}</span>
@@ -219,4 +246,58 @@ export const renderOrderHistoryItemsHTML = (data) => {
   });
 
   ordersHistoryContainerElements.innerHTML = html;
+};
+
+export const renderShopItemsListHTML = (items) => {
+  const productListContainerElements =
+    document.querySelector(".products__list");
+
+  let html = "";
+
+  items?.results?.forEach(({ price, market_name, id, type }) => {
+    // TODO: remove getImageNameTemporarySolution and leave just market_name field from DB shop item
+    const shopItemName = getImageNameTemporarySolution(type.toLowerCase());
+    const item = `
+          <div class="products-card">
+            ${renderShopItemImgHTML({
+              shopItemName,
+              shopItemType: type.toLowerCase(),
+            })}
+            <p class="products-card__title">
+              ${market_name || `${shopItemName} (Temporary)`}
+            </p>
+            <div class="products-card__block">
+                <p class="products-card__price">
+                  €${Number(price).toFixed(2)}
+                </p>
+                <button class="products-card__buy" data-id=${id}></button>
+            </div>
+          </div>
+      `;
+
+    html += item;
+  });
+
+  productListContainerElements.innerHTML = html;
+};
+
+// TODO: Delete when database will be correctly fullfield
+const getImageNameTemporarySolution = (type) => {
+  const imageNames = {
+    survival: ["ADMIN", "BOG", "BOSS", "CREATIVE", "GHOST", "CREATOR"],
+    anarchy: [
+      "Ihor",
+      "Elder",
+      "Legend",
+      "Mega",
+      "Paladin",
+      "Poseidon",
+      "Universal",
+    ],
+  };
+
+  const randomNum =
+    Math.floor(Math.random() * (imageNames[type].length - 1)) + 1;
+
+  return imageNames[type][randomNum];
 };
