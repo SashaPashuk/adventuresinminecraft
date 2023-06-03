@@ -20,12 +20,19 @@
       <div class="first-screen">
         <div class="container">
           <div class="first-screen__row">
-            <h1 class="first-screen__title">Открой для себя мир Minecraft</h1>
-            <h2 class="first-screen__subtitle">
+            <h1 data-i18n-key="home_title" class="first-screen__title">
+              Открой для себя мир Minecraft
+            </h1>
+            <h2 data-i18n-key="home_subtitle" class="first-screen__subtitle">
               Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
               начала XVI века
             </h2>
-            <button class="first-screen__button">Играть сейчас</button>
+            <button
+              data-i18n-key="home_button_play_now"
+              class="first-screen__button"
+            >
+              Играть сейчас
+            </button>
           </div>
         </div>
       </div>
@@ -39,7 +46,7 @@
                 name="svitch_product_group"
                 value="Survival"
               />
-              <span>Выживание</span>
+              <span data-i18n-key="home_survival">Выживание</span>
             </label>
             <label class="products-svitch__button">
               <input
@@ -48,16 +55,17 @@
                 name="svitch_product_group"
                 value="Anarchy"
               />
-              <span>Анархия</span>
+              <span data-i18n-key="home_anarchy">Анархия</span>
             </label>
           </div>
           <div class="products__list"></div>
         </div>
       </div>
-      @@include('components/latest-purchases.html')
+      <!-- @@include('components/latest-purchases.html') -->
     </main>
     @@include('components/footer.html')
     <script type="module" src="js/main.js"></script>
     <script type="module" src="js/home.js"></script>
+    <script type="module" src="js/services/languageLocalization.js"></script>
   </body>
 </html>

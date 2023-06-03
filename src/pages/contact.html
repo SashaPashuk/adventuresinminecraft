@@ -26,23 +26,33 @@
               alt=""
             />
             <div class="contact__info info">
-              <h3 class="info__title">Контакты</h3>
-              <p class="info__subtitle">
+              <h3 data-i18n-key="contact-page__title" class="info__title">
+                Контакты
+              </h3>
+              <p data-i18n-key="contact-page__text" class="info__subtitle">
                 Свяжитесь с нами если у вас остались вопросы:
               </p>
               <div class="info__block">
                 <div class="info__block-img">
                   <img src="../assets/images/icons/email_icon.svg" alt="" />
                 </div>
-                <a href="mailto:adventuresinminecraft@gmail.com"
-                  >adventuresinminecraft@gmail.com</a
+                <a
+                  data-i18n-key="contact-page__email"
+                  href="mailto:adventuresinminecraft@gmail.com"
                 >
+                  adventuresinminecraft@gmail.com
+                </a>
               </div>
               <div class="info__block">
                 <div class="info__block-img">
                   <img src="../assets/images/icons/telegram_icon.svg" alt="" />
                 </div>
-                <a href="https://t.me/myusername">Telegram</a>
+                <a
+                  data-i18n-key="contact-page__telegram"
+                  href="https://t.me/myusername"
+                >
+                  Telegram
+                </a>
               </div>
             </div>
           </div>
@@ -51,5 +61,6 @@
     </main>
     @@include('../components/footer.html')
     <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/services/languageLocalization.js"></script>
   </body>
 </html>

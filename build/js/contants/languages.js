@@ -1,1 +1,1 @@
-const RU={header:{shop:""}};
+import{DEFAULT_LANGUAGE}from"./constants.js";let de=localStorage.getItem("language")||DEFAULT_LANGUAGE;window.addEventListener("storage",function(e){console.log("e",e),de=e.oldValue},!1),console.log(de);const RU={header:{shop:"Магазин"}},EN={header:{shop:"Shop"}},getContent=e=>{};

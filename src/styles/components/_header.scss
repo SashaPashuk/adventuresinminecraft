@@ -4,7 +4,7 @@
   &__row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 8px 0 1px;
     border-bottom: 1px solid $shade-grey;
   }
@@ -49,6 +49,7 @@
 
       &.active {
         color: $primary-light-orange;
+
         &:before {
           content: "";
           position: absolute;
@@ -62,40 +63,44 @@
     }
   }
 
-  // .lang-switch {
-  //   padding-right: 20px;
-  //   position: relative;
-  //   &:before {
-  //     content: "";
-  //     width: 12px;
-  //     height: 7px;
-  //     position: absolute;
-  //     top: 50%;
-  //     transform: translateY(-50%);
-  //     right: 0;
-  //     background-image: url("../../assets/images/icons/arrow_down.svg");
-  //     background-repeat: no-repeat;
-  //     background-position: center center;
-  //   }
-  // }
-  // .lang-popup {
-  //   display: none;
-  //   position: absolute;
-  //   top: 18px;
-  //   left: -10px;
-  //   background-color: #393330;
-  //   border-radius: 10px;
-  //   padding: 10px;
-  // }
-  // .lang-item:hover .lang-popup,
-  // .lang-popup:hover {
-  //   display: block;
-  // }
-  // .lang-popup__item {
-  //   color: #fff;
-  //   padding: 5px 10px;
-  //   &:hover {
-  //     color: #ffb448;
-  //   }
-  // }
+  .lang-switch {
+    padding-right: 20px;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 12px;
+      height: 7px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      background-image: url("../../assets/images/icons/arrow_down.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
+
+
+.lang-item {
+  display: flex;
+  align-items: center;
+}
+
+.locale-switcher {
+  // A reset of styles, including removing the default dropdown arrow
+  appearance: none;
+  // Additional resets for further consistency
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+  color: #fff;
 }

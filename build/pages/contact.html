@@ -25,30 +25,60 @@
       </div>
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link" href="/home">Магазин</a>
+          <a data-i18n-key="header_shop" class="nav-link" href="/home"
+            >Магазин</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/rules">Правила</a>
+          <a data-i18n-key="header_rules" class="nav-link" href="/pages/rules"
+            >Правила</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/donation-description"
+          <a
+            data-i18n-key="header_donate_description"
+            class="nav-link"
+            href="/pages/donation-description"
             >Описание доната</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/faq">FAQ</a>
+          <a data-i18n-key="header_faq" class="nav-link" href="/pages/faq"
+            >FAQ</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/starting-tips">Как начать играть?</a>
+          <a
+            data-i18n-key="header_how_to_play"
+            class="nav-link"
+            href="/pages/starting-tips"
+          >
+            Как начать играть?
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/contact">Контакты</a>
+          <a
+            data-i18n-key="header_contacts"
+            class="nav-link"
+            href="/pages/contact"
+            >Контакты</a
+          >
         </li>
         <li class="nav-item nav-item-user-logic">
-          <a class="button-shade" href="/pages/login">Войти</a>
+          <a
+            data-i18n-key="header_enter"
+            class="button-shade"
+            href="/pages/login"
+            >Войти</a
+          >
         </li>
         <li class="nav-item nav-item-user-logic">
-          <a class="button-primary" href="/pages/registration"> Регистрация </a>
+          <a
+            data-i18n-key="header_signup"
+            class="button-primary"
+            href="/pages/registration"
+            >Регистрация</a
+          >
         </li>
         <li class="nav-item nav-item-user-dd-logic">
           <div class="dropdown">
@@ -69,12 +99,26 @@
             </div>
             <ul class="dropdown-container">
               <li>
-                <a href="/pages/order-history-page">История заказов</a>
+                <a
+                  data-i18n-key="header_orders_history"
+                  href="/pages/order-history-page"
+                  >История заказов</a
+                >
               </li>
               <li>
-                <a href="/pages/change-password-page">Изменить пароль</a>
+                <a
+                  data-i18n-key="header_change_password"
+                  href="/pages/change-password-page"
+                  >Изменить пароль</a
+                >
               </li>
-              <li><a href="/pages/exit-confirmation-page">Выйти</a></li>
+              <li>
+                <a
+                  data-i18n-key="header_logout"
+                  href="/pages/exit-confirmation-page"
+                  >Выйти</a
+                >
+              </li>
             </ul>
           </div>
         </li>
@@ -91,17 +135,11 @@
           </a>
         </li>
         <li class="nav-item lang-item">
-          <a class="nav-link lang-switch" href="#">RU</a>
-          <!-- <ul class="lang-popup">
-            <li>
-              <a
-                class="lang-popup__item"
-                href="https://adventuresinminecraft.com/en/"
-                >EN</a
-              >
-            </li>
-            <li><a class="lang-popup__item" href="#">DE</a></li>
-          </ul> -->
+          <select data-i18n-switcher class="locale-switcher">
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+          </select>
+          <img src="../assets/images/icons/arrow_down.svg" alt="" />
         </li>
       </ul>
     </div>
@@ -118,23 +156,33 @@
               alt=""
             />
             <div class="contact__info info">
-              <h3 class="info__title">Контакты</h3>
-              <p class="info__subtitle">
+              <h3 data-i18n-key="contact-page__title" class="info__title">
+                Контакты
+              </h3>
+              <p data-i18n-key="contact-page__text" class="info__subtitle">
                 Свяжитесь с нами если у вас остались вопросы:
               </p>
               <div class="info__block">
                 <div class="info__block-img">
                   <img src="../assets/images/icons/email_icon.svg" alt="" />
                 </div>
-                <a href="mailto:adventuresinminecraft@gmail.com"
-                  >adventuresinminecraft@gmail.com</a
+                <a
+                  data-i18n-key="contact-page__email"
+                  href="mailto:adventuresinminecraft@gmail.com"
                 >
+                  adventuresinminecraft@gmail.com
+                </a>
               </div>
               <div class="info__block">
                 <div class="info__block-img">
                   <img src="../assets/images/icons/telegram_icon.svg" alt="" />
                 </div>
-                <a href="https://t.me/myusername">Telegram</a>
+                <a
+                  data-i18n-key="contact-page__telegram"
+                  href="https://t.me/myusername"
+                >
+                  Telegram
+                </a>
               </div>
             </div>
           </div>
@@ -152,32 +200,34 @@
         </div>
         <div class="footer__nav">
           <ul class="footer__nav-left">
-            <li class="footer__nav-item"><a href="/home.html">Магазин</a></li>
             <li class="footer__nav-item">
-              <a href="/pages/rules.html">Правила</a>
+              <a data-i18n-key="footer_store" href="/home.html">Магазин</a>
             </li>
             <li class="footer__nav-item">
-              <a href="/donation-description.html">Описание доната</a>
+              <a data-i18n-key="footer_rules" href="/pages/rules.html">Правила</a>
             </li>
             <li class="footer__nav-item">
-              <a href="/pages/contact.html">Контакты</a>
+              <a data-i18n-key="footer_donate_description" href="/donation-description.html">Описание доната</a>
+            </li>
+            <li class="footer__nav-item">
+              <a data-i18n-key="footer_contacts" href="/pages/contact.html">Контакты</a>
             </li>
           </ul>
           <ul class="footer__nav-center">
-            <li class="footer__nav-item"><a href="/pages/faq.html">FAQ</a></li>
+            <li class="footer__nav-item"><a data-i18n-key="footer_faq" href="/pages/faq.html">FAQ</a></li>
             <li class="footer__nav-item">
-              <a href="/pages/starting-tips.html">Как начать играть?</a>
+              <a data-i18n-key="footer_how_to_start" href="/pages/starting-tips.html">Как начать играть?</a>
             </li>
             <li class="footer__nav-item">
-              <a href="/pages/donate-privileges.html">Привелегии доната</a>
+              <a data-i18n-key="footer_donate_rules" href="/pages/donate-privileges.html">Привелегии доната</a>
             </li>
             <li class="footer__nav-item">
-              <a href="/pages/launcher-download.html">Лаунчера</a>
+              <a data-i18n-key="footer_launchers" href="/pages/launcher-download.html">Лаунчера</a>
             </li>
           </ul>
           <ul class="footer__nav-rigt">
             <li class="footer__nav-item">
-              <a href="/pages/team.html">Команда</a>
+              <a data-i18n-key="footer_team" href="/pages/team.html">Команда</a>
             </li>
           </ul>
         </div>
@@ -187,7 +237,7 @@
   <div class="footer-bottom">
     <div class="container">
       <div class="footer-bottom__row">
-        <p class="copiryted">
+        <p data-i18n-key="footer_copiryted" class="copiryted">
           © 2023 Adventures in Minecraft - сервис обмена криптовалют
         </p>
         <div class="socials">
@@ -210,5 +260,6 @@
 <div class="toasts-wrapper"></div>
 
     <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/services/languageLocalization.js"></script>
   </body>
 </html>

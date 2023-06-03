@@ -1,5 +1,0 @@
-const RU = {
-    header: {
-        shop: ''
-    }
-}
