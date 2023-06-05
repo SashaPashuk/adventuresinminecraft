@@ -3,6 +3,7 @@ import {
   addToastNotification,
   renderShopItemsListHTML,
 } from "./utils/helpers.js";
+import { LanguageEventObserever } from "./utils/observer.js";
 import { ITEM_ADDED_TO_CART_ERROR } from "./contants/errors.js";
 import {
   ITEM_ALREADY_ADDED_TO_CART,
@@ -13,6 +14,24 @@ import {
   SHOP_ITEM_TIME_USAGE,
   SHOP_ITEM_TYPES,
 } from "./contants/constants.js";
+
+// Observer
+
+LanguageEventObserever.subscribe(async (data) => {
+  const checkedShopItemType = document.querySelector('input[type="radio"]');
+  checkedShopItemType?.setAttribute("checked", "true");
+  checkedShopItemType?.classList.add("checked");
+
+  const shopItemsResult = await API.getShopItems(data.language, {
+    type: SHOP_ITEM_TYPES.Survival,
+  });
+
+  renderShopItemsListHTML(shopItemsResult);
+
+  addProductCartButtonsEventListeners();
+  addProductCardsEventListeners(shopItemsResult);
+  addShopItemsTypeSwitchEventListener();
+});
 
 // Event Listeners
 

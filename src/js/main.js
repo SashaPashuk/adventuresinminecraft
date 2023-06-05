@@ -85,5 +85,3 @@ const logoutButtonElement = document.querySelector("#logout-button");
 logoutButtonElement?.addEventListener("click", () => {
   localStorage.removeItem("tokens");
 });
-
-// load items logic

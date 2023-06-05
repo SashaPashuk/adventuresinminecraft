@@ -1,0 +1,1 @@
+class EventObserver{constructor(){this.observers=[]}subscribe(e){this.observers.push(e)}unsubscribe(s){this.observers=this.observers.filter(e=>e!==s)}broadcast(s){this.observers.forEach(e=>e(s))}}const LanguageEventObserever=new EventObserver;export{EventObserver,LanguageEventObserever};

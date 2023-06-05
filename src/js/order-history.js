@@ -1,8 +1,5 @@
 import { ITEM_ADDED_TO_CART_ERROR } from "./contants/errors.js";
-import {
-  ITEM_ALREADY_ADDED_TO_CART,
-  ITEM_ALREADY_ADDED_TO_CART_WITH_NAME,
-} from "./contants/notifications.js";
+import { ITEM_ALREADY_ADDED_TO_CART_WITH_NAME } from "./contants/notifications.js";
 import API from "./services/api.js";
 import {
   addToastNotification,

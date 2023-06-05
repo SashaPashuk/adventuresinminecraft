@@ -1,4 +1,5 @@
 import { languageLocalizations } from "../contants/languageLocalizations.js";
+import { LanguageEventObserever } from "../utils/observer.js";
 
 // The locale our app first shows
 const defaultLocale = localStorage.getItem("language") || "ru";
@@ -25,6 +26,7 @@ function bindLocaleSwitcher(initialValue) {
       // Set the locale to the selected option[value]
       setLocale(e.target.value);
       localStorage.setItem("language", e.target.value);
+      LanguageEventObserever.broadcast({ language: e.target.value });
     };
   }
 }

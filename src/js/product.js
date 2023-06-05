@@ -3,6 +3,7 @@ import {
   renderShopItemInfoHTML,
   addToastNotification,
 } from "./utils/helpers.js";
+import { LanguageEventObserever } from "./utils/observer.js";
 import {
   DEFAULT_LANGUAGE,
   SHOP_ITEM_TIME_USAGE,
@@ -11,6 +12,21 @@ import {
   ITEM_ADDED_TO_CART_ERROR,
   ITEM_ADDED_TO_CART_SUCCESS,
 } from "./contants/errors.js";
+
+// Observer
+
+LanguageEventObserever.subscribe(async (data) => {
+  const itemDataLocalStorage = localStorage.getItem("item_data");
+  const shopItemsResponse = await API.getOneShopItem({
+    languageCode: data.language,
+    itemId: JSON.parse(itemDataLocalStorage)?.id || "",
+  });
+
+  renderShopItemInfoHTML(shopItemsResponse);
+
+  addBuyShopItemEventListener(shopItemsResponse);
+  addShopItemAmountEventListener();
+});
 
 // Event Listeners
 
@@ -142,3 +158,19 @@ const addShopItemAmountEventListener = () => {
 //     updateMainImage();
 //   });
 // };
+
+// window.addEventListener(
+//   "storage",
+//   (event) => {
+//     const language = localStorage.getItem("language");
+
+//     console.log("language", language);
+//   },
+//   true
+// );
+
+const localStorageSetHandler = function (e) {
+  alert('localStorage.set("' + e.key + '", "' + e.value + '") was called');
+};
+
+document.addEventListener("itemInserted", localStorageSetHandler, false);
