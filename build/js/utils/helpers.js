@@ -1,4 +1,4 @@
-import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=2e3})=>{var r=document.querySelector(".toasts-wrapper");const s=document.createElement("div");s.className="toast-container";var a=document.createElement("div"),o=document.createElement("p");o.innerHTML=e,a.appendChild(o),s.appendChild(a),r.appendChild(s),setTimeout(()=>{s.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}.png" alt=${e}-image />`},renderShopItemInfoHTML=({description:e,price:t,market_name:r,type:s})=>{var a=getImageNameTemporarySolution(s.toLowerCase()),o=document.querySelector(".product-info__content"),r=`
+import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=2e3})=>{var r=document.querySelector(".toasts-wrapper");const s=document.createElement("div");s.className="toast-container";var a=document.createElement("div"),o=document.createElement("p");o.innerHTML=e,a.appendChild(o),s.appendChild(a),r.appendChild(s),setTimeout(()=>{s.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}.png" alt=${e}-image />`},renderShopItemInfoHTML=({description:e,price:t,market_name:r,type:s})=>{var a=r||getImageNameTemporarySolution(s.toLowerCase()),o=document.querySelector(".product-info__content"),r=`
     <h2 class="content__title">${r}</h2>
     <h4 class="content__subtitle">Описание товара:</h4>
     <p class="content__text">${e}</p>
@@ -117,7 +117,7 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
           </ul>
         </div>
       </li>
-    `;s+=e}),t.innerHTML=s},renderShopItemsListHTML=e=>{var t=document.querySelector(".products__list");let o="";e?.results?.forEach(({price:e,market_name:t,id:r,type:s})=>{var a=getImageNameTemporarySolution(s.toLowerCase()),s=`
+    `;s+=e}),t.innerHTML=s},renderShopItemsListHTML=e=>{var t=document.querySelector(".products__list");let o="";e?.results?.forEach(({price:e,market_name:t,id:r,type:s})=>{var a=t||getImageNameTemporarySolution(s.toLowerCase()),s=`
           <div class="products-card">
             ${renderShopItemImgHTML({shopItemName:a,shopItemType:s.toLowerCase()})}
             <p class="products-card__title">

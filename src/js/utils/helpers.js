@@ -50,7 +50,8 @@ export const renderShopItemInfoHTML = ({
   type,
 }) => {
   // TODO: remove getImageNameTemporarySolution and leave just market_name field from DB shop item
-  const shopItemName = getImageNameTemporarySolution(type.toLowerCase());
+  const shopItemName =
+    market_name || getImageNameTemporarySolution(type.toLowerCase());
 
   const productInfoContainerElement = document.querySelector(
     ".product-info__content"
@@ -256,7 +257,8 @@ export const renderShopItemsListHTML = (items) => {
 
   items?.results?.forEach(({ price, market_name, id, type }) => {
     // TODO: remove getImageNameTemporarySolution and leave just market_name field from DB shop item
-    const shopItemName = getImageNameTemporarySolution(type.toLowerCase());
+    const shopItemName =
+      market_name || getImageNameTemporarySolution(type.toLowerCase());
     const item = `
           <div class="products-card">
             ${renderShopItemImgHTML({
