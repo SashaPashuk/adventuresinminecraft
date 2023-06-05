@@ -16,17 +16,14 @@ import {
 
 document.addEventListener("DOMContentLoaded", async () => {
   const itemDataLocalStorage = localStorage.getItem("item_data");
-  const shopItemsResponse = await API.getShopItems(DEFAULT_LANGUAGE, {
-    type: JSON.parse(itemDataLocalStorage)?.type || "",
+  const shopItemsResponse = await API.getOneShopItem({
+    languageCode: DEFAULT_LANGUAGE,
+    itemId: JSON.parse(itemDataLocalStorage)?.id || "",
   });
 
-  const item = shopItemsResponse?.results?.find(
-    (el) => el.id === JSON.parse(itemDataLocalStorage)?.id
-  );
+  renderShopItemInfoHTML(shopItemsResponse);
 
-  renderShopItemInfoHTML(item);
-
-  addBuyShopItemEventListener(item);
+  addBuyShopItemEventListener(shopItemsResponse);
   addShopItemAmountEventListener();
   // addCarouselEventListeners();
 });

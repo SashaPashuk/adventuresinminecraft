@@ -140,6 +140,18 @@ export default {
     });
   },
   /**
+   * @param {Object} params
+   * @param {Object} params.languageCode
+   * @param {String} params.itemId
+   * @returns {Promise}
+   */
+  getOneShopItem: (params) => {
+    return sendAPIRequest({
+      method: "GET",
+      pathname: `/shop/${params.languageCode}/get/${params.itemId}`,
+    });
+  },
+  /**
    * @param {String} itemId
    * @param {Object} body
    * @param {number} body.amount
@@ -176,6 +188,20 @@ export default {
     return sendAPIRequest({
       method: "POST",
       pathname: `/shop/order_item_change/${itemId}/`,
+      body,
+      hasToken: true,
+    });
+  },
+  /**
+   * @param {Object} body
+   * @param {Number} body.item_id
+   * @param {Number} body.time_to_use
+   * @returns {Promise}
+   */
+  updateShopItemDurationInCart: (body) => {
+    return sendAPIRequest({
+      method: "POST",
+      pathname: `/shop/change_duration/`,
       body,
       hasToken: true,
     });

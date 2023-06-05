@@ -8,6 +8,7 @@ import {
   FIELD_NOT_EMPTY_ERROR,
   ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR,
   ITEM_DELETED_FROM_CART_SUCCESS,
+  ITEM_DURATION_SUCCESS,
 } from "./contants/errors.js";
 import { ITEM_SUCCESSFULLY_DELETED_FROM_CART } from "./contants/notifications.js";
 import { SHOP_ITEM_TIME_USAGE } from "./contants/constants.js";
@@ -26,8 +27,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   addProductIncreaseDecreasButtonsEventListener();
   addCartPaymentButtonEventListener();
   addServersDropdownEventListener();
-  // TODO: unsupported on BE side, only show now
-  // addOrderItemsUsageButtonsEventListener();
+  addOrderItemsUsageButtonsEventListener();
 });
 
 const addCartPaymentButtonEventListener = () => {
@@ -204,13 +204,43 @@ const addOrderItemsUsageButtonsEventListener = (items) => {
     );
 
     buttons?.forEach((button) => {
-      button.addEventListener("click", () => {
+      button.addEventListener("click", async () => {
         if (button.getAttribute("data-type") === "30") {
-          usageDaysButton.classList.add("selected");
-          usageForeverButton.classList.remove("selected");
+          const response = await API.updateShopItemDurationInCart({
+            item_id: item.getAttribute("data-cart-id"),
+            time_to_use: SHOP_ITEM_TIME_USAGE["30_DAYS"],
+          });
+
+          const timeToUserError =
+            (response?.time_to_use && response?.time_to_use[0]) || "";
+          if (timeToUserError) {
+            addToastNotification({ message: timeToUserError });
+          }
+
+          if (response === ITEM_DURATION_SUCCESS) {
+            addToastNotification({ message: ITEM_DURATION_SUCCESS });
+
+            usageDaysButton.classList.add("selected");
+            usageForeverButton.classList.remove("selected");
+          }
         } else {
-          usageDaysButton.classList.remove("selected");
-          usageForeverButton.classList.add("selected");
+          const response = await API.updateShopItemDurationInCart({
+            item_id: item.getAttribute("data-cart-id"),
+            time_to_use: SHOP_ITEM_TIME_USAGE.Forever,
+          });
+
+          const timeToUserError =
+            (response?.time_to_use && response?.time_to_use[0]) || "";
+          if (timeToUserError) {
+            addToastNotification({ message: timeToUserError });
+          }
+
+          if (response === ITEM_DURATION_SUCCESS) {
+            addToastNotification({ message: ITEM_DURATION_SUCCESS });
+
+            usageDaysButton.classList.remove("selected");
+            usageForeverButton.classList.add("selected");
+          }
         }
       });
     });
