@@ -19,12 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
 function bindLocaleSwitcher(initialValue) {
   const switcher = document.querySelector("[data-i18n-switcher]");
 
-  switcher.value = initialValue;
-  switcher.onchange = (e) => {
-    // Set the locale to the selected option[value]
-    setLocale(e.target.value);
-    localStorage.setItem("language", e.target.value);
-  };
+  if (switcher) {
+    switcher.value = initialValue;
+    switcher.onchange = (e) => {
+      // Set the locale to the selected option[value]
+      setLocale(e.target.value);
+      localStorage.setItem("language", e.target.value);
+    };
+  }
 }
 
 // Load translations for the given locale and translate the page to this locale
@@ -46,18 +48,22 @@ const fetchTranslationsFor = (newLocale) => languageLocalizations[newLocale];
 // Replace the inner text of each element that has a
 // data-i18n-key attribute with the translation corresponding
 // to its data-i18n-key
-const translatePage = () => {
-  console.log(document.querySelectorAll("[data-i18n-key]"));
+const translatePage = () =>
   document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
-};
 
 // Replace the inner text of the given HTML element
 // with the translation in the active locale,
 // corresponding to the element's data-i18n-key
 function translateElement(element) {
   const key = element.getAttribute("data-i18n-key");
-
   const translation = translations[key];
+
+  if (
+    element.nodeName === "INPUT" &&
+    element.dataset.i18nKey.includes("Placeholder")
+  ) {
+    element.placeholder = translation;
+  }
 
   element.innerText = translation;
 }

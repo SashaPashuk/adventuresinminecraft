@@ -21,19 +21,33 @@
         <div class="container">
           <img class="page-auth-logo" src="../assets/images/logo.svg" alt="" />
           <div class="form_container">
-            <h2 class="form_title">Регистрация</h2>
+            <h2 data-i18n-key="signUpPage__title" class="form_title">
+              Регистрация
+            </h2>
             <form method="post" id="signup-form">
-              <input type="text" placeholder="Ваш Email" name="email" />
+              <input
+                data-i18n-key="signUpPage__emailPlaceholder"
+                type="text"
+                placeholder="Ваш email"
+                name="email"
+              />
               <label for="email" class="input-error"></label>
-              <input type="text" placeholder="Пароль" name="password" />
+              <input
+                data-i18n-key="signUpPage__passwordPlaceholder"
+                type="text"
+                placeholder="Пароль"
+                name="password"
+              />
               <label for="password" class="input-error"></label>
               <input
+                data-i18n-key="signUpPage__repeatPasswordPlaceholder"
                 type="text"
                 placeholder="Повторите пароль"
                 name="samePassword"
               />
 
               <button
+                data-i18n-key="signUpPage__button"
                 type="submit"
                 id="signup-button"
                 class="button-primary"
@@ -43,7 +57,10 @@
               </button>
             </form>
             <p class="form_caption">
-              У вас уже есть аккаунта? <a href="/pages/login">Войти</a>
+              <span data-i18n-key="signUpPage__account">
+                У вас уже есть аккаунта?
+              </span>
+              <a data-i18n-key="signUpPage__link" href="/pages/login">Войти</a>
             </p>
           </div>
         </div>
@@ -51,5 +68,6 @@
     </main>
     <script type="module" src="../js/main.js"></script>
     <script type="module" src="../js/registration.js"></script>
+    <script type="module" src="../js/services/languageLocalization.js"></script>
   </body>
 </html>

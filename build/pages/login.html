@@ -21,16 +21,27 @@
         <div class="container" id="login-from-container">
           <img class="page-auth-logo" src="../assets/images/logo.svg" alt="" />
           <div class="form_container">
-            <h2 class="form_title">Вход</h2>
+            <h2 data-i18n-key="loginPage__title" class="form_title">Вход</h2>
             <form method="post" id="login-form">
-              <input type="text" placeholder="Ваш Email" name="username" />
+              <input
+                data-i18n-key="loginPage__emailPlaceholder"
+                type="text"
+                placeholder="Ваш email"
+                name="username"
+              />
               <label for="username" class="input-error"></label>
 
-              <input type="text" placeholder="Ваш пароль" name="password" />
+              <input
+                data-i18n-key="loginPage__passwordPlaceholder"
+                type="text"
+                placeholder="Ваш пароль"
+                name="password"
+              />
               <label for="password" class="input-error"></label>
               <!-- <label for="password" class="input-tip"> Забыли пароль? </label> -->
 
               <button
+                data-i18n-key="loginPage__button"
                 type="submit"
                 id="login-button"
                 form="login-form"
@@ -40,20 +51,33 @@
               </button>
             </form>
             <p class="form_caption">
-              У вас нет аккаунта?
-              <a href="/pages/registration.html">Зарегистрироваться</a>
+              <span data-i18n-key="loginPage__account">
+                У вас нет аккаунта?</span
+              >
+              <a
+                data-i18n-key="loginPage__link"
+                href="/pages/registration.html"
+              >
+                Зарегистрироваться
+              </a>
             </p>
           </div>
         </div>
         <div class="container hidden" id="code-from-container">
           <img class="page-auth-logo" src="../assets/images/logo.svg" alt="" />
           <div class="form_container">
-            <h2 class="form_title">Вход</h2>
+            <h2 data-i18n-key="loginPage__title" class="form_title">Вход</h2>
             <form method="post" id="code-form">
-              <input type="text" placeholder="Ваш код" name="code" />
+              <input
+                data-i18n-key="loginPage__codePlaceholder"
+                type="text"
+                placeholder="Ваш код"
+                name="code"
+              />
               <label for="code" class="input-error"></label>
 
               <button
+                data-i18n-key="loginPage__codeButton"
                 type="submit"
                 id="code-button"
                 form="code-form"
@@ -68,5 +92,6 @@
     </main>
     <script type="module" src="../js/main.js"></script>
     <script type="module" src="../js/login.js"></script>
+    <script type="module" src="../js/services/languageLocalization.js"></script>
   </body>
 </html>

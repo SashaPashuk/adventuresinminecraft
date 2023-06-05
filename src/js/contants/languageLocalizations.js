@@ -151,6 +151,25 @@ export const languageLocalizations = {
 
     // latestPurchases
     latestPurchases__title: "Recent purchases",
+
+    // loginPage
+    loginPage__title: "Log in",
+    loginPage__button: "Log in",
+    loginPage__account: "Don't have an account?",
+    loginPage__link: "Sign up",
+    loginPage__emailPlaceholder: "Your email",
+    loginPage__passwordPlaceholder: "Your password",
+    loginPage__codePlaceholder: "Your code",
+    loginPage__codeButton: "Confirm login",
+
+    // signUpPage
+    signUpPage__title: "Sign up",
+    signUpPage__emailPlaceholder: "Your Email",
+    signUpPage__passwordPlaceholder: "Password",
+    signUpPage__repeatPasswordPlaceholder: "Repeat password",
+    signUpPage__button: "Sign up",
+    signUpPage__account: "Do you already have an account?",
+    signUpPage__link: "Log in",
   },
   ru: {
     // header
@@ -304,6 +323,25 @@ export const languageLocalizations = {
 
     // latestPurchases
     latestPurchases__title: "Последние покупки",
+
+    // loginPage
+    loginPage__title: "Вход",
+    loginPage__button: "Войти",
+    loginPage__account: "У вас нет аккаунта?",
+    loginPage__link: "Зарегистрироваться",
+    loginPage__emailPlaceholder: "Ваш email",
+    loginPage__passwordPlaceholder: "Ваш пароль",
+    loginPage__codePlaceholder: "Ваш код",
+    loginPage__codeButton: "Подтвердить вход",
+
+    // signUpPage
+    signUpPage__title: "Регистрация",
+    signUpPage__emailPlaceholder: "Ваш Email",
+    signUpPage__passwordPlaceholder: "Пароль",
+    signUpPage__repeatPasswordPlaceholder: "Повторите пароль",
+    signUpPage__button: "Зарегистрироваться",
+    signUpPage__account: "У вас уже есть аккаунта?",
+    signUpPage__link: "Войти",
   },
 };
 
@@ -325,6 +363,8 @@ export const languageLocalizations = {
 // faq
 // order-history-page
 // product
+// login
+// registration
 
 // -> leftover
 
@@ -334,8 +374,6 @@ export const languageLocalizations = {
 // donate-privileges
 // donation-description
 // launcher-download
-// login
-// registration
 // rules
 
 // - separate - logic for downloading products
