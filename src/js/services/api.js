@@ -41,7 +41,7 @@ const sendAPIRequest = async ({ method, pathname, body, hasToken }) => {
 
   if (response?.code === "token_not_valid") {
     const response = await sendAPIRequestToRefreshToken();
-    // console.log("response - refresh", response);
+
     if (response?.access) {
       return makeRequest();
     } else {
