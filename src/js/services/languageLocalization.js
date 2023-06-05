@@ -37,7 +37,7 @@ async function setLocale(newLocale) {
 
   translations = newTranslations;
 
-  translatePage();
+  setTimeout(translatePage, 300);
 }
 
 // Retrieve translations object for the given locale
@@ -46,9 +46,10 @@ const fetchTranslationsFor = (newLocale) => languageLocalizations[newLocale];
 // Replace the inner text of each element that has a
 // data-i18n-key attribute with the translation corresponding
 // to its data-i18n-key
-function translatePage() {
+const translatePage = () => {
+  console.log(document.querySelectorAll("[data-i18n-key]"));
   document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
-}
+};
 
 // Replace the inner text of the given HTML element
 // with the translation in the active locale,

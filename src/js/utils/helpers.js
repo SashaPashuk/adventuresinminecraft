@@ -59,17 +59,17 @@ export const renderShopItemInfoHTML = ({
   );
   const itemInfo = `
     <h2 class="content__title">${market_name}</h2>
-    <h4 class="content__subtitle">Описание товара:</h4>
+    <h4 data-i18n-key="productPage__desc" class="content__subtitle">Описание товара:</h4>
     <p class="content__text">${description}</p>
     <div class="content__price-block price-block">
-      <span class="price-block__title">Цeна:</span>
+      <span data-i18n-key="productPage__price" class="price-block__title">Цeна:</span>
       <span class="price-block__price" id="product_price">€${Number(
         price
       ).toFixed(2)}</span>
     </div>
 
     <div class="content__buy-block buy-block">
-      <p class="buy-block__quantity-title quantity-title">
+      <p data-i18n-key="productPage__amount" class="buy-block__quantity-title quantity-title">
         Кількість:
       </p>
       <div class="buy-block__quantity-control quantity-control">
@@ -82,7 +82,7 @@ export const renderShopItemInfoHTML = ({
             class="quantity-control__number-btn quantity-control__number-btn-increase"
           ></button>
         </div>
-        <button class="buy-block__buy-btn buy-btn">Купить</button>
+        <button data-i18n-key="productPage__button" class="buy-block__buy-btn buy-btn">Купить</button>
       </div>
     </div>
   `;
@@ -184,15 +184,15 @@ export const renderOrderHistoryItemsHTML = (data) => {
     const item = `
         <li class="orderHistory-orders-order-container">
         <div class="orderHistory-orders-order">
-          <div><span>Заказ ${id}</span><span>Выполнен</span></div>
-          <div class="orderHistory-orders-order__amount-container"><span>Количество:</span><span>${
+          <div><span>Заказ ${id}</span><span data-i18n-key="orderHistoryPage__orderDone">Выполнен</span></div>
+          <div class="orderHistory-orders-order__amount-container"><span data-i18n-key="orderHistoryPage__amount">Количество:</span><span>${
             order_item?.length
           }</span></div>
-          <div><span>Цена:</span><span>€${Number(
+          <div><span data-i18n-key="orderHistoryPage__totalPrice">Цена:</span><span>€${Number(
             total_price
           ).toFixed()}</span></div>
           <div class="orderHistory-orders-order-actions">
-            <button class="button-primary">Повторить заказ</button>
+            <button data-i18n-key="orderHistoryPage__repeatOrderButton" class="button-primary">Повторить заказ</button>
             <span
               class="orderHistory-orders-order-actions-arrow"
               id="arrow-order-button"
@@ -214,31 +214,33 @@ export const renderOrderHistoryItemsHTML = (data) => {
         </div>
         <hr class="hidden" />
         <div class="orderHistory-orders-order-details hidden">
-          <h3 class="orderHistory-orders-order-details-title">Товары</h3>
+          <h3 data-i18n-key="orderHistoryPage__items" class="orderHistory-orders-order-details-title">Товары</h3>
           <ul class="orderHistory-orders-order-details-list">
-          ${order_item.map(({ amount, price, sum_item_price, time_to_use }) => {
-            return `
+          ${order_item.map(
+            ({ amount, price, sum_item_price, time_to_use, image_name }) => {
+              return `
               <li class="orderHistory-orders-order-details-list-item">
-                <h3>Название товара</h3>
+                <h3>${image_name}</h3>
                 <div>
-                  <span>Срок действия покупки:</span>
+                  <span data-i18n-key="orderHistoryPage__itemDuration">Срок действия покупки:</span>
                   <span>${time_to_use}</span>
                 </div>
                 <div>
-                  <span>Количество:</span>
+                  <span data-i18n-key="orderHistoryPage__itemAmount">Количество:</span>
                   <span>${amount}</span>
                 </div>
                 <div>
-                  <span>Цена</span>
+                  <span data-i18n-key="orderHistoryPage__itemPrice">Цена</span>
                   <span>€${sum_item_price}</span>
                 </div>
                 <div>
-                  <span>Общая цена</span>
+                  <span data-i18n-key="orderHistoryPage__overallPrice">Общая цена</span>
                   <span>€${price}</span>
                 </div>
               </li>
             `;
-          })}
+            }
+          )}
           </ul>
         </div>
       </li>

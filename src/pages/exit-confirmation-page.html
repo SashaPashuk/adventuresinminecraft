@@ -10,10 +10,17 @@
             src="../assets/images/icons/cross_icon.svg"
             alt=""
           />
-          <h2 class="exitConfirmation-modal-container-title">
+          <h2
+            data-i18n-key="exitConfirmationPage__title"
+            class="exitConfirmation-modal-container-title"
+          >
             Вы уверены что хотите выйти?
           </h2>
-          <a id="logout-button" class="button-primary" href="/pages/login.html"
+          <a
+            data-i18n-key="exitConfirmationPage__button"
+            id="logout-button"
+            class="button-primary"
+            href="/pages/login.html"
             >Выйти</a
           >
           <img
@@ -25,5 +32,6 @@
       </div>
     </main>
     <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/services/languageLocalization.js"></script>
   </body>
 </html>
