@@ -1,6 +1,9 @@
-import { ITEM_ADDED_TO_CART_ERROR } from "./contants/errors.js";
-import { ITEM_ALREADY_ADDED_TO_CART_WITH_NAME } from "./contants/notifications.js";
+import {
+  ITEM_ADDED_TO_CART_ERROR,
+  errorsLanguageLocalizationsEnum,
+} from "./contants/errors.js";
 import API from "./services/api.js";
+import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
 import {
   addToastNotification,
   renderOrderHistoryItemsHTML,
@@ -62,8 +65,10 @@ const addRepeatOrderEventListener = (shopOrdersResponse) => {
 
         result === ITEM_ADDED_TO_CART_ERROR &&
           addToastNotification({
-            message: ITEM_ALREADY_ADDED_TO_CART_WITH_NAME(
-              orderItem?.name || "Название товара"
+            // TODO: remove when database will be fulfilled
+            message: getLocalizedError(
+              errorsLanguageLocalizationsEnum.ITEM_ALREADY_ADDED_TO_CART_WITH_NAME,
+              { firstParam: orderItem?.image_name || "Название товара" }
             ),
           });
       });

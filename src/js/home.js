@@ -4,11 +4,12 @@ import {
   renderShopItemsListHTML,
 } from "./utils/helpers.js";
 import { LanguageEventObserever } from "./utils/observer.js";
-import { ITEM_ADDED_TO_CART_ERROR } from "./contants/errors.js";
+import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
 import {
-  ITEM_ALREADY_ADDED_TO_CART,
-  ITEM_SUCCESSFULLY_ADDED_TO_CART,
-} from "./contants/notifications.js";
+  ITEM_ADDED_TO_CART_ERROR,
+  TOKEN_NOT_EXISTS,
+  errorsLanguageLocalizationsEnum,
+} from "./contants/errors.js";
 import {
   DEFAULT_LANGUAGE,
   SHOP_ITEM_TIME_USAGE,
@@ -78,32 +79,45 @@ const addProductCartButtonsEventListeners = () => {
   );
 
   productsCartButtonElements?.forEach((button) => {
-    button.addEventListener("click", (e) => {
+    button.addEventListener("click", async (e) => {
       e.stopPropagation();
       e.preventDefault();
 
-      const response = API.addShopItemToCart({
+      const response = await API.addShopItemToCart({
         amount: 1,
         item_id: button.getAttribute("data-id"),
         time_to_use: SHOP_ITEM_TIME_USAGE["30_DAYS"],
       });
 
-      response.then((data) => {
-        data?.detail === "Authentication credentials were not provided." &&
-          addToastNotification({ message: "You should login first." });
-        data === ITEM_ADDED_TO_CART_ERROR &&
-          addToastNotification({ message: ITEM_ALREADY_ADDED_TO_CART });
+      // errors
+      response?.detail === TOKEN_NOT_EXISTS &&
+        addToastNotification({
+          message: getLocalizedError(
+            errorsLanguageLocalizationsEnum.USER_SHOULD_LOGIN_FIRST
+          ),
+        });
 
-        if (
-          data !== ITEM_ADDED_TO_CART_ERROR &&
-          data?.detail !== "Authentication credentials were not provided."
-        ) {
-          addToastNotification({ message: ITEM_SUCCESSFULLY_ADDED_TO_CART });
+      response === ITEM_ADDED_TO_CART_ERROR &&
+        addToastNotification({
+          message: getLocalizedError(
+            errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_ERROR
+          ),
+        });
 
-          cartContainerCountElement.innerHTML =
-            Number(cartContainerCountElement.innerHTML) + 1;
-        }
-      });
+      // success
+      if (
+        response !== ITEM_ADDED_TO_CART_ERROR &&
+        response?.detail !== TOKEN_NOT_EXISTS
+      ) {
+        addToastNotification({
+          message: getLocalizedError(
+            errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_SUCCESS
+          ),
+        });
+
+        cartContainerCountElement.innerHTML =
+          Number(cartContainerCountElement.innerHTML) + 1;
+      }
     });
   });
 };

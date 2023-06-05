@@ -4,6 +4,7 @@ import {
   addToastNotification,
 } from "./utils/helpers.js";
 import { LanguageEventObserever } from "./utils/observer.js";
+import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
 import {
   DEFAULT_LANGUAGE,
   SHOP_ITEM_TIME_USAGE,
@@ -11,6 +12,8 @@ import {
 import {
   ITEM_ADDED_TO_CART_ERROR,
   ITEM_ADDED_TO_CART_SUCCESS,
+  TOKEN_NOT_EXISTS,
+  errorsLanguageLocalizationsEnum,
 } from "./contants/errors.js";
 
 // Observer
@@ -63,23 +66,35 @@ const addBuyShopItemEventListener = (item) => {
     });
 
     const amountErrors = (result?.amount && result?.amount[0]) || "";
-
     // errors
-    result?.detail === "Authentication credentials were not provided." &&
-      addToastNotification({ message: "You should login first." });
+    result?.detail === TOKEN_NOT_EXISTS &&
+      addToastNotification({
+        message: getLocalizedError(
+          errorsLanguageLocalizationsEnum.USER_SHOULD_LOGIN_FIRST
+        ),
+      });
 
     Boolean(amountErrors) &&
       addToastNotification({ message: result?.amount[0] });
 
     result === ITEM_ADDED_TO_CART_ERROR &&
-      addToastNotification({ message: ITEM_ADDED_TO_CART_ERROR });
+      addToastNotification({
+        message: getLocalizedError(
+          errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_ERROR
+        ),
+      });
 
     // success
     if (
       result === ITEM_ADDED_TO_CART_SUCCESS &&
-      result?.detail !== "Authentication credentials were not provided."
+      result?.detail !== TOKEN_NOT_EXISTS
     ) {
-      addToastNotification({ message: ITEM_ADDED_TO_CART_SUCCESS });
+      addToastNotification({
+        message: getLocalizedError(
+          errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_SUCCESS
+        ),
+      });
+
       cartContainerCountElement.innerHTML =
         Number(cartContainerCountElement.innerHTML) + 1;
     }

@@ -4,13 +4,15 @@ import {
   renderCartItemsHTML,
   renderServerDropdownItemsHTML,
 } from "./utils/helpers.js";
+import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
 import {
   FIELD_NOT_EMPTY_ERROR,
   ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR,
+  ITEM_AMOUNT_CHANGED_SUCCESS,
   ITEM_DELETED_FROM_CART_SUCCESS,
   ITEM_DURATION_SUCCESS,
+  errorsLanguageLocalizationsEnum,
 } from "./contants/errors.js";
-import { ITEM_SUCCESSFULLY_DELETED_FROM_CART } from "./contants/notifications.js";
 import { SHOP_ITEM_TIME_USAGE } from "./contants/constants.js";
 
 // Event Listeners
@@ -117,10 +119,16 @@ const addProductIncreaseDecreasButtonsEventListener = () => {
         { amount: Number(amount.innerHTML) + 1 }
       );
 
+      // errors
       response === ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR &&
-        addToastNotification({ message: response });
+        addToastNotification({
+          message: getLocalizedError(
+            errorsLanguageLocalizationsEnum.ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR
+          ),
+        });
 
-      if (response !== ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR) {
+      // success
+      if (response === ITEM_AMOUNT_CHANGED_SUCCESS) {
         modifyOverallPaymentSumHTML(
           "increase",
           Number(item.querySelector(".cartPage-list-item-sum")?.innerHTML || 0)
@@ -135,10 +143,16 @@ const addProductIncreaseDecreasButtonsEventListener = () => {
         { amount: Number(amount.innerHTML) + 1 }
       );
 
+      // errors
       response === ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR &&
-        addToastNotification({ message: response });
+        addToastNotification({
+          message: getLocalizedError(
+            errorsLanguageLocalizationsEnum.ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR
+          ),
+        });
 
-      if (response !== ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR) {
+      // success
+      if (response === ITEM_AMOUNT_CHANGED_SUCCESS) {
         modifyOverallPaymentSumHTML(
           "decrease",
           Number(item.querySelector(".cartPage-list-item-sum")?.innerHTML || 0)
@@ -179,7 +193,9 @@ const addProductDeleteButtonEventListener = () => {
             )
           );
           addToastNotification({
-            message: ITEM_SUCCESSFULLY_DELETED_FROM_CART,
+            message: getLocalizedError(
+              errorsLanguageLocalizationsEnum.ITEM_DELETED_FROM_CART_SUCCESS
+            ),
           });
           cartElement?.remove();
           cartContainerCountElement.innerHTML =
@@ -215,12 +231,19 @@ const addOrderItemsUsageButtonsEventListener = () => {
 
           const timeToUserError =
             (response?.time_to_use && response?.time_to_use[0]) || "";
+
+          // errors
           if (timeToUserError) {
             addToastNotification({ message: timeToUserError });
           }
 
+          // success
           if (response === ITEM_DURATION_SUCCESS) {
-            addToastNotification({ message: ITEM_DURATION_SUCCESS });
+            addToastNotification({
+              message: getLocalizedError(
+                errorsLanguageLocalizationsEnum.ITEM_DURATION_SUCCESS
+              ),
+            });
 
             usageDaysButton.classList.add("selected");
             usageForeverButton.classList.remove("selected");
@@ -233,12 +256,19 @@ const addOrderItemsUsageButtonsEventListener = () => {
 
           const timeToUserError =
             (response?.time_to_use && response?.time_to_use[0]) || "";
+
+          // errors
           if (timeToUserError) {
             addToastNotification({ message: timeToUserError });
           }
 
+          // success
           if (response === ITEM_DURATION_SUCCESS) {
-            addToastNotification({ message: ITEM_DURATION_SUCCESS });
+            addToastNotification({
+              message: getLocalizedError(
+                errorsLanguageLocalizationsEnum.ITEM_DURATION_SUCCESS
+              ),
+            });
 
             usageDaysButton.classList.remove("selected");
             usageForeverButton.classList.add("selected");

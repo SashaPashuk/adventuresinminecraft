@@ -1,8 +1,9 @@
 import { languageLocalizations } from "../contants/languageLocalizations.js";
 import { LanguageEventObserever } from "../utils/observer.js";
+import { DEFAULT_LANGUAGE } from "../contants/constants.js";
 
 // The locale our app first shows
-const defaultLocale = localStorage.getItem("language") || "ru";
+const defaultLocale = localStorage.getItem("language") || DEFAULT_LANGUAGE;
 
 // The active locale
 let locale;
