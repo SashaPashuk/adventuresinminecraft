@@ -366,6 +366,8 @@ export const languageLocalizations = {
 // login
 // registration
 
+// language related requests to BE for downloading products (Product, Home pages)
+
 // -> leftover
 
 // pages
@@ -375,5 +377,3 @@ export const languageLocalizations = {
 // donation-description
 // launcher-download
 // rules
-
-// - separate - logic for downloading products
