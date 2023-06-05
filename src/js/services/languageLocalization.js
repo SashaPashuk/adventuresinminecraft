@@ -1,9 +1,23 @@
 import { languageLocalizations } from "../contants/languageLocalizations.js";
 import { LanguageEventObserever } from "../utils/observer.js";
-import { DEFAULT_LANGUAGE } from "../contants/constants.js";
+import { APP_LANGUAGES, DEFAULT_LANGUAGE } from "../contants/constants.js";
 
+const getDefaultLanguage = () => {
+  const browserUserLanguage = navigator.language || navigator.userLanguage;
+  const browserUserLanguageSupportedInApp = APP_LANGUAGES.includes(
+    browserUserLanguage.split("-")[0]
+  )
+    ? browserUserLanguage.split("-")[0]
+    : null;
+
+  return (
+    localStorage.getItem("language") ||
+    browserUserLanguageSupportedInApp ||
+    DEFAULT_LANGUAGE
+  );
+};
 // The locale our app first shows
-const defaultLocale = localStorage.getItem("language") || DEFAULT_LANGUAGE;
+const defaultLocale = getDefaultLanguage();
 
 // The active locale
 let locale;
