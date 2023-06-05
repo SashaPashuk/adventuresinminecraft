@@ -47,11 +47,12 @@ export const renderShopItemInfoHTML = ({
   description,
   price,
   market_name,
+  image_name,
   type,
 }) => {
-  // TODO: remove getImageNameTemporarySolution and leave just market_name field from DB shop item
+  // TODO: remove getImageNameTemporarySolution and leave just image_name field from DB shop item
   const shopItemName =
-    market_name || getImageNameTemporarySolution(type.toLowerCase());
+    image_name || getImageNameTemporarySolution(type.toLowerCase());
 
   const productInfoContainerElement = document.querySelector(
     ".product-info__content"
@@ -105,10 +106,10 @@ export const renderCartItemsHTML = (items) => {
   const cartItemsContainerElement = document.querySelector(".cartPage-list");
   let html = "";
 
-  items?.forEach(({ product_id, amount, price, time_to_use }) => {
+  items?.forEach(({ product_id, amount, price, time_to_use, image_name }) => {
     const item = `
         <li class="cartPage-list-item" data-cart-id=${product_id}>
-          <h3>Название товара</h3>
+          <h3>${image_name || "Название товара - (temporary)"}</h3>
           <div class="cartPage-list-item-amount">
             <span>Количество:</span>
             <div class="cartPage-list-item-amount-actions">
@@ -255,10 +256,10 @@ export const renderShopItemsListHTML = (items) => {
 
   let html = "";
 
-  items?.results?.forEach(({ price, market_name, id, type }) => {
-    // TODO: remove getImageNameTemporarySolution and leave just market_name field from DB shop item
+  items?.results?.forEach(({ price, market_name, image_name, id, type }) => {
+    // TODO: remove getImageNameTemporarySolution and leave just image_name field from DB shop item
     const shopItemName =
-      market_name || getImageNameTemporarySolution(type.toLowerCase());
+      image_name || getImageNameTemporarySolution(type.toLowerCase());
     const item = `
           <div class="products-card">
             ${renderShopItemImgHTML({

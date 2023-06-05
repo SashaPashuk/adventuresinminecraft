@@ -125,6 +125,7 @@ const addProductIncreaseDecreasButtonsEventListener = () => {
           "increase",
           Number(item.querySelector(".cartPage-list-item-sum")?.innerHTML || 0)
         );
+        amount.textContent = Number(amount.innerHTML) + 1;
       }
     });
 
@@ -142,6 +143,7 @@ const addProductIncreaseDecreasButtonsEventListener = () => {
           "decrease",
           Number(item.querySelector(".cartPage-list-item-sum")?.innerHTML || 0)
         );
+        amount.textContent = Number(amount.innerHTML) - 1;
       }
     });
   });
@@ -188,7 +190,7 @@ const addProductDeleteButtonEventListener = () => {
   });
 };
 
-const addOrderItemsUsageButtonsEventListener = (items) => {
+const addOrderItemsUsageButtonsEventListener = () => {
   const productsCartElements = document.querySelectorAll(".cartPage-list-item");
 
   productsCartElements?.forEach((item) => {

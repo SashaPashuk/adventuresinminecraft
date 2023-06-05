@@ -1,4 +1,4 @@
-import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=2e3})=>{var r=document.querySelector(".toasts-wrapper");const s=document.createElement("div");s.className="toast-container";var a=document.createElement("div"),o=document.createElement("p");o.innerHTML=e,a.appendChild(o),s.appendChild(a),r.appendChild(s),setTimeout(()=>{s.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}.png" alt=${e}-image />`},renderShopItemInfoHTML=({description:e,price:t,market_name:r,type:s})=>{var a=r||getImageNameTemporarySolution(s.toLowerCase()),o=document.querySelector(".product-info__content"),r=`
+import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=2e3})=>{var r=document.querySelector(".toasts-wrapper");const s=document.createElement("div");s.className="toast-container";var a=document.createElement("div"),o=document.createElement("p");o.innerHTML=e,a.appendChild(o),s.appendChild(a),r.appendChild(s),setTimeout(()=>{s.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}.png" alt=${e}-image />`},renderShopItemInfoHTML=({description:e,price:t,market_name:r,image_name:s,type:a})=>{var s=s||getImageNameTemporarySolution(a.toLowerCase()),o=document.querySelector(".product-info__content"),r=`
     <h2 class="content__title">${r}</h2>
     <h4 class="content__subtitle">Описание товара:</h4>
     <p class="content__text">${e}</p>
@@ -25,10 +25,10 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
       </div>
     </div>
   `,e=document.querySelector(".product-info__slider"),t=`
-    ${renderShopItemImgHTML({shopItemName:a,shopItemType:s.toLowerCase(),imageClass:"slider__main-img"})}
-  `;e.innerHTML=t,o.innerHTML=r},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let a="";e?.forEach(({product_id:e,amount:t,price:r,time_to_use:s})=>{t=`
+    ${renderShopItemImgHTML({shopItemName:s,shopItemType:a.toLowerCase(),imageClass:"slider__main-img"})}
+  `;e.innerHTML=t,o.innerHTML=r},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let o="";e?.forEach(({product_id:e,amount:t,price:r,time_to_use:s,image_name:a})=>{a=`
         <li class="cartPage-list-item" data-cart-id=${e}>
-          <h3>Название товара</h3>
+          <h3>${a||"Название товара - (temporary)"}</h3>
           <div class="cartPage-list-item-amount">
             <span>Количество:</span>
             <div class="cartPage-list-item-amount-actions">
@@ -60,7 +60,7 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
             />
           </div>
       </li>
-    `;a+=t}),t.innerHTML=a},renderServerDropdownItemsHTML=e=>{var t=document.querySelector(".dropdown-custom__container");let r="";e?.forEach(({server_type:e})=>{e=`
+    `;o+=a}),t.innerHTML=o},renderServerDropdownItemsHTML=e=>{var t=document.querySelector(".dropdown-custom__container");let r="";e?.forEach(({server_type:e})=>{e=`
       <li class="dropdown-custom__container__item">${e}</li>
     `;r+=e}),t.innerHTML=r},renderOrderHistoryItemsHTML=e=>{var t=document.querySelector(".orderHistory-orders");let s="";e?.results?.forEach(({id:e,total_price:t,order_item:r})=>{e=`
         <li class="orderHistory-orders-order-container">
@@ -117,17 +117,17 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
           </ul>
         </div>
       </li>
-    `;s+=e}),t.innerHTML=s},renderShopItemsListHTML=e=>{var t=document.querySelector(".products__list");let o="";e?.results?.forEach(({price:e,market_name:t,id:r,type:s})=>{var a=t||getImageNameTemporarySolution(s.toLowerCase()),s=`
+    `;s+=e}),t.innerHTML=s},renderShopItemsListHTML=e=>{var t=document.querySelector(".products__list");let o="";e?.results?.forEach(({price:e,market_name:t,image_name:r,id:s,type:a})=>{r=r||getImageNameTemporarySolution(a.toLowerCase()),a=`
           <div class="products-card">
-            ${renderShopItemImgHTML({shopItemName:a,shopItemType:s.toLowerCase()})}
+            ${renderShopItemImgHTML({shopItemName:r,shopItemType:a.toLowerCase()})}
             <p class="products-card__title">
-              ${t||a+" (Temporary)"}
+              ${t||r+" (Temporary)"}
             </p>
             <div class="products-card__block">
                 <p class="products-card__price">
                   €${Number(e).toFixed(2)}
                 </p>
-                <button class="products-card__buy" data-id=${r}></button>
+                <button class="products-card__buy" data-id=${s}></button>
             </div>
           </div>
-      `;o+=s}),t.innerHTML=o},getImageNameTemporarySolution=e=>{var t={survival:["ADMIN","BOG","BOSS","CREATIVE","GHOST","CREATOR"],anarchy:["Ihor","Elder","Legend","Mega","Paladin","Poseidon","Universal"]},r=Math.floor(Math.random()*(t[e].length-1))+1;return t[e][r]};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML};
+      `;o+=a}),t.innerHTML=o},getImageNameTemporarySolution=e=>{var t={survival:["ADMIN","BOG","BOSS","CREATIVE","GHOST","CREATOR"],anarchy:["Ihor","Elder","Legend","Mega","Paladin","Poseidon","Universal"]},r=Math.floor(Math.random()*(t[e].length-1))+1;return t[e][r]};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML};
