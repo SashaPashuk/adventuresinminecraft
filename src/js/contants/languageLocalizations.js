@@ -38,6 +38,9 @@ export const languageLocalizations = {
     change_password_title: "Changing the password",
     change_password_text: "Enter a new password",
     change_password_button: "Change password",
+    changePasswordPage__oldPasswordPlaceholder: "Old password",
+    changePasswordPage__newPasswordPlaceholder: "New password",
+    changePasswordPage__repeatPasswordPlaceholder: "Repeat password",
 
     // team page
     team_title: "Project team",
@@ -210,6 +213,9 @@ export const languageLocalizations = {
     change_password_title: "Измение пароля",
     change_password_text: "Введите новый пароль",
     change_password_button: "Изменить пароль",
+    changePasswordPage__oldPasswordPlaceholder: "Старый пароль",
+    changePasswordPage__newPasswordPlaceholder: "Новый пароль",
+    changePasswordPage__repeatPasswordPlaceholder: "Повторите пароль",
 
     // team page
     team_title: "Команда проекта",
@@ -361,10 +367,11 @@ export const languageLocalizations = {
 // successPayment
 // exit-confirmation
 // faq
-// order-history-page
+// order-history
 // product
 // login
 // registration
+// change-password
 
 // language related requests to BE for downloading products (Product, Home pages)
 
@@ -372,7 +379,6 @@ export const languageLocalizations = {
 
 // pages
 // cart
-// change-password
 // donate-privileges
 // donation-description
 // launcher-download
