@@ -132,7 +132,7 @@ export const renderCartItemsHTML = (items) => {
         <li class="cartPage-list-item" data-cart-id=${product_id}>
           <h3>${image_name.slice(0, -4)}</h3>
           <div class="cartPage-list-item-amount">
-            <span>Количество:</span>
+            <span data-i18n-key="cartPage__amount">Количество:</span>
             <div class="cartPage-list-item-amount-actions">
               <img src="../assets/images/icons/arrow_left.svg" alt="" class='cart-item-decrease-button' />
               <span class="cart-item-amount">${amount}</span>
@@ -140,22 +140,30 @@ export const renderCartItemsHTML = (items) => {
             </div>
           </div>
           <div class="cartPage-list-item-usage">
-            <span>Срок действия покупки:</span>
+            <span data-i18n-key="cartPage__usage">Срок действия покупки:</span>
             <div class="cartPage-list-item-usage-actions">
-              <button id="item-usage-days" data-type=${
-                SHOP_ITEM_TIME_USAGE["30_DAYS"]
-              } class="${
-        time_to_use === SHOP_ITEM_TIME_USAGE["30_DAYS"] ? "selected" : ""
-      }">30 Дней</button>
-              <button id="item-usage-forever" data-type=${
-                SHOP_ITEM_TIME_USAGE.Forever
-              } class="${
-        time_to_use === SHOP_ITEM_TIME_USAGE.Forever ? "selected" : ""
-      }">Навсегда</button>
+              <button
+                data-i18n-key="cartPage__usage_30"
+                id="item-usage-days" data-type=${
+                  SHOP_ITEM_TIME_USAGE["30_DAYS"]
+                } 
+                class="${
+                  time_to_use === SHOP_ITEM_TIME_USAGE["30_DAYS"]
+                    ? "selected"
+                    : ""
+                }">30 Дней</button>
+              <button 
+                data-i18n-key="cartPage__usage_forever"
+                id="item-usage-forever" 
+                data-type=${SHOP_ITEM_TIME_USAGE.Forever} 
+                class="${
+                  time_to_use === SHOP_ITEM_TIME_USAGE.Forever ? "selected" : ""
+                }"
+              >Навсегда</button>
             </div>
           </div>
           <div>
-            <span>Цена:</span>
+            <span data-i18n-key="cartPage__price">Цена:</span>
             <div>
               <span>€</span>
               <span class="cartPage-list-item-sum">${sum_item_price}</span>

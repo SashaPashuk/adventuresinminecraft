@@ -186,6 +186,19 @@ export const languageLocalizations = {
     signUpPage__button: "Sign up",
     signUpPage__account: "Do you already have an account?",
     signUpPage__link: "Log in",
+
+    // cartPage
+    cartPage__title: "Basket",
+    cartPage__continueButton: "Continue Shopping",
+    cartPage__allPayment: "Total payable",
+    cartPage__nicknamePlaceholder: "Your nickname",
+    cartPage__serverText: "Server",
+    cartPage__payButton: "Pay",
+    cartPage__amount: "Quantity:",
+    cartPage__usage: "Purchase validity period:",
+    cartPage__usage_30: "30 Days",
+    cartPage__usage_forever: "Forever",
+    cartPage__price: "Price:",
   },
   ru: {
     // header
@@ -376,6 +389,19 @@ export const languageLocalizations = {
     signUpPage__button: "Зарегистрироваться",
     signUpPage__account: "У вас уже есть аккаунта?",
     signUpPage__link: "Войти",
+
+    // cartPage
+    cartPage__title: "Корзина",
+    cartPage__continueButton: "Продолжить покупку",
+    cartPage__allPayment: "Всего к оплате",
+    cartPage__nicknamePlaceholder: "Ваш никнейм",
+    cartPage__serverText: "Сервер",
+    cartPage__payButton: "Оплатить",
+    cartPage__amount: "Количество:",
+    cartPage__usage: "Срок действия покупки:",
+    cartPage__usage_30: "30 Дней",
+    cartPage__usage_forever: "Навсегда",
+    cartPage__price: "Цена:",
   },
 };
 
@@ -400,13 +426,13 @@ export const languageLocalizations = {
 // login
 // registration
 // change-password
+// cart
 
 // language related requests to BE for downloading products (Product, Home pages)
 
 // -> leftover
 
 // pages
-// cart
 // donate-privileges
 // donation-description
 // launcher-download
