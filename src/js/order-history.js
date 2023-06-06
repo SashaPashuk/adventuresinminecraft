@@ -1,5 +1,6 @@
 import {
   ITEM_ADDED_TO_CART_ERROR,
+  ITEM_ADDED_TO_CART_SUCCESS,
   errorsLanguageLocalizationsEnum,
 } from "./contants/errors.js";
 import API from "./services/api.js";
@@ -50,6 +51,9 @@ const addRepeatOrderEventListener = (shopOrdersResponse) => {
   const ordersHistoryElements = document.querySelectorAll(
     ".orderHistory-orders-order-container"
   );
+  const cartContainerCountElement = document.querySelector(
+    ".cart-container-count"
+  );
 
   ordersHistoryElements?.forEach((item, index) => {
     const orderItems = shopOrdersResponse?.results[index].order_item;
@@ -63,14 +67,26 @@ const addRepeatOrderEventListener = (shopOrdersResponse) => {
           item_id: orderItem.product_id,
         });
 
-        result === ITEM_ADDED_TO_CART_ERROR &&
+        if (result === ITEM_ADDED_TO_CART_ERROR) {
           addToastNotification({
-            // TODO: remove when database will be fulfilled
             message: getLocalizedError(
               errorsLanguageLocalizationsEnum.ITEM_ALREADY_ADDED_TO_CART_WITH_NAME,
-              { firstParam: orderItem?.image_name || "Название товара" }
+              { firstParam: orderItem?.image_name.slice(0, -4) }
             ),
           });
+        }
+
+        if (result === ITEM_ADDED_TO_CART_SUCCESS) {
+          addToastNotification({
+            message: getLocalizedError(
+              errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS,
+              { firstParam: orderItem?.image_name.slice(0, -4) }
+            ),
+          });
+
+          cartContainerCountElement.innerHTML =
+            Number(cartContainerCountElement.innerHTML) + 1;
+        }
       });
     });
   });

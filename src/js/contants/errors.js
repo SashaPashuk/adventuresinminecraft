@@ -36,12 +36,18 @@ export const errorsLanguageLocalizationsEnum = {
 
   ITEM_ADDED_TO_CART_ERROR: "ITEM_ADDED_TO_CART_ERROR",
   ITEM_ADDED_TO_CART_SUCCESS: "ITEM_ADDED_TO_CART_SUCCESS",
+  ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: "ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS",
   ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: "ITEM_ALREADY_ADDED_TO_CART_WITH_NAME",
   ITEM_DELETED_FROM_CART_SUCCESS: "ITEM_DELETED_FROM_CART_SUCCESS",
 
   ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR: "ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR",
+  ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:
+    "ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR",
+  ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR:
+    "ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR",
   ITEM_AMOUNT_CHANGED_SUCCESS: "ITEM_AMOUNT_CHANGED_SUCCESS",
 
+  ITEM_DURATION_ERROR: "ITEM_DURATION_ERROR",
   ITEM_DURATION_SUCCESS: "ITEM_DURATION_SUCCESS",
 };
 
@@ -55,11 +61,18 @@ export const errorsLanguageLocalizations = {
     ITEM_ADDED_TO_CART_ERROR: "Item already added to busket.",
     ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
       `This item  ‹‹${name}›› has already been added to your cart.`,
+    ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
+      `This item  ‹‹${name}›› was successfully added to your cart.`,
     ITEM_DELETED_FROM_CART_SUCCESS: "Item has been removed from the basket.",
 
     ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR: "Amount cannot be changed.",
+    ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:
+      "Amount cannot be more then one.",
+    ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR:
+      "Amount cannot be less then one.",
     ITEM_AMOUNT_CHANGED_SUCCESS: "Amount has been changed.",
 
+    ITEM_DURATION_ERROR: "Duration can not be changed for this item.",
     ITEM_DURATION_SUCCESS: "Duration has been changed.",
   },
   ru: {
@@ -70,11 +83,19 @@ export const errorsLanguageLocalizations = {
     ITEM_ADDED_TO_CART_ERROR: "Предмет уже добавлен в корзину.",
     ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
       `Предмет ‹‹${name}›› уже добавлен в корзину.`,
+    ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
+      `Предмет ‹‹${name}›› успешно добавлен в корзину.`,
     ITEM_DELETED_FROM_CART_SUCCESS: "Предмет успешно удален с корзины.",
 
     ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR: "Количество не может быть изменено.",
+    ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:
+      "Количество не может быть больше одного.",
+    ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR:
+      "Количество не может быть меньше одного.",
     ITEM_AMOUNT_CHANGED_SUCCESS: "Количество было изменено.",
 
+    ITEM_DURATION_ERROR:
+      "Продолжительность не может быть изменена для данного предмета.",
     ITEM_DURATION_SUCCESS: "Продолжительность была изменена.",
   },
 };

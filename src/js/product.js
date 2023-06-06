@@ -16,6 +16,13 @@ import {
   errorsLanguageLocalizationsEnum,
 } from "./contants/errors.js";
 
+// Constants
+const lsTokens = localStorage.getItem("tokens");
+let lsShopOrderItems =
+  (localStorage.getItem("orderItems") &&
+    JSON.parse(localStorage.getItem("orderItems"))) ||
+  [];
+
 // Observer
 
 LanguageEventObserever.subscribe(async (data) => {
@@ -44,7 +51,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   addBuyShopItemEventListener(shopItemsResponse);
   addShopItemAmountEventListener();
-  // addCarouselEventListeners();
 });
 
 const addBuyShopItemEventListener = (item) => {
@@ -59,20 +65,63 @@ const addBuyShopItemEventListener = (item) => {
   buyButtonElement?.addEventListener("click", async (event) => {
     event.preventDefault();
 
+    // Logic for unauthorized user
+    if (!lsTokens) {
+      // Item can be added to cart once
+      if (lsShopOrderItems.find((orderItem) => orderItem.id === item.id)) {
+        addToastNotification({
+          message: getLocalizedError(
+            errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_ERROR
+          ),
+        });
+        return;
+      }
+
+      if (item.is_one_time && Number(itemAmountElement.innerHTML) !== 1) {
+        addToastNotification({
+          message: getLocalizedError(
+            errorsLanguageLocalizationsEnum.ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR
+          ),
+        });
+        return;
+      }
+
+      const updatedlsShopOrderItems = [
+        ...lsShopOrderItems,
+        {
+          ...item,
+          amount: Number(itemAmountElement.innerHTML),
+          time_to_use: SHOP_ITEM_TIME_USAGE["30_DAYS"],
+          sum_item_price: Number(item.price),
+        },
+      ];
+      lsShopOrderItems = updatedlsShopOrderItems;
+      localStorage.setItem(
+        "orderItems",
+        JSON.stringify(updatedlsShopOrderItems)
+      );
+
+      addToastNotification({
+        message: getLocalizedError(
+          errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_SUCCESS
+        ),
+      });
+
+      cartContainerCountElement.innerHTML =
+        Number(cartContainerCountElement.innerHTML) + 1;
+
+      return;
+    }
+
+    // Logic for authorized user
     const result = await API.addShopItemToCart({
       amount: itemAmountElement.innerHTML,
       item_id: item.id,
       time_to_use: SHOP_ITEM_TIME_USAGE["30_DAYS"],
     });
 
-    const amountErrors = (result?.amount && result?.amount[0]) || "";
     // errors
-    result?.detail === TOKEN_NOT_EXISTS &&
-      addToastNotification({
-        message: getLocalizedError(
-          errorsLanguageLocalizationsEnum.USER_SHOULD_LOGIN_FIRST
-        ),
-      });
+    const amountErrors = (result?.amount && result?.amount[0]) || "";
 
     Boolean(amountErrors) &&
       addToastNotification({ message: result?.amount[0] });
@@ -141,51 +190,3 @@ const addShopItemAmountEventListener = () => {
     priceElement.textContent = `€${totalPrice}`;
   }
 };
-
-// TODO: delete if really no longer needed
-// let currentSlide = 0;
-// const addCarouselEventListeners = () => {
-//   const prevButton = document.querySelector(".slider__button-prev");
-//   const nextButton = document.querySelector(".slider__button-next");
-//   const mainImage = document.querySelector(".slider__main-img");
-//   const images = document.querySelectorAll(".slider__row img");
-
-//   // Функція для оновлення великої картинки
-//   function updateMainImage() {
-//     mainImage.src = images[currentSlide].src;
-//   }
-
-//   // Додати обробник події на кнопку "Наступний"
-//   nextButton.addEventListener("click", () => {
-//     currentSlide++;
-//     if (currentSlide >= images.length) {
-//       currentSlide = 0;
-//     }
-//     updateMainImage();
-//   });
-
-//   // Додати обробник події на кнопку "Попередній"
-//   prevButton.addEventListener("click", () => {
-//     currentSlide--;
-//     if (currentSlide < 0) {
-//       currentSlide = images.length - 1;
-//     }
-//     updateMainImage();
-//   });
-// };
-
-// window.addEventListener(
-//   "storage",
-//   (event) => {
-//     const language = localStorage.getItem("language");
-
-//     console.log("language", language);
-//   },
-//   true
-// );
-
-const localStorageSetHandler = function (e) {
-  alert('localStorage.set("' + e.key + '", "' + e.value + '") was called');
-};
-
-document.addEventListener("itemInserted", localStorageSetHandler, false);

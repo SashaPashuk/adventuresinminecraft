@@ -15,7 +15,7 @@ menuItems.forEach(function (item) {
 
 // user logic
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   const tokensData = localStorage.getItem("tokens");
   const usernameData = localStorage.getItem("username");
 
@@ -30,18 +30,21 @@ document.addEventListener("DOMContentLoaded", () => {
     navItemForUserDropdownLogic?.classList.add("hidden");
   }
 
-  // show amount of items in cart
-  const orderItemsResult = API.getShopOrderItems();
+  // Show amount of items in cart
+  const lsShopOrderItems = localStorage.getItem("orderItems");
+  const serverShopOrderItemsResponse = await API.getShopOrderItems();
 
-  orderItemsResult.then((data) => {
-    const cartContainerCountElement = document.querySelector(
-      ".cart-container-count"
-    );
+  const shopOrderItemsResponse =
+    (lsShopOrderItems && JSON.parse(lsShopOrderItems)) ||
+    serverShopOrderItemsResponse;
 
-    if (cartContainerCountElement) {
-      cartContainerCountElement.innerHTML = data.length || 0;
-    }
-  });
+  const cartContainerCountElement = document.querySelector(
+    ".cart-container-count"
+  );
+
+  if (cartContainerCountElement) {
+    cartContainerCountElement.innerHTML = shopOrderItemsResponse.length || 0;
+  }
 });
 
 // dropdown logic

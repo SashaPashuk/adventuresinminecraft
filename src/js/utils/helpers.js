@@ -6,7 +6,7 @@ import { SHOP_ITEM_TIME_USAGE } from "../contants/constants.js";
  * @param {Number} param.duration
  * @returns {void}
  */
-export const addToastNotification = ({ message, duration = 2000 }) => {
+export const addToastNotification = ({ message, duration = 3000 }) => {
   const toastsWrapperElement = document.querySelector(".toasts-wrapper");
 
   const toastContainer = document.createElement("div");
@@ -40,7 +40,7 @@ export const renderShopItemImgHTML = ({
 }) => {
   const classAttribute = imageClass ? `class="${imageClass}"` : "";
 
-  return `<img ${classAttribute} src="../assets/images/products/${shopItemType}/${shopItemName}.png" alt=${shopItemName}-image />`;
+  return `<img ${classAttribute} src="../assets/images/products/${shopItemType}/${shopItemName}" alt=${shopItemName}-image />`;
 };
 
 export const renderShopItemInfoHTML = ({
@@ -50,13 +50,10 @@ export const renderShopItemInfoHTML = ({
   image_name,
   type,
 }) => {
-  // TODO: remove getImageNameTemporarySolution and leave just image_name field from DB shop item
-  const shopItemName =
-    image_name || getImageNameTemporarySolution(type.toLowerCase());
-
   const productInfoContainerElement = document.querySelector(
     ".product-info__content"
   );
+
   const itemInfo = `
     <h2 class="content__title">${market_name}</h2>
     <h4 data-i18n-key="productPage__desc" class="content__subtitle">Описание товара:</h4>
@@ -92,7 +89,7 @@ export const renderShopItemInfoHTML = ({
   );
   const itemSlider = `
     ${renderShopItemImgHTML({
-      shopItemName,
+      shopItemName: image_name,
       shopItemType: type.toLowerCase(),
       imageClass: "slider__main-img",
     })}
@@ -106,10 +103,11 @@ export const renderCartItemsHTML = (items) => {
   const cartItemsContainerElement = document.querySelector(".cartPage-list");
   let html = "";
 
-  items?.forEach(({ product_id, amount, price, time_to_use, image_name }) => {
-    const item = `
+  items?.forEach(
+    ({ product_id, amount, sum_item_price, time_to_use, image_name }) => {
+      const item = `
         <li class="cartPage-list-item" data-cart-id=${product_id}>
-          <h3>${image_name || "Название товара - (temporary)"}</h3>
+          <h3>${image_name.slice(0, -4)}</h3>
           <div class="cartPage-list-item-amount">
             <span>Количество:</span>
             <div class="cartPage-list-item-amount-actions">
@@ -124,20 +122,20 @@ export const renderCartItemsHTML = (items) => {
               <button id="item-usage-days" data-type=${
                 SHOP_ITEM_TIME_USAGE["30_DAYS"]
               } class="${
-      time_to_use === SHOP_ITEM_TIME_USAGE["30_DAYS"] ? "selected" : ""
-    }">30 Дней</button>
+        time_to_use === SHOP_ITEM_TIME_USAGE["30_DAYS"] ? "selected" : ""
+      }">30 Дней</button>
               <button id="item-usage-forever" data-type=${
                 SHOP_ITEM_TIME_USAGE.Forever
               } class="${
-      time_to_use === SHOP_ITEM_TIME_USAGE.Forever ? "selected" : ""
-    }">Навсегда</button>
+        time_to_use === SHOP_ITEM_TIME_USAGE.Forever ? "selected" : ""
+      }">Навсегда</button>
             </div>
           </div>
           <div>
             <span>Цена:</span>
             <div>
               <span>€</span>
-              <span class="cartPage-list-item-sum">${price}</span>
+              <span class="cartPage-list-item-sum">${sum_item_price}</span>
             </div>
           </div>
           <div class="cart-container">
@@ -151,8 +149,9 @@ export const renderCartItemsHTML = (items) => {
       </li>
     `;
 
-    html += item;
-  });
+      html += item;
+    }
+  );
 
   cartItemsContainerElement.innerHTML = html;
 };
@@ -220,7 +219,7 @@ export const renderOrderHistoryItemsHTML = (data) => {
             ({ amount, price, sum_item_price, time_to_use, image_name }) => {
               return `
               <li class="orderHistory-orders-order-details-list-item">
-                <h3>${image_name}</h3>
+                <h3>${image_name.slice(0, -4)}</h3>
                 <div>
                   <span data-i18n-key="orderHistoryPage__itemDuration">Срок действия покупки:</span>
                   <span>${time_to_use}</span>
@@ -259,17 +258,14 @@ export const renderShopItemsListHTML = (items) => {
   let html = "";
 
   items?.results?.forEach(({ price, market_name, image_name, id, type }) => {
-    // TODO: remove getImageNameTemporarySolution and leave just image_name field from DB shop item
-    const shopItemName =
-      image_name || getImageNameTemporarySolution(type.toLowerCase());
     const item = `
           <div class="products-card">
             ${renderShopItemImgHTML({
-              shopItemName,
+              shopItemName: image_name,
               shopItemType: type.toLowerCase(),
             })}
             <p class="products-card__title">
-              ${market_name || `${shopItemName} (Temporary)`}
+              ${market_name}
             </p>
             <div class="products-card__block">
                 <p class="products-card__price">
@@ -284,25 +280,4 @@ export const renderShopItemsListHTML = (items) => {
   });
 
   productListContainerElements.innerHTML = html;
-};
-
-// TODO: Delete when database will be correctly fullfield
-const getImageNameTemporarySolution = (type) => {
-  const imageNames = {
-    survival: ["ADMIN", "BOG", "BOSS", "CREATIVE", "GHOST", "CREATOR"],
-    anarchy: [
-      "Ihor",
-      "Elder",
-      "Legend",
-      "Mega",
-      "Paladin",
-      "Poseidon",
-      "Universal",
-    ],
-  };
-
-  const randomNum =
-    Math.floor(Math.random() * (imageNames[type].length - 1)) + 1;
-
-  return imageNames[type][randomNum];
 };

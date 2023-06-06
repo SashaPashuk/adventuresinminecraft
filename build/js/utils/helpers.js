@@ -1,4 +1,4 @@
-import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=2e3})=>{var r=document.querySelector(".toasts-wrapper");const a=document.createElement("div");a.className="toast-container";var s=document.createElement("div"),o=document.createElement("p");o.innerHTML=e,s.appendChild(o),a.appendChild(s),r.appendChild(a),setTimeout(()=>{a.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}.png" alt=${e}-image />`},renderShopItemInfoHTML=({description:e,price:t,market_name:r,image_name:a,type:s})=>{var a=a||getImageNameTemporarySolution(s.toLowerCase()),o=document.querySelector(".product-info__content"),r=`
+import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=3e3})=>{var r=document.querySelector(".toasts-wrapper");const s=document.createElement("div");s.className="toast-container";var a=document.createElement("div"),o=document.createElement("p");o.innerHTML=e,a.appendChild(o),s.appendChild(a),r.appendChild(s),setTimeout(()=>{s.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`},renderShopItemInfoHTML=({description:e,price:t,market_name:r,image_name:s,type:a})=>{var o=document.querySelector(".product-info__content"),r=`
     <h2 class="content__title">${r}</h2>
     <h4 data-i18n-key="productPage__desc" class="content__subtitle">Описание товара:</h4>
     <p class="content__text">${e}</p>
@@ -25,10 +25,10 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
       </div>
     </div>
   `,e=document.querySelector(".product-info__slider"),t=`
-    ${renderShopItemImgHTML({shopItemName:a,shopItemType:s.toLowerCase(),imageClass:"slider__main-img"})}
-  `;e.innerHTML=t,o.innerHTML=r},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let o="";e?.forEach(({product_id:e,amount:t,price:r,time_to_use:a,image_name:s})=>{s=`
+    ${renderShopItemImgHTML({shopItemName:s,shopItemType:a.toLowerCase(),imageClass:"slider__main-img"})}
+  `;e.innerHTML=t,o.innerHTML=r},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let o="";e?.forEach(({product_id:e,amount:t,sum_item_price:r,time_to_use:s,image_name:a})=>{a=`
         <li class="cartPage-list-item" data-cart-id=${e}>
-          <h3>${s||"Название товара - (temporary)"}</h3>
+          <h3>${a.slice(0,-4)}</h3>
           <div class="cartPage-list-item-amount">
             <span>Количество:</span>
             <div class="cartPage-list-item-amount-actions">
@@ -40,8 +40,8 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
           <div class="cartPage-list-item-usage">
             <span>Срок действия покупки:</span>
             <div class="cartPage-list-item-usage-actions">
-              <button id="item-usage-days" data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]} class="${a===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"selected":""}">30 Дней</button>
-              <button id="item-usage-forever" data-type=${SHOP_ITEM_TIME_USAGE.Forever} class="${a===SHOP_ITEM_TIME_USAGE.Forever?"selected":""}">Навсегда</button>
+              <button id="item-usage-days" data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]} class="${s===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"selected":""}">30 Дней</button>
+              <button id="item-usage-forever" data-type=${SHOP_ITEM_TIME_USAGE.Forever} class="${s===SHOP_ITEM_TIME_USAGE.Forever?"selected":""}">Навсегда</button>
             </div>
           </div>
           <div>
@@ -60,9 +60,9 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
             />
           </div>
       </li>
-    `;o+=s}),t.innerHTML=o},renderServerDropdownItemsHTML=e=>{var t=document.querySelector(".dropdown-custom__container");let r="";e?.forEach(({server_type:e})=>{e=`
+    `;o+=a}),t.innerHTML=o},renderServerDropdownItemsHTML=e=>{var t=document.querySelector(".dropdown-custom__container");let r="";e?.forEach(({server_type:e})=>{e=`
       <li class="dropdown-custom__container__item">${e}</li>
-    `;r+=e}),t.innerHTML=r},renderOrderHistoryItemsHTML=e=>{var t=document.querySelector(".orderHistory-orders");let a="";e?.results?.forEach(({id:e,total_price:t,order_item:r})=>{e=`
+    `;r+=e}),t.innerHTML=r},renderOrderHistoryItemsHTML=e=>{var t=document.querySelector(".orderHistory-orders");let s="";e?.results?.forEach(({id:e,total_price:t,order_item:r})=>{e=`
         <li class="orderHistory-orders-order-container">
         <div class="orderHistory-orders-order">
           <div><span>Заказ ${e}</span><span data-i18n-key="orderHistoryPage__orderDone">Выполнен</span></div>
@@ -93,12 +93,12 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
         <div class="orderHistory-orders-order-details hidden">
           <h3 data-i18n-key="orderHistoryPage__items" class="orderHistory-orders-order-details-title">Товары</h3>
           <ul class="orderHistory-orders-order-details-list">
-          ${r.map(({amount:e,price:t,sum_item_price:r,time_to_use:a,image_name:s})=>`
+          ${r.map(({amount:e,price:t,sum_item_price:r,time_to_use:s,image_name:a})=>`
               <li class="orderHistory-orders-order-details-list-item">
-                <h3>${s}</h3>
+                <h3>${a.slice(0,-4)}</h3>
                 <div>
                   <span data-i18n-key="orderHistoryPage__itemDuration">Срок действия покупки:</span>
-                  <span>${a}</span>
+                  <span>${s}</span>
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__itemAmount">Количество:</span>
@@ -117,17 +117,17 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
           </ul>
         </div>
       </li>
-    `;a+=e}),t.innerHTML=a},renderShopItemsListHTML=e=>{var t=document.querySelector(".products__list");let o="";e?.results?.forEach(({price:e,market_name:t,image_name:r,id:a,type:s})=>{r=r||getImageNameTemporarySolution(s.toLowerCase()),s=`
+    `;s+=e}),t.innerHTML=s},renderShopItemsListHTML=e=>{var t=document.querySelector(".products__list");let o="";e?.results?.forEach(({price:e,market_name:t,image_name:r,id:s,type:a})=>{r=`
           <div class="products-card">
-            ${renderShopItemImgHTML({shopItemName:r,shopItemType:s.toLowerCase()})}
+            ${renderShopItemImgHTML({shopItemName:r,shopItemType:a.toLowerCase()})}
             <p class="products-card__title">
-              ${t||r+" (Temporary)"}
+              ${t}
             </p>
             <div class="products-card__block">
                 <p class="products-card__price">
                   €${Number(e).toFixed(2)}
                 </p>
-                <button class="products-card__buy" data-id=${a}></button>
+                <button class="products-card__buy" data-id=${s}></button>
             </div>
           </div>
-      `;o+=s}),t.innerHTML=o},getImageNameTemporarySolution=e=>{var t={survival:["ADMIN","BOG","BOSS","CREATIVE","GHOST","CREATOR"],anarchy:["Ihor","Elder","Legend","Mega","Paladin","Poseidon","Universal"]},r=Math.floor(Math.random()*(t[e].length-1))+1;return t[e][r]};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML};
+      `;o+=r}),t.innerHTML=o};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML};

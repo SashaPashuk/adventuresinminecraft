@@ -15,21 +15,29 @@ import {
 } from "./contants/errors.js";
 import { SHOP_ITEM_TIME_USAGE } from "./contants/constants.js";
 
+// Constants
+const lsTokens = localStorage.getItem("tokens");
+let lsShopOrderItems = localStorage.getItem("orderItems");
+
 // Event Listeners
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const shopOrderItemsResponse = await API.getShopOrderItems();
+  const serverShopOrderItemsResponse = await API.getShopOrderItems();
   const shopServersResponse = await API.getShopServersRequest();
+
+  const shopOrderItemsResponse =
+    (lsShopOrderItems && JSON.parse(lsShopOrderItems)) ||
+    serverShopOrderItemsResponse;
 
   renderCartItemsHTML(shopOrderItemsResponse);
   renderOverallPaymentSumHTML(shopOrderItemsResponse);
   renderServerDropdownItemsHTML(shopServersResponse);
 
-  addProductDeleteButtonEventListener();
-  addProductIncreaseDecreasButtonsEventListener();
+  addProductDeleteButtonEventListener(shopOrderItemsResponse);
+  addProductIncreaseDecreasButtonsEventListener(shopOrderItemsResponse);
+  addOrderItemsUsageButtonsEventListener(shopOrderItemsResponse);
   addCartPaymentButtonEventListener();
   addServersDropdownEventListener();
-  addOrderItemsUsageButtonsEventListener();
 });
 
 const addCartPaymentButtonEventListener = () => {
@@ -105,15 +113,52 @@ const addServersDropdownEventListener = () => {
   });
 };
 
-const addProductIncreaseDecreasButtonsEventListener = () => {
+const addProductIncreaseDecreasButtonsEventListener = (items) => {
   const productsCartElements = document.querySelectorAll(".cartPage-list-item");
 
-  productsCartElements?.forEach((item) => {
+  productsCartElements?.forEach((item, index) => {
     const increase = item.querySelector(".cart-item-increase-button");
     const decrease = item.querySelector(".cart-item-decrease-button");
     const amount = item.querySelector(".cart-item-amount");
 
     increase.addEventListener("click", async () => {
+      // Logic for unauthorized user
+      if (!lsTokens) {
+        if (items[index].is_one_time) {
+          addToastNotification({
+            message: getLocalizedError(
+              errorsLanguageLocalizationsEnum.ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR
+            ),
+          });
+          return;
+        }
+
+        modifyOverallPaymentSumHTML(
+          "increase",
+          Number(item.querySelector(".cartPage-list-item-sum")?.innerHTML || 0)
+        );
+        amount.textContent = Number(amount.innerHTML) + 1;
+
+        const updatedlsShopOrderItems = JSON.parse(lsShopOrderItems).map(
+          (orderItem) => ({
+            ...orderItem,
+            amount:
+              orderItem.id === items[index].id
+                ? orderItem.amount + 1
+                : orderItem.amount,
+          })
+        );
+
+        lsShopOrderItems = updatedlsShopOrderItems;
+        localStorage.setItem(
+          "orderItems",
+          JSON.stringify(updatedlsShopOrderItems)
+        );
+
+        return;
+      }
+
+      // Logic for authorized user
       const response = await API.updateShopItemInCart(
         item.getAttribute("data-cart-id"),
         { amount: Number(amount.innerHTML) + 1 }
@@ -138,6 +183,51 @@ const addProductIncreaseDecreasButtonsEventListener = () => {
     });
 
     decrease.addEventListener("click", async () => {
+      // Logic for unauthorized user
+      if (!lsTokens) {
+        if (items[index].is_one_time) {
+          addToastNotification({
+            message: getLocalizedError(
+              errorsLanguageLocalizationsEnum.ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR
+            ),
+          });
+          return;
+        }
+        if (Number(amount.innerHTML) === 1) {
+          addToastNotification({
+            message: getLocalizedError(
+              errorsLanguageLocalizationsEnum.ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR
+            ),
+          });
+          return;
+        }
+
+        modifyOverallPaymentSumHTML(
+          "increase",
+          Number(item.querySelector(".cartPage-list-item-sum")?.innerHTML || 0)
+        );
+        amount.textContent = Number(amount.innerHTML) - 1;
+
+        const updatedlsShopOrderItems = JSON.parse(lsShopOrderItems).map(
+          (orderItem) => ({
+            ...orderItem,
+            amount:
+              orderItem.id === items[index].id
+                ? orderItem.amount - 1
+                : orderItem.amount,
+          })
+        );
+
+        lsShopOrderItems = updatedlsShopOrderItems;
+        localStorage.setItem(
+          "orderItems",
+          JSON.stringify(updatedlsShopOrderItems)
+        );
+
+        return;
+      }
+
+      // Logic for authorized user
       const response = await API.updateShopItemInCart(
         item.getAttribute("data-cart-id"),
         { amount: Number(amount.innerHTML) + 1 }
@@ -163,7 +253,7 @@ const addProductIncreaseDecreasButtonsEventListener = () => {
   });
 };
 
-const addProductDeleteButtonEventListener = () => {
+const addProductDeleteButtonEventListener = (items) => {
   const productsCartButtonElements = document.querySelectorAll(
     ".cart-item-delete-button"
   );
@@ -171,45 +261,73 @@ const addProductDeleteButtonEventListener = () => {
     ".cart-container-count"
   );
 
-  productsCartButtonElements.forEach((button) => {
-    button.addEventListener("click", (e) => {
+  productsCartButtonElements.forEach((button, index) => {
+    button.addEventListener("click", async (e) => {
       e.stopPropagation();
       e.preventDefault();
 
-      const response = API.deleteShopItemFromCart(
-        button.getAttribute("data-id")
-      );
       const cartElement = document.querySelector(
         `li[data-cart-id="${button.getAttribute("data-id")}"]`
       );
 
-      response.then((data) => {
-        if (data === ITEM_DELETED_FROM_CART_SUCCESS) {
-          modifyOverallPaymentSumHTML(
-            "decrease",
-            Number(
-              cartElement.querySelector(".cartPage-list-item-sum")?.innerHTML ||
-                0
-            )
-          );
-          addToastNotification({
-            message: getLocalizedError(
-              errorsLanguageLocalizationsEnum.ITEM_DELETED_FROM_CART_SUCCESS
-            ),
-          });
-          cartElement?.remove();
-          cartContainerCountElement.innerHTML =
-            Number(cartContainerCountElement.innerHTML) - 1;
-        }
-      });
+      // Logic for unauthorized user
+      if (!lsTokens) {
+        const updatedlsShopOrderItems = JSON.parse(lsShopOrderItems).filter(
+          (order) => order.id !== items[index].id
+        );
+        lsShopOrderItems = updatedlsShopOrderItems;
+        localStorage.setItem(
+          "orderItems",
+          JSON.stringify(updatedlsShopOrderItems)
+        );
+        modifyOverallPaymentSumHTML(
+          "decrease",
+          Number(
+            cartElement.querySelector(".cartPage-list-item-sum")?.innerHTML || 0
+          )
+        );
+        addToastNotification({
+          message: getLocalizedError(
+            errorsLanguageLocalizationsEnum.ITEM_DELETED_FROM_CART_SUCCESS
+          ),
+        });
+        cartElement?.remove();
+        cartContainerCountElement.innerHTML =
+          Number(cartContainerCountElement.innerHTML) - 1;
+        return;
+      }
+
+      // Logic for authorized user
+      const response = await API.deleteShopItemFromCart(
+        items[index].product_id
+      );
+
+      if (response === ITEM_DELETED_FROM_CART_SUCCESS) {
+        modifyOverallPaymentSumHTML(
+          "decrease",
+          Number(
+            cartElement.querySelector(".cartPage-list-item-sum")?.innerHTML || 0
+          )
+        );
+        addToastNotification({
+          message: getLocalizedError(
+            errorsLanguageLocalizationsEnum.ITEM_DELETED_FROM_CART_SUCCESS
+          ),
+        });
+        cartElement?.remove();
+        cartContainerCountElement.innerHTML =
+          Number(cartContainerCountElement.innerHTML) - 1;
+      }
     });
   });
 };
 
-const addOrderItemsUsageButtonsEventListener = () => {
+const addOrderItemsUsageButtonsEventListener = (_items) => {
+  const items = lsTokens ? _items : JSON.parse(lsShopOrderItems);
+  console.log("items", items);
   const productsCartElements = document.querySelectorAll(".cartPage-list-item");
 
-  productsCartElements?.forEach((item) => {
+  productsCartElements?.forEach((item, index) => {
     const buttonsContainer = item.querySelector(
       ".cartPage-list-item-usage-actions"
     );
@@ -224,6 +342,37 @@ const addOrderItemsUsageButtonsEventListener = () => {
     buttons?.forEach((button) => {
       button.addEventListener("click", async () => {
         if (button.getAttribute("data-type") === "30") {
+          // Logic for unauthorized user
+          if (!lsTokens) {
+            if (!items[index].forever_price) {
+              addToastNotification({
+                message: getLocalizedError(
+                  errorsLanguageLocalizationsEnum.ITEM_DURATION_ERROR
+                ),
+              });
+              return;
+            }
+
+            const updatedlsShopOrderItems = JSON.parse(lsShopOrderItems).map(
+              (orderItem) => ({
+                ...orderItem,
+                time_to_use:
+                  orderItem.id === items[index].id
+                    ? SHOP_ITEM_TIME_USAGE["30_DAYS"]
+                    : orderItem.time_to_use,
+              })
+            );
+
+            lsShopOrderItems = updatedlsShopOrderItems;
+            localStorage.setItem(
+              "orderItems",
+              JSON.stringify(updatedlsShopOrderItems)
+            );
+
+            return;
+          }
+
+          // Logic for authorized user
           const response = await API.updateShopItemDurationInCart({
             item_id: item.getAttribute("data-cart-id"),
             time_to_use: SHOP_ITEM_TIME_USAGE["30_DAYS"],
@@ -249,6 +398,37 @@ const addOrderItemsUsageButtonsEventListener = () => {
             usageForeverButton.classList.remove("selected");
           }
         } else {
+          // Logic for unauthorized user
+          if (!lsTokens) {
+            if (!items[index].forever_price) {
+              addToastNotification({
+                message: getLocalizedError(
+                  errorsLanguageLocalizationsEnum.ITEM_DURATION_ERROR
+                ),
+              });
+              return;
+            }
+
+            const updatedlsShopOrderItems = JSON.parse(lsShopOrderItems).map(
+              (orderItem) => ({
+                ...orderItem,
+                time_to_use:
+                  orderItem.id === items[index].id
+                    ? SHOP_ITEM_TIME_USAGE.Forever
+                    : orderItem.time_to_use,
+              })
+            );
+
+            lsShopOrderItems = updatedlsShopOrderItems;
+            localStorage.setItem(
+              "orderItems",
+              JSON.stringify(updatedlsShopOrderItems)
+            );
+
+            return;
+          }
+
+          // Logic for authorized user
           const response = await API.updateShopItemDurationInCart({
             item_id: item.getAttribute("data-cart-id"),
             time_to_use: SHOP_ITEM_TIME_USAGE.Forever,
@@ -278,6 +458,7 @@ const addOrderItemsUsageButtonsEventListener = () => {
     });
   });
 };
+
 // Render HTML Functions
 
 const renderOverallPaymentSumHTML = (data) => {

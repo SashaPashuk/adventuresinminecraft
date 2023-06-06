@@ -16,6 +16,14 @@ import {
   SHOP_ITEM_TYPES,
 } from "./contants/constants.js";
 
+// Constants
+
+const lsTokens = localStorage.getItem("tokens");
+let lsShopOrderItems =
+  (localStorage.getItem("orderItems") &&
+    JSON.parse(localStorage.getItem("orderItems"))) ||
+  [];
+
 // Observer
 
 LanguageEventObserever.subscribe(async (data) => {
@@ -29,7 +37,7 @@ LanguageEventObserever.subscribe(async (data) => {
 
   renderShopItemsListHTML(shopItemsResult);
 
-  addProductCartButtonsEventListeners();
+  addProductCartButtonsEventListeners(shopItemsResult);
   addProductCardsEventListeners(shopItemsResult);
   addShopItemsTypeSwitchEventListener();
 });
@@ -48,9 +56,40 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   renderShopItemsListHTML(shopItemsResult);
 
-  addProductCartButtonsEventListeners();
+  addProductCartButtonsEventListeners(shopItemsResult);
   addProductCardsEventListeners(shopItemsResult);
   addShopItemsTypeSwitchEventListener();
+
+  // After first login, we add all order items from lsShopOrderItems to server
+  if (lsTokens && lsShopOrderItems.length) {
+    const cartContainerCountElement = document.querySelector(
+      ".cart-container-count"
+    );
+
+    lsShopOrderItems.forEach(async (orderItem) => {
+      const result = await API.addShopItemToCart({
+        amount: orderItem.amount,
+        time_to_use: orderItem.time_to_use,
+        item_id: orderItem.id,
+      });
+
+      if (result === ITEM_ADDED_TO_CART_ERROR) {
+        addToastNotification({
+          message: getLocalizedError(
+            errorsLanguageLocalizationsEnum.ITEM_ALREADY_ADDED_TO_CART_WITH_NAME,
+            { firstParam: orderItem?.image_name.slice(0, -4) }
+          ),
+        });
+      }
+
+      if (result) {
+        cartContainerCountElement.innerHTML =
+          Number(cartContainerCountElement.innerHTML) + 1;
+      }
+
+      localStorage.removeItem("orderItems");
+    });
+  }
 });
 
 const addProductCardsEventListeners = (cards) => {
@@ -70,7 +109,7 @@ const addProductCardsEventListeners = (cards) => {
   });
 };
 
-const addProductCartButtonsEventListeners = () => {
+const addProductCartButtonsEventListeners = (items) => {
   const productsCartButtonElements = document.querySelectorAll(
     ".products-card__buy"
   );
@@ -78,11 +117,52 @@ const addProductCartButtonsEventListeners = () => {
     ".cart-container-count"
   );
 
-  productsCartButtonElements?.forEach((button) => {
+  productsCartButtonElements?.forEach((button, index) => {
     button.addEventListener("click", async (e) => {
       e.stopPropagation();
       e.preventDefault();
 
+      // Logic for unauthorized user
+      if (!lsTokens) {
+        // Item can be added to cart once
+        if (
+          lsShopOrderItems.find((item) => item.id === items.results[index].id)
+        ) {
+          addToastNotification({
+            message: getLocalizedError(
+              errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_ERROR
+            ),
+          });
+          return;
+        }
+        const updatedlsShopOrderItems = [
+          ...lsShopOrderItems,
+          {
+            ...items.results[index],
+            amount: 1,
+            time_to_use: SHOP_ITEM_TIME_USAGE["30_DAYS"],
+            sum_item_price: Number(items.results[index].price),
+          },
+        ];
+        lsShopOrderItems = updatedlsShopOrderItems;
+        localStorage.setItem(
+          "orderItems",
+          JSON.stringify(updatedlsShopOrderItems)
+        );
+
+        addToastNotification({
+          message: getLocalizedError(
+            errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_SUCCESS
+          ),
+        });
+
+        cartContainerCountElement.innerHTML =
+          Number(cartContainerCountElement.innerHTML) + 1;
+
+        return;
+      }
+
+      // Logic for authorized user
       const response = await API.addShopItemToCart({
         amount: 1,
         item_id: button.getAttribute("data-id"),
@@ -90,20 +170,13 @@ const addProductCartButtonsEventListeners = () => {
       });
 
       // errors
-      response?.detail === TOKEN_NOT_EXISTS &&
-        addToastNotification({
-          message: getLocalizedError(
-            errorsLanguageLocalizationsEnum.USER_SHOULD_LOGIN_FIRST
-          ),
-        });
-
-      response === ITEM_ADDED_TO_CART_ERROR &&
+      if (response === ITEM_ADDED_TO_CART_ERROR) {
         addToastNotification({
           message: getLocalizedError(
             errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_ERROR
           ),
         });
-
+      }
       // success
       if (
         response !== ITEM_ADDED_TO_CART_ERROR &&
@@ -147,7 +220,7 @@ const addShopItemsTypeSwitchEventListener = () => {
 
     renderShopItemsListHTML(shopItemsResult);
 
-    addProductCartButtonsEventListeners();
+    addProductCartButtonsEventListeners(shopItemsResult);
     addProductCardsEventListeners(shopItemsResult);
   });
 };

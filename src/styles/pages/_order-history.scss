@@ -107,11 +107,10 @@
                 &-list {
                     &-item {
                         margin-top: 16px;
-                        // display: grid;
-                        // grid-template-columns: auto auto repeat(3, 1fr);
-                        // column-gap: 20px;
-                        display: flex;
-                        justify-content: space-between;
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+                        column-gap: 20px;
+                        align-items: baseline;
 
                         h3 {
                             font-family: 'Montserrat';
