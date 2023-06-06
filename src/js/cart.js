@@ -5,6 +5,7 @@ import {
   renderServerDropdownItemsHTML,
 } from "./utils/helpers.js";
 import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
+import { ShopOrderItemsEventObserever } from "./utils/observer.js";
 import {
   FIELD_NOT_EMPTY_ERROR,
   ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR,
@@ -18,6 +19,17 @@ import { SHOP_ITEM_TIME_USAGE } from "./contants/constants.js";
 // Constants
 const lsTokens = localStorage.getItem("tokens");
 let lsShopOrderItems = localStorage.getItem("orderItems");
+
+// Observer
+
+ShopOrderItemsEventObserever.subscribe((shopOrderItemsResponse) => {
+  renderCartItemsHTML(shopOrderItemsResponse);
+  renderOverallPaymentSumHTML(shopOrderItemsResponse);
+
+  addProductDeleteButtonEventListener(shopOrderItemsResponse);
+  addProductIncreaseDecreasButtonsEventListener(shopOrderItemsResponse);
+  addOrderItemsUsageButtonsEventListener(shopOrderItemsResponse);
+});
 
 // Event Listeners
 
@@ -47,6 +59,15 @@ const addCartPaymentButtonEventListener = () => {
 
   cartPaymentButtonElement?.addEventListener("click", async (e) => {
     e.preventDefault();
+
+    if (!lsTokens) {
+      addToastNotification({
+        message: getLocalizedError(
+          errorsLanguageLocalizationsEnum.USER_SHOULD_LOGIN_FIRST
+        ),
+      });
+      return;
+    }
 
     const paymentSummaryElement = document.querySelector(
       ".cartPage-summary-payment"
@@ -133,27 +154,30 @@ const addProductIncreaseDecreasButtonsEventListener = (items) => {
           return;
         }
 
-        modifyOverallPaymentSumHTML(
-          "increase",
-          Number(item.querySelector(".cartPage-list-item-sum")?.innerHTML || 0)
-        );
+        modifyOverallPaymentSumHTML("increase", items[index].price || 0);
         amount.textContent = Number(amount.innerHTML) + 1;
 
-        const updatedlsShopOrderItems = JSON.parse(lsShopOrderItems).map(
-          (orderItem) => ({
-            ...orderItem,
-            amount:
-              orderItem.id === items[index].id
-                ? orderItem.amount + 1
-                : orderItem.amount,
-          })
-        );
+        const updatedlsShopOrderItems = items.map((orderItem) => ({
+          ...orderItem,
+          amount:
+            orderItem.id === items[index].id
+              ? orderItem.amount + 1
+              : orderItem.amount,
+          sum_item_price:
+            orderItem.id === items[index].id
+              ? orderItem.time_to_use === SHOP_ITEM_TIME_USAGE.Forever
+                ? (orderItem.amount + 1) * orderItem.forever_price
+                : (orderItem.amount + 1) * orderItem.price
+              : orderItem.sum_item_price,
+        }));
 
         lsShopOrderItems = updatedlsShopOrderItems;
         localStorage.setItem(
           "orderItems",
           JSON.stringify(updatedlsShopOrderItems)
         );
+
+        ShopOrderItemsEventObserever.broadcast(updatedlsShopOrderItems);
 
         return;
       }
@@ -165,20 +189,31 @@ const addProductIncreaseDecreasButtonsEventListener = (items) => {
       );
 
       // errors
-      response === ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR &&
+      if (response === ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR) {
         addToastNotification({
           message: getLocalizedError(
             errorsLanguageLocalizationsEnum.ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR
           ),
         });
+      }
 
       // success
       if (response === ITEM_AMOUNT_CHANGED_SUCCESS) {
-        modifyOverallPaymentSumHTML(
-          "increase",
-          Number(item.querySelector(".cartPage-list-item-sum")?.innerHTML || 0)
-        );
+        modifyOverallPaymentSumHTML("increase", items[index].price || 0);
         amount.textContent = Number(amount.innerHTML) + 1;
+
+        ShopOrderItemsEventObserever.broadcast(
+          items.map((el) => ({
+            ...el,
+            amount: el.id === items[index].id ? el.amount + 1 : el.amount,
+            sum_item_price:
+              el.id === items[index].id
+                ? el.time_to_use === SHOP_ITEM_TIME_USAGE.Forever
+                  ? (el.amount + 1) * el.forever_price
+                  : (el.amount + 1) * el.price
+                : el.sum_item_price,
+          }))
+        );
       }
     });
 
@@ -202,27 +237,27 @@ const addProductIncreaseDecreasButtonsEventListener = (items) => {
           return;
         }
 
-        modifyOverallPaymentSumHTML(
-          "increase",
-          Number(item.querySelector(".cartPage-list-item-sum")?.innerHTML || 0)
-        );
+        modifyOverallPaymentSumHTML("decrease", items[index].price || 0);
         amount.textContent = Number(amount.innerHTML) - 1;
 
-        const updatedlsShopOrderItems = JSON.parse(lsShopOrderItems).map(
-          (orderItem) => ({
-            ...orderItem,
-            amount:
-              orderItem.id === items[index].id
-                ? orderItem.amount - 1
-                : orderItem.amount,
-          })
-        );
+        const updatedlsShopOrderItems = items.map((orderItem) => ({
+          ...orderItem,
+          amount:
+            orderItem.id === items[index].id
+              ? orderItem.amount - 1
+              : orderItem.amount,
+          sum_item_price:
+            orderItem.id === items[index].id
+              ? (orderItem.amount - 1) * orderItem.price
+              : orderItem.sum_item_price,
+        }));
 
         lsShopOrderItems = updatedlsShopOrderItems;
         localStorage.setItem(
           "orderItems",
           JSON.stringify(updatedlsShopOrderItems)
         );
+        ShopOrderItemsEventObserever.broadcast(updatedlsShopOrderItems);
 
         return;
       }
@@ -230,24 +265,35 @@ const addProductIncreaseDecreasButtonsEventListener = (items) => {
       // Logic for authorized user
       const response = await API.updateShopItemInCart(
         item.getAttribute("data-cart-id"),
-        { amount: Number(amount.innerHTML) + 1 }
+        { amount: Number(amount.innerHTML) - 1 }
       );
 
       // errors
-      response === ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR &&
+      if (response === ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR) {
         addToastNotification({
           message: getLocalizedError(
             errorsLanguageLocalizationsEnum.ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR
           ),
         });
+      }
 
       // success
       if (response === ITEM_AMOUNT_CHANGED_SUCCESS) {
-        modifyOverallPaymentSumHTML(
-          "decrease",
-          Number(item.querySelector(".cartPage-list-item-sum")?.innerHTML || 0)
-        );
+        modifyOverallPaymentSumHTML("decrease", items[index].price || 0);
         amount.textContent = Number(amount.innerHTML) - 1;
+
+        ShopOrderItemsEventObserever.broadcast(
+          items.map((el) => ({
+            ...el,
+            amount: el.id === items[index].id ? el.amount - 1 : el.amount,
+            sum_item_price:
+              el.id === items[index].id
+                ? el.time_to_use === SHOP_ITEM_TIME_USAGE.Forever
+                  ? (el.amount - 1) * el.forever_price
+                  : (el.amount - 1) * el.price
+                : el.sum_item_price,
+          }))
+        );
       }
     });
   });
@@ -272,28 +318,27 @@ const addProductDeleteButtonEventListener = (items) => {
 
       // Logic for unauthorized user
       if (!lsTokens) {
-        const updatedlsShopOrderItems = JSON.parse(lsShopOrderItems).filter(
+        const updatedlsShopOrderItems = items.filter(
           (order) => order.id !== items[index].id
         );
+
         lsShopOrderItems = updatedlsShopOrderItems;
         localStorage.setItem(
           "orderItems",
           JSON.stringify(updatedlsShopOrderItems)
         );
-        modifyOverallPaymentSumHTML(
-          "decrease",
-          Number(
-            cartElement.querySelector(".cartPage-list-item-sum")?.innerHTML || 0
-          )
-        );
+
+        ShopOrderItemsEventObserever.broadcast(updatedlsShopOrderItems);
+
         addToastNotification({
           message: getLocalizedError(
             errorsLanguageLocalizationsEnum.ITEM_DELETED_FROM_CART_SUCCESS
           ),
         });
-        cartElement?.remove();
+
         cartContainerCountElement.innerHTML =
           Number(cartContainerCountElement.innerHTML) - 1;
+
         return;
       }
 
@@ -303,18 +348,16 @@ const addProductDeleteButtonEventListener = (items) => {
       );
 
       if (response === ITEM_DELETED_FROM_CART_SUCCESS) {
-        modifyOverallPaymentSumHTML(
-          "decrease",
-          Number(
-            cartElement.querySelector(".cartPage-list-item-sum")?.innerHTML || 0
-          )
-        );
         addToastNotification({
           message: getLocalizedError(
             errorsLanguageLocalizationsEnum.ITEM_DELETED_FROM_CART_SUCCESS
           ),
         });
-        cartElement?.remove();
+
+        ShopOrderItemsEventObserever.broadcast(
+          items.filter((el) => el.id !== items[index].id)
+        );
+
         cartContainerCountElement.innerHTML =
           Number(cartContainerCountElement.innerHTML) - 1;
       }
@@ -322,21 +365,12 @@ const addProductDeleteButtonEventListener = (items) => {
   });
 };
 
-const addOrderItemsUsageButtonsEventListener = (_items) => {
-  const items = lsTokens ? _items : JSON.parse(lsShopOrderItems);
-  console.log("items", items);
+const addOrderItemsUsageButtonsEventListener = (items) => {
   const productsCartElements = document.querySelectorAll(".cartPage-list-item");
 
   productsCartElements?.forEach((item, index) => {
-    const buttonsContainer = item.querySelector(
-      ".cartPage-list-item-usage-actions"
-    );
     const buttons = item.querySelectorAll(
       ".cartPage-list-item-usage-actions button"
-    );
-    const usageDaysButton = buttonsContainer.querySelector("#item-usage-days");
-    const usageForeverButton = buttonsContainer.querySelector(
-      "#item-usage-forever"
     );
 
     buttons?.forEach((button) => {
@@ -353,21 +387,25 @@ const addOrderItemsUsageButtonsEventListener = (_items) => {
               return;
             }
 
-            const updatedlsShopOrderItems = JSON.parse(lsShopOrderItems).map(
-              (orderItem) => ({
-                ...orderItem,
-                time_to_use:
-                  orderItem.id === items[index].id
-                    ? SHOP_ITEM_TIME_USAGE["30_DAYS"]
-                    : orderItem.time_to_use,
-              })
-            );
+            const updatedlsShopOrderItems = items.map((orderItem) => ({
+              ...orderItem,
+              time_to_use:
+                orderItem.id === items[index].id
+                  ? SHOP_ITEM_TIME_USAGE["30_DAYS"]
+                  : orderItem.time_to_use,
+              sum_item_price:
+                orderItem.id === items[index].id
+                  ? +orderItem.amount * +orderItem.price
+                  : orderItem.sum_item_price,
+            }));
 
             lsShopOrderItems = updatedlsShopOrderItems;
             localStorage.setItem(
               "orderItems",
               JSON.stringify(updatedlsShopOrderItems)
             );
+
+            ShopOrderItemsEventObserever.broadcast(updatedlsShopOrderItems);
 
             return;
           }
@@ -394,8 +432,19 @@ const addOrderItemsUsageButtonsEventListener = (_items) => {
               ),
             });
 
-            usageDaysButton.classList.add("selected");
-            usageForeverButton.classList.remove("selected");
+            ShopOrderItemsEventObserever.broadcast(
+              items.map((el) => ({
+                ...el,
+                time_to_use:
+                  el.id === items[index].id
+                    ? SHOP_ITEM_TIME_USAGE["30_DAYS"]
+                    : el.time_to_use,
+                sum_item_price:
+                  el.id === items[index].id
+                    ? +el.amount * +el.price
+                    : el.sum_item_price,
+              }))
+            );
           }
         } else {
           // Logic for unauthorized user
@@ -409,21 +458,25 @@ const addOrderItemsUsageButtonsEventListener = (_items) => {
               return;
             }
 
-            const updatedlsShopOrderItems = JSON.parse(lsShopOrderItems).map(
-              (orderItem) => ({
-                ...orderItem,
-                time_to_use:
-                  orderItem.id === items[index].id
-                    ? SHOP_ITEM_TIME_USAGE.Forever
-                    : orderItem.time_to_use,
-              })
-            );
+            const updatedlsShopOrderItems = items.map((orderItem) => ({
+              ...orderItem,
+              time_to_use:
+                orderItem.id === items[index].id
+                  ? SHOP_ITEM_TIME_USAGE.Forever
+                  : orderItem.time_to_use,
+              sum_item_price:
+                orderItem.id === items[index].id
+                  ? +orderItem.amount * +orderItem.forever_price
+                  : orderItem.sum_item_price,
+            }));
 
             lsShopOrderItems = updatedlsShopOrderItems;
             localStorage.setItem(
               "orderItems",
               JSON.stringify(updatedlsShopOrderItems)
             );
+
+            ShopOrderItemsEventObserever.broadcast(updatedlsShopOrderItems);
 
             return;
           }
@@ -450,8 +503,19 @@ const addOrderItemsUsageButtonsEventListener = (_items) => {
               ),
             });
 
-            usageDaysButton.classList.remove("selected");
-            usageForeverButton.classList.add("selected");
+            ShopOrderItemsEventObserever.broadcast(
+              items.map((el) => ({
+                ...el,
+                time_to_use:
+                  el.id === items[index].id
+                    ? SHOP_ITEM_TIME_USAGE.Forever
+                    : el.time_to_use,
+                sum_item_price:
+                  el.id === items[index].id
+                    ? +el.amount * +el.forever_price
+                    : el.sum_item_price,
+              }))
+            );
           }
         }
       });

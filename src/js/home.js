@@ -7,6 +7,7 @@ import { LanguageEventObserever } from "./utils/observer.js";
 import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
 import {
   ITEM_ADDED_TO_CART_ERROR,
+  ITEM_ADDED_TO_CART_SUCCESS,
   TOKEN_NOT_EXISTS,
   errorsLanguageLocalizationsEnum,
 } from "./contants/errors.js";
@@ -73,16 +74,16 @@ document.addEventListener("DOMContentLoaded", async () => {
         item_id: orderItem.id,
       });
 
-      if (result === ITEM_ADDED_TO_CART_ERROR) {
-        addToastNotification({
-          message: getLocalizedError(
-            errorsLanguageLocalizationsEnum.ITEM_ALREADY_ADDED_TO_CART_WITH_NAME,
-            { firstParam: orderItem?.image_name.slice(0, -4) }
-          ),
-        });
-      }
+      // if (result === ITEM_ADDED_TO_CART_ERROR) {
+      //   addToastNotification({
+      //     message: getLocalizedError(
+      //       errorsLanguageLocalizationsEnum.ITEM_ALREADY_ADDED_TO_CART_WITH_NAME,
+      //       { firstParam: orderItem?.image_name.slice(0, -4) }
+      //     ),
+      //   });
+      // }
 
-      if (result) {
+      if (result === ITEM_ADDED_TO_CART_SUCCESS) {
         cartContainerCountElement.innerHTML =
           Number(cartContainerCountElement.innerHTML) + 1;
       }

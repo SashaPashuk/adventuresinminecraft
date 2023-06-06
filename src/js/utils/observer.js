@@ -17,3 +17,4 @@ export class EventObserver {
 }
 
 export const LanguageEventObserever = new EventObserver();
+export const ShopOrderItemsEventObserever = new EventObserver();

@@ -34,9 +34,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   const lsShopOrderItems = localStorage.getItem("orderItems");
   const serverShopOrderItemsResponse = await API.getShopOrderItems();
 
-  const shopOrderItemsResponse =
-    (lsShopOrderItems && JSON.parse(lsShopOrderItems)) ||
-    serverShopOrderItemsResponse;
+  const shopOrderItemsResponse = !tokensData
+    ? (lsShopOrderItems && JSON.parse(lsShopOrderItems)) || []
+    : serverShopOrderItemsResponse;
 
   const cartContainerCountElement = document.querySelector(
     ".cart-container-count"
