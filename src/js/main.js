@@ -1,4 +1,5 @@
 import API from "../js/services/api.js";
+import { ContentLoadingEventObserever } from "./utils/observer.js";
 
 const menuItems = document.querySelectorAll(".nav-link");
 const navItemsForUserLogic = document.querySelectorAll(".nav-item-user-logic");
@@ -20,15 +21,18 @@ document.addEventListener("DOMContentLoaded", async () => {
   const usernameData = localStorage.getItem("username");
 
   if (tokensData) {
-    navItemsForUserLogic?.forEach((item) => item.classList.add("hidden"));
+    navItemForUserDropdownLogic?.classList.remove("hidden");
+  
 
     if (usernameElement) {
       usernameElement.innerHTML = usernameData.slice(0, 15) + "...";
       usernameElement.setAttribute("title", usernameData);
     }
   } else {
-    navItemForUserDropdownLogic?.classList.add("hidden");
+    navItemsForUserLogic?.forEach((item) => item.classList.remove("hidden"));
   }
+
+  ContentLoadingEventObserever.broadcast(true);
 
   // Show amount of items in cart
   const lsShopOrderItems = localStorage.getItem("orderItems");

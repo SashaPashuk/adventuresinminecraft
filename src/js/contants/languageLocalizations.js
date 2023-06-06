@@ -147,10 +147,13 @@ export const languageLocalizations = {
     orderHistoryPage__overallPrice: "Total price",
 
     // productPage
-    productPage__desc: "Product deescription:",
+    productPage__desc: "Product description:",
     productPage__price: "Price:",
+    productPage__usage: "Purchase expiration date:",
+    productPage__usage_30: "30 Days",
+    productPage__usage_forever: "Forever",
     productPage__amount: "Quantity:",
-    productPage__button: "Buy",
+    productPage__button: "Add to basket",
 
     // latestPurchases
     latestPurchases__title: "Recent purchases",
@@ -324,8 +327,11 @@ export const languageLocalizations = {
     // productPage
     productPage__desc: "Описание товара:",
     productPage__price: "Цена:",
+    productPage__usage: "Срок действия покупки:",
+    productPage__usage_30: "30 Дней",
+    productPage__usage_forever: "Навсегда",
     productPage__amount: "Количество:",
-    productPage__button: "Купить",
+    productPage__button: "В корзину",
 
     // latestPurchases
     latestPurchases__title: "Последние покупки",

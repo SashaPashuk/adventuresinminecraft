@@ -68,6 +68,43 @@
     flex-direction: column;
     align-items: flex-start;
 
+    &__info {
+      display: flex;
+    }
+
+    &__usage-actions-wrapper {
+      margin-top: 6px;
+    }
+
+    &__usage-actions {
+      display: flex;
+      margin-top: 0;
+
+      button {
+        padding: 2px 6px;
+        height: fit-content;
+        border-radius: 10px;
+        border: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        width: max-content;
+        background: #393330;
+        color: #FFFFFF;
+
+        &:first-child {
+          margin-right: 10px;
+        }
+
+      }
+
+      .selected {
+        background: linear-gradient(180deg, #FFB448 0%, #F8980E 100%);
+      }
+    }
+
     &__title {
       font-weight: 700;
       font-size: 24px;
@@ -97,6 +134,7 @@
       flex-direction: column;
       align-items: flex-start;
       margin-bottom: 34px;
+      margin-right: 120px;
     }
 
     .price-block {

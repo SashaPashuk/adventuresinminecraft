@@ -6,6 +6,7 @@ import {
   EMAIL_CODE_MIN_CHARACTERS_ERROR,
   EMAIL_CODE_MAX_CHARACTERS_ERROR,
 } from "./contants/errors.js";
+import { ContentLoadingEventObserever } from "./utils/observer.js";
 
 const loginButtonElement = document.querySelector("#login-button");
 const loginFormElement = document.querySelector("#login-form");
@@ -106,6 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
     loginFormContainerElement.classList.add("hidden");
     codeFormContainerElement.classList.remove("hidden");
   }
+
+  ContentLoadingEventObserever.broadcast(true);
 });
 
 // helpers

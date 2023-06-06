@@ -5,12 +5,16 @@ import {
   renderServerDropdownItemsHTML,
 } from "./utils/helpers.js";
 import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
-import { ShopOrderItemsEventObserever } from "./utils/observer.js";
+import {
+  ContentLoadingEventObserever,
+  ShopOrderItemsEventObserever,
+} from "./utils/observer.js";
 import {
   FIELD_NOT_EMPTY_ERROR,
   ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR,
   ITEM_AMOUNT_CHANGED_SUCCESS,
   ITEM_DELETED_FROM_CART_SUCCESS,
+  ITEM_DURATION_SERVER_ERROR,
   ITEM_DURATION_SUCCESS,
   errorsLanguageLocalizationsEnum,
 } from "./contants/errors.js";
@@ -50,6 +54,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   addOrderItemsUsageButtonsEventListener(shopOrderItemsResponse);
   addCartPaymentButtonEventListener();
   addServersDropdownEventListener();
+
+  ContentLoadingEventObserever.broadcast(true);
 });
 
 const addCartPaymentButtonEventListener = () => {
@@ -421,7 +427,14 @@ const addOrderItemsUsageButtonsEventListener = (items) => {
 
           // errors
           if (timeToUserError) {
-            addToastNotification({ message: timeToUserError });
+            addToastNotification({
+              message:
+                timeToUserError === ITEM_DURATION_SERVER_ERROR
+                  ? getLocalizedError(
+                      errorsLanguageLocalizationsEnum.ITEM_DURATION_ERROR
+                    )
+                  : timeToUserError,
+            });
           }
 
           // success
@@ -492,7 +505,14 @@ const addOrderItemsUsageButtonsEventListener = (items) => {
 
           // errors
           if (timeToUserError) {
-            addToastNotification({ message: timeToUserError });
+            addToastNotification({
+              message:
+                timeToUserError === ITEM_DURATION_SERVER_ERROR
+                  ? getLocalizedError(
+                      errorsLanguageLocalizationsEnum.ITEM_DURATION_ERROR
+                    )
+                  : timeToUserError,
+            });
           }
 
           // success

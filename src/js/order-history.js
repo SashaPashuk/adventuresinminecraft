@@ -9,6 +9,7 @@ import {
   addToastNotification,
   renderOrderHistoryItemsHTML,
 } from "./utils/helpers.js";
+import { ContentLoadingEventObserever } from "./utils/observer.js";
 
 // Event Listeners
 
@@ -19,6 +20,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   addShopOrderItemsDropdownEventListener();
   addRepeatOrderEventListener(shopOrdersResponse);
+
+  ContentLoadingEventObserever.broadcast(true);
 });
 
 const addShopOrderItemsDropdownEventListener = () => {

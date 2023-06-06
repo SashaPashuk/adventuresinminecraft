@@ -3,7 +3,10 @@ import {
   addToastNotification,
   renderShopItemsListHTML,
 } from "./utils/helpers.js";
-import { LanguageEventObserever } from "./utils/observer.js";
+import {
+  ContentLoadingEventObserever,
+  LanguageEventObserever,
+} from "./utils/observer.js";
 import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
 import {
   ITEM_ADDED_TO_CART_ERROR,
@@ -60,6 +63,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   addProductCartButtonsEventListeners(shopItemsResult);
   addProductCardsEventListeners(shopItemsResult);
   addShopItemsTypeSwitchEventListener();
+
+  ContentLoadingEventObserever.broadcast(true);
 
   // After first login, we add all order items from lsShopOrderItems to server
   if (lsTokens && lsShopOrderItems.length) {

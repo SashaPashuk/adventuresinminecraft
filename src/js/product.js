@@ -3,15 +3,16 @@ import {
   renderShopItemInfoHTML,
   addToastNotification,
 } from "./utils/helpers.js";
-import { LanguageEventObserever } from "./utils/observer.js";
-import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
 import {
-  DEFAULT_LANGUAGE,
-  SHOP_ITEM_TIME_USAGE,
-} from "./contants/constants.js";
+  ContentLoadingEventObserever,
+  LanguageEventObserever,
+} from "./utils/observer.js";
+import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
+import { SHOP_ITEM_TIME_USAGE } from "./contants/constants.js";
 import {
   ITEM_ADDED_TO_CART_ERROR,
   ITEM_ADDED_TO_CART_SUCCESS,
+  ITEM_DURATION_SERVER_ERROR,
   TOKEN_NOT_EXISTS,
   errorsLanguageLocalizationsEnum,
 } from "./contants/errors.js";
@@ -36,14 +37,16 @@ LanguageEventObserever.subscribe(async (data) => {
 
   addBuyShopItemEventListener(shopItemsResponse);
   addShopItemAmountEventListener();
+  addShopItemUsageEventListener();
 });
 
 // Event Listeners
 
 document.addEventListener("DOMContentLoaded", async () => {
   const itemDataLocalStorage = localStorage.getItem("item_data");
+  const lsLanguage = localStorage.getItem("language");
   const shopItemsResponse = await API.getOneShopItem({
-    languageCode: DEFAULT_LANGUAGE,
+    languageCode: lsLanguage,
     itemId: JSON.parse(itemDataLocalStorage)?.id || "",
   });
 
@@ -51,6 +54,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   addBuyShopItemEventListener(shopItemsResponse);
   addShopItemAmountEventListener();
+  addShopItemUsageEventListener();
+
+  ContentLoadingEventObserever.broadcast(true);
 });
 
 const addBuyShopItemEventListener = (item) => {
@@ -64,6 +70,10 @@ const addBuyShopItemEventListener = (item) => {
 
   buyButtonElement?.addEventListener("click", async (event) => {
     event.preventDefault();
+
+    const selectedUsageElement = document
+      .querySelector(".content__usage-actions")
+      ?.querySelector(".selected");
 
     // Logic for unauthorized user
     if (!lsTokens) {
@@ -81,6 +91,19 @@ const addBuyShopItemEventListener = (item) => {
         addToastNotification({
           message: getLocalizedError(
             errorsLanguageLocalizationsEnum.ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR
+          ),
+        });
+        return;
+      }
+
+      if (
+        !item.forever_price &&
+        selectedUsageElement.getAttribute("data-type") ===
+          SHOP_ITEM_TIME_USAGE.Forever
+      ) {
+        addToastNotification({
+          message: getLocalizedError(
+            errorsLanguageLocalizationsEnum.ITEM_DURATION_ERROR
           ),
         });
         return;
@@ -117,14 +140,29 @@ const addBuyShopItemEventListener = (item) => {
     const result = await API.addShopItemToCart({
       amount: itemAmountElement.innerHTML,
       item_id: item.id,
-      time_to_use: SHOP_ITEM_TIME_USAGE["30_DAYS"],
+      time_to_use:
+        selectedUsageElement.getAttribute("data-type") === "30"
+          ? SHOP_ITEM_TIME_USAGE["30_DAYS"]
+          : SHOP_ITEM_TIME_USAGE.Forever,
     });
 
     // errors
+    const timeToUserError =
+      (result?.time_to_use && result?.time_to_use[0]) || "";
     const amountErrors = (result?.amount && result?.amount[0]) || "";
 
-    Boolean(amountErrors) &&
-      addToastNotification({ message: result?.amount[0] });
+    if (timeToUserError) {
+      addToastNotification({
+        message:
+          timeToUserError === ITEM_DURATION_SERVER_ERROR
+            ? getLocalizedError(
+                errorsLanguageLocalizationsEnum.ITEM_DURATION_ERROR
+              )
+            : timeToUserError,
+      });
+    }
+
+    Boolean(amountErrors) && addToastNotification({ message: amountErrors });
 
     result === ITEM_ADDED_TO_CART_ERROR &&
       addToastNotification({
@@ -189,4 +227,22 @@ const addShopItemAmountEventListener = () => {
     const totalPrice = Number(initialPrice * quantity).toFixed(2);
     priceElement.textContent = `€${totalPrice}`;
   }
+};
+
+const addShopItemUsageEventListener = () => {
+  const usagesButtonElements = document
+    .querySelector(".content__usage-actions")
+    ?.querySelectorAll("button");
+
+  usagesButtonElements?.forEach((button) => {
+    button.addEventListener("click", async () => {
+      if (button.getAttribute("data-type") === "30") {
+        usagesButtonElements[0].classList.add("selected");
+        usagesButtonElements[1].classList.remove("selected");
+      } else {
+        usagesButtonElements[1].classList.add("selected");
+        usagesButtonElements[0].classList.remove("selected");
+      }
+    });
+  });
 };

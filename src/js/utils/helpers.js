@@ -49,6 +49,7 @@ export const renderShopItemInfoHTML = ({
   market_name,
   image_name,
   type,
+  time_to_use,
 }) => {
   const productInfoContainerElement = document.querySelector(
     ".product-info__content"
@@ -58,16 +59,38 @@ export const renderShopItemInfoHTML = ({
     <h2 class="content__title">${market_name}</h2>
     <h4 data-i18n-key="productPage__desc" class="content__subtitle">Описание товара:</h4>
     <p class="content__text">${description}</p>
-    <div class="content__price-block price-block">
-      <span data-i18n-key="productPage__price" class="price-block__title">Цeна:</span>
-      <span class="price-block__price" id="product_price">€${Number(
-        price
-      ).toFixed(2)}</span>
+    <div class="content__info">
+      <div class="content__price-block price-block">
+        <span data-i18n-key="productPage__price" class="price-block__title">Цeна:</span>
+        <span class="price-block__price" id="product_price">€${Number(
+          price
+        ).toFixed(2)}</span>
+      </div>
+      <div class="content__usage-actions-wrapper">
+        <span data-i18n-key="productPage__usage" class="price-block__title">Срок действия покупки:</span>
+        <div class="content__usage-actions">
+          <button 
+            data-i18n-key="productPage__usage_30"
+            id="item-usage-days" 
+            data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]} 
+            class="selected ${
+              time_to_use === SHOP_ITEM_TIME_USAGE["30_DAYS"] ? "selected" : ""
+            }"
+          >30 Дней</button>
+          <button 
+            data-i18n-key="productPage__usage_forever"
+            id="item-usage-forever" 
+            data-type=${SHOP_ITEM_TIME_USAGE.Forever} 
+            class="${
+              time_to_use === SHOP_ITEM_TIME_USAGE.Forever ? "selected" : ""
+            }"
+          >Навсегда</button>
+        </div>
+      </div>
     </div>
-
     <div class="content__buy-block buy-block">
       <p data-i18n-key="productPage__amount" class="buy-block__quantity-title quantity-title">
-        Кількість:
+        Количество:
       </p>
       <div class="buy-block__quantity-control quantity-control">
         <div class="quantity-control__number">

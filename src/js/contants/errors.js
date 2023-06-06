@@ -30,6 +30,7 @@ export const ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR = "Amount cannot be changed.";
 export const ITEM_AMOUNT_CHANGED_SUCCESS = "Amount has been changed.";
 
 export const ITEM_DURATION_SUCCESS = "Duration has been changed.";
+export const ITEM_DURATION_SERVER_ERROR = '"Forever" is not a valid choice.';
 
 export const errorsLanguageLocalizationsEnum = {
   USER_SHOULD_LOGIN_FIRST: "USER_SHOULD_LOGIN_FIRST",

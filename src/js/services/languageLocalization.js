@@ -1,5 +1,8 @@
 import { languageLocalizations } from "../contants/languageLocalizations.js";
-import { LanguageEventObserever } from "../utils/observer.js";
+import {
+  ContentLoadingEventObserever,
+  LanguageEventObserever,
+} from "../utils/observer.js";
 import { APP_LANGUAGES, DEFAULT_LANGUAGE } from "../contants/constants.js";
 
 const getDefaultLanguage = () => {
@@ -24,6 +27,12 @@ let locale;
 
 // Gets filled with active locale translations
 let translations = {};
+
+ContentLoadingEventObserever.subscribe((dataLoaded) => {
+  if (dataLoaded) {
+    translatePage();
+  }
+});
 
 // When the page content is ready...
 document.addEventListener("DOMContentLoaded", () => {
@@ -56,7 +65,7 @@ async function setLocale(newLocale) {
 
   translations = newTranslations;
 
-  setTimeout(translatePage, 300);
+  translatePage();
 }
 
 // Retrieve translations object for the given locale
