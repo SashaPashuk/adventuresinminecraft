@@ -49,12 +49,13 @@ LanguageEventObserever.subscribe(async (data) => {
 // Event Listeners
 
 document.addEventListener("DOMContentLoaded", async () => {
+  const lsLanguage = localStorage.getItem("language") || DEFAULT_LANGUAGE;
   // Make <Survival> type checked by default after page rendering
   const checkedShopItemType = document.querySelector('input[type="radio"]');
   checkedShopItemType?.setAttribute("checked", "true");
   checkedShopItemType?.classList.add("checked");
 
-  const shopItemsResult = await API.getShopItems(DEFAULT_LANGUAGE, {
+  const shopItemsResult = await API.getShopItems(lsLanguage, {
     type: SHOP_ITEM_TYPES.Survival,
   });
 
@@ -208,9 +209,10 @@ const addShopItemsTypeSwitchEventListener = () => {
   );
 
   itemTypeSwitchElement?.addEventListener("change", async (e) => {
+    const lsLanguage = localStorage.getItem("language") || DEFAULT_LANGUAGE;
     const selectedItemType = e.target.value;
 
-    const shopItemsResult = await API.getShopItems(DEFAULT_LANGUAGE, {
+    const shopItemsResult = await API.getShopItems(lsLanguage, {
       type: selectedItemType,
     });
 

@@ -8,7 +8,10 @@ import {
   LanguageEventObserever,
 } from "./utils/observer.js";
 import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
-import { SHOP_ITEM_TIME_USAGE } from "./contants/constants.js";
+import {
+  DEFAULT_LANGUAGE,
+  SHOP_ITEM_TIME_USAGE,
+} from "./contants/constants.js";
 import {
   ITEM_ADDED_TO_CART_ERROR,
   ITEM_ADDED_TO_CART_SUCCESS,
@@ -44,7 +47,7 @@ LanguageEventObserever.subscribe(async (data) => {
 
 document.addEventListener("DOMContentLoaded", async () => {
   const itemDataLocalStorage = localStorage.getItem("item_data");
-  const lsLanguage = localStorage.getItem("language");
+  const lsLanguage = localStorage.getItem("language") || DEFAULT_LANGUAGE;
   const shopItemsResponse = await API.getOneShopItem({
     languageCode: lsLanguage,
     itemId: JSON.parse(itemDataLocalStorage)?.id || "",

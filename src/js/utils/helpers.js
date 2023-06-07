@@ -6,7 +6,7 @@ import { SHOP_ITEM_TIME_USAGE } from "../contants/constants.js";
  * @param {Number} param.duration
  * @returns {void}
  */
-export const addToastNotification = ({ message, duration = 3000000 }) => {
+export const addToastNotification = ({ message, duration = 3000 }) => {
   const toastsWrapperElement = document.querySelector(".toasts-wrapper");
 
   const toastContainer = document.createElement("div");
