@@ -1,4 +1,4 @@
-import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=3e3})=>{var a=document.querySelector(".toasts-wrapper");const r=document.createElement("div");r.className="toast-container";var s=document.createElement("div"),i=document.createElement("p");i.innerHTML=e,s.appendChild(i),r.appendChild(s),a.appendChild(r),setTimeout(()=>{r.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:a})=>{return`<img ${a?`class="${a}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`},renderShopItemInfoHTML=({description:e,price:t,market_name:a,image_name:r,type:s,time_to_use:i})=>{var o=document.querySelector(".product-info__content"),a=`
+import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=3e6})=>{var a=document.querySelector(".toasts-wrapper");const r=document.createElement("div");r.className="toast-container";var s=document.createElement("div"),i=document.createElement("p");i.innerHTML=e,s.appendChild(i),r.appendChild(s),a.appendChild(r),setTimeout(()=>{r.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:a})=>{return`<img ${a?`class="${a}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`},renderShopItemInfoHTML=({description:e,price:t,market_name:a,image_name:r,type:s,time_to_use:i})=>{var o=document.querySelector(".product-info__content"),a=`
     <h2 class="content__title">${a}</h2>
     <h4 data-i18n-key="productPage__desc" class="content__subtitle">Описание товара:</h4>
     <p class="content__text">${e}</p>
@@ -14,13 +14,13 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
             data-i18n-key="productPage__usage_30"
             id="item-usage-days" 
             data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]} 
-            class="selected ${i===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"selected":""}"
+            class="${i===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"button-primary selected":""} selected button-primary"
           >30 Дней</button>
           <button 
             data-i18n-key="productPage__usage_forever"
             id="item-usage-forever" 
             data-type=${SHOP_ITEM_TIME_USAGE.Forever} 
-            class="${i===SHOP_ITEM_TIME_USAGE.Forever?"selected":""}"
+            class="${i===SHOP_ITEM_TIME_USAGE.Forever?"button-primary selected":"button-shade"}"
           >Навсегда</button>
         </div>
       </div>
@@ -39,7 +39,7 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
             class="quantity-control__number-btn quantity-control__number-btn-increase"
           ></button>
         </div>
-        <button data-i18n-key="productPage__button" class="buy-block__buy-btn buy-btn">Купить</button>
+        <button data-i18n-key="productPage__button" class="buy-block__buy-btn buy-btn button-primary">Купить</button>
       </div>
     </div>
   `,e=document.querySelector(".product-info__slider"),t=`

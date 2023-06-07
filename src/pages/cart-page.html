@@ -8,7 +8,12 @@
         <h2 data-i18n-key="cartPage__title" class="cartPage-title">Корзина</h2>
         <ul class="cartPage-list"></ul>
         <div class="cartPage-summary">
-          <a data-i18n-key="cartPage__continueButton" href="/home.html" class="button-shade">Продолжить покупку</a>
+          <a
+            data-i18n-key="cartPage__continueButton"
+            href="/home.html"
+            class="button-shade"
+            >Продолжить покупку</a
+          >
           <div class="cartPage-summary-payment">
             <div class="cartPage-summary-payment-overall">
               <span data-i18n-key="cartPage__allPayment">Всего к оплате</span>
@@ -19,7 +24,8 @@
             </div>
             <div>
               <input
-              data-i18n-key="cartPage__nicknamePlaceholder"
+                data-i18n-key="cartPage__nicknamePlaceholder"
+                class="input-custom"
                 id="cart-payment-nickname"
                 type="text"
                 placeholder="Ваш никнейм"
@@ -29,12 +35,20 @@
             </div>
             <div class="dropdown-custom">
               <div class="dropdown-custom__selection open">
-                <span data-i18n-key="cartPage__serverText" id="dropdown-selected-item">Сервер</span>
+                <span
+                  data-i18n-key="cartPage__serverText"
+                  id="dropdown-selected-item"
+                  >Сервер</span
+                >
                 <img src="../assets/images/icons/arrow_down.svg" alt="" />
               </div>
               <ul class="dropdown-custom__container hidden"></ul>
             </div>
-            <button data-i18n-key="cartPage__payButton" id="cart-payment-button" class="button-primary">
+            <button
+              data-i18n-key="cartPage__payButton"
+              id="cart-payment-button"
+              class="button-primary"
+            >
               Оплатить
             </button>
           </div>

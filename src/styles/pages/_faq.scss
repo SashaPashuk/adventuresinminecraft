@@ -51,9 +51,11 @@
     &:nth-child(1) .faq__button-img {
       background-image: url("../../assets/images/icons/settings_icon.svg");
     }
+
     &:nth-child(2) .faq__button-img {
       background-image: url("../../assets/images/icons/user_icon.svg");
     }
+
     &:nth-child(3) .faq__button-img {
       background-image: url("../../assets/images/icons/shopping_icon_2.svg");
     }
@@ -77,6 +79,11 @@
         background-size: 30px;
       }
     }
+
+    &:hover {
+      box-shadow: $shadow-active;
+    }
+
   }
 
   &__block {
@@ -111,15 +118,15 @@
         left: 0;
         opacity: 0;
 
-        &:checked ~ .question-answer {
+        &:checked~.question-answer {
           display: block;
         }
 
-        &:checked ~ .question__label {
+        &:checked~.question__label {
           color: $primary-light-orange;
         }
 
-        &:checked ~ .question__label:before {
+        &:checked~.question__label:before {
           background-image: url("../../assets/images/icons/arrow_up.svg");
         }
       }

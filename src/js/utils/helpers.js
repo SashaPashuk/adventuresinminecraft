@@ -6,7 +6,7 @@ import { SHOP_ITEM_TIME_USAGE } from "../contants/constants.js";
  * @param {Number} param.duration
  * @returns {void}
  */
-export const addToastNotification = ({ message, duration = 3000 }) => {
+export const addToastNotification = ({ message, duration = 3000000 }) => {
   const toastsWrapperElement = document.querySelector(".toasts-wrapper");
 
   const toastContainer = document.createElement("div");
@@ -73,16 +73,20 @@ export const renderShopItemInfoHTML = ({
             data-i18n-key="productPage__usage_30"
             id="item-usage-days" 
             data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]} 
-            class="selected ${
-              time_to_use === SHOP_ITEM_TIME_USAGE["30_DAYS"] ? "selected" : ""
-            }"
+            class="${
+              time_to_use === SHOP_ITEM_TIME_USAGE["30_DAYS"]
+                ? "button-primary selected"
+                : ""
+            } selected button-primary"
           >30 Дней</button>
           <button 
             data-i18n-key="productPage__usage_forever"
             id="item-usage-forever" 
             data-type=${SHOP_ITEM_TIME_USAGE.Forever} 
             class="${
-              time_to_use === SHOP_ITEM_TIME_USAGE.Forever ? "selected" : ""
+              time_to_use === SHOP_ITEM_TIME_USAGE.Forever
+                ? "button-primary selected"
+                : "button-shade"
             }"
           >Навсегда</button>
         </div>
@@ -102,7 +106,7 @@ export const renderShopItemInfoHTML = ({
             class="quantity-control__number-btn quantity-control__number-btn-increase"
           ></button>
         </div>
-        <button data-i18n-key="productPage__button" class="buy-block__buy-btn buy-btn">Купить</button>
+        <button data-i18n-key="productPage__button" class="buy-block__buy-btn buy-btn button-primary">Купить</button>
       </div>
     </div>
   `;

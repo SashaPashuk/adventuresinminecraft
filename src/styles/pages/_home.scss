@@ -1,5 +1,6 @@
 .first-screen {
   margin-bottom: 70px;
+
   &__row {
     display: flex;
     flex-direction: column;
@@ -11,6 +12,7 @@
     background-repeat: no-repeat;
     background-position: center center;
   }
+
   &__title {
     font-weight: 700;
     font-size: 40px;
@@ -18,6 +20,7 @@
     color: #ffffff;
     margin-bottom: 13px;
   }
+
   &__subtitle {
     max-width: 520px;
     font-weight: 500;
@@ -27,6 +30,7 @@
     color: #ffffff;
     margin-bottom: 22px;
   }
+
   &__button {
     font-weight: 700;
     font-size: 16px;
@@ -37,9 +41,11 @@
     border-radius: 10px;
     border: none;
     cursor: pointer;
+
     &:hover {
       box-shadow: $shadow-active;
     }
+
     &:active {
       background: $shade-white;
       color: $primary-orange;
@@ -51,22 +57,27 @@
 .products {
   margin-top: 16px;
   margin-bottom: 60px;
+
   &-svitch {
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
+
     &__button {
       position: relative;
       background: $shade-grey;
       border-radius: 10px;
       cursor: pointer;
       margin-right: 24px;
+
       &:last-child {
         margin-right: 0;
       }
+
       :hover {
         box-shadow: 10px 10px 30px rgba(248, 152, 14, 0.33);
       }
+
       span {
         display: inline-block;
         width: 150px;
@@ -78,20 +89,24 @@
         text-align: center;
         color: $shade-white;
       }
+
       input[type="radio"] {
         position: absolute;
         opacity: 0;
-        &.checked + span {
+
+        &.checked+span {
           background: $primary-gradient;
         }
       }
     }
   }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
+
   &-card {
     max-width: 260px;
     display: flex;
@@ -104,15 +119,19 @@
     margin: 12px 8px;
     cursor: pointer;
     transition: box-shadow 0.3s ease-in-out;
+
     &:hover {
-      box-shadow: $shadow-hover;
+      box-shadow: $shadow-active;
     }
+
     &:active {
       box-shadow: $shadow-active;
     }
+
     &__img {
       margin-bottom: 16px;
     }
+
     &__title {
       font-weight: 700;
       font-size: 16px;
@@ -120,12 +139,14 @@
       color: $shade-white;
       margin-bottom: 12px;
     }
+
     &__block {
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+
     &__price {
       background: $primary-orange-contrast9;
       border: 2px solid $primary-orange-contrast22;
@@ -136,6 +157,7 @@
       line-height: 20px;
       color: $primary-orange;
     }
+
     &__buy {
       width: 64px;
       height: 34px;
@@ -146,6 +168,12 @@
       border-radius: 10px;
       border: none;
       outline: none;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
     }
   }
 }

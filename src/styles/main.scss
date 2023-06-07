@@ -81,18 +81,64 @@ img {
   display: none !important;
 }
 
+// button
+
 .button-primary {
   @include button;
-  background: linear-gradient(180deg, #FFB448 0%, #F8980E 100%);
+  background: linear-gradient(180deg, #FFB448 0%, #F8980E 100%) !important;
+
+  &:hover {
+    box-shadow: $shadow-active !important;
+  }
+
+  &:active {
+    background: $shade-white !important;
+    color: $primary-orange !important;
+    box-shadow: $shadow-defauld !important;
+  }
 }
 
 .button-shade {
   @include button;
-  background: $shade-grey;
+  background: $shade-grey !important;
+
+  &:hover {
+    color: $primary-orange !important;
+    background: $shade-white !important;
+    box-shadow: $shadow-defauld !important;
+  }
+
+  &:active {
+    background: $primary-orange !important;
+    color: $shade-white !important;
+    box-shadow: $shadow-defauld !important;
+  }
+}
+
+// input 
+
+.input-custom {
+  color: $shade-white;
+  border: 1px solid $shade-grey;
+
+  &:active,
+  &:focus {
+    border: 1px solid $primary-orange !important;
+    outline: 1px solid $primary-orange !important;
+    color: $primary-orange;
+
+    &::placeholder {
+      color: $primary-orange;
+    }
+  }
+
+  &-error {
+    border: 1px solid $error-red;
+  }
 }
 
 .input-error {
-  color: tomato;
+  color: $error-red;
   font-family: $primary-font;
   font-size: 12px;
 }
@@ -106,7 +152,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #F8980E;
+  color: $primary-orange;
 }
 
 .toasts-wrapper {

@@ -8,13 +8,5 @@
     align-self: center;
     justify-content: center;
 
-    &:hover {
-        box-shadow: $shadow-active;
-    }
-
-    &:active {
-        background: $shade-white;
-        color: $primary-orange;
-        box-shadow: $shadow-defauld;
-    }
+    transition: all 0.3s ease-in-out;
 }

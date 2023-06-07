@@ -238,10 +238,18 @@ const addShopItemUsageEventListener = () => {
     button.addEventListener("click", async () => {
       if (button.getAttribute("data-type") === "30") {
         usagesButtonElements[0].classList.add("selected");
+        usagesButtonElements[0].classList.add("button-primary");
+        usagesButtonElements[0].classList.remove("button-shade");
         usagesButtonElements[1].classList.remove("selected");
+        usagesButtonElements[1].classList.remove("button-primary");
+        usagesButtonElements[1].classList.add("button-shade");
       } else {
         usagesButtonElements[1].classList.add("selected");
+        usagesButtonElements[1].classList.add("button-primary");
+        usagesButtonElements[1].classList.remove("button-shade");
         usagesButtonElements[0].classList.remove("selected");
+        usagesButtonElements[0].classList.remove("button-primary");
+        usagesButtonElements[0].classList.add("button-shade");
       }
     });
   });
