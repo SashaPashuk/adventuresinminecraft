@@ -31,12 +31,12 @@ let lsShopOrderItems =
 // Observer
 
 LanguageEventObserever.subscribe(async (data) => {
-  const checkedShopItemType = document.querySelector('input[type="radio"]');
-  checkedShopItemType?.setAttribute("checked", "true");
-  checkedShopItemType?.classList.add("checked");
+  const checkedShopItemType = document
+    .querySelector(".products-svitch")
+    ?.querySelector("input[checked]");
 
   const shopItemsResult = await API.getShopItems(data.language, {
-    type: SHOP_ITEM_TYPES.Survival,
+    type: checkedShopItemType?.value || SHOP_ITEM_TYPES.Survival,
   });
 
   renderShopItemsListHTML(shopItemsResult);
