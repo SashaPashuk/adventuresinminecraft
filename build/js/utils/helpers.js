@@ -1,7 +1,9 @@
-import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=3e3})=>{var a=document.querySelector(".toasts-wrapper");const r=document.createElement("div");r.className="toast-container";var s=document.createElement("div"),i=document.createElement("p");i.innerHTML=e,s.appendChild(i),r.appendChild(s),a.appendChild(r),setTimeout(()=>{r.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:a})=>{return`<img ${a?`class="${a}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`},renderShopItemInfoHTML=({description:e,price:t,market_name:a,image_name:r,type:s,time_to_use:i})=>{var o=document.querySelector(".product-info__content"),a=`
-    <h2 class="content__title">${a}</h2>
+import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=3e3})=>{var r=document.querySelector(".toasts-wrapper");const a=document.createElement("div");a.className="toast-container";var s=document.createElement("div"),i=document.createElement("p");i.innerHTML=e,s.appendChild(i),a.appendChild(s),r.appendChild(a),setTimeout(()=>{a.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`};function descriptionList(e){var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),r=[];for(let e=0;e<t.length;e+=2)r.push({number:t[e],text:t[e+1].trim()});return r.map(({number:e,text:t})=>`<li>${e}${t}</li>`).join("")}const renderShopItemInfoHTML=({description:e,price:t,market_name:r,image_name:a,type:s,time_to_use:i})=>{var o=document.querySelector(".product-info__content"),r=`
+    <h2 class="content__title">${r}</h2>
     <h4 data-i18n-key="productPage__desc" class="content__subtitle">Описание товара:</h4>
-    <p class="content__text">${e}</p>
+    <ul class="product-description">
+      ${descriptionList(e)}
+    </ul>
     <div class="content__info">
       <div class="content__price-block price-block">
         <span data-i18n-key="productPage__price" class="price-block__title">Цeна:</span>
@@ -43,8 +45,8 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
       </div>
     </div>
   `,e=document.querySelector(".product-info__slider"),t=`
-    ${renderShopItemImgHTML({shopItemName:r,shopItemType:s.toLowerCase(),imageClass:"slider__main-img"})}
-  `;e.innerHTML=t,o.innerHTML=a},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let i="";e?.forEach(({product_id:e,amount:t,sum_item_price:a,time_to_use:r,image_name:s})=>{s=`
+    ${renderShopItemImgHTML({shopItemName:a,shopItemType:s.toLowerCase(),imageClass:"slider__main-img"})}
+  `;e.innerHTML=t,o.innerHTML=r},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let i="";e?.forEach(({product_id:e,amount:t,sum_item_price:r,time_to_use:a,image_name:s})=>{s=`
         <li class="cartPage-list-item" data-cart-id=${e}>
           <h3>${s.slice(0,-4)}</h3>
           <div class="cartPage-list-item-amount">
@@ -61,12 +63,12 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
               <button
                 data-i18n-key="cartPage__usage_30"
                 id="item-usage-days" data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]} 
-                class="${r===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"selected":""}">30 Дней</button>
+                class="${a===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"selected":""}">30 Дней</button>
               <button 
                 data-i18n-key="cartPage__usage_forever"
                 id="item-usage-forever" 
                 data-type=${SHOP_ITEM_TIME_USAGE.Forever} 
-                class="${r===SHOP_ITEM_TIME_USAGE.Forever?"selected":""}"
+                class="${a===SHOP_ITEM_TIME_USAGE.Forever?"selected":""}"
               >Навсегда</button>
             </div>
           </div>
@@ -74,7 +76,7 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
             <span data-i18n-key="cartPage__price">Цена:</span>
             <div>
               <span>€</span>
-              <span class="cartPage-list-item-sum">${a}</span>
+              <span class="cartPage-list-item-sum">${r}</span>
             </div>
           </div>
           <div class="cart-container">
@@ -86,13 +88,13 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
             />
           </div>
       </li>
-    `;i+=s}),t.innerHTML=i},renderServerDropdownItemsHTML=e=>{var t=document.querySelector(".dropdown-custom__container");let a="";e?.forEach(({server_type:e})=>{e=`
+    `;i+=s}),t.innerHTML=i},renderServerDropdownItemsHTML=e=>{var t=document.querySelector(".dropdown-custom__container");let r="";e?.forEach(({server_type:e})=>{e=`
       <li class="dropdown-custom__container__item">${e}</li>
-    `;a+=e}),t.innerHTML=a},renderOrderHistoryItemsHTML=e=>{var t=document.querySelector(".orderHistory-orders");let r="";e?.results?.forEach(({id:e,total_price:t,order_item:a})=>{e=`
+    `;r+=e}),t.innerHTML=r},renderOrderHistoryItemsHTML=e=>{var t=document.querySelector(".orderHistory-orders");let a="";e?.results?.forEach(({id:e,total_price:t,order_item:r})=>{e=`
         <li class="orderHistory-orders-order-container">
         <div class="orderHistory-orders-order">
           <div><span>Заказ ${e}</span><span data-i18n-key="orderHistoryPage__orderDone">Выполнен</span></div>
-          <div class="orderHistory-orders-order__amount-container"><span data-i18n-key="orderHistoryPage__amount">Количество:</span><span>${a?.length}</span></div>
+          <div class="orderHistory-orders-order__amount-container"><span data-i18n-key="orderHistoryPage__amount">Количество:</span><span>${r?.length}</span></div>
           <div><span data-i18n-key="orderHistoryPage__totalPrice">Цена:</span><span>€${Number(t).toFixed()}</span></div>
           <div class="orderHistory-orders-order-actions">
             <button data-i18n-key="orderHistoryPage__repeatOrderButton" class="button-primary">Повторить заказ</button>
@@ -119,12 +121,12 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
         <div class="orderHistory-orders-order-details hidden">
           <h3 data-i18n-key="orderHistoryPage__items" class="orderHistory-orders-order-details-title">Товары</h3>
           <ul class="orderHistory-orders-order-details-list">
-          ${a.map(({amount:e,price:t,sum_item_price:a,time_to_use:r,image_name:s})=>`
+          ${r.map(({amount:e,price:t,sum_item_price:r,time_to_use:a,image_name:s})=>`
               <li class="orderHistory-orders-order-details-list-item">
                 <h3>${s.slice(0,-4)}</h3>
                 <div>
                   <span data-i18n-key="orderHistoryPage__itemDuration">Срок действия покупки:</span>
-                  <span>${r}</span>
+                  <span>${a}</span>
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__itemAmount">Количество:</span>
@@ -132,7 +134,7 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__itemPrice">Цена</span>
-                  <span>€${a}</span>
+                  <span>€${r}</span>
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__overallPrice">Общая цена</span>
@@ -143,9 +145,9 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
           </ul>
         </div>
       </li>
-    `;r+=e}),t.innerHTML=r},renderShopItemsListHTML=e=>{var t=document.querySelector(".products__list");let i="";e?.results?.forEach(({price:e,market_name:t,image_name:a,id:r,type:s})=>{a=`
+    `;a+=e}),t.innerHTML=a},renderShopItemsListHTML=e=>{var t=document.querySelector(".products__list");let i="";e?.results?.forEach(({price:e,market_name:t,image_name:r,id:a,type:s})=>{r=`
           <div class="products-card">
-            ${renderShopItemImgHTML({shopItemName:a,shopItemType:s.toLowerCase()})}
+            ${renderShopItemImgHTML({shopItemName:r,shopItemType:s.toLowerCase()})}
             <p class="products-card__title">
               ${t}
             </p>
@@ -153,7 +155,7 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
                 <p class="products-card__price">
                   €${Number(e).toFixed(2)}
                 </p>
-                <button class="products-card__buy" data-id=${r}></button>
+                <button class="products-card__buy" data-id=${a}></button>
             </div>
           </div>
-      `;i+=a}),t.innerHTML=i};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML};
+      `;i+=r}),t.innerHTML=i};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML};
