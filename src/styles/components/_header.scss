@@ -83,25 +83,44 @@
   }
 }
 
-
 .lang-item {
-  display: flex;
-  align-items: center;
-}
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background-image: url(../../assets/images/icons/arrow_down.svg);
+  }
+  .locale-switcher {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $shade-white;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .locale-switcher:focus,
+  .locale-switcher::-moz-focus-inner,
+  .locale-switcher:-webkit-autofill,
+  .locale-switcher::-ms-expand {
+    color: white;
+    background: transparent;
+    border: none;
+  }
 
-.locale-switcher {
-  // A reset of styles, including removing the default dropdown arrow
-  appearance: none;
-  // Additional resets for further consistency
-  background-color: transparent;
-  border: none;
-  padding: 0 1em 0 0;
-  margin: 0;
-  width: 100%;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: inherit;
-  line-height: inherit;
-  outline: none;
-  color: #fff;
+  .locale-switcher option {
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  /* Стилі для наведення курсора */
+  .locale-switcher option:hover {
+    color: black; /* Змініть колір тексту за потребою */
+    background: rgba(255, 255, 255, 0.8); /* Змініть колір фону за потребою */
+  }
 }

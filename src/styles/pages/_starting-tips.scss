@@ -17,6 +17,7 @@
 
   &__list {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -27,6 +28,7 @@
     align-items: center;
     max-width: 300px;
     width: 100%;
+    min-height: 670px;
     padding: 35px 32px 48px 23px;
     background: $shade-black;
     box-shadow: $shadow-defauld;
