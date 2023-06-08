@@ -16,6 +16,7 @@ import {
 } from "./contants/errors.js";
 import {
   DEFAULT_LANGUAGE,
+  SHOP_ITEM_SORT_PRICE_TYPES,
   SHOP_ITEM_TIME_USAGE,
   SHOP_ITEM_TYPES,
 } from "./contants/constants.js";
@@ -34,9 +35,15 @@ LanguageEventObserever.subscribe(async (data) => {
   const checkedShopItemType = document
     .querySelector(".products-svitch")
     ?.querySelector("input[checked]");
+  const selectedSortPriceType =
+    document
+      .querySelector(".dropdown-custom__selection span")
+      ?.getAttribute("data-selected-sort-name") ||
+    SHOP_ITEM_SORT_PRICE_TYPES.FROM_CHEAP_TO_EXPENSIVE;
 
   const shopItemsResult = await API.getShopItems(data.language, {
     type: checkedShopItemType?.value || SHOP_ITEM_TYPES.Survival,
+    sort_price: selectedSortPriceType,
   });
 
   renderShopItemsListHTML(shopItemsResult);
@@ -54,9 +61,16 @@ document.addEventListener("DOMContentLoaded", async () => {
   const checkedShopItemType = document.querySelector('input[type="radio"]');
   checkedShopItemType?.setAttribute("checked", "true");
   checkedShopItemType?.classList.add("checked");
+  // Sort price type
+  const selectedSortPriceType =
+    document
+      .querySelector(".dropdown-custom__selection span")
+      ?.getAttribute("data-selected-sort-name") ||
+    SHOP_ITEM_SORT_PRICE_TYPES.FROM_CHEAP_TO_EXPENSIVE;
 
   const shopItemsResult = await API.getShopItems(lsLanguage, {
     type: SHOP_ITEM_TYPES.Survival,
+    sort_price: selectedSortPriceType,
   });
 
   renderShopItemsListHTML(shopItemsResult);
@@ -64,6 +78,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   addProductCartButtonsEventListeners(shopItemsResult);
   addProductCardsEventListeners(shopItemsResult);
   addShopItemsTypeSwitchEventListener();
+  addPriceSortingDropdownEventListener();
 
   ContentLoadingEventObserever.broadcast(true);
 
@@ -211,9 +226,15 @@ const addShopItemsTypeSwitchEventListener = () => {
   itemTypeSwitchElement?.addEventListener("change", async (e) => {
     const lsLanguage = localStorage.getItem("language") || DEFAULT_LANGUAGE;
     const selectedItemType = e.target.value;
+    const selectedSortPriceType =
+      document
+        .querySelector(".dropdown-custom__selection span")
+        ?.getAttribute("data-selected-sort-name") ||
+      SHOP_ITEM_SORT_PRICE_TYPES.FROM_CHEAP_TO_EXPENSIVE;
 
     const shopItemsResult = await API.getShopItems(lsLanguage, {
       type: selectedItemType,
+      sort_price: selectedSortPriceType,
     });
 
     itemTypeSwitchInputElements?.forEach((item) => {
@@ -230,5 +251,59 @@ const addShopItemsTypeSwitchEventListener = () => {
 
     addProductCartButtonsEventListeners(shopItemsResult);
     addProductCardsEventListeners(shopItemsResult);
+  });
+};
+
+const addPriceSortingDropdownEventListener = () => {
+  const dropdownServersSelectionElement = document.querySelector(
+    ".dropdown-custom__selection"
+  );
+  const dropdownServersContainerElement = document.querySelector(
+    ".dropdown-custom__container"
+  );
+
+  dropdownServersSelectionElement?.addEventListener("click", () => {
+    dropdownServersContainerElement.classList.toggle("hidden");
+    dropdownServersSelectionElement.classList.toggle(
+      "dropdown-custom__selection-open"
+    );
+
+    const dropdownServersContainerItemsElements = document.querySelectorAll(
+      ".dropdown-custom__container__item"
+    );
+
+    const addDropdownHandlers = () => {
+      const selected = dropdownServersSelectionElement?.querySelector("span");
+
+      dropdownServersContainerItemsElements?.forEach(async (item) => {
+        item.addEventListener("click", async () => {
+          selected.textContent = item.textContent;
+          selected.setAttribute(
+            "data-selected-sort-name",
+            item.getAttribute("data-sort-name")
+          );
+          dropdownServersContainerElement.classList.add("hidden");
+
+          // update shop items
+          const lsLanguage =
+            localStorage.getItem("language") || DEFAULT_LANGUAGE;
+          const selectedItemType = document.querySelector(
+            ".products-svitch .checked"
+          );
+
+          const shopItemsResult = await API.getShopItems(lsLanguage, {
+            type: selectedItemType?.value || SHOP_ITEM_TYPES.Survival,
+            sort_price: item.getAttribute("data-sort-name"),
+          });
+
+          renderShopItemsListHTML(shopItemsResult);
+
+          addProductCartButtonsEventListeners(shopItemsResult);
+          addProductCardsEventListeners(shopItemsResult);
+        });
+      });
+    };
+
+    addDropdownHandlers();
   });
 };

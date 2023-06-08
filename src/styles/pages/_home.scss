@@ -58,9 +58,25 @@
   margin-top: 16px;
   margin-bottom: 60px;
 
+  &_filters {
+    display: flex;
+    justify-content: space-between;
+
+    &_sorting {
+      display: flex;
+      align-items: baseline;
+
+      &>p {
+        @include body_3;
+        margin-right: 14px;
+      }
+    }
+  }
+
   &-svitch {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     margin-bottom: 24px;
 
     &__button {
@@ -112,6 +128,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     padding: 18px 19px 25px 19px;
     background-color: $shade-black;
     box-shadow: $shadow-defauld;
@@ -137,6 +154,7 @@
       font-size: 16px;
       line-height: 150%;
       color: $shade-white;
+      margin-top: 17px;
       margin-bottom: 12px;
     }
 

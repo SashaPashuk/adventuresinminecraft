@@ -10,3 +10,12 @@
 
     transition: all 0.3s ease-in-out;
 }
+
+@mixin body_3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+}

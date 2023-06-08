@@ -1,5 +1,6 @@
 const API_URL = "https://api.adventuresinminecraft.com/api/v1";
 
+import { SHOP_ITEM_SORT_PRICE_TYPES } from "../contants/constants.js";
 import * as Types from "../types/types.js";
 
 const getTokens = () => {
@@ -131,13 +132,20 @@ export default {
    * @param {String} languageCode
    * @param {Object} params
    * @param {String} params.type
+   * @param {Number} params.sort_price
    * @returns {Promise}
    */
-  getShopItems: (languageCode, params) => {
-    return sendAPIRequest({
+  getShopItems: async (languageCode, params) => {
+    const response = await sendAPIRequest({
       method: "GET",
       pathname: `/shop/${languageCode}/list/?type=${params.type}`,
     });
+
+    params.sort_price === SHOP_ITEM_SORT_PRICE_TYPES.FROM_CHEAP_TO_EXPENSIVE
+      ? response?.results.sort((a, b) => (+a.price > +b.price ? 1 : -1))
+      : response?.results.sort((a, b) => (+a.price > +b.price ? -1 : 1));
+
+    return response;
   },
   /**
    * @param {Object} params

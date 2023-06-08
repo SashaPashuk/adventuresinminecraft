@@ -32,6 +32,9 @@ export const languageLocalizations = {
     home_button_play_now: "Play now",
     home_survival: "Survival",
     home_anarchy: "Anarchy",
+    home_price_sort: "Sort by price",
+    home_price_sort_asc: "From cheap to expensive",
+    home_price_sort_desc: "From expensive to cheap",
 
     // change password page
     change_password_first_step_title: `To change your password, click the "Change Password" button. A link will be sent to your email, click on it and enter a new password`,
@@ -233,6 +236,9 @@ export const languageLocalizations = {
     home_button_play_now: "Играть сейчас",
     home_survival: "Выживание",
     home_anarchy: "Анархия",
+    home_price_sort: "Сортировать по цене",
+    home_price_sort_asc: "От дешевых к дорогим",
+    home_price_sort_desc: "От дорогих к дешевым",
 
     // change password page
     change_password_first_step_title: `Для изменения пароля нажмите на кнопку "Изменить пароль". Вам на почту будет отправлена ссылка, перейдите по ней и введите новый пароль`,

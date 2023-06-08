@@ -168,25 +168,61 @@
       </div>
       <div class="products">
         <div class="container">
-          <div class="products-svitch">
-            <label class="products-svitch__button">
-              <input
-                type="radio"
-                id="product_group_survival"
-                name="svitch_product_group"
-                value="Survival"
-              />
-              <span data-i18n-key="home_survival">Выживание</span>
-            </label>
-            <label class="products-svitch__button">
-              <input
-                type="radio"
-                id="product_group_anarchy"
-                name="svitch_product_group"
-                value="Anarchy"
-              />
-              <span data-i18n-key="home_anarchy">Анархия</span>
-            </label>
+          <div class="products_filters">
+            <div class="products-svitch">
+              <label class="products-svitch__button">
+                <input
+                  type="radio"
+                  id="product_group_survival"
+                  name="svitch_product_group"
+                  value="Survival"
+                />
+                <span data-i18n-key="home_survival">Выживание</span>
+              </label>
+              <label class="products-svitch__button">
+                <input
+                  type="radio"
+                  id="product_group_anarchy"
+                  name="svitch_product_group"
+                  value="Anarchy"
+                />
+                <span data-i18n-key="home_anarchy">Анархия</span>
+              </label>
+            </div>
+            <div class="products_filters_sorting">
+              <p data-i18n-key="home_price_sort">Сортировать по цене</p>
+              <div class="dropdown-custom">
+                <div class="dropdown-custom__selection open">
+                  <span
+                    data-i18n-key="home_price_sort_asc"
+                    data-selected-sort-name="FROM_CHEAP_TO_EXPENSIVE"
+                    id="dropdown-selected-item"
+                  >
+                    От дешевых к дорогим
+                  </span>
+                  <img
+                    src="../assets/images/icons/arrow_down.svg"
+                    alt="arrow_down"
+                  />
+                </div>
+                <ul class="dropdown-custom__container hidden">
+                  <li
+                    data-i18n-key="home_price_sort_desc"
+                    data-sort-name="FROM_EXPENSIVE_TO_CHEAP"
+                    class="dropdown-custom__container__item"
+                  >
+                    От дорогих к дешевым
+                  </li>
+                  <li
+                    data-i18n-key="home_price_sort_asc"
+                    data-sort-name="FROM_CHEAP_TO_EXPENSIVE"
+                    class="dropdown-custom__container__item"
+                  >
+                    От дешевых к дорогим
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="products__list"></div>
         </div>
