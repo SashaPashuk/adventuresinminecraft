@@ -1,7 +1,9 @@
-import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=3e3})=>{var r=document.querySelector(".toasts-wrapper");const s=document.createElement("div");s.className="toast-container";var a=document.createElement("div"),o=document.createElement("p");o.innerHTML=e,a.appendChild(o),s.appendChild(a),r.appendChild(s),setTimeout(()=>{s.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`},renderShopItemInfoHTML=({description:e,price:t,market_name:r,image_name:s,type:a})=>{var o=document.querySelector(".product-info__content"),r=`
+import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=3e3})=>{var r=document.querySelector(".toasts-wrapper");const s=document.createElement("div");s.className="toast-container";var a=document.createElement("div"),i=document.createElement("p");i.innerHTML=e,a.appendChild(i),s.appendChild(a),r.appendChild(s),setTimeout(()=>{s.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`};function descriptionList(e){var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),r=[];for(let e=0;e<t.length;e+=2)r.push({number:t[e],text:t[e+1].trim()});return r.map(({number:e,text:t})=>`<li>${e}${t}</li>`).join("")}const renderShopItemInfoHTML=({description:e,price:t,market_name:r,image_name:s,type:a})=>{var i=document.querySelector(".product-info__content"),r=`
     <h2 class="content__title">${r}</h2>
     <h4 data-i18n-key="productPage__desc" class="content__subtitle">Описание товара:</h4>
-    <p class="content__text">${e}</p>
+    <ul class="product-description">
+      ${descriptionList(e)}
+    </ul>
     <div class="content__price-block price-block">
       <span data-i18n-key="productPage__price" class="price-block__title">Цeна:</span>
       <span class="price-block__price" id="product_price">€${Number(t).toFixed(2)}</span>
@@ -26,7 +28,7 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
     </div>
   `,e=document.querySelector(".product-info__slider"),t=`
     ${renderShopItemImgHTML({shopItemName:s,shopItemType:a.toLowerCase(),imageClass:"slider__main-img"})}
-  `;e.innerHTML=t,o.innerHTML=r},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let o="";e?.forEach(({product_id:e,amount:t,sum_item_price:r,time_to_use:s,image_name:a})=>{a=`
+  `;e.innerHTML=t,i.innerHTML=r},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let i="";e?.forEach(({product_id:e,amount:t,sum_item_price:r,time_to_use:s,image_name:a})=>{a=`
         <li class="cartPage-list-item" data-cart-id=${e}>
           <h3>${a.slice(0,-4)}</h3>
           <div class="cartPage-list-item-amount">
@@ -60,7 +62,7 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
             />
           </div>
       </li>
-    `;o+=a}),t.innerHTML=o},renderServerDropdownItemsHTML=e=>{var t=document.querySelector(".dropdown-custom__container");let r="";e?.forEach(({server_type:e})=>{e=`
+    `;i+=a}),t.innerHTML=i},renderServerDropdownItemsHTML=e=>{var t=document.querySelector(".dropdown-custom__container");let r="";e?.forEach(({server_type:e})=>{e=`
       <li class="dropdown-custom__container__item">${e}</li>
     `;r+=e}),t.innerHTML=r},renderOrderHistoryItemsHTML=e=>{var t=document.querySelector(".orderHistory-orders");let s="";e?.results?.forEach(({id:e,total_price:t,order_item:r})=>{e=`
         <li class="orderHistory-orders-order-container">
@@ -117,7 +119,7 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
           </ul>
         </div>
       </li>
-    `;s+=e}),t.innerHTML=s},renderShopItemsListHTML=e=>{var t=document.querySelector(".products__list");let o="";e?.results?.forEach(({price:e,market_name:t,image_name:r,id:s,type:a})=>{r=`
+    `;s+=e}),t.innerHTML=s},renderShopItemsListHTML=e=>{var t=document.querySelector(".products__list");let i="";e?.results?.forEach(({price:e,market_name:t,image_name:r,id:s,type:a})=>{r=`
           <div class="products-card">
             ${renderShopItemImgHTML({shopItemName:r,shopItemType:a.toLowerCase()})}
             <p class="products-card__title">
@@ -130,4 +132,4 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
                 <button class="products-card__buy" data-id=${s}></button>
             </div>
           </div>
-      `;o+=r}),t.innerHTML=o};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML};
+      `;i+=r}),t.innerHTML=i};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML};

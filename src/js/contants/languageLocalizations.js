@@ -60,15 +60,16 @@ export const languageLocalizations = {
     "contact-page__email": "adventuresinminecraft@gmail.com",
     "contact-page__telegram": "Telegram",
 
-    // starting-tips-page
+    // starting tips page
     "starting-tips-page__title": "How to start playing?",
     "starting-tips-page__button": "Start now",
-    "starting-tips-page__step-one": "Step 1",
-    "starting-tips-page__step-one__description": `en - Lorem Ipsum - это текст-"рыба", часто используемый в печати ивэб-дизайне.`,
-    "starting-tips-page__step-two": "Step 2",
-    "starting-tips-page__step-two__description": `en - Lorem Ipsum - это текст-"рыба", часто используемый в печати ивэб-дизайне.`,
-    "starting-tips-page__step-three": "Step 3",
-    "starting-tips-page__step-three__description": `en - Lorem Ipsum - это текст-"рыба", часто используемый в печати ивэб-дизайне.`,
+    "starting-tips-page__step-one": "Step 1: Purchase the game",
+    "starting-tips-page__step-one__description": `The first step to start playing Minecraft is to purchase a licensed copy of the game. You can buy the game on the official Minecraft website or in other stores where the game is available for your platform.`,
+    "starting-tips-page__step-two": "Step 2: Install the game",
+    "starting-tips-page__step-two__description": `After purchasing the game, you will need to install it on your platform. Download the appropriate version of Minecraft for your device (e.g. Minecraft: Java Edition for PC or Minecraft: Bedrock Edition for consoles, mobile devices, or tablets). Follow the installation instructions to complete the process.`,
+    "starting-tips-page__step-three":
+      "Step 3: Launch the game and choose a mode",
+    "starting-tips-page__step-three__description": `After installation, launch the Minecraft game. You will be prompted to choose a game mode. Survival Mode is where you need to survive, gather resources, and fight hostile creatures. Creative Mode provides you with unlimited resources and the ability to build without limitations. Choose the mode that best suits your preferences and gaming goals.`,
 
     // successPayment page
     successPaymentPage__title: "Your payment was successful",
@@ -248,12 +249,12 @@ export const languageLocalizations = {
     // starting tips page
     "starting-tips-page__title": "Как начать играть?",
     "starting-tips-page__button": "Начать сейчас",
-    "starting-tips-page__step-one": "Шаг 1",
-    "starting-tips-page__step-one__description": `Lorem Ipsum - это текст-"рыба", часто используемый в печати ивэб-дизайне.`,
-    "starting-tips-page__step-two": "Шаг 2",
-    "starting-tips-page__step-two__description": `Lorem Ipsum - это текст-"рыба", часто используемый в печати ивэб-дизайне.`,
-    "starting-tips-page__step-three": "Шаг 3",
-    "starting-tips-page__step-three__description": `Lorem Ipsum - это текст-"рыба", часто используемый в печати ивэб-дизайне.`,
+    "starting-tips-page__step-one": "Шаг 1: Приобретите игру",
+    "starting-tips-page__step-one__description": `Первым шагом для начала игры в Minecraft является приобретение лицензионной копии игры. Вы можете приобрести игру на официальном веб-сайте Minecraft или в других магазинах, где доступна игра для вашей платформы.`,
+    "starting-tips-page__step-two": "Шаг 2: Установите игру",
+    "starting-tips-page__step-two__description": `После приобретения игры вам потребуется установить ее на вашу платформу. Загрузите соответствующую версию Minecraft для вашего устройства (например, Minecraft: Java Edition для ПК или Minecraft: Bedrock Edition для консолей, мобильных устройств или планшетов). Следуйте инструкциям по установке, чтобы завершить процесс.`,
+    "starting-tips-page__step-three": "Шаг 3: Запустите игру и выберите режим",
+    "starting-tips-page__step-three__description": `После установки запустите игру Minecraft. Вам будет предложено выбрать режим игры. Выживание (Survival) - это режим, в котором вам нужно выживать, добывать ресурсы и сражаться с враждебными существами. Творческий (Creative) режим предоставляет вам неограниченные ресурсы и возможность строить без ограничений. Выберите режим, который наиболее соответствует вашим предпочтениям и целям игры.`,
 
     // successPayment page
     successPaymentPage__title: "Ваша оплата прошла успешно",

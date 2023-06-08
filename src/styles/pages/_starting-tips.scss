@@ -22,9 +22,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 272px;
+    max-width: 300px;
     width: 100%;
-    min-height: 332px;
+    min-height: 670px;
     padding: 35px 32px 48px 23px;
     background: $shade-black;
     box-shadow: $shadow-defauld;
@@ -59,7 +59,7 @@
     }
     &-arrow {
       position: relative;
-      width: 100%;
+      width: 20%;
       border-top: 2px dashed $shade-grey;
       margin: 0 10px;
       &:before {

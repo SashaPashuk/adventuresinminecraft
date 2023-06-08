@@ -43,6 +43,23 @@ export const renderShopItemImgHTML = ({
   return `<img ${classAttribute} src="../assets/images/products/${shopItemType}/${shopItemName}" alt=${shopItemName}-image />`;
 };
 
+function descriptionList(description) {
+  const regex = /(\d+\.\s)/;
+  const items = description.split(regex).filter((item) => item.trim() !== "");
+
+  let formattedItems = [];
+  for (let i = 0; i < items.length; i += 2) {
+    formattedItems.push({
+      number: items[i],
+      text: items[i + 1].trim(),
+    });
+  }
+
+  return formattedItems
+    .map(({ number, text }) => `<li>${number}${text}</li>`)
+    .join("");
+}
+
 export const renderShopItemInfoHTML = ({
   description,
   price,
@@ -57,7 +74,9 @@ export const renderShopItemInfoHTML = ({
   const itemInfo = `
     <h2 class="content__title">${market_name}</h2>
     <h4 data-i18n-key="productPage__desc" class="content__subtitle">Описание товара:</h4>
-    <p class="content__text">${description}</p>
+    <ul class="product-description">
+      ${descriptionList(description)}
+    </ul>
     <div class="content__price-block price-block">
       <span data-i18n-key="productPage__price" class="price-block__title">Цeна:</span>
       <span class="price-block__price" id="product_price">€${Number(
