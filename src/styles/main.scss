@@ -81,6 +81,11 @@ img {
   display: none !important;
 }
 
+.hidden-visibility {
+  // display: none !important;
+  visibility: hidden
+}
+
 // button
 
 .button-primary {

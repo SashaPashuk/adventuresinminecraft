@@ -33,6 +33,8 @@ ShopOrderItemsEventObserever.subscribe((shopOrderItemsResponse) => {
   addProductDeleteButtonEventListener(shopOrderItemsResponse);
   addProductIncreaseDecreasButtonsEventListener(shopOrderItemsResponse);
   addOrderItemsUsageButtonsEventListener(shopOrderItemsResponse);
+
+  ContentLoadingEventObserever.broadcast(true);
 });
 
 // Event Listeners

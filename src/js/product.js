@@ -39,8 +39,8 @@ LanguageEventObserever.subscribe(async (data) => {
   renderShopItemInfoHTML(shopItemsResponse);
 
   addBuyShopItemEventListener(shopItemsResponse);
-  addShopItemAmountEventListener();
-  addShopItemUsageEventListener();
+  addShopItemAmountEventListener(shopItemsResponse);
+  addShopItemUsageEventListener(shopItemsResponse);
 });
 
 // Event Listeners
@@ -56,8 +56,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   renderShopItemInfoHTML(shopItemsResponse);
 
   addBuyShopItemEventListener(shopItemsResponse);
-  addShopItemAmountEventListener();
-  addShopItemUsageEventListener();
+  addShopItemAmountEventListener(shopItemsResponse);
+  addShopItemUsageEventListener(shopItemsResponse);
 
   ContentLoadingEventObserever.broadcast(true);
 });
@@ -101,6 +101,7 @@ const addBuyShopItemEventListener = (item) => {
 
       if (
         !item.forever_price &&
+        selectedUsageElement &&
         selectedUsageElement.getAttribute("data-type") ===
           SHOP_ITEM_TIME_USAGE.Forever
       ) {
@@ -117,8 +118,16 @@ const addBuyShopItemEventListener = (item) => {
         {
           ...item,
           amount: Number(itemAmountElement.innerHTML),
-          time_to_use: SHOP_ITEM_TIME_USAGE["30_DAYS"],
-          sum_item_price: Number(item.price),
+          time_to_use: selectedUsageElement
+            ? selectedUsageElement.getAttribute("data-type") === "30"
+              ? SHOP_ITEM_TIME_USAGE["30_DAYS"]
+              : SHOP_ITEM_TIME_USAGE.Forever
+            : SHOP_ITEM_TIME_USAGE["30_DAYS"],
+          sum_item_price: selectedUsageElement
+            ? selectedUsageElement.getAttribute("data-type") === "30"
+              ? Number(item.price)
+              : Number(item.forever_price)
+            : Number(itemAmountElement.innerHTML) * Number(item.price),
         },
       ];
       lsShopOrderItems = updatedlsShopOrderItems;
@@ -191,7 +200,7 @@ const addBuyShopItemEventListener = (item) => {
   });
 };
 
-const addShopItemAmountEventListener = () => {
+const addShopItemAmountEventListener = (product) => {
   const itemAmountElement = document.querySelector(
     ".quantity-control__number-title"
   );
@@ -222,23 +231,44 @@ const addShopItemAmountEventListener = () => {
     itemAmountElement.textContent = quantity;
   }
 
-  const priceElement = document.getElementById("product_price");
-
-  let initialPrice = parseFloat(priceElement.textContent.slice(1));
-
   function updatePrice() {
-    const totalPrice = Number(initialPrice * quantity).toFixed(2);
-    priceElement.textContent = `€${totalPrice}`;
+    const usagesButtonElement = document
+      .querySelector(".content__usage-actions")
+      ?.querySelector(".selected");
+
+    const priceElement = document.getElementById("product_price");
+
+    if (usagesButtonElement) {
+      if (usagesButtonElement.getAttribute("data-type") === "30") {
+        priceElement.textContent = `€${Number(product.price * quantity).toFixed(
+          2
+        )}`;
+      } else {
+        priceElement.textContent = `€${Number(
+          product.forever_price * quantity
+        ).toFixed(2)}`;
+      }
+    } else {
+      priceElement.textContent = `€${Number(product.price * quantity).toFixed(
+        2
+      )}`;
+    }
   }
 };
 
-const addShopItemUsageEventListener = () => {
+const addShopItemUsageEventListener = (product) => {
   const usagesButtonElements = document
     .querySelector(".content__usage-actions")
     ?.querySelectorAll("button");
+  const productPrice = document.querySelector("#product_price");
 
   usagesButtonElements?.forEach((button) => {
     button.addEventListener("click", async () => {
+      const itemAmountElement = document.querySelector(
+        ".quantity-control__number-title"
+      );
+      const quantity = parseInt(itemAmountElement.textContent);
+
       if (button.getAttribute("data-type") === "30") {
         usagesButtonElements[0].classList.add("selected");
         usagesButtonElements[0].classList.add("button-primary");
@@ -246,6 +276,9 @@ const addShopItemUsageEventListener = () => {
         usagesButtonElements[1].classList.remove("selected");
         usagesButtonElements[1].classList.remove("button-primary");
         usagesButtonElements[1].classList.add("button-shade");
+        productPrice.textContent =
+          productPrice.textContent.slice(0, 1) +
+          quantity * Number(product.price);
       } else {
         usagesButtonElements[1].classList.add("selected");
         usagesButtonElements[1].classList.add("button-primary");
@@ -253,6 +286,9 @@ const addShopItemUsageEventListener = () => {
         usagesButtonElements[0].classList.remove("selected");
         usagesButtonElements[0].classList.remove("button-primary");
         usagesButtonElements[0].classList.add("button-shade");
+        productPrice.textContent =
+          productPrice.textContent.slice(0, 1) +
+          quantity * Number(product.forever_price);
       }
     });
   });

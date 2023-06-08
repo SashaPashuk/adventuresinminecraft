@@ -1,5 +1,27 @@
-import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=3e3})=>{var r=document.querySelector(".toasts-wrapper");const a=document.createElement("div");a.className="toast-container";var s=document.createElement("div"),i=document.createElement("p");i.innerHTML=e,s.appendChild(i),a.appendChild(s),r.appendChild(a),setTimeout(()=>{a.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`};function descriptionList(e){var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),r=[];for(let e=0;e<t.length;e+=2)r.push({number:t[e],text:t[e+1].trim()});return r.map(({number:e,text:t})=>`<li>${e}${t}</li>`).join("")}const renderShopItemInfoHTML=({description:e,price:t,market_name:r,image_name:a,type:s,time_to_use:i})=>{var o=document.querySelector(".product-info__content"),r=`
-    <h2 class="content__title">${r}</h2>
+import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=3e3})=>{var r=document.querySelector(".toasts-wrapper");const a=document.createElement("div");a.className="toast-container";var s=document.createElement("div"),i=document.createElement("p");i.innerHTML=e,s.appendChild(i),a.appendChild(s),r.appendChild(a),setTimeout(()=>{a.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`};function descriptionList(e){if(!e?.includes("1."))return`<li>${e}</li>`;var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),r=[];for(let e=0;e<t.length;e+=2)r.push({number:t[e],text:t[e+1].trim()});return r.map(({number:e,text:t})=>`<li>${e}${t}</li>`).join("")}const renderShopItemInfoHTML=({description:e,price:t,forever_price:r,market_name:a,image_name:s,type:i,time_to_use:o,is_one_time:n})=>{var d=document.querySelector(".product-info__content"),r=t&&r?`<div class="content__usage-actions-wrapper">
+        <span data-i18n-key="productPage__usage" class="price-block__title">
+          Срок действия покупки:
+        </span>
+        <div class="content__usage-actions">
+          <button
+            data-i18n-key="productPage__usage_30"
+            id="item-usage-days"
+            data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]}
+            class=${o===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"button-primary selected":""} selected button-primary
+          >
+            "30 Дней"
+          </button>
+          <button
+            data-i18n-key="productPage__usage_forever"
+            id="item-usage-forever"
+            data-type=${SHOP_ITEM_TIME_USAGE.Forever}
+            class=${o===SHOP_ITEM_TIME_USAGE.Forever?"button-primary selected":"button-shade"}
+          >
+            Навсегда
+          </button>
+        </div>
+      </div>`:null,o=`
+    <h2 class="content__title">${a}</h2>
     <h4 data-i18n-key="productPage__desc" class="content__subtitle">Описание товара:</h4>
     <ul class="product-description">
       ${descriptionList(e)}
@@ -7,32 +29,16 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
     <div class="content__info">
       <div class="content__price-block price-block">
         <span data-i18n-key="productPage__price" class="price-block__title">Цeна:</span>
-        <span class="price-block__price" id="product_price">€${Number(t).toFixed(2)}</span>
+        <span class="price-block__price" id="product_price">€${Number(t)}</span>
       </div>
-      <div class="content__usage-actions-wrapper">
-        <span data-i18n-key="productPage__usage" class="price-block__title">Срок действия покупки:</span>
-        <div class="content__usage-actions">
-          <button 
-            data-i18n-key="productPage__usage_30"
-            id="item-usage-days" 
-            data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]} 
-            class="${i===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"button-primary selected":""} selected button-primary"
-          >30 Дней</button>
-          <button 
-            data-i18n-key="productPage__usage_forever"
-            id="item-usage-forever" 
-            data-type=${SHOP_ITEM_TIME_USAGE.Forever} 
-            class="${i===SHOP_ITEM_TIME_USAGE.Forever?"button-primary selected":"button-shade"}"
-          >Навсегда</button>
-        </div>
-      </div>
+      ${r}
     </div>
     <div class="content__buy-block buy-block">
-      <p data-i18n-key="productPage__amount" class="buy-block__quantity-title quantity-title">
+      <p data-i18n-key="productPage__amount" class="buy-block__quantity-title quantity-title ${n?"hidden":""}">
         Количество:
       </p>
       <div class="buy-block__quantity-control quantity-control">
-        <div class="quantity-control__number">
+        <div class="quantity-control__number ${n?"hidden":""}">
           <button
             class="quantity-control__number-btn quantity-control__number-btn-reduce"
           ></button>
@@ -44,39 +50,41 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
         <button data-i18n-key="productPage__button" class="buy-block__buy-btn buy-btn button-primary">Купить</button>
       </div>
     </div>
-  `,e=document.querySelector(".product-info__slider"),t=`
-    ${renderShopItemImgHTML({shopItemName:a,shopItemType:s.toLowerCase(),imageClass:"slider__main-img"})}
-  `;e.innerHTML=t,o.innerHTML=r},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let i="";e?.forEach(({product_id:e,amount:t,sum_item_price:r,time_to_use:a,image_name:s})=>{s=`
-        <li class="cartPage-list-item" data-cart-id=${e}>
-          <h3>${s.slice(0,-4)}</h3>
-          <div class="cartPage-list-item-amount">
-            <span data-i18n-key="cartPage__amount">Количество:</span>
-            <div class="cartPage-list-item-amount-actions">
-              <img src="../assets/images/icons/arrow_left.svg" alt="" class='cart-item-decrease-button' />
-              <span class="cart-item-amount">${t}</span>
-              <img src="../assets/images/icons/arrow_right.svg" alt="" class='cart-item-increase-button' />
+  `,a=document.querySelector(".product-info__slider"),e=`
+    ${renderShopItemImgHTML({shopItemName:s,shopItemType:i.toLowerCase(),imageClass:"slider__main-img"})}
+  `;a.innerHTML=e,d.innerHTML=o},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let l="";e?.forEach(({product_id:e,id:t,amount:r,sum_item_price:a,time_to_use:s,image_name:i,market_name:o,is_one_time:n,price:d,forever_price:c})=>{t=`
+        <li class="cartPage-list-item" data-cart-id=${e||t}>
+          <h3>${o||i.slice(0,-4)}</h3>
+          <div class="cartPage-list-item-actionContainer">
+            <div class="cartPage-list-item-amount ${n?"hidden-visibility":""}">
+              <span data-i18n-key="cartPage__amount">Количество:</span>
+              <div class="cartPage-list-item-amount-actions">
+                <img src="../assets/images/icons/arrow_left.svg" alt="" class='cart-item-decrease-button' />
+                <span class="cart-item-amount">${r}</span>
+                <img src="../assets/images/icons/arrow_right.svg" alt="" class='cart-item-increase-button' />
+              </div>
             </div>
-          </div>
-          <div class="cartPage-list-item-usage">
-            <span data-i18n-key="cartPage__usage">Срок действия покупки:</span>
-            <div class="cartPage-list-item-usage-actions">
-              <button
-                data-i18n-key="cartPage__usage_30"
-                id="item-usage-days" data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]} 
-                class="${a===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"selected":""}">30 Дней</button>
-              <button 
-                data-i18n-key="cartPage__usage_forever"
-                id="item-usage-forever" 
-                data-type=${SHOP_ITEM_TIME_USAGE.Forever} 
-                class="${a===SHOP_ITEM_TIME_USAGE.Forever?"selected":""}"
-              >Навсегда</button>
+            <div class="cartPage-list-item-usage ${d&&c?"":"hidden-visibility"}">
+              <span data-i18n-key="cartPage__usage">Срок действия покупки:</span>
+              <div class="cartPage-list-item-usage-actions">
+                <button
+                  data-i18n-key="cartPage__usage_30"
+                  id="item-usage-days" data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]} 
+                  class="${s===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"selected":""}">30 Дней</button>
+                <button 
+                  data-i18n-key="cartPage__usage_forever"
+                  id="item-usage-forever" 
+                  data-type=${SHOP_ITEM_TIME_USAGE.Forever} 
+                  class="${s===SHOP_ITEM_TIME_USAGE.Forever?"selected":""}"
+                >Навсегда</button>
+              </div>
             </div>
-          </div>
-          <div>
-            <span data-i18n-key="cartPage__price">Цена:</span>
             <div>
-              <span>€</span>
-              <span class="cartPage-list-item-sum">${r}</span>
+              <span data-i18n-key="cartPage__price">Цена:</span>
+              <div>
+                <span>€</span>
+                <span class="cartPage-list-item-sum">${a}</span>
+              </div>
             </div>
           </div>
           <div class="cart-container">
@@ -88,7 +96,7 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
             />
           </div>
       </li>
-    `;i+=s}),t.innerHTML=i},renderServerDropdownItemsHTML=e=>{var t=document.querySelector(".dropdown-custom__container");let r="";e?.forEach(({server_type:e})=>{e=`
+    `;l+=t}),t.innerHTML=l},renderServerDropdownItemsHTML=e=>{var t=document.querySelector(".dropdown-custom__container");let r="";e?.forEach(({server_type:e})=>{e=`
       <li class="dropdown-custom__container__item">${e}</li>
     `;r+=e}),t.innerHTML=r},renderOrderHistoryItemsHTML=e=>{var t=document.querySelector(".orderHistory-orders");let a="";e?.results?.forEach(({id:e,total_price:t,order_item:r})=>{e=`
         <li class="orderHistory-orders-order-container">

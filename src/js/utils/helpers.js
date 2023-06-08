@@ -44,7 +44,12 @@ export const renderShopItemImgHTML = ({
 };
 
 function descriptionList(description) {
+  if (!description?.includes("1.")) {
+    return `<li>${description}</li>`;
+  }
+
   const regex = /(\d+\.\s)/;
+
   const items = description.split(regex).filter((item) => item.trim() !== "");
 
   let formattedItems = [];
@@ -63,14 +68,51 @@ function descriptionList(description) {
 export const renderShopItemInfoHTML = ({
   description,
   price,
+  forever_price,
   market_name,
   image_name,
   type,
   time_to_use,
+  is_one_time,
 }) => {
   const productInfoContainerElement = document.querySelector(
     ".product-info__content"
   );
+
+  const usagesContainerElement =
+    price && forever_price
+      ? `<div class="content__usage-actions-wrapper">
+        <span data-i18n-key="productPage__usage" class="price-block__title">
+          Срок действия покупки:
+        </span>
+        <div class="content__usage-actions">
+          <button
+            data-i18n-key="productPage__usage_30"
+            id="item-usage-days"
+            data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]}
+            class=${
+              time_to_use === SHOP_ITEM_TIME_USAGE["30_DAYS"]
+                ? "button-primary selected"
+                : ""
+            } selected button-primary
+          >
+            "30 Дней"
+          </button>
+          <button
+            data-i18n-key="productPage__usage_forever"
+            id="item-usage-forever"
+            data-type=${SHOP_ITEM_TIME_USAGE.Forever}
+            class=${
+              time_to_use === SHOP_ITEM_TIME_USAGE.Forever
+                ? "button-primary selected"
+                : "button-shade"
+            }
+          >
+            Навсегда
+          </button>
+        </div>
+      </div>`
+      : null;
 
   const itemInfo = `
     <h2 class="content__title">${market_name}</h2>
@@ -83,40 +125,18 @@ export const renderShopItemInfoHTML = ({
         <span data-i18n-key="productPage__price" class="price-block__title">Цeна:</span>
         <span class="price-block__price" id="product_price">€${Number(
           price
-        ).toFixed(2)}</span>
+        )}</span>
       </div>
-      <div class="content__usage-actions-wrapper">
-        <span data-i18n-key="productPage__usage" class="price-block__title">Срок действия покупки:</span>
-        <div class="content__usage-actions">
-          <button 
-            data-i18n-key="productPage__usage_30"
-            id="item-usage-days" 
-            data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]} 
-            class="${
-              time_to_use === SHOP_ITEM_TIME_USAGE["30_DAYS"]
-                ? "button-primary selected"
-                : ""
-            } selected button-primary"
-          >30 Дней</button>
-          <button 
-            data-i18n-key="productPage__usage_forever"
-            id="item-usage-forever" 
-            data-type=${SHOP_ITEM_TIME_USAGE.Forever} 
-            class="${
-              time_to_use === SHOP_ITEM_TIME_USAGE.Forever
-                ? "button-primary selected"
-                : "button-shade"
-            }"
-          >Навсегда</button>
-        </div>
-      </div>
+      ${usagesContainerElement}
     </div>
     <div class="content__buy-block buy-block">
-      <p data-i18n-key="productPage__amount" class="buy-block__quantity-title quantity-title">
+      <p data-i18n-key="productPage__amount" class="buy-block__quantity-title quantity-title ${
+        is_one_time ? "hidden" : ""
+      }">
         Количество:
       </p>
       <div class="buy-block__quantity-control quantity-control">
-        <div class="quantity-control__number">
+        <div class="quantity-control__number ${is_one_time ? "hidden" : ""}">
           <button
             class="quantity-control__number-btn quantity-control__number-btn-reduce"
           ></button>
@@ -150,46 +170,65 @@ export const renderCartItemsHTML = (items) => {
   let html = "";
 
   items?.forEach(
-    ({ product_id, amount, sum_item_price, time_to_use, image_name }) => {
+    ({
+      product_id,
+      id,
+      amount,
+      sum_item_price,
+      time_to_use,
+      image_name,
+      market_name,
+      is_one_time,
+      price,
+      forever_price,
+    }) => {
       const item = `
-        <li class="cartPage-list-item" data-cart-id=${product_id}>
-          <h3>${image_name.slice(0, -4)}</h3>
-          <div class="cartPage-list-item-amount">
-            <span data-i18n-key="cartPage__amount">Количество:</span>
-            <div class="cartPage-list-item-amount-actions">
-              <img src="../assets/images/icons/arrow_left.svg" alt="" class='cart-item-decrease-button' />
-              <span class="cart-item-amount">${amount}</span>
-              <img src="../assets/images/icons/arrow_right.svg" alt="" class='cart-item-increase-button' />
+        <li class="cartPage-list-item" data-cart-id=${product_id || id}>
+          <h3>${market_name || image_name.slice(0, -4)}</h3>
+          <div class="cartPage-list-item-actionContainer">
+            <div class="cartPage-list-item-amount ${
+              is_one_time ? "hidden-visibility" : ""
+            }">
+              <span data-i18n-key="cartPage__amount">Количество:</span>
+              <div class="cartPage-list-item-amount-actions">
+                <img src="../assets/images/icons/arrow_left.svg" alt="" class='cart-item-decrease-button' />
+                <span class="cart-item-amount">${amount}</span>
+                <img src="../assets/images/icons/arrow_right.svg" alt="" class='cart-item-increase-button' />
+              </div>
             </div>
-          </div>
-          <div class="cartPage-list-item-usage">
-            <span data-i18n-key="cartPage__usage">Срок действия покупки:</span>
-            <div class="cartPage-list-item-usage-actions">
-              <button
-                data-i18n-key="cartPage__usage_30"
-                id="item-usage-days" data-type=${
-                  SHOP_ITEM_TIME_USAGE["30_DAYS"]
-                } 
-                class="${
-                  time_to_use === SHOP_ITEM_TIME_USAGE["30_DAYS"]
-                    ? "selected"
-                    : ""
-                }">30 Дней</button>
-              <button 
-                data-i18n-key="cartPage__usage_forever"
-                id="item-usage-forever" 
-                data-type=${SHOP_ITEM_TIME_USAGE.Forever} 
-                class="${
-                  time_to_use === SHOP_ITEM_TIME_USAGE.Forever ? "selected" : ""
-                }"
-              >Навсегда</button>
+            <div class="cartPage-list-item-usage ${
+              price && forever_price ? "" : "hidden-visibility"
+            }">
+              <span data-i18n-key="cartPage__usage">Срок действия покупки:</span>
+              <div class="cartPage-list-item-usage-actions">
+                <button
+                  data-i18n-key="cartPage__usage_30"
+                  id="item-usage-days" data-type=${
+                    SHOP_ITEM_TIME_USAGE["30_DAYS"]
+                  } 
+                  class="${
+                    time_to_use === SHOP_ITEM_TIME_USAGE["30_DAYS"]
+                      ? "selected"
+                      : ""
+                  }">30 Дней</button>
+                <button 
+                  data-i18n-key="cartPage__usage_forever"
+                  id="item-usage-forever" 
+                  data-type=${SHOP_ITEM_TIME_USAGE.Forever} 
+                  class="${
+                    time_to_use === SHOP_ITEM_TIME_USAGE.Forever
+                      ? "selected"
+                      : ""
+                  }"
+                >Навсегда</button>
+              </div>
             </div>
-          </div>
-          <div>
-            <span data-i18n-key="cartPage__price">Цена:</span>
             <div>
-              <span>€</span>
-              <span class="cartPage-list-item-sum">${sum_item_price}</span>
+              <span data-i18n-key="cartPage__price">Цена:</span>
+              <div>
+                <span>€</span>
+                <span class="cartPage-list-item-sum">${sum_item_price}</span>
+              </div>
             </div>
           </div>
           <div class="cart-container">
