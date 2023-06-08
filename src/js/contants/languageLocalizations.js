@@ -203,6 +203,12 @@ export const languageLocalizations = {
     cartPage__usage_30: "30 Days",
     cartPage__usage_forever: "Forever",
     cartPage__price: "Price:",
+
+    // launcherPage
+    launcherPage__title: "LUNCHER MAINCRAFT WITH MODS",
+    launcherPage__desc: `Launcher is a program that allows players to quickly and easily download the game Minecraft and is designed to download and run the game with our mods. Available in single player or on CubixWorld servers. The first thing you need to do is to download Minecraft on your PC or phone, it's free.`,
+    launcherPage__conclusion: `After all, the Launcher is available on many platforms, including MacOS, Linux and Windows, and Android.`,
+    launcherPage__btn: "Download",
   },
   ru: {
     // header
@@ -409,6 +415,12 @@ export const languageLocalizations = {
     cartPage__usage_30: "30 Дней",
     cartPage__usage_forever: "Навсегда",
     cartPage__price: "Цена:",
+
+    // launcherPage
+    launcherPage__title: "ЛАУНЧЕР МАЙНКРАФТ С МОДАМИ",
+    launcherPage__desc: `Лаунчер - это программа, которая позволяет игрокам быстро и легко скачать игру Minecraft и предназначен для скачивания и запуска игры с нашими модами. Доступна возможность одиночной игры или на серверах CubixWorld. Первые делом нужно скачать майнкрафт на ПК или телефон, это бесплатно.`,
+    launcherPage__conclusion: `Ведь лаунчер доступен на множество платформ, включая MacOS, Linux и Windows, Android.`,
+    launcherPage__btn: "Скачать",
   },
 };
 
@@ -434,6 +446,7 @@ export const languageLocalizations = {
 // registration
 // change-password
 // cart
+// launcher-download
 
 // language related requests to BE for downloading products (Product, Home pages)
 
@@ -442,5 +455,4 @@ export const languageLocalizations = {
 // pages
 // donate-privileges
 // donation-description
-// launcher-download
 // rules
