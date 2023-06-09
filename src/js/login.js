@@ -5,8 +5,11 @@ import {
   ACTIVE_CODE_INCORRECT,
   EMAIL_CODE_MIN_CHARACTERS_ERROR,
   EMAIL_CODE_MAX_CHARACTERS_ERROR,
+  errorsLanguageLocalizationsEnum,
 } from "./contants/errors.js";
 import { ContentLoadingEventObserever } from "./utils/observer.js";
+import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
+import { addToastNotification } from "./utils/helpers.js";
 
 const loginButtonElement = document.querySelector("#login-button");
 const loginFormElement = document.querySelector("#login-form");
@@ -16,6 +19,19 @@ const loginFormContainerElement = document.querySelector(
 const codeFormContainerElement = document.querySelector("#code-from-container");
 const codeButtonElement = document.querySelector("#code-button");
 const codeFormElement = document.querySelector("#code-form");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hasSuccessfulRegistration = localStorage.getItem("register_success");
+
+  if (hasSuccessfulRegistration) {
+    addToastNotification({
+      message: getLocalizedError(
+        errorsLanguageLocalizationsEnum.USER_REGISTERED_SUCCESS
+      ),
+    });
+    localStorage.removeItem("register_success");
+  }
+});
 
 loginButtonElement?.addEventListener("click", (e) => {
   e.preventDefault();
@@ -38,14 +54,28 @@ loginButtonElement?.addEventListener("click", (e) => {
       const labelForEmailError = loginFormElement?.querySelector(
         'label[for="username"]'
       );
-      labelForEmailError.innerHTML = data?.username[0];
+      labelForEmailError.innerHTML = getLocalizedError(
+        errorsLanguageLocalizationsEnum.FIELD_NOT_EMPTY_ERROR
+      );
     }
 
     if ([FIELD_NOT_EMPTY_ERROR].includes(passwordErrors)) {
       const labelForEmailError = loginFormElement?.querySelector(
         'label[for="password"]'
       );
-      labelForEmailError.innerHTML = data?.password[0];
+      labelForEmailError.innerHTML = getLocalizedError(
+        errorsLanguageLocalizationsEnum.FIELD_NOT_EMPTY_ERROR
+      );
+    }
+
+    if (data?.detail === ACTIVE_CODE_INCORRECT) {
+      const labelForEmailError = loginFormElement?.querySelector(
+        'label[for="password"]'
+      );
+
+      labelForEmailError.innerHTML = getLocalizedError(
+        errorsLanguageLocalizationsEnum.ACTIVE_CODE_INCORRECT
+      );
     }
 
     // since we do not have errors, redirect user to email confirmation page or home page
@@ -82,13 +112,25 @@ codeButtonElement?.addEventListener("click", (e) => {
 
     if (
       [
+        FIELD_NOT_EMPTY_ERROR,
         EMAIL_CODE_MIN_CHARACTERS_ERROR,
         EMAIL_CODE_MAX_CHARACTERS_ERROR,
       ].includes(emailCodeErrors)
     ) {
       const codeForEmailError =
         codeFormElement?.querySelector('label[for="code"]');
-      codeForEmailError.innerHTML = data?.["email_code"][0];
+      codeForEmailError.innerHTML =
+        emailCodeErrors === FIELD_NOT_EMPTY_ERROR
+          ? getLocalizedError(
+              errorsLanguageLocalizationsEnum.FIELD_NOT_EMPTY_ERROR
+            )
+          : emailCodeErrors === EMAIL_CODE_MIN_CHARACTERS_ERROR
+          ? getLocalizedError(
+              errorsLanguageLocalizationsEnum.EMAIL_CODE_MIN_CHARACTERS_ERROR
+            )
+          : getLocalizedError(
+              errorsLanguageLocalizationsEnum.EMAIL_CODE_MAX_CHARACTERS_ERROR
+            );
     }
 
     if (data?.refresh && data?.access) {

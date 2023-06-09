@@ -6,7 +6,9 @@ import {
   VALID_PASSWORDS_ERROR,
   PASSWORD_MIN_CHARACTERS_ERROR,
   PASSWORD_MAX_CHARACTERS_ERROR,
+  errorsLanguageLocalizationsEnum,
 } from "./contants/errors.js";
+import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
 
 const signupButtonElement = document.querySelector("#signup-button");
 const signupFormElement = document.querySelector("#signup-form");
@@ -23,7 +25,9 @@ signupButtonElement?.addEventListener("click", (e) => {
     const labelForEmailError = signupFormElement?.querySelector(
       'label[for="password"]'
     );
-    labelForEmailError.innerHTML = VALID_PASSWORDS_ERROR;
+    labelForEmailError.innerHTML = getLocalizedError(
+      errorsLanguageLocalizationsEnum.VALID_PASSWORDS_ERROR
+    );
 
     return;
   }
@@ -38,34 +42,45 @@ signupButtonElement?.addEventListener("click", (e) => {
     const emailErrors = (data?.email && data?.email[0]) || "";
     const passwordErrors = (data?.password && data?.password[0]) || "";
 
-    if (
-      [
-        USER_EXISTS_ERROR,
-        VALID_EMAIL_ERROR,
-        PASSWORD_MAX_CHARACTERS_ERROR,
-      ].includes(emailErrors)
-    ) {
+    if ([USER_EXISTS_ERROR, VALID_EMAIL_ERROR].includes(emailErrors)) {
       const labelForEmailError =
         signupFormElement?.querySelector('label[for="email"]');
-      labelForEmailError.innerHTML = data?.email[0];
+      labelForEmailError.innerHTML =
+        emailErrors === VALID_EMAIL_ERROR
+          ? getLocalizedError(errorsLanguageLocalizationsEnum.VALID_EMAIL_ERROR)
+          : getLocalizedError(
+              errorsLanguageLocalizationsEnum.USER_EXISTS_ERROR
+            );
     }
 
     if (
       [
-        PASSWORD_MIN_CHARACTERS_ERROR,
         FIELD_NOT_EMPTY_ERROR,
+        PASSWORD_MIN_CHARACTERS_ERROR,
         PASSWORD_MAX_CHARACTERS_ERROR,
       ].includes(passwordErrors)
     ) {
       const labelForEmailError = signupFormElement?.querySelector(
         'label[for="password"]'
       );
-      labelForEmailError.innerHTML = data?.password[0];
+      labelForEmailError.innerHTML =
+        passwordErrors === FIELD_NOT_EMPTY_ERROR
+          ? getLocalizedError(
+              errorsLanguageLocalizationsEnum.FIELD_NOT_EMPTY_ERROR
+            )
+          : passwordErrors === PASSWORD_MIN_CHARACTERS_ERROR
+          ? getLocalizedError(
+              errorsLanguageLocalizationsEnum.PASSWORD_MIN_CHARACTERS_ERROR
+            )
+          : getLocalizedError(
+              errorsLanguageLocalizationsEnum.PASSWORD_MAX_CHARACTERS_ERROR
+            );
     }
 
     // since we do not have errors, redirect user to login page
     if (data === "User successfully registered!") {
-      window.location.href = "/pages/login.html";
+      window.location.href = "/pages/login";
+      localStorage.setItem("register_success", true);
     }
   });
 });
