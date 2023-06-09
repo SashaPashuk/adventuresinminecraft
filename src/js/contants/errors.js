@@ -1,6 +1,9 @@
 // USER
 export const USER_EXISTS_ERROR = "User with this email already exists.";
+export const USER_VALID_NICKNAME_ERROR = "Enter valid nickname.";
 export const TOKEN_NOT_EXISTS = "Authentication credentials were not provided.";
+
+export const NO_ACTIVE_ORDER_ERROR = "There is no active order";
 
 export const ACTIVE_CODE_INCORRECT =
   "No active account found with the given credentials";
@@ -35,8 +38,12 @@ export const errorsLanguageLocalizationsEnum = {
   USER_EXISTS_ERROR: "USER_EXISTS_ERROR",
   USER_REGISTERED_SUCCESS: "USER_REGISTERED_SUCCESS",
 
+  NO_ACTIVE_ORDER_ERROR: "NO_ACTIVE_ORDER_ERROR",
+
   ACTIVE_CODE_INCORRECT: "ACTIVE_CODE_INCORRECT",
   FIELD_NOT_EMPTY_ERROR: "FIELD_NOT_EMPTY_ERROR",
+
+  USER_VALID_NICKNAME_ERROR: "USER_VALID_NICKNAME_ERROR",
 
   VALID_EMAIL_ERROR: "VALID_EMAIL_ERROR",
   EMAIL_CODE_MIN_CHARACTERS_ERROR: "EMAIL_CODE_MIN_CHARACTERS_ERROR",
@@ -70,9 +77,13 @@ export const errorsLanguageLocalizations = {
     USER_EXISTS_ERROR: "User with this email already exists.",
     USER_REGISTERED_SUCCESS: "User successfully registered.",
 
+    NO_ACTIVE_ORDER_ERROR: "There is no active order.",
+
     ACTIVE_CODE_INCORRECT:
       "No active account found with the given credentials.",
     FIELD_NOT_EMPTY_ERROR: "This field may not be blank.",
+
+    USER_VALID_NICKNAME_ERROR: "Enter valid nickname.",
 
     VALID_EMAIL_ERROR: "Enter a valid email address.",
     EMAIL_CODE_MIN_CHARACTERS_ERROR:
@@ -113,9 +124,13 @@ export const errorsLanguageLocalizations = {
       "Пользователь с таким адресом электронной почты уже существует.",
     USER_REGISTERED_SUCCESS: "Пользователь успешно зарегистрирован.",
 
+    NO_ACTIVE_ORDER_ERROR: "Нет активного заказа.",
+
     ACTIVE_CODE_INCORRECT:
       "Активная учетная запись с указанными учетными данными не найдена.",
     FIELD_NOT_EMPTY_ERROR: "Это поле не может быть пустым.",
+
+    USER_VALID_NICKNAME_ERROR: "Введите действительный псевдоним.",
 
     VALID_EMAIL_ERROR: "Введите действительный адрес электронной почты.",
     EMAIL_CODE_MIN_CHARACTERS_ERROR:

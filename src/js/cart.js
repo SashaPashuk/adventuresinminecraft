@@ -16,6 +16,7 @@ import {
   ITEM_DELETED_FROM_CART_SUCCESS,
   ITEM_DURATION_SERVER_ERROR,
   ITEM_DURATION_SUCCESS,
+  NO_ACTIVE_ORDER_ERROR,
   errorsLanguageLocalizationsEnum,
 } from "./contants/errors.js";
 import { SHOP_ITEM_TIME_USAGE } from "./contants/constants.js";
@@ -90,6 +91,7 @@ const addCartPaymentButtonEventListener = () => {
       server: selectedServer.innerHTML,
     });
 
+    // errors
     const nicknameErrors =
       (createdPaymentResponse?.user_nickname &&
         createdPaymentResponse?.user_nickname[0]) ||
@@ -99,9 +101,20 @@ const addCartPaymentButtonEventListener = () => {
       const labelForNicknameError = paymentSummaryElement?.querySelector(
         'label[for="nickname"]'
       );
-      labelForNicknameError.innerHTML = "Enter valid nickname.";
+      labelForNicknameError.innerHTML = getLocalizedError(
+        errorsLanguageLocalizationsEnum.USER_VALID_NICKNAME_ERROR
+      );
     }
 
+    if (createdPaymentResponse === NO_ACTIVE_ORDER_ERROR) {
+      addToastNotification({
+        message: getLocalizedError(
+          errorsLanguageLocalizationsEnum.NO_ACTIVE_ORDER_ERROR
+        ),
+      });
+    }
+
+    // success
     if (createdPaymentResponse?.redirect_url) {
       window.open(createdPaymentResponse.redirect_url, "_blank");
       window.location.reload();
