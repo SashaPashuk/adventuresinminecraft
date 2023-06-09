@@ -237,7 +237,7 @@ export default {
       pathname: `/payment/create_payment/`,
       body: {
         ...body,
-        return_url: "http://localhost:3000/pages/success-payment",
+        // return_url: "http://localhost:3000/pages/success-payment",
       },
       hasToken: true,
     });

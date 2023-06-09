@@ -63,64 +63,80 @@
       }
     }
   }
-
-  .lang-switch {
-    padding-right: 20px;
-    position: relative;
-
-    &:before {
-      content: "";
-      width: 12px;
-      height: 7px;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 0;
-      background-image: url("../../assets/images/icons/arrow_down.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-  }
 }
 
-.lang-item {
+.custom-select {
   position: relative;
-  &:after {
+
+  &::after {
     content: "";
     position: absolute;
-    top: 0;
+    height: 7px;
+    width: 12px;
+    top: 50%;
     right: 10px;
+    transform: translateY(-50%);
     background-image: url(../../assets/images/icons/arrow_down.svg);
   }
-  .locale-switcher {
+
+  &>select {
+    width: 60px;
+    height: 32px;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: $shade-white;
-    background: transparent;
-    border: none;
+    background: #28231f;
+    border: 2px solid #393330;
+    border-radius: 10px;
+    padding: 2px 5px;
     outline: none;
     cursor: pointer;
-  }
-  .locale-switcher:focus,
-  .locale-switcher::-moz-focus-inner,
-  .locale-switcher:-webkit-autofill,
-  .locale-switcher::-ms-expand {
-    color: white;
-    background: transparent;
-    border: none;
+    appearance: none;
+
+    &.active {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      border-bottom: 2px solid transparent;
+    }
   }
 
-  .locale-switcher option {
-    color: white;
-    background: rgba(0, 0, 0, 0.7);
-  }
+  .selector-options {
+    color: $shade-white;
+    background: #28231f;
+    border: 2px solid #393330;
+    border-top: none;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 
-  /* Стилі для наведення курсора */
-  .locale-switcher option:hover {
-    color: black; /* Змініть колір тексту за потребою */
-    background: rgba(255, 255, 255, 0.8); /* Змініть колір фону за потребою */
+    list-style: none;
+    margin: 0;
+    color: #fff;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 30px;
+
+    &>li {
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: #393330;
+        color: $primary-orange;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+    }
   }
 }

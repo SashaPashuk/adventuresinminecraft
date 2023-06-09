@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   if (tokensData) {
     navItemForUserDropdownLogic?.classList.remove("hidden");
-  
 
     if (usernameElement) {
       usernameElement.innerHTML = usernameData.slice(0, 15) + "...";
@@ -49,6 +48,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (cartContainerCountElement) {
     cartContainerCountElement.innerHTML = shopOrderItemsResponse.length || 0;
   }
+
+  addLanguageSelectorEventListener();
 });
 
 // dropdown logic
@@ -92,3 +93,49 @@ const logoutButtonElement = document.querySelector("#logout-button");
 logoutButtonElement?.addEventListener("click", () => {
   localStorage.removeItem("tokens");
 });
+
+const addLanguageSelectorEventListener = () => {
+  const selector = document.querySelector(".custom-select");
+
+  selector.addEventListener("change", (e) => {
+    selector.querySelector("select").classList.remove("active");
+  });
+  selector.addEventListener("mousedown", (e) => {
+    selector.querySelector("select").classList.add("active");
+
+    if (window.innerWidth >= 420) {
+      // override look for non mobile
+      e.preventDefault();
+
+      const select = selector.children[0];
+      const dropDown = document.createElement("ul");
+      dropDown.className = "selector-options";
+
+      [...select.children].forEach((option) => {
+        const dropDownOption = document.createElement("li");
+        dropDownOption.textContent = option.textContent;
+
+        dropDownOption.addEventListener("mousedown", (e) => {
+          e.stopPropagation();
+          select.value = option.value;
+          selector.value = option.value;
+          select.dispatchEvent(new Event("change"));
+          selector.dispatchEvent(new Event("change"));
+          dropDown.remove();
+        });
+
+        dropDown.appendChild(dropDownOption);
+      });
+
+      selector.appendChild(dropDown);
+
+      // handle click out
+      document.addEventListener("click", (e) => {
+        if (!selector.contains(e.target)) {
+          selector.querySelector("select").classList.remove("active");
+          dropDown.remove();
+        }
+      });
+    }
+  });
+};
