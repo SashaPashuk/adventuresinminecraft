@@ -1,26 +1,26 @@
-import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=3e3})=>{var r=document.querySelector(".toasts-wrapper");const a=document.createElement("div");a.className="toast-container";var s=document.createElement("div"),i=document.createElement("p");i.innerHTML=e,s.appendChild(i),a.appendChild(s),r.appendChild(a),setTimeout(()=>{a.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`};function descriptionList(e){if(!e?.includes("1."))return`<li>${e}</li>`;var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),r=[];for(let e=0;e<t.length;e+=2)r.push({number:t[e],text:t[e+1].trim()});return r.map(({number:e,text:t})=>`<li>${e}${t}</li>`).join("")}const renderShopItemInfoHTML=({description:e,price:t,forever_price:r,market_name:a,image_name:s,type:i,time_to_use:o,is_one_time:n})=>{var d=document.querySelector(".product-info__content"),r=t&&r?`<div class="content__usage-actions-wrapper">
-        <span data-i18n-key="productPage__usage" class="price-block__title">
-          Срок действия покупки:
-        </span>
-        <div class="content__usage-actions">
-          <button
-            data-i18n-key="productPage__usage_30"
-            id="item-usage-days"
-            data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]}
-            class=${o===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"button-primary selected":""} selected button-primary
-          >
-            "30 Дней"
-          </button>
-          <button
-            data-i18n-key="productPage__usage_forever"
-            id="item-usage-forever"
-            data-type=${SHOP_ITEM_TIME_USAGE.Forever}
-            class=${o===SHOP_ITEM_TIME_USAGE.Forever?"button-primary selected":"button-shade"}
-          >
-            Навсегда
-          </button>
-        </div>
-      </div>`:null,o=`
+import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=3e3})=>{var r=document.querySelector(".toasts-wrapper");const a=document.createElement("div");a.className="toast-container";var s=document.createElement("div"),i=document.createElement("p");i.innerHTML=e,s.appendChild(i),a.appendChild(s),r.appendChild(a),setTimeout(()=>{a.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`};function descriptionList(e){if(!e?.includes("1."))return`<li>${e}</li>`;var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),r=[];for(let e=0;e<t.length;e+=2)r.push({number:t[e],text:t[e+1].trim()});return r.map(({number:e,text:t})=>`<li>${e}${t}</li>`).join("")}const renderShopItemInfoHTML=({description:e,price:t,forever_price:r,market_name:a,image_name:s,type:i,time_to_use:o,is_one_time:n})=>{var d=document.querySelector(".product-info__content"),o=`<div class="content__usage-actions-wrapper ${t&&r?"":"hidden-visibility"}">
+    <span data-i18n-key="productPage__usage" class="price-block__title">
+      Срок действия покупки:
+    </span>
+    <div class="content__usage-actions">
+      <button
+        data-i18n-key="productPage__usage_30"
+        id="item-usage-days"
+        data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]}
+        class=${o===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"button-primary selected":""} selected button-primary
+      >
+        "30 Дней"
+      </button>
+      <button
+        data-i18n-key="productPage__usage_forever"
+        id="item-usage-forever"
+        data-type=${SHOP_ITEM_TIME_USAGE.Forever}
+        class=${o===SHOP_ITEM_TIME_USAGE.Forever?"button-primary selected":"button-shade"}
+      >
+        Навсегда
+      </button>
+    </div>
+  </div>`,a=`
     <h2 class="content__title">${a}</h2>
     <h4 data-i18n-key="productPage__desc" class="content__subtitle">Описание товара:</h4>
     <ul class="product-description">
@@ -29,9 +29,9 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
     <div class="content__info">
       <div class="content__price-block price-block">
         <span data-i18n-key="productPage__price" class="price-block__title">Цeна:</span>
-        <span class="price-block__price" id="product_price">€${Number(t)}</span>
+        <span class="price-block__price" id="product_price">€${Number(t)||Number(r)}</span>
       </div>
-      ${r}
+      ${o}
     </div>
     <div class="content__buy-block buy-block">
       <p data-i18n-key="productPage__amount" class="buy-block__quantity-title quantity-title ${n?"hidden":""}">
@@ -50,9 +50,9 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
         <button data-i18n-key="productPage__button" class="buy-block__buy-btn buy-btn button-primary">Купить</button>
       </div>
     </div>
-  `,a=document.querySelector(".product-info__slider"),e=`
+  `,e=document.querySelector(".product-info__slider"),t=`
     ${renderShopItemImgHTML({shopItemName:s,shopItemType:i.toLowerCase(),imageClass:"slider__main-img"})}
-  `;a.innerHTML=e,d.innerHTML=o},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let l="";e?.forEach(({product_id:e,id:t,amount:r,sum_item_price:a,time_to_use:s,image_name:i,market_name:o,is_one_time:n,price:d,forever_price:c})=>{t=`
+  `;e.innerHTML=t,d.innerHTML=a},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let l="";e?.forEach(({product_id:e,id:t,amount:r,sum_item_price:a,time_to_use:s,image_name:i,market_name:o,is_one_time:n,price:d,forever_price:c})=>{t=`
         <li class="cartPage-list-item" data-cart-id=${e||t}>
           <h3>${o||i.slice(0,-4)}</h3>
           <div class="cartPage-list-item-actionContainer">
@@ -153,7 +153,7 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
           </ul>
         </div>
       </li>
-    `;a+=e}),t.innerHTML=a},renderShopItemsListHTML=e=>{var t=document.querySelector(".products__list");let i="";e?.results?.forEach(({price:e,market_name:t,image_name:r,id:a,type:s})=>{r=`
+    `;a+=e}),t.innerHTML=a},renderShopItemsListHTML=e=>{var t=document.querySelector(".products__list");let o="";e?.results?.forEach(({price:e,market_name:t,image_name:r,id:a,type:s,forever_price:i})=>{r=`
           <div class="products-card">
             ${renderShopItemImgHTML({shopItemName:r,shopItemType:s.toLowerCase()})}
             <p class="products-card__title">
@@ -161,9 +161,9 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
             </p>
             <div class="products-card__block">
                 <p class="products-card__price">
-                  €${Number(e).toFixed(2)}
+                  €${Number(e)||Number(i)}
                 </p>
                 <button class="products-card__buy" data-id=${a}></button>
             </div>
           </div>
-      `;i+=r}),t.innerHTML=i};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML};
+      `;o+=r}),t.innerHTML=o};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML};

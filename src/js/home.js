@@ -162,8 +162,12 @@ const addProductCartButtonsEventListeners = (items) => {
           {
             ...items.results[index],
             amount: 1,
-            time_to_use: SHOP_ITEM_TIME_USAGE["30_DAYS"],
-            sum_item_price: Number(items.results[index].price),
+            time_to_use: items.results[index].price
+              ? SHOP_ITEM_TIME_USAGE["30_DAYS"]
+              : SHOP_ITEM_TIME_USAGE.Forever,
+            sum_item_price: items.results[index].price
+              ? Number(items.results[index].price)
+              : Number(items.results[index].forever_price),
           },
         ];
         lsShopOrderItems = updatedlsShopOrderItems;
@@ -188,7 +192,9 @@ const addProductCartButtonsEventListeners = (items) => {
       const response = await API.addShopItemToCart({
         amount: 1,
         item_id: button.getAttribute("data-id"),
-        time_to_use: SHOP_ITEM_TIME_USAGE["30_DAYS"],
+        time_to_use: items.results[index].price
+          ? SHOP_ITEM_TIME_USAGE["30_DAYS"]
+          : SHOP_ITEM_TIME_USAGE.Forever,
       });
 
       // errors

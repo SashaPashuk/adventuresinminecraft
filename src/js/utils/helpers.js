@@ -79,40 +79,39 @@ export const renderShopItemInfoHTML = ({
     ".product-info__content"
   );
 
-  const usagesContainerElement =
-    price && forever_price
-      ? `<div class="content__usage-actions-wrapper">
-        <span data-i18n-key="productPage__usage" class="price-block__title">
-          Срок действия покупки:
-        </span>
-        <div class="content__usage-actions">
-          <button
-            data-i18n-key="productPage__usage_30"
-            id="item-usage-days"
-            data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]}
-            class=${
-              time_to_use === SHOP_ITEM_TIME_USAGE["30_DAYS"]
-                ? "button-primary selected"
-                : ""
-            } selected button-primary
-          >
-            "30 Дней"
-          </button>
-          <button
-            data-i18n-key="productPage__usage_forever"
-            id="item-usage-forever"
-            data-type=${SHOP_ITEM_TIME_USAGE.Forever}
-            class=${
-              time_to_use === SHOP_ITEM_TIME_USAGE.Forever
-                ? "button-primary selected"
-                : "button-shade"
-            }
-          >
-            Навсегда
-          </button>
-        </div>
-      </div>`
-      : null;
+  const usagesContainerElement = `<div class="content__usage-actions-wrapper ${
+    price && forever_price ? "" : "hidden-visibility"
+  }">
+    <span data-i18n-key="productPage__usage" class="price-block__title">
+      Срок действия покупки:
+    </span>
+    <div class="content__usage-actions">
+      <button
+        data-i18n-key="productPage__usage_30"
+        id="item-usage-days"
+        data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]}
+        class=${
+          time_to_use === SHOP_ITEM_TIME_USAGE["30_DAYS"]
+            ? "button-primary selected"
+            : ""
+        } selected button-primary
+      >
+        "30 Дней"
+      </button>
+      <button
+        data-i18n-key="productPage__usage_forever"
+        id="item-usage-forever"
+        data-type=${SHOP_ITEM_TIME_USAGE.Forever}
+        class=${
+          time_to_use === SHOP_ITEM_TIME_USAGE.Forever
+            ? "button-primary selected"
+            : "button-shade"
+        }
+      >
+        Навсегда
+      </button>
+    </div>
+  </div>`;
 
   const itemInfo = `
     <h2 class="content__title">${market_name}</h2>
@@ -123,9 +122,9 @@ export const renderShopItemInfoHTML = ({
     <div class="content__info">
       <div class="content__price-block price-block">
         <span data-i18n-key="productPage__price" class="price-block__title">Цeна:</span>
-        <span class="price-block__price" id="product_price">€${Number(
-          price
-        )}</span>
+        <span class="price-block__price" id="product_price">€${
+          Number(price) || Number(forever_price)
+        }</span>
       </div>
       ${usagesContainerElement}
     </div>
@@ -350,8 +349,9 @@ export const renderShopItemsListHTML = (items) => {
 
   let html = "";
 
-  items?.results?.forEach(({ price, market_name, image_name, id, type }) => {
-    const item = `
+  items?.results?.forEach(
+    ({ price, market_name, image_name, id, type, forever_price }) => {
+      const item = `
           <div class="products-card">
             ${renderShopItemImgHTML({
               shopItemName: image_name,
@@ -362,15 +362,16 @@ export const renderShopItemsListHTML = (items) => {
             </p>
             <div class="products-card__block">
                 <p class="products-card__price">
-                  €${Number(price).toFixed(2)}
+                  €${Number(price) || Number(forever_price)}
                 </p>
                 <button class="products-card__buy" data-id=${id}></button>
             </div>
           </div>
       `;
 
-    html += item;
-  });
+      html += item;
+    }
+  );
 
   productListContainerElements.innerHTML = html;
 };

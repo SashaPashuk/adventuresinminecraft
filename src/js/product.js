@@ -118,16 +118,12 @@ const addBuyShopItemEventListener = (item) => {
         {
           ...item,
           amount: Number(itemAmountElement.innerHTML),
-          time_to_use: selectedUsageElement
-            ? selectedUsageElement.getAttribute("data-type") === "30"
-              ? SHOP_ITEM_TIME_USAGE["30_DAYS"]
-              : SHOP_ITEM_TIME_USAGE.Forever
-            : SHOP_ITEM_TIME_USAGE["30_DAYS"],
-          sum_item_price: selectedUsageElement
-            ? selectedUsageElement.getAttribute("data-type") === "30"
-              ? Number(item.price)
-              : Number(item.forever_price)
-            : Number(itemAmountElement.innerHTML) * Number(item.price),
+          time_to_use: item.price
+            ? SHOP_ITEM_TIME_USAGE["30_DAYS"]
+            : SHOP_ITEM_TIME_USAGE.Forever,
+          sum_item_price: item.price
+            ? Number(itemAmountElement.innerHTML) * Number(item.price)
+            : Number(itemAmountElement.innerHTML) * Number(item.forever_price),
         },
       ];
       lsShopOrderItems = updatedlsShopOrderItems;
@@ -152,10 +148,9 @@ const addBuyShopItemEventListener = (item) => {
     const result = await API.addShopItemToCart({
       amount: itemAmountElement.innerHTML,
       item_id: item.id,
-      time_to_use:
-        selectedUsageElement.getAttribute("data-type") === "30"
-          ? SHOP_ITEM_TIME_USAGE["30_DAYS"]
-          : SHOP_ITEM_TIME_USAGE.Forever,
+      time_to_use: item.price
+        ? SHOP_ITEM_TIME_USAGE["30_DAYS"]
+        : SHOP_ITEM_TIME_USAGE.Forever,
     });
 
     // errors
