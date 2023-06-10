@@ -255,6 +255,16 @@ img {
   }
 }
 
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+
+  * {
+    color: #fff !important;
+    pointer-events: none;
+  }
+}
+
 // import components styles
 @import "components/header";
 @import "components/form";

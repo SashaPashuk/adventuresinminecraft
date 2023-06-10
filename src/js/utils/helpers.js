@@ -1,4 +1,6 @@
 import { SHOP_ITEM_TIME_USAGE } from "../contants/constants.js";
+import { errorsLanguageLocalizationsEnum } from "../contants/errors.js";
+import { getLocalizedError } from "../services/errorsLanguageLocalization.js";
 
 /**
  * @param {Object} param
@@ -185,9 +187,12 @@ export const renderCartItemsHTML = (items) => {
         <li class="cartPage-list-item" data-cart-id=${product_id || id}>
           <h3>${market_name || image_name.slice(0, -4)}</h3>
           <div class="cartPage-list-item-actionContainer">
-            <div class="cartPage-list-item-amount ${
-              is_one_time ? "hidden-visibility" : ""
-            }">
+            <div 
+              class="cartPage-list-item-amount ${is_one_time ? "disabled" : ""}"
+              title="${getLocalizedError(
+                errorsLanguageLocalizationsEnum.ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR
+              )}"
+            >
               <span data-i18n-key="cartPage__amount">Количество:</span>
               <div class="cartPage-list-item-amount-actions">
                 <img src="../assets/images/icons/arrow_left.svg" alt="" class='cart-item-decrease-button' />
@@ -195,9 +200,14 @@ export const renderCartItemsHTML = (items) => {
                 <img src="../assets/images/icons/arrow_right.svg" alt="" class='cart-item-increase-button' />
               </div>
             </div>
-            <div class="cartPage-list-item-usage ${
-              price && forever_price ? "" : "hidden-visibility"
-            }">
+            <div 
+              class="cartPage-list-item-usage ${
+                price && forever_price ? "" : "disabled"
+              }"
+              title="${getLocalizedError(
+                errorsLanguageLocalizationsEnum.ITEM_DURATION_ERROR
+              )}"
+            >
               <span data-i18n-key="cartPage__usage">Срок действия покупки:</span>
               <div class="cartPage-list-item-usage-actions">
                 <button
@@ -209,7 +219,8 @@ export const renderCartItemsHTML = (items) => {
                     time_to_use === SHOP_ITEM_TIME_USAGE["30_DAYS"]
                       ? "selected"
                       : ""
-                  }">30 Дней</button>
+                  }"
+                  >30 Дней</button>
                 <button 
                   data-i18n-key="cartPage__usage_forever"
                   id="item-usage-forever" 

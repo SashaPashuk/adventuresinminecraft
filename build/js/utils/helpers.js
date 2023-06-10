@@ -1,4 +1,4 @@
-import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotification=({message:e,duration:t=3e3})=>{var r=document.querySelector(".toasts-wrapper");const a=document.createElement("div");a.className="toast-container";var s=document.createElement("div"),i=document.createElement("p");i.innerHTML=e,s.appendChild(i),a.appendChild(s),r.appendChild(a),setTimeout(()=>{a.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`};function descriptionList(e){if(!e?.includes("1."))return`<li>${e}</li>`;var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),r=[];for(let e=0;e<t.length;e+=2)r.push({number:t[e],text:t[e+1].trim()});return r.map(({number:e,text:t})=>`<li>${e}${t}</li>`).join("")}const renderShopItemInfoHTML=({description:e,price:t,forever_price:r,market_name:a,image_name:s,type:i,time_to_use:o,is_one_time:n})=>{var d=document.querySelector(".product-info__content"),o=`<div class="content__usage-actions-wrapper ${t&&r?"":"hidden-visibility"}">
+import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";import{errorsLanguageLocalizationsEnum}from"../contants/errors.js";import{getLocalizedError}from"../services/errorsLanguageLocalization.js";const addToastNotification=({message:e,duration:t=3e3})=>{var r=document.querySelector(".toasts-wrapper");const a=document.createElement("div");a.className="toast-container";var s=document.createElement("div"),i=document.createElement("p");i.innerHTML=e,s.appendChild(i),a.appendChild(s),r.appendChild(a),setTimeout(()=>{a.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`};function descriptionList(e){if(!e?.includes("1."))return`<li>${e}</li>`;var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),r=[];for(let e=0;e<t.length;e+=2)r.push({number:t[e],text:t[e+1].trim()});return r.map(({number:e,text:t})=>`<li>${e}${t}</li>`).join("")}const renderShopItemInfoHTML=({description:e,price:t,forever_price:r,market_name:a,image_name:s,type:i,time_to_use:o,is_one_time:n})=>{var d=document.querySelector(".product-info__content"),o=`<div class="content__usage-actions-wrapper ${t&&r?"":"hidden-visibility"}">
     <span data-i18n-key="productPage__usage" class="price-block__title">
       Срок действия покупки:
     </span>
@@ -56,7 +56,10 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
         <li class="cartPage-list-item" data-cart-id=${e||t}>
           <h3>${o||i.slice(0,-4)}</h3>
           <div class="cartPage-list-item-actionContainer">
-            <div class="cartPage-list-item-amount ${n?"hidden-visibility":""}">
+            <div 
+              class="cartPage-list-item-amount ${n?"disabled":""}"
+              title="${getLocalizedError(errorsLanguageLocalizationsEnum.ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR)}"
+            >
               <span data-i18n-key="cartPage__amount">Количество:</span>
               <div class="cartPage-list-item-amount-actions">
                 <img src="../assets/images/icons/arrow_left.svg" alt="" class='cart-item-decrease-button' />
@@ -64,13 +67,17 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";const addToastNotific
                 <img src="../assets/images/icons/arrow_right.svg" alt="" class='cart-item-increase-button' />
               </div>
             </div>
-            <div class="cartPage-list-item-usage ${d&&c?"":"hidden-visibility"}">
+            <div 
+              class="cartPage-list-item-usage ${d&&c?"":"disabled"}"
+              title="${getLocalizedError(errorsLanguageLocalizationsEnum.ITEM_DURATION_ERROR)}"
+            >
               <span data-i18n-key="cartPage__usage">Срок действия покупки:</span>
               <div class="cartPage-list-item-usage-actions">
                 <button
                   data-i18n-key="cartPage__usage_30"
                   id="item-usage-days" data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]} 
-                  class="${s===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"selected":""}">30 Дней</button>
+                  class="${s===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"selected":""}"
+                  >30 Дней</button>
                 <button 
                   data-i18n-key="cartPage__usage_forever"
                   id="item-usage-forever" 

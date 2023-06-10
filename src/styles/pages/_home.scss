@@ -41,9 +41,11 @@
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
       box-shadow: $shadow-active;
+      scale: 1.05;
     }
 
     &:active {
@@ -85,13 +87,15 @@
       border-radius: 10px;
       cursor: pointer;
       margin-right: 24px;
+      transition: all 0.3s ease-in-out;
 
       &:last-child {
         margin-right: 0;
       }
 
-      :hover {
+      &:hover {
         box-shadow: 10px 10px 30px rgba(248, 152, 14, 0.33);
+        scale: 1.05;
       }
 
       span {
@@ -135,10 +139,11 @@
     border-radius: 20px;
     margin: 12px 8px;
     cursor: pointer;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
-      box-shadow: $shadow-active;
+      box-shadow: 5px 5px 20px rgba(248, 152, 14, 0.33);
+      scale: 1.03;
     }
 
     &:active {
