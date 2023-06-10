@@ -41,6 +41,8 @@ LanguageEventObserever.subscribe(async (data) => {
   addBuyShopItemEventListener(shopItemsResponse);
   addShopItemAmountEventListener(shopItemsResponse);
   addShopItemUsageEventListener(shopItemsResponse);
+
+  ContentLoadingEventObserever.broadcast(true);
 });
 
 // Event Listeners
