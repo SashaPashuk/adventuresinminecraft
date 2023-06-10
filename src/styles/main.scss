@@ -168,6 +168,7 @@ img {
   animation: slidein 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
 
   display: flex;
+  align-items: flex-end;
   flex-direction: column;
 
   .toast-container {
@@ -178,9 +179,23 @@ img {
     border-radius: 10px;
     margin-top: 10px;
     max-width: 350px;
+    width: fit-content;
+    position: relative;
 
-    &>div>p {
-      line-height: 20px;
+    &-closeBtn {
+      position: absolute;
+      width: 12px;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+    &>div {
+      padding: 0 15px 0 0;
+
+      &>p {
+        line-height: 20px;
+      }
     }
 
     &:first-child {
