@@ -209,6 +209,98 @@ export const languageLocalizations = {
     launcherPage__desc: `Launcher is a program that allows players to quickly and easily download the game Minecraft and is designed to download and run the game with our mods. Available in single player or on CubixWorld servers. The first thing you need to do is to download Minecraft on your PC or phone, it's free.`,
     launcherPage__conclusion: `After all, the Launcher is available on many platforms, including MacOS, Linux and Windows, and Android.`,
     launcherPage__btn: "Download",
+
+    // rulesPage
+    rulesPage__general_rules_title: "General rules",
+    rulesPage__player_rights_and_duties_title: "Rights and duties of players",
+    rulesPage__admin_rights_and_duties_title:
+      "Rights and duties of administration",
+    rulesPage__explanations_title: "Explanations",
+    rulesPage__general_rules_text: `
+    1.1 This document is the official regulation of the project, and no other documents can be called as such.
+    1.2 The purpose of these rules is to protect the interests of users and establish order on all project resources.
+    1.3 Project management is divided into 2 categories: Project Administration (hereinafter "Administration") and personnel.
+    1.4 Any person has the right to register twice from one IP address.
+    1.5 Any person has the right to visit the project if they do not violate the Project Rules.
+    1.6 By registering for the project, you agree to all the rules of this list, the rights described below, and the obligations.
+    1.6.1 By registering for the project, you agree to the processing of your personal data by the Administration, i.e., performing, among others, the following actions: processing (including collection, systematization, accumulation, storage, clarification (updating, changing), use, depersonalization, blocking, destruction of personal data).
+    1.7 The right to use all project services is provided by the Administration free of charge, with the exception of additional functions (acquired on a fee basis and activated by activating additional features in the server version (plugins) of the game). The use of free functionality is provided in its current form, not guaranteeing 100% correct operation. Game items, abilities, etc., lost due to improper operation of non-paid services, are not refunded.
+    1.8 Payment for additional parts of the software product is made only on the official website of the project, located at https://adventuresinminecraft.com (hereinafter "site"). Funds are credited using a payment aggregator in EURO currency.
+    1.9 If an incorrect nickname is entered on the site, the administration is not responsible for the consequences of purchasing something for this nickname.
+    1.10 Since it is not always possible to determine a user's violation of the rules, the final decision lies with the Project Administrators.
+    1.11 The copyright holders of additional parts of the product are their authors. The use of these parts by the Administration is based on an agreement on free distribution and use.
+    1.12 Ignorance of these Rules does not exempt from liability.
+    `,
+    rulesPage__player_rights_and_duties_text: `
+    2.1 The player has the right to use all available features if they do not violate the Project Rules.
+    2.2 The player is fully responsible for the security of their password and access to their account.
+    2.3 The player has the right to make a voluntary donation.
+    2.4 The player agrees that the spent funds will not be refunded.
+    2.5 Players with various privileges on the server are no different from regular players, except for additional cosmetic capabilities, and fully comply with the Project Rules.
+    2.6 In case of absence of a player for more than one calendar month, all their data, including buildings on the server, personal account, etc. may be deleted without notifying them.
+    2.7 Any player can complain about other players, except for clause 3.6.
+    2.8 The player is obliged to report any identified bugs and shortcomings to the Server Administration. If they intentionally conceal discovered bugs and shortcomings, the Administration has the right to block or completely delete the player's account.
+    `,
+    rulesPage__admin_rights_and_duties_text: `
+    3.1 The project administration is the highest-ranking entity, which in exceptional cases may deviate from the present rules and act at its discretion.
+    3.2 The administration does not store user passwords, only their hash sums.
+    3.3 The administration is not responsible for player accounts, including social engineering, viruses, password picking, etc.
+    3.4 Administration decisions are not subject to appeal.
+    3.5 The administration has the right to impose any punishment.
+    3.6 Complaints about the administration are not accepted.
+    3.7 All funds received by the administration are voluntary donations and will not be refunded (see section 2.4).
+    3.8 The administration has the right to revoke privileges and refuse service to players without explaining the reason.
+    3.9 The administration has the right to change the capabilities of game privileges both for the better and for the worse, without any notifications.
+    3.10 Interpretation of site rules is carried out only by main administrators. Any other attempts to interpret the rules in favor of any party are considered incorrect.
+    3.11 The administration has the right not to explain the reasons for account blocking.
+    3.12 An administrator may confiscate any property from a user if the user cannot prove its honest (without using prohibited additional software tools - cheats, etc.) origin.
+    3.13 The administration reserves the right to unilaterally change the current rules without notifying users.
+    3.14 The administration manages the gameplay processes and the entire project solely at its discretion.
+    3.15 The administration reserves the right to conduct periodic game world updates (wipe). Wipes are carried out by the administration after a temporary period, beyond which normal functioning of services is impossible, due to the specifics of the gameplay process. The duration of the above-mentioned temporary period is determined independently by the administration, based on the current state of affairs. The wipe does not constitute a refusal to use paid add-ons because it does not involve revocation of the license for part of the software product or limitation of the functionality of that part.
+    4.1 Using any cheats in any modes. Punishment: permanent account ban.
+    4.2 Using bugs for personal gain. Punishment: 1-day account ban.
+    4.3 It is forbidden to have more than 3 multi-accounts on one mode, using them for selfish purposes. Punishment: permanent account ban by IP.
+    4.4 Transferring, selling, or exchanging your account with someone else. Punishment: permanent account ban and removal of donations.
+    4.5 Selling anything for real money (engaging in commercial activity). Punishment: permanent account ban.
+    4.6 Scattering resources in large quantities, spawning a massive amount of mobs, causing server lag. Punishment: 4-hour account ban.
+    4.7 Forbidden commands in PvP zones (/gm 1, /god, /fly, /speed, /sit, /lay]. Punishment: 30-minute account ban.
+    4.8 Interference with the game process in a region that the player is either a participant or creator of – Punishment: Kick; if not paying attention - 2-hour account ban.
+    4.9 Griefing on Survival mode with privileges higher than ADMIN. Punishment: 6-hour account ban, and if griefing with a trap, building demolition.
+    4.10 Griefing players with a donation higher than MODER, such as teleporting to you and killing. Punishment: 1-day account ban, and if griefing with a trap, building demolition.
+    4.12 It is forbidden to block other players for an incorrect reason, or for longer than the maximum blocking time allowed by the project rules. Punishment: 4-hour account ban.
+    4.13 It is forbidden to block the chat of players for an incorrect reason. Punishment: 2-hour account ban.
+    4.14 It is forbidden to kick players for an incorrect reason. Punishment: 1-hour account ban.
+    4.15 It is forbidden to issue warnings to players without a real reason for their violation of the project rules. Punishment: 30-minute account ban.
+    4.16 Unmute/unban the violator without a good reason. Punishment: 3-hour IP account ban.
+    4.17 Slander to the server, server administration, such as donation scam, etc. Punishment: 3-hour account ban.
+    4.18 Refusal/evasion/ignoring the request of staff to provide evidence of the punishment you imposed. Punishment: 10-day account ban.
+    5.1 Insulting/humiliating/threatening project players is prohibited. Punishment: 3-hour chat ban.
+    5.2 Insulting/humiliating/threatening administration/staff of the project is prohibited. Punishment: 5-hour account ban.
+    5.3 Offending player's relatives in an offensive manner. Punishment: 2-day account ban.
+    6.1 Flood (identical messages more than 2 times), spam is prohibited. Punishment: 30-minute chat ban.
+    6.2 Fake private messages or punishments. Punishment: 1-hour chat ban.
+    6.3 Begging for anything. Punishment: 30-minute chat ban.
+    6.4 Advertising YouTube channels, links in chat, except those officially owned by the project or if the YouTube privilege is available. Punishment: 2-day IP account ban.
+    6.5 Advertising other servers is prohibited. Punishment: Permanent IP account ban + removal of donations.
+    6.6 Encouraging other players to leave the project, organize a revolt against the administration/staff. Punishment: permanent account ban + removal of donations.
+    6.7 Encouraging players not to buy game privileges/donate cases, insulting the server. Punishment: Permanent account ban.
+    6.8 Impersonating staff or administration. Punishment: 1-day account ban.
+    6.9 Bypassing mute by writing in announcements /clan chat, etc., again violating server rules. Punishment: 1-hour account ban.
+    6.10 Flood through /bc, help or /afk command. Punishment: 1-hour account ban.
+    7.1 Fraudulently taking possession of a player's account, attempting to hack it. Punishment: permanent IP account ban + removal of donations.
+    8.1 Prohibited constructions that occupy a huge space, such as boxes set in the sky or width, bedrock set. Punishment: 1-day account ban with building demolition.
+    8.2 Building over regions or flooding them with water. Punishment: 1-day account ban + removal of donations.
+    8.3 Creating obscene or offensive structures. For example: genitals, art, or buildings with 18+ content. Punishment: 6-hour account ban with building demolition.
+    8.4 Privatization of regions larger than 10 million blocks. Punishment: 1-day account ban + deletion of region(s).
+    8.5 Constructions negatively affecting the operation of the server. Punishment: permanent account ban.
+    8.6 Damaging/altering/demolishing spawn, including setting it on fire. Punishment: Permanent account ban.
+    8.7 Faking a nickname similar to another player's nickname, intending to harm or frame someone. Punishment: Permanent account ban.
+    `,
+    rulesPage__explanations_text: `
+    [1] Griefing is a type of activity in online games that involves damaging and vandalizing other players, as well as trolling. Killing players is not considered griefing and does not violate server rules in general; however, killing using social engineering (i.e., through deception) is considered griefing.
+    [2] A multi-account is an additional account(s) of a player. It is prohibited for one person to register more than two accounts, even from different computers and IP addresses.
+    [3] Using features for selfish purposes refers to all actions that can negatively affect gameplay and the operation of the server.
+    `,
   },
   ru: {
     // header
@@ -421,6 +513,98 @@ export const languageLocalizations = {
     launcherPage__desc: `Лаунчер - это программа, которая позволяет игрокам быстро и легко скачать игру Minecraft и предназначен для скачивания и запуска игры с нашими модами. Доступна возможность одиночной игры или на серверах CubixWorld. Первые делом нужно скачать майнкрафт на ПК или телефон, это бесплатно.`,
     launcherPage__conclusion: `Ведь лаунчер доступен на множество платформ, включая MacOS, Linux и Windows, Android.`,
     launcherPage__btn: "Скачать",
+
+    // rulesPage
+    rulesPage__general_rules_title: "Общие правила",
+    rulesPage__player_rights_and_duties_title: "Права и обязанности игроков",
+    rulesPage__admin_rights_and_duties_title:
+      "Права и обязанности администрации",
+    rulesPage__explanations_title: "Пояснения",
+    rulesPage__general_rules_text: `
+    1.1 Данный документ является официальным регламентом проекта, любые прочие таковыми называться не могут.
+    1.2 Цель данных правил – защита интересов пользователей и установление порядка на всех ресурсах проекта.
+    1.3 Руководство проекта подразделяется на 2 категории: Администрация проекта (далее "Администрация") и персонал.
+    1.4 Любой человек имеет право на регистрацию дважды с одного IP адреса.
+    1.5 Любой человек имеет право посещать проект, если он не нарушает Правила проекта.
+    1.6 Регистрируясь на проекте, вы соглашаетесь со всеми правилами данного списка, правами описанными ниже и обязанностями.
+    1.6.1 Регистрируясь на проекте, вы соглашаетесь с обработкой Администрацией ваших персональных данных, то есть совершение, в том числе, следующих действий: обработку (включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, обезличивание, блокирование, уничтожение персональных данных).
+    1.7 Право использования всех сервисов проекта, предоставляется Администрацией на бесплатной основе, за исключением дополнительных функций (приобретаемых на платной основе и активируемых путем активации дополнительных возможностей в серверной версии (плагины) игры). Использование бесплатного функционала предоставляется в текущей форме, не гарантируя 100% правильность работы. Игровые вещи, способности и т.п, утерянные в связи с ненадлежащей работой неоплачиваемых сервисов, не возвращаются.
+    1.8 Оплата дополнительных частей программного продукта производится только на официальном сайте проекта, находящимся по адресу https://adventuresinminecraft.com (далее "сайт") Зачисление средств производится с помощью агрегатора платежей в валюте EURO.
+    1.9 При вводе на сайте не верного ника администрация не отвечает за последствия покупки чего-либо на этот ник.
+    1.10 Так как не всегда удается определить нарушение правил пользователем, окончательное решение остается за Администраторами проекта.
+    1.11 Правообладателями дополнительных частей продукта являются их авторы. Использование этих частей Администрацией осуществляется на основе соглашения о свободном распространении и использовании.
+    1.12 Незнание Настоящих Правил не освобождает от ответственности.
+    `,
+    rulesPage__player_rights_and_duties_text: `
+    2.1 Игрок имеет право использовать все доступные ему возможности, если они не нарушают Правила проекта.
+    2.2 Игрок полностью отвечает за надежность своего пароля и доступа к аккаунту.
+    2.3 Игрок имеет право на добровольное пожертвование.
+    2.4 Игрок соглашается с тем, что потраченные им средства не будут возвращены.
+    2.5 Игроки, имеющие различные привилегии на сервере, ничем не отличаются от обычных игроков, кроме дополнительных косметических возможностей и полностью подчиняются Правилам проекта.
+    2.6 В случае отсутствия игрока более одного календарного месяца, все его данные, включая постройки на сервере, личный аккаунт и др. могут быть удалены, без оповещения его об этом.
+    2.7 Любой игрок может пожаловаться на других игроков, за исключением пункта 3.6.
+    2.8 Игрок обязан сообщать о выявленных багах и недоработках Администрации сервера, в случае намеренного скрытия выявленных багов и недоработок, Администрация имеет право заблокировать или полностью удалить аккаунт игрока.
+    `,
+    rulesPage__admin_rights_and_duties_text: `
+    3.1 Администрация проекта является самым высоким по званию лицом, которое в исключительных случаях может отклоняться от Настоящих Правил и действовать на свое усмотрение.
+    3.2 Администрация не хранит пароли пользователей, а только их хэш-сумму.
+    3.3 Администрация не несет ответственности за аккаунты игроков, включая социальную инженерию, вирусы, подбор пароля и т.п..
+    3.4 Решения Администрации обжалованию не подлежат.
+    3.5 Администрация вправе выдавать любое наказание.
+    3.6 Жалобы на Администрацию не принимаются.
+    3.7 Все полученные Администрацией средства, являются добровольным пожертвованием и возврату не подлежат (п. 2.4).
+    3.8 Администрация вправе забирать привилегии, и отказывать в обслуживании игрокам без объяснения причины.
+    3.9 Администрация вправе изменять возможности игровых привилегий как в лучшую, так и в худшую сторону, без каких-либо уведомлений.
+    3.10 Толкование правил сайта осуществляется только главными Администраторами. Любые другие попытки истолковать правила в пользу любой из сторон признаются некорректными.
+    3.11 Администрация имеет право не объяснять причины блокировки аккаунтов.
+    3.12 Администратор вправе изъять у пользователя любое имущество, если пользователь не сможет доказать его честное (без использования запрещенных дополнительных программных средств – читов и т.д.) происхождение.
+    3.13 Администрация оставляет за собой право в одностороннем порядке изменять текущие правила без уведомления пользователей.
+    3.14 Администрация ведет управление игровыми процессами и всем проектом - исключительно по своему усмотрению.
+    3.15 Администрация оставляет за собой право проводить периодические обновления игрового мира (вайп). Вайп производятся Администрацией по истечении временного отрезка, далее которого нормальное функционирование сервисов невозможно, ввиду особенностей построения игрового процесса. Длительность вышеуказанного временного отрезка определяется администрацией самостоятельно, исходя из текущего положения дел. Вайп не является отказом пользователю в использовании платных дополнений, т.к при этом не происходит отзыв лицензии на часть программного продукта или ограничения функционала этой части.
+    4.1 Использовать любые читы на любых режимах. Предусматривает наказание: перманентная блокировка аккаунта.
+    4.2 Использовать баги в своих целях. Предусматривает наказание: блокировка аккаунта сроком на 1 день.
+    4.3 Запрещено иметь более 3 мультиаккаунтов на одном режиме, используя их в корыстных целях. Предусматривается наказание: перманентная блокировка аккаунта по IP.
+    4.4 Передавать, продавать, обменивать свой аккаунт с кем-либо. Предусматривает наказание: перманентная блокировка аккаунта + снятие доната.
+    4.5 Запрещено продавать что-либо за реальные деньги [заниматься коммерческой деятельностью]. Предусматривается наказание: перманентная блокировка аккаунта.
+    4.6 Разбрасывать ресурсы в большом количестве, спавнить огромное количество мобов, отчего происходят лаги на сервере. Предусматривает наказание: блокировка аккаунта сроком на 4 часа.
+    4.7 Запрещенные команды в зоне PvP действий [ /gm 1, /god, /fly, /speed, /sit , /lay]. Предусматривается наказание: блокировка аккаунта сроком на 30 минут.
+    4.8 Помеха игровому процессу в регионе, в котором игрок либо участник, либо создатель – Предусматривается наказание: Кик, если не обращает внимания - блокировка аккаунта сроком на 2 часа.
+    4.9 Заниматься гриферством на режиме Выживание с привилегией выше чем ADMIN. Предусматривается наказание: блокировка аккаунта сроком на 6 часов, и, если это гриф ловушкой- снос постройки.
+    4.10 Гриферить игроков имея донат выше MODER, к примеру, тп к себе и убивать. Предусматривается наказание: блокировка аккаунта сроком на 1 день, и, если это гриф ловушкой- снос постройки.
+    4.12 Запрещено блокировать других игроков по некорректной причине, а также свыше максимального времени блокировки, разрешенного правилами проекта. Предусматривает наказание: блокировка аккаунта сроком на 4 часа.
+    4.13 Запрещено блокировать чат игроков по некорректной причине. Предусматривает наказание: блокировка аккаунта сроком на 2 часа.
+    4.14 Запрещено кикать игроков по некорректной причине. Предусматривается наказание: блокировка аккаунта сроком на 1 час.
+    4.15 Запрещено выдавать предупреждения игрокам без реальной причины его нарушения правил проекта. Предусматривается наказание: блокировка аккаунта сроком на 30 минут.
+    4.16 Размут/разбан нарушителя без весомой причины. Предусматривается наказание: блокировка аккаунта сроком на 3 часа по IP.
+    4.17 Клевета на сервер, на администрацию сервера, по типу обмана на донат и т.п. Предусматривается наказание: блокировка аккаунта сроком на 3 часа.
+    4.18 Отказ/уклонение/игнорирование просьбы персонала предоставить доказательства выданного Вами наказания. Предусматривает наказание: Блокировка аккаунта сроком на 10 дней.
+    5.1 Запрещено оскорблять/унижать/угрожать игрокам проекта. Предусматривает наказание: блокировка чата сроком на 3 часа.
+    5.2 Запрещено оскорблять/унижать/угрожать администрации/персоналу проекта. Предусматривает наказание: блокировка аккаунта сроком на 5 часов.
+    5.3 Задевание родных игроков в оскорбительном виде. Предусматривается наказание: блокировка аккаунта сроком на 2 дня.
+    6.1 Запрещен флуд [Одинаковые сообщения более 2 раз], спам.Предусматривает наказание: блокировка чата сроком на 30 минут.
+    6.2 Фейковые личные сообщения или наказания. Предусматривает наказание: блокировка чата сроком на 1 час.
+    6.3 Заниматься попрошайничеством чего-либо. Предусматривает наказание: блокировка чата сроком на 30 минут.
+    6.4 Пиар YouTube каналов, ссылки в чате, кроме официально принадлежащих проекту или если умеется привилегия YouTube. Предусматривает наказание: блокировка аккаунта сроком на 2 дня по IP.
+    6.5 Запрещено заниматься пиаром других серверов. Предусматривается наказание: Перманентная блокировка аккаунта по IP + снятие доната.
+    6.6 Призывать других игроков покинуть проект, устраивать бунт против администрации/персонала. Предусматривает наказание: перманентная блокировка аккаунта + снятие доната.
+    6.7 Призывать игроков не покупать игровые привилегии/донат кейсы, оскорблять сервер. Предусматривает наказание: Перманентная блокировка аккаунта.
+    6.8 Выдавать себя за персонал или администрацию. Предусматривает наказание: блокировка аккаунта сроком на 1 день.
+    6.9 Обход мута, путем написания в объявления / кланчат и т.п., вновь нарушая правила сервера. Предусматривает наказание: блокировка аккаунта сроком на 1 час.
+    6.10 Флуд через /bc , помощь или командой /afk. Предусматривает наказание: Блокировка аккаунта на 1 час.
+    7.1 Обманным путем завладевать аккаунтом игрока, осуществлять попытки взлома. Предусматривается наказание: перманентная блокировка аккаунта по IP+ снятие доната.
+    8.1 Запрещены сооружения, которые занимают огромное пространство, по типу сетнутых коробок в небо или же в ширину, сет под бедрок. Предусматривает наказание: блокировка аккаунта сроком на 1 день со сносом постройки.
+    8.2 Застраивание регионов или заливание их водой. Предусматривает наказание: блокировка аккаунта сроком на 1 день + снятие доната.
+    8.3 Создание неприличных или оскорбительных построек. Например: половые органы, арты или постройки с контентом 18+. Предусматривает наказание: блокировка аккаунта сроком на 6 часов со сносом постройки.
+    8.4 Приват регионов, размером больше 10млн. блоков. Предусматривает наказание: блокировка аккаунта сроком на 1 день + удаление региона[ов].
+    8.5 Сооружения, отрицательно влияющие на работу сервера. Предусматривает наказание: перманентная блокировка аккаунта.
+    8.6 Порча/изменение/снос спавна, в т.ч. его поджигание. Предусматривает наказание: Перманентная блокировка аккаунта.
+    8.7 Подделывание никнейма на схожий с никнеймом другого игрока, с целью навредить или подставить. Предусматривает наказание: Перманентная блокировка аккаунта.
+    `,
+    rulesPage__explanations_text: `
+    [1] Под гриферством подразумевается вид активности в онлайн-играх, заключающийся во вредительстве и вандализме в отношении других игроков, а так-же троллинг. Убийство игроков не является гриферством, и нарушением правил сервера в целом, однако убийство с использованием социальной инженерии, т.е. обманным путем расценивается как гриферство.
+    [2] Мультиаккаунт — дополнительная(ые) учётная(ые) запись(и) игрока. Запрещается одному лицу регистрировать более двух аккаунтов, даже с разных ЭВМ и IP-адресов.
+    [3] Под использованием возможности в корыстных целях подразумевается все действия которые могут отрицательно повлиять на игровой процесс, а также на работу сервера.
+    `,
   },
 };
 
@@ -455,4 +639,3 @@ export const languageLocalizations = {
 // pages
 // donate-privileges
 // donation-description
-// rules
