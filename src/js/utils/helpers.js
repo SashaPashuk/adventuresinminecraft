@@ -16,10 +16,17 @@ export const addToastNotification = ({ message, duration = 3000 }) => {
 
   const toastContainerInner = document.createElement("div");
   const messageParagraph = document.createElement("p");
+  const closeBtn = document.createElement("img");
+  closeBtn.className = "toast-container-closeBtn";
+  closeBtn.setAttribute("src", "../assets/images/icons/cross_icon.svg");
+  closeBtn.addEventListener("click", () => {
+    toastContainer.remove();
+  });
 
   messageParagraph.innerHTML = message;
   toastContainerInner.appendChild(messageParagraph);
   toastContainer.appendChild(toastContainerInner);
+  toastContainer.appendChild(closeBtn);
 
   toastsWrapperElement.appendChild(toastContainer);
 
