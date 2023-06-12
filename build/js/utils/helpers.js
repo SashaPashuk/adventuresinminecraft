@@ -1,4 +1,4 @@
-import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";import{errorsLanguageLocalizationsEnum}from"../contants/errors.js";import{getLocalizedError}from"../services/errorsLanguageLocalization.js";const addToastNotification=({message:e,duration:t=3e3})=>{var r=document.querySelector(".toasts-wrapper");const a=document.createElement("div");a.className="toast-container";var s=document.createElement("div"),i=document.createElement("p"),o=document.createElement("img");o.className="toast-container-closeBtn",o.setAttribute("src","../assets/images/icons/cross_icon.svg"),o.addEventListener("click",()=>{a.remove()}),i.innerHTML=e,s.appendChild(i),a.appendChild(s),a.appendChild(o),r.appendChild(a),setTimeout(()=>{a.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`};function descriptionList(e){if(!e?.includes("1."))return`<li>${e}</li>`;var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),r=[];for(let e=0;e<t.length;e+=2)r.push({number:t[e],text:t[e+1].trim()});return r.map(({number:e,text:t})=>`<li>${e}${t}</li>`).join("")}const renderShopItemInfoHTML=({description:e,price:t,forever_price:r,market_name:a,image_name:s,type:i,time_to_use:o,is_one_time:n})=>{var d=document.querySelector(".product-info__content"),o=`<div class="content__usage-actions-wrapper ${t&&r?"":"hidden-visibility"}">
+import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";import{errorsLanguageLocalizationsEnum}from"../contants/errors.js";import{getLocalizedError}from"../services/errorsLanguageLocalization.js";const addToastNotification=({message:e,duration:t=3e3})=>{var r=document.querySelector(".toasts-wrapper");const a=document.createElement("div");a.className="toast-container";var s=document.createElement("div"),i=document.createElement("p"),o=document.createElement("img");o.className="toast-container-closeBtn",o.setAttribute("src","../assets/images/icons/cross_icon.svg"),o.addEventListener("click",()=>{a.remove()}),i.innerHTML=e,s.appendChild(i),a.appendChild(s),a.appendChild(o),r.appendChild(a),setTimeout(()=>{a.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`};function descriptionList(e,r=!0){if(!e?.includes("1."))return`<li>${e}</li>`;var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),a=[];for(let e=0;e<t.length;e+=2)a.push({number:t[e],text:t[e+1].trim()});return a.map(({number:e,text:t})=>`<li>${r?e:""}${t}</li>`).join("")}const renderShopItemInfoHTML=({description:e,price:t,forever_price:r,market_name:a,image_name:s,type:i,time_to_use:o,is_one_time:n})=>{var d=document.querySelector(".product-info__content"),o=`<div class="content__usage-actions-wrapper ${t&&r?"":"hidden-visibility"}">
     <span data-i18n-key="productPage__usage" class="price-block__title">
       Срок действия покупки:
     </span>
@@ -185,7 +185,14 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
             data-name="${e.type.toLowerCase()}_${e.market_name.toLowerCase()}"
           >${e.market_name}</button>`;i+=t}),t===SHOP_ITEM_TYPES.Survival?a.innerHTML=i:s.innerHTML=i},renderDonationDescriptionItemDescHTML=(e,t=SHOP_ITEM_TYPES.Survival)=>{var r=document.querySelector("#survival_desc"),a=document.querySelector("#anarchy_desc"),e=`
     <h4 class="description-block__title">${e.market_name}</h4>
-    <ul class="description-block__list">
-      ${descriptionList(e.description)}
-    </ul>
+    <div class="description-block__row">
+      ${(e=>{if(!e?.includes("1."))return`<ul class="description-block__list"><li>${e}</li></ul>`;var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),r=[];for(let e=0;e<t.length;e+=2)r.push({number:t[e],text:t[e+1].trim()});return 8<r.length?`
+        <ul class="description-block__list">
+          ${r.slice(0,Math.round(r.length/2)).map(({text:e})=>`<li>${e}</li>`).join("")}
+        </ul>
+        <ul class="description-block__list">
+          ${r.slice(Math.round(r.length/2),r.length).map(({text:e})=>`<li>${e}</li>`).join("")}
+        </ul>
+      `:`<ul class="description-block__list">${r.map(({text:e})=>`<li>${e}</li>`).join("")}</ul>`})(e.description)}
+    </div>
   `;t===SHOP_ITEM_TYPES.Survival?r.innerHTML=e:a.innerHTML=e};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML,renderDonationDescriptionColumnItemsHTML,renderDonationDescriptionItemDescHTML};

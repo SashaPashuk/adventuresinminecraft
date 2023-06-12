@@ -55,7 +55,7 @@ export const renderShopItemImgHTML = ({
   return `<img ${classAttribute} src="../assets/images/products/${shopItemType}/${shopItemName}" alt=${shopItemName}-image />`;
 };
 
-function descriptionList(description) {
+function descriptionList(description, hasItemNumber = true) {
   if (!description?.includes("1.")) {
     return `<li>${description}</li>`;
   }
@@ -73,7 +73,7 @@ function descriptionList(description) {
   }
 
   return formattedItems
-    .map(({ number, text }) => `<li>${number}${text}</li>`)
+    .map(({ number, text }) => `<li>${hasItemNumber ? number : ""}${text}</li>`)
     .join("");
 }
 
@@ -449,11 +449,48 @@ export const renderDonationDescriptionItemDescHTML = (
   const survivalDescription = document.querySelector("#survival_desc");
   const anarchyDescription = document.querySelector("#anarchy_desc");
 
+  const descriptionListDonate = (description) => {
+    if (!description?.includes("1.")) {
+      return `<ul class="description-block__list"><li>${description}</li></ul>`;
+    }
+
+    const regex = /(\d+\.\s)/;
+
+    const items = description.split(regex).filter((item) => item.trim() !== "");
+
+    let formattedItems = [];
+    for (let i = 0; i < items.length; i += 2) {
+      formattedItems.push({
+        number: items[i],
+        text: items[i + 1].trim(),
+      });
+    }
+
+    return formattedItems.length > 8
+      ? `
+        <ul class="description-block__list">
+          ${formattedItems
+            .slice(0, Math.round(formattedItems.length / 2))
+            .map(({ text }) => `<li>${text}</li>`)
+            .join("")}
+        </ul>
+        <ul class="description-block__list">
+          ${formattedItems
+            .slice(Math.round(formattedItems.length / 2), formattedItems.length)
+            .map(({ text }) => `<li>${text}</li>`)
+            .join("")}
+        </ul>
+      `
+      : `<ul class="description-block__list">${formattedItems
+          .map(({ text }) => `<li>${text}</li>`)
+          .join("")}</ul>`;
+  };
+
   const html = `
     <h4 class="description-block__title">${item.market_name}</h4>
-    <ul class="description-block__list">
-      ${descriptionList(item.description)}
-    </ul>
+    <div class="description-block__row">
+      ${descriptionListDonate(item.description)}
+    </div>
   `;
 
   itemType === SHOP_ITEM_TYPES.Survival
