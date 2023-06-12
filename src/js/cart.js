@@ -117,7 +117,7 @@ const addCartPaymentButtonEventListener = () => {
     // success
     if (createdPaymentResponse?.redirect_url) {
       window.open(createdPaymentResponse.redirect_url, "_blank");
-      window.location.reload();
+      window.open("/home", "_self");
     }
   });
 };
