@@ -97,45 +97,47 @@ logoutButtonElement?.addEventListener("click", () => {
 const addLanguageSelectorEventListener = () => {
   const selector = document.querySelector(".custom-select");
 
-  selector.addEventListener("change", (e) => {
-    selector.querySelector("select").classList.remove("active");
-  });
-  selector.addEventListener("mousedown", (e) => {
-    selector.querySelector("select").classList.add("active");
+  if (selector) {
+    selector.addEventListener("change", (e) => {
+      selector.querySelector("select").classList.remove("active");
+    });
+    selector.addEventListener("mousedown", (e) => {
+      selector.querySelector("select").classList.add("active");
 
-    if (window.innerWidth >= 420) {
-      // override look for non mobile
-      e.preventDefault();
+      if (window.innerWidth >= 420) {
+        // override look for non mobile
+        e.preventDefault();
 
-      const select = selector.children[0];
-      const dropDown = document.createElement("ul");
-      dropDown.className = "selector-options";
+        const select = selector.children[0];
+        const dropDown = document.createElement("ul");
+        dropDown.className = "selector-options";
 
-      [...select.children].forEach((option) => {
-        const dropDownOption = document.createElement("li");
-        dropDownOption.textContent = option.textContent;
+        [...select.children].forEach((option) => {
+          const dropDownOption = document.createElement("li");
+          dropDownOption.textContent = option.textContent;
 
-        dropDownOption.addEventListener("mousedown", (e) => {
-          e.stopPropagation();
-          select.value = option.value;
-          selector.value = option.value;
-          select.dispatchEvent(new Event("change"));
-          selector.dispatchEvent(new Event("change"));
-          dropDown.remove();
+          dropDownOption.addEventListener("mousedown", (e) => {
+            e.stopPropagation();
+            select.value = option.value;
+            selector.value = option.value;
+            select.dispatchEvent(new Event("change"));
+            selector.dispatchEvent(new Event("change"));
+            dropDown.remove();
+          });
+
+          dropDown.appendChild(dropDownOption);
         });
 
-        dropDown.appendChild(dropDownOption);
-      });
+        selector.appendChild(dropDown);
 
-      selector.appendChild(dropDown);
-
-      // handle click out
-      document.addEventListener("click", (e) => {
-        if (!selector.contains(e.target)) {
-          selector.querySelector("select").classList.remove("active");
-          dropDown.remove();
-        }
-      });
-    }
-  });
+        // handle click out
+        document.addEventListener("click", (e) => {
+          if (!selector.contains(e.target)) {
+            selector.querySelector("select").classList.remove("active");
+            dropDown.remove();
+          }
+        });
+      }
+    });
+  }
 };

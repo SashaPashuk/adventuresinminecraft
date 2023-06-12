@@ -258,13 +258,18 @@ img {
       color: #FFFFFF;
       margin-top: 8px;
       cursor: pointer;
+      transition: all 0.3ms ease-in-out;
 
       &:first-child {
         margin-top: 16px;
       }
 
       &:hover {
-        color: #F8980E;
+        color: $primary-light-orange !important;
+      }
+
+      &.selected {
+        color: $primary-orange;
       }
     }
   }

@@ -282,6 +282,12 @@ const addPriceSortingDropdownEventListener = () => {
       const selected = dropdownServersSelectionElement?.querySelector("span");
 
       dropdownServersContainerItemsElements?.forEach(async (item) => {
+        // for making selected el after dd opening
+        item.getAttribute("data-sort-name") ===
+        selected.getAttribute("data-selected-sort-name")
+          ? item.classList.add("selected")
+          : item.classList.remove("selected");
+
         item.addEventListener("click", async () => {
           selected.textContent = item.textContent;
           selected.setAttribute(
