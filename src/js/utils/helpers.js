@@ -1,4 +1,7 @@
-import { SHOP_ITEM_TIME_USAGE } from "../contants/constants.js";
+import {
+  SHOP_ITEM_TIME_USAGE,
+  SHOP_ITEM_TYPES,
+} from "../contants/constants.js";
 import { errorsLanguageLocalizationsEnum } from "../contants/errors.js";
 import { getLocalizedError } from "../services/errorsLanguageLocalization.js";
 
@@ -405,4 +408,55 @@ export const renderShopItemsListHTML = (items) => {
   );
 
   productListContainerElements.innerHTML = html;
+};
+
+// Donation Description Page
+export const renderDonationDescriptionColumnItemsHTML = (
+  items,
+  itemType = SHOP_ITEM_TYPES.Survival,
+  prevSelectedShopItem
+) => {
+  const survivalColumn = document.querySelector("#survival_column");
+  const anarchyColumn = document.querySelector("#anarchy_column");
+
+  let html = "";
+
+  items.results.forEach((el, index) => {
+    const hasAddActiveClass = prevSelectedShopItem
+      ? prevSelectedShopItem.id === el.id
+      : index === 0;
+
+    const buttonHTML = `
+          <button 
+            class="donation-description__nav-btn ${
+              hasAddActiveClass ? "donation-description__nav-btn--active" : ""
+            } ${el.type}" 
+            data-name="${el.type.toLowerCase()}_${el.market_name.toLowerCase()}"
+          >${el.market_name}</button>`;
+
+    html += buttonHTML;
+  });
+
+  itemType === SHOP_ITEM_TYPES.Survival
+    ? (survivalColumn.innerHTML = html)
+    : (anarchyColumn.innerHTML = html);
+};
+
+export const renderDonationDescriptionItemDescHTML = (
+  item,
+  itemType = SHOP_ITEM_TYPES.Survival
+) => {
+  const survivalDescription = document.querySelector("#survival_desc");
+  const anarchyDescription = document.querySelector("#anarchy_desc");
+
+  const html = `
+    <h4 class="description-block__title">${item.market_name}</h4>
+    <ul class="description-block__list">
+      ${descriptionList(item.description)}
+    </ul>
+  `;
+
+  itemType === SHOP_ITEM_TYPES.Survival
+    ? (survivalDescription.innerHTML = html)
+    : (anarchyDescription.innerHTML = html);
 };

@@ -28,7 +28,7 @@ export const languageLocalizations = {
 
     // home-page
     home_title: "Discover the world of Minecraft",
-    home_subtitle: `Lorem Ipsum is the standard "fish" for Latin texts in the first sixteenth century`,
+    home_subtitle: ``,
     home_button_play_now: "Play now",
     home_survival: "Survival",
     home_anarchy: "Anarchy",
@@ -302,6 +302,10 @@ export const languageLocalizations = {
     [2] A multi-account is an additional account(s) of a player. It is prohibited for one person to register more than two accounts, even from different computers and IP addresses.
     [3] Using features for selfish purposes refers to all actions that can negatively affect gameplay and the operation of the server.
     `,
+    //
+    donationDescription__title: "Description of donation",
+    donationDescription__survival: "Survival",
+    donationDescription__anarchy: "Anarchy",
   },
   ru: {
     // header
@@ -332,7 +336,7 @@ export const languageLocalizations = {
 
     // home page
     home_title: "Открой для себя мир Minecraft",
-    home_subtitle: `Lorem Ipsum является стандартной "рыбой" для текстов на латинице сначала XVI века`,
+    home_subtitle: ``,
     home_button_play_now: "Играть сейчас",
     home_survival: "Выживание",
     home_anarchy: "Анархия",
@@ -608,38 +612,11 @@ export const languageLocalizations = {
     [3] Под использованием возможности в корыстных целях подразумевается все действия которые могут отрицательно повлиять на игровой процесс, а также на работу сервера.
     `,
     // donation-description
-    
+    donationDescription__title: "Описание доната",
+    donationDescription__survival: "Выживание",
+    donationDescription__anarchy: "Анархия",
   },
 };
 
-// -> done
-
-// components
-// header
-// footer
-// latest-purchases
-
-// pages
-// home
-// change password
-// team
-// contacts
-// starting-tips
-// successPayment
-// exit-confirmation
-// faq
-// order-history
-// product
-// login
-// registration
-// change-password
-// cart
-// launcher-download
-
-// language related requests to BE for downloading products (Product, Home pages)
-
-// -> leftover
-
 // pages
 // donate-privileges
-// donation-description
