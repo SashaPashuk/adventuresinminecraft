@@ -150,6 +150,7 @@ export const languageLocalizations = {
 
     // orderHistoryPage
     orderHistoryPage__title: "Order history",
+    orderHistoryPage__orderTitle: "Order",
     orderHistoryPage__orderDone: "Completed",
     orderHistoryPage__amount: "Quantity:",
     orderHistoryPage__totalPrice: "Price:",
@@ -454,6 +455,7 @@ export const languageLocalizations = {
 
     // orderHistoryPage
     orderHistoryPage__title: "История заказов",
+    orderHistoryPage__orderTitle: "Заказ",
     orderHistoryPage__orderDone: "Выполнен",
     orderHistoryPage__amount: "Количество:",
     orderHistoryPage__totalPrice: "Цена:",

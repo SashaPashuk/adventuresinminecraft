@@ -15,6 +15,17 @@
     &-orders {
         margin: 24px 0;
 
+        &-orderId {
+            display: flex !important;
+
+            span {
+                &:last-child {
+                    margin-left: 5px;
+                    color: $primary-orange;
+                }
+            }
+        }
+
         &-order {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr auto;

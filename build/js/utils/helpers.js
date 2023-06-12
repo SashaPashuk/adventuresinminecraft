@@ -108,7 +108,13 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";import{errorsLanguage
     `;r+=e}),t.innerHTML=r},renderOrderHistoryItemsHTML=e=>{var t=document.querySelector(".orderHistory-orders");let a="";e?.results?.forEach(({id:e,total_price:t,order_item:r})=>{e=`
         <li class="orderHistory-orders-order-container">
         <div class="orderHistory-orders-order">
-          <div><span>Заказ ${e}</span><span data-i18n-key="orderHistoryPage__orderDone">Выполнен</span></div>
+          <div>
+            <div class="orderHistory-orders-orderId">
+              <span data-i18n-key="orderHistoryPage__orderTitle">Заказ</span>
+              <span>${e.slice(-5)}</span>
+            </div>
+            <span data-i18n-key="orderHistoryPage__orderDone">Выполнен</span>
+          </div>
           <div class="orderHistory-orders-order__amount-container"><span data-i18n-key="orderHistoryPage__amount">Количество:</span><span>${r?.length}</span></div>
           <div><span data-i18n-key="orderHistoryPage__totalPrice">Цена:</span><span>€${Number(t).toFixed()}</span></div>
           <div class="orderHistory-orders-order-actions">
@@ -136,12 +142,12 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";import{errorsLanguage
         <div class="orderHistory-orders-order-details hidden">
           <h3 data-i18n-key="orderHistoryPage__items" class="orderHistory-orders-order-details-title">Товары</h3>
           <ul class="orderHistory-orders-order-details-list">
-          ${r.map(({amount:e,price:t,sum_item_price:r,time_to_use:a,image_name:s})=>`
+          ${r.map(({amount:e,price:t,forever_price:r,sum_item_price:a,time_to_use:s,image_name:i})=>`
               <li class="orderHistory-orders-order-details-list-item">
-                <h3>${s.slice(0,-4)}</h3>
+                <h3>${i.slice(0,-4)}</h3>
                 <div>
                   <span data-i18n-key="orderHistoryPage__itemDuration">Срок действия покупки:</span>
-                  <span>${a}</span>
+                  <span>${s}</span>
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__itemAmount">Количество:</span>
@@ -149,11 +155,11 @@ import{SHOP_ITEM_TIME_USAGE}from"../contants/constants.js";import{errorsLanguage
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__itemPrice">Цена</span>
-                  <span>€${r}</span>
+                  <span>€${t||r}</span>
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__overallPrice">Общая цена</span>
-                  <span>€${t}</span>
+                  <span>€${a}</span>
                 </div>
               </li>
             `)}

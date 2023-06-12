@@ -293,7 +293,13 @@ export const renderOrderHistoryItemsHTML = (data) => {
     const item = `
         <li class="orderHistory-orders-order-container">
         <div class="orderHistory-orders-order">
-          <div><span>Заказ ${id}</span><span data-i18n-key="orderHistoryPage__orderDone">Выполнен</span></div>
+          <div>
+            <div class="orderHistory-orders-orderId">
+              <span data-i18n-key="orderHistoryPage__orderTitle">Заказ</span>
+              <span>${id.slice(-5)}</span>
+            </div>
+            <span data-i18n-key="orderHistoryPage__orderDone">Выполнен</span>
+          </div>
           <div class="orderHistory-orders-order__amount-container"><span data-i18n-key="orderHistoryPage__amount">Количество:</span><span>${
             order_item?.length
           }</span></div>
@@ -326,7 +332,14 @@ export const renderOrderHistoryItemsHTML = (data) => {
           <h3 data-i18n-key="orderHistoryPage__items" class="orderHistory-orders-order-details-title">Товары</h3>
           <ul class="orderHistory-orders-order-details-list">
           ${order_item.map(
-            ({ amount, price, sum_item_price, time_to_use, image_name }) => {
+            ({
+              amount,
+              price,
+              forever_price,
+              sum_item_price,
+              time_to_use,
+              image_name,
+            }) => {
               return `
               <li class="orderHistory-orders-order-details-list-item">
                 <h3>${image_name.slice(0, -4)}</h3>
@@ -340,11 +353,11 @@ export const renderOrderHistoryItemsHTML = (data) => {
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__itemPrice">Цена</span>
-                  <span>€${sum_item_price}</span>
+                  <span>€${price || forever_price}</span>
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__overallPrice">Общая цена</span>
-                  <span>€${price}</span>
+                  <span>€${sum_item_price}</span>
                 </div>
               </li>
             `;

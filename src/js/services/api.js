@@ -141,11 +141,16 @@ export default {
       pathname: `/shop/${languageCode}/list/?type=${params.type}`,
     });
 
-    params.sort_price === SHOP_ITEM_SORT_PRICE_TYPES.FROM_CHEAP_TO_EXPENSIVE
-      ? response?.results.sort((a, b) => (+a.price > +b.price ? 1 : -1))
-      : response?.results.sort((a, b) => (+a.price > +b.price ? -1 : 1));
+    const data = response?.results.map((el) => ({
+      ...el,
+      sort_price: el.price || el.forever_price,
+    }));
 
-    return response;
+    params.sort_price === SHOP_ITEM_SORT_PRICE_TYPES.FROM_CHEAP_TO_EXPENSIVE
+      ? data.sort((a, b) => (+a.sort_price > +b.sort_price ? 1 : -1))
+      : data.sort((a, b) => (+a.sort_price > +b.sort_price ? -1 : 1));
+
+    return { ...response, results: data };
   },
   /**
    * @param {Object} params
