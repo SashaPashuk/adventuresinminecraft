@@ -2,6 +2,7 @@
   margin-bottom: 70px;
 
   &__row {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,20 +21,6 @@
     color: #ffffff;
     margin-bottom: 33px;
   }
-
-  &__subtitle {
-    max-width: 520px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 42px;
-  }
-
   &__button {
     font-weight: 700;
     font-size: 16px;
@@ -55,6 +42,28 @@
       background: $shade-white;
       color: $primary-orange;
       box-shadow: $shadow-defauld;
+    }
+  }
+  &__server-monitoring {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    span {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 150%;
+      color: $primary-light-orange;
+    }
+    p {
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 150%;
+      color: $primary-light-orange;
+      cursor: pointer;
     }
   }
 }

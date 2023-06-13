@@ -1,4 +1,4 @@
-const homeSubtitle = document.getElementById("home_subtitle");
+const numberPlayers = document.getElementById("number_players");
 
 const serverIP = "195.201.168.105";
 const serverPort = 25562;
@@ -22,6 +22,4 @@ function getServerStatus() {
 getServerStatus();
 setInterval(getServerStatus, 2 * 60 * 1000);
 
-homeSubtitle.innerHTML = `<span>Сейчас играют ${currentPlayerCount} игроков</span>
-<span>${serverIP}</span>
-`;
+numberPlayers.innerHTML = currentPlayerCount;
