@@ -21,6 +21,7 @@
     color: #ffffff;
     margin-bottom: 33px;
   }
+
   &__button {
     font-weight: 700;
     font-size: 16px;
@@ -44,6 +45,7 @@
       box-shadow: $shadow-defauld;
     }
   }
+
   &__server-monitoring {
     position: absolute;
     bottom: 50px;
@@ -51,19 +53,79 @@
     transform: translateX(-50%);
     text-align: center;
     color: #fff;
-    span {
-      font-weight: 600;
-      font-size: 30px;
-      line-height: 150%;
-      color: $primary-light-orange;
-    }
-    p {
-      margin-top: 20px;
-      font-weight: 600;
-      font-size: 30px;
-      line-height: 150%;
-      color: $primary-light-orange;
-      cursor: pointer;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 21px 81px;
+    background: rgba(248, 152, 14, 0.09);
+    border: 1px solid rgba(248, 152, 14, 0.22);
+    box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.53);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+
+    &>div {
+      width: max-content;
+      padding: 0 40px 0 0;
+
+      &:nth-child(2) {
+        padding: 0 40px;
+        border-right: 1px solid rgba(248, 152, 14, 0.22);
+        border-left: 1px solid rgba(248, 152, 14, 0.22);
+      }
+
+      &:last-child {
+        padding: 0 0 0 40px;
+      }
+
+      &>p {
+        &:first-child {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 150%;
+          text-align: center;
+          color: #FFFFFF;
+          margin-top: 0;
+        }
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        /* identical to box height, or 24px */
+
+        text-align: center;
+
+        /* Shade/white */
+
+        color: #FFFFFF;
+        margin-top: 13px;
+
+      }
+
+      &>#mc_server_status {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 7px;
+          width: 7px;
+          top: 50%;
+          left: 10px;
+          transform: translateY(-50%);
+          background-color: #3BAE1E;
+          border-radius: 50%;
+        }
+
+        &.offline {
+          &::before {
+            background-color: red;
+          }
+        }
+      }
     }
   }
 }
@@ -80,7 +142,7 @@
       display: flex;
       align-items: baseline;
 
-      & > p {
+      &>p {
         @include body_3;
         margin-right: 14px;
       }
@@ -126,7 +188,7 @@
         position: absolute;
         opacity: 0;
 
-        &.checked + span {
+        &.checked+span {
           background: $primary-gradient;
         }
       }

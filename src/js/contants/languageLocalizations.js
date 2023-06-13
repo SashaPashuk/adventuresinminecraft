@@ -29,7 +29,8 @@ export const languageLocalizations = {
     // home-page
     home_title: "Discover the world of Minecraft",
     home_button_play_now: "Play now",
-    home_server_monitoring_text: " - currently playing",
+    home_server_monitoring_text: "Currently playing",
+    home_server_monitoring_status: "Server Status",
     home_survival: "Survival",
     home_anarchy: "Anarchy",
     home_price_sort: "Sort by price",
@@ -337,7 +338,8 @@ export const languageLocalizations = {
     // home page
     home_title: "Открой для себя мир Minecraft",
     home_button_play_now: "Играть сейчас",
-    home_server_monitoring_text: " - сейчас играют",
+    home_server_monitoring_text: "Cейчас играют",
+    home_server_monitoring_status: "Статус Сервера",
     home_survival: "Выживание",
     home_anarchy: "Анархия",
     home_price_sort: "Сортировать по цене",
