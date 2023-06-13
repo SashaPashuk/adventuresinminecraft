@@ -39,10 +39,17 @@ switchButtonDD.forEach((button) => {
         SHOP_ITEM_TYPES.Anarchy.toLowerCase()
       ) {
         const lsLanguage = localStorage.getItem("language") || DEFAULT_LANGUAGE;
-        const shopAnarchyItemsResult = await API.getShopItems(lsLanguage, {
-          type: SHOP_ITEM_TYPES.Anarchy,
-          sort_price: SHOP_ITEM_SORT_PRICE_TYPES.FROM_CHEAP_TO_EXPENSIVE,
-        });
+        const shopAnarchyItemsServerResult = await API.getShopItems(
+          lsLanguage,
+          {
+            type: SHOP_ITEM_TYPES.Anarchy,
+            sort_price: SHOP_ITEM_SORT_PRICE_TYPES.FROM_CHEAP_TO_EXPENSIVE,
+          }
+        );
+
+        const shopAnarchyItemsResult = getFilteredItems(
+          shopAnarchyItemsServerResult
+        );
 
         renderDonationDescriptionColumnItemsHTML(
           shopAnarchyItemsResult,
@@ -59,10 +66,12 @@ switchButtonDD.forEach((button) => {
         );
       } else {
         const lsLanguage = localStorage.getItem("language") || DEFAULT_LANGUAGE;
-        const shopItemsResult = await API.getShopItems(lsLanguage, {
+        const shopItemsServerResult = await API.getShopItems(lsLanguage, {
           type: SHOP_ITEM_TYPES.Survival,
           sort_price: SHOP_ITEM_SORT_PRICE_TYPES.FROM_CHEAP_TO_EXPENSIVE,
         });
+
+        const shopItemsResult = getFilteredItems(shopItemsServerResult);
 
         renderDonationDescriptionColumnItemsHTML(shopItemsResult);
         renderDonationDescriptionItemDescHTML(shopItemsResult?.results[0]);
@@ -115,10 +124,14 @@ LanguageEventObserever.subscribe(async (data) => {
     const selectedShopItemType = document.querySelector(
       `.donation-description__nav-btn--active.${SHOP_ITEM_TYPES.Anarchy}`
     );
-    const shopAnarchyItemsResult = await API.getShopItems(data.language, {
+    const shopAnarchyItemsServerResult = await API.getShopItems(data.language, {
       type: SHOP_ITEM_TYPES.Anarchy,
       sort_price: SHOP_ITEM_SORT_PRICE_TYPES.FROM_CHEAP_TO_EXPENSIVE,
     });
+
+    const shopAnarchyItemsResult = getFilteredItems(
+      shopAnarchyItemsServerResult
+    );
 
     const prevSelectedShopItem =
       shopAnarchyItemsResult?.results?.find(
@@ -142,10 +155,12 @@ LanguageEventObserever.subscribe(async (data) => {
       SHOP_ITEM_TYPES.Anarchy
     );
   } else {
-    const shopItemsResult = await API.getShopItems(data.language, {
+    const shopItemsServerResult = await API.getShopItems(data.language, {
       type: SHOP_ITEM_TYPES.Survival,
       sort_price: SHOP_ITEM_SORT_PRICE_TYPES.FROM_CHEAP_TO_EXPENSIVE,
     });
+
+    const shopItemsResult = getFilteredItems(shopItemsServerResult);
 
     const selectedShopItemType = document.querySelector(
       `.donation-description__nav-btn--active.${SHOP_ITEM_TYPES.Survival}`
@@ -173,10 +188,12 @@ LanguageEventObserever.subscribe(async (data) => {
 window.addEventListener("DOMContentLoaded", async () => {
   const lsLanguage = localStorage.getItem("language") || DEFAULT_LANGUAGE;
 
-  const shopItemsResult = await API.getShopItems(lsLanguage, {
+  const shopItemsServerResult = await API.getShopItems(lsLanguage, {
     type: SHOP_ITEM_TYPES.Survival,
     sort_price: SHOP_ITEM_SORT_PRICE_TYPES.FROM_CHEAP_TO_EXPENSIVE,
   });
+
+  const shopItemsResult = getFilteredItems(shopItemsServerResult);
 
   renderDonationDescriptionColumnItemsHTML(shopItemsResult);
   renderDonationDescriptionItemDescHTML(shopItemsResult?.results[0]);
@@ -226,4 +243,20 @@ const addColumnEventListeners = (
       });
     });
   });
+};
+
+const getFilteredItems = (response) => {
+  return {
+    ...response,
+    results: response?.results.filter(
+      (item) =>
+        ![
+          "Прочее:Донат-кейсыx10 штук",
+          "Кейс с титуламиx3",
+          "ПРОЧЕЕ:Кейс с донатными монетамиx3",
+          "Донат-кейсx3",
+          "Донат-Валютаx1000",
+        ].includes(item.market_name)
+    ),
+  };
 };

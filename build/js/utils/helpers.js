@@ -179,11 +179,11 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
                 <button class="products-card__buy" data-id=${a}></button>
             </div>
           </div>
-      `;o+=r}),t.innerHTML=o},renderDonationDescriptionColumnItemsHTML=(e,t=SHOP_ITEM_TYPES.Survival,r)=>{var a=document.querySelector("#survival_column"),s=document.querySelector("#anarchy_column");let i="";e.results.forEach((e,t)=>{t=`
+      `;o+=r}),t.innerHTML=o},renderDonationDescriptionColumnItemsHTML=(e,t=SHOP_ITEM_TYPES.Survival,a)=>{if(e?.results){var s=document.querySelector("#survival_column"),i=document.querySelector("#anarchy_column");let r="";e?.results.forEach((e,t)=>{t=`
           <button 
-            class="donation-description__nav-btn ${(r?r.id===e.id:0===t)?"donation-description__nav-btn--active":""} ${e.type}" 
+            class="donation-description__nav-btn ${(a?a.id===e.id:0===t)?"donation-description__nav-btn--active":""} ${e.type}" 
             data-name="${e.type.toLowerCase()}_${e.market_name.toLowerCase()}"
-          >${e.market_name}</button>`;i+=t}),t===SHOP_ITEM_TYPES.Survival?a.innerHTML=i:s.innerHTML=i},renderDonationDescriptionItemDescHTML=(e,t=SHOP_ITEM_TYPES.Survival)=>{var r=document.querySelector("#survival_desc"),a=document.querySelector("#anarchy_desc"),e=`
+          >${e.market_name}</button>`;r+=t}),t===SHOP_ITEM_TYPES.Survival?s.innerHTML=r:i.innerHTML=r}},renderDonationDescriptionItemDescHTML=(e,t=SHOP_ITEM_TYPES.Survival)=>{var r=document.querySelector("#survival_desc"),a=document.querySelector("#anarchy_desc"),e=`
     <h4 class="description-block__title">${e.market_name}</h4>
     <div class="description-block__row">
       ${(e=>{if(!e?.includes("1."))return`<ul class="description-block__list"><li>${e}</li></ul>`;var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),r=[];for(let e=0;e<t.length;e+=2)r.push({number:t[e],text:t[e+1].trim()});return 8<r.length?`

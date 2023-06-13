@@ -416,12 +416,14 @@ export const renderDonationDescriptionColumnItemsHTML = (
   itemType = SHOP_ITEM_TYPES.Survival,
   prevSelectedShopItem
 ) => {
+  if (!items?.results) return;
+
   const survivalColumn = document.querySelector("#survival_column");
   const anarchyColumn = document.querySelector("#anarchy_column");
 
   let html = "";
 
-  items.results.forEach((el, index) => {
+  items?.results.forEach((el, index) => {
     const hasAddActiveClass = prevSelectedShopItem
       ? prevSelectedShopItem.id === el.id
       : index === 0;

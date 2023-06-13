@@ -1,30 +1,39 @@
-const numberPlayers = document.getElementById("number_players");
-const mcServerStatusElement = document.getElementById("mc_server_status");
-
 const serverIP = "195.201.168.105";
 const serverPort = 25562;
-let currentPlayerCount = 0;
 
-function getServerStatus() {
-  fetch(`https://api.mcsrvstat.us/2/${serverIP}:${serverPort}`)
-    .then((response) => response.json())
-    .then((data) => {
-      if (data?.online) {
-        currentPlayerCount = data.players.online;
-        mcServerStatusElement.innerHTML = "Online";
-        mcServerStatusElement.classList.remove("offline");
-      } else {
-        console.log("Server is offline");
-        mcServerStatusElement.innerHTML = "Offline";
-        mcServerStatusElement.classList.add("offline");
-      }
-    })
-    .catch((error) => {
-      console.error("Error fetching server status:", error);
-    });
-}
+const getMCServerData = async (ip, port) => {
+  const response = await fetch(`https://api.mcsrvstat.us/2/${ip}:${port}`).then(
+    (response) => response.json()
+  );
 
-getServerStatus();
-setInterval(getServerStatus, 2 * 60 * 1000);
+  return response;
+};
 
-numberPlayers.innerHTML = currentPlayerCount;
+const addMCServerStatisticHTML = async ({ getMCServerData }) => {
+  const data = await getMCServerData();
+
+  const mcServerPlayers = document.getElementById("number_players");
+  const mcServerStatusElement = document.getElementById("mc_server_status");
+
+  if (data?.online) {
+    mcServerPlayers.innerHTML = data?.players?.online || 0;
+    mcServerStatusElement.innerHTML = "Online";
+    mcServerStatusElement.classList.remove("offline");
+  } else {
+    mcServerStatusElement.innerHTML = "Offline";
+    mcServerStatusElement.classList.add("offline");
+  }
+};
+
+// For the first fast taking MC server data
+addMCServerStatisticHTML({
+  getMCServerData: () => getMCServerData(serverIP, serverPort),
+});
+// Rapidly after some time update MC server data
+setInterval(
+  () =>
+    addMCServerStatisticHTML({
+      getMCServerData: () => getMCServerData(serverIP, serverPort),
+    }),
+  2 * 60 * 1000
+);
