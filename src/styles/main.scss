@@ -65,8 +65,8 @@ img {
   position: absolute;
   width: 265.69px;
   height: 101.32px;
-  left: calc(50% - 265.69px/2 - 0.16px);
-  top: calc(50% - 101.32px/2 - 276.34px);
+  left: calc(50% - 265.69px / 2 - 0.16px);
+  top: calc(50% - 240px);
 }
 
 .page-covered-image {
@@ -75,6 +75,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  overflow-y: hidden;
 }
 
 .hidden {
@@ -83,14 +84,14 @@ img {
 
 .hidden-visibility {
   // display: none !important;
-  visibility: hidden
+  visibility: hidden;
 }
 
 // button
 
 .button-primary {
   @include button;
-  background: linear-gradient(180deg, #FFB448 0%, #F8980E 100%) !important;
+  background: linear-gradient(180deg, #ffb448 0%, #f8980e 100%) !important;
 
   &:hover {
     box-shadow: $shadow-active !important;
@@ -120,7 +121,7 @@ img {
   }
 }
 
-// input 
+// input
 
 .input-custom {
   color: $shade-white;
@@ -190,10 +191,10 @@ img {
       cursor: pointer;
     }
 
-    &>div {
+    & > div {
       padding: 0 15px 0 0;
 
-      &>p {
+      & > p {
         line-height: 20px;
       }
     }
@@ -220,7 +221,7 @@ img {
   padding: 10px 22px;
   min-width: 155px;
   height: fit-content;
-  background: #28231F;
+  background: #28231f;
   border: 2px solid #393330;
   border-radius: 10px;
 
@@ -230,19 +231,19 @@ img {
     justify-content: space-between;
     cursor: pointer;
 
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    color: #FFFFFF;
+    color: #ffffff;
 
-    &>img {
+    & > img {
       margin-left: 10px;
     }
 
     &-open {
-      &>img {
+      & > img {
         transform: rotate(180deg);
       }
     }
@@ -250,12 +251,12 @@ img {
 
   &__container {
     &__item {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
       line-height: 150%;
-      color: #FFFFFF;
+      color: #ffffff;
       margin-top: 8px;
       cursor: pointer;
       transition: all 0.3ms ease-in-out;

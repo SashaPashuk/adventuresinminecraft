@@ -23,8 +23,7 @@ export const languageLocalizations = {
     footer_donate_rules: "Donation privileges",
     footer_launchers: "Launchers",
     footer_team: "Team",
-    footer_copiryted:
-      "© 2023 Adventures in Minecraft - cryptocurrency exchange service",
+    footer_copiryted: "© 2023 Adventures in Minecraft - all rights reserved",
 
     // home-page
     home_title: "Discover the world of Minecraft",
@@ -332,8 +331,7 @@ export const languageLocalizations = {
     footer_donate_rules: "Привелегии доната",
     footer_launchers: "Лаунчера",
     footer_team: "Команда",
-    footer_copiryted:
-      "© 2023 Adventures in Minecraft - сервис обмена криптовалют",
+    footer_copiryted: "© 2023 Adventures in Minecraft - все права защищены",
 
     // home page
     home_title: "Открой для себя мир Minecraft",
