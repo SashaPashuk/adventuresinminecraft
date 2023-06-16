@@ -23,6 +23,7 @@ export const languageLocalizations = {
     footer_donate_rules: "Donation privileges",
     footer_launchers: "Launchers",
     footer_team: "Team",
+    footer_mods: "Mods",
     footer_copiryted: "© 2023 Adventures in Minecraft - all rights reserved",
 
     // home-page
@@ -329,8 +330,9 @@ export const languageLocalizations = {
     footer_faq: "FAQ",
     footer_how_to_start: "Как начать играть?",
     footer_donate_rules: "Привелегии доната",
-    footer_launchers: "Лаунчера",
+    footer_launchers: "Лаунчеры",
     footer_team: "Команда",
+    footer_mods: "Моды",
     footer_copiryted: "© 2023 Adventures in Minecraft - все права защищены",
 
     // home page
@@ -615,6 +617,7 @@ export const languageLocalizations = {
     donationDescription__title: "Описание доната",
     donationDescription__survival: "Выживание",
     donationDescription__anarchy: "Анархия",
+    // modsPage
   },
 };
 
