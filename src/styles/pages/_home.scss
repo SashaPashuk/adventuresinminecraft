@@ -55,7 +55,7 @@
     color: #fff;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 21px 81px;
     background: rgba(248, 152, 14, 0.09);
     border: 1px solid rgba(248, 152, 14, 0.22);
@@ -63,11 +63,16 @@
     backdrop-filter: blur(10px);
     border-radius: 20px;
 
-    &>div {
+    & > div {
       width: max-content;
       padding: 0 40px 0 0;
 
       &:nth-child(2) {
+        padding: 0 40px;
+        border-right: 1px solid rgba(248, 152, 14, 0.22);
+        border-left: 1px solid rgba(248, 152, 14, 0.22);
+      }
+      &:nth-child(3) {
         padding: 0 40px;
         border-right: 1px solid rgba(248, 152, 14, 0.22);
         border-left: 1px solid rgba(248, 152, 14, 0.22);
@@ -77,19 +82,19 @@
         padding: 0 0 0 40px;
       }
 
-      &>p {
+      & > p {
         &:first-child {
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 600;
           font-size: 12px;
           line-height: 150%;
           text-align: center;
-          color: #FFFFFF;
+          color: #ffffff;
           margin-top: 0;
         }
 
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
@@ -100,12 +105,11 @@
 
         /* Shade/white */
 
-        color: #FFFFFF;
+        color: #ffffff;
         margin-top: 13px;
-
       }
 
-      &>#mc_server_status {
+      & > #mc_server_status {
         position: relative;
 
         &::before {
@@ -116,7 +120,7 @@
           top: 50%;
           left: 0;
           transform: translateY(-50%);
-          background-color: #3BAE1E;
+          background-color: #3bae1e;
           border-radius: 50%;
         }
 
@@ -142,7 +146,7 @@
       display: flex;
       align-items: baseline;
 
-      &>p {
+      & > p {
         @include body_3;
         margin-right: 14px;
       }
@@ -188,7 +192,7 @@
         position: absolute;
         opacity: 0;
 
-        &.checked+span {
+        &.checked + span {
           background: $primary-gradient;
         }
       }
