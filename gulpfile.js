@@ -96,4 +96,6 @@ function serve() {
   gulp.watch(src.images, images);
 }
 
+exports.build = gulp.parallel(html, css, js, images);
+
 exports.default = gulp.series(gulp.parallel(html, css, js, images), serve);
