@@ -12,9 +12,9 @@ const mods = [
     url: "/pages/mods/1122/minecraft-pe-1-12-2",
     imageName: "1122pe.jpeg",
   },
-  { name: "cars", url: "/pages/mods/1122/cars", imageName: "cars.jpeg" },
+  { name: "1.12.2 cars", url: "/pages/mods/1122/cars", imageName: "cars.jpeg" },
   {
-    name: "oruzhie",
+    name: "1.12.2 oruzhie",
     url: "/pages/mods/1122/oruzhie",
     imageName: "oruzhie.jpeg",
   },

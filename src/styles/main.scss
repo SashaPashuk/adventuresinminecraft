@@ -55,6 +55,20 @@ img {
 
 // overall css classes
 
+.container-mods {
+
+  * {
+    margin: revert !important;
+    padding: revert !important;
+  }
+
+  ul,
+  li {
+    list-style: square;
+  }
+
+}
+
 .container-custom {
   max-width: 1350px;
   min-width: 1000px;

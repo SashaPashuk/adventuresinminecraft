@@ -197,7 +197,7 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
     </div>
   `;t===SHOP_ITEM_TYPES.Survival?r.innerHTML=e:a.innerHTML=e},renderListingHTML=e=>{var t=document.querySelector("#mods-listing");let a="";e.forEach(({name:e,url:t,imageName:r})=>{r=`
       <div>
-        ${r?`<img src="../../assets/images/mods/${r}" alt="" />`:'<div class="lol"></div>'}
+        ${r?`<img src="../../assets/images/mods/${r}" alt="" />`:'<div class="image_replacer"></div>'}
         <h3>${e}</h2>
         <a
           data-i18n-key="modsPage_button"

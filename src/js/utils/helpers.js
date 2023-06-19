@@ -511,7 +511,7 @@ export const renderListingHTML = (mods) => {
         ${
           imageName
             ? `<img src="../../assets/images/mods/${imageName}" alt="" />`
-            : `<div class="lol"></div>`
+            : `<div class="image_replacer"></div>`
         }
         <h3>${name}</h2>
         <a

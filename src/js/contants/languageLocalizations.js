@@ -207,7 +207,7 @@ export const languageLocalizations = {
     cartPage__price: "Price:",
 
     // launcherPage
-    launcherPage__title: "LUNCHER MAINCRAFT WITH MODS",
+    launcherPage__title: "LUNCHER MINECRAFT WITH MODS",
     launcherPage__desc: `Launcher is a program that allows players to quickly and easily download the game Minecraft and is designed to download and run the game with our mods. Available in single player or on CubixWorld servers. The first thing you need to do is to download Minecraft on your PC or phone, it's free.`,
     launcherPage__conclusion: `After all, the Launcher is available on many platforms, including MacOS, Linux and Windows, and Android.`,
     launcherPage__btn: "Download",
@@ -440,6 +440,34 @@ export const languageLocalizations = {
     In conclusion, the Journey Map mod is a great way to improve your Minecraft gameplay by adding new features and functions. With it, you'll be able to create detailed world maps to help you better navigate the world around you, and use routes to get around the world faster. If you're looking for a way to improve your Minecraft gaming experience, we recommend trying the Journey Map mod.
 
     `,
+
+    // -> 1122
+    "1122_h1":
+      "Mods for Minecraft 1.12.2: Expand your game world with unique modifications",
+    patch1122_p_1: `Minecraft 1.12.2 is a popular version of the game that offers a lot of opportunities for creativity and adventure. However, to add even more variety and interest to the gameplay, many players turn to modifications. Mods for Minecraft 1.12.2 allow you to expand your game world, add new items, mechanics, mobs and more. In this text, we will take a look at several popular mods for Meinkraft 1.12.2, which will allow you to experience the game in a new way.`,
+    "1122_h2_1":
+      "Build mods for Minecraft 1.12.2: Optimize your gaming experience",
+    patch1122_p_2InnerHTML:
+      'Сборка модов на Майнкрафт 1.12.2 - это набор различных модификаций, собранных вместе для улучшения игрового опыта. С помощью сборки модов вы можете добавить новые блоки, инструменты, руды, мобы и многое другое в игру. Одна из популярных сборок модов на Майнкрафт 1.12.2 - <strong>"Forge"</strong>. Она предоставляет удобную платформу для установки и управления модификациями, а также обеспечивает их совместимость между собой.',
+    "1122_p_3":
+      "To download the mod compilation for Minecraft 1.12.2, you need to visit the official Forge website and find the appropriate version for your game. Then follow the installation instructions to customize the mods build and start enjoying the new features in Minecraft.",
+    "1122_h2_2": "Popular mods for Minecraft 1.12.2",
+    "1122_p_4":
+      "There are a huge number of mods for Meinkraft 1.12.2, each of which offers unique features and changes in the game. Here are a few popular modifications that are worth considering:",
+    "1122_li_1InnerHTML": `<strong>"IndustrialCraft 2"</strong> - "IndustrialCraft 2" is one of the most popular mods on MeInkraft 1.12.2, which opens up huge opportunities for players in the field of technology and industry. This modifier adds many technological items and mechanisms that allow you to automate processes, create energy and develop your own industry in the game world.`,
+    "1122_li_2InnerHTML": `<strong>"Thaumcraft"</strong> - "Thaumcraft" - is a fascinating mod for Minecraft 1.12.2, which opens the door to the world of magic and thaumaturgy. If you want to add elements of fantasy and mystery to the game, this mod will be the perfect choice. "Thaumcraft" allows you to immerse yourself in learning new knowledge, creating magical items and using spells. The "Thaumcraft" mod creates a unique atmosphere of magic and mystery in your game world. It offers a fascinating path of exploration and development in the field of magic and thaumaturgy. If you want to add an extra layer of magical depth to your Minecraft, "Thaumcraft" will be a great addition for you.`,
+    "1122_li_3InnerHTML": `<strong>"Biomes O' Plenty"</strong> - is a fascinating mod for Minecraft 1.12.2, which greatly expands the variety of biomes in the game. If you are tired of the standard landscapes and want to dive into new adventures, this mod will be a great choice. It adds a huge number of new landscapes, plants, mobs and creates a unique atmosphere in your game world.`,
+    "1122_li_4InnerHTML": `<strong>"Twilight Forest"</strong> - is a thrilling mod for Meinkraft 1.12.2, which opens the door to a parallel world full of mysterious magical forest, new bosses, dungeons and exciting adventures. If you want to plunge into the world of fantasy and explore new mysterious places, then this mod will be an indispensable addition to your game.`,
+    "1122_p_5":
+      "To download these mods for Minecraft 1.12.2, you can visit the official pages of the mods on various platforms, such as CurseForge or Minecraft Forum. There you will find download links and detailed instructions on how to install each mod.",
+    "1122_h2_3":
+      "Download mods for Minecraft 1.12.2 and expand your gaming adventure",
+    "1122_p_6":
+      "If you want to expand your in-game adventure in Minecraft 1.12.2, mods are the perfect way to do it. Download and install a variety of modifications that match your preferences and interests. They will allow you to create, explore and play in new ways in your own game of Minecraft.",
+    "1122_p_7":
+      "Remember to check the compatibility of mods with your version of the game and follow the installation instructions for each mod. Use official resources and platforms for downloading mods for Mynecraft 1.12.2 to make sure they are safe and work properly.",
+    "1122_p_8":
+      "Also, stay tuned regularly for updates to mods and new releases to keep up with the latest changes and new features in Minecraft. Enjoy your journey through your expanded game world!",
   },
   ru: {
     // header
@@ -883,6 +911,33 @@ export const languageLocalizations = {
     В заключение, Journey Map мод - это отличный способ улучшить игровой процесс в Minecraft, добавив новые функции и возможности. С его помощью вы сможете создавать детальные карты мира, которые помогут вам лучше ориентироваться в окружающем мире, и использовать маршруты, чтобы быстрее перемещаться по миру. Если вы ищете способ улучшить свой опыт игры в Minecraft, рекомендуем попробовать Journey Map мод.
 
     `,
+    // -> 1122
+    "1122_h1":
+      "Моды на Майнкрафт 1.12.2: Расширьте свой игровой мир с уникальными модификациями",
+    patch1122_p_1: `Майнкрафт 1.12.2 - это популярная версия игры, которая предлагает множество возможностей для творчества и приключений. Однако, чтобы добавить еще больше разнообразия и интереса в игровой процесс, многие игроки обращаются к модификациям. Моды на Майнкрафт 1.12.2 позволяют расширить ваш игровой мир, добавить новые предметы, механики, мобы и многое другое. В этом тексте мы рассмотрим несколько популярных модов на Майнкрафт 1.12.2, которые позволят вам ощутить игру по-новому.`,
+    "1122_h2_1":
+      "Сборка модов на Майнкрафт 1.12.2: Оптимизируйте свой игровой опыт",
+    patch1122_p_2InnerHTML:
+      'Сборка модов на Майнкрафт 1.12.2 - это набор различных модификаций, собранных вместе для улучшения игрового опыта. С помощью сборки модов вы можете добавить новые блоки, инструменты, руды, мобы и многое другое в игру. Одна из популярных сборок модов на Майнкрафт 1.12.2 - <strong>"Forge"</strong>. Она предоставляет удобную платформу для установки и управления модификациями, а также обеспечивает их совместимость между собой.',
+    "1122_p_3":
+      "Для скачивания сборки модов на Майнкрафт 1.12.2, вам необходимо посетить официальный сайт Forge и найти соответствующую версию для вашей игры. Затем следуйте инструкциям по установке, чтобы настроить сборку модов и начать наслаждаться новыми возможностями в Майнкрафте.",
+    "1122_h2_2": "Популярные моды на Майнкрафт 1.12.2",
+    "1122_p_4":
+      "Существует огромное количество модов на Майнкрафт 1.12.2, каждый из которых предлагает уникальные возможности и изменения в игре. Вот несколько популярных модификаций, которые стоит рассмотреть:",
+    "1122_li_1InnerHTML": `<strong>"IndustrialCraft 2"</strong> - "IndustrialCraft 2" является одним из самых популярных модов на Майнкрафт 1.12.2, который открывает перед игроками огромные возможности в области технологий и индустрии. Этот модификатор добавляет множество технологических предметов и механизмов, которые позволяют автоматизировать процессы, создавать энергию и развивать собственную индустрию в игровом мире.`,
+    "1122_li_2InnerHTML": `<strong>"Thaumcraft"</strong> - "Thaumcraft" - это увлекательный мод на Майнкрафт 1.12.2, который открывает двери в мир магии и тауматургии. Если вы хотите добавить в игру элементы фэнтези и загадочности, то этот мод будет идеальным выбором. "Thaumcraft" позволяет вам погрузиться в изучение новых знаний, создание магических предметов и использование заклинаний. Мод "Thaumcraft" создает уникальную атмосферу магии и загадочности в вашем игровом мире. Он предлагает увлекательный путь исследования и развития в области магии и тауматургии. Если вы хотите добавить дополнительный слой магической глубины в Майнкрафт, "Thaumcraft" станет отличным дополнением для вас.`,
+    "1122_li_3InnerHTML": `<strong>"Biomes O' Plenty"</strong> - это захватывающий мод для Майнкрафт 1.12.2, который значительно расширяет разнообразие биомов в игре. Если вы устали от стандартных ландшафтов и хотите погрузиться в новые приключения, то этот мод станет отличным выбором. Он добавляет огромное количество новых ландшафтов, растений, мобов и создает уникальную атмосферу в вашем игровом мире.`,
+    "1122_li_4InnerHTML": `<strong>"Twilight Forest"</strong> - это захватывающий мод для Майнкрафт 1.12.2, который открывает перед вами дверь в параллельный мир полный загадочного волшебного леса, новых боссов, подземелий и захватывающих приключений. Если вы желаете погрузиться в мир фэнтези и исследовать новые таинственные места, то этот мод станет незаменимым дополнением для вашей игры.`,
+    "1122_p_5":
+      "Для скачивания этих модов на Майнкрафт 1.12.2, вы можете посетить официальные страницы модов на различных платформах, таких как CurseForge или Minecraft Forum. Там вы найдете ссылки для скачивания и подробные инструкции по установке каждого мода.",
+    "1122_h2_3":
+      "Скачать моды на Майнкрафт 1.12.2 и расширить свое игровое приключение",
+    "1122_p_6":
+      "Если вы хотите расширить свое игровое приключение в Майнкрафт 1.12.2, моды являются идеальным способом сделать это. Скачайте и установите разнообразные модификации, которые соответствуют вашим предпочтениям и интересам. Они позволят вам создавать, исследовать и играть в Майнкрафт по-новому.",
+    "1122_p_7":
+      "Не забудьте проверить совместимость модов с вашей версией игры и следовать инструкциям по установке каждого мода. Пользуйтесь официальными ресурсами и платформами для скачивания модов на Майнкрафт 1.12.2, чтобы гарантировать их безопасность и правильную работу.",
+    "1122_p_8":
+      "Также регулярно следите за обновлениями модов и новыми релизами, чтобы быть в курсе последних изменений и новых возможностей в Майнкрафте. Приятного путешествия по вашему расширенному игровому миру!",
   },
 };
 
