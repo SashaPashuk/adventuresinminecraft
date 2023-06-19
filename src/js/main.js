@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   addLanguageSelectorEventListener();
+  addCookieEventListener();
 });
 
 // dropdown logic
@@ -140,4 +141,19 @@ const addLanguageSelectorEventListener = () => {
       }
     });
   }
+};
+
+const addCookieEventListener = () => {
+  const cookie = localStorage.getItem("hasAcceptedCookie");
+
+  if (!cookie) {
+    document?.querySelector(".cookie_container")?.classList.remove("hidden");
+  }
+
+  const cookieButton = document.querySelector("#cookieButton");
+
+  cookieButton.addEventListener("click", () => {
+    localStorage.setItem("hasAcceptedCookie", "true");
+    document?.querySelector(".cookie_container")?.classList.add("hidden");
+  });
 };
