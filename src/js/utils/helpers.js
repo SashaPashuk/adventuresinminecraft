@@ -507,9 +507,17 @@ export const renderListingHTML = (mods) => {
 
   mods.forEach((mod) => {
     const item = `
+      <div>
+        <h3>${mod}</h2>
         <p>
-            <a href="/pages/mods/${mod}">${mod}</a>
         </p>
+        <a
+          data-i18n-key="modsPage_button"
+          class="button-primary"
+          href="/pages/mods/${mod}"
+          ></a
+        >
+      </div>
     `;
 
     html += item;

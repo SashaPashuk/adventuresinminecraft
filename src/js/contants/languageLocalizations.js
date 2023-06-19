@@ -307,7 +307,13 @@ export const languageLocalizations = {
     donationDescription__title: "Description of donation",
     donationDescription__survival: "Survival",
     donationDescription__anarchy: "Anarchy",
+
     // modsPage
+    modsPage_h1: "Mods for Minecraft",
+    modsPage_p: `Here you can find all the mods for Minecraft. Mods with quality
+    descriptions and screenshots. Most mods are also available for other
+    Minecraft versions of the game.`,
+    modsPage_button: "Read more",
 
     // -> mc_pe_1_12_2
     mc_pe_1_12_2_h1: `Download Minecraft PE 1.12.2: new features and free access`,
@@ -728,7 +734,13 @@ export const languageLocalizations = {
     donationDescription__title: "Описание доната",
     donationDescription__survival: "Выживание",
     donationDescription__anarchy: "Анархия",
+
     // modsPage
+    modsPage_h1: "Моды для Майнкрафт",
+    modsPage_p: `Здесь вы можете найти все моды для Minecraft. Моды с качественным
+    описанием и скриншотами. Большинство модов доступны и для других
+    версий игры Minecraft.`,
+    modsPage_button: "Подробнее",
 
     // -> mc_pe_1_12_2
     mc_pe_1_12_2_h1: `Скачать Minecraft PE 1.12.2: новые возможности и бесплатный доступ`,

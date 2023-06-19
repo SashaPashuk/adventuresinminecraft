@@ -196,7 +196,15 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
       `:`<ul class="description-block__list">${r.map(({text:e})=>`<li>${e}</li>`).join("")}</ul>`})(e.description)}
     </div>
   `;t===SHOP_ITEM_TYPES.Survival?r.innerHTML=e:a.innerHTML=e},renderListingHTML=e=>{var t=document.querySelector("#mods-listing");let r="";e.forEach(e=>{e=`
+      <div>
+        <h3>${e}</h2>
         <p>
-            <a href="/pages/mods/${e}">${e}</a>
         </p>
+        <a
+          data-i18n-key="modsPage_button"
+          class="button-primary"
+          href="/pages/mods/${e}"
+          ></a
+        >
+      </div>
     `;r+=e}),t.innerHTML=r};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML,renderDonationDescriptionColumnItemsHTML,renderDonationDescriptionItemDescHTML,renderListingHTML};

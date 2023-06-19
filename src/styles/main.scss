@@ -191,10 +191,10 @@ img {
       cursor: pointer;
     }
 
-    & > div {
+    &>div {
       padding: 0 15px 0 0;
 
-      & > p {
+      &>p {
         line-height: 20px;
       }
     }
@@ -238,12 +238,12 @@ img {
     line-height: 150%;
     color: #ffffff;
 
-    & > img {
+    &>img {
       margin-left: 10px;
     }
 
     &-open {
-      & > img {
+      &>img {
         transform: rotate(180deg);
       }
     }
@@ -308,6 +308,7 @@ img {
 @import "pages/order-history";
 @import "pages/cart";
 @import "pages/success-payment";
+@import "pages/mods";
 
 // import css libs
 @import "css-libs/bootstrap-grid.min.css";

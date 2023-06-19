@@ -149,10 +149,14 @@
 
     <main>
       <div>
-        <div class="container" id="mods-listing"></div>
+        <div class="container modsPage">
+          <h1 data-i18n-key="modsPage_h1"></h1>
+          <p data-i18n-key="modsPage_p"></p>
+          <div id="mods-listing"></div>
+        </div>
       </div>
     </main>
-    
+
     <footer class="footer">
   <div class="footer-head">
     <div class="container">
@@ -253,7 +257,8 @@
 
     <script type="module" src="../js/main.js"></script>
     <script type="module" src="../js/mods.js"></script>
-    <script type="module" src="../js/utils//helpers.js"></script>
+    <script type="module" src="../js/utils/helpers.js"></script>
+    <script type="module" src="../js/services/languageLocalization.js"></script>
     <script type="text/javascript">
   window.Trengo = window.Trengo || {};
   window.Trengo.key = "2F6OEsEvI7ySXzK8LjaL";
