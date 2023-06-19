@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (tokensData) {
     navItemForUserDropdownLogic?.classList.remove("hidden");
 
-    if (usernameElement) {
-      usernameElement.innerHTML = JSON.parse(usernameData).slice(0, 15) + "...";
+    if (usernameData && usernameElement) {
+      usernameElement.innerHTML = usernameData.slice(0, 15) + "...";
       usernameElement.setAttribute("title", usernameData);
     }
   } else {
