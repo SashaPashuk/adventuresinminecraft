@@ -205,6 +205,8 @@ export const languageLocalizations = {
     cartPage__usage_30: "30 Days",
     cartPage__usage_forever: "Forever",
     cartPage__price: "Price:",
+    cartPage__check_policy:
+      "I agree to the Terms of service and Privacy Policy.",
 
     // launcherPage
     launcherPage__title: "LUNCHER MINECRAFT WITH MODS",
@@ -777,6 +779,8 @@ export const languageLocalizations = {
     cartPage__usage_30: "30 Дней",
     cartPage__usage_forever: "Навсегда",
     cartPage__price: "Цена:",
+    cartPage__check_policy:
+      "Я согласен с Условиями использования и Политикой конфиденциальности.",
 
     // launcherPage
     launcherPage__title: "ЛАУНЧЕР МАЙНКРАФТ С МОДАМИ",

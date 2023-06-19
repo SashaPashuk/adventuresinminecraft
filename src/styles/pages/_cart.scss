@@ -1,216 +1,229 @@
 .cartPage {
-    &-container {}
+  &-container {
+  }
 
-    &-title {
-        margin-top: 16px;
-        font-family: 'Montserrat';
+  &-title {
+    margin-top: 16px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #ffffff;
+  }
+
+  &-list {
+    margin: 24px 0;
+    display: grid;
+
+    &-item {
+      padding: 24px 27px;
+      background: #28231f;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+
+      &-actionContainer {
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+
+        & > div {
+          // margin-top: 38px;
+          display: grid;
+
+          & > div span {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            color: #fff;
+            width: max-content;
+          }
+
+          & > span {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            color: #fff;
+            width: max-content;
+
+            &:first-child {
+              color: #ffb448;
+            }
+          }
+        }
+      }
+
+      .cart-container {
+        align-self: center;
+        margin-top: 0;
+      }
+
+      &-amount {
+        &-actions {
+          border: 2px solid #393330;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: fit-content;
+          padding: 12px 16px;
+          min-width: 100px;
+
+          span {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            color: #ffffff !important;
+          }
+
+          img {
+            height: 14px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      h3 {
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 16px;
         line-height: 150%;
-        color: #FFFFFF;
+        color: #ffffff;
+        align-self: center;
+        color: #fff;
+        width: 150px;
+      }
 
+      &-usage {
+        &-actions {
+          display: flex;
+          margin-top: 0;
+
+          button {
+            padding: 2px 6px;
+            height: fit-content;
+            border-radius: 10px;
+            border: none;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            width: max-content;
+            background: #393330;
+            color: #ffffff;
+
+            &:first-child {
+              margin-right: 10px;
+            }
+          }
+
+          .selected {
+            background: linear-gradient(180deg, #ffb448 0%, #f8980e 100%);
+          }
+        }
+      }
+    }
+  }
+
+  &-summary {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    & > .button-shade {
+      width: fit-content;
+      align-self: flex-start;
     }
 
-    &-list {
-        margin: 24px 0;
-        display: grid;
+    &-payment {
+      display: flex;
+      align-self: flex-start;
 
-        &-item {
-            padding: 24px 27px;
-            background: #28231F;
-            border-radius: 20px;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 8px;
+      .button-primary {
+        align-self: flex-start;
+        margin-left: 10px;
+      }
 
-            &-actionContainer {
-                flex: 1;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                justify-items: center;
+      &-overall {
+        margin-right: 25px;
+      }
 
-                &>div {
-                    // margin-top: 38px;
-                    display: grid;
+      &-sumContainer {
+        width: max-content;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #ffffff;
+      }
 
-                    &>div span {
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 16px;
-                        line-height: 150%;
-                        color: #FFF;
-                        width: max-content;
-                    }
+      & > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
 
-                    &>span {
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 16px;
-                        line-height: 150%;
-                        color: #FFF;
-                        width: max-content;
+        & > span {
+          width: max-content;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 150%;
+          color: #ffffff;
 
-                        &:first-child {
-                            color: #FFB448;
-                        }
-                    }
-
-                }
-            }
-
-            .cart-container {
-                align-self: center;
-                margin-top: 0;
-            }
-
-            &-amount {
-                &-actions {
-                    border: 2px solid #393330;
-                    border-radius: 10px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    height: fit-content;
-                    padding: 12px 16px;
-                    min-width: 100px;
-
-                    span {
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 16px;
-                        line-height: 150%;
-                        color: #FFFFFF !important;
-                    }
-
-                    img {
-                        height: 14px;
-                        cursor: pointer;
-                    }
-                }
-            }
-
-            h3 {
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 150%;
-                color: #FFFFFF;
-                align-self: center;
-                color: #fff;
-                width: 150px;
-            }
-
-            &-usage {
-                &-actions {
-                    display: flex;
-                    margin-top: 0;
-
-                    button {
-                        padding: 2px 6px;
-                        height: fit-content;
-                        border-radius: 10px;
-                        border: none;
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 16px;
-                        line-height: 150%;
-                        width: max-content;
-                        background: #393330;
-                        color: #FFFFFF;
-
-                        &:first-child {
-                            margin-right: 10px;
-                        }
-
-                    }
-
-                    .selected {
-                        background: linear-gradient(180deg, #FFB448 0%, #F8980E 100%);
-                    }
-                }
-            }
+          &:first-child {
+            font-weight: 500;
+            color: #ffb448;
+          }
         }
+      }
+
+      & > div > input {
+        width: 272px;
+        height: 48px;
+        padding: 12px 26px;
+        border: 2px solid #393330;
+        border-radius: 10px;
+        background-color: #201a16;
+        margin-right: 8px;
+        color: #ffffff;
+
+        &::placeholder {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: #ffffff;
+        }
+      }
     }
-
-    &-summary {
-        margin: 30px 0;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-        &>.button-shade {
-            width: fit-content;
-            align-self: flex-start;
-        }
-
-        &-payment {
-            display: flex;
-            align-self: flex-start;
-
-            .button-primary {
-                align-self: flex-start;
-                margin-left: 10px;
-            }
-
-            &-overall {
-                margin-right: 25px;
-            }
-
-            &-sumContainer {
-                width: max-content;
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 150%;
-                color: #FFFFFF;
-            }
-
-            &>div {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-
-                &>span {
-                    width: max-content;
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 150%;
-                    color: #FFFFFF;
-
-                    &:first-child {
-                        font-weight: 500;
-                        color: #FFB448;
-                    }
-                }
-            }
-
-            &>div>input {
-                width: 272px;
-                height: 48px;
-                padding: 12px 26px;
-                border: 2px solid #393330;
-                border-radius: 10px;
-                background-color: #201a16;
-                margin-right: 8px;
-                color: #FFFFFF;
-
-                &::placeholder {
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 150%;
-                    color: #FFFFFF;
-                }
-            }
-        }
+  }
+  &-policy {
+    text-align: right;
+    input {
+      margin-right: 10px;
+      &:checked {
+        background-color: red;
+      }
     }
+    label {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      color: #ffffff;
+    }
+  }
 }

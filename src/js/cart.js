@@ -65,9 +65,11 @@ const addCartPaymentButtonEventListener = () => {
   const cartPaymentButtonElement = document.querySelector(
     "#cart-payment-button"
   );
+  const checkPolicy = document.querySelector("#check_policy");
 
   cartPaymentButtonElement?.addEventListener("click", async (e) => {
     e.preventDefault();
+    checkPolicy.checked = true;
 
     if (!lsTokens) {
       addToastNotification({
