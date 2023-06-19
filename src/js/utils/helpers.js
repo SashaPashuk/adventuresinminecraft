@@ -499,3 +499,21 @@ export const renderDonationDescriptionItemDescHTML = (
     ? (survivalDescription.innerHTML = html)
     : (anarchyDescription.innerHTML = html);
 };
+
+export const renderListingHTML = (mods) => {
+  const container = document.querySelector("#mods-listing");
+
+  let html = "";
+
+  mods.forEach((mod) => {
+    const item = `
+        <p>
+            <a href="/pages/mods/${mod}">${mod}</a>
+        </p>
+    `;
+
+    html += item;
+  });
+
+  container.innerHTML = html;
+};

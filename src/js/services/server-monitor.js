@@ -1,5 +1,5 @@
 const serverIP = "195.201.168.105";
-const serverPort = 25562;
+const serverPort = 25565;
 
 const getMCServerData = async (ip, port) => {
   const response = await fetch(`https://api.mcsrvstat.us/2/${ip}:${port}`).then(

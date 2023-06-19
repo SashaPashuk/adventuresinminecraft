@@ -16,9 +16,7 @@
 </head>
 
   <body>
-    <main>
-      <div>
-        <header class="header">
+    <header class="header">
   <div class="container-custom">
     <div class="header__row">
       <div class="logo">
@@ -148,12 +146,114 @@
   </div>
 </header>
 
-        <div class="container"></div>
+
+    <main>
+      <div>
+        <div class="container" id="mods-listing"></div>
       </div>
     </main>
-    <div class="toasts-wrapper"></div>
+    
+    <footer class="footer">
+  <div class="footer-head">
+    <div class="container">
+      <div class="footer-head__row">
+        <div class="footer__logo">
+          <a href="/">
+            <img src="../assets/images/logo.svg" alt="" />
+          </a>
+        </div>
+        <div class="footer__nav">
+          <ul class="footer__nav-left">
+            <li class="footer__nav-item">
+              <a data-i18n-key="footer_store" href="/home">Магазин</a>
+            </li>
+            <li class="footer__nav-item">
+              <a data-i18n-key="footer_rules" href="/pages/rules">Правила</a>
+            </li>
+            <li class="footer__nav-item">
+              <a
+                data-i18n-key="footer_donate_description"
+                href="/pages/donation-description"
+                >Описание доната</a
+              >
+            </li>
+            <li class="footer__nav-item">
+              <a data-i18n-key="footer_contacts" href="/pages/contact"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+          <ul class="footer__nav-center">
+            <li class="footer__nav-item">
+              <a data-i18n-key="footer_faq" href="/pages/faq">FAQ</a>
+            </li>
+            <li class="footer__nav-item">
+              <a data-i18n-key="footer_how_to_start" href="/pages/starting-tips"
+                >Как начать играть?</a
+              >
+            </li>
+            <!-- <li class="footer__nav-item">
+              <a
+                data-i18n-key="footer_donate_rules"
+                href="/pages/donate-privileges"
+                >Привелегии доната</a
+              >
+            </li> -->
+            <li class="footer__nav-item">
+              <a
+                data-i18n-key="footer_launchers"
+                href="/pages/launcher-download"
+                >Лаунчеры</a
+              >
+            </li>
+            <li class="footer__nav-item">
+              <a data-i18n-key="footer_mods" href="/pages/mods">Моды</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__row">
+        <p data-i18n-key="footer_copiryted" class="copiryted"></p>
+        <div class="socials">
+          <!-- <a class="socials__link" href="#"
+                    ><img src="/assets/images/icons/facebook_icon.svg" alt=""
+                  /></a> -->
+          <a
+            class="socials__link"
+            href="https://twitter.com/advinminecraft"
+            target="_blank"
+            ><img src="/assets/images/icons/twitter_icon.svg" alt=""
+          /></a>
+          <a
+            class="socials__link"
+            href="https://instagram.com/advinminecraft"
+            target="_blank"
+            ><img src="/assets/images/icons/instagram_icon.svg" alt=""
+          /></a>
+          <!-- <a class="socials__link" href="#"
+                    ><img src="/assets/images/icons/linkedin_icon.svg" alt=""
+                  /></a> -->
+          <a
+            class="socials__link"
+            href="https://t.me/advinminecraft"
+            target="_blank"
+            ><img src="/assets/images/icons/telegram_icon.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="toasts-wrapper"></div>
+
+
     <script type="module" src="../js/main.js"></script>
-    <script type="module" src="../js/services/mods.js"></script>
+    <script type="module" src="../js/mods.js"></script>
+    <script type="module" src="../js/utils//helpers.js"></script>
     <script type="text/javascript">
   window.Trengo = window.Trengo || {};
   window.Trengo.key = "2F6OEsEvI7ySXzK8LjaL";

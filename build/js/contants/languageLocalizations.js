@@ -102,7 +102,97 @@ const languageLocalizations={en:{header_shop:"Store",header_rules:"Rules",header
     [1] Griefing is a type of activity in online games that involves damaging and vandalizing other players, as well as trolling. Killing players is not considered griefing and does not violate server rules in general; however, killing using social engineering (i.e., through deception) is considered griefing.
     [2] A multi-account is an additional account(s) of a player. It is prohibited for one person to register more than two accounts, even from different computers and IP addresses.
     [3] Using features for selfish purposes refers to all actions that can negatively affect gameplay and the operation of the server.
-    `,donationDescription__title:"Description of donation",donationDescription__survival:"Survival",donationDescription__anarchy:"Anarchy"},ru:{header_shop:"Магазин",header_rules:"Правила",header_donate_description:"Описание доната",header_faq:"FAQ",header_how_to_play:"Как начать играть?",header_contacts:"Контакты",header_enter:"Войти",header_signup:"Регистрация",header_orders_history:"История заказов",header_change_password:"Изменить пароль",header_logout:"Выйти",footer_store:"Магазин",footer_rules:"Правила",footer_donate_description:"Описание доната",footer_contacts:"Контакты",footer_faq:"FAQ",footer_how_to_start:"Как начать играть?",footer_donate_rules:"Привелегии доната",footer_launchers:"Лаунчеры",footer_team:"Команда",footer_mods:"Моды",footer_copiryted:"© 2023 Adventures in Minecraft - все права защищены",home_title:"Открой для себя мир Minecraft",home_button_play_now:"Играть сейчас",home_server_monitoring_text:"Cейчас играют",home_server_monitoring_status:"Статус Сервера",home_survival:"Выживание",home_anarchy:"Анархия",home_price_sort:"Сортировать по цене",home_price_sort_asc:"От дешевых к дорогим",home_price_sort_desc:"От дорогих к дешевым",change_password_first_step_title:'Для изменения пароля нажмите на кнопку "Изменить пароль". Вам на почту будет отправлена ссылка, перейдите по ней и введите новый пароль',change_password_title:"Измение пароля",change_password_text:"Введите новый пароль",change_password_button:"Изменить пароль",changePasswordPage__oldPasswordPlaceholder:"Старый пароль",changePasswordPage__newPasswordPlaceholder:"Новый пароль",changePasswordPage__repeatPasswordPlaceholder:"Повторите пароль",team_title:"Команда проекта",team_subtitle:"Люди, которые делают игру приятнее",team_first_name:"Полное Имя",team_first_position:"CEO",team_second_name:"Полное Имя",team_second_position:"Developer",team_third_name:"Полное Имя",team_third_position:"SEO",team_firth_name:"Полное Имя",team_firth_position:"Manager","contact-page__title":"Контакты","contact-page__text":"Свяжитесь с нами если у вас остались вопросы:","contact-page__email":"adventuresinminecraft@gmail.com","contact-page__telegram":"Telegram","starting-tips-page__title":"Как начать играть?","starting-tips-page__button":"Начать сейчас","starting-tips-page__step-one":"Шаг 1: Приобретите игру","starting-tips-page__step-one__description":"Первым шагом для начала игры в Minecraft является приобретение лицензионной копии игры. Вы можете приобрести игру на официальном веб-сайте Minecraft или в других магазинах, где доступна игра для вашей платформы.","starting-tips-page__step-two":"Шаг 2: Установите игру","starting-tips-page__step-two__description":"После приобретения игры вам потребуется установить ее на вашу платформу. Загрузите соответствующую версию Minecraft для вашего устройства (например, Minecraft: Java Edition для ПК или Minecraft: Bedrock Edition для консолей, мобильных устройств или планшетов). Следуйте инструкциям по установке, чтобы завершить процесс.","starting-tips-page__step-three":"Шаг 3: Запустите игру и выберите режим","starting-tips-page__step-three__description":"После установки запустите игру Minecraft. Вам будет предложено выбрать режим игры. Выживание (Survival) - это режим, в котором вам нужно выживать, добывать ресурсы и сражаться с враждебными существами. Творческий (Creative) режим предоставляет вам неограниченные ресурсы и возможность строить без ограничений. Выберите режим, который наиболее соответствует вашим предпочтениям и целям игры.",successPaymentPage__title:"Ваша оплата прошла успешно",successPaymentPage__text:"Ваша оплата прошла успешно. Если вы не получили свой товар попробуйте перезайти на сервер.",successPaymentPage__button:"На Главную",exitConfirmationPage__title:"Вы уверены что хотите выйти?",exitConfirmationPage__button:"Выйти",faqPage__title:"Часто задаваемые вопросы",faqPage__techTitle:"Технические вопросы",faqPage__weTitle:"Кто мы?",faqPage__workTitle:"Как это работает?",faqPage__blockTechTitle:"Технические вопросы",faqPage__firstQuestionLabel:"Почему у меня возникают лаги и зависания во время игры?",faqPage__firstAnswerText:"Лаги и зависания могут возникать по разным причинам, включая недостаточные системные ресурсы, конфликты с другими программами, проблемы с интернет-соединением или не оптимизированными настройками игры. Рекомендуется проверить системные требования Minecraft, закрыть ненужные программы, обновить драйверы графической карты и убедиться, что ваше интернет-соединение стабильно.",faqPage__secondQuestionLabel:"Как я могу улучшить производительность игры?",faqPage__secondAnswerText:`Если у вас возникают проблемы с производительностью в Minecraft, есть несколько вещей, которые можно попробовать:
+    `,donationDescription__title:"Description of donation",donationDescription__survival:"Survival",donationDescription__anarchy:"Anarchy",mc_pe_1_12_2_h1:"Download Minecraft PE 1.12.2: new features and free access",mc_pe_1_12_2_p1:"If you love to play Minecraft Pocket Edition on your mobile device, then you probably already know about the new update - Minecraft PE 1.12.2. In this article, we will tell you about the new features that appeared in the game, and share information about where and how to download Minecraft PE 1.12.2 for Android for free.",mc_pe_1_12_2_h2_1:`
+    New features in Minecraft PE 1.12.2`,mc_pe_1_12_2_p2:`
+    The first thing that catches your eye in the new version of the game is improved optimization. The developers tried to optimize the game as much as possible to make it work more stable and faster on mobile devices.
+    
+    There's also a new feature in Minecraft PE 1.12.2 called Phantoms. Phantoms are celestial creatures that only appear during the night and attack players who are awake. If you don't go to bed on time, phantoms will start attacking you, and this can be dangerous to your survival.
+    
+    Another interesting new addition to the game is the appearance of new blocks. Now you can use bamboo blocks to create new buildings and decorations. There are also new flowers and bushes that you can use to decorate your buildings.
+    `,mc_pe_1_12_2_h2_2:`
+    How to download Minecraft PE 1.12.2 for free on android`,mc_pe_1_12_2_p3:`
+    There are several ways to download Minecraft PE 1.12.2, and all of them can be easily found on the Internet. However, before we get to ways to download Minecraft PE 1.12.2, let's talk about this version of the game and its features.
+    
+    About Minecraft PE 1.12.2
+    Minecraft PE 1.12.2 is one of the latest versions of Minecraft Pocket Edition for mobile devices. This version was released in 2019, and many improvements and bug fixes have been made. One of the main features added in Minecraft PE 1.12.2 is the new "Village & Pillage" game mode, which added many new features and updated villages and mobs.
+    
+    Another important feature added in Minecraft PE 1.12.2 is Xbox Live support, which allows players to create servers and play with friends on Xbox Live. In addition, many other changes and bug fixes have been made in this version, making the game more stable and interesting.
+    
+    Ways to download Minecraft PE 1.12.2
+    You can download Minecraft PE 1.12.2 from the app store on your mobile device. If you are using an Android device, you can find the Minecraft PE 1.12.2 app in the Google Play store. If you are using an iOS device, you can find the app in the App Store.
+    
+    Additionally, you can find and download Minecraft PE 1.12.2 on unofficial websites and forums where users exchange files. However, we do not recommend using these sites, as they may be dangerous for your device and contain viruses.
+    
+    If you want to make sure you are downloading a safe version of Minecraft PE 1.12.2, it is best to download it from the official Minecraft website. To do this, go to the download page on the official Minecraft website and select Minecraft PE 1.12.2. Then select your operating system (Android or iOS) and follow the instructions on the screen to install the game.
+    
+    Minecraft 1.12.2 PE has several improvements and fixes that have made the game even more interesting and convenient for players. Let's take a closer look at some of them:
+    
+    New blocks and items
+    With the advent of version 1.12.2 PE, new blocks and items have appeared in the game, which allow players to create even more interesting and diverse constructions. Among the new blocks are the blocks of stone bricks with a pattern, which look very beautiful and can be used to decorate various buildings. In addition, there are new colored glasses in the game, which allow you to create multicolored windows and walls.
+    
+    Graphics improvements
+    In Minecraft 1.12.2 PE, some graphics improvements have been made to make the game even more beautiful and realistic. The textures of blocks and objects have been improved, and new effects have been added, such as rain and snow effects, which allow for an even more realistic atmosphere in the game.
+    
+    Interface improvements
+    With version 1.12.2 PE, the game has some interface improvements that have made the game more convenient and intuitive for players. Some interface elements, such as the inventory menu and the crafting menu, have been changed, allowing players to find the necessary items and crafting recipes faster.
+    
+    Fixing bugs and errors
+    With the new version of Minecraft, many bugs and bugs that were present in previous versions of the game have been fixed. Thanks to this, players can enjoy the game without unpleasant surprises associated with the incorrect operation of game mechanics and functions.
+    `,mc_pe_1_12_2_h2_3:`
+    Conclusion`,mc_pe_1_12_2_p4:`
+    Overall, Minecraft 1.12.2 PE is a great game that offers players lots of opportunities for creativity and fun. It is free to download and is available on many devices, including Android. If you like games that give you freedom of choice and creativity, Minecraft 1.12.2 PE is the game for you. You can download it for free on many sites. When installing the game on your Android device, don't forget to enable the option to install apps from unknown sources. If you have any problems installing or playing Minecraft PE 1.12.2, you can always ask for help from the Minecraft community.
+
+    `,journeymap_mod_h1_1:"Journey Map mod for Minecraft: a handy navigation tool",journeymap_mod_p1:"If you play Minecraft, you probably know how important it is to have a good map to navigate the game world. But sometimes the game's standard map may not do the job. In such cases, a modification called Journey Map comes to the rescue. In this text we will tell you what this mod is and how to use it.",journeymap_mod_h2_1:`
+    What is Journey Map mod for Minecraft?`,journeymap_mod_p2:"Journey Map is a modification for Minecraft that adds a convenient and functional map to the game. It allows players to easily navigate in the Minecraft world and easily find the right places. The mod contains many useful features, such as teleportation, displaying the location of mobs and players, path tracking and more.",journeymap_mod_h2_2:`
+    How do I download and install the Journey Map mod?`,journeymap_mod_p3:`You can download the mod on the official CurseForge website or on the modder's website. Find the mod page and choose the correct version of Minecraft. Download the mod file and move it to the "mods" folder inside the Minecraft game folder.`,journeymap_mod_h2_3:`
+    The main functions of the Journey Map mod`,journeymap_mod_p4:`
+    Real Time Map: Shows all the places you've explored in Minecraft in real time.
+    Player and mob location display: shows the location of all players and mobs on the map, making it easier to find your friends and navigate the world around you.
+    Teleportation: allows players to move around the map easily. You can simply click on the place where you want to appear and your character will instantly move there.
+    Tracking Path: The mod allows players to track their path and monitor their movement on the map.
+    Night Vision: Enables night vision mode on the map, allowing players to see better in the dark.
+    Marking places: the mod allows players to create notes on the map and mark places they have visited.
+
+    To download the Journey Map mod for Minecraft, you must first find it on the appropriate resource on the Internet. After that, you need to click on the "Download" button and wait for the download to complete. After downloading, you need to install the mod in the game.
+
+    Once the mod is installed, players can use Journey Map to create world maps. You can use the mod to create normal maps as well as 3D world maps. Journey Map also has many settings that allow you to change the appearance of the map, customize the display of various objects, and customize the display of labels on the map.
+
+    In addition, Journey Map has a number of unique features that make the gameplay even more interesting. For example, with the help of the mod you can create routes, display various useful resources on the map, track the position of other players on the map, and much more.
+
+    In order to use Journey Map in the game, you need to download and install the appropriate mod. The mod is available for download on many sites, such as CurseForge, Planet Minecraft and other similar resources. Downloading the mod on these sites is absolutely free.
+
+    However, before you install the mod on the game, make sure that the version of the mod and the version of the game are the same. For example, if the player is using Minecraft 1.12.2, he needs to download and install Journey Map for this version of the game.
+
+    In addition, the Journey Map mod has a number of hardware requirements. For correct work of the mod you need to have game computer with following parameters: Intel Core i5 processor or higher, at least 4 GB of RAM, video card with OpenGL 2.1 support or higher.
+
+    If you play Minecraft and are often looking for new mods, you've probably encountered the problem of navigation. How to navigate in unexplored places and where important objects are located if you can't use the mini-map? The solution to this problem can be found with the Journey Map mod.
+
+    Journey Map: What is it?
+    Journey Map is a mod for Minecraft that adds to the game a convenient and informative world map, with which you can easily navigate and find important objects. It is one of the most popular map mods in Minecraft, which has a user-friendly interface and many useful features.
+
+    The main functions of the mod
+    Journey Map allows you to display on the map the player's location, as well as the routes you have taken. In addition, the mod allows you to display on the map all important objects, such as villages, towns, mountain ranges, etc. You can mark your own points on the map to easily find the right places later.
+
+    The mod also allows you to make entries in the travel diary, where you can save information about places you've visited and important events. This is very convenient for those who like to explore the game world.
+
+    One of the features of Journey Map is the ability to view the map in real time. You can follow the movements of other players on the server, as well as track the movement of mobs.
+
+    How do I install a mod?
+    If you are interested in the Journey Map mod, you can download it from the official website. The mod is compatible with Minecraft 1.12.2.
+
+    Installing the mod is simple enough. Download the mod and put it in the mods folder inside the game folder. After that, run the game and enjoy the new features.
+
+    In addition, the Journey Map mod contains an automatic route saving feature, which can be very useful for players who are exploring new places. With this feature, you can save your routes and use them later to return to places you are interested in.
+
+    How do I install the Journey Map mod?
+
+    To install the Journey Map mod, you will need to download and install Minecraft Forge, which is one of the most popular mods for Minecraft. After installing Forge, you will need to download the Journey Map mod and place it in the mods folder in your Minecraft directory. After starting Minecraft, you can activate the mod by selecting it in the mods menu.
+
+    If you want to download Journey Map mod, you need to pay attention to the version of Minecraft you are using and the version of the mod. Some versions of the mod may not be compatible with certain versions of Minecraft, so it is important to choose the correct version of the mod for your version of Minecraft.
+
+    In conclusion, the Journey Map mod is a great way to improve your Minecraft gameplay by adding new features and functions. With it, you'll be able to create detailed world maps to help you better navigate the world around you, and use routes to get around the world faster. If you're looking for a way to improve your Minecraft gaming experience, we recommend trying the Journey Map mod.
+
+    `},ru:{header_shop:"Магазин",header_rules:"Правила",header_donate_description:"Описание доната",header_faq:"FAQ",header_how_to_play:"Как начать играть?",header_contacts:"Контакты",header_enter:"Войти",header_signup:"Регистрация",header_orders_history:"История заказов",header_change_password:"Изменить пароль",header_logout:"Выйти",footer_store:"Магазин",footer_rules:"Правила",footer_donate_description:"Описание доната",footer_contacts:"Контакты",footer_faq:"FAQ",footer_how_to_start:"Как начать играть?",footer_donate_rules:"Привелегии доната",footer_launchers:"Лаунчеры",footer_team:"Команда",footer_mods:"Моды",footer_copiryted:"© 2023 Adventures in Minecraft - все права защищены",home_title:"Открой для себя мир Minecraft",home_button_play_now:"Играть сейчас",home_server_monitoring_text:"Cейчас играют",home_server_monitoring_status:"Статус Сервера",home_survival:"Выживание",home_anarchy:"Анархия",home_price_sort:"Сортировать по цене",home_price_sort_asc:"От дешевых к дорогим",home_price_sort_desc:"От дорогих к дешевым",change_password_first_step_title:'Для изменения пароля нажмите на кнопку "Изменить пароль". Вам на почту будет отправлена ссылка, перейдите по ней и введите новый пароль',change_password_title:"Измение пароля",change_password_text:"Введите новый пароль",change_password_button:"Изменить пароль",changePasswordPage__oldPasswordPlaceholder:"Старый пароль",changePasswordPage__newPasswordPlaceholder:"Новый пароль",changePasswordPage__repeatPasswordPlaceholder:"Повторите пароль",team_title:"Команда проекта",team_subtitle:"Люди, которые делают игру приятнее",team_first_name:"Полное Имя",team_first_position:"CEO",team_second_name:"Полное Имя",team_second_position:"Developer",team_third_name:"Полное Имя",team_third_position:"SEO",team_firth_name:"Полное Имя",team_firth_position:"Manager","contact-page__title":"Контакты","contact-page__text":"Свяжитесь с нами если у вас остались вопросы:","contact-page__email":"adventuresinminecraft@gmail.com","contact-page__telegram":"Telegram","starting-tips-page__title":"Как начать играть?","starting-tips-page__button":"Начать сейчас","starting-tips-page__step-one":"Шаг 1: Приобретите игру","starting-tips-page__step-one__description":"Первым шагом для начала игры в Minecraft является приобретение лицензионной копии игры. Вы можете приобрести игру на официальном веб-сайте Minecraft или в других магазинах, где доступна игра для вашей платформы.","starting-tips-page__step-two":"Шаг 2: Установите игру","starting-tips-page__step-two__description":"После приобретения игры вам потребуется установить ее на вашу платформу. Загрузите соответствующую версию Minecraft для вашего устройства (например, Minecraft: Java Edition для ПК или Minecraft: Bedrock Edition для консолей, мобильных устройств или планшетов). Следуйте инструкциям по установке, чтобы завершить процесс.","starting-tips-page__step-three":"Шаг 3: Запустите игру и выберите режим","starting-tips-page__step-three__description":"После установки запустите игру Minecraft. Вам будет предложено выбрать режим игры. Выживание (Survival) - это режим, в котором вам нужно выживать, добывать ресурсы и сражаться с враждебными существами. Творческий (Creative) режим предоставляет вам неограниченные ресурсы и возможность строить без ограничений. Выберите режим, который наиболее соответствует вашим предпочтениям и целям игры.",successPaymentPage__title:"Ваша оплата прошла успешно",successPaymentPage__text:"Ваша оплата прошла успешно. Если вы не получили свой товар попробуйте перезайти на сервер.",successPaymentPage__button:"На Главную",exitConfirmationPage__title:"Вы уверены что хотите выйти?",exitConfirmationPage__button:"Выйти",faqPage__title:"Часто задаваемые вопросы",faqPage__techTitle:"Технические вопросы",faqPage__weTitle:"Кто мы?",faqPage__workTitle:"Как это работает?",faqPage__blockTechTitle:"Технические вопросы",faqPage__firstQuestionLabel:"Почему у меня возникают лаги и зависания во время игры?",faqPage__firstAnswerText:"Лаги и зависания могут возникать по разным причинам, включая недостаточные системные ресурсы, конфликты с другими программами, проблемы с интернет-соединением или не оптимизированными настройками игры. Рекомендуется проверить системные требования Minecraft, закрыть ненужные программы, обновить драйверы графической карты и убедиться, что ваше интернет-соединение стабильно.",faqPage__secondQuestionLabel:"Как я могу улучшить производительность игры?",faqPage__secondAnswerText:`Если у вас возникают проблемы с производительностью в Minecraft, есть несколько вещей, которые можно попробовать:
 
     - Уменьшить графические настройки игры.
     - Закрыть другие запущенные программы, чтобы освободить системные ресурсы.
@@ -207,4 +297,94 @@ const languageLocalizations={en:{header_shop:"Store",header_rules:"Rules",header
     [1] Под гриферством подразумевается вид активности в онлайн-играх, заключающийся во вредительстве и вандализме в отношении других игроков, а так-же троллинг. Убийство игроков не является гриферством, и нарушением правил сервера в целом, однако убийство с использованием социальной инженерии, т.е. обманным путем расценивается как гриферство.
     [2] Мультиаккаунт — дополнительная(ые) учётная(ые) запись(и) игрока. Запрещается одному лицу регистрировать более двух аккаунтов, даже с разных ЭВМ и IP-адресов.
     [3] Под использованием возможности в корыстных целях подразумевается все действия которые могут отрицательно повлиять на игровой процесс, а также на работу сервера.
-    `,donationDescription__title:"Описание доната",donationDescription__survival:"Выживание",donationDescription__anarchy:"Анархия"}};export{languageLocalizations};
+    `,donationDescription__title:"Описание доната",donationDescription__survival:"Выживание",donationDescription__anarchy:"Анархия",mc_pe_1_12_2_h1:"Скачать Minecraft PE 1.12.2: новые возможности и бесплатный доступ",mc_pe_1_12_2_p1:"Если вы любите играть в Minecraft Pocket Edition на своём мобильном устройстве, то вы наверняка уже знаете о новом обновлении - Minecraft PE 1.12.2. В этой статье мы расскажем вам о новых возможностях, которые появились в игре, а также поделимся информацией о том, где и как скачать Minecraft PE 1.12.2 на андроид бесплатно.",mc_pe_1_12_2_h2_1:`
+    Новые возможности Minecraft PE 1.12.2`,mc_pe_1_12_2_p2:`
+    Первое, что бросается в глаза в новой версии игры, это улучшенная оптимизация. Разработчики постарались максимально оптимизировать игру, чтобы она работала стабильнее и быстрее на мобильных устройствах.
+    
+    Также в Minecraft PE 1.12.2 появилась новая функция - "Фантомы". Фантомы - это небесные существа, которые появляются только во время ночи и атакуют игроков, которые не спят. Если вы не ложитесь спать вовремя, то фантомы начнут атаковать вас, и это может быть опасно для вашего выживания.
+    
+    Ещё одним интересным новшеством в игре стало появление новых блоков. Теперь вы можете использовать блоки из бамбука, чтобы создавать новые строения и декорации. Также в игре появились новые цветы и кустарники, которые можно использовать для украшения своих построек.
+    `,mc_pe_1_12_2_h2_2:`
+    Как скачать Minecraft PE 1.12.2 бесплатно на андроид`,mc_pe_1_12_2_p3:`
+    Существует несколько способов скачать Minecraft PE 1.12.2, и все они могут быть легко найдены в Интернете. Однако, прежде чем мы перейдем к способам загрузки Minecraft PE 1.12.2, давайте поговорим об этой версии игры и ее функциях.
+    
+    О Minecraft PE 1.12.2
+    Minecraft PE 1.12.2 - это одна из последних версий Minecraft Pocket Edition для мобильных устройств. Эта версия была выпущена в 2019 году, и в ней были внесены многие улучшения и исправления ошибок. Одна из главных функций, добавленных в Minecraft PE 1.12.2, - это новый режим игры "Village & Pillage", который добавил множество новых функций и обновил деревни и мобов.
+    
+    Другая важная функция, добавленная в Minecraft PE 1.12.2, - это поддержка Xbox Live, что позволяет игрокам создавать серверы и играть с друзьями на Xbox Live. Кроме того, в этой версии были внесены многие другие изменения и исправления ошибок, делающие игру более стабильной и интересной.
+    
+    Способы загрузки Minecraft PE 1.12.2
+    Скачать Minecraft PE 1.12.2 можно из магазина приложений на вашем мобильном устройстве. Если вы используете устройство на базе Android, вы можете найти приложение Minecraft PE 1.12.2 в магазине Google Play. Если вы используете устройство на базе iOS, вы можете найти приложение в App Store.
+    
+    Кроме того, вы можете найти и загрузить Minecraft PE 1.12.2 на неофициальных веб-сайтах и форумах, где пользователи обмениваются файлами. Однако, мы не рекомендуем использовать эти сайты, так как они могут быть опасны для вашего устройства и содержать вирусы.
+    
+    Если вы хотите быть уверены в том, что загружаете безопасную версию Minecraft PE 1.12.2, лучше всего загрузить ее с официального сайта Minecraft. Для этого перейдите на страницу загрузки на официальном сайте Minecraft и выберите версию Minecraft PE 1.12.2. Затем выберите вашу операционную систему (Android или iOS) и следуйте инструкциям на экране, чтобы установить игру.
+    
+    В версии Minecraft 1.12.2 PE появилось несколько улучшений и исправлений, которые сделали игру еще более интересной и удобной для игроков. Рассмотрим подробнее некоторые из них:
+    
+    Новые блоки и предметы
+    С появлением версии 1.12.2 PE в игре появились новые блоки и предметы, которые позволяют игрокам создавать еще более интересные и разнообразные конструкции. Среди новых блоков можно выделить блоки из каменного кирпича с рисунком, которые выглядят очень красиво и могут использоваться для декорирования различных построек. Кроме того, в игре появились новые цветные стекла, которые позволяют создавать разноцветные окна и стены.
+    
+    Улучшения графики
+    В версии Minecraft 1.12.2 PE были внесены некоторые улучшения графики, которые сделали игру еще более красивой и реалистичной. Были улучшены текстуры блоков и предметов, а также добавлены новые эффекты, такие как эффекты дождя и снега, которые позволяют создавать еще более реалистичную атмосферу в игре.
+    
+    Улучшения интерфейса
+    С версии 1.12.2 PE в игре появились некоторые улучшения интерфейса, которые сделали игру более удобной и интуитивно понятной для игроков. Были изменены некоторые элементы интерфейса, такие как меню инвентаря и меню крафта, что позволяет игрокам быстрее находить необходимые предметы и рецепты крафта.
+    
+    Исправления ошибок и багов
+    С появлением новой версии Minecraft были исправлены многие ошибки и баги, которые присутствовали в предыдущих версиях игры. Благодаря этому игроки могут наслаждаться игрой без неприятных сюрпризов, связанных с неправильной работой игровых механик и функций.
+    `,mc_pe_1_12_2_h2_3:`
+    Вывод`,mc_pe_1_12_2_p4:`
+    В целом, Minecraft 1.12.2 PE - это отличная игра, которая предлагает игрокам множество возможностей для творчества и развлечения. Скачать ее можно бесплатно, и она доступна на многих устройствах, в том числе на Android. Если вы любите игры, которые дают вам свободу выбора и творчества, Minecraft 1.12.2 PE - это игра для вас. Скачать ее бесплатно можно на многих сайтах. При установке игры на устройство Android не забудьте включить опцию установки приложений из неизвестных источников. Если у вас возникнут проблемы с установкой или игрой в Minecraft PE 1.12.2, вы всегда можете обратиться за помощью к сообществу Minecraft.
+    
+    `,journeymap_mod_h1_1:"Journey Map мод для Minecraft: удобный инструмент для навигации",journeymap_mod_p1:"Если вы играете в Minecraft, вы наверняка знаете, как важно иметь хорошую карту, чтобы ориентироваться в игровом мире. Но иногда стандартная карта игры может не справляться с этой задачей. В таких случаях на помощь приходит модификация под названием Journey Map. В этом тексте мы расскажем вам, что это за мод и как им пользоваться.",journeymap_mod_h2_1:`
+    Что такое Journey Map мод для Minecraft?`,journeymap_mod_p2:"Journey Map - это модификация для Minecraft, которая добавляет в игру удобную и функциональную карту. Она позволяет игрокам легко ориентироваться в мире Minecraft и легко находить нужные места. Мод содержит множество полезных функций, таких как телепортация, отображение местоположения мобов и игроков, отслеживание пути и многое другое.",journeymap_mod_h2_2:`
+    Как скачать и установить Journey Map мод?`,journeymap_mod_p3:'Скачать мод можно на официальном сайте CurseForge или на сайте мододела. Найдите страницу мода и выберите нужную версию Minecraft. Скачайте файл мода и переместите его в папку "mods" внутри папки игры Minecraft.',journeymap_mod_h2_3:`
+    Основные функции Journey Map мода`,journeymap_mod_p4:`
+    Карта в реальном времени: показывает все места, которые вы исследовали в Minecraft, в режиме реального времени.
+    Отображение местоположения игроков и мобов: показывает местоположение всех игроков и мобов на карте, что делает поиск друзей и ориентирование в окружающем мире легче.
+    Телепортация: позволяет игрокам легко перемещаться по карте. Вы можете просто щелкнуть на месте, где вы хотите появиться, и ваш персонаж мгновенно переместится туда.
+    Отслеживание пути: мод позволяет игрокам отслеживать свой путь и следить за их перемещением на карте.
+    Ночное видение: включает режим ночного видения на карте, что позволяет игрокам лучше видеть в темноте.
+    Маркировка мест: мод позволяет игрокам создавать заметки на карте и маркировать места, которые они посетили.
+
+    Чтобы скачать мод Journey Map для Minecraft, необходимо сначала найти его на соответствующем ресурсе в Интернете. После этого нужно нажать на кнопку "Скачать" и дождаться завершения загрузки. После загрузки необходимо установить мод в игру.
+
+    Как только мод установлен, игроки смогут использовать Journey Map для создания карт мира. С помощью мода можно создавать как обычные карты, так и 3D-карты мира. Также Journey Map имеет множество настроек, позволяющих изменять внешний вид карты, настраивать отображение различных объектов и настраивать отображение меток на карте.
+
+    Кроме того, Journey Map имеет ряд уникальных функций, которые делают игровой процесс еще более интересным. Например, с помощью мода можно создавать маршруты, отображать на карте различные полезные ресурсы, отслеживать положение других игроков на карте и многое другое.
+
+    Для того чтобы использовать Journey Map в игре, необходимо скачать и установить соответствующий мод. Мод доступен для скачивания на многих сайтах, например на CurseForge, Planet Minecraft и других подобных ресурсах. Скачивание мода на этих сайтах происходит абсолютно бесплатно.
+
+    Однако, перед установкой мода на игру, необходимо убедиться, что версия мода и версия игры совпадают. Например, если игрок использует Minecraft 1.12.2, то ему нужно скачать и установить Journey Map для этой версии игры.
+
+    Кроме того, мод Journey Map имеет ряд требований к железу. Для корректной работы мода необходимо, чтобы игровой компьютер соответствовал следующим параметрам: процессор Intel Core i5 или выше, оперативная память не менее 4 ГБ, видеокарта с поддержкой OpenGL 2.1 или выше.
+
+    Если вы играете в Майнкрафт и часто ищете новые моды, то вы наверняка сталкивались с проблемой навигации. Как ориентироваться в неизведанных местах и где находятся важные объекты, если вы не можете использовать миникарту? Решение проблемы можно найти с помощью мода Journey Map.
+
+    Journey Map: что это такое?
+    Journey Map - это мод для Minecraft, который добавляет в игру удобную и информативную карту мира, с помощью которой вы сможете легко ориентироваться и находить важные объекты. Это один из самых популярных модов на карту в Minecraft, который имеет удобный интерфейс и множество полезных функций.
+
+    Основные функции мода
+    Journey Map позволяет отображать на карте местоположение игрока, а также маршруты, которые вы прошли. Кроме того, мод позволяет отображать на карте все важные объекты, такие как деревни, города, горные хребты и т.д. Вы можете отмечать на карте свои собственные точки, чтобы легко находить нужные места в дальнейшем.
+
+    Мод также позволяет делать записи в дневнике путешествий, где вы можете сохранять информацию о посещенных местах и важных событиях. Это очень удобно для тех, кто любит заниматься исследованием игрового мира.
+
+    Одной из особенностей Journey Map является возможность просмотра карты в режиме реального времени. Вы можете следить за перемещением других игроков на сервере, а также отслеживать движение мобов.
+
+    Как установить мод?
+    Если вы заинтересовались модом Journey Map, то вы можете скачать его с официального сайта. Мод совместим с версией Minecraft 1.12.2.
+
+    Установка мода достаточно проста. Скачайте мод и поместите его в папку mods внутри папки с игрой. После этого запустите игру и наслаждайтесь новыми возможностями.
+
+    Кроме того, Journey Map мод содержит функцию автоматического сохранения маршрутов, которая может быть очень полезна для игроков, занимающихся исследованием новых мест. С помощью этой функции вы можете сохранять свои маршруты и использовать их позже, чтобы вернуться в интересующие вас места.
+
+    Как установить Journey Map мод?
+
+    Для установки Journey Map мода вам понадобится загрузить и установить Minecraft Forge, который является одним из самых популярных модов для Minecraft. После установки Forge вам нужно скачать Journey Map мод и поместить его в папку mods в вашей директории Minecraft. После запуска Minecraft вы можете активировать мод, выбрав его в меню модов.
+
+    Если вы хотите скачать Journey Map мод, необходимо обратить внимание на версию Minecraft, которую вы используете, и на версию мода. Некоторые версии мода могут быть несовместимы с определенными версиями Minecraft, поэтому важно выбрать правильную версию мода для вашей версии Minecraft.
+
+    В заключение, Journey Map мод - это отличный способ улучшить игровой процесс в Minecraft, добавив новые функции и возможности. С его помощью вы сможете создавать детальные карты мира, которые помогут вам лучше ориентироваться в окружающем мире, и использовать маршруты, чтобы быстрее перемещаться по миру. Если вы ищете способ улучшить свой опыт игры в Minecraft, рекомендуем попробовать Journey Map мод.
+
+    `}};export{languageLocalizations};

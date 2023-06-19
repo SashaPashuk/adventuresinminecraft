@@ -1,4 +1,4 @@
-import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";import{errorsLanguageLocalizationsEnum}from"../contants/errors.js";import{getLocalizedError}from"../services/errorsLanguageLocalization.js";const addToastNotification=({message:e,duration:t=3e3})=>{var r=document.querySelector(".toasts-wrapper");const a=document.createElement("div");a.className="toast-container";var s=document.createElement("div"),i=document.createElement("p"),o=document.createElement("img");o.className="toast-container-closeBtn",o.setAttribute("src","../assets/images/icons/cross_icon.svg"),o.addEventListener("click",()=>{a.remove()}),i.innerHTML=e,s.appendChild(i),a.appendChild(s),a.appendChild(o),r.appendChild(a),setTimeout(()=>{a.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`};function descriptionList(e,r=!0){if(!e?.includes("1."))return`<li>${e}</li>`;var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),a=[];for(let e=0;e<t.length;e+=2)a.push({number:t[e],text:t[e+1].trim()});return a.map(({number:e,text:t})=>`<li>${r?e:""}${t}</li>`).join("")}const renderShopItemInfoHTML=({description:e,price:t,forever_price:r,market_name:a,image_name:s,type:i,time_to_use:o,is_one_time:n})=>{var d=document.querySelector(".product-info__content"),o=`<div class="content__usage-actions-wrapper ${t&&r?"":"hidden-visibility"}">
+import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";import{errorsLanguageLocalizationsEnum}from"../contants/errors.js";import{getLocalizedError}from"../services/errorsLanguageLocalization.js";const addToastNotification=({message:e,duration:t=3e3})=>{var r=document.querySelector(".toasts-wrapper");const a=document.createElement("div");a.className="toast-container";var s=document.createElement("div"),i=document.createElement("p"),n=document.createElement("img");n.className="toast-container-closeBtn",n.setAttribute("src","../assets/images/icons/cross_icon.svg"),n.addEventListener("click",()=>{a.remove()}),i.innerHTML=e,s.appendChild(i),a.appendChild(s),a.appendChild(n),r.appendChild(a),setTimeout(()=>{a.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="../assets/images/products/${t}/${e}" alt=${e}-image />`};function descriptionList(e,r=!0){if(!e?.includes("1."))return`<li>${e}</li>`;var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),a=[];for(let e=0;e<t.length;e+=2)a.push({number:t[e],text:t[e+1].trim()});return a.map(({number:e,text:t})=>`<li>${r?e:""}${t}</li>`).join("")}const renderShopItemInfoHTML=({description:e,price:t,forever_price:r,market_name:a,image_name:s,type:i,time_to_use:n,is_one_time:o})=>{var d=document.querySelector(".product-info__content"),n=`<div class="content__usage-actions-wrapper ${t&&r?"":"hidden-visibility"}">
     <span data-i18n-key="productPage__usage" class="price-block__title">
       Срок действия покупки:
     </span>
@@ -7,7 +7,7 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
         data-i18n-key="productPage__usage_30"
         id="item-usage-days"
         data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]}
-        class=${o===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"button-primary selected":""} selected button-primary
+        class=${n===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"button-primary selected":""} selected button-primary
       >
         "30 Дней"
       </button>
@@ -15,7 +15,7 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
         data-i18n-key="productPage__usage_forever"
         id="item-usage-forever"
         data-type=${SHOP_ITEM_TIME_USAGE.Forever}
-        class=${o===SHOP_ITEM_TIME_USAGE.Forever?"button-primary selected":"button-shade"}
+        class=${n===SHOP_ITEM_TIME_USAGE.Forever?"button-primary selected":"button-shade"}
       >
         Навсегда
       </button>
@@ -31,14 +31,14 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
         <span data-i18n-key="productPage__price" class="price-block__title">Цeна:</span>
         <span class="price-block__price" id="product_price">€${Number(t)||Number(r)}</span>
       </div>
-      ${o}
+      ${n}
     </div>
     <div class="content__buy-block buy-block">
-      <p data-i18n-key="productPage__amount" class="buy-block__quantity-title quantity-title ${n?"hidden":""}">
+      <p data-i18n-key="productPage__amount" class="buy-block__quantity-title quantity-title ${o?"hidden":""}">
         Количество:
       </p>
       <div class="buy-block__quantity-control quantity-control">
-        <div class="quantity-control__number ${n?"hidden":""}">
+        <div class="quantity-control__number ${o?"hidden":""}">
           <button
             class="quantity-control__number-btn quantity-control__number-btn-reduce"
           ></button>
@@ -52,12 +52,12 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
     </div>
   `,e=document.querySelector(".product-info__slider"),t=`
     ${renderShopItemImgHTML({shopItemName:s,shopItemType:i.toLowerCase(),imageClass:"slider__main-img"})}
-  `;e.innerHTML=t,d.innerHTML=a},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let l="";e?.forEach(({product_id:e,id:t,amount:r,sum_item_price:a,time_to_use:s,image_name:i,market_name:o,is_one_time:n,price:d,forever_price:c})=>{t=`
+  `;e.innerHTML=t,d.innerHTML=a},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let l="";e?.forEach(({product_id:e,id:t,amount:r,sum_item_price:a,time_to_use:s,image_name:i,market_name:n,is_one_time:o,price:d,forever_price:c})=>{t=`
         <li class="cartPage-list-item" data-cart-id=${e||t}>
-          <h3>${o||i.slice(0,-4)}</h3>
+          <h3>${n||i.slice(0,-4)}</h3>
           <div class="cartPage-list-item-actionContainer">
             <div 
-              class="cartPage-list-item-amount ${n?"disabled":""}"
+              class="cartPage-list-item-amount ${o?"disabled":""}"
               title="${getLocalizedError(errorsLanguageLocalizationsEnum.ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR)}"
             >
               <span data-i18n-key="cartPage__amount">Количество:</span>
@@ -166,7 +166,7 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
           </ul>
         </div>
       </li>
-    `;a+=e}),t.innerHTML=a},renderShopItemsListHTML=e=>{var t=document.querySelector(".products__list");let o="";e?.results?.forEach(({price:e,market_name:t,image_name:r,id:a,type:s,forever_price:i})=>{r=`
+    `;a+=e}),t.innerHTML=a},renderShopItemsListHTML=e=>{var t=document.querySelector(".products__list");let n="";e?.results?.forEach(({price:e,market_name:t,image_name:r,id:a,type:s,forever_price:i})=>{r=`
           <div class="products-card">
             ${renderShopItemImgHTML({shopItemName:r,shopItemType:s.toLowerCase()})}
             <p class="products-card__title">
@@ -179,7 +179,7 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
                 <button class="products-card__buy" data-id=${a}></button>
             </div>
           </div>
-      `;o+=r}),t.innerHTML=o},renderDonationDescriptionColumnItemsHTML=(e,t=SHOP_ITEM_TYPES.Survival,a)=>{if(e?.results){var s=document.querySelector("#survival_column"),i=document.querySelector("#anarchy_column");let r="";e?.results.forEach((e,t)=>{t=`
+      `;n+=r}),t.innerHTML=n},renderDonationDescriptionColumnItemsHTML=(e,t=SHOP_ITEM_TYPES.Survival,a)=>{if(e?.results){var s=document.querySelector("#survival_column"),i=document.querySelector("#anarchy_column");let r="";e?.results.forEach((e,t)=>{t=`
           <button 
             class="donation-description__nav-btn ${(a?a.id===e.id:0===t)?"donation-description__nav-btn--active":""} ${e.type}" 
             data-name="${e.type.toLowerCase()}_${e.market_name.toLowerCase()}"
@@ -195,4 +195,8 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
         </ul>
       `:`<ul class="description-block__list">${r.map(({text:e})=>`<li>${e}</li>`).join("")}</ul>`})(e.description)}
     </div>
-  `;t===SHOP_ITEM_TYPES.Survival?r.innerHTML=e:a.innerHTML=e};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML,renderDonationDescriptionColumnItemsHTML,renderDonationDescriptionItemDescHTML};
+  `;t===SHOP_ITEM_TYPES.Survival?r.innerHTML=e:a.innerHTML=e},renderListingHTML=e=>{var t=document.querySelector("#mods-listing");let r="";e.forEach(e=>{e=`
+        <p>
+            <a href="/pages/mods/${e}">${e}</a>
+        </p>
+    `;r+=e}),t.innerHTML=r};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML,renderDonationDescriptionColumnItemsHTML,renderDonationDescriptionItemDescHTML,renderListingHTML};
