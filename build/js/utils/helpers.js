@@ -195,16 +195,15 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
         </ul>
       `:`<ul class="description-block__list">${r.map(({text:e})=>`<li>${e}</li>`).join("")}</ul>`})(e.description)}
     </div>
-  `;t===SHOP_ITEM_TYPES.Survival?r.innerHTML=e:a.innerHTML=e},renderListingHTML=e=>{var t=document.querySelector("#mods-listing");let r="";e.forEach(e=>{e=`
+  `;t===SHOP_ITEM_TYPES.Survival?r.innerHTML=e:a.innerHTML=e},renderListingHTML=e=>{var t=document.querySelector("#mods-listing");let a="";e.forEach(({name:e,url:t,imageName:r})=>{r=`
       <div>
+        ${r?`<img src="../../assets/images/mods/${r}" alt="" />`:'<div class="lol"></div>'}
         <h3>${e}</h2>
-        <p>
-        </p>
         <a
           data-i18n-key="modsPage_button"
           class="button-primary"
-          href="/pages/mods/${e}"
+          href="${t}"
           ></a
         >
       </div>
-    `;r+=e}),t.innerHTML=r};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML,renderDonationDescriptionColumnItemsHTML,renderDonationDescriptionItemDescHTML,renderListingHTML};
+    `;a+=r}),t.innerHTML=a};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML,renderDonationDescriptionColumnItemsHTML,renderDonationDescriptionItemDescHTML,renderListingHTML};

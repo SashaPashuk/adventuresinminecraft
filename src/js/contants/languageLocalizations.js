@@ -309,10 +309,26 @@ export const languageLocalizations = {
     donationDescription__anarchy: "Anarchy",
 
     // modsPage
-    modsPage_h1: "Mods for Minecraft",
-    modsPage_p: `Here you can find all the mods for Minecraft. Mods with quality
-    descriptions and screenshots. Most mods are also available for other
-    Minecraft versions of the game.`,
+    modsPage_h1: "Minecraft mods: unique opportunities for the game",
+    modsPage_p_1:
+      "If you are a Minecraft fan, then you are probably familiar with Minecraft mods. Mods provide unique features for the game that are not available in the standard version. In this text, we will look at what Minecraft mods are, where and how to download them, and how to install them on your computer or mobile device.",
+    modsPage_h2_1: "What are Minecraft mods?",
+    modsPage_p_2:
+      "Minecraft mods are add-ons to the game that allow players to change its basic parameters, add new blocks and items, and improve the graphics and sound design. As a result, players have unlimited possibilities for creativity and experimentation.",
+    modsPage_h2_2: "Where and how to download Minecraft mods?",
+    modsPage_p_3:
+      "You can download mods for Minecraft on various sites dedicated to this game. One of the most popular and reliable sites is CurseForge. On this site you can find many mods and addons for Minecraft.",
+    modsPage_h3_1: "Download free mods for Minecraft",
+    modsPage_p_4:
+      "Most mods for Minecraft can be downloaded for free. Some mods may have a paid version with additional features, but usually the free version is enough to provide interesting gameplay.",
+    modsPage_h3_2: "Download Minecraft mods for android",
+    modsPage_p_5: `Downloading mods for Minecraft on android also does not cause much difficulty. For this, there are many specialized sites where you can find and download mods for Minecraft for Android for free. For example, you can use the sites mod-minecraft.net or mcpedb.com. To download a mod, go to the site, find the mod you want and download it to your device. Then open the file manager on your android device, find the "Downloads" folder and open the downloaded file. Next, copy the mod file into the Minecraft game folder on your device. After that, run Minecraft, select the desired world and make sure that the mod is successfully installed and working.`,
+    modsPage_h3_3: "Download mods for Minecraft on your phone",
+    modsPage_p_6:
+      "If you want to download Minecraft mods to your phone, you need to download a special version of the game - Minecraft Pocket Edition (PE). On Android devices, you can download Minecraft PE from the Google Play Store, and on iOS devices - from the App Store. After installing the game on your phone, you can download mods using specialized sites such as Mod-Minecraft.net, MCPEDL.com or ModPE.xyz. On these sites you will find a large number of mods for Minecraft PE, which you can download for free. To install a mod on Minecraft PE, you need to download the mod file and import it into the game using the special application BlockLauncher. After that, you need to run Minecraft PE and make sure that the mod is successfully installed and working.",
+    modsPage_h2_3: "How do I install Minecraft mods?",
+    modsPage_p_7: `Installing Minecraft mods depends on which version of Minecraft you are installing the mod on. In general, installing a mod involves downloading the mod file and placing it in the correct Minecraft folder. Some mods may also require additional libraries or mods to be installed. If you're using a specialized launcher, you'll need to choose the right version of the game and install the mod using the built-in mod manager. If you install a mod through the CurseForge platform, then you need to find the right mod on the site and install it through a special Twitch client. If you decide to install the mod manually, then you need to find the .minecraft folder on your computer, create a mods folder and place the mod file there. After that, you need to run the game and make sure that the mod is successfully installed and working.
+    In conclusion, we can say that there are many resources and sites where you can download mods for Minecraft, including for Minecraft PE on android. It is important to choose reliable and safe resources to avoid installing malware on your device.`,
     modsPage_button: "Read more",
 
     // -> mc_pe_1_12_2
@@ -736,10 +752,26 @@ export const languageLocalizations = {
     donationDescription__anarchy: "Анархия",
 
     // modsPage
-    modsPage_h1: "Моды для Майнкрафт",
-    modsPage_p: `Здесь вы можете найти все моды для Minecraft. Моды с качественным
-    описанием и скриншотами. Большинство модов доступны и для других
-    версий игры Minecraft.`,
+    modsPage_h1: "Моды Майнкрафт: уникальные возможности для игры",
+    modsPage_p_1:
+      "Если вы являетесь фанатом игры Minecraft, то вы, вероятно, знакомы с модами для Minecraft. Моды предоставляют уникальные возможности для игры, которые не доступны в стандартной версии. В этом тексте мы рассмотрим, что такое моды Minecraft, где и как их скачать, а также как установить их на свой компьютер или мобильное устройство.",
+    modsPage_h2_1: "Что такое моды Minecraft?",
+    modsPage_p_2:
+      "Моды Minecraft - это дополнения к игре, которые позволяют игрокам изменять ее основные параметры, добавлять новые блоки и предметы, а также улучшать графику и звуковое оформление. В результате игроки получают неограниченные возможности для творчества и экспериментов.",
+    modsPage_h2_2: "Где и как скачать моды Minecraft?",
+    modsPage_p_3:
+      "Скачать моды на Minecraft можно на различных сайтах, посвященных этой игре. Одним из самых популярных и надежных является сайт CurseForge. На этом сайте вы можете найти множество модов и аддонов для Minecraft.",
+    modsPage_h3_1: "Скачать бесплатно моды на Minecraft",
+    modsPage_p_4:
+      "Большинство модов для Minecraft можно скачать бесплатно. Некоторые моды могут иметь платную версию с дополнительными функциями, но обычно бесплатной версии достаточно для обеспечения интересного геймплея.",
+    modsPage_h3_2: "Скачать моды на Minecraft на андроид",
+    modsPage_p_5: `Скачивание модов на Minecraft на андроид также не вызывает особых трудностей. Для этого существует множество специализированных сайтов, где можно найти и скачать моды для Minecraft на андроид бесплатно. Например, вы можете воспользоваться сайтами mod-minecraft.net или mcpedb.com. Чтобы скачать мод, перейдите на сайт, найдите нужный мод и скачайте его на свое устройство. Затем откройте файл менеджер на своем андроид-устройстве, найдите папку "Downloads" и откройте скачанный файл. Далее, скопируйте файл мода в папку с игрой Minecraft на своем устройстве. После этого запустите Minecraft, выберите нужный мир и убедитесь, что мод успешно установлен и работает.`,
+    modsPage_h3_3: "Скачать моды для Minecraft на телефон",
+    modsPage_p_6:
+      "Если вы хотите скачать моды для Minecraft на телефон, то вам потребуется скачать специальную версию игры - Minecraft Pocket Edition (PE). На Android-устройствах вы можете скачать Minecraft PE из Google Play Store, а на устройствах iOS - из App Store. После установки игры на ваш телефон, вы можете скачивать моды с помощью специализированных сайтов, таких как Mod-Minecraft.net, MCPEDL.com или ModPE.xyz. На этих сайтах вы найдете большое количество модов для Minecraft PE, которые можно скачать бесплатно. Чтобы установить мод на Minecraft PE, вам нужно скачать файл мода и импортировать его в игру, используя специальное приложение BlockLauncher. После этого нужно запустить Minecraft PE и убедиться, что мод успешно установлен и работает.",
+    modsPage_h2_3: "Как установить моды Minecraft?",
+    modsPage_p_7: `Установка модов Minecraft зависит от того, на какую версию Minecraft вы устанавливаете мод. В общем случае установка мода заключается в том, чтобы скачать файл мода и поместить его в нужную папку Minecraft. Некоторые моды могут также требовать установки дополнительных библиотек или модов. Если вы используете специализированный лаунчер, то вам нужно выбрать нужную версию игры и установить мод, используя встроенный менеджер модов. Если вы устанавливаете мод через платформу CurseForge, то вам нужно найти нужный мод на сайте и установить его через специальный клиент Twitch. Если же вы решите установить мод вручную, то вам нужно найти папку .minecraft на вашем компьютере, создать папку mods и поместить туда файл мода. После этого нужно запустить игру и убедиться, что мод успешно установлен и работает.
+    В заключение, можно сказать, что существует множество ресурсов и сайтов, где можно скачать моды для Minecraft, в том числе и для Minecraft PE на андроид. Важно выбирать надежные и безопасные ресурсы, чтобы избежать установки вредоносного ПО на свой устройство.`,
     modsPage_button: "Подробнее",
 
     // -> mc_pe_1_12_2

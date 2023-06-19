@@ -505,16 +505,19 @@ export const renderListingHTML = (mods) => {
 
   let html = "";
 
-  mods.forEach((mod) => {
+  mods.forEach(({ name, url, imageName }) => {
     const item = `
       <div>
-        <h3>${mod}</h2>
-        <p>
-        </p>
+        ${
+          imageName
+            ? `<img src="../../assets/images/mods/${imageName}" alt="" />`
+            : `<div class="lol"></div>`
+        }
+        <h3>${name}</h2>
         <a
           data-i18n-key="modsPage_button"
           class="button-primary"
-          href="/pages/mods/${mod}"
+          href="${url}"
           ></a
         >
       </div>
