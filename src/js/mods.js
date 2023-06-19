@@ -2,19 +2,23 @@ import { renderListingHTML } from "./utils/helpers.js";
 
 const mods = [
   {
-    name: "journeymap-mod",
+    name: "Journey Map Mod",
     url: "/pages/mods/journeymap-mod",
     imageName: "map.avif",
   },
   { name: "1.12.2", url: "/pages/mods/1122", imageName: "1122.jpeg" },
   {
-    name: "minecraft-pe-1-12-2",
+    name: "Minecraft PE 1.12.2",
     url: "/pages/mods/1122/minecraft-pe-1-12-2",
     imageName: "1122pe.jpeg",
   },
-  { name: "1.12.2 cars", url: "/pages/mods/1122/cars", imageName: "cars.jpeg" },
   {
-    name: "1.12.2 oruzhie",
+    name: "1.12.2 (Cars)",
+    url: "/pages/mods/1122/cars",
+    imageName: "cars.jpeg",
+  },
+  {
+    name: "1.12.2 (Oruzhie)",
     url: "/pages/mods/1122/oruzhie",
     imageName: "oruzhie.jpeg",
   },
