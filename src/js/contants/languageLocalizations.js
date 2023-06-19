@@ -570,8 +570,14 @@ export const languageLocalizations = {
       "Go to one of these resources, choose the desired weapon mod, and follow the download and installation instructions. Keep in mind that installing mods requires some technical skills, so carefully read the instructions and follow the recommendations.",
     "1122_oruzhie_p_11":
       "Enjoy new possibilities and thrilling battles with weapon mods in Minecraft 1.12.2!",
-  },
 
+    // cookie
+    cookie_title: "We use cookies",
+    cookie_textInnerHTML: `We use cookies to ensure you get the best experience on our website. By
+  using this site, you agree to the <span>Privacy Policy</span> and
+  <span>Terms of Service</span>`,
+    cookie_button: "Accept & Close",
+  },
   ru: {
     // header
     header_shop: "Магазин",
@@ -1147,6 +1153,11 @@ export const languageLocalizations = {
       "Перейдите на один из этих ресурсов, выберите желаемый мод на оружие и следуйте инструкциям по скачиванию и установке. Не забывайте о том, что установка модов требует некоторых технических навыков, поэтому внимательно читайте инструкции и следуйте рекомендациям.",
     "1122_oruzhie_p_11":
       "Наслаждайтесь новыми возможностями и захватывающими битвами с модами на оружие в Майнкрафт 1.12.2!",
+    // cookie
+    cookie_title: "Мы используем файлы cookie",
+    cookie_textInnerHTML: `Мы используем файлы cookie, чтобы обеспечить вам наилучшие впечатления от работы с нашим сайтом. Пользуясь сайтом используя этот сайт, вы соглашаетесь с <span>Политика конфиденциальности</span> и
+      <span>Условия предоставления услуг</span>`,
+    cookie_button: "Принять и закрыть",
   },
 };
 

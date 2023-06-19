@@ -300,6 +300,55 @@ img {
   }
 }
 
+.cookie {
+  &_container {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    color: #fff;
+    background: rgba(20, 20, 20, 0.76);
+    border-top: 1px solid rgba(255, 253, 253, 0.15);
+    box-shadow: 0px -20px 50px rgba(0, 0, 0, 0.81);
+    backdrop-filter: blur(25px);
+    padding: 24px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+
+  &_text-wrapper {
+    max-width: 610px;
+  }
+
+  &_title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &_text {
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+
+    &>span {
+      color: $primary-orange;
+    }
+  }
+
+  &>.button-primary {
+    align-self: center
+  }
+
+}
+
 // import components styles
 @import "components/header";
 @import "components/form";
