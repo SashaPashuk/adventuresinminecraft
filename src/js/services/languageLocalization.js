@@ -91,6 +91,11 @@ function translateElement(element) {
     element.placeholder = translation;
   }
 
+  if (element.dataset.i18nKey.includes("_desc")) {
+    element.content = translation;
+    return;
+  }
+
   if (element.dataset.i18nKey.includes("InnerHTML")) {
     element.innerHTML = translation;
     return;

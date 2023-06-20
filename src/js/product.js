@@ -43,6 +43,7 @@ LanguageEventObserever.subscribe(async (data) => {
   addShopItemUsageEventListener(shopItemsResponse);
 
   ContentLoadingEventObserever.broadcast(true);
+  changeMetadate(shopItemsResponse);
 });
 
 // Event Listeners
@@ -62,6 +63,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   addShopItemUsageEventListener(shopItemsResponse);
 
   ContentLoadingEventObserever.broadcast(true);
+  changeMetadate(shopItemsResponse);
 });
 
 const addBuyShopItemEventListener = (item) => {
@@ -289,4 +291,15 @@ const addShopItemUsageEventListener = (product) => {
       }
     });
   });
+};
+
+const changeMetadate = (item) => {
+  const title = document.querySelector("title");
+  const desc = document.querySelector('meta[name="description"]');
+
+  title.innerText = title.innerText.replace("{product_name}", item.market_name);
+  desc.setAttribute(
+    "content",
+    desc.getAttribute("content").replace("{product_name}", item.market_name)
+  );
 };

@@ -1,0 +1,18 @@
+User-agent: *
+Allow: */styles/*.css
+Allow: /assets/images/*.gif
+Allow: /assets/images/*.jpg
+Allow: /assets/images/*.jpeg
+Allow: /assets/images/*.png
+Allow: /js/*.js$
+Allow: /js/*.js?
+# Directories
+Disallow: /cdn-cgi/*
+Disallow: /pages/change-password-page
+Disallow: /pages/login
+Disallow: /pages/registration
+Disallow: /pages/exit-confirmation-page
+Disallow: /pages/order-history-page
+Disallow: /pages/cart-page
+
+Sitemap: https://adventuresinminecraft.com/sitemap.xm

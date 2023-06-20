@@ -1,22 +1,26 @@
 .rules {
   margin-top: 24px;
   margin-bottom: 48px;
+
   &__title {
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
     color: $shade-white;
   }
+
   &__row {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
+
   &__nav {
     max-width: 272px;
     background: $shade-black;
     border-radius: 20px;
     margin-right: 19px;
+
     &-btn {
       width: 100%;
       font-weight: 700;
@@ -27,34 +31,42 @@
       background: transparent;
       border: none;
       cursor: pointer;
+
       &:hover {
         box-sizing: border-box;
         color: $primary-orange;
         background: $primary-orange-contrast22;
         border-top: 1px solid $primary-orange-contrast22;
+
         &:first-child {
           border-radius: 20px 20px 0 0;
         }
+
         &:last-child {
           border-radius: 0 0 20px 20px;
         }
       }
+
       &--active {
         background: $primary-orange;
+
         &:first-child {
           border-radius: 20px 20px 0 0;
         }
+
         &:last-child {
           border-radius: 0 0 20px 20px;
         }
       }
     }
   }
+
   &__block {
     max-width: 850px;
     background: $shade-black;
     border-radius: 20px;
     padding: 24px 29px 36px 35px;
+
     &-title {
       font-weight: 700;
       font-size: 24px;
@@ -63,6 +75,7 @@
       color: $shade-white;
       margin-bottom: 16px;
     }
+
     &-text {
       font-weight: 400;
       font-size: 16px;

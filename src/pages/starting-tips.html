@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
-    <title>Adventuresin Minecraft</title>
+    <title data-i18n-key="meta_starting_tips_title"> </title>
+    <meta data-i18n-key="meta_starting_tips_desc" name="description" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,20 +15,24 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     @@include('../components/header.html')
     <main>
       <div class="starting-tips">
         <div class="container">
           <div class="starting-tips__row">
-            <h3
+            <h1
               data-i18n-key="starting-tips-page__title"
               class="starting-tips__title"
-            ></h3>
+            ></h1>
             <div class="starting-tips__list">
               <div class="starting-tips__item">
                 <div class="starting-tips__item-img">
-                  <img src="../assets/images/icons/download_icon.svg" alt="" />
+                  <img
+                    src="../assets/images/icons/download_icon.svg"
+                    alt="download_icon"
+                  />
                 </div>
                 <p
                   data-i18n-key="starting-tips-page__step-one"
@@ -41,7 +46,10 @@
               <div class="starting-tips__item-arrow"></div>
               <div class="starting-tips__item">
                 <div class="starting-tips__item-img">
-                  <img src="../assets/images/icons/corner_arrows.svg" alt="" />
+                  <img
+                    src="../assets/images/icons/corner_arrows.svg"
+                    alt="corner_arrows_icon"
+                  />
                 </div>
                 <p
                   data-i18n-key="starting-tips-page__step-two"
@@ -55,7 +63,10 @@
               <div class="starting-tips__item-arrow"></div>
               <div class="starting-tips__item">
                 <div class="starting-tips__item-img">
-                  <img src="../assets/images/icons/sword_icon.svg" alt="" />
+                  <img
+                    src="../assets/images/icons/sword_icon.svg"
+                    alt="sword_icon"
+                  />
                 </div>
                 <p
                   data-i18n-key="starting-tips-page__step-three"

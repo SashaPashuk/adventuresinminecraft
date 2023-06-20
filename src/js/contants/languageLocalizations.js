@@ -1,9 +1,68 @@
+const serverIP = "195.201.168.105";
+
 export const languageLocalizations = {
   en: {
+    // meta
+    meta_cart_title: "Cart | Adventures In Minecraft Server",
+    meta_cart_desc: `Cart ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
+    meta_change_password_title:
+      "Change Password | Adventures In Minecraft Server",
+    meta_change_password_desc: `Change Password ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
+    meta_contact_title: "Contacts | Adventures In Minecraft Server",
+    meta_contact_desc: `Contacts ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
+    meta_donate_privileges_title:
+      "Donate Privileges | Adventures In Minecraft Server",
+    meta_donate_privileges_desc: `Donate Privileges ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
+    meta_donation_title:
+      "Donation Description | Adventures In Minecraft Server",
+    meta_donation_desc: `Donation Description ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
+    meta_exit_confirmation_title:
+      "Exit Confirmation | Adventures In Minecraft Server",
+    meta_exit_confirmation_desc: `Exit Confirmation ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
+    meta_faq_title: "FAQ | Adventures In Minecraft Server",
+    meta_faq_desc: `FAQ ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
+    meta_launcher_download_title: "Launchers | Adventures In Minecraft Server",
+    meta_launcher_download_desc: `Launchers ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
+    meta_login_title: "Login | Adventures In Minecraft Server",
+    meta_login_desc: `Login ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
+    meta_mods_title: "Mods | Adventures In Minecraft Server",
+    meta_mods_desc: `Mods ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
+    meta_order_history_title: "Order History | Adventures In Minecraft Server",
+    meta_order_history_desc: `Order History ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
+    meta_registration_title: "Registration | Adventures In Minecraft Server",
+    meta_registration_desc: `Registration ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
+    meta_rules_title: "Rules | Adventures In Minecraft Server",
+    meta_rules_desc: `Rules ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
+    meta_starting_tips_title: "Starting Tips | Adventures In Minecraft Server",
+    meta_starting_tips_desc: `Starting Tips ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
+    meta_success_payment_title:
+      "Success Payment | Adventures In Minecraft Server",
+    meta_success_payment_desc: `Success Payment ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
+    meta_team_title: "Team | Adventures In Minecraft Server",
+    meta_team_desc: `Team ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
+    meta_product_title:
+      "Get your own {product_name} status on Adventures In Minecraft Server",
+    meta_product_desc: `Get access to the {product_name} rank and suffix on the Adventures In Minecraft project ✅ Purchase of privileges cases keys at our minecraft server ☑️  ${serverIP} ✅`,
     // header
     header_shop: "Store",
     header_rules: "Rules",
-    header_donate_description: "Description of donation",
+    header_donate: "Description of donation",
     header_faq: "FAQ",
     header_how_to_play: "How to start playing?",
     header_contacts: "Contacts",
@@ -16,7 +75,7 @@ export const languageLocalizations = {
     // footer
     footer_store: "Store",
     footer_rules: "Rules",
-    footer_donate_description: "Description of donation",
+    footer_donate: "Description of donation",
     footer_contacts: "Contacts",
     footer_faq: "FAQ",
     footer_how_to_start: "How to start playing?",
@@ -215,6 +274,7 @@ export const languageLocalizations = {
     launcherPage__btn: "Download",
 
     // rulesPage
+    rulesPage_title: "Rules",
     rulesPage__general_rules_title: "General rules",
     rulesPage__player_rights_and_duties_title: "Rights and duties of players",
     rulesPage__admin_rights_and_duties_title:
@@ -579,10 +639,68 @@ export const languageLocalizations = {
     cookie_button: "Accept & Close",
   },
   ru: {
+    // meta
+    meta_cart_title: "Корзина | Cервер Adventures In Minecraft",
+    meta_cart_desc: `Корзина ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
+    meta_change_password_title: "Смена пароля | Cервер Adventures In Minecraft",
+    meta_change_password_desc: `Смена пароля ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
+    meta_contact_title: "Контакты | Cервер Adventures In Minecraft",
+    meta_contact_desc: `Контакты ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
+    meta_donate_privileges_title:
+      "Привелегии доната | Cервер Adventures In Minecraft",
+    meta_donate_privileges_desc: `Привелегии доната ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
+    meta_donation_description_title:
+      "Описание доната | Cервер Adventures In Minecraft",
+    meta_donation_description_desc: `Описание доната ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
+    meta_exit_confirmation_title:
+      "Подтверждение выхода | Cервер Adventures In Minecraft",
+    meta_exit_confirmation_desc: `Подтверждение выхода ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
+    meta_faq_title: "FAQ | Cервер Adventures In Minecraft",
+    meta_faq_desc: `FAQ ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
+    meta_launcher_download_title: "Лаунчеры | Cервер Adventures In Minecraft",
+    meta_launcher_download_desc: `Лаунчеры ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
+    meta_login_title: "Логин | Cервер Adventures In Minecraft",
+    meta_login_desc: `Логин ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
+    meta_mods_title: "Моды | Cервер Adventures In Minecraft",
+    meta_mods_desc: `Моды ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
+    meta_order_history_title:
+      "История заказов | Cервер Adventures In Minecraft",
+    meta_order_history_desc: `История заказов ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
+    meta_registration_title: "Регистрация | Cервер Adventures In Minecraft",
+    meta_registration_desc: `Регистрация ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
+    meta_rules_title: "Правила | Cервер Adventures In Minecraft",
+    meta_rules_desc: `Правила ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
+    meta_starting_tips_title:
+      "Стартовые советы | Cервер Adventures In Minecraft",
+    meta_starting_tips_desc: `Стартовые советы ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
+    meta_success_payment_title:
+      "Успешная оплата | Cервер Adventures In Minecraft",
+    meta_success_payment_desc: `Успешная оплата ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
+    meta_team_title: "Команда | Cервер Adventures In Minecraft",
+    meta_team_desc: `Команда ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
+    meta_product_title:
+      "Купить {product_name} статус на сервере Adventures In Minecraft",
+    meta_product_desc: `{product_name} статус на проекте Adventures In Minecraft ✅ Покупка доната привилегий ключей кейсов для сервера майнкрафт ☑️  ${serverIP} ✅`,
     // header
     header_shop: "Магазин",
     header_rules: "Правила",
-    header_donate_description: "Описание доната",
+    header_donate: "Описание доната",
     header_faq: "FAQ",
     header_how_to_play: "Как начать играть?",
     header_contacts: "Контакты",
@@ -595,7 +713,7 @@ export const languageLocalizations = {
     // footer
     footer_store: "Магазин",
     footer_rules: "Правила",
-    footer_donate_description: "Описание доната",
+    footer_donate: "Описание доната",
     footer_contacts: "Контакты",
     footer_faq: "FAQ",
     footer_how_to_start: "Как начать играть?",
@@ -795,6 +913,7 @@ export const languageLocalizations = {
     launcherPage__btn: "Скачать",
 
     // rulesPage
+    rulesPage_title: "Правила",
     rulesPage__general_rules_title: "Общие правила",
     rulesPage__player_rights_and_duties_title: "Права и обязанности игроков",
     rulesPage__admin_rights_and_duties_title:

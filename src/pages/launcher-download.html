@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
-    <title>Adventuresin Minecraft</title>
+    <title data-i18n-key="meta_launcher_download_title"> </title>
+    <meta data-i18n-key="meta_launcher_download_desc" name="description" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +15,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     @@include('../components/header.html')
     <main>
@@ -21,12 +23,12 @@
         <div class="container">
           <div class="launcher-download__row">
             <div class="launcher-download__info">
-              <h3
+              <h1
                 data-i18n-key="launcherPage__title"
                 class="launcher-download__info-title"
               >
                 ЛАУНЧЕР МАЙНКРАФТ С МОДАМИ
-              </h3>
+              </h1>
               <div class="launcher-download__info-text">
                 <p data-i18n-key="launcherPage__desc">
                   Лаунчер - это программа, которая позволяет игрокам быстро и
@@ -44,7 +46,10 @@
             <div class="launcher-download__list">
               <div class="launcher-download__item">
                 <div class="launcher-download__item-img">
-                  <img src="../assets/images/icons/windows_icon.png" alt="" />
+                  <img
+                    src="../assets/images/icons/windows_icon.png"
+                    alt="windows_icon"
+                  />
                 </div>
                 <h4 class="launcher-download__item-title">Windows</h4>
                 <p class="launcher-download__item-subtitle">11 MB</p>
@@ -57,7 +62,10 @@
               </div>
               <div class="launcher-download__item">
                 <div class="launcher-download__item-img">
-                  <img src="../assets/images/icons/apple_icon.png" alt="" />
+                  <img
+                    src="../assets/images/icons/apple_icon.png"
+                    alt="apple_icon"
+                  />
                 </div>
                 <h4 class="launcher-download__item-title">MacOS</h4>
                 <p class="launcher-download__item-subtitle">11 MB</p>
@@ -70,7 +78,10 @@
               </div>
               <div class="launcher-download__item">
                 <div class="launcher-download__item-img">
-                  <img src="../assets/images/icons/android_icon.png" alt="" />
+                  <img
+                    src="../assets/images/icons/android_icon.png"
+                    alt="android_icon"
+                  />
                 </div>
                 <h4 class="launcher-download__item-title">Android</h4>
                 <p class="launcher-download__item-subtitle">11 MB</p>

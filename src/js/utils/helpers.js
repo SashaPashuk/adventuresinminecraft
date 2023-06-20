@@ -52,7 +52,10 @@ export const renderShopItemImgHTML = ({
 }) => {
   const classAttribute = imageClass ? `class="${imageClass}"` : "";
 
-  return `<img ${classAttribute} src="../assets/images/products/${shopItemType}/${shopItemName}" alt=${shopItemName}-image />`;
+  return `<img ${classAttribute} src="../assets/images/products/${shopItemType}/${shopItemName}" alt="${shopItemName.slice(
+    0,
+    -4
+  )} | adventures in minecraft"  />`;
 };
 
 function descriptionList(description, hasItemNumber = true) {
