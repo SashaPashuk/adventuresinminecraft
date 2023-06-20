@@ -518,8 +518,7 @@ export const renderListingHTML = (mods) => {
           data-i18n-key="modsPage_button"
           class="button-primary"
           href="${url}"
-          ></a
-        >
+        ></a>
       </div>
     `;
 

@@ -203,7 +203,6 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
           data-i18n-key="modsPage_button"
           class="button-primary"
           href="${t}"
-          ></a
-        >
+        ></a>
       </div>
     `;a+=r}),t.innerHTML=a};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML,renderDonationDescriptionColumnItemsHTML,renderDonationDescriptionItemDescHTML,renderListingHTML};
