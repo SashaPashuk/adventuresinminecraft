@@ -7,6 +7,8 @@ const cleanCSS = require("gulp-clean-css");
 const imagemin = require("gulp-imagemin");
 const fileInclude = require("gulp-file-include");
 const uglify = require("gulp-uglify");
+const fs = require("fs");
+const path = require("path");
 
 const src = {
   html: "src/**/*.html",
@@ -73,8 +75,14 @@ function serve() {
           var url = req.url;
           if (!url.endsWith(".html") && url.indexOf(".") === -1) {
             url += ".html";
-            req.url = url;
           }
+
+          var filePath = path.join(dist.root, url);
+          if (!fs.existsSync(filePath)) {
+            url = "/pages/404.html";
+          }
+          req.url = url;
+
           next();
         },
       ],
@@ -88,7 +96,6 @@ function serve() {
       ],
     },
   });
-
   gulp.watch(src.html, html);
   gulp.watch(dist.pages, html);
   gulp.watch(src.css, css);

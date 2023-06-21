@@ -56,7 +56,6 @@ img {
 // overall css classes
 
 .container-mods {
-
   * {
     margin: revert !important;
     padding: revert !important;
@@ -66,7 +65,6 @@ img {
   li {
     list-style: square;
   }
-
 }
 
 .container-custom {
@@ -205,10 +203,10 @@ img {
       cursor: pointer;
     }
 
-    &>div {
+    & > div {
       padding: 0 15px 0 0;
 
-      &>p {
+      & > p {
         line-height: 20px;
       }
     }
@@ -252,12 +250,12 @@ img {
     line-height: 150%;
     color: #ffffff;
 
-    &>img {
+    & > img {
       margin-left: 10px;
     }
 
     &-open {
-      &>img {
+      & > img {
         transform: rotate(180deg);
       }
     }
@@ -317,13 +315,12 @@ img {
     gap: 40px;
   }
 
-
   &_text-wrapper {
     max-width: 610px;
   }
 
   &_title {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -332,21 +329,20 @@ img {
 
   &_text {
     margin-top: 10px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
 
-    &>span {
+    & > span {
       color: $primary-orange;
     }
   }
 
-  &>.button-primary {
-    align-self: center
+  & > .button-primary {
+    align-self: center;
   }
-
 }
 
 // import components styles
@@ -372,6 +368,7 @@ img {
 @import "pages/cart";
 @import "pages/success-payment";
 @import "pages/mods";
+@import "pages/404";
 
 // import css libs
 @import "css-libs/bootstrap-grid.min.css";

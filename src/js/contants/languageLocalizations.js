@@ -637,6 +637,10 @@ export const languageLocalizations = {
   using this site, you agree to the <span>Privacy Policy</span> and
   <span>Terms of Service</span>`,
     cookie_button: "Accept & Close",
+    // 404
+    "404Page__title": "Page not found",
+    "404Page__subtitle": "This page never existed or has been deleted",
+    "404Page__home_link": "Return to main page",
   },
   ru: {
     // meta
@@ -1277,6 +1281,10 @@ export const languageLocalizations = {
     cookie_textInnerHTML: `Мы используем файлы cookie, чтобы обеспечить вам наилучшие впечатления от работы с нашим сайтом. Пользуясь сайтом используя этот сайт, вы соглашаетесь с <span>Политика конфиденциальности</span> и
       <span>Условия предоставления услуг</span>`,
     cookie_button: "Принять и закрыть",
+    // 404
+    "404Page__title": "Страница не найдена",
+    "404Page__subtitle": "Этой страницы никогда не было, либо она была удалена",
+    "404Page__home_link": "Вернуться на главную",
   },
 };
 

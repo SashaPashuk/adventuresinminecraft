@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <title>Adventuresin Minecraft</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    @@include('../components/header.html')
+    <main>
+      <div class="error">
+        <h1 class="error-title" data-i18n-key="404Page__title"></h1>
+        <p class="error-subtitle" data-i18n-key="404Page__subtitle"></p>
+        <a class="error-link" href="/" data-i18n-key="404Page__home_link"></a>
+      </div>
+    </main>
+    @@include('../components/footer.html')
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/home.js"></script>
+    <script type="module" src="../js/services/languageLocalization.js"></script>
+    @@include('../components/trengo-widget.html')
+  </body>
+</html>
