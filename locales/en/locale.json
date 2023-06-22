@@ -2,6 +2,20 @@
     "domain": "http://139.28.37.35",
     "home_metadate_title": "Home | Adventures In Minecraft Server",
     "home_metadate_description": "Home ☑️ 195.201.168.105 Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server",
+    "404_metadate_title": "Not Found Page | Adventures In Minecraft Server",
+    "404_metadate_description": "Not Found Page ☑️ 195.201.168.105 Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server",
+    "mods_1122_metadate_title": "1.12.2 | Adventures In Minecraft Server",
+    "mods_1122_metadate_description": "1.12.2 ☑️ 195.201.168.105 Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server",
+    "mods_1122_cars_metadate_title": "1.12.2 (Cars) | Adventures In Minecraft Server",
+    "mods_1122_cars_metadate_description": "1.12.2 (Cars) ☑️ 195.201.168.105 Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server",
+    "mods_1122_pe_metadate_title": "Minecraft PE 1.12.2 | Adventures In Minecraft Server",
+    "mods_1122_pe_metadate_description": "Minecraft PE 1.12.2 ☑️ 195.201.168.105 Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server",
+    "mods_1122_oruzhie_metadate_title": "1.12.2 (Oruzhie) | Adventures In Minecraft Server",
+    "mods_1122_oruzhie_metadate_description": "1.12.2 (Oruzhie) ☑️ 195.201.168.105 Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server",
+    "mods_1165_metadate_title": "1.16.5 | Adventures In Minecraft Server",
+    "mods_1165_metadate_description": "1.16.5 ☑️ 195.201.168.105 Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server",
+    "mods_journeymap_mod_metadate_title": "Journey Map Mod | Adventures In Minecraft Server",
+    "mods_journeymap_mod_metadate_description": "Journey Map Mod ☑️ 195.201.168.105 Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server",
     "canonical_home_href": "/en/home",
     "canonical_404_href": "/en/pages/404",
     "canonical_cart_href": "/en/pages/cart-page",
@@ -14,6 +28,12 @@
     "canonical_launcher_download_href": "/en/pages/launcher-download",
     "canonical_login_href": "/en/pages/login",
     "canonical_mods_href": "/en/pages/mods",
+    "canonical_mods_1122_href": "/en/pages/mods/mods/1122",
+    "canonical_mods_1122_cars_href": "/en/pages/mods/mods/1122/cars",
+    "canonical_mods_1122_pe_href": "/en/pages/mods/mods/1122/minecraft-pe-1-12-2",
+    "canonical_mods_1122_oruzhie_href": "/en/pages/mods/mods/1122/oruzhie",
+    "canonical_mods_journeymap_mod_href": "/en/pages/mods/mods/journeymap_mod",
+    "canonical_mods_1165_href": "/en/pages/mods/mods/1165",
     "canonical_order_history_href": "/en/pages/order-history-page",
     "canonical_product_href": "/en/pages/product",
     "canonical_registration_href": "/en/pages/registration",
@@ -24,6 +44,42 @@
     "home_page_url": {
         "en": "/en/home",
         "ru": "/ru/home"
+    },
+    "mods_page_url": {
+        "en": "/en/pages/mods",
+        "ru": "/ru/pages/mods"
+    },
+    "mods_1122_page_url": {
+        "en": "/en/pages/mods/1122",
+        "ru": "/ru/pages/mods/1122"
+    },
+    "mods_1122_cars_page_url": {
+        "en": "/en/pages/mods/1122/cars",
+        "ru": "/ru/pages/mods/1122/cars"
+    },
+    "mods_1122_pe_page_url": {
+        "en": "/en/pages/mods/1122/minecraft-pe-1-12-2",
+        "ru": "/ru/pages/mods/1122/minecraft-pe-1-12-2"
+    },
+    "mods_1122_oruzhie_page_url": {
+        "en": "/en/pages/mods/1122/oruzhie",
+        "ru": "/ru/pages/mods/1122/oruzhie"
+    },
+    "mods_journeymap_mod_page_url": {
+        "en": "/en/pages/mods/journeymap-mod",
+        "ru": "/ru/pages/mods/journeymap-mod"
+    },
+    "mods_1165_page_url": {
+        "en": "/en/pages/mods/1165",
+        "ru": "/ru/pages/mods/1165"
+    },
+    "product_page_url": {
+        "en": "/en/pages/product",
+        "ru": "/ru/pages/product"
+    },
+    "launcher_download_page_url": {
+        "en": "/en/pages/launcher-download",
+        "ru": "/ru/pages/launcher-download"
     },
     "404_page_url": {
         "en": "/en/pages/404",
@@ -57,13 +113,13 @@
         "en": "/en/pages/starting-tips",
         "ru": "/ru/pages/starting-tips"
     },
-    "donate_page_url": {
+    "donation_page_url": {
         "en": "/en/pages/donation-description",
         "ru": "/ru/pages/donation-description"
     },
-    "exit_page_url": {
-        "en": "/en/pages/exit-confirmation-page",
-        "ru": "/ru/pages/exit-confirmation-page"
+    "donate_priv_page_url": {
+        "en": "/en/pages/donate-privileges",
+        "ru": "/ru/pages/donate-privileges"
     },
     "change_password_page_url": {
         "en": "/en/pages/change-password-page",
@@ -72,6 +128,18 @@
     "cart_page_url": {
         "en": "/en/pages/cart-page",
         "ru": "/ru/pages/cart-page"
+    },
+    "team_page_url": {
+        "en": "/en/pages/team",
+        "ru": "/ru/pages/team"
+    },
+    "success_payment_page_url": {
+        "en": "/en/pages/success_payment",
+        "ru": "/ru/pages/success_payment"
+    },
+    "exit_confirmation_page_url": {
+        "en": "/en/pages/exit-confirmation-page",
+        "ru": "/ru/pages/exit-confirmation-page"
     },
     "home_title": "Discover the world of Minecraft",
     "header_link_1": "/en/home",

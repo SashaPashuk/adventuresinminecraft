@@ -5,7 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
-    <title>Adventuresin Minecraft</title>
+    <title>${{ locale.mods_journeymap_mod_metadate_title }}$</title>
+    <meta
+      name="description"
+      content="${{ locale.mods_journeymap_mod_metadate_description }}$"
+    />
+    <link
+      rel="canonical"
+      href="${{ locale.domain}}$${{ locale.canonical_mods_journeymap_mod_href}}$"
+    />
+    <link
+      rel="alternate"
+      href="${{ locale.domain}}$${{ locale.mods_journeymap_mod_page_url.en}}$"
+      hreflang="en-US"
+    />
+    <link
+      rel="alternate"
+      href="${{ locale.domain}}$${{ locale.mods_journeymap_mod_page_url.ru}}$"
+      hreflang="ru-RU"
+    />
+    <link
+      rel="alternate"
+      href="${{ locale.domain}}$${{ locale.mods_journeymap_mod_page_url.en}}$"
+      hreflang="x-default"
+    />
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,12 +54,9 @@
       </div>
     </main>
     @@include('../../components/footer.html')
-    <script type="module" src="../../js/main.js"></script>
-    <script type="module" src="../../js/pathChanger.js"></script>
-    <script
-      type="module"
-      src="../../js/services/languageLocalization.js"
-    ></script>
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/pathChanger.js"></script>
+    <script type="module" src="/js/services/languageLocalization.js"></script>
     @@include('../../components/trengo-widget.html')
   </body>
 </html>

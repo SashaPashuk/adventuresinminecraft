@@ -1,11 +1,21 @@
 {
     "domain": "http://139.28.37.35",
-    "home_page_url": {
-        "en": "/en/home",
-        "ru": "/ru/home"
-    },
     "home_metadate_title": "Главная страница | Cервер Adventures In Minecraft",
     "home_metadate_description": "Главная страница ☑️ 195.201.168.105 Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт",
+    "404_metadate_title": "Страница не найдена | Cервер Adventures In Minecraft",
+    "404_metadate_description": "Страница не найдена ☑️ 195.201.168.105 Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт",
+    "mods_1122_metadate_title": "1.12.2 | Cервер Adventures In Minecraft",
+    "mods_1122_metadate_description": "1.12.2 ☑️ 195.201.168.105 Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт",
+    "mods_1122_cars_metadate_title": "1.12.2 (Cars) | Cервер Adventures In Minecraft",
+    "mods_1122_cars_metadate_description": "1.12.2 (Cars) ☑️ 195.201.168.105 Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт",
+    "mods_1122_pe_metadate_title": "Minecraft PE 1.12.2 | Cервер Adventures In Minecraft",
+    "mods_1122_pe_metadate_description": "Minecraft PE 1.12.2 ☑️ 195.201.168.105 Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт",
+    "mods_1122_oruzhie_metadate_title": "1.12.2 (Oruzhie) | Cервер Adventures In Minecraft",
+    "mods_1122_oruzhie_metadate_description": "1.12.2 (Oruzhie) ☑️ 195.201.168.105 Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт",
+    "mods_1165_metadate_title": "1.16.5 | Cервер Adventures In Minecraft",
+    "mods_1165_metadate_description": "1.16.5 ☑️ 195.201.168.105 Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт",
+    "mods_journeymap_mod_metadate_title": "Journey Map Mod | Cервер Adventures In Minecraft",
+    "mods_journeymap_mod_metadate_description": "Journey Map Mod ☑️ 195.201.168.105 Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт",
     "canonical_home_href": "/ru/home",
     "canonical_404_href": "/ru/pages/404",
     "canonical_cart_href": "/ru/pages/cart-page",
@@ -18,6 +28,12 @@
     "canonical_launcher_download_href": "/ru/pages/launcher-download",
     "canonical_login_href": "/ru/pages/login",
     "canonical_mods_href": "/ru/pages/mods",
+    "canonical_mods_1122_href": "/ru/pages/mods/mods/1122",
+    "canonical_mods_1122_cars_href": "/ru/pages/mods/mods/1122/cars",
+    "canonical_mods_1122_pe_href": "/ru/pages/mods/mods/1122/minecraft-pe-1-12-2",
+    "canonical_mods_1122_oruzhie_href": "/ru/pages/mods/mods/1122/oruzhie",
+    "canonical_mods_journeymap_mod_href": "/ru/pages/mods/mods/journeymap_mod",
+    "canonical_mods_1165_href": "/ru/pages/mods/mods/1165",
     "canonical_order_history_href": "/ru/pages/order-history-page",
     "canonical_product_href": "/ru/pages/product",
     "canonical_registration_href": "/ru/pages/registration",
@@ -25,6 +41,106 @@
     "canonical_starting_tips_href": "/ru/pages/starting-tips",
     "canonical_success_payment_href": "/ru/pages/success-payment",
     "canonical_team_href": "/ru/pages/team",
+    "home_page_url": {
+        "en": "/en/home",
+        "ru": "/ru/home"
+    },
+    "mods_page_url": {
+        "en": "/en/pages/mods",
+        "ru": "/ru/pages/mods"
+    },
+    "mods_1122_page_url": {
+        "en": "/en/pages/mods/1122",
+        "ru": "/ru/pages/mods/1122"
+    },
+    "mods_1122_cars_page_url": {
+        "en": "/en/pages/mods/1122/cars",
+        "ru": "/ru/pages/mods/1122/cars"
+    },
+    "mods_1122_pe_page_url": {
+        "en": "/en/pages/mods/1122/minecraft-pe-1-12-2",
+        "ru": "/ru/pages/mods/1122/minecraft-pe-1-12-2"
+    },
+    "mods_1122_oruzhie_page_url": {
+        "en": "/en/pages/mods/1122/oruzhie",
+        "ru": "/ru/pages/mods/1122/oruzhie"
+    },
+    "mods_journeymap_mod_page_url": {
+        "en": "/en/pages/mods/journeymap-mod",
+        "ru": "/ru/pages/mods/journeymap-mod"
+    },
+    "mods_1165_page_url": {
+        "en": "/en/pages/mods/1165",
+        "ru": "/ru/pages/mods/1165"
+    },
+    "product_page_url": {
+        "en": "/en/pages/product",
+        "ru": "/ru/pages/product"
+    },
+    "launcher_download_page_url": {
+        "en": "/en/pages/launcher-download",
+        "ru": "/ru/pages/launcher-download"
+    },
+    "404_page_url": {
+        "en": "/en/pages/404",
+        "ru": "/ru/pages/404"
+    },
+    "rules_page_url": {
+        "en": "/en/pages/rules",
+        "ru": "/ru/pages/rules"
+    },
+    "faq_page_url": {
+        "en": "/en/pages/faq",
+        "ru": "/ru/pages/faq"
+    },
+    "login_page_url": {
+        "en": "/en/pages/login",
+        "ru": "/ru/pages/login"
+    },
+    "order_history_page_url": {
+        "en": "/en/pages/order-history-page",
+        "ru": "/ru/pages/order-history-page"
+    },
+    "registration_page_url": {
+        "en": "/en/pages/registration",
+        "ru": "/ru/pages/registration"
+    },
+    "contact_page_url": {
+        "en": "/en/pages/contact",
+        "ru": "/ru/pages/contact"
+    },
+    "starting_tips_page_url": {
+        "en": "/en/pages/starting-tips",
+        "ru": "/ru/pages/starting-tips"
+    },
+    "donation_page_url": {
+        "en": "/en/pages/donation-description",
+        "ru": "/ru/pages/donation-description"
+    },
+    "donate_priv_page_url": {
+        "en": "/en/pages/donate-privileges",
+        "ru": "/ru/pages/donate-privileges"
+    },
+    "change_password_page_url": {
+        "en": "/en/pages/change-password-page",
+        "ru": "/ru/pages/change-password-page"
+    },
+    "cart_page_url": {
+        "en": "/en/pages/cart-page",
+        "ru": "/ru/pages/cart-page"
+    },
+    "team_page_url": {
+        "en": "/en/pages/team",
+        "ru": "/ru/pages/team"
+    },
+    "success_payment_page_url": {
+        "en": "/en/pages/success_payment",
+        "ru": "/ru/pages/success_payment"
+    },
+    "exit_confirmation_page_url": {
+        "en": "/en/pages/exit-confirmation-page",
+        "ru": "/ru/pages/exit-confirmation-page"
+    },
     "home_title": "Открой для себя мир Minecraft",
     "header_link_1": "/ru/home",
     "header_link_2": "/ru/pages/rules",
