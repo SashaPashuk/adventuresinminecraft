@@ -86,7 +86,9 @@ function serve() {
 
           var filePath = path.join(dist.root, url);
           if (!fs.existsSync(filePath)) {
-            url = "/pages/404.html";
+            const languageFromURL = url.includes("/ru/") ? "ru" : "en";
+
+            url = `/${languageFromURL}/pages/404.html`;
           }
           req.url = url;
 

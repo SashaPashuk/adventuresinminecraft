@@ -1,4 +1,78 @@
 {
+    "domain": "http://139.28.37.35",
+    "home_metadate_title": "Home | Adventures In Minecraft Server",
+    "home_metadate_description": "Home ☑️ 195.201.168.105 Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server",
+    "canonical_home_href": "/en/home",
+    "canonical_404_href": "/en/pages/404",
+    "canonical_cart_href": "/en/pages/cart-page",
+    "canonical_change_password_href": "/en/pages/change-password",
+    "canonical_contact_href": "/en/pages/contact",
+    "canonical_donate_privileges_href": "/en/pages/donate-privileges",
+    "canonical_donate_description_href": "/en/pages/donate-description",
+    "canonical_exit_confirmation_page_href": "/en/pages/exit-confirmation-page",
+    "canonical_faq_href": "/en/pages/faq",
+    "canonical_launcher_download_href": "/en/pages/launcher-download",
+    "canonical_login_href": "/en/pages/login",
+    "canonical_mods_href": "/en/pages/mods",
+    "canonical_order_history_href": "/en/pages/order-history-page",
+    "canonical_product_href": "/en/pages/product",
+    "canonical_registration_href": "/en/pages/registration",
+    "canonical_rules_href": "/en/pages/rules",
+    "canonical_starting_tips_href": "/en/pages/starting-tips",
+    "canonical_success_payment_href": "/en/pages/success-payment",
+    "canonical_team_href": "/en/pages/team",
+    "home_page_url": {
+        "en": "/en/home",
+        "ru": "/ru/home"
+    },
+    "404_page_url": {
+        "en": "/en/pages/404",
+        "ru": "/ru/pages/404"
+    },
+    "rules_page_url": {
+        "en": "/en/pages/rules",
+        "ru": "/ru/pages/rules"
+    },
+    "faq_page_url": {
+        "en": "/en/pages/faq",
+        "ru": "/ru/pages/faq"
+    },
+    "login_page_url": {
+        "en": "/en/pages/login",
+        "ru": "/ru/pages/login"
+    },
+    "order_history_page_url": {
+        "en": "/en/pages/order-history-page",
+        "ru": "/ru/pages/order-history-page"
+    },
+    "registration_page_url": {
+        "en": "/en/pages/registration",
+        "ru": "/ru/pages/registration"
+    },
+    "contact_page_url": {
+        "en": "/en/pages/contact",
+        "ru": "/ru/pages/contact"
+    },
+    "starting_tips_page_url": {
+        "en": "/en/pages/starting-tips",
+        "ru": "/ru/pages/starting-tips"
+    },
+    "donate_page_url": {
+        "en": "/en/pages/donation-description",
+        "ru": "/ru/pages/donation-description"
+    },
+    "exit_page_url": {
+        "en": "/en/pages/exit-confirmation-page",
+        "ru": "/ru/pages/exit-confirmation-page"
+    },
+    "change_password_page_url": {
+        "en": "/en/pages/change-password-page",
+        "ru": "/ru/pages/change-password-page"
+    },
+    "cart_page_url": {
+        "en": "/en/pages/cart-page",
+        "ru": "/ru/pages/cart-page"
+    },
     "home_title": "Discover the world of Minecraft",
     "header_link_1": "/en/home",
     "header_link_2": "/en/pages/rules",
