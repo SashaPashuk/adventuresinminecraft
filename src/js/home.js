@@ -20,6 +20,7 @@ import {
   SHOP_ITEM_TIME_USAGE,
   SHOP_ITEM_TYPES,
 } from "./contants/constants.js";
+import { getActiveLocale } from "./services/languageLocalization.js";
 
 // Constants
 
@@ -126,7 +127,10 @@ const addProductCardsEventListeners = (cards) => {
           type: cards?.results[index].type,
         })
       );
-      window.open("/pages/product", "_self");
+
+      const productUrl =
+        getActiveLocale() === "ru" ? "/ru/pages/product" : "/en/pages/product";
+      window.open(productUrl, "_self");
     });
   });
 };

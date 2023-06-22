@@ -1,4 +1,5 @@
 import API from "../js/services/api.js";
+import { setActiveLocale, setLocale } from "./services/languageLocalization.js";
 import { ContentLoadingEventObserever } from "./utils/observer.js";
 
 const menuItems = document.querySelectorAll(".nav-link");
@@ -14,9 +15,25 @@ menuItems.forEach(function (item) {
   }
 });
 
+window.addEventListener("hashchange", () => {
+  console.log("location changed!");
+});
+
 // user logic
 
 document.addEventListener("DOMContentLoaded", async () => {
+  await new Promise((resolve) =>
+    setTimeout(() => {
+      resolve();
+    }, 200)
+  );
+  const languageFromURL = window.location.pathname.includes("/ru/")
+    ? "ru"
+    : "en";
+
+  setLocale(languageFromURL);
+  setActiveLocale(languageFromURL);
+
   const tokensData = localStorage.getItem("tokens");
   const usernameData = localStorage.getItem("username");
 

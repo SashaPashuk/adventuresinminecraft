@@ -18,6 +18,7 @@
         "gulp-concat": "^2.6.1",
         "gulp-connect": "^5.7.0",
         "gulp-file-include": "^2.3.0",
+        "gulp-i18n-localize": "^1.4.0",
         "gulp-sass": "^4.1.0",
         "gulp-svgmin": "^4.1.0",
         "gulp-uglify": "^3.0.2"

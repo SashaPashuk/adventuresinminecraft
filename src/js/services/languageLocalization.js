@@ -6,6 +6,10 @@ import {
 import { APP_LANGUAGES, DEFAULT_LANGUAGE } from "../contants/constants.js";
 
 const getDefaultLanguage = () => {
+  const languageFromURL = window.location.pathname.includes("/ru/")
+    ? "ru"
+    : "en";
+
   const browserUserLanguage = navigator.language || navigator.userLanguage;
   const browserUserLanguageSupportedInApp = APP_LANGUAGES.includes(
     browserUserLanguage.split("-")[0]
@@ -13,17 +17,26 @@ const getDefaultLanguage = () => {
     ? browserUserLanguage.split("-")[0]
     : null;
 
-  return (
+  const defaultLang =
+    languageFromURL ||
     localStorage.getItem("language") ||
     browserUserLanguageSupportedInApp ||
-    DEFAULT_LANGUAGE
-  );
+    DEFAULT_LANGUAGE;
+
+  localStorage.setItem("language", defaultLang);
+  return defaultLang;
 };
 // The locale our app first shows
-const defaultLocale = getDefaultLanguage();
+let defaultLocale = getDefaultLanguage();
 
 // The active locale
 let locale;
+
+export const getActiveLocale = () => locale;
+export const setActiveLocale = (newLocale) => {
+  locale = newLocale;
+  defaultLocale = newLocale;
+};
 
 // Gets filled with active locale translations
 let translations = {};
@@ -47,6 +60,14 @@ function bindLocaleSwitcher(initialValue) {
   if (switcher) {
     switcher.value = initialValue;
     switcher.onchange = (e) => {
+      window.open(
+        `${window.location.origin}${window.location.pathname.replace(
+          e.target.value === "ru" ? "/en" : "/ru",
+          e.target.value === "ru" ? "/ru" : "/en"
+        )}`,
+        "_self"
+      );
+
       // Set the locale to the selected option[value]
       setLocale(e.target.value);
       localStorage.setItem("language", e.target.value);
@@ -56,7 +77,7 @@ function bindLocaleSwitcher(initialValue) {
 }
 
 // Load translations for the given locale and translate the page to this locale
-async function setLocale(newLocale) {
+export async function setLocale(newLocale) {
   if (newLocale === locale) return;
 
   const newTranslations = await fetchTranslationsFor(newLocale);

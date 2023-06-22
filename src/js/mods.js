@@ -1,4 +1,5 @@
 import { renderListingHTML } from "./utils/helpers.js";
+import { getActiveLocale } from "./services/languageLocalization.js";
 
 const mods = [
   {
@@ -26,5 +27,8 @@ const mods = [
 ];
 
 document.addEventListener("DOMContentLoaded", async () => {
-  renderListingHTML(mods);
+  const activeLocale = getActiveLocale();
+  renderListingHTML(
+    mods.map((el) => ({ ...el, url: "/" + activeLocale + el.url }))
+  );
 });

@@ -83,7 +83,8 @@ export const languageLocalizations = {
     footer_launchers: "Launchers",
     footer_team: "Team",
     footer_mods: "Mods",
-    footer_copiryted: "© 2023 Adventures in Minecraft - all rights reserved",
+    footer_copiryted: `© 2023 Adventures in Minecraft - all rights reserved. 
+    Adventures In Minecraft server is in no way related to Mojang, AB. Copying content from the site, servers of the project is forbidden.`,
 
     // home-page
     home_title: "Discover the world of Minecraft",
@@ -725,7 +726,8 @@ export const languageLocalizations = {
     footer_launchers: "Лаунчеры",
     footer_team: "Команда",
     footer_mods: "Моды",
-    footer_copiryted: "© 2023 Adventures in Minecraft - все права защищены",
+    footer_copiryted: `© 2023 Adventures in Minecraft - все права защищены. 
+      Сервер Adventures In Minecraft никак не относится к Mojang, AB. Копирование контента с сайта, серверов проекта запрещено.`,
 
     // home page
     home_title: "Открой для себя мир Minecraft",

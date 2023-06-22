@@ -1,1 +1,0 @@
-const dropdownElement=document.querySelector(".dropdown"),dropdownSelectionElement=document.querySelector(".dropdown-selection");dropdownSelectionElement?.addEventListener("click",()=>{dropdownElement.classList.toggle("dropdown-open")});

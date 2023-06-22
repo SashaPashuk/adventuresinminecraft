@@ -21,7 +21,7 @@ export const addToastNotification = ({ message, duration = 3000 }) => {
   const messageParagraph = document.createElement("p");
   const closeBtn = document.createElement("img");
   closeBtn.className = "toast-container-closeBtn";
-  closeBtn.setAttribute("src", "../assets/images/icons/cross_icon.svg");
+  closeBtn.setAttribute("src", "/assets/images/icons/cross_icon.svg");
   closeBtn.addEventListener("click", () => {
     toastContainer.remove();
   });
@@ -52,7 +52,7 @@ export const renderShopItemImgHTML = ({
 }) => {
   const classAttribute = imageClass ? `class="${imageClass}"` : "";
 
-  return `<img ${classAttribute} src="../assets/images/products/${shopItemType}/${shopItemName}" alt="${shopItemName.slice(
+  return `<img ${classAttribute} src="/assets/images/products/${shopItemType}/${shopItemName}" alt="${shopItemName.slice(
     0,
     -4
   )} | adventures in minecraft"  />`;
@@ -208,9 +208,9 @@ export const renderCartItemsHTML = (items) => {
             >
               <span data-i18n-key="cartPage__amount">Количество:</span>
               <div class="cartPage-list-item-amount-actions">
-                <img src="../assets/images/icons/arrow_left.svg" alt="" class='cart-item-decrease-button' />
+                <img src="/assets/images/icons/arrow_left.svg" alt="" class='cart-item-decrease-button' />
                 <span class="cart-item-amount">${amount}</span>
-                <img src="../assets/images/icons/arrow_right.svg" alt="" class='cart-item-increase-button' />
+                <img src="/assets/images/icons/arrow_right.svg" alt="" class='cart-item-increase-button' />
               </div>
             </div>
             <div 
@@ -257,7 +257,7 @@ export const renderCartItemsHTML = (items) => {
           <div class="cart-container">
             <img
               class="cart-container-icon cart-item-delete-button"
-              src="../assets/images/icons/delete-icon.svg"
+              src="/assets/images/icons/delete-icon.svg"
               data-id=${product_id}
               alt="delete-icon"
             />
@@ -513,7 +513,7 @@ export const renderListingHTML = (mods) => {
       <div>
         ${
           imageName
-            ? `<img src="../../assets/images/mods/${imageName}" alt="" />`
+            ? `<img src="/assets/images/mods/${imageName}" alt="${name} image" />`
             : `<div class="image_replacer"></div>`
         }
         <h3>${name}</h2>
@@ -521,7 +521,9 @@ export const renderListingHTML = (mods) => {
           data-i18n-key="modsPage_button"
           class="button-primary"
           href="${url}"
-        ></a>
+        >
+          Подробнее
+        </a>
       </div>
     `;
 

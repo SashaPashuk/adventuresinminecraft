@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
     <title>Adventuresin Minecraft</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,9 +20,7 @@
       <div class="first-screen">
         <div class="container">
           <div class="first-screen__row">
-            <h1 data-i18n-key="home_title" class="first-screen__title">
-              Открой для себя мир Minecraft
-            </h1>
+            <h1 class="first-screen__title">${{ locale.home_title }}$</h1>
             <button
               data-i18n-key="home_button_play_now"
               class="first-screen__button"
@@ -116,10 +114,10 @@
       <!-- @@include('components/latest-purchases.html') -->
     </main>
     @@include('components/footer.html')
-    <script type="module" src="js/main.js"></script>
-    <script type="module" src="js/home.js"></script>
-    <script type="module" src="js/services/languageLocalization.js"></script>
-    <script type="module" src="js/services/server-monitor.js"></script>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/home.js"></script>
+    <script type="module" src="../js/services/languageLocalization.js"></script>
+    <script type="module" src="../js/services/server-monitor.js"></script>
     @@include('components/trengo-widget.html')
   </body>
 </html>

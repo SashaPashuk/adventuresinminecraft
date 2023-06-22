@@ -2,22 +2,30 @@
   <div class="container-custom">
     <div class="header__row">
       <div class="logo">
-        <a class="logo__link" href="/">
+        <a class="logo__link" href="${{ locale.header_link_1 }}$">
           <img
             class="logo__icon"
-            src="../assets/images/logo.svg"
+            src="/assets/images/logo.svg"
             alt="logo | adventures in minecraft "
           />
         </a>
       </div>
       <ul class="nav">
         <li class="nav-item">
-          <a data-i18n-key="header_shop" class="nav-link" href="/home">
+          <a
+            data-i18n-key="header_shop"
+            class="nav-link"
+            href="${{ locale.header_link_1 }}$"
+          >
             Магазин
           </a>
         </li>
         <li class="nav-item">
-          <a data-i18n-key="header_rules" class="nav-link" href="/pages/rules">
+          <a
+            data-i18n-key="header_rules"
+            class="nav-link"
+            href="${{ locale.header_link_2 }}$"
+          >
             Правила
           </a>
         </li>
@@ -25,13 +33,17 @@
           <a
             data-i18n-key="header_donate"
             class="nav-link"
-            href="/pages/donation-description"
+            href="${{ locale.header_link_3 }}$"
           >
             Описание доната
           </a>
         </li>
         <li class="nav-item">
-          <a data-i18n-key="header_faq" class="nav-link" href="/pages/faq">
+          <a
+            data-i18n-key="header_faq"
+            class="nav-link"
+            href="${{ locale.header_link_4 }}$"
+          >
             FAQ
           </a>
         </li>
@@ -39,7 +51,7 @@
           <a
             data-i18n-key="header_how_to_play"
             class="nav-link"
-            href="/pages/starting-tips"
+            href="${{ locale.header_link_5 }}$"
           >
             Как начать играть?
           </a>
@@ -48,7 +60,7 @@
           <a
             data-i18n-key="header_contacts"
             class="nav-link"
-            href="/pages/contact"
+            href="${{ locale.header_link_6 }}$"
           >
             Контакты
           </a>
@@ -57,7 +69,7 @@
           <a
             data-i18n-key="header_enter"
             class="button-shade"
-            href="/pages/login"
+            href="${{ locale.header_link_7 }}$"
           >
             Войти
           </a>
@@ -66,7 +78,7 @@
           <a
             data-i18n-key="header_signup"
             class="button-primary"
-            href="/pages/registration"
+            href="${{ locale.header_link_8 }}$"
           >
             Регистрация
           </a>
@@ -92,7 +104,7 @@
               <li>
                 <a
                   data-i18n-key="header_orders_history"
-                  href="/pages/order-history-page"
+                  href="${{ locale.header_link_9 }}$"
                 >
                   История заказов
                 </a>
@@ -100,7 +112,7 @@
               <li>
                 <a
                   data-i18n-key="header_change_password"
-                  href="/pages/change-password-page"
+                  href="${{ locale.header_link_10 }}$"
                 >
                   Изменить пароль
                 </a>
@@ -108,7 +120,7 @@
               <li>
                 <a
                   data-i18n-key="header_logout"
-                  href="/pages/exit-confirmation-page"
+                  href="${{ locale.header_link_11 }}$"
                 >
                   Выйти
                 </a>
@@ -117,11 +129,11 @@
           </div>
         </li>
         <li class="nav-item">
-          <a href="/pages/cart-page">
+          <a href="${{ locale.header_link_12 }}$">
             <div class="cart-container">
               <img
                 class="cart-container-icon"
-                src="../assets/images/icons/cart-icon.svg"
+                src="/assets/images/icons/cart-icon.svg"
                 alt=""
               />
               <span class="cart-container-count">0</span>

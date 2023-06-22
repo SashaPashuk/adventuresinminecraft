@@ -9,6 +9,7 @@ const fileInclude = require("gulp-file-include");
 const uglify = require("gulp-uglify");
 const fs = require("fs");
 const path = require("path");
+const i18n = require("gulp-i18n-localize");
 
 const src = {
   html: "src/**/*.html",
@@ -34,6 +35,12 @@ function html() {
       fileInclude({
         prefix: "@@",
         basepath: "@file",
+      })
+    )
+    .pipe(
+      i18n({
+        locales: ["en", "ru"],
+        localeDir: "./locales",
       })
     )
     .pipe(gulp.dest(dist.root));

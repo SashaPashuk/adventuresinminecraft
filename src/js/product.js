@@ -8,10 +8,7 @@ import {
   LanguageEventObserever,
 } from "./utils/observer.js";
 import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
-import {
-  DEFAULT_LANGUAGE,
-  SHOP_ITEM_TIME_USAGE,
-} from "./contants/constants.js";
+import { SHOP_ITEM_TIME_USAGE } from "./contants/constants.js";
 import {
   ITEM_ADDED_TO_CART_ERROR,
   ITEM_ADDED_TO_CART_SUCCESS,
@@ -19,6 +16,7 @@ import {
   TOKEN_NOT_EXISTS,
   errorsLanguageLocalizationsEnum,
 } from "./contants/errors.js";
+import { getActiveLocale } from "./services/languageLocalization.js";
 
 // Constants
 const lsTokens = localStorage.getItem("tokens");
@@ -50,7 +48,7 @@ LanguageEventObserever.subscribe(async (data) => {
 
 document.addEventListener("DOMContentLoaded", async () => {
   const itemDataLocalStorage = localStorage.getItem("item_data");
-  const lsLanguage = localStorage.getItem("language") || DEFAULT_LANGUAGE;
+  const lsLanguage = getActiveLocale();
   const shopItemsResponse = await API.getOneShopItem({
     languageCode: lsLanguage,
     itemId: JSON.parse(itemDataLocalStorage)?.id || "",
