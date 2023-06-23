@@ -65,11 +65,20 @@ const addCartPaymentButtonEventListener = () => {
   const cartPaymentButtonElement = document.querySelector(
     "#cart-payment-button"
   );
+  const checkPolicyWrapper = document.getElementById("check_policy_wrapper");
   const checkPolicy = document.querySelector("#check_policy");
 
   cartPaymentButtonElement?.addEventListener("click", async (e) => {
     e.preventDefault();
-    checkPolicy.checked = true;
+
+    // Якщо політика не підтверджена, просто поверніться
+    if (!checkPolicy.checked) {
+      checkPolicyWrapper.classList.add("cartPage-policy--error");
+      return;
+    }
+
+    // Видаліть помилку у випадку успішного натискання
+    checkPolicyWrapper.classList.remove("cartPage-policy--error");
 
     if (!lsTokens) {
       addToastNotification({

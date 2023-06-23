@@ -80,6 +80,9 @@ function serve() {
       middleware: [
         function (req, res, next) {
           var url = req.url;
+
+          if (url === "/") url = "/en/home";
+
           if (!url.endsWith(".html") && url.indexOf(".") === -1) {
             url += ".html";
           }

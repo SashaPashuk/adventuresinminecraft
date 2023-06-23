@@ -174,3 +174,6 @@ const addCookieEventListener = () => {
     document?.querySelector(".cookie_container")?.classList.add("hidden");
   });
 };
+
+//breadcrumb logic
+

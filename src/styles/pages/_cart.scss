@@ -212,18 +212,38 @@
     }
   }
   &-policy {
-    text-align: right;
+    display: inline-block;
+    float: right;
+    padding: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 15px;
+    cursor: pointer;
     input {
       margin-right: 10px;
-      &:checked {
-        background-color: red;
-      }
+      cursor: pointer;
     }
     label {
       font-weight: 400;
       font-size: 12px;
       line-height: 150%;
       color: #ffffff;
+      cursor: pointer;
+    }
+    &--error {
+      box-shadow: 0 0 10px 2px rgba(255, 0, 0, 0.5);
+      animation: pulsing-shadow 2s infinite ease-in-out;
+      cursor: pointer;
+    }
+    @keyframes pulsing-shadow {
+      0% {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+      }
+      50% {
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+      }
+      100% {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+      }
     }
   }
 }
