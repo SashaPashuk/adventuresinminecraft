@@ -658,9 +658,8 @@ export const languageLocalizations = {
       "Привелегии доната | Cервер Adventures In Minecraft",
     meta_donate_privileges_desc: `Привелегии доната ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
 
-    meta_donation_description_title:
-      "Описание доната | Cервер Adventures In Minecraft",
-    meta_donation_description_desc: `Описание доната ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+    meta_donation_title: "Описание доната | Cервер Adventures In Minecraft",
+    meta_donation_desc: `Описание доната ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
 
     meta_exit_confirmation_title:
       "Подтверждение выхода | Cервер Adventures In Minecraft",
