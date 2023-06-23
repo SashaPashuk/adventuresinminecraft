@@ -28,12 +28,12 @@
     "canonical_launcher_download_href": "/ru/pages/launcher-download",
     "canonical_login_href": "/ru/pages/login",
     "canonical_mods_href": "/ru/pages/mods",
-    "canonical_mods_1122_href": "/ru/pages/mods/mods/1122",
-    "canonical_mods_1122_cars_href": "/ru/pages/mods/mods/1122/cars",
-    "canonical_mods_1122_pe_href": "/ru/pages/mods/mods/1122/minecraft-pe-1-12-2",
-    "canonical_mods_1122_oruzhie_href": "/ru/pages/mods/mods/1122/oruzhie",
-    "canonical_mods_journeymap_mod_href": "/ru/pages/mods/mods/journeymap_mod",
-    "canonical_mods_1165_href": "/ru/pages/mods/mods/1165",
+    "canonical_mods_1122_href": "/ru/pages/mods/1122",
+    "canonical_mods_1122_cars_href": "/ru/pages/mods/1122/cars",
+    "canonical_mods_1122_pe_href": "/ru/pages/mods/1122/minecraft-pe-1-12-2",
+    "canonical_mods_1122_oruzhie_href": "/ru/pages/mods/1122/oruzhie",
+    "canonical_mods_journeymap_mod_href": "/ru/pages/mods/journeymap-mod",
+    "canonical_mods_1165_href": "/ru/pages/mods/1165",
     "canonical_order_history_href": "/ru/pages/order-history-page",
     "canonical_product_href": "/ru/pages/product",
     "canonical_registration_href": "/ru/pages/registration",
@@ -161,5 +161,6 @@
     "footer_link_5": "/ru/pages/faq",
     "footer_link_6": "/ru/pages/starting-tips",
     "footer_link_7": "/ru/pages/launcher-download",
-    "footer_link_8": "/ru/pages/mods"
+    "footer_link_8": "/ru/pages/mods",
+    "product_page_name": " Товар"
 }

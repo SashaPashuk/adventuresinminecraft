@@ -56,6 +56,8 @@ img {
 // overall css classes
 
 .container-mods {
+  margin-top: 24px;
+
   * {
     margin: revert !important;
     padding: revert !important;
@@ -64,6 +66,19 @@ img {
   ul,
   li {
     list-style: square;
+  }
+
+  .breadcrumb {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    &>li {
+      list-style: none !important;
+    }
+
+    &-item-separator {
+      margin: 0 5px !important;
+    }
   }
 }
 
@@ -203,10 +218,10 @@ img {
       cursor: pointer;
     }
 
-    & > div {
+    &>div {
       padding: 0 15px 0 0;
 
-      & > p {
+      &>p {
         line-height: 20px;
       }
     }
@@ -250,12 +265,12 @@ img {
     line-height: 150%;
     color: #ffffff;
 
-    & > img {
+    &>img {
       margin-left: 10px;
     }
 
     &-open {
-      & > img {
+      &>img {
         transform: rotate(180deg);
       }
     }
@@ -335,12 +350,12 @@ img {
     font-size: 16px;
     line-height: 150%;
 
-    & > span {
+    &>span {
       color: $primary-orange;
     }
   }
 
-  & > .button-primary {
+  &>.button-primary {
     align-self: center;
   }
 }

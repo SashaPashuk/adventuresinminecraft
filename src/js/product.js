@@ -40,6 +40,8 @@ LanguageEventObserever.subscribe(async (data) => {
   addShopItemAmountEventListener(shopItemsResponse);
   addShopItemUsageEventListener(shopItemsResponse);
 
+  addLastBreadcrumbProductName(shopItemsResponse);
+
   ContentLoadingEventObserever.broadcast(true);
   changeMetadate(shopItemsResponse);
 });
@@ -59,6 +61,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   addBuyShopItemEventListener(shopItemsResponse);
   addShopItemAmountEventListener(shopItemsResponse);
   addShopItemUsageEventListener(shopItemsResponse);
+
+  addLastBreadcrumbProductName(shopItemsResponse);
 
   ContentLoadingEventObserever.broadcast(true);
   changeMetadate(shopItemsResponse);
@@ -300,4 +304,10 @@ const changeMetadate = (item) => {
     "content",
     desc.getAttribute("content").replace("{product_name}", item.market_name)
   );
+};
+
+const addLastBreadcrumbProductName = (item) => {
+  const breadcrumbLastItem = document.querySelector("#breadcrumb_last_item");
+
+  breadcrumbLastItem.innerText = item?.market_name || "";
 };

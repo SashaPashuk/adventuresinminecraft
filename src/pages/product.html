@@ -40,6 +40,26 @@
     <main>
       <div class="product-info">
         <div class="container">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a
+                  href="${{ locale.header_link_1 }}$"
+                  data-i18n-key="header_shop"
+                ></a>
+              </li>
+              <li class="breadcrumb-item-separator">></li>
+              <li class="breadcrumb-item">
+                <span href="${{ locale.header_link_9 }}$">
+                  ${{ locale.product_page_name }}$
+                </span>
+              </li>
+              <li class="breadcrumb-item-separator">></li>
+              <li class="breadcrumb-item" id="breadcrumb_last_item">
+                <span></span>
+              </li>
+            </ol>
+          </nav>
           <div class="product-info__row">
             <div class="product-info__slider slider"></div>
             <div class="product-info__content content"></div>

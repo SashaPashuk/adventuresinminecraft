@@ -89,7 +89,7 @@ loginButtonElement?.addEventListener("click", (e) => {
       localStorage.removeItem("login");
       localStorage.setItem("username", formData.username);
       localStorage.setItem("tokens", JSON.stringify(data));
-      window.location.href = "/home";
+      window.location.href = "/en/home";
     }
   });
 });

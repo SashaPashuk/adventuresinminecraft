@@ -39,6 +39,21 @@
     @@include('../components/header.html')
     <main>
       <div class="container orderHistory-container">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a
+                href="${{ locale.header_link_1 }}$"
+                data-i18n-key="header_shop"
+              ></a>
+            </li>
+            <li class="breadcrumb-item-separator">></li>
+            <li
+              class="breadcrumb-item"
+              data-i18n-key="header_orders_history"
+            ></li>
+          </ol>
+        </nav>
         <h2 data-i18n-key="orderHistoryPage__title" class="orderHistory-title">
           История заказов
         </h2>

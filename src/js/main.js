@@ -15,10 +15,6 @@ menuItems.forEach(function (item) {
   }
 });
 
-window.addEventListener("hashchange", () => {
-  console.log("location changed!");
-});
-
 // user logic
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -135,6 +131,10 @@ const addLanguageSelectorEventListener = () => {
           dropDownOption.textContent = option.textContent;
 
           dropDownOption.addEventListener("mousedown", (e) => {
+            if (select.value === option.value) {
+              return;
+            }
+
             e.stopPropagation();
             select.value = option.value;
             selector.value = option.value;
@@ -174,6 +174,3 @@ const addCookieEventListener = () => {
     document?.querySelector(".cookie_container")?.classList.add("hidden");
   });
 };
-
-//breadcrumb logic
-

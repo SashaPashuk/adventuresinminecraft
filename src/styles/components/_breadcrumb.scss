@@ -1,0 +1,15 @@
+.breadcrumb {
+    display: flex;
+    color: #fff;
+    align-items: baseline;
+
+    &-item {
+        &>a {
+            color: #fff;
+        }
+
+        &-separator {
+            margin: 0 5px;
+        }
+    }
+}

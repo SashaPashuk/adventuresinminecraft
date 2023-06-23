@@ -39,6 +39,20 @@
     @@include('../components/header.html')
     <main>
       <div class="container cartPage-container">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a
+                href="${{ locale.header_link_1 }}$"
+                data-i18n-key="header_shop"
+              ></a>
+            </li>
+            <li class="breadcrumb-item-separator">></li>
+            <li class="breadcrumb-item">
+              <span data-i18n-key="cartPage__title"></span>
+            </li>
+          </ol>
+        </nav>
         <h2 data-i18n-key="cartPage__title" class="cartPage-title">Корзина</h2>
         <ul class="cartPage-list"></ul>
         <div class="cartPage-summary">
