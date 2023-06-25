@@ -701,6 +701,8 @@ export const languageLocalizations = {
     meta_product_title:
       "Купить {product_name} статус на сервере Adventures In Minecraft",
     meta_product_desc: `{product_name} статус на проекте Adventures In Minecraft ✅ Покупка доната привилегий ключей кейсов для сервера майнкрафт ☑️  ${serverIP} ✅`,
+
+    
     // header
     header_shop: "Магазин",
     header_rules: "Правила",

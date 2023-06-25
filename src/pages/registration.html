@@ -7,6 +7,20 @@
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
     <title data-i18n-key="meta_registration_title"> </title>
     <meta data-i18n-key="meta_registration_desc" name="description" />
+
+    <meta property="og:locale" content="${{ locale.metadate_og_locale }}$" />
+    <meta property="og:type" content="${{ locale.metadate_og_type }}$" />
+    <meta property="og:title" content="${{ locale.registration_metadate_title }}$" />
+    <meta
+      property="og:description"
+      content="${{ locale.registration_metadate_description }}$"
+    />
+    <meta
+      property="og:url"
+      content="${{ locale.domain}}$${{ locale.canonical_registration_href}}$"
+    />
+    <meta property="og:site_name" content="Adventures In Minecraft" />
+
     <link
       rel="canonical"
       href="${{ locale.domain}}$${{ locale.canonical_registration_href}}$"
