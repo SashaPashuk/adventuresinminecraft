@@ -552,3 +552,29 @@ export const gameServerSchemaGenerator = (server) => {
 
   document.querySelector("head").appendChild(el);
 };
+
+// TODO: after product url query done, correct this one
+export const productBreadcrumbSchemaGenerator = (productName) => {
+  let el = document.createElement("script");
+  el.type = "application/ld+json";
+  el.innerHTML = JSON.stringify({
+    "@context": "https://schema.org/",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Store",
+        item: "https://adventuresinminecraft.com/home",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: productName,
+        item: `https://adventuresinminecraft.com/en/pages/product?name=${productName}`,
+      },
+    ],
+  });
+
+  document.querySelector("head").appendChild(el);
+};

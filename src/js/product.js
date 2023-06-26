@@ -2,6 +2,7 @@ import API from "./services/api.js";
 import {
   renderShopItemInfoHTML,
   addToastNotification,
+  productBreadcrumbSchemaGenerator,
 } from "./utils/helpers.js";
 import {
   ContentLoadingEventObserever,
@@ -65,6 +66,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   addLastBreadcrumbProductName(shopItemsResponse);
 
   ContentLoadingEventObserever.broadcast(true);
+  productBreadcrumbSchemaGenerator(shopItemsResponse?.market_name || "");
   changeMetadate(shopItemsResponse);
 });
 

@@ -1,4 +1,4 @@
-import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";import{errorsLanguageLocalizationsEnum}from"../contants/errors.js";import{getLocalizedError}from"../services/errorsLanguageLocalization.js";const addToastNotification=({message:e,duration:t=3e6,containerClass:r=""})=>{var a=document.querySelector(".toasts-wrapper");const s=document.createElement("div");s.className="toast-container "+r;var r=document.createElement("div"),i=document.createElement("p"),n=document.createElement("img");n.className="toast-container-closeBtn",n.setAttribute("src","/assets/images/icons/cross_icon.svg"),n.addEventListener("click",()=>{s.remove()}),i.innerHTML=e,r.appendChild(i),s.appendChild(r),s.appendChild(n),a.appendChild(s),setTimeout(()=>{s.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="/assets/images/products/${t}/${e}" alt="${e.slice(0,-4)} | adventures in minecraft"  />`};function descriptionList(e,r=!0){if(!e?.includes("1."))return`<li>${e}</li>`;var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),a=[];for(let e=0;e<t.length;e+=2)a.push({number:t[e],text:t[e+1].trim()});return a.map(({number:e,text:t})=>`<li>${r?e:""}${t}</li>`).join("")}const renderShopItemInfoHTML=({description:e,price:t,forever_price:r,market_name:a,image_name:s,type:i,time_to_use:n,is_one_time:o})=>{var c=document.querySelector(".product-info__content"),n=`<div class="content__usage-actions-wrapper ${t&&r?"":"hidden-visibility"}">
+import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";import{errorsLanguageLocalizationsEnum}from"../contants/errors.js";import{getLocalizedError}from"../services/errorsLanguageLocalization.js";const addToastNotification=({message:e,duration:t=3e6,containerClass:r=""})=>{var a=document.querySelector(".toasts-wrapper");const i=document.createElement("div");i.className="toast-container "+r;var r=document.createElement("div"),s=document.createElement("p"),n=document.createElement("img");n.className="toast-container-closeBtn",n.setAttribute("src","/assets/images/icons/cross_icon.svg"),n.addEventListener("click",()=>{i.remove()}),s.innerHTML=e,r.appendChild(s),i.appendChild(r),i.appendChild(n),a.appendChild(i),setTimeout(()=>{i.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="/assets/images/products/${t}/${e}" alt="${e.slice(0,-4)} | adventures in minecraft"  />`};function descriptionList(e,r=!0){if(!e?.includes("1."))return`<li>${e}</li>`;var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),a=[];for(let e=0;e<t.length;e+=2)a.push({number:t[e],text:t[e+1].trim()});return a.map(({number:e,text:t})=>`<li>${r?e:""}${t}</li>`).join("")}const renderShopItemInfoHTML=({description:e,price:t,forever_price:r,market_name:a,image_name:i,type:s,time_to_use:n,is_one_time:o})=>{var c=document.querySelector(".product-info__content"),n=`<div class="content__usage-actions-wrapper ${t&&r?"":"hidden-visibility"}">
     <span data-i18n-key="productPage__usage" class="price-block__title">
       Срок действия покупки:
     </span>
@@ -51,10 +51,10 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
       </div>
     </div>
   `,e=document.querySelector(".product-info__slider"),t=`
-    ${renderShopItemImgHTML({shopItemName:s,shopItemType:i.toLowerCase(),imageClass:"slider__main-img"})}
-  `;e.innerHTML=t,c.innerHTML=a},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let l="";e?.forEach(({product_id:e,id:t,amount:r,sum_item_price:a,time_to_use:s,image_name:i,market_name:n,is_one_time:o,price:c,forever_price:d})=>{t=`
+    ${renderShopItemImgHTML({shopItemName:i,shopItemType:s.toLowerCase(),imageClass:"slider__main-img"})}
+  `;e.innerHTML=t,c.innerHTML=a},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let l="";e?.forEach(({product_id:e,id:t,amount:r,sum_item_price:a,time_to_use:i,image_name:s,market_name:n,is_one_time:o,price:c,forever_price:d})=>{t=`
         <li class="cartPage-list-item" data-cart-id=${e||t}>
-          <h3>${n||i.slice(0,-4)}</h3>
+          <h3>${n||s.slice(0,-4)}</h3>
           <div class="cartPage-list-item-actionContainer">
             <div 
               class="cartPage-list-item-amount ${o?"disabled":""}"
@@ -76,13 +76,13 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
                 <button
                   data-i18n-key="cartPage__usage_30"
                   id="item-usage-days" data-type=${SHOP_ITEM_TIME_USAGE["30_DAYS"]} 
-                  class="${s===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"selected":""}"
+                  class="${i===SHOP_ITEM_TIME_USAGE["30_DAYS"]?"selected":""}"
                   >30 Дней</button>
                 <button 
                   data-i18n-key="cartPage__usage_forever"
                   id="item-usage-forever" 
                   data-type=${SHOP_ITEM_TIME_USAGE.Forever} 
-                  class="${s===SHOP_ITEM_TIME_USAGE.Forever?"selected":""}"
+                  class="${i===SHOP_ITEM_TIME_USAGE.Forever?"selected":""}"
                 >Навсегда</button>
               </div>
             </div>
@@ -142,12 +142,12 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
         <div class="orderHistory-orders-order-details hidden">
           <h3 data-i18n-key="orderHistoryPage__items" class="orderHistory-orders-order-details-title">Товары</h3>
           <ul class="orderHistory-orders-order-details-list">
-          ${r.map(({amount:e,price:t,forever_price:r,sum_item_price:a,time_to_use:s,image_name:i})=>`
+          ${r.map(({amount:e,price:t,forever_price:r,sum_item_price:a,time_to_use:i,image_name:s})=>`
               <li class="orderHistory-orders-order-details-list-item">
-                <h3>${i.slice(0,-4)}</h3>
+                <h3>${s.slice(0,-4)}</h3>
                 <div>
                   <span data-i18n-key="orderHistoryPage__itemDuration">Срок действия покупки:</span>
-                  <span>${s}</span>
+                  <span>${i}</span>
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__itemAmount">Количество:</span>
@@ -166,24 +166,24 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
           </ul>
         </div>
       </li>
-    `;a+=e}),t.innerHTML=a},renderShopItemsListHTML=e=>{var t=document.querySelector(".products__list");let n="";e?.results?.forEach(({price:e,market_name:t,image_name:r,id:a,type:s,forever_price:i})=>{r=`
+    `;a+=e}),t.innerHTML=a},renderShopItemsListHTML=e=>{var t=document.querySelector(".products__list");let n="";e?.results?.forEach(({price:e,market_name:t,image_name:r,id:a,type:i,forever_price:s})=>{r=`
           <div class="products-card">
-            ${renderShopItemImgHTML({shopItemName:r,shopItemType:s.toLowerCase()})}
+            ${renderShopItemImgHTML({shopItemName:r,shopItemType:i.toLowerCase()})}
             <p class="products-card__title">
               ${t}
             </p>
             <div class="products-card__block">
                 <p class="products-card__price">
-                  €${Number(e)||Number(i)}
+                  €${Number(e)||Number(s)}
                 </p>
                 <button class="products-card__buy" data-id=${a}></button>
             </div>
           </div>
-      `;n+=r}),t.innerHTML=n},renderDonationDescriptionColumnItemsHTML=(e,t=SHOP_ITEM_TYPES.Survival,a)=>{if(e?.results){var s=document.querySelector("#survival_column"),i=document.querySelector("#anarchy_column");let r="";e?.results.forEach((e,t)=>{t=`
+      `;n+=r}),t.innerHTML=n},renderDonationDescriptionColumnItemsHTML=(e,t=SHOP_ITEM_TYPES.Survival,a)=>{if(e?.results){var i=document.querySelector("#survival_column"),s=document.querySelector("#anarchy_column");let r="";e?.results.forEach((e,t)=>{t=`
           <button 
             class="donation-description__nav-btn ${(a?a.id===e.id:0===t)?"donation-description__nav-btn--active":""} ${e.type}" 
             data-name="${e.type.toLowerCase()}_${e.market_name.toLowerCase()}"
-          >${e.market_name}</button>`;r+=t}),t===SHOP_ITEM_TYPES.Survival?s.innerHTML=r:i.innerHTML=r}},renderDonationDescriptionItemDescHTML=(e,t=SHOP_ITEM_TYPES.Survival)=>{var r=document.querySelector("#survival_desc"),a=document.querySelector("#anarchy_desc"),e=`
+          >${e.market_name}</button>`;r+=t}),t===SHOP_ITEM_TYPES.Survival?i.innerHTML=r:s.innerHTML=r}},renderDonationDescriptionItemDescHTML=(e,t=SHOP_ITEM_TYPES.Survival)=>{var r=document.querySelector("#survival_desc"),a=document.querySelector("#anarchy_desc"),e=`
     <h4 class="description-block__title">${e.market_name}</h4>
     <div class="description-block__row">
       ${(e=>{if(!e?.includes("1."))return`<ul class="description-block__list"><li>${e}</li></ul>`;var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),r=[];for(let e=0;e<t.length;e+=2)r.push({number:t[e],text:t[e+1].trim()});return 8<r.length?`
@@ -207,4 +207,4 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
           Подробнее
         </a>
       </div>
-    `;a+=r}),t.innerHTML=a},gameServerSchemaGenerator=e=>{var t=document.createElement("script");t.type="application/ld+json",t.innerHTML=JSON.stringify({"@context":"https://schema.org","@type":"GameServer","@id":"GameServer",name:e.name,playersOnline:e.players,url:"https://monitoringminecraft.ru/server/1263678",serverStatus:e.status}),document.querySelector("head").appendChild(t)};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML,renderDonationDescriptionColumnItemsHTML,renderDonationDescriptionItemDescHTML,renderListingHTML,gameServerSchemaGenerator};
+    `;a+=r}),t.innerHTML=a},gameServerSchemaGenerator=e=>{var t=document.createElement("script");t.type="application/ld+json",t.innerHTML=JSON.stringify({"@context":"https://schema.org","@type":"GameServer","@id":"GameServer",name:e.name,playersOnline:e.players,url:"https://monitoringminecraft.ru/server/1263678",serverStatus:e.status}),document.querySelector("head").appendChild(t)},productBreadcrumbSchemaGenerator=e=>{var t=document.createElement("script");t.type="application/ld+json",t.innerHTML=JSON.stringify({"@context":"https://schema.org/","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Store",item:"https://adventuresinminecraft.com/home"},{"@type":"ListItem",position:2,name:e,item:"https://adventuresinminecraft.com/en/pages/product?name="+e}]}),document.querySelector("head").appendChild(t)};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML,renderDonationDescriptionColumnItemsHTML,renderDonationDescriptionItemDescHTML,renderListingHTML,gameServerSchemaGenerator,productBreadcrumbSchemaGenerator};
