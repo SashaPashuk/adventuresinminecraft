@@ -3,6 +3,7 @@ import {
   renderShopItemInfoHTML,
   addToastNotification,
   productBreadcrumbSchemaGenerator,
+  productSchemaGenerator,
 } from "./utils/helpers.js";
 import {
   ContentLoadingEventObserever,
@@ -66,7 +67,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   addLastBreadcrumbProductName(shopItemsResponse);
 
   ContentLoadingEventObserever.broadcast(true);
+
+  productSchemaGenerator({
+    price: shopItemsResponse?.forever_price || shopItemsResponse?.price || 0,
+    name: shopItemsResponse?.market_name || "",
+  });
   productBreadcrumbSchemaGenerator(shopItemsResponse?.market_name || "");
+
   changeMetadate(shopItemsResponse);
 });
 

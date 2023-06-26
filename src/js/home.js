@@ -1,6 +1,7 @@
 import API from "../js/services/api.js";
 import {
   addToastNotification,
+  productSchemaGenerator,
   renderShopItemsListHTML,
 } from "./utils/helpers.js";
 import {
@@ -73,6 +74,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     type: SHOP_ITEM_TYPES.Survival,
     sort_price: selectedSortPriceType,
   });
+
+  if (shopItemsResult?.results.length) {
+    shopItemsResult?.results.forEach((shopItemsResponse) =>
+      productSchemaGenerator({
+        price:
+          shopItemsResponse?.forever_price || shopItemsResponse?.price || 0,
+        name: shopItemsResponse?.market_name || "",
+      })
+    );
+  }
 
   renderShopItemsListHTML(shopItemsResult);
 

@@ -554,6 +554,27 @@ export const gameServerSchemaGenerator = (server) => {
 };
 
 // TODO: after product url query done, correct this one
+export const productSchemaGenerator = (product) => {
+  let el = document.createElement("script");
+  el.type = "application/ld+json";
+  el.innerHTML = JSON.stringify({
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    name: product.name,
+    offers: {
+      "@type": "Offer",
+      url: `https://adventuresinminecraft.com/en/pages/product?name=${product.name}`, // "url to product"
+      priceCurrency: "EUR",
+      price: Number(product.price),
+      priceValidUntil: "2023-12-31",
+      availability: "https://schema.org/InStock",
+    },
+  });
+
+  document.querySelector("head").appendChild(el);
+};
+
+// TODO: after product url query done, correct this one
 export const productBreadcrumbSchemaGenerator = (productName) => {
   let el = document.createElement("script");
   el.type = "application/ld+json";
