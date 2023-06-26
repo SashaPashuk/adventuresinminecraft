@@ -79,7 +79,11 @@ signupButtonElement?.addEventListener("click", (e) => {
 
     // since we do not have errors, redirect user to login page
     if (data === "User successfully registered!") {
-      window.location.href = "/pages/login";
+      const languageFromURL = window.location.pathname.includes("/ru/")
+        ? "ru"
+        : "en";
+
+      window.location.href = `/${languageFromURL}/pages/login`;
       localStorage.setItem("register_success", true);
     }
   });
