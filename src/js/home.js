@@ -140,7 +140,9 @@ const addProductCardsEventListeners = (cards) => {
       );
 
       const productUrl =
-        getActiveLocale() === "ru" ? "/ru/pages/product" : "/en/pages/product";
+        getActiveLocale() === "ru"
+          ? `/ru/pages/product?id=${cards?.results[index].id}`
+          : `/en/pages/product?id=${cards?.results[index].id}`;
       window.open(productUrl, "_self");
     });
   });

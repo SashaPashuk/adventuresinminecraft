@@ -20,6 +20,23 @@ import {
 } from "./contants/errors.js";
 import { getActiveLocale } from "./services/languageLocalization.js";
 
+var getQueryParams = function (qs) {
+  if (typeof qs == "undefined") {
+    qs = document.location.search
+      ? document.location.search
+      : document.location.href;
+  }
+  qs = qs.split("+").join(" ");
+  var params = {},
+    tokens,
+    re = /[?&]([^=?&]+)=([^&]*)/g;
+  while ((tokens = re.exec(qs))) {
+    params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+  }
+  return params;
+};
+const qp = getQueryParams();
+
 // Constants
 const lsTokens = localStorage.getItem("tokens");
 let lsShopOrderItems =
@@ -33,7 +50,7 @@ LanguageEventObserever.subscribe(async (data) => {
   const itemDataLocalStorage = localStorage.getItem("item_data");
   const shopItemsResponse = await API.getOneShopItem({
     languageCode: data.language,
-    itemId: JSON.parse(itemDataLocalStorage)?.id || "",
+    itemId: qp.id || "",
   });
 
   renderShopItemInfoHTML(shopItemsResponse);
