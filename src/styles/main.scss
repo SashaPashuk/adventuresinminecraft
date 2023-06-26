@@ -202,12 +202,13 @@ img {
   .toast-container {
     color: $shade-white;
     padding: 14px 16px;
-    background: $shade-grey;
+    background: #393330fc;
     font-size: 14px;
     border-radius: 10px;
     margin-top: 10px;
     max-width: 350px;
     width: fit-content;
+    min-width: 250px;
     position: relative;
 
     &-closeBtn {
@@ -219,7 +220,7 @@ img {
     }
 
     &>div {
-      padding: 0 15px 0 0;
+      padding: 5px 15px 0 0;
 
       &>p {
         line-height: 20px;
@@ -228,6 +229,10 @@ img {
 
     &:first-child {
       margin-top: 0;
+    }
+
+    &-error {
+      color: #ef2323;
     }
   }
 }

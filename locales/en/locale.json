@@ -188,5 +188,6 @@
     "footer_link_6": "/en/pages/starting-tips",
     "footer_link_7": "/en/pages/launcher-download",
     "footer_link_8": "/en/pages/mods",
-    "product_page_name": "Product"
+    "product_page_name": "Product",
+    "productPage__desc": "Product description:"
 }

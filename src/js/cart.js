@@ -85,6 +85,7 @@ const addCartPaymentButtonEventListener = () => {
         message: getLocalizedError(
           errorsLanguageLocalizationsEnum.USER_SHOULD_LOGIN_FIRST
         ),
+        containerClass: "toast-container-error",
       });
       return;
     }

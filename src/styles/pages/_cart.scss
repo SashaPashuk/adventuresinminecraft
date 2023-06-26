@@ -214,8 +214,9 @@
   }
 
   &-policy {
-    display: inline-block;
-    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
     padding: 10px;
     transition: box-shadow 0.3s ease-in-out;
     margin-bottom: 15px;

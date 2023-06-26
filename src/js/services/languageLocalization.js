@@ -118,7 +118,10 @@ function translateElement(element) {
     element.placeholder = translation;
   }
 
-  if (element.dataset.i18nKey.includes("_desc")) {
+  if (
+    element.dataset.i18nKey.includes("_desc") &&
+    element.dataset.i18nKey.includes("meta")
+  ) {
     element.content = translation;
     return;
   }

@@ -265,7 +265,7 @@ export const languageLocalizations = {
     cartPage__usage_forever: "Forever",
     cartPage__price: "Price:",
     cartPage__check_policy:
-      "I agree to the Terms of service and Privacy Policy.",
+      "I have read the Terms and Conditions and Privacy Policy and agree with the terms.",
 
     // launcherPage
     launcherPage__title: "LUNCHER MINECRAFT WITH MODS",
@@ -701,7 +701,6 @@ export const languageLocalizations = {
       "Купить {product_name} статус на сервере Adventures In Minecraft",
     meta_product_desc: `{product_name} статус на проекте Adventures In Minecraft ✅ Покупка доната привилегий ключей кейсов для сервера майнкрафт ☑️  ${serverIP} ✅`,
 
-    
     // header
     header_shop: "Магазин",
     header_rules: "Правила",

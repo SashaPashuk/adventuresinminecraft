@@ -11,11 +11,15 @@ import { getLocalizedError } from "../services/errorsLanguageLocalization.js";
  * @param {Number} param.duration
  * @returns {void}
  */
-export const addToastNotification = ({ message, duration = 3000 }) => {
+export const addToastNotification = ({
+  message,
+  duration = 3000000,
+  containerClass = "",
+}) => {
   const toastsWrapperElement = document.querySelector(".toasts-wrapper");
 
   const toastContainer = document.createElement("div");
-  toastContainer.className = "toast-container";
+  toastContainer.className = `toast-container ${containerClass}`;
 
   const toastContainerInner = document.createElement("div");
   const messageParagraph = document.createElement("p");
