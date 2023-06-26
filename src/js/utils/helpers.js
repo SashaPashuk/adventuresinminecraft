@@ -553,7 +553,6 @@ export const gameServerSchemaGenerator = (server) => {
   document.querySelector("head").appendChild(el);
 };
 
-// TODO: after product url query done, correct this one
 export const productSchemaGenerator = (product) => {
   let el = document.createElement("script");
   el.type = "application/ld+json";
@@ -563,7 +562,7 @@ export const productSchemaGenerator = (product) => {
     name: product.name,
     offers: {
       "@type": "Offer",
-      url: `https://adventuresinminecraft.com/en/pages/product?name=${product.name}`, // "url to product"
+      url: `https://adventuresinminecraft.com/en/pages/product?id=${product.id}`,
       priceCurrency: "EUR",
       price: Number(product.price),
       priceValidUntil: "2023-12-31",
@@ -574,8 +573,7 @@ export const productSchemaGenerator = (product) => {
   document.querySelector("head").appendChild(el);
 };
 
-// TODO: after product url query done, correct this one
-export const productBreadcrumbSchemaGenerator = (productName) => {
+export const productBreadcrumbSchemaGenerator = (productName, id) => {
   let el = document.createElement("script");
   el.type = "application/ld+json";
   el.innerHTML = JSON.stringify({
@@ -592,7 +590,7 @@ export const productBreadcrumbSchemaGenerator = (productName) => {
         "@type": "ListItem",
         position: 2,
         name: productName,
-        item: `https://adventuresinminecraft.com/en/pages/product?name=${productName}`,
+        item: `https://adventuresinminecraft.com/en/pages/product?id=${id}`,
       },
     ],
   });

@@ -47,7 +47,7 @@ let lsShopOrderItems =
 // Observer
 
 LanguageEventObserever.subscribe(async (data) => {
-  const itemDataLocalStorage = localStorage.getItem("item_data");
+  // const itemDataLocalStorage = localStorage.getItem("item_data");
   const shopItemsResponse = await API.getOneShopItem({
     languageCode: data.language,
     itemId: qp.id || "",
@@ -68,11 +68,11 @@ LanguageEventObserever.subscribe(async (data) => {
 // Event Listeners
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const itemDataLocalStorage = localStorage.getItem("item_data");
+  // const itemDataLocalStorage = localStorage.getItem("item_data");
   const lsLanguage = getActiveLocale();
   const shopItemsResponse = await API.getOneShopItem({
     languageCode: lsLanguage,
-    itemId: JSON.parse(itemDataLocalStorage)?.id || "",
+    itemId: qp.id || "",
   });
 
   renderShopItemInfoHTML(shopItemsResponse);
@@ -88,8 +88,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   productSchemaGenerator({
     price: shopItemsResponse?.forever_price || shopItemsResponse?.price || 0,
     name: shopItemsResponse?.market_name || "",
+    id: shopItemsResponse?.id || "",
   });
-  productBreadcrumbSchemaGenerator(shopItemsResponse?.market_name || "");
+  productBreadcrumbSchemaGenerator(
+    shopItemsResponse?.market_name || "",
+    shopItemsResponse?.id || ""
+  );
 
   changeMetadate(shopItemsResponse);
 });
@@ -324,9 +328,21 @@ const addShopItemUsageEventListener = (product) => {
 const changeMetadate = (item) => {
   const title = document.querySelector("title");
   const desc = document.querySelector('meta[name="description"]');
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  const ogDescription = document.querySelector(
+    'meta[property="og:description"]'
+  );
 
   title.innerText = title.innerText.replace("{product_name}", item.market_name);
   desc.setAttribute(
+    "content",
+    desc.getAttribute("content").replace("{product_name}", item.market_name)
+  );
+  ogTitle.setAttribute(
+    "content",
+    desc.getAttribute("content").replace("{product_name}", item.market_name)
+  );
+  ogDescription.setAttribute(
     "content",
     desc.getAttribute("content").replace("{product_name}", item.market_name)
   );
