@@ -1,4 +1,5 @@
 import API from "../js/services/api.js";
+import { DEFAULT_LANGUAGE } from "./contants/constants.js";
 import { setActiveLocale, setLocale } from "./services/languageLocalization.js";
 import { ContentLoadingEventObserever } from "./utils/observer.js";
 
@@ -26,6 +27,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   const languageFromURL = window.location.pathname.includes("/ru/")
     ? "ru"
     : "en";
+
+  if (window.location.pathname === "/") {
+    const lsLanguage = localStorage.getItem("language");
+
+    window.open(`/${lsLanguage || DEFAULT_LANGUAGE}/home`, "_self");
+  }
 
   setLocale(languageFromURL);
   setActiveLocale(languageFromURL);

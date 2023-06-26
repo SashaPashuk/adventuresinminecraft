@@ -60,13 +60,19 @@ function bindLocaleSwitcher(initialValue) {
   if (switcher) {
     switcher.value = initialValue;
     switcher.onchange = (e) => {
-      window.open(
-        `${window.location.origin}${window.location.pathname.replace(
-          e.target.value === "ru" ? "/en" : "/ru",
-          e.target.value === "ru" ? "/ru" : "/en"
-        )}`,
-        "_self"
-      );
+      const hasRepalceLanguageCode =
+        window.location.pathname.includes("/en") ||
+        window.location.pathname.includes("/ru");
+
+      if (hasRepalceLanguageCode) {
+        window.open(
+          `${window.location.origin}${window.location.pathname.replace(
+            e.target.value === "ru" ? "/en" : "/ru",
+            e.target.value === "ru" ? "/ru" : "/en"
+          )}`,
+          "_self"
+        );
+      }
 
       // Set the locale to the selected option[value]
       setLocale(e.target.value);

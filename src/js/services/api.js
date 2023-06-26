@@ -46,7 +46,11 @@ const sendAPIRequest = async ({ method, pathname, body, hasToken }) => {
     if (response?.access) {
       return makeRequest();
     } else {
-      window.location.href = "/pages/login.html";
+      const languageFromURL = window.location.pathname.includes("/ru/")
+        ? "ru"
+        : "en";
+
+      window.location.href = `/${languageFromURL}/pages/login`;
       localStorage.removeItem("tokens");
     }
   }
