@@ -7,6 +7,23 @@
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
     <title data-i18n-key="meta_success_payment_title"> </title>
     <meta data-i18n-key="meta_success_payment_desc" name="description" />
+
+    <meta property="og:locale" content="${{ locale.metadate_og_locale }}$" />
+    <meta property="og:type" content="${{ locale.metadate_og_type }}$" />
+    <meta
+      property="og:title"
+      content="${{ locale.success_payment_metadate_title }}$"
+    />
+    <meta
+      property="og:description"
+      content="${{ locale.success_payment_metadate_description }}$"
+    />
+    <meta
+      property="og:url"
+      content="${{ locale.domain}}$${{ locale.canonical_success_payment_href}}$"
+    />
+    <meta property="og:site_name" content="Adventures In Minecraft" />
+
     <link
       rel="canonical"
       href="${{ locale.domain}}$${{ locale.canonical_success_payment_href}}$"
