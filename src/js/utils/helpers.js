@@ -536,3 +536,19 @@ export const renderListingHTML = (mods) => {
 
   container.innerHTML = html;
 };
+
+export const gameServerSchemaGenerator = (server) => {
+  let el = document.createElement("script");
+  el.type = "application/ld+json";
+  el.innerHTML = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "GameServer",
+    "@id": "GameServer",
+    name: server.name,
+    playersOnline: server.players,
+    url: "https://monitoringminecraft.ru/server/1263678",
+    serverStatus: server.status,
+  });
+
+  document.querySelector("head").appendChild(el);
+};

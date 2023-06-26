@@ -1,3 +1,5 @@
+import { gameServerSchemaGenerator } from "../utils/helpers.js";
+
 const serverIP = "195.201.168.105";
 const serverPort = 25565;
 
@@ -23,6 +25,12 @@ const addMCServerStatisticHTML = async ({ getMCServerData }) => {
     mcServerStatusElement.innerHTML = "Offline";
     mcServerStatusElement.classList.add("offline");
   }
+
+  gameServerSchemaGenerator({
+    status: data?.online ? "Online" : "Offline",
+    players: data?.players?.online || 0,
+    name: data?.motd?.clean[0] || "",
+  });
 };
 
 // For the first fast taking MC server data

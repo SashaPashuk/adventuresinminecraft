@@ -1,4 +1,4 @@
-import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";import{errorsLanguageLocalizationsEnum}from"../contants/errors.js";import{getLocalizedError}from"../services/errorsLanguageLocalization.js";const addToastNotification=({message:e,duration:t=3e6,containerClass:r=""})=>{var a=document.querySelector(".toasts-wrapper");const s=document.createElement("div");s.className="toast-container "+r;var r=document.createElement("div"),i=document.createElement("p"),n=document.createElement("img");n.className="toast-container-closeBtn",n.setAttribute("src","/assets/images/icons/cross_icon.svg"),n.addEventListener("click",()=>{s.remove()}),i.innerHTML=e,r.appendChild(i),s.appendChild(r),s.appendChild(n),a.appendChild(s),setTimeout(()=>{s.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="/assets/images/products/${t}/${e}" alt="${e.slice(0,-4)} | adventures in minecraft"  />`};function descriptionList(e,r=!0){if(!e?.includes("1."))return`<li>${e}</li>`;var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),a=[];for(let e=0;e<t.length;e+=2)a.push({number:t[e],text:t[e+1].trim()});return a.map(({number:e,text:t})=>`<li>${r?e:""}${t}</li>`).join("")}const renderShopItemInfoHTML=({description:e,price:t,forever_price:r,market_name:a,image_name:s,type:i,time_to_use:n,is_one_time:o})=>{var d=document.querySelector(".product-info__content"),n=`<div class="content__usage-actions-wrapper ${t&&r?"":"hidden-visibility"}">
+import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";import{errorsLanguageLocalizationsEnum}from"../contants/errors.js";import{getLocalizedError}from"../services/errorsLanguageLocalization.js";const addToastNotification=({message:e,duration:t=3e6,containerClass:r=""})=>{var a=document.querySelector(".toasts-wrapper");const s=document.createElement("div");s.className="toast-container "+r;var r=document.createElement("div"),i=document.createElement("p"),n=document.createElement("img");n.className="toast-container-closeBtn",n.setAttribute("src","/assets/images/icons/cross_icon.svg"),n.addEventListener("click",()=>{s.remove()}),i.innerHTML=e,r.appendChild(i),s.appendChild(r),s.appendChild(n),a.appendChild(s),setTimeout(()=>{s.remove()},t)},renderShopItemImgHTML=({shopItemName:e,shopItemType:t,imageClass:r})=>{return`<img ${r?`class="${r}"`:""} src="/assets/images/products/${t}/${e}" alt="${e.slice(0,-4)} | adventures in minecraft"  />`};function descriptionList(e,r=!0){if(!e?.includes("1."))return`<li>${e}</li>`;var t=e.split(/(\d+\.\s)/).filter(e=>""!==e.trim()),a=[];for(let e=0;e<t.length;e+=2)a.push({number:t[e],text:t[e+1].trim()});return a.map(({number:e,text:t})=>`<li>${r?e:""}${t}</li>`).join("")}const renderShopItemInfoHTML=({description:e,price:t,forever_price:r,market_name:a,image_name:s,type:i,time_to_use:n,is_one_time:o})=>{var c=document.querySelector(".product-info__content"),n=`<div class="content__usage-actions-wrapper ${t&&r?"":"hidden-visibility"}">
     <span data-i18n-key="productPage__usage" class="price-block__title">
       Срок действия покупки:
     </span>
@@ -52,7 +52,7 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
     </div>
   `,e=document.querySelector(".product-info__slider"),t=`
     ${renderShopItemImgHTML({shopItemName:s,shopItemType:i.toLowerCase(),imageClass:"slider__main-img"})}
-  `;e.innerHTML=t,d.innerHTML=a},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let l="";e?.forEach(({product_id:e,id:t,amount:r,sum_item_price:a,time_to_use:s,image_name:i,market_name:n,is_one_time:o,price:d,forever_price:c})=>{t=`
+  `;e.innerHTML=t,c.innerHTML=a},renderCartItemsHTML=e=>{var t=document.querySelector(".cartPage-list");let l="";e?.forEach(({product_id:e,id:t,amount:r,sum_item_price:a,time_to_use:s,image_name:i,market_name:n,is_one_time:o,price:c,forever_price:d})=>{t=`
         <li class="cartPage-list-item" data-cart-id=${e||t}>
           <h3>${n||i.slice(0,-4)}</h3>
           <div class="cartPage-list-item-actionContainer">
@@ -68,7 +68,7 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
               </div>
             </div>
             <div 
-              class="cartPage-list-item-usage ${d&&c?"":"disabled"}"
+              class="cartPage-list-item-usage ${c&&d?"":"disabled"}"
               title="${getLocalizedError(errorsLanguageLocalizationsEnum.ITEM_DURATION_ERROR)}"
             >
               <span data-i18n-key="cartPage__usage">Срок действия покупки:</span>
@@ -207,4 +207,4 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
           Подробнее
         </a>
       </div>
-    `;a+=r}),t.innerHTML=a};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML,renderDonationDescriptionColumnItemsHTML,renderDonationDescriptionItemDescHTML,renderListingHTML};
+    `;a+=r}),t.innerHTML=a},gameServerSchemaGenerator=e=>{var t=document.createElement("script");t.type="application/ld+json",t.innerHTML=JSON.stringify({"@context":"https://schema.org","@type":"GameServer","@id":"GameServer",name:e.name,playersOnline:e.players,url:"https://monitoringminecraft.ru/server/1263678",serverStatus:e.status}),document.querySelector("head").appendChild(t)};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML,renderDonationDescriptionColumnItemsHTML,renderDonationDescriptionItemDescHTML,renderListingHTML,gameServerSchemaGenerator};
