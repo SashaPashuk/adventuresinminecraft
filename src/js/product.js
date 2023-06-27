@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     shopItemsResponse?.id || ""
   );
 
-  changeMetadate(shopItemsResponse);
+  setTimeout(() => changeMetadate(shopItemsResponse), 200);
 });
 
 const addBuyShopItemEventListener = (item) => {
@@ -340,11 +340,13 @@ const changeMetadate = (item) => {
   );
   ogTitle.setAttribute(
     "content",
-    desc.getAttribute("content").replace("{product_name}", item.market_name)
+    ogTitle.getAttribute("content").replace("{product_name}", item.market_name)
   );
   ogDescription.setAttribute(
     "content",
-    desc.getAttribute("content").replace("{product_name}", item.market_name)
+    ogDescription
+      .getAttribute("content")
+      .replace("{product_name}", item.market_name)
   );
 };
 
