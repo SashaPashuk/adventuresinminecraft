@@ -169,7 +169,8 @@ const addLanguageSelectorEventListener = () => {
 
 const addCookieEventListener = () => {
   const cookie = localStorage.getItem("hasAcceptedCookie");
-
+  if (!document?.querySelector(".cookie_container")) return;
+  
   if (!cookie) {
     document?.querySelector(".cookie_container")?.classList.remove("hidden");
   }
