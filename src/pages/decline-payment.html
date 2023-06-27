@@ -5,42 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
-    <title data-i18n-key="meta_success_payment_title"> </title>
-    <meta data-i18n-key="meta_success_payment_desc" name="description" />
+    <title data-i18n-key="meta_decline_payment_title"> </title>
+    <meta data-i18n-key="meta_decline_payment_desc" name="description" />
 
     <meta property="og:locale" content="${{ locale.metadate_og_locale }}$" />
     <meta property="og:type" content="${{ locale.metadate_og_type }}$" />
     <meta
       property="og:title"
-      content="${{ locale.success_payment_metadate_title }}$"
+      content="${{ locale.decline_payment_metadate_title }}$"
     />
     <meta
       property="og:description"
-      content="${{ locale.success_payment_metadate_description }}$"
+      content="${{ locale.decline_payment_metadate_description }}$"
     />
     <meta
       property="og:url"
-      content="${{ locale.domain}}$${{ locale.canonical_success_payment_href}}$"
+      content="${{ locale.domain}}$${{ locale.canonical_decline_payment_href}}$"
     />
     <meta property="og:site_name" content="Adventures In Minecraft" />
 
     <link
       rel="canonical"
-      href="${{ locale.domain}}$${{ locale.canonical_success_payment_href}}$"
+      href="${{ locale.domain}}$${{ locale.canonical_decline_payment_href}}$"
     />
     <link
       rel="alternate"
-      href="${{ locale.domain}}$${{ locale.success_payment_page_url.en}}$"
+      href="${{ locale.domain}}$${{ locale.decline_payment_page_url.en}}$"
       hreflang="en-US"
     />
     <link
       rel="alternate"
-      href="${{ locale.domain}}$${{ locale.success_payment_page_url.ru}}$"
+      href="${{ locale.domain}}$${{ locale.decline_payment_page_url.ru}}$"
       hreflang="ru-RU"
     />
     <link
       rel="alternate"
-      href="${{ locale.domain}}$${{ locale.success_payment_page_url.en}}$"
+      href="${{ locale.domain}}$${{ locale.decline_payment_page_url.en}}$"
       hreflang="x-default"
     />
     <link rel="stylesheet" href="/styles/styles.css" />
@@ -67,41 +67,41 @@
 
   <body>
     <main>
-      <div class="successPayment-container">
-        <div class="successPayment-modal-container">
+      <div class="declinePayment-container">
+        <div class="declinePayment-modal-container">
           <img
-            class="successPayment-modal-container-close-icon"
+            class="declinePayment-modal-container-close-icon"
             src="/assets/images/icons/cross_icon.svg"
             alt=""
           />
           <img
-            class="successPayment-modal-container-success-payment-checkmark-icon"
-            src="/assets/images/icons/success-payment-checkmark-icon.svg"
+            class="declinePayment-modal-container-decline-payment-checkmark-icon"
+            src="/assets/images/icons/decline-payment-checkmark-icon.svg"
             alt=""
           />
           <h2
-            data-i18n-key="successPaymentPage__title"
-            class="successPayment-modal-container-title"
+            data-i18n-key="declinePaymentPage__title"
+            class="declinePayment-modal-container-title"
           >
             Ваша оплата прошла успешно
           </h2>
           <p
-            data-i18n-key="successPaymentPage__text"
-            class="successPayment-modal-container-text"
+            data-i18n-key="declinePaymentPage__text"
+            class="declinePayment-modal-container-text"
           >
             Ваша оплата прошла успешно. Если вы не получили свой товар
             попробуйте перезайти на сервер.
           </p>
           <a
-            data-i18n-key="successPaymentPage__button"
+            data-i18n-key="declinePaymentPage__button"
             class="button-primary"
             href="/"
           >
             На Главную
           </a>
           <img
-            class="successPayment-modal-container-image"
-            src="/assets/images/success-payment-image.svg"
+            class="declinePayment-modal-container-image"
+            src="/assets/images/decline-payment-image.svg"
             alt=""
           />
         </div>

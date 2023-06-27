@@ -28,6 +28,8 @@
     "starting_tips_metadate_description": "Starting Tips ☑️ 195.201.168.105 Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server",
     "success_payment_metadate_title": "Success Payment | Adventures In Minecraft Server",
     "success_payment_metadate_description": "Success Payment ☑️ 195.201.168.105 Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server",
+    "decline_payment_metadate_title": "Decline Payment | Adventures In Minecraft Server",
+    "decline_payment_metadate_description": "Decline Payment ☑️ 195.201.168.105 Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server",
     "404_metadate_title": "Not Found Page | Adventures In Minecraft Server",
     "404_metadate_description": "Not Found Page ☑️ 195.201.168.105 Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server",
     "mods_1122_metadate_title": "1.12.2 | Adventures In Minecraft Server",
@@ -66,6 +68,7 @@
     "canonical_rules_href": "/en/pages/rules",
     "canonical_starting_tips_href": "/en/pages/starting-tips",
     "canonical_success_payment_href": "/en/pages/success-payment",
+    "canonical_decline_payment_href": "/en/pages/decline-payment",
     "canonical_team_href": "/en/pages/team",
     "home_page_url": {
         "en": "/en/home",
@@ -162,6 +165,10 @@
     "success_payment_page_url": {
         "en": "/en/pages/success_payment",
         "ru": "/ru/pages/success_payment"
+    },
+    "decline_payment_page_url": {
+        "en": "/en/pages/decline_payment",
+        "ru": "/ru/pages/decline_payment"
     },
     "exit_confirmation_page_url": {
         "en": "/en/pages/exit-confirmation-page",

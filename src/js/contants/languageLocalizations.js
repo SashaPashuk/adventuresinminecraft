@@ -53,6 +53,10 @@ export const languageLocalizations = {
       "Success Payment | Adventures In Minecraft Server",
     meta_success_payment_desc: `Success Payment ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
 
+    meta_decline_payment_title:
+      "Decline Payment | Adventures In Minecraft Server",
+    meta_decline_payment_desc: `Decline Payment ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
+
     meta_team_title: "Team | Adventures In Minecraft Server",
     meta_team_desc: `Team ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
 
@@ -139,6 +143,12 @@ export const languageLocalizations = {
     successPaymentPage__text:
       "Your payment was successful. If you haven't received your item, try logging back into the server.",
     successPaymentPage__button: "Home",
+
+    // declinePayment page
+    declinePaymentPage__title: "Payment Error",
+    declinePaymentPage__text:
+      "There was an error while paying for the product. Try again or re-login to the server.",
+    declinePaymentPage__button: "To Home",
 
     // exitConfirmation page
     exitConfirmationPage__title: "Are you sure you want to log out?",
@@ -694,6 +704,10 @@ export const languageLocalizations = {
       "Успешная оплата | Cервер Adventures In Minecraft",
     meta_success_payment_desc: `Успешная оплата ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
 
+    meta_decline_payment_title:
+      "Ошибка оплаты | Cервер Adventures In Minecraft",
+    meta_decline_payment_desc: `Ошибка оплаты ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
+
     meta_team_title: "Команда | Cервер Adventures In Minecraft",
     meta_team_desc: `Команда ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
 
@@ -780,6 +794,12 @@ export const languageLocalizations = {
     successPaymentPage__text:
       "Ваша оплата прошла успешно. Если вы не получили свой товар попробуйте перезайти на сервер.",
     successPaymentPage__button: "На Главную",
+
+    // declinePayment page
+    declinePaymentPage__title: "Ошибка оплаты",
+    declinePaymentPage__text:
+      "При оплате товара произошла ошибка. Попробуйте снова или перезайдите на сервер.",
+    declinePaymentPage__button: "На Главную",
 
     // exitConfirmation page
     exitConfirmationPage__title: "Вы уверены что хотите выйти?",
