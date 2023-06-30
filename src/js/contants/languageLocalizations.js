@@ -291,7 +291,7 @@ export const languageLocalizations = {
       "Rights and duties of administration",
     rulesPage__explanations_title: "Explanations",
     rulesPage__general_rules_text: `
-    1.1 This document is the official regulation of the project, and no other documents can be called as such.
+    1.1 This document is the official regulation of the project, being a part of Terms and Conditions.
     1.2 The purpose of these rules is to protect the interests of users and establish order on all project resources.
     1.3 Project management is divided into 2 categories: Project Administration (hereinafter "Administration") and personnel.
     1.4 Any person has the right to register twice from one IP address.
@@ -928,7 +928,7 @@ export const languageLocalizations = {
     cartPage__usage_forever: "Навсегда",
     cartPage__price: "Цена:",
     cartPage__check_policy:
-      "Я согласен с Условиями использования и Политикой конфиденциальности.",
+      "Я согласен с условиями Пользовательского соглашения и Политикой конфиденциальности.",
 
     // launcherPage
     launcherPage__title: "ЛАУНЧЕР МАЙНКРАФТ С МОДАМИ",
@@ -944,7 +944,7 @@ export const languageLocalizations = {
       "Права и обязанности администрации",
     rulesPage__explanations_title: "Пояснения",
     rulesPage__general_rules_text: `
-    1.1 Данный документ является официальным регламентом проекта, любые прочие таковыми называться не могут.
+    1.1 Данный документ является официальным регламентом проекта, и он является составной частью Пользовательского соглашения.
     1.2 Цель данных правил – защита интересов пользователей и установление порядка на всех ресурсах проекта.
     1.3 Руководство проекта подразделяется на 2 категории: Администрация проекта (далее "Администрация") и персонал.
     1.4 Любой человек имеет право на регистрацию дважды с одного IP адреса.
