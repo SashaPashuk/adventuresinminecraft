@@ -3,16 +3,29 @@ import { gameServerSchemaGenerator } from "../utils/helpers.js";
 const serverIP = "195.201.168.105";
 const serverPort = 25565;
 
-const getMCServerData = async (ip, port) => {
-  const response = await fetch(`https://api.mcsrvstat.us/2/${ip}:${port}`).then(
-    (response) => response.json()
-  );
+function getNumberBasedOnTime() {
+  const currentTime = new Date();
+  const currentHour = currentTime.getHours();
 
-  return response;
-};
+  if (currentHour >= 6 && currentHour < 18) {
+    // Daytime: 200 - 400
+    return Math.floor(Math.random() * (400 - 200 + 1)) + 200;
+  } else {
+    // Nighttime: 5 - 199
+    return Math.floor(Math.random() * (199 - 5 + 1)) + 5;
+  }
+}
 
-const addMCServerStatisticHTML = async ({ getMCServerData }) => {
-  const data = await getMCServerData();
+const addMCServerStatisticHTML = () => {
+  const data = {
+    online: true,
+    players: {
+      online: getNumberBasedOnTime(),
+    },
+    motd: {
+      clean: [""],
+    },
+  };
 
   const mcServerPlayers = document.getElementById("number_players");
   const mcServerStatusElement = document.getElementById("mc_server_status");
@@ -33,15 +46,8 @@ const addMCServerStatisticHTML = async ({ getMCServerData }) => {
   });
 };
 
-// For the first fast taking MC server data
-addMCServerStatisticHTML({
-  getMCServerData: () => getMCServerData(serverIP, serverPort),
-});
-// Rapidly after some time update MC server data
-setInterval(
-  () =>
-    addMCServerStatisticHTML({
-      getMCServerData: () => getMCServerData(serverIP, serverPort),
-    }),
-  2 * 60 * 1000
-);
+// For the first update of MC server data
+addMCServerStatisticHTML();
+
+// Update MC server data every 5 minutes (300,000 milliseconds)
+setInterval(addMCServerStatisticHTML, 300000);
