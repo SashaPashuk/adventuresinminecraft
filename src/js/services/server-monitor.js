@@ -3,16 +3,108 @@ import { gameServerSchemaGenerator } from "../utils/helpers.js";
 const serverIP = "195.201.168.105";
 const serverPort = 25565;
 
+const defaultNumberEncreaseDecrease = 12;
+
+function randomAddOrSubtractNumber(baseNumber, maxDelta) {
+  const delta = Math.floor(Math.random() * (maxDelta * 2 + 1)) - maxDelta;
+
+  const operation = Math.random() < 0.5 ? "add" : "subtract";
+
+  const result = operation === "add" ? baseNumber + delta : baseNumber - delta;
+
+  return result;
+}
+
+function isTimeDifference5Minutes(date1, date2) {
+  const time1 = new Date(date1);
+  const time2 = new Date(date2);
+
+  const timeDifferenceInMilliseconds = Math.abs(time2 - time1);
+
+  const timeDifferenceInMinutes = timeDifferenceInMilliseconds / (1000 * 60);
+
+  return timeDifferenceInMinutes >= 1;
+}
+
+const randomUpdateNumberPlayers = (defaultNumber) => {
+  let lsMSServerData = localStorage.getItem("msServerData");
+
+  if (!lsMSServerData) {
+    const updatedPlayers = randomAddOrSubtractNumber(
+      defaultNumber,
+      defaultNumberEncreaseDecrease
+    );
+
+    localStorage.setItem(
+      "msServerData",
+      JSON.stringify({ date: new Date(), players: updatedPlayers })
+    );
+
+    return updatedPlayers;
+  }
+
+  if (lsMSServerData) {
+    const { players, date } = JSON.parse(lsMSServerData);
+
+    if (isTimeDifference5Minutes(new Date(), date)) {
+      localStorage.setItem(
+        "msServerData",
+        JSON.stringify({
+          date: new Date(),
+          players: date,
+        })
+      );
+
+      return players;
+    }
+
+    const updatedPlayers = randomAddOrSubtractNumber(
+      players,
+      defaultNumberEncreaseDecrease
+    );
+
+    localStorage.setItem(
+      "msServerData",
+      JSON.stringify({
+        date: isTimeDifference5Minutes(new Date(), date) ? new Date() : date,
+        players: updatedPlayers,
+      })
+    );
+
+    return (
+      (!updatedPlayers && updatedPlayers) ||
+      randomAddOrSubtractNumber(defaultNumber, defaultNumberEncreaseDecrease)
+    );
+  }
+};
+
 function getNumberBasedOnTime() {
   const currentTime = new Date();
   const currentHour = currentTime.getHours();
+  const dayPeriod = localStorage.getItem("dayPeriod") || "day";
 
   if (currentHour >= 6 && currentHour < 18) {
+    if (dayPeriod === "night") {
+      localStorage.removeItem("msServerData");
+    }
+    localStorage.setItem("dayPeriod", "day");
+
     // Daytime: 200 - 400
-    return Math.floor(Math.random() * (400 - 200 + 1)) + 200;
+    const defaultNumber = 274;
+    const playersNumber = randomUpdateNumberPlayers(defaultNumber);
+
+    return playersNumber;
   } else {
+    if (dayPeriod === "day") {
+      localStorage.removeItem("msServerData");
+    }
+    localStorage.setItem("dayPeriod", "night");
+
     // Nighttime: 5 - 199
-    return Math.floor(Math.random() * (199 - 5 + 1)) + 5;
+    const defaultNumber = 127;
+    const playersNumber = randomUpdateNumberPlayers(defaultNumber);
+
+    return playersNumber;
   }
 }
 
