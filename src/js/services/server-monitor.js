@@ -23,7 +23,7 @@ function isTimeDifference5Minutes(date1, date2) {
 
   const timeDifferenceInMinutes = timeDifferenceInMilliseconds / (1000 * 60);
 
-  return timeDifferenceInMinutes >= 1;
+  return timeDifferenceInMinutes >= 5;
 }
 
 const randomUpdateNumberPlayers = (defaultNumber) => {
@@ -47,34 +47,31 @@ const randomUpdateNumberPlayers = (defaultNumber) => {
     const { players, date } = JSON.parse(lsMSServerData);
 
     if (isTimeDifference5Minutes(new Date(), date)) {
+      const updatedPlayers = randomAddOrSubtractNumber(
+        players,
+        defaultNumberEncreaseDecrease
+      );
+
       localStorage.setItem(
         "msServerData",
         JSON.stringify({
           date: new Date(),
-          players: date,
+          players: updatedPlayers,
         })
       );
 
-      return players;
+      return updatedPlayers;
     }
-
-    const updatedPlayers = randomAddOrSubtractNumber(
-      players,
-      defaultNumberEncreaseDecrease
-    );
 
     localStorage.setItem(
       "msServerData",
       JSON.stringify({
         date: isTimeDifference5Minutes(new Date(), date) ? new Date() : date,
-        players: updatedPlayers,
+        players,
       })
     );
 
-    return (
-      (!updatedPlayers && updatedPlayers) ||
-      randomAddOrSubtractNumber(defaultNumber, defaultNumberEncreaseDecrease)
-    );
+    return players;
   }
 };
 

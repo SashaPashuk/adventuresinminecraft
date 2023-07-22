@@ -158,8 +158,10 @@ const addBuyShopItemEventListener = (item) => {
             ? SHOP_ITEM_TIME_USAGE["30_DAYS"]
             : SHOP_ITEM_TIME_USAGE.Forever,
           sum_item_price: item.price
-            ? Number(itemAmountElement.innerHTML) * Number(item.price)
-            : Number(itemAmountElement.innerHTML) * Number(item.forever_price),
+            ? Number(itemAmountElement.innerHTML) *
+              Number(item.price).toFixed(2)
+            : Number(itemAmountElement.innerHTML) *
+              Number(item.forever_price).toFixed(2),
         },
       ];
       lsShopOrderItems = updatedlsShopOrderItems;
@@ -309,7 +311,7 @@ const addShopItemUsageEventListener = (product) => {
         usagesButtonElements[1].classList.add("button-shade");
         productPrice.textContent =
           productPrice.textContent.slice(0, 1) +
-          quantity * Number(product.price);
+          quantity * Number(product.price).toFixed(2);
       } else {
         usagesButtonElements[1].classList.add("selected");
         usagesButtonElements[1].classList.add("button-primary");
@@ -319,7 +321,7 @@ const addShopItemUsageEventListener = (product) => {
         usagesButtonElements[0].classList.add("button-shade");
         productPrice.textContent =
           productPrice.textContent.slice(0, 1) +
-          quantity * Number(product.forever_price);
+          quantity * Number(product.forever_price).toFixed(2);
       }
     });
   });

@@ -141,9 +141,9 @@ export const renderShopItemInfoHTML = ({
     <div class="content__info">
       <div class="content__price-block price-block">
         <span data-i18n-key="productPage__price" class="price-block__title">Цeна:</span>
-        <span class="price-block__price" id="product_price">€${
+        <span class="price-block__price" id="product_price">€${(
           Number(price) || Number(forever_price)
-        }</span>
+        ).toFixed(2)}</span>
       </div>
       ${usagesContainerElement}
     </div>
@@ -254,7 +254,9 @@ export const renderCartItemsHTML = (items) => {
               <span data-i18n-key="cartPage__price">Цена:</span>
               <div>
                 <span>€</span>
-                <span class="cartPage-list-item-sum">${sum_item_price}</span>
+                <span class="cartPage-list-item-sum">${Number(
+                  sum_item_price
+                ).toFixed(2)}</span>
               </div>
             </div>
           </div>
@@ -315,7 +317,7 @@ export const renderOrderHistoryItemsHTML = (data) => {
           }</span></div>
           <div><span data-i18n-key="orderHistoryPage__totalPrice">Цена:</span><span>€${Number(
             total_price
-          ).toFixed()}</span></div>
+          ).toFixed(2)}</span></div>
           <div class="orderHistory-orders-order-actions">
             <button data-i18n-key="orderHistoryPage__repeatOrderButton" class="button-primary">Повторить заказ</button>
             <span
@@ -363,11 +365,13 @@ export const renderOrderHistoryItemsHTML = (data) => {
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__itemPrice">Цена</span>
-                  <span>€${price || forever_price}</span>
+                  <span>€${(Number(price) || Number(forever_price)).toFixed(
+                    2
+                  )}</span>
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__overallPrice">Общая цена</span>
-                  <span>€${sum_item_price}</span>
+                  <span>€${Number(sum_item_price).toFixed(2)}</span>
                 </div>
               </li>
             `;
@@ -403,7 +407,7 @@ export const renderShopItemsListHTML = (items) => {
             </p>
             <div class="products-card__block">
                 <p class="products-card__price">
-                  €${Number(price) || Number(forever_price)}
+                  €${(Number(price) || Number(forever_price)).toFixed(2)}
                 </p>
                 <button class="products-card__buy" data-id=${id}></button>
             </div>
@@ -564,7 +568,7 @@ export const productSchemaGenerator = (product) => {
       "@type": "Offer",
       url: `https://adventuresinminecraft.com/en/pages/product?id=${product.id}`,
       priceCurrency: "EUR",
-      price: Number(product.price),
+      price: Number(product.price).toFixed(2),
       priceValidUntil: "2023-12-31",
       availability: "https://schema.org/InStock",
     },

@@ -187,7 +187,10 @@ const addProductIncreaseDecreasButtonsEventListener = (items) => {
           return;
         }
 
-        modifyOverallPaymentSumHTML("increase", items[index].price || 0);
+        modifyOverallPaymentSumHTML(
+          "increase",
+          Number(items[index].price).toFixed(2) || 0
+        );
         amount.textContent = Number(amount.innerHTML) + 1;
 
         const updatedlsShopOrderItems = items.map((orderItem) => ({
@@ -199,9 +202,10 @@ const addProductIncreaseDecreasButtonsEventListener = (items) => {
           sum_item_price:
             orderItem.id === items[index].id
               ? orderItem.time_to_use === SHOP_ITEM_TIME_USAGE.Forever
-                ? (orderItem.amount + 1) * orderItem.forever_price
-                : (orderItem.amount + 1) * orderItem.price
-              : orderItem.sum_item_price,
+                ? (orderItem.amount + 1) *
+                  Number(orderItem.forever_price).toFixed(2)
+                : (orderItem.amount + 1) * Number(orderItem.price.toFixed(2))
+              : Number(orderItem.sum_item_price).toFixed(2),
         }));
 
         lsShopOrderItems = updatedlsShopOrderItems;
@@ -232,7 +236,10 @@ const addProductIncreaseDecreasButtonsEventListener = (items) => {
 
       // success
       if (response === ITEM_AMOUNT_CHANGED_SUCCESS) {
-        modifyOverallPaymentSumHTML("increase", items[index].price || 0);
+        modifyOverallPaymentSumHTML(
+          "increase",
+          Number(items[index].price).toFixed(2) || 0
+        );
         amount.textContent = Number(amount.innerHTML) + 1;
 
         ShopOrderItemsEventObserever.broadcast(
@@ -242,9 +249,9 @@ const addProductIncreaseDecreasButtonsEventListener = (items) => {
             sum_item_price:
               el.id === items[index].id
                 ? el.time_to_use === SHOP_ITEM_TIME_USAGE.Forever
-                  ? (el.amount + 1) * el.forever_price
-                  : (el.amount + 1) * el.price
-                : el.sum_item_price,
+                  ? (el.amount + 1) * Number(el.forever_price).toFixed(2)
+                  : (el.amount + 1) * Number(el.price).toFixed(2)
+                : Number(el.sum_item_price).toFixed(2),
           }))
         );
       }
@@ -270,7 +277,10 @@ const addProductIncreaseDecreasButtonsEventListener = (items) => {
           return;
         }
 
-        modifyOverallPaymentSumHTML("decrease", items[index].price || 0);
+        modifyOverallPaymentSumHTML(
+          "decrease",
+          Number(items[index].price).toFixed(2) || 0
+        );
         amount.textContent = Number(amount.innerHTML) - 1;
 
         const updatedlsShopOrderItems = items.map((orderItem) => ({
@@ -281,8 +291,8 @@ const addProductIncreaseDecreasButtonsEventListener = (items) => {
               : orderItem.amount,
           sum_item_price:
             orderItem.id === items[index].id
-              ? (orderItem.amount - 1) * orderItem.price
-              : orderItem.sum_item_price,
+              ? (orderItem.amount - 1) * Number(orderItem.price).toFixed(2)
+              : Number(orderItem.sum_item_price).toFixed(2),
         }));
 
         lsShopOrderItems = updatedlsShopOrderItems;
@@ -312,7 +322,10 @@ const addProductIncreaseDecreasButtonsEventListener = (items) => {
 
       // success
       if (response === ITEM_AMOUNT_CHANGED_SUCCESS) {
-        modifyOverallPaymentSumHTML("decrease", items[index].price || 0);
+        modifyOverallPaymentSumHTML(
+          "decrease",
+          Number(items[index].price).toFixed(2) || 0
+        );
         amount.textContent = Number(amount.innerHTML) - 1;
 
         ShopOrderItemsEventObserever.broadcast(
@@ -322,8 +335,8 @@ const addProductIncreaseDecreasButtonsEventListener = (items) => {
             sum_item_price:
               el.id === items[index].id
                 ? el.time_to_use === SHOP_ITEM_TIME_USAGE.Forever
-                  ? (el.amount - 1) * el.forever_price
-                  : (el.amount - 1) * el.price
+                  ? (el.amount - 1) * Number(el.forever_price).toFixed(2)
+                  : (el.amount - 1) * Number(el.price).toFixed(2)
                 : el.sum_item_price,
           }))
         );
@@ -428,8 +441,8 @@ const addOrderItemsUsageButtonsEventListener = (items) => {
                   : orderItem.time_to_use,
               sum_item_price:
                 orderItem.id === items[index].id
-                  ? +orderItem.amount * +orderItem.price
-                  : orderItem.sum_item_price,
+                  ? +orderItem.amount * Number(orderItem.price).toFixed(2)
+                  : Number(orderItem.sum_item_price).toFixed(2),
             }));
 
             lsShopOrderItems = updatedlsShopOrderItems;
@@ -481,8 +494,8 @@ const addOrderItemsUsageButtonsEventListener = (items) => {
                     : el.time_to_use,
                 sum_item_price:
                   el.id === items[index].id
-                    ? +el.amount * +el.price
-                    : el.sum_item_price,
+                    ? Number(el.amount) * Number(el.price).toFixed(2)
+                    : Number(el.sum_item_price).toFixed(2),
               }))
             );
           }

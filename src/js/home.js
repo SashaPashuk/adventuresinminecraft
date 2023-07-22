@@ -183,8 +183,8 @@ const addProductCartButtonsEventListeners = (items) => {
               ? SHOP_ITEM_TIME_USAGE["30_DAYS"]
               : SHOP_ITEM_TIME_USAGE.Forever,
             sum_item_price: items.results[index].price
-              ? Number(items.results[index].price)
-              : Number(items.results[index].forever_price),
+              ? Number(items.results[index].price).toFixed(2)
+              : Number(items.results[index].forever_price).toFixed(2),
           },
         ];
         lsShopOrderItems = updatedlsShopOrderItems;

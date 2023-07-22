@@ -29,7 +29,7 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
     <div class="content__info">
       <div class="content__price-block price-block">
         <span data-i18n-key="productPage__price" class="price-block__title">Цeна:</span>
-        <span class="price-block__price" id="product_price">€${Number(t)||Number(r)}</span>
+        <span class="price-block__price" id="product_price">€${(Number(t)||Number(r)).toFixed(2)}</span>
       </div>
       ${n}
     </div>
@@ -90,7 +90,7 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
               <span data-i18n-key="cartPage__price">Цена:</span>
               <div>
                 <span>€</span>
-                <span class="cartPage-list-item-sum">${a}</span>
+                <span class="cartPage-list-item-sum">${Number(a).toFixed(2)}</span>
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
             <span data-i18n-key="orderHistoryPage__orderDone">Выполнен</span>
           </div>
           <div class="orderHistory-orders-order__amount-container"><span data-i18n-key="orderHistoryPage__amount">Количество:</span><span>${r?.length}</span></div>
-          <div><span data-i18n-key="orderHistoryPage__totalPrice">Цена:</span><span>€${Number(t).toFixed()}</span></div>
+          <div><span data-i18n-key="orderHistoryPage__totalPrice">Цена:</span><span>€${Number(t).toFixed(2)}</span></div>
           <div class="orderHistory-orders-order-actions">
             <button data-i18n-key="orderHistoryPage__repeatOrderButton" class="button-primary">Повторить заказ</button>
             <span
@@ -155,11 +155,11 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__itemPrice">Цена</span>
-                  <span>€${t||r}</span>
+                  <span>€${(Number(t)||Number(r)).toFixed(2)}</span>
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__overallPrice">Общая цена</span>
-                  <span>€${a}</span>
+                  <span>€${Number(a).toFixed(2)}</span>
                 </div>
               </li>
             `)}
@@ -174,7 +174,7 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
             </p>
             <div class="products-card__block">
                 <p class="products-card__price">
-                  €${Number(e)||Number(s)}
+                  €${(Number(e)||Number(s)).toFixed(2)}
                 </p>
                 <button class="products-card__buy" data-id=${a}></button>
             </div>
@@ -207,4 +207,4 @@ import{SHOP_ITEM_TIME_USAGE,SHOP_ITEM_TYPES}from"../contants/constants.js";impor
           Подробнее
         </a>
       </div>
-    `;a+=r}),t.innerHTML=a},gameServerSchemaGenerator=e=>{var t=document.createElement("script");t.type="application/ld+json",t.innerHTML=JSON.stringify({"@context":"https://schema.org","@type":"GameServer","@id":"GameServer",name:e.name,playersOnline:e.players,url:"https://monitoringminecraft.ru/server/1263678",serverStatus:e.status}),document.querySelector("head").appendChild(t)},productSchemaGenerator=e=>{var t=document.createElement("script");t.type="application/ld+json",t.innerHTML=JSON.stringify({"@context":"https://schema.org/","@type":"Product",name:e.name,offers:{"@type":"Offer",url:"https://adventuresinminecraft.com/en/pages/product?id="+e.id,priceCurrency:"EUR",price:Number(e.price),priceValidUntil:"2023-12-31",availability:"https://schema.org/InStock"}}),document.querySelector("head").appendChild(t)},productBreadcrumbSchemaGenerator=(e,t)=>{var r=document.createElement("script");r.type="application/ld+json",r.innerHTML=JSON.stringify({"@context":"https://schema.org/","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Store",item:"https://adventuresinminecraft.com/home"},{"@type":"ListItem",position:2,name:e,item:"https://adventuresinminecraft.com/en/pages/product?id="+t}]}),document.querySelector("head").appendChild(r)};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML,renderDonationDescriptionColumnItemsHTML,renderDonationDescriptionItemDescHTML,renderListingHTML,gameServerSchemaGenerator,productSchemaGenerator,productBreadcrumbSchemaGenerator};
+    `;a+=r}),t.innerHTML=a},gameServerSchemaGenerator=e=>{var t=document.createElement("script");t.type="application/ld+json",t.innerHTML=JSON.stringify({"@context":"https://schema.org","@type":"GameServer","@id":"GameServer",name:e.name,playersOnline:e.players,url:"https://monitoringminecraft.ru/server/1263678",serverStatus:e.status}),document.querySelector("head").appendChild(t)},productSchemaGenerator=e=>{var t=document.createElement("script");t.type="application/ld+json",t.innerHTML=JSON.stringify({"@context":"https://schema.org/","@type":"Product",name:e.name,offers:{"@type":"Offer",url:"https://adventuresinminecraft.com/en/pages/product?id="+e.id,priceCurrency:"EUR",price:Number(e.price).toFixed(2),priceValidUntil:"2023-12-31",availability:"https://schema.org/InStock"}}),document.querySelector("head").appendChild(t)},productBreadcrumbSchemaGenerator=(e,t)=>{var r=document.createElement("script");r.type="application/ld+json",r.innerHTML=JSON.stringify({"@context":"https://schema.org/","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Store",item:"https://adventuresinminecraft.com/home"},{"@type":"ListItem",position:2,name:e,item:"https://adventuresinminecraft.com/en/pages/product?id="+t}]}),document.querySelector("head").appendChild(r)};export{addToastNotification,renderShopItemImgHTML,renderShopItemInfoHTML,renderCartItemsHTML,renderServerDropdownItemsHTML,renderOrderHistoryItemsHTML,renderShopItemsListHTML,renderDonationDescriptionColumnItemsHTML,renderDonationDescriptionItemDescHTML,renderListingHTML,gameServerSchemaGenerator,productSchemaGenerator,productBreadcrumbSchemaGenerator};
