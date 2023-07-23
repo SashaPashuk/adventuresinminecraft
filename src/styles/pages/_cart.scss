@@ -31,11 +31,11 @@
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
 
-        &>div {
+        & > div {
           // margin-top: 38px;
           display: grid;
 
-          &>div span {
+          & > div span {
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 500;
@@ -45,7 +45,7 @@
             width: max-content;
           }
 
-          &>span {
+          & > span {
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 500;
@@ -142,7 +142,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    &>.button-shade {
+    & > .button-shade {
       width: fit-content;
       align-self: flex-start;
     }
@@ -170,12 +170,12 @@
         color: #ffffff;
       }
 
-      &>div {
+      & > div {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
 
-        &>span {
+        & > span {
           width: max-content;
           font-family: "Montserrat";
           font-style: normal;
@@ -191,7 +191,7 @@
         }
       }
 
-      &>div>input {
+      & > div > input {
         width: 272px;
         height: 48px;
         padding: 12px 26px;
@@ -233,6 +233,13 @@
       line-height: 150%;
       color: #ffffff;
       cursor: pointer;
+    }
+
+    a {
+      color: $primary-orange;
+      &:hover {
+        color: $primary-light-orange;
+      }
     }
 
     &--error {

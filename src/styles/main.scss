@@ -355,8 +355,11 @@ img {
     font-size: 16px;
     line-height: 150%;
 
-    & > span {
+    & > a {
       color: $primary-orange;
+      &:hover {
+        color: $primary-light-orange;
+      }
     }
   }
 
@@ -391,6 +394,7 @@ img {
 @import "pages/decline-payment";
 @import "pages/mods";
 @import "pages/404";
+@import "pages/policy";
 
 // import css libs
 @import "css-libs/bootstrap-grid.min.css";
