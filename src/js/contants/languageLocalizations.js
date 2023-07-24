@@ -277,7 +277,7 @@ export const languageLocalizations = {
     cartPage__usage_30: "30 Days",
     cartPage__usage_forever: "Forever",
     cartPage__price: "Price:",
-    cartPage__check_policyInnerHTML: `I have read the <a href="/en/pages/terms-and-conditions">Terms and Conditions</a> and <a href="/ru/pages/privacy-policy">Privacy Policy</a> and agree with the terms.`,
+    cartPage__check_policyInnerHTML: `I have read the <a href="/en/pages/terms-and-conditions/">Terms and Conditions</a> and <a href="/ru/pages/privacy-policy">Privacy Policy</a> and agree with the terms.`,
 
     // launcherPage
     launcherPage__title: "LUNCHER MINECRAFT WITH MODS",
@@ -646,7 +646,7 @@ export const languageLocalizations = {
     // cookie
     cookie_title: "We use cookies",
     cookie_textInnerHTML: `We use cookies to ensure you get the best experience on our website. By
-  using this site, you agree to the <a href="/en/pages/privacy-policy">Privacy Policy</a> and
+  using this site, you agree to the <a href="/en/pages/privacy-policy/">Privacy Policy</a> and
   <a href="/en/pages/terms-and-conditions">Terms of Service</a>`,
     cookie_button: "Accept & Close",
     // 404
@@ -969,7 +969,7 @@ export const languageLocalizations = {
       <p class="policy__update">Effective June 29, 2023</p>
       <p class="policy__text">
         <strong>Adventures in Minecraft</strong>website
-        <a href="/">https://adventuresinminecraft.com/en/home</a> (further
+        <a href="/">https://adventuresinminecraft.com/</a> (further
         the “Site”) is owned by GalaxyGrip OÜ - a company registered
         according to legislation of Estonia with its registered number
         16776100, whose registered address is Harju maakond, Tallinn,
@@ -1469,7 +1469,7 @@ export const languageLocalizations = {
         This policy describes how Adventures in Minecraft uses cookies and
         other related technologies (collectively referred to as “cookies'')
         when you interact with us on
-        <a href="/">https://adventuresinminecraft.com/en/home</a> (the
+        <a href="/">https://adventuresinminecraft.com/</a> (the
         “Site”). The Site is owned by GalaxyGrip OÜ - a company registered
         according to legislation of Estonia with its registered number
         16776100, whose registered address is Harju maakond, Tallinn,
@@ -2437,7 +2437,7 @@ export const languageLocalizations = {
       <p class="policy__update">Последнее обновление 29 июня 2023</p>
       <p class="policy__text">
         <strong>Adventures in Minecraft</strong>Сайт
-        <a href="/">https://adventuresinminecraft.com/ru/home</a>(далее
+        <a href="/">https://adventuresinminecraft.com/</a>(далее
         «Сайт») принадлежит GalaxyGrip OÜ — компании, зарегистрированной в
         соответствии с законодательством Эстонии под регистрационным номером
         16776100, по адресу Харью мааконд, Таллин, район Ласнамяэ, улица
@@ -2991,7 +2991,7 @@ export const languageLocalizations = {
         В этой политике описывается, как Adventures in Minecraft использует
         файлы policy и другие связанные технологии (совместно именуемые
         «файлы policy»), когда вы взаимодействуете с нами на
-        <a href="/">https://adventuresinminecraft.com/ru/home </a> («Сайт»).
+        <a href="/">https://adventuresinminecraft.com/ </a> («Сайт»).
         Сайт принадлежит GalaxyGrip OÜ - компании, зарегистрированной в
         соответствии с законодательством Эстонии под регистрационным номером
         16776100, юридический адрес которой Харью мааконд, Таллин, район

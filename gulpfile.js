@@ -81,13 +81,18 @@ function serve() {
         function (req, res, next) {
           var url = req.url;
 
-          if (url === "/") url = "/en/home";
+          if (url === "/") url = "/home/";
 
           if (!url.endsWith(".html") && url.indexOf(".") === -1) {
             url += ".html";
           }
 
+          if (url.endsWith("/.html")) {
+            url = url.replace("/.html", ".html");
+          }
+          console.log("url", url);
           var filePath = path.join(dist.root, url);
+          console.log("filePath", filePath);
           if (!fs.existsSync(filePath)) {
             const languageFromURL = url.includes("/ru/") ? "ru" : "en";
 

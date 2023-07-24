@@ -24,15 +24,19 @@ document.addEventListener("DOMContentLoaded", async () => {
       resolve();
     }, 200)
   );
-  const languageFromURL = window.location.pathname.includes("/ru/")
-    ? "ru"
-    : "en";
 
-  if (window.location.pathname === "/") {
-    const lsLanguage = localStorage.getItem("language");
+  const languageFromURL =
+    window.location.pathname === "/"
+      ? localStorage.getItem("language")
+      : window.location.pathname.includes("/ru/")
+      ? "ru"
+      : "en";
 
-    window.open(`/${lsLanguage || DEFAULT_LANGUAGE}/home`, "_self");
-  }
+  // if (window.location.pathname === "/") {
+  //   const lsLanguage = localStorage.getItem("language");
+
+  //   window.open(`/`, "_self");
+  // }
 
   setLocale(languageFromURL);
   setActiveLocale(languageFromURL);
@@ -170,7 +174,7 @@ const addLanguageSelectorEventListener = () => {
 const addCookieEventListener = () => {
   const cookie = localStorage.getItem("hasAcceptedCookie");
   if (!document?.querySelector(".cookie_container")) return;
-  
+
   if (!cookie) {
     document?.querySelector(".cookie_container")?.classList.remove("hidden");
   }

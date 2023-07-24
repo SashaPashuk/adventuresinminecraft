@@ -93,7 +93,7 @@ loginButtonElement?.addEventListener("click", (e) => {
         ? "ru"
         : "en";
 
-      window.location.href = `/${languageFromURL}/home`;
+      window.location.href = `/`;
     }
   });
 });
@@ -141,7 +141,7 @@ codeButtonElement?.addEventListener("click", (e) => {
       localStorage.removeItem("login");
       localStorage.setItem("username", JSON.parse(loginData).username);
       localStorage.setItem("tokens", JSON.stringify(data));
-      window.location.href = "/home";
+      window.location.href = "/";
     }
   });
 });

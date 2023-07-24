@@ -588,7 +588,7 @@ export const productBreadcrumbSchemaGenerator = (productName, id) => {
         "@type": "ListItem",
         position: 1,
         name: "Store",
-        item: "https://adventuresinminecraft.com/home",
+        item: "https://adventuresinminecraft.com/",
       },
       {
         "@type": "ListItem",

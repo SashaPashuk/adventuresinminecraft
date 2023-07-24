@@ -5,10 +5,13 @@ import {
 } from "../utils/observer.js";
 import { APP_LANGUAGES, DEFAULT_LANGUAGE } from "../contants/constants.js";
 
-const getDefaultLanguage = () => {
-  const languageFromURL = window.location.pathname.includes("/ru/")
-    ? "ru"
-    : "en";
+export const getDefaultLanguage = () => {
+  const languageFromURL =
+    window.location.pathname === "/"
+      ? null
+      : window.location.pathname.includes("/ru/")
+      ? "ru"
+      : "en";
 
   const browserUserLanguage = navigator.language || navigator.userLanguage;
   const browserUserLanguageSupportedInApp = APP_LANGUAGES.includes(
@@ -36,12 +39,17 @@ export const getActiveLocale = () => locale;
 export const setActiveLocale = (newLocale) => {
   locale = newLocale;
   defaultLocale = newLocale;
+
+  window.location.pathname === "/" &&
+    newLocale === "ru" &&
+    changeHomePageLinkHrefs();
 };
 
 // Gets filled with active locale translations
 let translations = {};
 
 ContentLoadingEventObserever.subscribe((dataLoaded) => {
+  console.log("dataLoaded", dataLoaded);
   if (dataLoaded) {
     translatePage();
   }
@@ -60,11 +68,11 @@ function bindLocaleSwitcher(initialValue) {
   if (switcher) {
     switcher.value = initialValue;
     switcher.onchange = (e) => {
-      const hasRepalceLanguageCode =
+      const hasReplaceLanguageCode =
         window.location.pathname.includes("/en") ||
         window.location.pathname.includes("/ru");
 
-      if (hasRepalceLanguageCode) {
+      if (hasReplaceLanguageCode) {
         window.open(
           `${window.location.origin}${window.location.pathname.replace(
             e.target.value === "ru" ? "/en" : "/ru",
@@ -73,6 +81,8 @@ function bindLocaleSwitcher(initialValue) {
           "_self"
         );
       }
+
+      changeHomePageLinkHrefs();
 
       // Set the locale to the selected option[value]
       setLocale(e.target.value);
@@ -133,3 +143,18 @@ function translateElement(element) {
 
   element.innerText = translation;
 }
+
+const changeHomePageLinkHrefs = () => {
+  if (window.location.pathname === "/") {
+    const allLinkHrefs = document.querySelectorAll("a");
+
+    allLinkHrefs.forEach((el) =>
+      el.setAttribute(
+        "href",
+        el.getAttribute("href").includes("en")
+          ? el.getAttribute("href").replace("en", "ru")
+          : el.getAttribute("href").replace("ru", "en")
+      )
+    );
+  }
+};
