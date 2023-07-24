@@ -20,27 +20,27 @@
     />
     <meta
       property="og:url"
-      content="${{ locale.domain}}$${{ locale.canonical_home_href}}$"
+      content="${{locale.domain}}$${{locale.canonical_home_href}}$"
     />
     <meta property="og:site_name" content="Adventures In Minecraft" />
 
     <link
       rel="canonical"
-      href="${{ locale.domain}}$${{ locale.canonical_home_href}}$"
+      href="${{locale.domain}}$${{locale.canonical_home_href}}$"
     />
     <link
       rel="alternate"
-      href="${{ locale.domain}}$${{ locale.home_page_url.en}}$"
+      href="${{locale.domain}}$${{locale.home_page_url.en}}$"
       hreflang="en-US"
     />
     <link
       rel="alternate"
-      href="${{ locale.domain}}$${{ locale.home_page_url.ru}}$"
+      href="${{locale.domain}}$${{locale.home_page_url.ru}}$"
       hreflang="ru-RU"
     />
     <link
       rel="alternate"
-      href="${{ locale.domain}}$${{ locale.home_page_url.en}}$"
+      href="${{locale.domain}}$${{locale.home_page_url.en}}$"
       hreflang="x-default"
     />
     <link rel="stylesheet" href="../styles/styles.css" />
@@ -71,21 +71,13 @@
         <div class="container">
           <div class="first-screen__row">
             <h1 class="first-screen__title">${{ locale.home_title }}$</h1>
-            <!-- <button
-              data-i18n-key="home_button_play_now"
-              class="first-screen__button"
-            >
-              Играть сейчас
-            </button> -->
             <div class="first-screen__server-monitoring">
               <div>
-                <p data-i18n-key="home_server_monitoring_text"></p>
+                <p>${{locale.home_server_monitoring_text}}$</p>
                 <p id="number_players">0</p>
               </div>
               <div>
-                <p data-i18n-key="home_server_monitoring_status">
-                  Server Status
-                </p>
+                <p>${{locale.home_server_monitoring_status}}$</p>
                 <p id="mc_server_status" class="offline">Offline</p>
               </div>
               <div>
@@ -111,7 +103,7 @@
                   name="svitch_product_group"
                   value="Survival"
                 />
-                <span data-i18n-key="home_survival">Выживание</span>
+                <span>${{locale.home_survival}}$</span>
               </label>
               <label class="products-svitch__button">
                 <input
@@ -120,19 +112,18 @@
                   name="svitch_product_group"
                   value="Anarchy"
                 />
-                <span data-i18n-key="home_anarchy">Анархия</span>
+                <span>${{locale.home_anarchy}}$</span>
               </label>
             </div>
             <div class="products_filters_sorting">
-              <p data-i18n-key="home_price_sort">Сортировать по цене</p>
+              <p>${{locale.home_price_sort}}$</p>
               <div class="dropdown-custom">
                 <div class="dropdown-custom__selection open">
                   <span
-                    data-i18n-key="home_price_sort_asc"
                     data-selected-sort-name="FROM_CHEAP_TO_EXPENSIVE"
                     id="dropdown-selected-item"
                   >
-                    От дешевых к дорогим
+                    ${{locale.home_price_sort_asc}}$
                   </span>
                   <img
                     src="../assets/images/icons/arrow_down.svg"
@@ -141,18 +132,16 @@
                 </div>
                 <ul class="dropdown-custom__container hidden">
                   <li
-                    data-i18n-key="home_price_sort_desc"
                     data-sort-name="FROM_EXPENSIVE_TO_CHEAP"
                     class="dropdown-custom__container__item"
                   >
-                    От дорогих к дешевым
+                    ${{locale.home_price_sort_desc}}$
                   </li>
                   <li
-                    data-i18n-key="home_price_sort_asc"
                     data-sort-name="FROM_CHEAP_TO_EXPENSIVE"
                     class="dropdown-custom__container__item"
                   >
-                    От дешевых к дорогим
+                    ${{locale.home_price_sort_asc}}$
                   </li>
                 </ul>
               </div>
@@ -161,7 +150,6 @@
           <div class="products__list"></div>
         </div>
       </div>
-      <!-- @@include('components/latest-purchases.html') -->
     </main>
     @@include('components/footer.html')
     <script type="module" src="../js/main.js"></script>

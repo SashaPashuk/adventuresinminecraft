@@ -566,7 +566,7 @@ export const productSchemaGenerator = (product) => {
     name: product.name,
     offers: {
       "@type": "Offer",
-      url: `https://adventuresinminecraft.com/en/pages/product?id=${product.id}`,
+      url: `https://adventuresinminecraft.com/pages/product?id=${product.id}`,
       priceCurrency: "EUR",
       price: Number(product.price).toFixed(2),
       priceValidUntil: "2023-12-31",
@@ -588,13 +588,13 @@ export const productBreadcrumbSchemaGenerator = (productName, id) => {
         "@type": "ListItem",
         position: 1,
         name: "Store",
-        item: "https://adventuresinminecraft.com/home",
+        item: "https://adventuresinminecraft.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: productName,
-        item: `https://adventuresinminecraft.com/en/pages/product?id=${id}`,
+        item: `https://adventuresinminecraft.com/pages/product?id=${id}`,
       },
     ],
   });

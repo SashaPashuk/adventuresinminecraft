@@ -81,17 +81,24 @@ function serve() {
         function (req, res, next) {
           var url = req.url;
 
-          if (url === "/") url = "/en/home";
+          if (url === "/") url = "/home";
 
           if (!url.endsWith(".html") && url.indexOf(".") === -1) {
             url += ".html";
           }
 
-          var filePath = path.join(dist.root, url);
-          if (!fs.existsSync(filePath)) {
-            const languageFromURL = url.includes("/ru/") ? "ru" : "en";
+          // if (url.endsWith("/.html")) {
+          //   url = url.replace("/.html", ".html");
+          // }
 
-            url = `/${languageFromURL}/pages/404.html`;
+          var filePath = path.join(dist.root, url);
+
+          if (!fs.existsSync(filePath)) {
+            const correctErrorPageUrl = url.includes("/ru/")
+              ? `/ru/pages/404.html`
+              : `/pages/404.html`;
+
+            url = correctErrorPageUrl;
           }
           req.url = url;
 

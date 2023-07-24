@@ -81,7 +81,7 @@ signupButtonElement?.addEventListener("click", (e) => {
     if (data === "User successfully registered!") {
       const languageFromURL = window.location.pathname.includes("/ru/")
         ? "ru"
-        : "en";
+        : "";
 
       window.location.href = `/${languageFromURL}/pages/login`;
       localStorage.setItem("register_success", true);

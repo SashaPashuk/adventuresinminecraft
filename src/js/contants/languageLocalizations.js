@@ -92,17 +92,6 @@ export const languageLocalizations = {
     footer_mods: "Mods",
     footer_copiryted: "© 2023 Adventures in Minecraft - all rights reserved.",
 
-    // home-page
-    home_title: "Discover the world of Minecraft",
-    home_button_play_now: "Play now",
-    home_server_monitoring_text: "Currently playing",
-    home_server_monitoring_status: "Server Status",
-    home_survival: "Survival",
-    home_anarchy: "Anarchy",
-    home_price_sort: "Sort by price",
-    home_price_sort_asc: "From cheap to expensive",
-    home_price_sort_desc: "From expensive to cheap",
-
     // change password page
     change_password_first_step_title: `To change your password, click the "Change Password" button. A link will be sent to your email, click on it and enter a new password`,
     change_password_title: "Changing the password",
@@ -277,7 +266,7 @@ export const languageLocalizations = {
     cartPage__usage_30: "30 Days",
     cartPage__usage_forever: "Forever",
     cartPage__price: "Price:",
-    cartPage__check_policyInnerHTML: `I have read the <a href="/en/pages/terms-and-conditions">Terms and Conditions</a> and <a href="/ru/pages/privacy-policy">Privacy Policy</a> and agree with the terms.`,
+    cartPage__check_policyInnerHTML: `I have read the <a href="/pages/terms-and-conditions">Terms and Conditions</a> and <a href="/ru/pages/privacy-policy">Privacy Policy</a> and agree with the terms.`,
 
     // launcherPage
     launcherPage__title: "LUNCHER MINECRAFT WITH MODS",
@@ -646,8 +635,8 @@ export const languageLocalizations = {
     // cookie
     cookie_title: "We use cookies",
     cookie_textInnerHTML: `We use cookies to ensure you get the best experience on our website. By
-  using this site, you agree to the <a href="/en/pages/privacy-policy">Privacy Policy</a> and
-  <a href="/en/pages/terms-and-conditions">Terms of Service</a>`,
+  using this site, you agree to the <a href="/pages/privacy-policy">Privacy Policy</a> and
+  <a href="/pages/terms-and-conditions">Terms of Service</a>`,
     cookie_button: "Accept & Close",
     // 404
     "404Page__title": "Page not found",
@@ -969,7 +958,7 @@ export const languageLocalizations = {
       <p class="policy__update">Effective June 29, 2023</p>
       <p class="policy__text">
         <strong>Adventures in Minecraft</strong>website
-        <a href="/">https://adventuresinminecraft.com/en/home</a> (further
+        <a href="/">https://adventuresinminecraft.com</a> (further
         the “Site”) is owned by GalaxyGrip OÜ - a company registered
         according to legislation of Estonia with its registered number
         16776100, whose registered address is Harju maakond, Tallinn,
@@ -1004,19 +993,19 @@ export const languageLocalizations = {
 
         The very text of Terms and Conditions; <br />
         Privacy Policy
-        https://adventuresinminecraft.com/en/pages/privacy-policy <br />
+        https://adventuresinminecraft.com/pages/privacy-policy <br />
         Cookies Policy
-        https://adventuresinminecraft.com/en/pages/cookie-policy <br />
-        “Rules” https://adventuresinminecraft.com/en/pages/rules <br />
+        https://adventuresinminecraft.com/pages/cookie-policy <br />
+        “Rules” https://adventuresinminecraft.com/pages/rules <br />
         “Description of Donations”
-        https://adventuresinminecraft.com/en/pages/donation-description
+        https://adventuresinminecraft.com/pages/donation-description
         <br />
         “How to Start Playing?”
-        https://adventuresinminecraft.com/en/pages/starting-tips <br />
+        https://adventuresinminecraft.com/pages/starting-tips <br />
         “Launchers”
-        https://adventuresinminecraft.com/en/pages/launcher-download <br />
-        “Mods” https://adventuresinminecraft.com/en/pages/mods <br />
-        “FAQ” https://adventuresinminecraft.com/en/pages/faq <br />
+        https://adventuresinminecraft.com/pages/launcher-download <br />
+        “Mods” https://adventuresinminecraft.com/pages/mods <br />
+        “FAQ” https://adventuresinminecraft.com/pages/faq <br />
         The proper acceptance of this offer in accordance with the law of
         Estonia is the consistent implementation by you of the following
         actions: read terms of the Agreement, register on the Site, put a
@@ -1469,7 +1458,7 @@ export const languageLocalizations = {
         This policy describes how Adventures in Minecraft uses cookies and
         other related technologies (collectively referred to as “cookies'')
         when you interact with us on
-        <a href="/">https://adventuresinminecraft.com/en/home</a> (the
+        <a href="/">https://adventuresinminecraft.com</a> (the
         “Site”). The Site is owned by GalaxyGrip OÜ - a company registered
         according to legislation of Estonia with its registered number
         16776100, whose registered address is Harju maakond, Tallinn,
@@ -1667,17 +1656,6 @@ export const languageLocalizations = {
     footer_team: "Команда",
     footer_mods: "Моды",
     footer_copiryted: "© 2023 Adventures in Minecraft - все права защищены.",
-
-    // home page
-    home_title: "Открой для себя мир Minecraft",
-    home_button_play_now: "Играть сейчас",
-    home_server_monitoring_text: "Cейчас играют",
-    home_server_monitoring_status: "Статус Сервера",
-    home_survival: "Выживание",
-    home_anarchy: "Анархия",
-    home_price_sort: "Сортировать по цене",
-    home_price_sort_asc: "От дешевых к дорогим",
-    home_price_sort_desc: "От дорогих к дешевым",
 
     // change password page
     change_password_first_step_title: `Для изменения пароля нажмите на кнопку "Изменить пароль". Вам на почту будет отправлена ссылка, перейдите по ней и введите новый пароль`,
@@ -2437,7 +2415,7 @@ export const languageLocalizations = {
       <p class="policy__update">Последнее обновление 29 июня 2023</p>
       <p class="policy__text">
         <strong>Adventures in Minecraft</strong>Сайт
-        <a href="/">https://adventuresinminecraft.com/ru/home</a>(далее
+        <a href="/">https://adventuresinminecraft.com/ru</a>(далее
         «Сайт») принадлежит GalaxyGrip OÜ — компании, зарегистрированной в
         соответствии с законодательством Эстонии под регистрационным номером
         16776100, по адресу Харью мааконд, Таллин, район Ласнамяэ, улица
@@ -2991,7 +2969,7 @@ export const languageLocalizations = {
         В этой политике описывается, как Adventures in Minecraft использует
         файлы policy и другие связанные технологии (совместно именуемые
         «файлы policy»), когда вы взаимодействуете с нами на
-        <a href="/">https://adventuresinminecraft.com/ru/home </a> («Сайт»).
+        <a href="/">https://adventuresinminecraft.com/ru </a> («Сайт»).
         Сайт принадлежит GalaxyGrip OÜ - компании, зарегистрированной в
         соответствии с законодательством Эстонии под регистрационным номером
         16776100, юридический адрес которой Харью мааконд, Таллин, район

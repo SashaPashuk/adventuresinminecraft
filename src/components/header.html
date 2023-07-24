@@ -12,122 +12,83 @@
       </div>
       <ul class="nav">
         <li class="nav-item">
-          <a
-            data-i18n-key="header_shop"
-            class="nav-link"
-            href="${{ locale.header_link_1 }}$"
-          >
-            Магазин
+          <a class="nav-link" href="${{ locale.header_link_1 }}$">
+            ${{ locale.header_shop }}$
           </a>
         </li>
         <li class="nav-item">
-          <a
-            data-i18n-key="header_rules"
-            class="nav-link"
-            href="${{ locale.header_link_2 }}$"
-          >
-            Правила
+          <a class="nav-link" href="${{ locale.header_link_2 }}$">
+            ${{ locale.header_rules }}$
           </a>
         </li>
         <li class="nav-item">
-          <a
-            data-i18n-key="header_donate"
-            class="nav-link"
-            href="${{ locale.header_link_3 }}$"
-          >
-            Описание доната
+          <a class="nav-link" href="${{ locale.header_link_3 }}$">
+            ${{ locale.header_donate }}$
           </a>
         </li>
         <li class="nav-item">
-          <a
-            data-i18n-key="header_faq"
-            class="nav-link"
-            href="${{ locale.header_link_4 }}$"
-          >
-            FAQ
+          <a class="nav-link" href="${{ locale.header_link_4 }}$">
+            ${{ locale.header_faq }}$
           </a>
         </li>
         <li class="nav-item">
-          <a
-            data-i18n-key="header_how_to_play"
-            class="nav-link"
-            href="${{ locale.header_link_5 }}$"
-          >
-            Как начать играть?
+          <a class="nav-link" href="${{ locale.header_link_5 }}$">
+            ${{ locale.header_how_to_play }}$
           </a>
         </li>
         <li class="nav-item">
-          <a
-            data-i18n-key="header_contacts"
-            class="nav-link"
-            href="${{ locale.header_link_6 }}$"
-          >
-            Контакты
+          <a class="nav-link" href="${{ locale.header_link_6 }}$">
+            ${{ locale.header_contacts }}$
           </a>
         </li>
-        <li class="nav-item nav-item-user-logic hidden">
-          <a
-            data-i18n-key="header_enter"
-            class="button-shade"
-            href="${{ locale.header_link_7 }}$"
-          >
-            Войти
-          </a>
-        </li>
-        <li class="nav-item nav-item-user-logic hidden">
-          <a
-            data-i18n-key="header_signup"
-            class="button-primary"
-            href="${{ locale.header_link_8 }}$"
-          >
-            Регистрация
-          </a>
-        </li>
-        <li class="nav-item nav-item-user-dd-logic hidden">
-          <div class="dropdown">
-            <div class="dropdown-selection">
-              <span id="username"></span>
-              <svg
-                width="7"
-                height="5"
-                viewBox="0 0 7 5"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3.5 4.85938C3.41667 4.85938 3.33583 4.84375 3.2575 4.8125C3.17917 4.78125 3.11417 4.73958 3.0625 4.6875L0.1875 1.8125C0.0729164 1.69792 0.015625 1.55208 0.015625 1.375C0.015625 1.19792 0.0729164 1.05208 0.1875 0.9375C0.302083 0.822916 0.447917 0.765625 0.625 0.765625C0.802083 0.765625 0.947917 0.822916 1.0625 0.9375L3.5 3.375L5.9375 0.9375C6.05208 0.822916 6.19792 0.765625 6.375 0.765625C6.55208 0.765625 6.69792 0.822916 6.8125 0.9375C6.92708 1.05208 6.98437 1.19792 6.98437 1.375C6.98437 1.55208 6.92708 1.69792 6.8125 1.8125L3.9375 4.6875C3.875 4.75 3.80729 4.79438 3.73437 4.82063C3.66146 4.84688 3.58333 4.85979 3.5 4.85938Z"
+        <div class="nav-item-auth">
+          <li class="nav-item nav-item-user-logic hidden-visibility">
+            <a class="button-shade" href="${{ locale.header_link_7 }}$">
+              ${{ locale.header_enter }}$
+            </a>
+          </li>
+          <li class="nav-item nav-item-user-logic hidden-visibility">
+            <a class="button-primary" href="${{ locale.header_link_8 }}$">
+              ${{ locale.header_signup }}$
+            </a>
+          </li>
+          <li class="nav-item nav-item-user-dd-logic hidden-visibility">
+            <div class="dropdown">
+              <div class="dropdown-selection">
+                <span id="username"></span>
+                <svg
+                  width="7"
+                  height="5"
+                  viewBox="0 0 7 5"
                   fill="currentColor"
-                />
-              </svg>
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.5 4.85938C3.41667 4.85938 3.33583 4.84375 3.2575 4.8125C3.17917 4.78125 3.11417 4.73958 3.0625 4.6875L0.1875 1.8125C0.0729164 1.69792 0.015625 1.55208 0.015625 1.375C0.015625 1.19792 0.0729164 1.05208 0.1875 0.9375C0.302083 0.822916 0.447917 0.765625 0.625 0.765625C0.802083 0.765625 0.947917 0.822916 1.0625 0.9375L3.5 3.375L5.9375 0.9375C6.05208 0.822916 6.19792 0.765625 6.375 0.765625C6.55208 0.765625 6.69792 0.822916 6.8125 0.9375C6.92708 1.05208 6.98437 1.19792 6.98437 1.375C6.98437 1.55208 6.92708 1.69792 6.8125 1.8125L3.9375 4.6875C3.875 4.75 3.80729 4.79438 3.73437 4.82063C3.66146 4.84688 3.58333 4.85979 3.5 4.85938Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <ul class="dropdown-container">
+                <li>
+                  <a href="${{ locale.header_link_9 }}$">
+                    ${{ locale.header_orders_history }}$
+                  </a>
+                </li>
+                <li>
+                  <a href="${{ locale.header_link_10 }}$">
+                    ${{ locale.header_change_password }}$
+                  </a>
+                </li>
+                <li>
+                  <a href="${{ locale.header_link_11 }}$">
+                    ${{ locale.header_logout }}$
+                  </a>
+                </li>
+              </ul>
             </div>
-            <ul class="dropdown-container">
-              <li>
-                <a
-                  data-i18n-key="header_orders_history"
-                  href="${{ locale.header_link_9 }}$"
-                >
-                  История заказов
-                </a>
-              </li>
-              <li>
-                <a
-                  data-i18n-key="header_change_password"
-                  href="${{ locale.header_link_10 }}$"
-                >
-                  Изменить пароль
-                </a>
-              </li>
-              <li>
-                <a
-                  data-i18n-key="header_logout"
-                  href="${{ locale.header_link_11 }}$"
-                >
-                  Выйти
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
+          </li>
+        </div>
         <li class="nav-item">
           <a href="${{ locale.header_link_12 }}$">
             <div class="cart-container">

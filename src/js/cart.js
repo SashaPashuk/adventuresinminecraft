@@ -128,8 +128,16 @@ const addCartPaymentButtonEventListener = () => {
 
     // success
     if (createdPaymentResponse?.redirect_url) {
+      const detectedLanguage = window.location.pathname.includes("/ru/")
+        ? "ru"
+        : localStorage.getItem("language") || DEFAULT_LANGUAGE;
+
       window.open(createdPaymentResponse.redirect_url, "_blank");
-      window.open("/home", "_self");
+      if (detectedLanguage === "ru") {
+        window.open(`${window.location.origin}/ru`, "_self");
+      } else {
+        window.open("/", "_self");
+      }
     }
   });
 };

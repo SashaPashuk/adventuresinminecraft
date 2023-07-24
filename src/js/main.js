@@ -19,36 +19,31 @@ menuItems.forEach(function (item) {
 // user logic
 
 document.addEventListener("DOMContentLoaded", async () => {
-  await new Promise((resolve) =>
-    setTimeout(() => {
-      resolve();
-    }, 200)
-  );
-  const languageFromURL = window.location.pathname.includes("/ru/")
+  await new Promise((resolve) => setTimeout(resolve, 100));
+  const detectedLanguage = window.location.pathname.includes("/ru/")
     ? "ru"
-    : "en";
+    : localStorage.getItem("language") || DEFAULT_LANGUAGE;
 
-  if (window.location.pathname === "/") {
-    const lsLanguage = localStorage.getItem("language");
-
-    window.open(`/${lsLanguage || DEFAULT_LANGUAGE}/home`, "_self");
+  if (detectedLanguage === "ru" && window.location.pathname === "/") {
+    window.open(`${window.location.origin}/ru`, "_self");
   }
-
-  setLocale(languageFromURL);
-  setActiveLocale(languageFromURL);
 
   const tokensData = localStorage.getItem("tokens");
   const usernameData = localStorage.getItem("username");
 
   if (tokensData) {
-    navItemForUserDropdownLogic?.classList.remove("hidden");
+    navItemForUserDropdownLogic?.classList.remove("hidden-visibility");
+    navItemsForUserLogic?.forEach((item) => item.classList.add("hidden"));
 
     if (usernameData && usernameElement) {
       usernameElement.innerHTML = usernameData.slice(0, 15) + "...";
       usernameElement.setAttribute("title", usernameData);
     }
   } else {
-    navItemsForUserLogic?.forEach((item) => item.classList.remove("hidden"));
+    navItemForUserDropdownLogic?.classList.add("hidden");
+    navItemsForUserLogic?.forEach((item) =>
+      item.classList.remove("hidden-visibility")
+    );
   }
 
   ContentLoadingEventObserever.broadcast(true);
@@ -170,7 +165,7 @@ const addLanguageSelectorEventListener = () => {
 const addCookieEventListener = () => {
   const cookie = localStorage.getItem("hasAcceptedCookie");
   if (!document?.querySelector(".cookie_container")) return;
-  
+
   if (!cookie) {
     document?.querySelector(".cookie_container")?.classList.remove("hidden");
   }

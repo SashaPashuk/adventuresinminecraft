@@ -8,7 +8,7 @@ import { APP_LANGUAGES, DEFAULT_LANGUAGE } from "../contants/constants.js";
 const getDefaultLanguage = () => {
   const languageFromURL = window.location.pathname.includes("/ru/")
     ? "ru"
-    : "en";
+    : null;
 
   const browserUserLanguage = navigator.language || navigator.userLanguage;
   const browserUserLanguageSupportedInApp = APP_LANGUAGES.includes(
@@ -61,17 +61,23 @@ function bindLocaleSwitcher(initialValue) {
     switcher.value = initialValue;
     switcher.onchange = (e) => {
       const hasRepalceLanguageCode =
-        window.location.pathname.includes("/en") ||
-        window.location.pathname.includes("/ru");
+        window.location.pathname.includes("/ru/") ||
+        window.location.pathname === "/ru";
 
-      if (hasRepalceLanguageCode) {
+      if (!hasRepalceLanguageCode) {
+        const pathname =
+          window.location.pathname === "/" ? "" : window.location.pathname;
         window.open(
-          `${window.location.origin}${window.location.pathname.replace(
-            e.target.value === "ru" ? "/en" : "/ru",
-            e.target.value === "ru" ? "/ru" : "/en"
-          )}`,
+          `${window.location.origin}/${e.target.value}${pathname}`,
           "_self"
         );
+      } else {
+        const pathname =
+          window.location.pathname === "/ru"
+            ? "/"
+            : window.location.pathname.replace("/ru", "");
+
+        window.open(`${window.location.origin}${pathname}`, "_self");
       }
 
       // Set the locale to the selected option[value]

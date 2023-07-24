@@ -69,7 +69,11 @@
       <div class="error">
         <h1 class="error-title" data-i18n-key="404Page__title"></h1>
         <p class="error-subtitle" data-i18n-key="404Page__subtitle"></p>
-        <a class="error-link" href="/" data-i18n-key="404Page__home_link"></a>
+        <a
+          class="error-link"
+          href="${{locale.canonical_home_href}}$"
+          data-i18n-key="404Page__home_link"
+        ></a>
       </div>
     </main>
     <script type="module" src="/js/services/languageLocalization.js"></script>

@@ -89,11 +89,10 @@ loginButtonElement?.addEventListener("click", (e) => {
       localStorage.removeItem("login");
       localStorage.setItem("username", formData.username);
       localStorage.setItem("tokens", JSON.stringify(data));
-      const languageFromURL = window.location.pathname.includes("/ru/")
-        ? "ru"
-        : "en";
 
-      window.location.href = `/${languageFromURL}/home`;
+      window.location.href = window.location.pathname.includes("/ru/")
+        ? "/ru"
+        : "/";
     }
   });
 });
@@ -141,7 +140,7 @@ codeButtonElement?.addEventListener("click", (e) => {
       localStorage.removeItem("login");
       localStorage.setItem("username", JSON.parse(loginData).username);
       localStorage.setItem("tokens", JSON.stringify(data));
-      window.location.href = "/home";
+      window.location.href = "/";
     }
   });
 });

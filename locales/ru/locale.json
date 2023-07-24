@@ -44,7 +44,7 @@
     "mods_1165_metadate_description": "1.16.5 ☑️ 195.201.168.105 Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт",
     "mods_journeymap_mod_metadate_title": "Journey Map Mod | Cервер Adventures In Minecraft",
     "mods_journeymap_mod_metadate_description": "Journey Map Mod ☑️ 195.201.168.105 Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт",
-    "canonical_home_href": "/ru/home",
+    "canonical_home_href": "/ru",
     "canonical_404_href": "/ru/pages/404",
     "canonical_cart_href": "/ru/pages/cart-page",
     "canonical_change_password_href": "/ru/pages/change-password",
@@ -71,123 +71,122 @@
     "canonical_decline_payment_href": "/ru/pages/decline-payment",
     "canonical_team_href": "/ru/pages/team",
     "home_page_url": {
-        "en": "/en/home",
-        "ru": "/ru/home"
+        "en": "/",
+        "ru": "/ru"
     },
     "mods_page_url": {
-        "en": "/en/pages/mods",
+        "en": "/pages/mods",
         "ru": "/ru/pages/mods"
     },
     "mods_1122_page_url": {
-        "en": "/en/pages/mods/1122",
+        "en": "/pages/mods/1122",
         "ru": "/ru/pages/mods/1122"
     },
     "mods_1122_cars_page_url": {
-        "en": "/en/pages/mods/1122/cars",
+        "en": "/pages/mods/1122/cars",
         "ru": "/ru/pages/mods/1122/cars"
     },
     "mods_1122_pe_page_url": {
-        "en": "/en/pages/mods/1122/minecraft-pe-1-12-2",
+        "en": "/pages/mods/1122/minecraft-pe-1-12-2",
         "ru": "/ru/pages/mods/1122/minecraft-pe-1-12-2"
     },
     "mods_1122_oruzhie_page_url": {
-        "en": "/en/pages/mods/1122/oruzhie",
+        "en": "/pages/mods/1122/oruzhie",
         "ru": "/ru/pages/mods/1122/oruzhie"
     },
     "mods_journeymap_mod_page_url": {
-        "en": "/en/pages/mods/journeymap-mod",
+        "en": "/pages/mods/journeymap-mod",
         "ru": "/ru/pages/mods/journeymap-mod"
     },
     "mods_1165_page_url": {
-        "en": "/en/pages/mods/1165",
+        "en": "/pages/mods/1165",
         "ru": "/ru/pages/mods/1165"
     },
     "product_page_url": {
-        "en": "/en/pages/product",
+        "en": "/pages/product",
         "ru": "/ru/pages/product"
     },
     "launcher_download_page_url": {
-        "en": "/en/pages/launcher-download",
+        "en": "/pages/launcher-download",
         "ru": "/ru/pages/launcher-download"
     },
     "404_page_url": {
-        "en": "/en/pages/404",
+        "en": "/pages/404",
         "ru": "/ru/pages/404"
     },
     "rules_page_url": {
-        "en": "/en/pages/rules",
+        "en": "/pages/rules",
         "ru": "/ru/pages/rules"
     },
     "faq_page_url": {
-        "en": "/en/pages/faq",
+        "en": "/pages/faq",
         "ru": "/ru/pages/faq"
     },
     "login_page_url": {
-        "en": "/en/pages/login",
+        "en": "/pages/login",
         "ru": "/ru/pages/login"
     },
     "order_history_page_url": {
-        "en": "/en/pages/order-history-page",
+        "en": "/pages/order-history-page",
         "ru": "/ru/pages/order-history-page"
     },
     "registration_page_url": {
-        "en": "/en/pages/registration",
+        "en": "/pages/registration",
         "ru": "/ru/pages/registration"
     },
     "contact_page_url": {
-        "en": "/en/pages/contact",
+        "en": "/pages/contact",
         "ru": "/ru/pages/contact"
     },
     "starting_tips_page_url": {
-        "en": "/en/pages/starting-tips",
+        "en": "/pages/starting-tips",
         "ru": "/ru/pages/starting-tips"
     },
     "donation_page_url": {
-        "en": "/en/pages/donation-description",
+        "en": "/pages/donation-description",
         "ru": "/ru/pages/donation-description"
     },
     "donate_priv_page_url": {
-        "en": "/en/pages/donate-privileges",
+        "en": "/pages/donate-privileges",
         "ru": "/ru/pages/donate-privileges"
     },
     "change_password_page_url": {
-        "en": "/en/pages/change-password-page",
+        "en": "/pages/change-password-page",
         "ru": "/ru/pages/change-password-page"
     },
     "cart_page_url": {
-        "en": "/en/pages/cart-page",
+        "en": "/pages/cart-page",
         "ru": "/ru/pages/cart-page"
     },
     "team_page_url": {
-        "en": "/en/pages/team",
+        "en": "/pages/team",
         "ru": "/ru/pages/team"
     },
     "success_payment_page_url": {
-        "en": "/en/pages/success_payment",
+        "en": "/pages/success_payment",
         "ru": "/ru/pages/success_payment"
     },
     "decline_payment_page_url": {
-        "en": "/en/pages/decline_payment",
+        "en": "/pages/decline_payment",
         "ru": "/ru/pages/decline_payment"
     },
     "exit_confirmation_page_url": {
-        "en": "/en/pages/exit-confirmation-page",
+        "en": "/pages/exit-confirmation-page",
         "ru": "/ru/pages/exit-confirmation-page"
     },
     "privacy_link": {
-        "en": "/en/pages/privacy-policy",
+        "en": "/pages/privacy-policy",
         "ru": "/ru/pages/privacy-policy"
     },
     "cookie_link": {
-        "en": "/en/pages/cookie-policy",
+        "en": "/pages/cookie-policy",
         "ru": "/ru/pages/cookie-policy"
     },
     "terms_conditions_link": {
-        "en": "/en/pages/terms-and-conditions",
+        "en": "/pages/terms-and-conditions",
         "ru": "/ru/pages/terms-and-conditions"
     },
-    "home_title": "Открой для себя мир Minecraft",
-    "header_link_1": "/ru/home",
+    "header_link_1": "/ru",
     "header_link_2": "/ru/pages/rules",
     "header_link_3": "/ru/pages/donation-description",
     "header_link_4": "/ru/pages/faq",
@@ -199,7 +198,7 @@
     "header_link_10": "/ru/pages/change-password-page",
     "header_link_11": "/ru/pages/exit-confirmation-page",
     "header_link_12": "/ru/pages/cart-page",
-    "footer_link_1": "/ru/home",
+    "footer_link_1": "/ru",
     "footer_link_2": "/ru/pages/rules",
     "footer_link_3": "/ru/pages/donation-description",
     "footer_link_4": "/ru/pages/contact",
@@ -208,5 +207,38 @@
     "footer_link_7": "/ru/pages/launcher-download",
     "footer_link_8": "/ru/pages/mods",
     "product_page_name": " Товар",
-    "productPage__desc": "Описание товара:"
+    "productPage__desc": "Описание товара:",
+    "home_page": "/ ---- /",
+    "home_title": "Открой для себя мир Minecraft",
+    "home_survival": "Выживание",
+    "home_anarchy": "Анархия",
+    "home_server_monitoring_text": "Cейчас играют",
+    "home_server_monitoring_status": "Статус Сервера",
+    "home_price_sort": "Сортировать по цене",
+    "home_price_sort_asc": "От дешевых к дорогим",
+    "home_price_sort_desc": "От дорогих к дешевым",
+    "header_component": "/ ---- /",
+    "header_shop": "Магазин",
+    "header_rules": "Правила",
+    "header_donate": "Описание доната",
+    "header_faq": "FAQ",
+    "header_how_to_play": "Как начать играть?",
+    "header_contacts": "Контакты",
+    "header_enter": "Войти",
+    "header_signup": "Регистрация",
+    "header_orders_history": "История заказов",
+    "header_change_password": "Изменить пароль",
+    "header_logout": "Выйти",
+    "footer_component": "/ ---- /",
+    "footer_store": "Магазин",
+    "footer_rules": "Правила",
+    "footer_donate": "Описание доната",
+    "footer_contacts": "Контакты",
+    "footer_faq": "FAQ",
+    "footer_how_to_start": "Как начать играть?",
+    "footer_donate_rules": "Привелегии доната",
+    "footer_launchers": "Лаунчеры",
+    "footer_team": "Команда",
+    "footer_mods": "Моды",
+    "footer_copiryted": "© 2023 Adventures in Minecraft - все права защищены."
 }
