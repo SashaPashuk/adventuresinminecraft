@@ -993,19 +993,27 @@ export const languageLocalizations = {
 
         The very text of Terms and Conditions; <br />
         Privacy Policy
-        https://adventuresinminecraft.com/pages/privacy-policy <br />
+        <a href="/pages/privacy-policy">https://adventuresinminecraft.com/pages/privacy-policy</a>
+        <br />
         Cookies Policy
-        https://adventuresinminecraft.com/pages/cookie-policy <br />
-        “Rules” https://adventuresinminecraft.com/pages/rules <br />
+        <a href="/pages/cookie-policy">https://adventuresinminecraft.com/pages/cookie-policy</a>
+        <br />
+        “Rules” 
+        <a href="/pages/rules">https://adventuresinminecraft.com/pages/rules</a>
+        <br />
         “Description of Donations”
-        https://adventuresinminecraft.com/pages/donation-description
+        <a href="/pages/donation-description">https://adventuresinminecraft.com/pages/donation-description</a>
         <br />
         “How to Start Playing?”
-        https://adventuresinminecraft.com/pages/starting-tips <br />
+        <a href="/pages/starting-tips">https://adventuresinminecraft.com/pages/starting-tips</a>
+        <br />
         “Launchers”
-        https://adventuresinminecraft.com/pages/launcher-download <br />
-        “Mods” https://adventuresinminecraft.com/pages/mods <br />
-        “FAQ” https://adventuresinminecraft.com/pages/faq <br />
+        <a href="/pages/launcher-download">https://adventuresinminecraft.com/pages/launcher-download</a>
+        <br />
+        “Mods” <a href="/pages/mods">https://adventuresinminecraft.com/pages/mods</a>
+        <br />
+        “FAQ” <a href="/pages/faq">https://adventuresinminecraft.com/pages/faq</a>
+        <br />
         The proper acceptance of this offer in accordance with the law of
         Estonia is the consistent implementation by you of the following
         actions: read terms of the Agreement, register on the Site, put a
@@ -2414,8 +2422,8 @@ export const languageLocalizations = {
       <h1 class="policy__title">Пользовательское соглашение</h1>
       <p class="policy__update">Последнее обновление 29 июня 2023</p>
       <p class="policy__text">
-        <strong>Adventures in Minecraft</strong>Сайт
-        <a href="/">https://adventuresinminecraft.com/ru</a>(далее
+        <strong>Adventures in Minecraft</strong> Сайт
+        <a href="/">https://adventuresinminecraft.com/ru</a> (далее
         «Сайт») принадлежит GalaxyGrip OÜ — компании, зарегистрированной в
         соответствии с законодательством Эстонии под регистрационным номером
         16776100, по адресу Харью мааконд, Таллин, район Ласнамяэ, улица
@@ -2446,20 +2454,26 @@ export const languageLocalizations = {
       <p class="policy__text">
         Соглашение содержат такие документы, размещенные на Сайте: <br />
         Сам текст Пользовательского соглашения;<br />
-        Политика конфиденциальности
-        https://adventuresinminecraft.com/ru/pages/privacy-policy <br />
+        Политика конфиденциальности <a href="/ru/pages/privacy-policy">https://adventuresinminecraft.com/ru/pages/privacy-policy</a>
+        <br />
         Cookie политика
-        https://adventuresinminecraft.com/ru/pages/cookie-policy <br />
-        «Правила» https://adventuresinminecraft.com/ru/pages/rules <br />
+        <a href="/ru/pages/cookie-policy">https://adventuresinminecraft.com/ru/pages/cookie-policy</a>
+        <br />
+        «Правила» <a href="/ru/pages/rules">https://adventuresinminecraft.com/ru/pages/rules</a>
+        <br />
         «Описание доната»
-        https://adventuresinminecraft.com/ru/pages/donation-description
+        <a href="/ru/pages/donation-description">https://adventuresinminecraft.com/ru/pages/donation-description</a>
         <br />
         «Как начать играть?»
-        https://adventuresinminecraft.com/ru/pages/starting-tips <br />
+        <a href="/ru/pages/starting-tips">https://adventuresinminecraft.com/ru/pages/starting-tips</a> 
+        <br />
         «Лаунчеры»
-        https://adventuresinminecraft.com/ru/pages/launcher-download <br />
-        «Моды» https://adventuresinminecraft.com/ru/pages/mods <br />
-        “FAQ” https://adventuresinminecraft.com/ru/pages/faq <br />
+        <a href="/ru/pages/launcher-download">https://adventuresinminecraft.com/ru/pages/launcher-download</a>
+        <br />
+        «Моды»<a href="/ru/pages/mods">https://adventuresinminecraft.com/ru/pages/mods</a> 
+        <br />
+        “FAQ” <a href="/ru/pages/faq">https://adventuresinminecraft.com/ru/pages/faq</a> 
+        <br />
         Надлежащим акцептом настоящей оферты в соответствии с
         законодательством Эстонии является последовательное выполнение Вами
         следующих действий: ознакомиться с условиями Соглашения,
