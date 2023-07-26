@@ -2,70 +2,6 @@ const serverIP = "195.201.168.105";
 
 export const languageLocalizations = {
   en: {
-    // meta
-    meta_cart_title: "Cart | Adventures In Minecraft Server",
-    meta_cart_desc: `Cart ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_change_password_title:
-      "Change Password | Adventures In Minecraft Server",
-    meta_change_password_desc: `Change Password ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_contact_title: "Contacts | Adventures In Minecraft Server",
-    meta_contact_desc: `Contacts ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_donate_privileges_title:
-      "Donate Privileges | Adventures In Minecraft Server",
-    meta_donate_privileges_desc: `Donate Privileges ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_donation_title:
-      "Donation Description | Adventures In Minecraft Server",
-    meta_donation_desc: `Donation Description ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_exit_confirmation_title:
-      "Exit Confirmation | Adventures In Minecraft Server",
-    meta_exit_confirmation_desc: `Exit Confirmation ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_faq_title: "FAQ | Adventures In Minecraft Server",
-    meta_faq_desc: `FAQ ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_launcher_download_title: "Launchers | Adventures In Minecraft Server",
-    meta_launcher_download_desc: `Launchers ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_login_title: "Login | Adventures In Minecraft Server",
-    meta_login_desc: `Login ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_mods_title: "Mods | Adventures In Minecraft Server",
-    meta_mods_desc: `Mods ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_order_history_title: "Order History | Adventures In Minecraft Server",
-    meta_order_history_desc: `Order History ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_registration_title: "Registration | Adventures In Minecraft Server",
-    meta_registration_desc: `Registration ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_rules_title: "Rules | Adventures In Minecraft Server",
-    meta_rules_desc: `Rules ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_starting_tips_title: "Starting Tips | Adventures In Minecraft Server",
-    meta_starting_tips_desc: `Starting Tips ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_success_payment_title:
-      "Success Payment | Adventures In Minecraft Server",
-    meta_success_payment_desc: `Success Payment ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_decline_payment_title:
-      "Decline Payment | Adventures In Minecraft Server",
-    meta_decline_payment_desc: `Decline Payment ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_team_title: "Team | Adventures In Minecraft Server",
-    meta_team_desc: `Team ☑️ ${serverIP} Adventures In Minecraft ✅ Purchase of privileges cases keys at our minecraft server`,
-
-    meta_product_title:
-      "Get your own {product_name} status on Adventures In Minecraft Server",
-    meta_product_desc: `Get access to the {product_name} rank and suffix on the Adventures In Minecraft project ✅ Purchase of privileges cases keys at our minecraft server ☑️  ${serverIP} ✅`,
-    meta_privacy_title: "Privacy Policy",
-    meta_cookie_title: "Cookie Policy",
-    meta_terms_conditions_title: "Terms and Conditions",
     // header
     header_shop: "Store",
     header_rules: "Rules",
@@ -957,7 +893,7 @@ export const languageLocalizations = {
       <h1 class="policy__title">Terms and Conditions</h1>
       <p class="policy__update">Effective June 29, 2023</p>
       <p class="policy__text">
-        <strong>Adventures in Minecraft</strong>website
+        <strong>Adventures in Minecraft</strong> website
         <a href="/">https://adventuresinminecraft.com</a> (further
         the “Site”) is owned by GalaxyGrip OÜ - a company registered
         according to legislation of Estonia with its registered number
@@ -1633,9 +1569,8 @@ export const languageLocalizations = {
     meta_team_title: "Команда | Cервер Adventures In Minecraft",
     meta_team_desc: `Команда ☑️ ${serverIP} Adventures In Minecraft ✅ Покупка доната и привилегий на сервере майнкрафт`,
 
-    meta_product_title:
-      "Купить {product_name} статус на сервере Adventures In Minecraft",
-    meta_product_desc: `{product_name} статус на проекте Adventures In Minecraft ✅ Покупка доната привилегий ключей кейсов для сервера майнкрафт ☑️  ${serverIP} ✅`,
+    meta_product_title: "Купить  статус на сервере Adventures In Minecraft",
+    meta_product_desc: `Cтатус на проекте Adventures In Minecraft ✅ Покупка доната привилегий ключей кейсов для сервера майнкрафт ☑️  ${serverIP} ✅`,
     meta_privacy_title: "Политика конфиденциальности",
     meta_cookie_title: "Политика использования файлов cookie",
     meta_terms_conditions_title: "Условия и положения использования",
@@ -2422,7 +2357,7 @@ export const languageLocalizations = {
       <h1 class="policy__title">Пользовательское соглашение</h1>
       <p class="policy__update">Последнее обновление 29 июня 2023</p>
       <p class="policy__text">
-        <strong>Adventures in Minecraft</strong> Сайт
+        <strong>Adventures in Minecraft</strong> сайт
         <a href="/">https://adventuresinminecraft.com/ru</a> (далее
         «Сайт») принадлежит GalaxyGrip OÜ — компании, зарегистрированной в
         соответствии с законодательством Эстонии под регистрационным номером
