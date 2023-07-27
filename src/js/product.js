@@ -4,14 +4,17 @@ import {
   addToastNotification,
   productBreadcrumbSchemaGenerator,
   productSchemaGenerator,
+  getCurrencySign,
 } from "./utils/helpers.js";
 import {
   ContentLoadingEventObserever,
+  CurrencyObserever,
   LanguageEventObserever,
 } from "./utils/observer.js";
 import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
 import { SHOP_ITEM_TIME_USAGE } from "./contants/constants.js";
 import {
+  ITEM_ADDED_TO_CART_CURRENCY_ERROR,
   ITEM_ADDED_TO_CART_ERROR,
   ITEM_ADDED_TO_CART_SUCCESS,
   ITEM_DURATION_SERVER_ERROR,
@@ -65,6 +68,14 @@ LanguageEventObserever.subscribe(async (data) => {
   changeMetadate(shopItemsResponse);
 });
 
+CurrencyObserever.subscribe((currency) => {
+  document.querySelectorAll(".price-block__price")?.forEach((el) => {
+    el.textContent = `${getCurrencySign(currency)}${el.textContent
+      .replaceAll(" ", "")
+      .slice(1)}`;
+  });
+});
+
 // Event Listeners
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -72,7 +83,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const lsLanguage = getActiveLocale();
   const shopItemsResponse = await API.getOneShopItem({
     languageCode: lsLanguage,
-    itemId: qp.id || "",
+    itemId: qp.id || "4316c294-23ad-4bf8-a3b6-42898eb56b9a",
   });
 
   renderShopItemInfoHTML(shopItemsResponse);
@@ -125,6 +136,20 @@ const addBuyShopItemEventListener = (item) => {
         });
         return;
       }
+      // Item can be with different currency
+      if (
+        lsShopOrderItems.find(
+          (item) =>
+            item.currency !== (localStorage.getItem("currency") || "EUR")
+        )
+      ) {
+        addToastNotification({
+          message: getLocalizedError(
+            errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_CURRENCY_ERROR
+          ),
+        });
+        return;
+      }
 
       if (item.is_one_time && Number(itemAmountElement.innerHTML) !== 1) {
         addToastNotification({
@@ -162,6 +187,7 @@ const addBuyShopItemEventListener = (item) => {
               Number(item.price).toFixed(2)
             : Number(itemAmountElement.innerHTML) *
               Number(item.forever_price).toFixed(2),
+          currency: localStorage.getItem("currency") || "EUR",
         },
       ];
       lsShopOrderItems = updatedlsShopOrderItems;
@@ -189,6 +215,7 @@ const addBuyShopItemEventListener = (item) => {
       time_to_use: item.price
         ? SHOP_ITEM_TIME_USAGE["30_DAYS"]
         : SHOP_ITEM_TIME_USAGE.Forever,
+      currency: localStorage.getItem("currency") || "EUR",
     });
 
     // errors
@@ -209,12 +236,19 @@ const addBuyShopItemEventListener = (item) => {
 
     Boolean(amountErrors) && addToastNotification({ message: amountErrors });
 
-    result === ITEM_ADDED_TO_CART_ERROR &&
+    if (
+      [ITEM_ADDED_TO_CART_ERROR, ITEM_ADDED_TO_CART_CURRENCY_ERROR].includes(
+        result
+      )
+    ) {
       addToastNotification({
         message: getLocalizedError(
-          errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_ERROR
+          result === ITEM_ADDED_TO_CART_ERROR
+            ? errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_ERROR
+            : errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_CURRENCY_ERROR
         ),
       });
+    }
 
     // success
     if (

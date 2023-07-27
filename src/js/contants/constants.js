@@ -9,3 +9,7 @@ export const SHOP_ITEM_SORT_PRICE_TYPES = {
   FROM_CHEAP_TO_EXPENSIVE: "FROM_CHEAP_TO_EXPENSIVE",
   FROM_EXPENSIVE_TO_CHEAP: "FROM_EXPENSIVE_TO_CHEAP",
 };
+export const CURRENCIES = [
+  { abbr: "EUR", sign: "€" },
+  { abbr: "USD", sign: "$" },
+];

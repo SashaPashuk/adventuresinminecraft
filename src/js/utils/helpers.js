@@ -1,4 +1,5 @@
 import {
+  CURRENCIES,
   SHOP_ITEM_TIME_USAGE,
   SHOP_ITEM_TYPES,
 } from "../contants/constants.js";
@@ -13,7 +14,7 @@ import { getLocalizedError } from "../services/errorsLanguageLocalization.js";
  */
 export const addToastNotification = ({
   message,
-  duration = 3000000,
+  duration = 3000,
   containerClass = "",
 }) => {
   const toastsWrapperElement = document.querySelector(".toasts-wrapper");
@@ -199,6 +200,7 @@ export const renderCartItemsHTML = (items) => {
       is_one_time,
       price,
       forever_price,
+      currency,
     }) => {
       const item = `
         <li class="cartPage-list-item" data-cart-id=${product_id || id}>
@@ -253,7 +255,7 @@ export const renderCartItemsHTML = (items) => {
             <div>
               <span data-i18n-key="cartPage__price">Цена:</span>
               <div>
-                <span>€</span>
+                <span>${getCurrencySign(currency)}</span>
                 <span class="cartPage-list-item-sum">${Number(
                   sum_item_price
                 ).toFixed(2)}</span>
@@ -302,6 +304,10 @@ export const renderOrderHistoryItemsHTML = (data) => {
   let html = "";
 
   data?.results?.forEach(({ id, total_price, order_item }) => {
+    const priceWithCurrencySign = `${getCurrencySign(
+      order_item[0].currency
+    )}${Number(total_price).toFixed(2)}`;
+
     const item = `
         <li class="orderHistory-orders-order-container">
         <div class="orderHistory-orders-order">
@@ -315,9 +321,7 @@ export const renderOrderHistoryItemsHTML = (data) => {
           <div class="orderHistory-orders-order__amount-container"><span data-i18n-key="orderHistoryPage__amount">Количество:</span><span>${
             order_item?.length
           }</span></div>
-          <div><span data-i18n-key="orderHistoryPage__totalPrice">Цена:</span><span>€${Number(
-            total_price
-          ).toFixed(2)}</span></div>
+          <div><span data-i18n-key="orderHistoryPage__totalPrice">Цена:</span><span>${priceWithCurrencySign}</span></div>
           <div class="orderHistory-orders-order-actions">
             <button data-i18n-key="orderHistoryPage__repeatOrderButton" class="button-primary">Повторить заказ</button>
             <span
@@ -351,7 +355,12 @@ export const renderOrderHistoryItemsHTML = (data) => {
               sum_item_price,
               time_to_use,
               image_name,
+              currency,
             }) => {
+              const priceWithCurrencySign = `${getCurrencySign(currency)}${(
+                Number(price) || Number(forever_price)
+              ).toFixed(2)}`;
+
               return `
               <li class="orderHistory-orders-order-details-list-item">
                 <h3>${image_name.slice(0, -4)}</h3>
@@ -365,9 +374,7 @@ export const renderOrderHistoryItemsHTML = (data) => {
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__itemPrice">Цена</span>
-                  <span>€${(Number(price) || Number(forever_price)).toFixed(
-                    2
-                  )}</span>
+                  <span>${priceWithCurrencySign}</span>
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__overallPrice">Общая цена</span>
@@ -395,7 +402,11 @@ export const renderShopItemsListHTML = (items) => {
   let html = "";
 
   items?.results?.forEach(
-    ({ price, market_name, image_name, id, type, forever_price }) => {
+    ({ price, market_name, image_name, id, type, forever_price, currency }) => {
+      const priceWithCurrencySign = `${getCurrencySign(currency)}${(
+        Number(price) || Number(forever_price)
+      ).toFixed(2)}`;
+
       const item = `
           <div class="products-card">
             ${renderShopItemImgHTML({
@@ -406,9 +417,7 @@ export const renderShopItemsListHTML = (items) => {
               ${market_name}
             </p>
             <div class="products-card__block">
-                <p class="products-card__price">
-                  €${(Number(price) || Number(forever_price)).toFixed(2)}
-                </p>
+                <p class="products-card__price">${priceWithCurrencySign}</p>
                 <button class="products-card__buy" data-id=${id}></button>
             </div>
           </div>
@@ -541,6 +550,20 @@ export const renderListingHTML = (mods) => {
   container.innerHTML = html;
 };
 
+export const renderCurrenciesToDropdownHTML = (currencies) => {
+  const container = document.querySelector(".custom-currencies-select>select");
+
+  let html = "";
+
+  currencies.reverse().forEach(({ abbr, name }) => {
+    const item = `<option value="${abbr}">${name}</option>`;
+
+    html += item;
+  });
+
+  container.innerHTML = html;
+};
+
 export const gameServerSchemaGenerator = (server) => {
   let el = document.createElement("script");
   el.type = "application/ld+json";
@@ -600,4 +623,8 @@ export const productBreadcrumbSchemaGenerator = (productName, id) => {
   });
 
   document.querySelector("head").appendChild(el);
+};
+
+export const getCurrencySign = (currencyAbbr) => {
+  return CURRENCIES.find((el) => el.abbr === currencyAbbr)?.sign;
 };

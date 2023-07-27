@@ -71,7 +71,8 @@
   }
 }
 
-.custom-select {
+.custom-select,
+.custom-currencies-select {
   position: relative;
 
   &::after {
@@ -86,7 +87,7 @@
   }
 
   &>select {
-    width: 60px;
+    width: max-content;
     height: 32px;
     font-family: "Montserrat";
     font-style: normal;
@@ -98,6 +99,7 @@
     border: 2px solid #393330;
     border-radius: 10px;
     padding: 2px 5px;
+    padding-right: 25px;
     outline: none;
     cursor: pointer;
     appearance: none;

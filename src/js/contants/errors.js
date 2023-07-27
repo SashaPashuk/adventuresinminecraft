@@ -23,6 +23,8 @@ export const PASSWORD_MAX_CHARACTERS_ERROR =
 
 // ITEM
 export const ITEM_ADDED_TO_CART_ERROR = "Item already added to busket.";
+export const ITEM_ADDED_TO_CART_CURRENCY_ERROR =
+  "Cannot add an item to the basket with different currencies. First, remove existing or change currency.";
 export const ITEM_ADDED_TO_CART_SUCCESS = "Item has been added to basket.";
 export const ITEM_DELETED_FROM_CART_SUCCESS =
   "Item has been removed from the basket.";
@@ -54,6 +56,7 @@ export const errorsLanguageLocalizationsEnum = {
   PASSWORD_MAX_CHARACTERS_ERROR: "PASSWORD_MAX_CHARACTERS_ERROR",
 
   ITEM_ADDED_TO_CART_ERROR: "ITEM_ADDED_TO_CART_ERROR",
+  ITEM_ADDED_TO_CART_CURRENCY_ERROR: "ITEM_ADDED_TO_CART_CURRENCY_ERROR",
   ITEM_ADDED_TO_CART_SUCCESS: "ITEM_ADDED_TO_CART_SUCCESS",
   ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: "ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS",
   ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: "ITEM_ALREADY_ADDED_TO_CART_WITH_NAME",
@@ -101,6 +104,8 @@ export const errorsLanguageLocalizations = {
     ITEM_ADDED_TO_CART_SUCCESS:
       "This item was successfully added to your cart.",
     ITEM_ADDED_TO_CART_ERROR: "Item already added to busket.",
+    ITEM_ADDED_TO_CART_CURRENCY_ERROR:
+      "Cannot add an item to the basket with different currencies. First, remove existing or change currency.",
     ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
       `This item  ‹‹${name}›› has already been added to your cart.`,
     ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
@@ -147,6 +152,8 @@ export const errorsLanguageLocalizations = {
     // ITEM
     ITEM_ADDED_TO_CART_SUCCESS: "Предмет успешно добавлен в корзину.",
     ITEM_ADDED_TO_CART_ERROR: "Предмет уже добавлен в корзину.",
+    ITEM_ADDED_TO_CART_CURRENCY_ERROR:
+      "Неможливо додати товар до кошика з різними валютами. Спочатку видаліть наявну або змініть валюту.",
     ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
       `Предмет ‹‹${name}›› уже добавлен в корзину.`,
     ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>

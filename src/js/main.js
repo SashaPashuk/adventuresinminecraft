@@ -1,7 +1,10 @@
 import API from "../js/services/api.js";
 import { DEFAULT_LANGUAGE } from "./contants/constants.js";
-import { setActiveLocale, setLocale } from "./services/languageLocalization.js";
-import { ContentLoadingEventObserever } from "./utils/observer.js";
+import { renderCurrenciesToDropdownHTML } from "./utils/helpers.js";
+import {
+  ContentLoadingEventObserever,
+  CurrencyObserever,
+} from "./utils/observer.js";
 
 const menuItems = document.querySelectorAll(".nav-link");
 const navItemsForUserLogic = document.querySelectorAll(".nav-item-user-logic");
@@ -50,6 +53,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Show amount of items in cart
   const lsShopOrderItems = localStorage.getItem("orderItems");
+  const serverShopCurrenciesResponse = await API.getShopCurrenciesRequest();
   const serverShopOrderItemsResponse = await API.getShopOrderItems();
 
   const shopOrderItemsResponse = !tokensData
@@ -63,6 +67,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (cartContainerCountElement) {
     cartContainerCountElement.innerHTML = shopOrderItemsResponse.length || 0;
   }
+
+  setTimeout(bindCurrenciesSwitcher, 500);
+  renderCurrenciesToDropdownHTML(serverShopCurrenciesResponse);
+  addCurrenciesSelectorEventListener();
 
   addLanguageSelectorEventListener();
   addCookieEventListener();
@@ -162,6 +170,61 @@ const addLanguageSelectorEventListener = () => {
   }
 };
 
+// currencies
+
+const addCurrenciesSelectorEventListener = () => {
+  const selector = document.querySelector(".custom-currencies-select");
+
+  if (selector) {
+    selector.addEventListener("change", (e) => {
+      selector.querySelector("select").classList.remove("active");
+    });
+    selector.addEventListener("mousedown", (e) => {
+      selector.querySelector("select").classList.add("active");
+
+      if (window.innerWidth >= 420) {
+        // override look for non mobile
+        e.preventDefault();
+
+        const select = selector.children[0];
+        const dropDown = document.createElement("ul");
+        dropDown.className = "selector-options";
+
+        [...select.children].forEach((option) => {
+          const dropDownOption = document.createElement("li");
+          dropDownOption.textContent = option.textContent;
+
+          dropDownOption.addEventListener("mousedown", (e) => {
+            if (select.value === option.value) {
+              return;
+            }
+            e.stopPropagation();
+            select.value = option.value;
+            selector.value = option.value;
+            localStorage.setItem("currency", option.value);
+            select.dispatchEvent(new Event("change"));
+            selector.dispatchEvent(new Event("change"));
+            CurrencyObserever.broadcast(select.value);
+            dropDown.remove();
+          });
+
+          dropDown.appendChild(dropDownOption);
+        });
+
+        selector.appendChild(dropDown);
+
+        // handle click out
+        document.addEventListener("click", (e) => {
+          if (!selector.contains(e.target)) {
+            selector.querySelector("select").classList.remove("active");
+            dropDown.remove();
+          }
+        });
+      }
+    });
+  }
+};
+
 const addCookieEventListener = () => {
   const cookie = localStorage.getItem("hasAcceptedCookie");
   if (!document?.querySelector(".cookie_container")) return;
@@ -176,4 +239,13 @@ const addCookieEventListener = () => {
     localStorage.setItem("hasAcceptedCookie", "true");
     document?.querySelector(".cookie_container")?.classList.add("hidden");
   });
+};
+
+const bindCurrenciesSwitcher = () => {
+  const switcher = document.querySelector("[data-currencies-switcher]");
+
+  if (switcher) {
+    switcher.value = localStorage.getItem("currency") || "EUR";
+    CurrencyObserever.broadcast(localStorage.getItem("currency") || "EUR");
+  }
 };

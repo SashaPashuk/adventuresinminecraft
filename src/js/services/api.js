@@ -115,6 +115,16 @@ export default {
   /**
    * @returns {Promise}
    */
+  getShopCurrenciesRequest: () => {
+    return sendAPIRequest({
+      method: "GET",
+      pathname: "/shop/currencies/",
+    });
+  },
+
+  /**
+   * @returns {Promise}
+   */
   getShopOrdersRequest: () => {
     return sendAPIRequest({
       method: "GET",

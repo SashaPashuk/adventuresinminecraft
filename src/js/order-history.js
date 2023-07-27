@@ -68,6 +68,7 @@ const addRepeatOrderEventListener = (shopOrdersResponse) => {
           amount: orderItem.amount,
           time_to_use: orderItem.time_to_use,
           item_id: orderItem.product_id,
+          currency: orderItem.currency,
         });
 
         if (result === ITEM_ADDED_TO_CART_ERROR) {

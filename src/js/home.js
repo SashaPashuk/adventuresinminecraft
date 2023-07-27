@@ -1,21 +1,25 @@
 import API from "../js/services/api.js";
 import {
   addToastNotification,
+  getCurrencySign,
   productSchemaGenerator,
   renderShopItemsListHTML,
 } from "./utils/helpers.js";
 import {
   ContentLoadingEventObserever,
+  CurrencyObserever,
   LanguageEventObserever,
 } from "./utils/observer.js";
 import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
 import {
+  ITEM_ADDED_TO_CART_CURRENCY_ERROR,
   ITEM_ADDED_TO_CART_ERROR,
   ITEM_ADDED_TO_CART_SUCCESS,
   TOKEN_NOT_EXISTS,
   errorsLanguageLocalizationsEnum,
 } from "./contants/errors.js";
 import {
+  CURRENCIES,
   DEFAULT_LANGUAGE,
   SHOP_ITEM_SORT_PRICE_TYPES,
   SHOP_ITEM_TIME_USAGE,
@@ -53,6 +57,14 @@ LanguageEventObserever.subscribe(async (data) => {
   addProductCartButtonsEventListeners(shopItemsResult);
   addProductCardsEventListeners(shopItemsResult);
   addShopItemsTypeSwitchEventListener();
+});
+
+CurrencyObserever.subscribe((currency) => {
+  document.querySelectorAll(".products-card__price")?.forEach((el) => {
+    el.textContent = `${getCurrencySign(currency)}${el.textContent
+      .replaceAll(" ", "")
+      .slice(1)}`;
+  });
 });
 
 // Event Listeners
@@ -105,16 +117,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         amount: orderItem.amount,
         time_to_use: orderItem.time_to_use,
         item_id: orderItem.id,
+        currency: orderItem.currency,
       });
-
-      // if (result === ITEM_ADDED_TO_CART_ERROR) {
-      //   addToastNotification({
-      //     message: getLocalizedError(
-      //       errorsLanguageLocalizationsEnum.ITEM_ALREADY_ADDED_TO_CART_WITH_NAME,
-      //       { firstParam: orderItem?.image_name.slice(0, -4) }
-      //     ),
-      //   });
-      // }
 
       if (result === ITEM_ADDED_TO_CART_SUCCESS) {
         cartContainerCountElement.innerHTML =
@@ -174,6 +178,21 @@ const addProductCartButtonsEventListeners = (items) => {
           });
           return;
         }
+        // Item can be with different currency
+        if (
+          lsShopOrderItems.find(
+            (item) =>
+              item.currency !== (localStorage.getItem("currency") || "EUR")
+          )
+        ) {
+          addToastNotification({
+            message: getLocalizedError(
+              errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_CURRENCY_ERROR
+            ),
+          });
+          return;
+        }
+
         const updatedlsShopOrderItems = [
           ...lsShopOrderItems,
           {
@@ -185,6 +204,7 @@ const addProductCartButtonsEventListeners = (items) => {
             sum_item_price: items.results[index].price
               ? Number(items.results[index].price).toFixed(2)
               : Number(items.results[index].forever_price).toFixed(2),
+            currency: localStorage.getItem("currency") || "EUR",
           },
         ];
         lsShopOrderItems = updatedlsShopOrderItems;
@@ -212,19 +232,28 @@ const addProductCartButtonsEventListeners = (items) => {
         time_to_use: items.results[index].price
           ? SHOP_ITEM_TIME_USAGE["30_DAYS"]
           : SHOP_ITEM_TIME_USAGE.Forever,
+        currency: localStorage.getItem("currency") || "EUR",
       });
 
       // errors
-      if (response === ITEM_ADDED_TO_CART_ERROR) {
+      if (
+        [ITEM_ADDED_TO_CART_ERROR, ITEM_ADDED_TO_CART_CURRENCY_ERROR].includes(
+          response
+        )
+      ) {
         addToastNotification({
           message: getLocalizedError(
-            errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_ERROR
+            response === ITEM_ADDED_TO_CART_ERROR
+              ? errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_ERROR
+              : errorsLanguageLocalizationsEnum.ITEM_ADDED_TO_CART_CURRENCY_ERROR
           ),
         });
       }
       // success
       if (
-        response !== ITEM_ADDED_TO_CART_ERROR &&
+        ![ITEM_ADDED_TO_CART_ERROR, ITEM_ADDED_TO_CART_CURRENCY_ERROR].includes(
+          response
+        ) &&
         response?.detail !== TOKEN_NOT_EXISTS
       ) {
         addToastNotification({

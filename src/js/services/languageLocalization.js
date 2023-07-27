@@ -1,6 +1,7 @@
 import { languageLocalizations } from "../contants/languageLocalizations.js";
 import {
   ContentLoadingEventObserever,
+  CurrencyObserever,
   LanguageEventObserever,
 } from "../utils/observer.js";
 import { APP_LANGUAGES, DEFAULT_LANGUAGE } from "../contants/constants.js";
