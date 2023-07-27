@@ -363,6 +363,9 @@ export const renderOrderHistoryItemsHTML = (data) => {
               const priceWithCurrencySign = `${getCurrencySign(currency)}${(
                 Number(price) || Number(forever_price)
               ).toFixed(2)}`;
+              const totalPriceWithCurrencySign = `${getCurrencySign(
+                currency
+              )}${Number(sum_item_price).toFixed(2)}`;
 
               return `
               <li class="orderHistory-orders-order-details-list-item">
@@ -381,7 +384,7 @@ export const renderOrderHistoryItemsHTML = (data) => {
                 </div>
                 <div>
                   <span data-i18n-key="orderHistoryPage__overallPrice">Общая цена</span>
-                  <span>€${Number(sum_item_price).toFixed(2)}</span>
+                  <span>${totalPriceWithCurrencySign}</span>
                 </div>
               </li>
             `;
