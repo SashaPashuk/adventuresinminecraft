@@ -19,7 +19,6 @@ import {
   errorsLanguageLocalizationsEnum,
 } from "./contants/errors.js";
 import {
-  CURRENCIES,
   DEFAULT_LANGUAGE,
   SHOP_ITEM_SORT_PRICE_TYPES,
   SHOP_ITEM_TIME_USAGE,
@@ -50,6 +49,7 @@ LanguageEventObserever.subscribe(async (data) => {
   const shopItemsResult = await API.getShopItems(data.language, {
     type: checkedShopItemType?.value || SHOP_ITEM_TYPES.Survival,
     sort_price: selectedSortPriceType,
+    currency: localStorage.getItem("currency") || "EUR",
   });
 
   renderShopItemsListHTML(shopItemsResult);
@@ -59,12 +59,28 @@ LanguageEventObserever.subscribe(async (data) => {
   addShopItemsTypeSwitchEventListener();
 });
 
-CurrencyObserever.subscribe((currency) => {
-  document.querySelectorAll(".products-card__price")?.forEach((el) => {
-    el.textContent = `${getCurrencySign(currency)}${el.textContent
-      .replaceAll(" ", "")
-      .slice(1)}`;
+CurrencyObserever.subscribe(async (currency) => {
+  const lsLanguage = localStorage.getItem("language") || DEFAULT_LANGUAGE;
+  const checkedShopItemType = document
+    .querySelector(".products-svitch")
+    ?.querySelector("input[checked]");
+  const selectedSortPriceType =
+    document
+      .querySelector(".dropdown-custom__selection span")
+      ?.getAttribute("data-selected-sort-name") ||
+    SHOP_ITEM_SORT_PRICE_TYPES.FROM_CHEAP_TO_EXPENSIVE;
+
+  const shopItemsResult = await API.getShopItems(lsLanguage, {
+    type: checkedShopItemType?.value || SHOP_ITEM_TYPES.Survival,
+    sort_price: selectedSortPriceType,
+    currency: currency,
   });
+
+  renderShopItemsListHTML(shopItemsResult);
+
+  addProductCartButtonsEventListeners(shopItemsResult);
+  addProductCardsEventListeners(shopItemsResult);
+  addShopItemsTypeSwitchEventListener();
 });
 
 // Event Listeners
@@ -85,6 +101,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const shopItemsResult = await API.getShopItems(lsLanguage, {
     type: SHOP_ITEM_TYPES.Survival,
     sort_price: selectedSortPriceType,
+    currency: localStorage.getItem("currency") || "EUR",
   });
 
   if (shopItemsResult?.results.length) {
@@ -287,6 +304,7 @@ const addShopItemsTypeSwitchEventListener = () => {
     const shopItemsResult = await API.getShopItems(lsLanguage, {
       type: selectedItemType,
       sort_price: selectedSortPriceType,
+      currency: localStorage.getItem("currency") || "EUR",
     });
 
     itemTypeSwitchInputElements?.forEach((item) => {
@@ -352,6 +370,7 @@ const addPriceSortingDropdownEventListener = () => {
           const shopItemsResult = await API.getShopItems(lsLanguage, {
             type: selectedItemType?.value || SHOP_ITEM_TYPES.Survival,
             sort_price: item.getAttribute("data-sort-name"),
+            currency: localStorage.getItem("currency") || "EUR",
           });
 
           renderShopItemsListHTML(shopItemsResult);

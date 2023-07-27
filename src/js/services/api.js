@@ -152,7 +152,9 @@ export default {
   getShopItems: async (languageCode, params) => {
     const response = await sendAPIRequest({
       method: "GET",
-      pathname: `/shop/${languageCode}/list/?type=${params.type}`,
+      pathname: `/shop/${languageCode}/list/?type=${params.type}&currency=${
+        params.currency || "EUR"
+      }`,
     });
 
     const data = response?.results.map((el) => ({

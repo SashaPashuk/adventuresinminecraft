@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     cartContainerCountElement.innerHTML = shopOrderItemsResponse.length || 0;
   }
 
-  setTimeout(bindCurrenciesSwitcher, 500);
+  setTimeout(bindCurrenciesSwitcher, 100);
   renderCurrenciesToDropdownHTML(serverShopCurrenciesResponse);
   addCurrenciesSelectorEventListener();
 
@@ -131,40 +131,41 @@ const addLanguageSelectorEventListener = () => {
       if (window.innerWidth >= 420) {
         // override look for non mobile
         e.preventDefault();
+        if (!selector.querySelector(".selector-options")) {
+          const select = selector.children[0];
+          const dropDown = document.createElement("ul");
+          dropDown.className = "selector-options";
 
-        const select = selector.children[0];
-        const dropDown = document.createElement("ul");
-        dropDown.className = "selector-options";
+          [...select.children].forEach((option) => {
+            const dropDownOption = document.createElement("li");
+            dropDownOption.textContent = option.textContent;
 
-        [...select.children].forEach((option) => {
-          const dropDownOption = document.createElement("li");
-          dropDownOption.textContent = option.textContent;
+            dropDownOption.addEventListener("mousedown", (e) => {
+              if (select.value === option.value) {
+                return;
+              }
 
-          dropDownOption.addEventListener("mousedown", (e) => {
-            if (select.value === option.value) {
-              return;
-            }
+              e.stopPropagation();
+              select.value = option.value;
+              selector.value = option.value;
+              select.dispatchEvent(new Event("change"));
+              selector.dispatchEvent(new Event("change"));
+              dropDown.remove();
+            });
 
-            e.stopPropagation();
-            select.value = option.value;
-            selector.value = option.value;
-            select.dispatchEvent(new Event("change"));
-            selector.dispatchEvent(new Event("change"));
-            dropDown.remove();
+            dropDown.appendChild(dropDownOption);
           });
 
-          dropDown.appendChild(dropDownOption);
-        });
+          selector.appendChild(dropDown);
 
-        selector.appendChild(dropDown);
-
-        // handle click out
-        document.addEventListener("click", (e) => {
-          if (!selector.contains(e.target)) {
-            selector.querySelector("select").classList.remove("active");
-            dropDown.remove();
-          }
-        });
+          // handle click out
+          document.addEventListener("click", (e) => {
+            if (!selector.contains(e.target)) {
+              selector.querySelector("select").classList.remove("active");
+              dropDown.remove();
+            }
+          });
+        }
       }
     });
   }
@@ -186,40 +187,42 @@ const addCurrenciesSelectorEventListener = () => {
         // override look for non mobile
         e.preventDefault();
 
-        const select = selector.children[0];
-        const dropDown = document.createElement("ul");
-        dropDown.className = "selector-options";
+        if (!selector.querySelector(".selector-options")) {
+          const select = selector.children[0];
+          const dropDown = document.createElement("ul");
+          dropDown.className = "selector-options";
 
-        [...select.children].forEach((option) => {
-          const dropDownOption = document.createElement("li");
-          dropDownOption.textContent = option.textContent;
+          [...select.children].forEach((option) => {
+            const dropDownOption = document.createElement("li");
+            dropDownOption.textContent = option.textContent;
 
-          dropDownOption.addEventListener("mousedown", (e) => {
-            if (select.value === option.value) {
-              return;
-            }
-            e.stopPropagation();
-            select.value = option.value;
-            selector.value = option.value;
-            localStorage.setItem("currency", option.value);
-            select.dispatchEvent(new Event("change"));
-            selector.dispatchEvent(new Event("change"));
-            CurrencyObserever.broadcast(select.value);
-            dropDown.remove();
+            dropDownOption.addEventListener("mousedown", (e) => {
+              if (select.value === option.value) {
+                return;
+              }
+              e.stopPropagation();
+              select.value = option.value;
+              selector.value = option.value;
+              localStorage.setItem("currency", option.value);
+              select.dispatchEvent(new Event("change"));
+              selector.dispatchEvent(new Event("change"));
+              CurrencyObserever.broadcast(select.value);
+              dropDown.remove();
+            });
+
+            dropDown.appendChild(dropDownOption);
           });
 
-          dropDown.appendChild(dropDownOption);
-        });
+          selector.appendChild(dropDown);
 
-        selector.appendChild(dropDown);
-
-        // handle click out
-        document.addEventListener("click", (e) => {
-          if (!selector.contains(e.target)) {
-            selector.querySelector("select").classList.remove("active");
-            dropDown.remove();
-          }
-        });
+          // handle click out
+          document.addEventListener("click", (e) => {
+            if (!selector.contains(e.target)) {
+              selector.querySelector("select").classList.remove("active");
+              dropDown.remove();
+            }
+          });
+        }
       }
     });
   }

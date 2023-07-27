@@ -68,12 +68,27 @@ LanguageEventObserever.subscribe(async (data) => {
   changeMetadate(shopItemsResponse);
 });
 
-CurrencyObserever.subscribe((currency) => {
+CurrencyObserever.subscribe(async (currency) => {
   document.querySelectorAll(".price-block__price")?.forEach((el) => {
     el.textContent = `${getCurrencySign(currency)}${el.textContent
       .replaceAll(" ", "")
       .slice(1)}`;
   });
+  const shopItemsResponse = await API.getOneShopItem({
+    languageCode: data.language,
+    itemId: qp.id || "",
+  });
+
+  renderShopItemInfoHTML(shopItemsResponse);
+
+  addBuyShopItemEventListener(shopItemsResponse);
+  addShopItemAmountEventListener(shopItemsResponse);
+  addShopItemUsageEventListener(shopItemsResponse);
+
+  addLastBreadcrumbProductName(shopItemsResponse);
+
+  ContentLoadingEventObserever.broadcast(true);
+  changeMetadate(shopItemsResponse);
 });
 
 // Event Listeners
