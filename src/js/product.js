@@ -50,10 +50,10 @@ let lsShopOrderItems =
 // Observer
 
 LanguageEventObserever.subscribe(async (data) => {
-  // const itemDataLocalStorage = localStorage.getItem("item_data");
   const shopItemsResponse = await API.getOneShopItem({
     languageCode: data.language,
     itemId: qp.id || "",
+    currency: localStorage.getItem("currency") || "EUR",
   });
 
   renderShopItemInfoHTML(shopItemsResponse);
@@ -69,14 +69,10 @@ LanguageEventObserever.subscribe(async (data) => {
 });
 
 CurrencyObserever.subscribe(async (currency) => {
-  document.querySelectorAll(".price-block__price")?.forEach((el) => {
-    el.textContent = `${getCurrencySign(currency)}${el.textContent
-      .replaceAll(" ", "")
-      .slice(1)}`;
-  });
   const shopItemsResponse = await API.getOneShopItem({
     languageCode: data.language,
     itemId: qp.id || "",
+    currency: currency,
   });
 
   renderShopItemInfoHTML(shopItemsResponse);
@@ -94,11 +90,11 @@ CurrencyObserever.subscribe(async (currency) => {
 // Event Listeners
 
 document.addEventListener("DOMContentLoaded", async () => {
-  // const itemDataLocalStorage = localStorage.getItem("item_data");
   const lsLanguage = getActiveLocale();
   const shopItemsResponse = await API.getOneShopItem({
     languageCode: lsLanguage,
     itemId: qp.id || "4316c294-23ad-4bf8-a3b6-42898eb56b9a",
+    currency: localStorage.getItem("currency") || "EUR",
   });
 
   renderShopItemInfoHTML(shopItemsResponse);

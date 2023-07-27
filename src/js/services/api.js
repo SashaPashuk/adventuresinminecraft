@@ -177,7 +177,9 @@ export default {
   getOneShopItem: (params) => {
     return sendAPIRequest({
       method: "GET",
-      pathname: `/shop/${params.languageCode}/get/${params.itemId}`,
+      pathname: `/shop/${params.languageCode}/get/${params.itemId}?currency=${
+        params.currency || "EUR"
+      }`,
     });
   },
   /**
