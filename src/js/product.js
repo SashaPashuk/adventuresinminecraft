@@ -69,8 +69,9 @@ LanguageEventObserever.subscribe(async (data) => {
 });
 
 CurrencyObserever.subscribe(async (currency) => {
+  const lsLanguage = getActiveLocale();
   const shopItemsResponse = await API.getOneShopItem({
-    languageCode: data.language,
+    languageCode: lsLanguage,
     itemId: qp.id || "",
     currency: currency,
   });
@@ -93,7 +94,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const lsLanguage = getActiveLocale();
   const shopItemsResponse = await API.getOneShopItem({
     languageCode: lsLanguage,
-    itemId: qp.id || "4316c294-23ad-4bf8-a3b6-42898eb56b9a",
+    itemId: qp.id || "",
     currency: localStorage.getItem("currency") || "EUR",
   });
 

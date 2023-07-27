@@ -94,6 +94,7 @@ export const renderShopItemInfoHTML = ({
   type,
   time_to_use,
   is_one_time,
+  currency,
 }) => {
   const productInfoContainerElement = document.querySelector(
     ".product-info__content"
@@ -133,6 +134,10 @@ export const renderShopItemInfoHTML = ({
     </div>
   </div>`;
 
+  const priceWithCurrencySign = `${getCurrencySign(currency)}${(
+    Number(price) || Number(forever_price)
+  ).toFixed(2)}`;
+
   const itemInfo = `
     <h2 class="content__title">${market_name}</h2>
     <h4 data-i18n-key="productPage__desc" class="content__subtitle">Описание товара:</h4>
@@ -142,9 +147,7 @@ export const renderShopItemInfoHTML = ({
     <div class="content__info">
       <div class="content__price-block price-block">
         <span data-i18n-key="productPage__price" class="price-block__title">Цeна:</span>
-        <span class="price-block__price" id="product_price">€${(
-          Number(price) || Number(forever_price)
-        ).toFixed(2)}</span>
+        <span class="price-block__price" id="product_price">${priceWithCurrencySign}</span>
       </div>
       ${usagesContainerElement}
     </div>
