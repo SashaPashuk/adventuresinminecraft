@@ -594,7 +594,7 @@ const addOrderItemsUsageButtonsEventListener = (items) => {
 // Render HTML Functions
 
 const renderOverallPaymentSumHTML = (data) => {
-  const sum = data.reduce((acc, cur) => (acc += cur.sum_item_price), 0);
+  const sum = data.reduce((acc, cur) => (acc += Number(cur.sum_item_price)), 0);
   const sumContainer = document.querySelector(".cartPage-summary-payment-sum");
 
   sumContainer.innerHTML = Number(sum).toFixed(2);
