@@ -5,6 +5,7 @@ import {
   ContentLoadingEventObserever,
   CurrencyObserever,
 } from "./utils/observer.js";
+import { redirectForPaths } from "./utils/utils.js";
 
 const menuItems = document.querySelectorAll(".nav-link");
 const navItemsForUserLogic = document.querySelectorAll(".nav-item-user-logic");
@@ -19,9 +20,9 @@ menuItems.forEach(function (item) {
   }
 });
 
-// user logic
-
 document.addEventListener("DOMContentLoaded", async () => {
+  redirectForPaths();
+
   await new Promise((resolve) => setTimeout(resolve, 100));
   const detectedLanguage = window.location.pathname.includes("/ru/")
     ? "ru"
