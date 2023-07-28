@@ -559,6 +559,8 @@ export const renderListingHTML = (mods) => {
 export const renderCurrenciesToDropdownHTML = (currencies) => {
   const container = document.querySelector(".custom-currencies-select>select");
 
+  if (!container) return;
+
   let html = "";
 
   currencies.reverse().forEach(({ abbr, name }) => {

@@ -41,7 +41,10 @@ ShopOrderItemsEventObserever.subscribe((shopOrderItemsResponse) => {
 // Event Listeners
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const serverShopOrderItemsResponse = await API.getShopOrderItems();
+  const serverShopOrderItemsResponse = lsTokens
+    ? await API.getShopOrderItems()
+    : [];
+
   const shopServersResponse = await API.getShopServersRequest();
 
   const shopOrderItemsResponse =
