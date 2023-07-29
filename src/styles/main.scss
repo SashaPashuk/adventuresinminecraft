@@ -72,7 +72,7 @@ img {
     margin: 0 !important;
     padding: 0 !important;
 
-    & > li {
+    &>li {
       list-style: none !important;
     }
 
@@ -110,7 +110,6 @@ img {
 }
 
 .hidden-visibility {
-  // display: none !important;
   visibility: hidden;
 }
 
@@ -190,16 +189,18 @@ img {
 
 .toasts-wrapper {
   position: fixed;
-  right: 0;
-  top: 3%;
+  right: 15px;
+  top: 20px;
 
-  animation: slidein 200ms cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+
 
   display: flex;
   align-items: flex-end;
   flex-direction: column;
 
   .toast-container {
+    animation: slide-in 0.2s ease-in-out;
+
     color: $shade-white;
     padding: 14px 16px;
     background: #393330fc;
@@ -219,10 +220,10 @@ img {
       cursor: pointer;
     }
 
-    & > div {
+    &>div {
       padding: 5px 15px 0 0;
 
-      & > p {
+      &>p {
         line-height: 20px;
       }
     }
@@ -237,13 +238,13 @@ img {
   }
 }
 
-@keyframes slidein {
-  from {
-    margin-right: 0%;
+@keyframes slide-in {
+  0% {
+    transform: translateX(500px);
   }
 
-  to {
-    margin-right: 2%;
+  100% {
+    transform: translateY(0);
   }
 }
 
@@ -270,12 +271,12 @@ img {
     line-height: 150%;
     color: #ffffff;
 
-    & > img {
+    &>img {
       margin-left: 10px;
     }
 
     &-open {
-      & > img {
+      &>img {
         transform: rotate(180deg);
       }
     }
@@ -355,15 +356,16 @@ img {
     font-size: 16px;
     line-height: 150%;
 
-    & > a {
+    &>a {
       color: $primary-orange;
+
       &:hover {
         color: $primary-light-orange;
       }
     }
   }
 
-  & > .button-primary {
+  &>.button-primary {
     align-self: center;
   }
 }

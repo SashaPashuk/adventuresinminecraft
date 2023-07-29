@@ -1,12 +1,25 @@
 import { languageLocalizations } from "../contants/languageLocalizations.js";
 import {
   ContentLoadingEventObserever,
-  CurrencyObserever,
   LanguageEventObserever,
 } from "../utils/observer.js";
 import { APP_LANGUAGES, DEFAULT_LANGUAGE } from "../contants/constants.js";
 
 const getDefaultLanguage = () => {
+  // Check if we have language in ls and if not redirect only to en website version
+  if (!localStorage.getItem("language")) {
+    window.open(
+      `${window.location.origin}${window.location.pathname.replace("/ru", "")}${
+        window.location.search
+      }`,
+      "_self"
+    );
+
+    localStorage.setItem("language", "en");
+
+    return "en";
+  }
+
   const languageFromURL = window.location.pathname.includes("/ru/")
     ? "ru"
     : null;
@@ -27,6 +40,7 @@ const getDefaultLanguage = () => {
   localStorage.setItem("language", defaultLang);
   return defaultLang;
 };
+
 // The locale our app first shows
 let defaultLocale = getDefaultLanguage();
 
@@ -68,8 +82,9 @@ function bindLocaleSwitcher(initialValue) {
       if (!hasRepalceLanguageCode) {
         const pathname =
           window.location.pathname === "/" ? "" : window.location.pathname;
+
         window.open(
-          `${window.location.origin}/${e.target.value}${pathname}`,
+          `${window.location.origin}/${e.target.value}${pathname}${window.location.search}`,
           "_self"
         );
       } else {
@@ -78,7 +93,10 @@ function bindLocaleSwitcher(initialValue) {
             ? "/"
             : window.location.pathname.replace("/ru", "");
 
-        window.open(`${window.location.origin}${pathname}`, "_self");
+        window.open(
+          `${window.location.origin}${pathname}${window.location.search}`,
+          "_self"
+        );
       }
 
       // Set the locale to the selected option[value]
