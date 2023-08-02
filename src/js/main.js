@@ -5,7 +5,7 @@ import {
   ContentLoadingEventObserever,
   CurrencyObserever,
 } from "./utils/observer.js";
-import { redirectForPaths } from "./utils/utils.js";
+import { redirectForEnPaths, redirectForHomePaths } from "./utils/utils.js";
 
 const menuItems = document.querySelectorAll(".nav-link");
 const navItemsForUserLogic = document.querySelectorAll(".nav-item-user-logic");
@@ -21,7 +21,8 @@ menuItems.forEach(function (item) {
 });
 
 document.addEventListener("DOMContentLoaded", async () => {
-  redirectForPaths();
+  redirectForHomePaths();
+  redirectForEnPaths();
 
   await new Promise((resolve) => setTimeout(resolve, 100));
   const detectedLanguage = window.location.pathname.includes("/ru/")
@@ -231,6 +232,16 @@ const addCurrenciesSelectorEventListener = () => {
   }
 };
 
+const bindCurrenciesSwitcher = () => {
+  const switcher = document.querySelector("[data-currencies-switcher]");
+
+  if (switcher) {
+    switcher.value = localStorage.getItem("currency") || "EUR";
+    CurrencyObserever.broadcast(localStorage.getItem("currency") || "EUR");
+  }
+};
+
+// cookie
 const addCookieEventListener = () => {
   const cookie = localStorage.getItem("hasAcceptedCookie");
   if (!document?.querySelector(".cookie_container")) return;
@@ -245,13 +256,4 @@ const addCookieEventListener = () => {
     localStorage.setItem("hasAcceptedCookie", "true");
     document?.querySelector(".cookie_container")?.classList.add("hidden");
   });
-};
-
-const bindCurrenciesSwitcher = () => {
-  const switcher = document.querySelector("[data-currencies-switcher]");
-
-  if (switcher) {
-    switcher.value = localStorage.getItem("currency") || "EUR";
-    CurrencyObserever.broadcast(localStorage.getItem("currency") || "EUR");
-  }
 };

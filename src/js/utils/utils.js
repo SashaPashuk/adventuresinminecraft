@@ -1,7 +1,7 @@
 import { DEFAULT_LANGUAGE } from "../contants/constants.js";
 import { getActiveLocale } from "../services/languageLocalization.js";
 
-export const redirectForPaths = () => {
+export const redirectForHomePaths = () => {
   const pathsForRedirect = {
     "/ru/home": "/ru",
     "/home": "/",
@@ -9,6 +9,17 @@ export const redirectForPaths = () => {
 
   if (pathsForRedirect[window.location.pathname]) {
     window.open(pathsForRedirect[window.location.pathname], "_self");
+  }
+};
+
+export const redirectForEnPaths = () => {
+  if (window.location.pathname.includes("/en")) {
+    window.open(
+      `${window.location.origin}${window.location.pathname.replace("/en", "")}${
+        window.location.search
+      }`,
+      "_self"
+    );
   }
 };
 
