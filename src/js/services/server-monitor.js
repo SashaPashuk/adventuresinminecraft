@@ -1,18 +1,16 @@
 import { gameServerSchemaGenerator } from "../utils/helpers.js";
 
-const serverIP = "195.201.168.105";
-const serverPort = 25565;
+// const serverIP = "195.201.168.105";
+// const serverPort = 25565;
 
-const defaultNumberEncreaseDecrease = 12;
+const daytimeRange = { min: 2000, max: 3500 };
+const nighttimeRange = { min: 1500, max: 2500 };
 
-function randomAddOrSubtractNumber(baseNumber, maxDelta) {
-  const delta = Math.floor(Math.random() * (maxDelta * 2 + 1)) - maxDelta;
+function randomAddOrSubtractNumber(baseNumber, range) {
+  const delta =
+    Math.floor(Math.random() * (range.max - range.min + 1)) + range.min;
 
-  const operation = Math.random() < 0.5 ? "add" : "subtract";
-
-  const result = operation === "add" ? baseNumber + delta : baseNumber - delta;
-
-  return result;
+  return baseNumber + delta;
 }
 
 function isTimeDifference5Minutes(date1, date2) {
@@ -26,53 +24,28 @@ function isTimeDifference5Minutes(date1, date2) {
   return timeDifferenceInMinutes >= 5;
 }
 
-const randomUpdateNumberPlayers = (defaultNumber) => {
+function getRandomNumberInRange(range) {
+  return Math.floor(Math.random() * (range.max - range.min + 1)) + range.min;
+}
+
+const randomUpdateNumberPlayers = (range) => {
   let lsMSServerData = localStorage.getItem("msServerData");
 
-  if (!lsMSServerData) {
-    const updatedPlayers = randomAddOrSubtractNumber(
-      defaultNumber,
-      defaultNumberEncreaseDecrease
-    );
+  if (
+    !lsMSServerData ||
+    isTimeDifference5Minutes(new Date(), JSON.parse(lsMSServerData).date)
+  ) {
+    const players = getRandomNumberInRange(range);
 
     localStorage.setItem(
       "msServerData",
-      JSON.stringify({ date: new Date(), players: updatedPlayers })
-    );
-
-    return updatedPlayers;
-  }
-
-  if (lsMSServerData) {
-    const { players, date } = JSON.parse(lsMSServerData);
-
-    if (isTimeDifference5Minutes(new Date(), date)) {
-      const updatedPlayers = randomAddOrSubtractNumber(
-        players,
-        defaultNumberEncreaseDecrease
-      );
-
-      localStorage.setItem(
-        "msServerData",
-        JSON.stringify({
-          date: new Date(),
-          players: updatedPlayers,
-        })
-      );
-
-      return updatedPlayers;
-    }
-
-    localStorage.setItem(
-      "msServerData",
-      JSON.stringify({
-        date: isTimeDifference5Minutes(new Date(), date) ? new Date() : date,
-        players,
-      })
+      JSON.stringify({ date: new Date(), players })
     );
 
     return players;
   }
+
+  return JSON.parse(lsMSServerData).players;
 };
 
 function getNumberBasedOnTime() {
@@ -86,10 +59,8 @@ function getNumberBasedOnTime() {
     }
     localStorage.setItem("dayPeriod", "day");
 
-    // Daytime: 200 - 400
-    const defaultNumber = 274;
-    const playersNumber = randomUpdateNumberPlayers(defaultNumber);
-
+    // Daytime: 2000 - 3500
+    const playersNumber = randomUpdateNumberPlayers(daytimeRange);
     return playersNumber;
   } else {
     if (dayPeriod === "day") {
@@ -97,10 +68,8 @@ function getNumberBasedOnTime() {
     }
     localStorage.setItem("dayPeriod", "night");
 
-    // Nighttime: 5 - 199
-    const defaultNumber = 127;
-    const playersNumber = randomUpdateNumberPlayers(defaultNumber);
-
+    // Nighttime: 1500 - 2500
+    const playersNumber = randomUpdateNumberPlayers(nighttimeRange);
     return playersNumber;
   }
 }
