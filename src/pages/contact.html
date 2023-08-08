@@ -117,15 +117,12 @@
           <nav aria-label="Breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a
-                  href="${{ locale.header_link_1 }}$"
-                  data-i18n-key="header_shop"
-                ></a>
+                <a href="${{ locale.header_link_1 }}$">
+                  ${{ locale.header_shop }}$
+                </a>
               </li>
               <li class="breadcrumb-item-separator">></li>
-              <li class="breadcrumb-item">
-                <span data-i18n-key="header_contacts"></span>
-              </li>
+              <li class="breadcrumb-item">${{ locale.header_contacts }}$</li>
             </ol>
           </nav>
           <div class="contact__row">
@@ -135,12 +132,8 @@
               alt="contact_page_img"
             />
             <div class="contact__info info">
-              <h1 data-i18n-key="contact-page__title" class="info__title">
-                Контакты
-              </h1>
-              <p data-i18n-key="contact-page__text" class="info__subtitle">
-                Свяжитесь с нами если у вас остались вопросы:
-              </p>
+              <h1 class="info__title">${{ locale.contact_title }}$</h1>
+              <p class="info__subtitle">${{ locale.contact_text }}$</p>
               <div class="info__block">
                 <div class="info__block-img">
                   <img
@@ -159,11 +152,8 @@
                     alt="telegram_icon"
                   />
                 </div>
-                <a
-                  data-i18n-key="contact-page__telegram"
-                  href="https://t.me/advinminecraft"
-                >
-                  Telegram
+                <a href="https://t.me/advinminecraft">
+                  ${{ locale.contact_telegram }}$
                 </a>
               </div>
             </div>
