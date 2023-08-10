@@ -56,7 +56,6 @@ export const renderShopItemImgHTML = ({
   imageClass,
 }) => {
   const classAttribute = imageClass ? `class="${imageClass}"` : "";
-
   return `<img ${classAttribute} src="/assets/images/products/${shopItemType}/${shopItemName}" alt="${shopItemName.slice(
     0,
     -4

@@ -5,7 +5,7 @@ export const languageLocalizations = {
     // header
     header_shop: "Store",
     header_rules: "Rules",
-    header_donate: "Description of donation",
+    header_donate: "Product description",
     header_faq: "FAQ",
     header_how_to_play: "How to start playing?",
     header_contacts: "Contacts",
@@ -303,7 +303,7 @@ export const languageLocalizations = {
     [3] Using features for selfish purposes refers to all actions that can negatively affect gameplay and the operation of the server.
     `,
     //
-    donationDescription__title: "Description of donation",
+    donationDescription__title: "Product description",
     donationDescription__survival: "Survival",
     donationDescription__anarchy: "Anarchy",
 
@@ -1577,7 +1577,7 @@ export const languageLocalizations = {
     // header
     header_shop: "Магазин",
     header_rules: "Правила",
-    header_donate: "Описание доната",
+    header_donate: "Описание товара",
     header_faq: "FAQ",
     header_how_to_play: "Как начать играть?",
     header_contacts: "Контакты",
@@ -1876,7 +1876,7 @@ export const languageLocalizations = {
     [3] Под использованием возможности в корыстных целях подразумевается все действия которые могут отрицательно повлиять на игровой процесс, а также на работу сервера.
     `,
     // donation-description
-    donationDescription__title: "Описание доната",
+    donationDescription__title: "Описание товара",
     donationDescription__survival: "Выживание",
     donationDescription__anarchy: "Анархия",
 

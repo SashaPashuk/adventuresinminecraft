@@ -12,4 +12,14 @@ export const SHOP_ITEM_SORT_PRICE_TYPES = {
 export const CURRENCIES = [
   { abbr: "EUR", sign: "€" },
   { abbr: "USD", sign: "$" },
+  { abbr: "PLN", sign: "zł" },
+  { abbr: "GBP", sign: "£" },
+  { abbr: "CAD", sign: "C$" },
+  { abbr: "AUD", sign: "A$" },
+  { abbr: "JPY", sign: "¥" },
+  { abbr: "CHF", sign: "CHF" },
+  { abbr: "DKK", sign: "kr." },
+  { abbr: "SEK", sign: "kr" },
+  { abbr: "CZK", sign: "Kč" },
+  { abbr: "TRY", sign: "₺" },
 ];
