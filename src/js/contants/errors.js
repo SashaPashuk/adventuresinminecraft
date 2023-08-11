@@ -10,12 +10,16 @@ export const ACTIVE_CODE_INCORRECT =
 export const FIELD_NOT_EMPTY_ERROR = "This field may not be blank.";
 
 export const VALID_EMAIL_ERROR = "Enter a valid email address.";
+export const WRONG_EMAIL_CODE_ERROR = "Wrong email code!";
 export const EMAIL_CODE_MIN_CHARACTERS_ERROR =
   "Ensure this field has at least 6 characters.";
 export const EMAIL_CODE_MAX_CHARACTERS_ERROR =
   "Ensure this field has no more than 6 characters.";
 
 export const VALID_PASSWORDS_ERROR = "Passwords do not match.";
+export const INCORRECT_OLD_PASSWORDS_ERROR = "Incorrect old password.";
+export const PASSWORDS_NOT_MATCHED_ERROR = "Password does not match.";
+export const PASSWORD_CHANGED_SUCCESS = "Password changed successfully.";
 export const PASSWORD_MIN_CHARACTERS_ERROR =
   "Ensure this field has at least 4 characters.";
 export const PASSWORD_MAX_CHARACTERS_ERROR =
@@ -48,6 +52,10 @@ export const errorsLanguageLocalizationsEnum = {
   USER_VALID_NICKNAME_ERROR: "USER_VALID_NICKNAME_ERROR",
 
   VALID_EMAIL_ERROR: "VALID_EMAIL_ERROR",
+  WRONG_EMAIL_CODE_ERROR: "WRONG_EMAIL_CODE_ERROR",
+  INCORRECT_OLD_PASSWORDS_ERROR: "INCORRECT_OLD_PASSWORDS_ERROR",
+  PASSWORDS_NOT_MATCHED_ERROR: "PASSWORDS_NOT_MATCHED_ERROR",
+  PASSWORD_CHANGED_SUCCESS: "PASSWORD_CHANGED_SUCCESS",
   EMAIL_CODE_MIN_CHARACTERS_ERROR: "EMAIL_CODE_MIN_CHARACTERS_ERROR",
   EMAIL_CODE_MAX_CHARACTERS_ERROR: "EMAIL_CODE_MAX_CHARACTERS_ERROR",
 
@@ -89,6 +97,10 @@ export const errorsLanguageLocalizations = {
     USER_VALID_NICKNAME_ERROR: "Enter valid nickname.",
 
     VALID_EMAIL_ERROR: "Enter a valid email address.",
+    WRONG_EMAIL_CODE_ERROR: "Wrong email code!",
+    INCORRECT_OLD_PASSWORDS_ERROR: "Incorrect old password.",
+    PASSWORDS_NOT_MATCHED_ERROR: "Password does not match.",
+    PASSWORD_CHANGED_SUCCESS: "Password changed successfully.",
     EMAIL_CODE_MIN_CHARACTERS_ERROR:
       "Ensure this field has at least 6 characters.",
     EMAIL_CODE_MAX_CHARACTERS_ERROR:
@@ -138,6 +150,10 @@ export const errorsLanguageLocalizations = {
     USER_VALID_NICKNAME_ERROR: "Введите действительный псевдоним.",
 
     VALID_EMAIL_ERROR: "Введите действительный адрес электронной почты.",
+    WRONG_EMAIL_CODE_ERROR: "Неверный код электронной почты!",
+    INCORRECT_OLD_PASSWORDS_ERROR: "Неверный старый пароль.",
+    PASSWORDS_NOT_MATCHED_ERROR: "Пароли не совпадают.",
+    PASSWORD_CHANGED_SUCCESS: "Пароль успешно изменен.",
     EMAIL_CODE_MIN_CHARACTERS_ERROR:
       "Убедитесь, что это поле содержит не менее 6 символов.",
     EMAIL_CODE_MAX_CHARACTERS_ERROR:

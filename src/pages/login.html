@@ -112,12 +112,15 @@
               <input
                 data-i18n-key="loginPage__passwordPlaceholder"
                 class="input-custom"
-                type="text"
+                type="password"
                 placeholder="Ваш пароль"
                 name="password"
               />
               <label for="password" class="input-error"></label>
-              <!-- <label for="password" class="input-tip"> Забыли пароль? </label> -->
+
+              <label for="password" class="input-tip" id="forgot-password">
+                ${{locale.login_forgot_password}}$
+              </label>
 
               <button
                 data-i18n-key="loginPage__button"
@@ -168,6 +171,77 @@
                 class="button-primary"
               >
                 Подтвердить вход
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="container hidden"
+          id="email-code-forgot-password-from-container"
+        >
+          <img
+            class="page-auth-logo"
+            src="/assets/images/logo.svg"
+            alt="logo | adventures in minecraft "
+          />
+          <div class="form_container">
+            <h2 class="form_title">${{locale.login_title_forgot_password}}$</h2>
+            <form method="post" id="code-form">
+              <input
+                data-i18n-key="loginPage__emailPlaceholder"
+                class="input-custom"
+                type="text"
+                placeholder="Ваш email"
+                name="forgot-email"
+              />
+              <label for="forgot-email" class="input-error"></label>
+
+              <button
+                type="submit"
+                id="forgot-password-form"
+                form="forgot-password-form"
+                class="button-primary"
+              >
+                ${{locale.login_send_btn_forgot_password}}$
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="container hidden"
+          id="forgot-password-change-from-container"
+        >
+          <img
+            class="page-auth-logo"
+            src="/assets/images/logo.svg"
+            alt="logo | adventures in minecraft "
+          />
+          <div class="form_container">
+            <h2 class="form_title">${{locale.login_title_forgot_password}}$</h2>
+            <form method="post" id="forgot-password-change-form">
+              <input
+                class="input-custom"
+                type="text"
+                placeholder="${{locale.login_change_password_code_placeholder}}$"
+                name="forgot-change-email-code"
+              />
+              <label for="forgot-change-email-code" class="input-error"></label>
+
+              <input
+                class="input-custom"
+                type="password"
+                placeholder="${{locale.change_password_newPasswordPlaceholder}}$"
+                name="forgot-change-password"
+              />
+              <label for="forgot-change-password" class="input-error"></label>
+
+              <button
+                type="submit"
+                id="forgot-password-change-submit"
+                form="forgot-password-change-submit"
+                class="button-primary"
+              >
+                ${{locale.login_send_btn_forgot_password_change}}$
               </button>
             </form>
           </div>

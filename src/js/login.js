@@ -6,6 +6,11 @@ import {
   EMAIL_CODE_MIN_CHARACTERS_ERROR,
   EMAIL_CODE_MAX_CHARACTERS_ERROR,
   errorsLanguageLocalizationsEnum,
+  VALID_EMAIL_ERROR,
+  PASSWORD_MIN_CHARACTERS_ERROR,
+  PASSWORD_MAX_CHARACTERS_ERROR,
+  WRONG_EMAIL_CODE_ERROR,
+  PASSWORD_CHANGED_SUCCESS,
 } from "./contants/errors.js";
 import { ContentLoadingEventObserever } from "./utils/observer.js";
 import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
@@ -19,6 +24,22 @@ const loginFormContainerElement = document.querySelector(
 const codeFormContainerElement = document.querySelector("#code-from-container");
 const codeButtonElement = document.querySelector("#code-button");
 const codeFormElement = document.querySelector("#code-form");
+
+const forgotPasswordFormContainerElement = document.querySelector(
+  "#email-code-forgot-password-from-container"
+);
+const forgotPasswordFormElement = document.querySelector("#forgot-password");
+const forgotPasswordSubmitBtn = document.querySelector("#forgot-password-form");
+
+const forgotPasswordChangeFormContainer = document.querySelector(
+  "#forgot-password-change-from-container"
+);
+const forgotChangePasswordForm = document.querySelector(
+  "#forgot-password-change-form"
+);
+const forgotChangePasswordSubmitBtn = document.querySelector(
+  "#forgot-password-change-submit"
+);
 
 document.addEventListener("DOMContentLoaded", () => {
   const hasSuccessfulRegistration = localStorage.getItem("register_success");
@@ -143,6 +164,139 @@ codeButtonElement?.addEventListener("click", (e) => {
       window.location.href = "/";
     }
   });
+});
+
+// after clicking on Forgot password
+forgotPasswordFormElement?.addEventListener("click", () => {
+  loginFormContainerElement.classList.add("hidden");
+  codeFormContainerElement.classList.add("hidden");
+  forgotPasswordFormContainerElement.classList.remove("hidden");
+});
+
+// send code to certain email for password recovery
+forgotPasswordSubmitBtn?.addEventListener("click", async (e) => {
+  e.preventDefault();
+
+  const response = await API.restorePasswordSendEmaliCodeRequest({
+    email: document.querySelector('input[name="forgot-email"]').value,
+  });
+
+  const emailError = (response.email && response.email[0]) || "";
+
+  if ([VALID_EMAIL_ERROR, FIELD_NOT_EMPTY_ERROR].includes(emailError)) {
+    const labelForNicknameError = document?.querySelector(
+      'label[for="forgot-email"]'
+    );
+    labelForNicknameError.innerHTML = getLocalizedError(
+      FIELD_NOT_EMPTY_ERROR === emailError
+        ? errorsLanguageLocalizationsEnum.FIELD_NOT_EMPTY_ERROR
+        : errorsLanguageLocalizationsEnum.VALID_EMAIL_ERROR
+    );
+  }
+
+  // andrii.korniienko.2000@gmail.com
+  // since we do not have errors, redirect user to email confirmation page or home page
+  if (response.includes("Email code has been sent.")) {
+    localStorage.setItem(
+      "restore_password",
+      JSON.stringify({
+        email: document.querySelector('input[name="forgot-email"]').value,
+      })
+    );
+    forgotPasswordChangeFormContainer.classList.remove("hidden");
+    forgotPasswordFormContainerElement.classList.add("hidden");
+  }
+});
+
+// after receiving email code  we can set new password
+forgotChangePasswordSubmitBtn?.addEventListener("click", async (e) => {
+  e.preventDefault();
+
+  cleanFormFromErrors(forgotChangePasswordForm);
+
+  const formInputs = forgotChangePasswordForm.querySelectorAll("input");
+
+  const response = await API.restorePasswordRequest({
+    email: JSON.parse(localStorage.getItem("restore_password")).email,
+    email_code: formInputs[0].value,
+    new_password: formInputs[1].value,
+  });
+
+  // email_code errors
+  const emailCodeError =
+    (response.email_code && response?.email_code[0]) || response?.error || "";
+
+  if (
+    [
+      FIELD_NOT_EMPTY_ERROR,
+      EMAIL_CODE_MIN_CHARACTERS_ERROR,
+      EMAIL_CODE_MAX_CHARACTERS_ERROR,
+      WRONG_EMAIL_CODE_ERROR,
+    ].includes(emailCodeError) ||
+    (response?.length && response?.includes(WRONG_EMAIL_CODE_ERROR))
+  ) {
+    const codeForEmailError = document?.querySelector(
+      'label[for="forgot-change-email-code"]'
+    );
+
+    codeForEmailError.innerHTML = response.includes(WRONG_EMAIL_CODE_ERROR)
+      ? getLocalizedError(
+          errorsLanguageLocalizationsEnum.WRONG_EMAIL_CODE_ERROR
+        )
+      : emailCodeError === FIELD_NOT_EMPTY_ERROR
+      ? getLocalizedError(errorsLanguageLocalizationsEnum.FIELD_NOT_EMPTY_ERROR)
+      : emailCodeError === EMAIL_CODE_MIN_CHARACTERS_ERROR
+      ? getLocalizedError(
+          errorsLanguageLocalizationsEnum.EMAIL_CODE_MIN_CHARACTERS_ERROR
+        )
+      : getLocalizedError(
+          errorsLanguageLocalizationsEnum.EMAIL_CODE_MAX_CHARACTERS_ERROR
+        );
+  }
+
+  // new_password errors
+  const newPasswordError =
+    (response.new_password && response?.new_password[0]) || "";
+
+  if (
+    [
+      FIELD_NOT_EMPTY_ERROR,
+      PASSWORD_MIN_CHARACTERS_ERROR,
+      PASSWORD_MAX_CHARACTERS_ERROR,
+    ].includes(newPasswordError)
+  ) {
+    const labelForEmailError = document?.querySelector(
+      'label[for="forgot-change-password"]'
+    );
+    labelForEmailError.innerHTML =
+      newPasswordError === FIELD_NOT_EMPTY_ERROR
+        ? getLocalizedError(
+            errorsLanguageLocalizationsEnum.FIELD_NOT_EMPTY_ERROR
+          )
+        : newPasswordError === PASSWORD_MIN_CHARACTERS_ERROR
+        ? getLocalizedError(
+            errorsLanguageLocalizationsEnum.PASSWORD_MIN_CHARACTERS_ERROR
+          )
+        : getLocalizedError(
+            errorsLanguageLocalizationsEnum.PASSWORD_MAX_CHARACTERS_ERROR
+          );
+  }
+
+  if (response?.message === PASSWORD_CHANGED_SUCCESS) {
+    cleanFormFromErrors(document.querySelector("form"));
+
+    addToastNotification({
+      message: getLocalizedError(
+        errorsLanguageLocalizationsEnum.PASSWORD_CHANGED_SUCCESS
+      ),
+    });
+
+    const languageFromURL = window.location.pathname.includes("/ru/")
+      ? "ru"
+      : "";
+
+    window.location.href = `/${languageFromURL}/pages/login`;
+  }
 });
 
 document.addEventListener("DOMContentLoaded", () => {

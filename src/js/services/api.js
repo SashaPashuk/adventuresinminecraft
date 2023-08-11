@@ -84,6 +84,9 @@ const sendAPIRequestToRefreshToken = async () => {
 };
 
 export default {
+  /* ----------------------- */
+  /* ------ auth logic ----- */
+  /* ----------------------- */
   /**
    * @param {Object} body
    * @param {String} body.password
@@ -109,6 +112,52 @@ export default {
       method: "POST",
       pathname: "/user/login/",
       body,
+    });
+  },
+  /* ----------------------- */
+  /* ---- reset password --- */
+  /* ----------------------- */
+  /**
+   * @param {Object} body
+   * @param {String} body.email
+   * @returns {Promise}
+   */
+  restorePasswordSendEmaliCodeRequest: (body) => {
+    return sendAPIRequest({
+      method: "POST",
+      pathname: "/user/send_email_code/",
+      body,
+    });
+  },
+  /**
+   * @param {Object} body
+   * @param {String} body.email
+   * @param {String} body.email_code
+   * @param {String} body.new_password
+   * @returns {Promise}
+   */
+  restorePasswordRequest: (body) => {
+    return sendAPIRequest({
+      method: "POST",
+      pathname: "/user/restore_password/",
+      body,
+    });
+  },
+  /* ----------------------- */
+  /* --- change password --- */
+  /* ----------------------- */
+  /**
+   * @param {Object} body
+   * @param {String} body.old_password
+   * @param {String} body.new_password
+   * @returns {Promise}
+   */
+  changePasswordRequest: (body) => {
+    return sendAPIRequest({
+      method: "POST",
+      pathname: "/user/change_password/",
+      body,
+      hasToken: true,
     });
   },
 
