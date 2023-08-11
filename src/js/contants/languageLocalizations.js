@@ -248,7 +248,7 @@ export const languageLocalizations = {
     [3] Using features for selfish purposes refers to all actions that can negatively affect gameplay and the operation of the server.
     `,
     //
-    donationDescription__title: "Description of donation",
+    donationDescription__title: "Product description",
     donationDescription__survival: "Survival",
     donationDescription__anarchy: "Anarchy",
 
@@ -1705,7 +1705,7 @@ export const languageLocalizations = {
     [3] Под использованием возможности в корыстных целях подразумевается все действия которые могут отрицательно повлиять на игровой процесс, а также на работу сервера.
     `,
     // donation-description
-    donationDescription__title: "Описание доната",
+    donationDescription__title: "Описание товара",
     donationDescription__survival: "Выживание",
     donationDescription__anarchy: "Анархия",
 
