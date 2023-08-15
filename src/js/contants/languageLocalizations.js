@@ -882,7 +882,7 @@ export const languageLocalizations = {
         “Rules” 
         <a href="/pages/rules">https://adventuresinminecraft.com/pages/rules</a>
         <br />
-        “Description of Donations”
+        “Product description”
         <a href="/pages/donation-description">https://adventuresinminecraft.com/pages/donation-description</a>
         <br />
         “How to Start Playing?”
@@ -2225,7 +2225,7 @@ export const languageLocalizations = {
         <br />
         «Правила» <a href="/ru/pages/rules">https://adventuresinminecraft.com/ru/pages/rules</a>
         <br />
-        «Описание доната»
+        «Описание товара»
         <a href="/ru/pages/donation-description">https://adventuresinminecraft.com/ru/pages/donation-description</a>
         <br />
         «Как начать играть?»
