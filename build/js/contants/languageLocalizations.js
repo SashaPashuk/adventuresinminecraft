@@ -558,9 +558,6 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
         “How to Start Playing?”
         <a href="/pages/starting-tips">https://adventuresinminecraft.com/pages/starting-tips</a>
         <br />
-        “Launchers”
-        <a href="/pages/launcher-download">https://adventuresinminecraft.com/pages/launcher-download</a>
-        <br />
         “Mods” <a href="/pages/mods">https://adventuresinminecraft.com/pages/mods</a>
         <br />
         “FAQ” <a href="/pages/faq">https://adventuresinminecraft.com/pages/faq</a>
@@ -639,10 +636,6 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
       <p class="policy__text">
         <strong>“How to Start Playing?”</strong> gives you an explanation of
         3 steps to start playing in Minecraft with your purchase.
-      </p>
-      <p class="policy__text">
-        <strong>“Launchers”</strong> gives you a possibility to download and
-        run the game.
       </p>
       <p class="policy__text">
         <strong>“Modes”</strong> explains what the modes are and what they
@@ -1567,9 +1560,6 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
         «Как начать играть?»
         <a href="/ru/pages/starting-tips">https://adventuresinminecraft.com/ru/pages/starting-tips</a> 
         <br />
-        «Лаунчеры»
-        <a href="/ru/pages/launcher-download">https://adventuresinminecraft.com/ru/pages/launcher-download</a>
-        <br />
         «Моды»<a href="/ru/pages/mods">https://adventuresinminecraft.com/ru/pages/mods</a> 
         <br />
         “FAQ” <a href="/ru/pages/faq">https://adventuresinminecraft.com/ru/pages/faq</a> 
@@ -1652,10 +1642,6 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
         <strong>«Как начать играть?»</strong> предлагает схематичное
         описание 3 шагов, сделав которые Вы можете легко начать играть в
         Minecraft с вашей покупкой.
-      </p>
-      <p class="policy__text">
-        Открыв документ<strong> «Лаунчеры»</strong>, Вы получаете
-        возможность скачать и запустить игру.
       </p>
       <p class="policy__text">
         Документ <strong>«Моды»</strong>объясняет, что такое моды, какие
