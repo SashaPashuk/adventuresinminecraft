@@ -194,7 +194,6 @@ forgotPasswordSubmitBtn?.addEventListener("click", async (e) => {
     );
   }
 
-  // andrii.korniienko.2000@gmail.com
   // since we do not have errors, redirect user to email confirmation page or home page
   if (response.includes("Email code has been sent.")) {
     localStorage.setItem(
