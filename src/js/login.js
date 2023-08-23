@@ -292,10 +292,10 @@ forgotChangePasswordSubmitBtn?.addEventListener("click", async (e) => {
     });
 
     const languageFromURL = window.location.pathname.includes("/ru/")
-      ? "ru"
+      ? "/ru"
       : "";
 
-    window.location.href = `/${languageFromURL}/pages/login`;
+    window.location.href = `${languageFromURL}/pages/login`;
   }
 });
 
