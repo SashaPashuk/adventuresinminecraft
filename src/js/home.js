@@ -1,7 +1,6 @@
 import API from "../js/services/api.js";
 import {
   addToastNotification,
-  getCurrencySign,
   productSchemaGenerator,
   renderShopItemsListHTML,
 } from "./utils/helpers.js";
@@ -25,6 +24,7 @@ import {
   SHOP_ITEM_TYPES,
 } from "./contants/constants.js";
 import { getActiveLocale } from "./services/languageLocalization.js";
+import { getLanguageFromURLWithoutEN } from "./utils/language.js";
 
 // Constants
 
@@ -160,11 +160,12 @@ const addProductCardsEventListeners = (cards) => {
         })
       );
 
-      const productUrl =
-        getActiveLocale() === "ru"
-          ? `/ru/pages/product?id=${cards?.results[index].id}`
-          : `/pages/product?id=${cards?.results[index].id}`;
-      window.open(productUrl, "_self");
+      window.open(
+        `${getLanguageFromURLWithoutEN()}/pages/product?id=${
+          cards?.results[index].id
+        }`,
+        "_self"
+      );
     });
   });
 };
