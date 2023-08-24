@@ -931,7 +931,8 @@ export const languageLocalizations = {
       <p class="policy__text">
         The original language of these Terms and Conditions, as well as all
         other texts throughout the Site, is English. We make a translation
-        in Russian available for convenience only. In case of conflicts
+        in other languages available for convenience only. You can choose the language in 
+        the upper right corner of the screen. In case of conflicts
         between the original English version and any translation, the
         English version shall prevail.
       </p>
@@ -960,7 +961,7 @@ export const languageLocalizations = {
         explanations of terms.
       </p>
       <p class="policy__text">
-        <strong>“Description of Donations”</strong> gives you the details of
+        <strong>“Product Description”</strong> gives you the details of
         the products and the value added by buying them.
       </p>
       <p class="policy__text">
@@ -980,14 +981,16 @@ export const languageLocalizations = {
         <strong>The online store.</strong> On the homepage of the Site you
         see the icons assigned to digital goods that you can buy. You can
         sort them by price and select the desired digital goods of
-        “Survival” or “Anarchy” type. You can see the price denominated in
-        EUR of each product. If the product is available to be bought, the
+        “Survival” or “Anarchy” type. You choose a currency in the up right 
+        corner of the screen and you can see the price denominated in the currency 
+        that you have chosen for each product. If the product is available to be bought, the
         icon is active. If it is not available, the icon is inactive.
         Please, press the icon of desired digital goods and you’ll get the
         description of possibilities that it adds.
       </p>
       <p class="policy__text">
-        <strong> The Prices.</strong> Prices are denominated in euros. The
+        <strong> The Prices.</strong> Prices are denominated in different currencies. 
+        You choose a currency in the up right corner of the screen. The
         price includes all necessary taxes. You do not pay either packaging
         or delivery costs. The payment gateway which processes payments for
         the Site charges a 10% processing fee. The fee is not included in
@@ -1063,8 +1066,9 @@ export const languageLocalizations = {
         available.
       </p>
       <p class="policy__text">
-        <strong>Currencies.</strong> The payment transaction currency is
-        euro. If your payment card’s currency differs from euro, currency
+        <strong>Currencies.</strong> The payment transaction currency is the 
+        currency that you choose in the up right corner of the screen. If your 
+        payment card’s currency differs from euro, currency
         conversion is made according to the rules of the International
         Payment Card Systems. The exchange rate is set by the International
         Payment Card Systems for blocking the relevant amount on the card
@@ -1299,7 +1303,7 @@ export const languageLocalizations = {
       </p>
       <p class="policy__text">
         We are not liable if the product purchased was not delivered to the
-        player due to technical problems on the Minecraft’s side.
+        player due to technical problems on a third party’s side.
       </p>
       <p class="policy__text">
         Software and hardware errors like from our side and from your side,
@@ -2267,8 +2271,8 @@ export const languageLocalizations = {
       </p>
       <p class="policy__text">
         Основным языком Соглашения, а также всех других текстов на Сайте
-        является английский. Мы делаем перевод на русский язык доступным
-        только для удобства. В случае противоречий между оригинальной
+        является английский. Мы делаем перевод на другие языки доступными только для удобства. 
+        Язык можно выбрать в правом верхнем углу экрана. В случае противоречий между оригинальной
         английской версией и каким-либо переводом английская версия имеет
         преимущественную силу.
       </p>
@@ -2298,7 +2302,7 @@ export const languageLocalizations = {
         и разъяснения терминов.
       </p>
       <p class="policy__text">
-        <strong>«Описание доната»</strong>дает вам подробную информацию о
+        <strong>«Описание товаров»</strong>дает вам подробную информацию о
         продуктах и тех возможностях, которые они добавляют игрокам в
         процессе игры.
       </p>
@@ -2321,14 +2325,15 @@ export const languageLocalizations = {
         <strong>Интернет-магазин</strong> На главной странице Сайта Вы
         видите иконки, присвоенные цифровым товарам, которые Вы можете
         купить. Можно отсортировать их по цене и выбрать нужный продукт типа
-        «Выживание» или «Анархия». Вы можете увидеть цену, выраженную в евро
-        для каждого товара. Если товар доступен для покупки, значок активен.
+        «Выживание» или «Анархия». Вы можете выбрать валюту в верхнем правом углу экрана, 
+        и цену товара будет выражаться в выбранной Вами валюте. Если товар доступен для покупки, значок активен.
         Если он недоступен, значок неактивен. Пожалуйста, нажмите на иконку
         нужного товара, и Вы получите описание возможностей, которые
         добавляет его покупка.
       </p>
       <p class="policy__text">
-        <strong>Цены.</strong> Цены указаны в евро. Цена включает в себя все
+        <strong>Цены.</strong> Цены могут быть указаны в разных валютах. 
+        Вы можете выбрать валюту в правом верхнем углу экрана.  Цена включает в себя все
         необходимые налоги. Вы не оплачиваете ни упаковку, ни доставку.
         Платежный шлюз, который обрабатывает платежи для Сайта, взимает
         комиссию за обработку в размере 10%. Комиссия не входит в стоимость
@@ -2404,7 +2409,8 @@ export const languageLocalizations = {
         страницу оплаты BazPay gateway. Другие способы оплаты недоступны.
       </p>
       <p class="policy__text">
-        <strong>Валюты.</strong> Валюта платежной транзакции - евро. Если
+        <strong>Валюты.</strong> Валюта платежной операции это та валюта, 
+        которую Вы выбираете в правом верхнем углу экрана. Если
         валюта вашей платежной карты отличается от евро, конвертация валюты
         производится согласно правилам Международных платежных систем. Курс
         обмена устанавливается Международными платежными системами для
@@ -2691,7 +2697,7 @@ export const languageLocalizations = {
       </p>
       <p class="policy__text">
         Мы не несем ответственности, если купленный товар не был доставлен
-        игроку из-за технических проблем на стороне Minecraft.
+        игроку из-за технических проблем на стороне третьего лица.
       </p>
       <p class="policy__text">
         Программно ошибки как с нашей стороны, так и с Вашей стороны,
