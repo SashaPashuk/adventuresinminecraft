@@ -1,5 +1,6 @@
 export const DEFAULT_LANGUAGE = "ru";
-export const APP_LANGUAGES = ["ru", "en"];
+// do not change order
+export const APP_LANGUAGES = ["en", "ru", "uk"];
 
 export const SHOP_ITEM_TIME_USAGE = {
   "30_DAYS": "30 Days",

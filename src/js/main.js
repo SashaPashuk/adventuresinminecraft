@@ -1,11 +1,16 @@
 import API from "../js/services/api.js";
-import { DEFAULT_LANGUAGE } from "./contants/constants.js";
-import { renderCurrenciesToDropdownHTML } from "./utils/helpers.js";
+import { APP_LANGUAGES, DEFAULT_LANGUAGE } from "./contants/constants.js";
 import {
-  ContentLoadingEventObserever,
-  CurrencyObserever,
-} from "./utils/observer.js";
-import { redirectForEnPaths, redirectForHomePaths } from "./utils/utils.js";
+  renderCurrenciesToDropdownHTML,
+  renderLanguagesToDropdownHTML,
+} from "./utils/helpers.js";
+import { ContentLoadingEventObserever } from "./utils/observer.js";
+import {
+  addCurrenciesSelectorEventListener,
+  bindCurrenciesSwitcher,
+  redirectForEnPaths,
+  redirectForHomePaths,
+} from "./utils/utils.js";
 
 const menuItems = document.querySelectorAll(".nav-link");
 const navItemsForUserLogic = document.querySelectorAll(".nav-item-user-logic");
@@ -25,6 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   redirectForEnPaths();
 
   await new Promise((resolve) => setTimeout(resolve, 100));
+
   const detectedLanguage = window.location.pathname.includes("/ru/")
     ? "ru"
     : localStorage.getItem("language") || DEFAULT_LANGUAGE;
@@ -36,22 +42,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const tokensData = localStorage.getItem("tokens");
   const usernameData = localStorage.getItem("username");
 
-  if (tokensData) {
-    navItemForUserDropdownLogic?.classList.remove("hidden-visibility");
-    navItemsForUserLogic?.forEach((item) => item.classList.add("hidden"));
-
-    if (usernameData && usernameElement) {
-      usernameElement.innerHTML = usernameData.slice(0, 15) + "...";
-      usernameElement.setAttribute("title", usernameData);
-    }
-  } else {
-    navItemForUserDropdownLogic?.classList.add("hidden");
-    navItemsForUserLogic?.forEach((item) =>
-      item.classList.remove("hidden-visibility")
-    );
-  }
-
-  ContentLoadingEventObserever.broadcast(true);
+  renderUserOptions(tokensData, usernameData);
 
   // Show amount of items in cart
   const lsShopOrderItems = localStorage.getItem("orderItems");
@@ -73,11 +64,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   setTimeout(bindCurrenciesSwitcher, 100);
-  renderCurrenciesToDropdownHTML(serverShopCurrenciesResponse);
-  addCurrenciesSelectorEventListener();
 
+  renderCurrenciesToDropdownHTML(serverShopCurrenciesResponse);
+  renderLanguagesToDropdownHTML(APP_LANGUAGES);
+
+  addCurrenciesSelectorEventListener();
   addLanguageSelectorEventListener();
   addCookieEventListener();
+
+  ContentLoadingEventObserever.broadcast(true);
 });
 
 // dropdown logic
@@ -175,72 +170,6 @@ const addLanguageSelectorEventListener = () => {
   }
 };
 
-// currencies
-
-const addCurrenciesSelectorEventListener = () => {
-  const selector = document.querySelector(".custom-currencies-select");
-
-  if (selector) {
-    selector.addEventListener("change", (e) => {
-      selector.querySelector("select").classList.remove("active");
-    });
-    selector.addEventListener("mousedown", (e) => {
-      selector.querySelector("select").classList.add("active");
-
-      if (window.innerWidth >= 420) {
-        // override look for non mobile
-        e.preventDefault();
-
-        if (!selector.querySelector(".selector-options")) {
-          const select = selector.children[0];
-          const dropDown = document.createElement("ul");
-          dropDown.className = "selector-options";
-
-          [...select.children].forEach((option) => {
-            const dropDownOption = document.createElement("li");
-            dropDownOption.textContent = option.textContent;
-
-            dropDownOption.addEventListener("mousedown", (e) => {
-              if (select.value === option.value) {
-                return;
-              }
-              e.stopPropagation();
-              select.value = option.value;
-              selector.value = option.value;
-              localStorage.setItem("currency", option.value);
-              select.dispatchEvent(new Event("change"));
-              selector.dispatchEvent(new Event("change"));
-              CurrencyObserever.broadcast(select.value);
-              dropDown.remove();
-            });
-
-            dropDown.appendChild(dropDownOption);
-          });
-
-          selector.appendChild(dropDown);
-
-          // handle click out
-          document.addEventListener("click", (e) => {
-            if (!selector.contains(e.target)) {
-              selector.querySelector("select").classList.remove("active");
-              dropDown.remove();
-            }
-          });
-        }
-      }
-    });
-  }
-};
-
-const bindCurrenciesSwitcher = () => {
-  const switcher = document.querySelector("[data-currencies-switcher]");
-
-  if (switcher) {
-    switcher.value = localStorage.getItem("currency") || "EUR";
-    CurrencyObserever.broadcast(localStorage.getItem("currency") || "EUR");
-  }
-};
-
 // cookie
 const addCookieEventListener = () => {
   const cookie = localStorage.getItem("hasAcceptedCookie");
@@ -256,4 +185,21 @@ const addCookieEventListener = () => {
     localStorage.setItem("hasAcceptedCookie", "true");
     document?.querySelector(".cookie_container")?.classList.add("hidden");
   });
+};
+
+const renderUserOptions = (tokensData, usernameData) => {
+  if (tokensData) {
+    navItemForUserDropdownLogic?.classList.remove("hidden-visibility");
+    navItemsForUserLogic?.forEach((item) => item.classList.add("hidden"));
+
+    if (usernameData && usernameElement) {
+      usernameElement.innerHTML = usernameData.slice(0, 15) + "...";
+      usernameElement.setAttribute("title", usernameData);
+    }
+  } else {
+    navItemForUserDropdownLogic?.classList.add("hidden");
+    navItemsForUserLogic?.forEach((item) =>
+      item.classList.remove("hidden-visibility")
+    );
+  }
 };

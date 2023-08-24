@@ -370,6 +370,10 @@ img {
   }
 }
 
+#forgot-password {
+  cursor: pointer;
+}
+
 // import components styles
 @import "components/header";
 @import "components/form";

@@ -1,4 +1,5 @@
 import {
+  APP_LANGUAGES,
   CURRENCIES,
   SHOP_ITEM_TIME_USAGE,
   SHOP_ITEM_TYPES,
@@ -564,6 +565,22 @@ export const renderCurrenciesToDropdownHTML = (currencies) => {
 
   currencies.reverse().forEach(({ abbr, name }) => {
     const item = `<option value="${abbr}">${name}</option>`;
+
+    html += item;
+  });
+
+  container.innerHTML = html;
+};
+
+export const renderLanguagesToDropdownHTML = (languages) => {
+  const container = document.querySelector("[data-i18n-switcher]");
+
+  if (!container) return;
+
+  let html = "";
+
+  languages.forEach((lang) => {
+    const item = `<option value="${lang}">${lang.toUpperCase()}</option>`;
 
     html += item;
   });

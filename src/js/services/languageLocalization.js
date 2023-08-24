@@ -5,6 +5,21 @@ import {
 } from "../utils/observer.js";
 import { APP_LANGUAGES, DEFAULT_LANGUAGE } from "../contants/constants.js";
 
+const getLanguageFromUrl = (url = window.location) => {
+  const urlParts = new URL(url);
+  const pathnameParts = urlParts.pathname.split("/");
+  const languageIndex = pathnameParts.findIndex((part) =>
+    /^[a-z]{2}$/.test(part)
+  );
+
+  if (languageIndex !== -1) {
+    return pathnameParts[languageIndex];
+  }
+
+  // Default language if no language code is found in the URL
+  return "en";
+};
+
 const getDefaultLanguage = () => {
   // Check if we have language in ls and if not redirect only to en website version
   if (!localStorage.getItem("language")) {
@@ -20,10 +35,6 @@ const getDefaultLanguage = () => {
     return "en";
   }
 
-  const languageFromURL = window.location.pathname.includes("/ru/")
-    ? "ru"
-    : null;
-
   const browserUserLanguage = navigator.language || navigator.userLanguage;
   const browserUserLanguageSupportedInApp = APP_LANGUAGES.includes(
     browserUserLanguage.split("-")[0]
@@ -32,12 +43,11 @@ const getDefaultLanguage = () => {
     : null;
 
   const defaultLang =
-    languageFromURL ||
+    getLanguageFromUrl() ||
     localStorage.getItem("language") ||
     browserUserLanguageSupportedInApp ||
     DEFAULT_LANGUAGE;
 
-  localStorage.setItem("language", defaultLang);
   return defaultLang;
 };
 
@@ -62,11 +72,10 @@ ContentLoadingEventObserever.subscribe((dataLoaded) => {
   }
 });
 
-// When the page content is ready...
 document.addEventListener("DOMContentLoaded", () => {
   // Translate the page to the default locale
   setLocale(defaultLocale);
-  bindLocaleSwitcher(defaultLocale);
+  setTimeout(() => bindLocaleSwitcher(defaultLocale), 1000);
 });
 
 function bindLocaleSwitcher(initialValue) {
@@ -74,24 +83,28 @@ function bindLocaleSwitcher(initialValue) {
 
   if (switcher) {
     switcher.value = initialValue;
-    switcher.onchange = (e) => {
-      const hasRepalceLanguageCode =
-        window.location.pathname.includes("/ru/") ||
-        window.location.pathname === "/ru";
 
-      if (!hasRepalceLanguageCode) {
+    switcher.onchange = (e) => {
+      // onChange logic for langs except for EN
+      if (APP_LANGUAGES.slice(1).includes(e.target.value)) {
         const pathname =
           window.location.pathname === "/" ? "" : window.location.pathname;
-
+        const modifiedPathname = pathname.replace(
+          `/${getLanguageFromUrl()}`,
+          ""
+        );
         window.open(
-          `${window.location.origin}/${e.target.value}${pathname}${window.location.search}`,
+          `/${e.target.value}${modifiedPathname}${window.location.search}`,
           "_self"
         );
-      } else {
+      }
+
+      // onChnage logic for EN lang
+      if (e.target.value === "en") {
         const pathname =
-          window.location.pathname === "/ru"
+          window.location.pathname === `/${getLanguageFromUrl}`
             ? "/"
-            : window.location.pathname.replace("/ru", "");
+            : window.location.pathname.replace(`/${getLanguageFromUrl()}`, "");
 
         window.open(
           `${window.location.origin}${pathname}${window.location.search}`,

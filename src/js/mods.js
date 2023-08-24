@@ -1,6 +1,6 @@
 import { renderListingHTML } from "./utils/helpers.js";
 import { getActiveLocale } from "./services/languageLocalization.js";
-import { DEFAULT_LANGUAGE } from "./contants/constants.js";
+import { APP_LANGUAGES } from "./contants/constants.js";
 
 const mods = [
   {
@@ -29,11 +29,12 @@ const mods = [
 
 document.addEventListener("DOMContentLoaded", async () => {
   const activeLocale = getActiveLocale();
+  console.log(activeLocale);
   renderListingHTML(
     mods.map((el) => ({
       ...el,
       url: `/${
-        activeLocale !== DEFAULT_LANGUAGE ? el.url : activeLocale + "/" + el.url
+        activeLocale === APP_LANGUAGES[0] ? el.url : activeLocale + "/" + el.url
       }`,
     }))
   );
