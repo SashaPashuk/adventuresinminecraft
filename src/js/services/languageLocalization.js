@@ -5,7 +5,7 @@ import {
 } from "../utils/observer.js";
 import { APP_LANGUAGES, DEFAULT_LANGUAGE } from "../contants/constants.js";
 
-const getLanguageFromUrl = (url = window.location) => {
+export const getLanguageFromUrl = (url = window.location) => {
   const urlParts = new URL(url);
   const pathnameParts = urlParts.pathname.split("/");
   const languageIndex = pathnameParts.findIndex((part) =>

@@ -1,7 +1,7 @@
 const API_URL = "https://api.adventuresinminecraft.com/api/v1";
 
 import { SHOP_ITEM_SORT_PRICE_TYPES } from "../contants/constants.js";
-import * as Types from "../types/types.js";
+import { getLanguageFromURLWithoutEN } from "../utils/language.js";
 
 const getTokens = () => {
   const tokens = localStorage.getItem("tokens");
@@ -46,11 +46,7 @@ const sendAPIRequest = async ({ method, pathname, body, hasToken }) => {
     if (response?.access) {
       return makeRequest();
     } else {
-      const languageFromURL = window.location.pathname.includes("/ru/")
-        ? "ru"
-        : "en";
-
-      window.location.href = `/${languageFromURL}/pages/login`;
+      window.location.href = `${getLanguageFromURLWithoutEN()}/pages/login`;
       localStorage.removeItem("tokens");
     }
   }
@@ -286,9 +282,6 @@ export default {
       hasToken: true,
     });
   },
-  /**
-   * @promise {Types.IServer[]}
-   */
   getShopServersRequest: () => {
     return sendAPIRequest({
       method: "GET",
@@ -307,10 +300,7 @@ export default {
     return sendAPIRequest({
       method: "POST",
       pathname: `/payment/create_payment/`,
-      body: {
-        ...body,
-        // return_url: "http://localhost:3000/pages/success-payment",
-      },
+      body,
       hasToken: true,
     });
   },

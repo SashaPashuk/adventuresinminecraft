@@ -3,12 +3,12 @@ import {
   USER_EXISTS_ERROR,
   VALID_EMAIL_ERROR,
   FIELD_NOT_EMPTY_ERROR,
-  VALID_PASSWORDS_ERROR,
   PASSWORD_MIN_CHARACTERS_ERROR,
   PASSWORD_MAX_CHARACTERS_ERROR,
   errorsLanguageLocalizationsEnum,
 } from "./contants/errors.js";
 import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
+import { getLanguageFromURLWithoutEN } from "./utils/language.js";
 
 const signupButtonElement = document.querySelector("#signup-button");
 const signupFormElement = document.querySelector("#signup-form");
@@ -79,11 +79,7 @@ signupButtonElement?.addEventListener("click", (e) => {
 
     // since we do not have errors, redirect user to login page
     if (data === "User successfully registered!") {
-      const languageFromURL = window.location.pathname.includes("/ru/")
-        ? "/ru"
-        : "";
-
-      window.location.href = `${languageFromURL}/pages/login`;
+      window.location.href = `${getLanguageFromURLWithoutEN()}/pages/login`;
       localStorage.setItem("register_success", true);
     }
   });

@@ -39,7 +39,7 @@ function html() {
     )
     .pipe(
       i18n({
-        locales: ["en", "ru"],
+        locales: ["en", "ru", "uk", "es"],
         localeDir: "./locales",
       })
     )

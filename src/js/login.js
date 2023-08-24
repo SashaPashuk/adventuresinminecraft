@@ -15,6 +15,7 @@ import {
 import { ContentLoadingEventObserever } from "./utils/observer.js";
 import { getLocalizedError } from "./services/errorsLanguageLocalization.js";
 import { addToastNotification } from "./utils/helpers.js";
+import { getLanguageFromURLWithoutEN } from "./utils/language.js";
 
 const loginButtonElement = document.querySelector("#login-button");
 const loginFormElement = document.querySelector("#login-form");
@@ -290,11 +291,7 @@ forgotChangePasswordSubmitBtn?.addEventListener("click", async (e) => {
       ),
     });
 
-    const languageFromURL = window.location.pathname.includes("/ru/")
-      ? "/ru"
-      : "";
-
-    window.location.href = `${languageFromURL}/pages/login`;
+    window.location.href = `${getLanguageFromURLWithoutEN()}/pages/login`;
   }
 });
 
