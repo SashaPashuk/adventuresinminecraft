@@ -1,0 +1,305 @@
+{
+    "domain": "https://adventuresinminecraft.com",
+    "home_metadate_title": "Strona główna | Przygody na serwerze Minecraft",
+    "home_metadate_description": "Strona główna в'пёЏ 195.201.168.105 Przygody w Minecraft —… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "metadate_og_locale": "pl",
+    "metadate_og_type": "strona internetowa",
+    "metadate_og_contact_title": "Kontakty | Przygody na serwerze Minecraft",
+    "metadate_og_contact_description": "РљРѕРЅС‚Р°РєС‚С‹ в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ… РџРѕРєСѓРїРєР° РґРѕРЅР°С‚Р° Рё РїСЂРёРІРёР»РµРіРёР№ РЅР° СЃРµСЂРІРµСЂРµ РјР°Р№РЅРєСЂР°С„С‚",
+    "donate_description_metadate_title": "Opis darowizny | Przygody na serwerze Minecraft",
+    "donate_description_metadate_description": "Opis darowizny в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "faq_metadate_title": "FAQ | Przygody na serwerze Minecraft",
+    "faq_metadate_description": "FAQ в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "launcher_download_metadate_title": "Launchery | Przygody na serwerze Minecraft",
+    "launcher_download_metadate_description": "Launchers в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "login_metadate_title": "Zaloguj się | Przygody na serwerze Minecraft",
+    "login_metadate_description": "Login в'пёЏ 195.201.168.105 Adventures In Minecraft ―… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "registration_metadate_title": "Rejestracja | Przygody na serwerze Minecraft",
+    "registration_metadate_description": "Rejestracja в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "mods_metadate_title": "Mody | Przygody na serwerze Minecraft",
+    "mods_metadate_description": "Mods в'пёЏ 195.201.168.105 Adventures In Minecraft ‹… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "order_history_metadate_title": "Historia zamówień | Przygody na serwerze Minecraft",
+    "order_history_metadate_description": "Historia zamówień в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy do skrzynek uprawnień na naszym serwerze minecraft",
+    "product_metadate_title": "Zdobądź swój własny status {product_name} na serwerze Adventures In Minecraft",
+    "product_metadate_description": "Uzyskaj dostęp do rangi i sufiksu {product_name} w projekcie Adventures In Minecraft —… Zakup kluczy skrzyń uprawnień na naszym serwerze minecraft — ─ 195.201.168.105 —",
+    "rules_metadate_title": "Zasady | Przygody na serwerze Minecraft",
+    "rules_metadate_description": "Zasady в'пёЏ 195.201.168.105 Przygody w Minecraft ―… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "starting_tips_metadate_title": "Porady na start | Przygody na serwerze Minecraft",
+    "starting_tips_metadate_description": "Porady na start в'пёЏ 195.201.168.105 Przygody w Minecraft ―… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "success_payment_metadate_title": "Płatność za sukces | Przygody na serwerze Minecraft",
+    "success_payment_metadate_description": "Success Payment в'пёЏ 195.201.168.105 Adventures In Minecraft вњ… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "decline_payment_metadate_title": "Odrzuć płatność | Przygody na serwerze Minecraft",
+    "decline_payment_metadate_description": "Odrzuć płatność в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "404_metadate_title": "Nie znaleziono strony | Przygody na serwerze Minecraft",
+    "404_metadate_description": "Nie znaleziono strony в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "mods_1122_metadate_title": "1.12.2 | Przygody na serwerze Minecraft",
+    "mods_1122_metadate_description": "1.12.2 в'пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "mods_1122_cars_metadate_title": "1.12.2 (Samochody) | Przygody na serwerze Minecraft",
+    "mods_1122_cars_metadate_description": "1.12.2 (Cars) в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "mods_1122_pe_metadate_title": "Minecraft PE 1.12.2 | Przygody na serwerze Minecraft",
+    "mods_1122_pe_metadate_description": "Minecraft PE 1.12.2 в‘пёЏ 195.201.168.105 Adventures In Minecraft —… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "mods_1122_oruzhie_metadate_title": "1.12.2 (Oruzhie) | Przygody na serwerze Minecraft",
+    "mods_1122_oruzhie_metadate_description": "1.12.2 (Oruzhie) в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "mods_1165_metadate_title": "1.16.5 | Przygody na serwerze Minecraft",
+    "mods_1165_metadate_description": "1.16.5 в'пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "mods_journeymap_mod_metadate_title": "Journey Map Mod | Przygody na serwerze Minecraft",
+    "mods_journeymap_mod_metadate_description": "Journey Map Mod в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "canonical_home_href": "/pl",
+    "canonical_404_href": "/pl/pages/404",
+    "canonical_cart_href": "/pl/pages/cart-page",
+    "canonical_change_password_href": "/pl/pages/change-password",
+    "canonical_contact_href": "/pl/pages/contact",
+    "canonical_donate_privileges_href": "/pl/pages/donate-privileges",
+    "canonical_donate_description_href": "/pl/pages/donate-description",
+    "canonical_exit_confirmation_page_href": "/pl/pages/exit-confirmation-page",
+    "canonical_faq_href": "/pl/pages/faq",
+    "canonical_launcher_download_href": "/pl/pages/launcher-download",
+    "canonical_login_href": "/pl/pages/login",
+    "canonical_mods_href": "/pl/pages/mods",
+    "canonical_mods_1122_href": "/pl/pages/mods/1122",
+    "canonical_mods_1122_cars_href": "/pl/pages/mods/1122/cars",
+    "canonical_mods_1122_pe_href": "/pl/pages/mods/1122/minecraft-pe-1-12-2",
+    "canonical_mods_1122_oruzhie_href": "/pl/pages/mods/1122/oruzhie",
+    "canonical_mods_journeymap_mod_href": "/pl/pages/mods/journeymap-mod",
+    "canonical_mods_1165_href": "/pl/pages/mods/1165",
+    "canonical_order_history_href": "/pl/pages/order-history-page",
+    "canonical_product_href": "/pl/pages/product",
+    "canonical_registration_href": "/pl/pages/registration",
+    "canonical_rules_href": "/pl/pages/rules",
+    "canonical_starting_tips_href": "/pl/pages/starting-tips",
+    "canonical_success_payment_href": "/pl/pages/success-payment",
+    "canonical_decline_payment_href": "/pl/pages/decline-payment",
+    "canonical_team_href": "/pl/pages/team",
+    "home_page_url": {
+        "en": "/",
+        "ru": "/pl"
+    },
+    "mods_page_url": {
+        "en": "/pages/mods",
+        "ru": "/pl/pages/mods"
+    },
+    "mods_1122_page_url": {
+        "en": "/pages/mods/1122",
+        "ru": "/pl/pages/mods/1122"
+    },
+    "mods_1122_cars_page_url": {
+        "en": "/pages/mods/1122/cars",
+        "ru": "/pl/pages/mods/1122/cars"
+    },
+    "mods_1122_pe_page_url": {
+        "en": "/pages/mods/1122/minecraft-pe-1-12-2",
+        "ru": "/pl/pages/mods/1122/minecraft-pe-1-12-2"
+    },
+    "mods_1122_oruzhie_page_url": {
+        "en": "/pages/mods/1122/oruzhie",
+        "ru": "/pl/pages/mods/1122/oruzhie"
+    },
+    "mods_journeymap_mod_page_url": {
+        "en": "/pages/mods/journeymap-mod",
+        "ru": "/pl/pages/mods/journeymap-mod"
+    },
+    "mods_1165_page_url": {
+        "en": "/pages/mods/1165",
+        "ru": "/pl/pages/mods/1165"
+    },
+    "product_page_url": {
+        "en": "/pages/product",
+        "ru": "/pl/pages/product"
+    },
+    "launcher_download_page_url": {
+        "en": "/pages/launcher-download",
+        "ru": "/pl/pages/launcher-download"
+    },
+    "404_page_url": {
+        "en": "/pages/404",
+        "ru": "/pl/pages/404"
+    },
+    "rules_page_url": {
+        "en": "/pages/rules",
+        "ru": "/pl/pages/rules"
+    },
+    "faq_page_url": {
+        "en": "/pages/faq",
+        "ru": "/pl/pages/faq"
+    },
+    "login_page_url": {
+        "en": "/pages/login",
+        "ru": "/pl/pages/login"
+    },
+    "order_history_page_url": {
+        "en": "/pages/order-history-page",
+        "ru": "/pl/pages/order-history-page"
+    },
+    "registration_page_url": {
+        "en": "/pages/registration",
+        "ru": "/pl/pages/registration"
+    },
+    "contact_page_url": {
+        "en": "/pages/contact",
+        "ru": "/pl/pages/contact"
+    },
+    "starting_tips_page_url": {
+        "en": "/pages/starting-tips",
+        "ru": "/pl/pages/starting-tips"
+    },
+    "donation_page_url": {
+        "en": "/pages/donation-description",
+        "ru": "/pl/pages/donation-description"
+    },
+    "donate_priv_page_url": {
+        "en": "/pages/donate-privileges",
+        "ru": "/pl/pages/donate-privileges"
+    },
+    "change_password_page_url": {
+        "en": "/pages/change-password-page",
+        "ru": "/pl/pages/change-password-page"
+    },
+    "cart_page_url": {
+        "en": "/pages/cart-page",
+        "ru": "/pl/pages/cart-page"
+    },
+    "team_page_url": {
+        "en": "/pages/team",
+        "ru": "/pl/pages/team"
+    },
+    "success_payment_page_url": {
+        "en": "/pages/success_payment",
+        "ru": "/pl/pages/success_payment"
+    },
+    "decline_payment_page_url": {
+        "en": "/pages/decline_payment",
+        "ru": "/pl/pages/decline_payment"
+    },
+    "exit_confirmation_page_url": {
+        "en": "/pages/exit-confirmation-page",
+        "ru": "/pl/pages/exit-confirmation-page"
+    },
+    "privacy_link": {
+        "en": "/pages/privacy-policy",
+        "ru": "/pl/pages/privacy-policy"
+    },
+    "cookie_link": {
+        "en": "/pages/cookie-policy",
+        "ru": "/pl/pages/cookie-policy"
+    },
+    "terms_conditions_link": {
+        "en": "/pages/terms-and-conditions/",
+        "ru": "/pl/pages/terms-and-conditions/"
+    },
+    "meta_cart_title": "Koszyk | Przygody na serwerze Minecraft",
+    "meta_cart_desc": "Koszyk в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "meta_change_password_title": "Zmień hasło | Przygody na serwerze Minecraft",
+    "meta_change_password_desc": "Zmień hasło в'пёЏ 195.201.168.105 Przygody w Minecraft вњ… Zakup kluczy skrzyń uprawnień na naszym serwerze minecraft",
+    "meta_contact_title": "Kontakty | Przygody na serwerze Minecraft",
+    "meta_contact_desc": "Kontakty в'пёЏ 195.201.168.105 Przygody w Minecraft вњ… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "meta_donate_privileges_title": "Przekaż przywileje | Przygody na serwerze Minecraft",
+    "meta_donate_privileges_desc": "Podaruj przywileje в'пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "meta_donation_title": "Opis darowizny | Przygody na serwerze Minecraft",
+    "meta_donation_desc": "Opis darowizny в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "meta_exit_confirmation_title": "Potwierdzenie wyjścia | Przygody na serwerze Minecraft",
+    "meta_exit_confirmation_desc": "Potwierdzenie wyjścia в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzyń uprawnień na naszym serwerze minecraft",
+    "meta_faq_title": "FAQ | Przygody na serwerze Minecraft",
+    "meta_faq_desc": "FAQ в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "meta_launcher_download_title": "Launchery | Przygody na serwerze Minecraft",
+    "meta_launcher_download_desc": "Launchers в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "meta_login_title": "Zaloguj się | Przygody na serwerze Minecraft",
+    "meta_login_desc": "Login в'пёЏ 195.201.168.105 Adventures In Minecraft ―… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "meta_mods_title": "Mody | Przygody na serwerze Minecraft",
+    "meta_mods_desc": "Mods в'пёЏ 195.201.168.105 Adventures In Minecraft ‹… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "meta_order_history_title": "Historia zamówień | Przygody na serwerze Minecraft",
+    "meta_order_history_desc": "Historia zamówień в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy do skrzynek uprawnień na naszym serwerze minecraft",
+    "meta_registration_title": "Rejestracja | Przygody na serwerze Minecraft",
+    "meta_registration_desc": "Rejestracja в'пёЏ ${serverIP} Adventures In Minecraft вњ… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "meta_rules_title": "Zasady | Przygody na serwerze Minecraft",
+    "meta_rules_desc": "Zasady в'пёЏ 195.201.168.105 Przygody w Minecraft ―… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "meta_starting_tips_title": "Porady na start | Przygody na serwerze Minecraft",
+    "meta_starting_tips_desc": "Porady na start в'пёЏ 195.201.168.105 Przygody w Minecraft ―… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "meta_success_payment_title": "Płatność za sukces | Przygody na serwerze Minecraft",
+    "meta_success_payment_desc": "Success Payment в'пёЏ 195.201.168.105 Adventures In Minecraft вњ… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "meta_decline_payment_title": "Odrzuć płatność | Przygody na serwerze Minecraft",
+    "meta_decline_payment_desc": "Odrzuć płatność в‘пёЏ 195.201.168.105 Adventures In Minecraft ′… Zakup kluczy skrzynek uprawnień na naszym serwerze minecraft",
+    "meta_product_title": "Zdobądź swój własny status na serwerze Adventures In Minecraft",
+    "meta_product_desc": "Uzyskaj dostęp do rangi i sufiksu w projekcie Adventures In Minecraft —… Zakup kluczy skrzyń uprawnień na naszym serwerze minecraft — ─x0098_‘пёЏ 195.201.168.105 —…",
+    "meta_privacy_title": "Polityka prywatności",
+    "meta_cookie_title": "Polityka Cookie",
+    "meta_terms_conditions_title": "Regulamin",
+    "header_link_1": "/pl",
+    "header_link_2": "/pl/pages/rules",
+    "header_link_3": "/pl/pages/donation-description",
+    "header_link_4": "/pl/pages/faq",
+    "header_link_5": "/pl/pages/starting-tips",
+    "header_link_6": "/pl/pages/contact",
+    "header_link_7": "/pl/pages/login",
+    "header_link_8": "/pl/pages/registration",
+    "header_link_9": "/pl/pages/order-history-page",
+    "header_link_10": "/pl/pages/change-password-page",
+    "header_link_11": "/pl/pages/exit-confirmation-page",
+    "header_link_12": "/pl/pages/cart-page",
+    "footer_link_1": "/pl",
+    "footer_link_2": "/pl/pages/rules",
+    "footer_link_3": "/pl/pages/donation-description",
+    "footer_link_4": "/pl/pages/contact",
+    "footer_link_5": "/pl/pages/faq",
+    "footer_link_6": "/pl/pages/starting-tips",
+    "footer_link_7": "/pl/pages/launcher-download",
+    "footer_link_8": "/pl/pages/mods",
+    "footer_link_9": "/pl/pages/privacy-policy",
+    "footer_link_10": "/pl/pages/cookie-policy",
+    "footer_link_11": "/pl/pages/terms-and-conditions",
+    "product_page_name": "Produkt",
+    "productPage__desc": "Opis produktu:",
+    "header_component": "/ ---- /",
+    "header_shop": "Sklep",
+    "header_rules": "Zasady",
+    "header_donate": "Opis darowizny",
+    "header_faq": "Najczęściej zadawane pytania",
+    "header_how_to_play": "Jak zacząć grać?",
+    "header_contacts": "Łączność",
+    "header_enter": "Zaloguj sie",
+    "header_signup": "Zapisać się",
+    "header_orders_history": "Historia zamówień",
+    "header_change_password": "Zmień hasło",
+    "header_logout": "Wyloguj",
+    "footer_component": "/ ---- /",
+    "footer_store": "Sklep",
+    "footer_rules": "Zasady",
+    "footer_donate": "Opis darowizny",
+    "footer_contacts": "Łączność",
+    "footer_faq": "Najczęściej zadawane pytania",
+    "footer_how_to_start": "Jak zacząć grać?",
+    "footer_donate_rules": "Przywileje darowizny",
+    "footer_launchers": "Miotacze",
+    "footer_team": "Zespół",
+    "footer_mods": "Mody",
+    "footer_privacy": "Polityka prywatności",
+    "footer_cookie": "Polityka Cookie",
+    "footer_terms_and_conditions": "Regulamin",
+    "footer_copiryted": "В© 2023 Adventures in Minecraft - wszelkie prawa zastrzeżone. Właścicielem i operatorem strony jest GalaxyGrip OГњ, zarejestrowana zgodnie z prawem Republiki Estonii, numer firmy 16776100, zarejestrowany adres: Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.",
+    "/ ----- login_page ----- /": "",
+    "login_forgot_password": "Zapomniałeś hasła?",
+    "login_title_forgot_password": "Odzyskiwanie hasła",
+    "login_send_btn_forgot_password": "Wyślij kod",
+    "login_send_btn_forgot_password_change": "Zmień hasło",
+    "login_change_password_code_placeholder": "Twój kod",
+    "/ ----- home_page ----- /": "",
+    "home_title": "Odkryj świat Minecrafta",
+    "home_survival": "Przetrwanie",
+    "home_anarchy": "Anarchia",
+    "home_server_monitoring_text": "Obecnie gra",
+    "home_server_monitoring_status": "Status serwera",
+    "home_price_sort": "Sortuj według ceny",
+    "home_price_sort_asc": "Od taniego do drogiego",
+    "home_price_sort_desc": "Od drogiego do taniego",
+    "/ ----- contact_page ----- /": "",
+    "contact_title": "Łączność",
+    "contact_text": "Skontaktuj się z nami, jeśli masz jakiekolwiek pytania:",
+    "contact_telegram": "Telegram",
+    "/ ----- change_password ----- /": "",
+    "change_password_first_step_title": "Aby zmienić hasło, kliknij przycisk „Zmień hasło”. Na Twój adres e-mail zostanie wysłany link, kliknij na niego i wprowadź nowe hasło.",
+    "change_password_title": "Zmiana hasła",
+    "change_password_text": "Wpisz nowe hasło",
+    "change_password_button": "Zmień hasło",
+    "change_password_oldPasswordPlaceholder": "Stare hasło",
+    "change_password_newPasswordPlaceholder": "Nowe hasło",
+    "change_password_repeatPasswordPlaceholder": "Powtórz hasło"
+}

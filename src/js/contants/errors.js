@@ -327,4 +327,52 @@ export const errorsLanguageLocalizations = {
     ITEM_DURATION_ERROR: "Мерзімділік осы элементте өзгертіле алмайды.",
     ITEM_DURATION_SUCCESS: "Мерзімділік өзгертілді.",
   },
+  pl: {
+    NO_ACTIVE_ORDER_ERROR: "Nie ma aktywnego zamówienia.",
+
+    ACTIVE_CODE_INCORRECT:
+      "Nie znaleziono aktywnego konta o podanych danych uwierzytelniających.",
+    FIELD_NOT_EMPTY_ERROR: "To pole nie może być puste.",
+
+    USER_VALID_NICKNAME_ERROR: "Podaj poprawny pseudonim.",
+
+    VALID_EMAIL_ERROR: "Podaj poprawny adres e-mail.",
+    WRONG_EMAIL_CODE_ERROR: "Błędny kod e-mail!",
+    INCORRECT_OLD_PASSWORDS_ERROR: "Nieprawidłowe stare hasło.",
+    PASSWORDS_NOT_MATCHED_ERROR: "Hasła nie pasują do siebie.",
+    PASSWORD_CHANGED_SUCCESS: "Hasło zostało pomyślnie zmienione.",
+    EMAIL_CODE_MIN_CHARACTERS_ERROR:
+      "Upewnij się, że to pole ma co najmniej 6 znaków.",
+    EMAIL_CODE_MAX_CHARACTERS_ERROR:
+      "Upewnij się, że to pole nie ma więcej niż 6 znaków.",
+
+    VALID_PASSWORDS_ERROR: "Hasła nie pasują do siebie.",
+    PASSWORD_MIN_CHARACTERS_ERROR:
+      "Upewnij się, że to pole ma co najmniej 4 znaki.",
+    PASSWORD_MAX_CHARACTERS_ERROR:
+      "Upewnij się, że to pole nie ma więcej niż 24 znaki.",
+
+    // ITEM
+    ITEM_ADDED_TO_CART_SUCCESS:
+      "Ten przedmiot został pomyślnie dodany do koszyka.",
+    ITEM_ADDED_TO_CART_ERROR: "Przedmiot już dodany do koszyka.",
+    ITEM_ADDED_TO_CART_CURRENCY_ERROR:
+      "Nie można dodać przedmiotu o różnych walutach do koszyka. Najpierw usuń istniejący przedmiot lub zmień walutę.",
+    ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
+      `Ten przedmiot ‹‹${name}›› został już dodany do koszyka.`,
+    ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
+      `Ten przedmiot ‹‹${name}›› został pomyślnie dodany do koszyka.`,
+    ITEM_DELETED_FROM_CART_SUCCESS: "Przedmiot został usunięty z koszyka.",
+
+    ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR: "Nie można zmienić ilości.",
+    ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:
+      "Ilość nie może być większa niż jeden.",
+    ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR:
+      "Ilość nie może być mniejsza niż jeden.",
+    ITEM_AMOUNT_CHANGED_SUCCESS: "Ilość została zmieniona.",
+
+    ITEM_DURATION_ERROR:
+      "Czas trwania nie może być zmieniony dla tego przedmiotu.",
+    ITEM_DURATION_SUCCESS: "Czas trwania został zmieniony.",
+  },
 };
