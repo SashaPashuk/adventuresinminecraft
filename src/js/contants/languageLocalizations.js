@@ -4304,7 +4304,7 @@ export const languageLocalizations = {
     // starting tips page
     "starting-tips-page__title": "Cómo empezar a jugar?",
     "starting-tips-page__button": "Start now",
-
+    "starting-tips-page__step-one": "Paso 1: Start now",
     "starting-tips-page__step-one__description": `El primer paso para comenzar a jugar Minecraft es comprar una copia con licencia del juego. Puedes comprar el juego en el sitio web oficial de Minecraft o en otras tiendas donde el juego está disponible para tu plataforma..`,
     "starting-tips-page__step-two": "Paso 2: Instala el juego",
     "starting-tips-page__step-two__description": `Después de comprar el juego, deberás instalarlo en tu plataforma. Descargue la versión apropiada de Minecraft para su dispositivo (por ejemplo, Minecraft: Java Edition para PC o Minecraft: Bedrock Edition para consolas, dispositivos móviles o tabletas). Siga las instrucciones de instalación para completar el proceso..`,
@@ -4385,8 +4385,7 @@ export const languageLocalizations = {
     faqPage__blockThirdQuestionLabel:
       "¿Cómo funciona el juego multijugador en Minecraft?",
     faqPage__blockThirdAnswerText: `El juego multijugador en Minecraft te permite jugar con otros jugadores en tiempo real. Puedes conectarte a un servidor alojado por otro jugador o crear tu propio servidor para jugar con amigos. Cuando juegas en modo multijugador, puedes interactuar con otros jugadores, construir, comerciar, luchar y trabajar juntos en proyectos compartidos.`,
-    faqPage__blockCuartaPreguntaEtiqueta:
-      "¿Cómo funciona el sistema de modos de juego en Minecraft?",
+    faqPage__blockFourthQuestionLabel: `¿Cómo funciona el sistema de modos de juego en Minecraft?`,
     faqPage__blockFourthAnswerText: `Minecraft ofrece varios modos de juego, incluidos supervivencia, modo creativo, aventura y muchos otros. El modo de supervivencia presenta una experiencia más realista en la que necesitas reunir recursos, sobrevivir y luchar contra criaturas hostiles. El modo creativo le brinda recursos ilimitados y la capacidad de construir sin limitaciones. Los modos de juego determinan las reglas básicas y los objetivos que puedes perseguir en Minecraft.`,
     faqPage__blockFifthQuestionLabel:
       "¿Cómo funciona el sistema de modificación (mod) en Minecraft?",
@@ -4627,17 +4626,17 @@ export const languageLocalizations = {
     
     `,
     // -> mapa-viaje-mod
-    mapa_viaje_mod_h1_1:
+    journeymap_mod_h1_1:
       "Journey Map mod para Minecraft: una práctica herramienta de navegación",
     journeymap_mod_p1: `Si juegas a Minecraft, probablemente sepas lo importante que es tener un buen mapa para navegar por el mundo del juego. Pero a veces el mapa estándar del juego puede no hacer el trabajo. En tales casos, una modificación llamada Journey Map viene al rescate. En este texto te diremos qué es este mod y cómo usarlo.`,
-    mapa_viaje_mod_h2_1: `
+    journeymap_mod_h2_1: `
     ¿Qué es el mod Journey Map para Minecraft?`,
     journeymap_mod_p2: `Journey Map es una modificación para Minecraft que agrega un mapa conveniente y funcional al juego. Permite a los jugadores navegar fácilmente en el mundo de Minecraft y encontrar fácilmente los lugares correctos. El mod contiene muchas funciones útiles, como la teletransportación, la visualización de la ubicación de mobs y jugadores, el seguimiento de rutas y más.`,
-    mapa_viaje_mod_h2_2: `
+    journeymap_mod_h2_2: `
     ¿Cómo descargo e instalo el mod Journey Map?`,
     journeymap_mod_p3: `Puedes descargar el mod en el sitio web oficial de CurseForge o en el sitio web del modder. Encuentra la página de mods y elige la versión correcta de Minecraft. Descarga el archivo mod y muévelo a la carpeta "mods" dentro de la carpeta del juego Minecraft.`,
-    mapa_viaje_mod_h2_3: "Las principales funciones del mod` Journey Map",
-    viajemap_mod_p4: `
+    journeymap_mod_h2_3: "Las principales funciones del mod` Journey Map",
+    journeymap_mod_p4: `
     Mapa en tiempo real: muestra todos los lugares que has explorado en Minecraft en tiempo real.
     Pantalla de ubicación de jugadores y mobs: muestra la ubicación de todos los jugadores y mobs en el mapa, lo que facilita encontrar a tus amigos y navegar por el mundo que te rodea.
     Teletransportación: permite a los jugadores moverse por el mapa fácilmente. Simplemente puede hacer clic en el lugar donde desea aparecer y su personaje se moverá instantáneamente allí.
@@ -4737,23 +4736,23 @@ export const languageLocalizations = {
     // 1122_cars
     "1122_cars_h1":
       "Minecraft 1.12.2 Mods: amplía tu mundo de juego con coches",
-    "1122_coches_p": `Si desea agregar nuevos medios de transporte a Minecraft 1.12.2 y diversificar su juego, las modificaciones de automóviles pueden ser la adición perfecta para usted. Te permitirán embarcarte en emocionantes viajes por el mundo virtual utilizando varios vehículos. En este artículo, discutiremos algunas modificaciones de automóviles populares para la versión 1.12.2 de Minecraft y compartiremos información sobre cómo descargarlas e instalarlas.`,
+    "1122_cars_p": `Si desea agregar nuevos medios de transporte a Minecraft 1.12.2 y diversificar su juego, las modificaciones de automóviles pueden ser la adición perfecta para usted. Te permitirán embarcarte en emocionantes viajes por el mundo virtual utilizando varios vehículos. En este artículo, discutiremos algunas modificaciones de automóviles populares para la versión 1.12.2 de Minecraft y compartiremos información sobre cómo descargarlas e instalarlas.`,
     "1122_cars_h2_1": "Modificación de coche para Minecraft 1.12.2",
-    "1122_coches_p_2": `Una de las modificaciones de automóviles más conocidas para Minecraft 1.12.2 es Vehicle Mod. Este mod agrega varios autos al juego, como sedanes, SUV y camiones. Puede personalizar el color y las especificaciones de cada vehículo, así como usarlos para viajar por el mundo de Minecraft.`,
-    "1122_coches_p_3": `Para descargar el mod de automóvil para Minecraft 1.12.2, debe visitar los recursos oficiales como Minecraft Forum o CurseForge y encontrar la página de mod adecuada. Allí, puede descargar el archivo mod y seguir las instrucciones de instalación.`,
+    "1122_cars_p_2": `Una de las modificaciones de automóviles más conocidas para Minecraft 1.12.2 es Vehicle Mod. Este mod agrega varios autos al juego, como sedanes, SUV y camiones. Puede personalizar el color y las especificaciones de cada vehículo, así como usarlos para viajar por el mundo de Minecraft.`,
+    "1122_cars_p_3": `Para descargar el mod de automóvil para Minecraft 1.12.2, debe visitar los recursos oficiales como Minecraft Forum o CurseForge y encontrar la página de mod adecuada. Allí, puede descargar el archivo mod y seguir las instrucciones de instalación.`,
     "1122_cars_h2_2": "Modificación de transporte para Minecraft 1.12.2",
-    "1122_coches_p_4": `Si desea tener más variedad en su elección de vehículos, un mod de transporte para Minecraft 1.12.2 le abrirá nuevas posibilidades. Uno de esos mods es el Simulador de transporte de Minecraft. Agrega una gran cantidad de diferentes tipos de transporte, incluidos aviones, trenes, helicópteros e incluso submarinos. Podrás crear tus propias rutas y explorar el mundo de Minecraft con estos vehículos únicos.`,
-    "1122_coches_p_5": `Para descargar el mod de transporte para Minecraft 1.12.2, puede visitar el sitio web oficial de CurseForge y buscar la página de mod adecuada. Allí encontrará un enlace de descarga e instrucciones de instalación.`,
+    "1122_cars_p_4": `Si desea tener más variedad en su elección de vehículos, un mod de transporte para Minecraft 1.12.2 le abrirá nuevas posibilidades. Uno de esos mods es el Simulador de transporte de Minecraft. Agrega una gran cantidad de diferentes tipos de transporte, incluidos aviones, trenes, helicópteros e incluso submarinos. Podrás crear tus propias rutas y explorar el mundo de Minecraft con estos vehículos únicos.`,
+    "1122_cars_p_5": `Para descargar el mod de transporte para Minecraft 1.12.2, puede visitar el sitio web oficial de CurseForge y buscar la página de mod adecuada. Allí encontrará un enlace de descarga e instrucciones de instalación.`,
     "1122_cars_h2_3": "Descargar modificaciones de autos para Minecraft 1.12.2",
     "1122_cars_p_6": `Si está interesado en otras modificaciones de automóviles para Minecraft 1.12.2, se recomienda visitar varias plataformas y recursos como Minecraft Forum, Planet Minecraft o Minecraft CurseForge. Allí encontrará una amplia selección de modificaciones, cada una de las cuales ofrece tipos únicos de automóviles y capacidades de transporte.`,
     "1122_cars_p_7":
       "Aquí hay algunas modificaciones de autos populares para Minecraft 1.12.2:",
-    "1122_coches_li_1": `MrCrayfish's Vehicle Mod: este mod agrega una variedad de vehículos diferentes, incluidos autos de carreras, camiones y bicicletas.`,
-    "1122_coches_li_2": `Flan's Mod: este extenso mod no solo agrega automóviles, sino también aviones, tanques y otros tipos de maquinaria.`,
-    "1122_coches_li_3": `Vehículos inmersivos: este mod ofrece autos realistas, así como la capacidad de crear sus propios vehículos personalizados.`,
-    "1122_coches_p_8": `Para descargar mods de autos para Minecraft 1.12.2, vaya a las páginas de mods apropiadas en su plataforma elegida y siga las instrucciones de descarga e instalación.`,
-    "1122_coches_p_9": `No olvides comprobar también la compatibilidad entre los mods y tu versión de Minecraft, y asegúrate de que los estás instalando correctamente siguiendo las instrucciones proporcionadas por cada mod. ¡Después de instalar las modificaciones del automóvil, podrá disfrutar de nuevas formas de moverse y explorar el mundo del juego de Minecraft como nunca antes!`,
-    "1122_coches_p_10": `La descarga de modificaciones de automóviles para Minecraft 1.12.2 abrirá posibilidades emocionantes para la aventura y los viajes en el mundo virtual. Instala las modificaciones que elijas y emprende emocionantes viajes con tus propios vehículos. Pruebe diferentes modificaciones y disfrute de tipos únicos de automóviles y opciones de transporte. ¡Diviértete jugando a Minecraft 1.12.2!`,
+    "1122_cars_li_1": `MrCrayfish's Vehicle Mod: este mod agrega una variedad de vehículos diferentes, incluidos autos de carreras, camiones y bicicletas.`,
+    "1122_cars_li_2": `Flan's Mod: este extenso mod no solo agrega automóviles, sino también aviones, tanques y otros tipos de maquinaria.`,
+    "1122_cars_li_3": `Vehículos inmersivos: este mod ofrece autos realistas, así como la capacidad de crear sus propios vehículos personalizados.`,
+    "1122_cars_p_8": `Para descargar mods de autos para Minecraft 1.12.2, vaya a las páginas de mods apropiadas en su plataforma elegida y siga las instrucciones de descarga e instalación.`,
+    "1122_cars_p_9": `No olvides comprobar también la compatibilidad entre los mods y tu versión de Minecraft, y asegúrate de que los estás instalando correctamente siguiendo las instrucciones proporcionadas por cada mod. ¡Después de instalar las modificaciones del automóvil, podrá disfrutar de nuevas formas de moverse y explorar el mundo del juego de Minecraft como nunca antes!`,
+    "1122_cars_p_10": `La descarga de modificaciones de automóviles para Minecraft 1.12.2 abrirá posibilidades emocionantes para la aventura y los viajes en el mundo virtual. Instala las modificaciones que elijas y emprende emocionantes viajes con tus propios vehículos. Pruebe diferentes modificaciones y disfrute de tipos únicos de automóviles y opciones de transporte. ¡Diviértete jugando a Minecraft 1.12.2!`,
     // 1122_oruzhie
     "1122_oruzhie_h1":
       "Minecraft 1.12.2 Mods: armas para emocionantes batallas",
@@ -5713,6 +5712,1396 @@ export const languageLocalizations = {
     <p class="policy__text">
     Si tiene alguna pregunta sobre esta Política de cookies, póngase en contacto con
     por correo postal dirigido a GalaxyGrip OÜ: Harju maakond, Tallinn,
+    Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.
+    </p>
+    </div>
+    `,
+  },
+  kz: {
+    // starting tips page
+    "starting-tips-page__title": "Ойнауды қалай бастау керек?",
+    "starting-tips-page__button": "Қазір бастаңыз",
+    "starting-tips-page__step-one": "1-қадам: ойынды сатып алыңыз",
+    "starting-tips-page__step-one__description": `Minecraft ойнауды бастаудың бірінші қадамы ойынның лицензияланған көшірмесін сатып алу болып табылады. Сіз ойынды ресми Minecraft веб-сайтында немесе ойын платформаңыз үшін қолжетімді басқа дүкендерден сатып ала аласыз.`,
+    "starting-tips-page__step-two": "2-қадам: ойынды орнату",
+    "starting-tips-page__step-two__description": `Ойынды сатып алғаннан кейін оны платформаңызға орнату керек. Құрылғыңызға сәйкес Minecraft нұсқасын жүктеп алыңыз (мысалы, Minecraft: ДК үшін Java шығарылымы немесе консольдерге, мобильді құрылғыларға немесе планшеттерге арналған Minecraft: Bedrock Edition). Процесті аяқтау үшін орнату нұсқауларын орындаңыз.`,
+    "starting-tips-page__step-three": `3-қадам: Ойынды іске қосыңыз және режимді таңдаңыз`,
+    "starting-tips-page__step-three__description": `Орнатқаннан кейін Minecraft ойынын іске қосыңыз. Сізге ойын режимін таңдау ұсынылады. Тірі қалу режимі - бұл сізге аман қалу, ресурстарды жинау және дұшпандық жаратылыстармен күресу керек. Шығармашылық режим сізге шексіз ресурстарды және шектеусіз құру мүмкіндігін береді. Сіздің қалауларыңызға және ойын мақсаттарыңызға сәйкес келетін режимді таңдаңыз.`,
+
+    // successPayment page
+    successPaymentPage__title: "Төлеміңіз сәтті болды",
+    successPaymentPage__text: `Төлеміңіз сәтті болды. Элементті алмаған болсаңыз, серверге қайта кіріп көріңіз.`,
+    successPaymentPage__button: "Үй",
+
+    // declinePayment page
+    declinePaymentPage__title: "Төлем қатесі",
+    declinePaymentPage__text: `Өнімді төлеу кезінде қате орын алды. Қайталап көріңіз немесе серверге қайта кіріңіз.`,
+    declinePaymentPage__button: "Үйге",
+
+    // exitConfirmation page
+    exitConfirmationPage__title: "Жүйеден шыққыңыз келетініне сенімдісіз бе?",
+    exitConfirmationPage__button: "Шығу",
+
+    // FAQ page
+    faqPage__title: "Жиі Қойылатын Сұрақтар",
+    faqPage__techTitle: "Техникалық сұрақтар",
+    faqPage__weTitle: "Біз кімбіз?",
+    faqPage__workTitle: "Бұл қалай жұмыс істейді?",
+    faqPage__blockTechTitle: "Техникалық сұрақтар",
+    faqPage__firstQuestionLabel: `Неліктен мен ойын ойнау кезінде кідіріс пен қатуды сезінемін?`,
+    faqPage__firstAnswerText: `Жүйе ресурстарының жеткіліксіздігі, басқа бағдарламалармен қайшылықтар, интернетке қосылу мәселелері немесе оңтайландырылмаған ойын параметрлері сияқты әртүрлі себептермен кешігу және қатып қалу орын алуы мүмкін. Minecraft-тың жүйелік талаптарын тексеру, қажет емес бағдарламаларды жабу, графикалық карта драйверлерін жаңарту және интернет байланысының тұрақтылығын қамтамасыз ету ұсынылады.`,
+    faqPage__secondQuestionLabel: "Ойын өнімділігін қалай жақсартуға болады?",
+    faqPage__secondAnswerText: `Егер сіз Minecraft-та өнімділікке қатысты мәселелерге тап болсаңыз, бірнеше нәрсені қолданып көруге болады:
+    
+    - Ойын ішіндегі графикалық параметрлерді төмендетіңіз.
+    - Жүйе ресурстарын босату үшін басқа іске қосылған бағдарламаларды жабыңыз.
+    - Графикалық карта драйверлерін соңғы нұсқаға жаңартыңыз.
+    - Оңтайландырылған текстуралық бумалар мен модификацияларды пайдаланыңыз.
+    - Minecraft-тың уақытша файлдары мен кэшін тазалаңыз.
+    - Іске қосу параметрлерінде ойынға көбірек ЖЖҚ бөліңіз.`,
+    faqPage__thirdQuestionLabel: `Minecraft жүктеп алу немесе орнату мәселелерін қалай шешуге болады?`,
+    faqPage__thirdAnswerText: `Minecraft-ты жүктеп алу немесе орнату кезінде мәселелерге тап болсаңыз, мұнда кейбір ұсыныстар берілген:
+    
+    - Ойынды орнату үшін қатты дискіде жеткілікті бос орын бар екеніне көз жеткізіңіз.
+    - Файлдарды еш қиындықсыз жүктеп алуыңызға көз жеткізу үшін интернет байланысын тексеріңіз.
+    - Ойынды жүктеп алуға немесе орнатуға кедергі келтіруі мүмкін антивирустық бағдарламалық құралды немесе брандмауэрді уақытша өшіріңіз.
+    - Ойынның лицензияланған көшірмесін сатып алсаңыз, қосымша көмек алу үшін Minecraft қолдау қызметіне хабарласыңыз.`,
+    faqPage__fourthQuestionLabel: `Ойынға немесе тіркелгіме кіруде қиындықтар туындаса, не істеуім керек?`,
+    faqPage__fourthAnswerText: `Ойынға немесе тіркелгіңізге кіру кезінде қиындықтар туындаса, Minecraft ресми веб-сайтында құпия сөзді қалпына келтіру мүмкіндігін пайдалану ұсынылады. Егер мәселе шешілмесе, Minecraft қолдау тобына хабарласып, оларға мәселе туралы қажетті мәліметтер мен ақпаратты беріңіз.`,
+    faqPage__blockWeTitle: "Біз кімбіз?",
+    faqPage__weFirstQuestionLabel: "Біз туралы",
+    faqPage__weFirstAnswerText: `Біз өз жобамызды күн сайын жақсартуға ұмтылатын кәсіпқойлардың біртұтас командасымыз. Біздің мақсатымыз – ықтимал кешігулер мен қатып қалуларды болдырмай, ойын ойнау кезінде сізге барынша жайлылықты қамтамасыз ету.
+    
+    Біз тамаша ойын кеңістігін құруды мақтан тұтамыз, онда сіз ойынды үзіліссіз немесе қолайсыздықсыз тамашалай аласыз. Біздің жобаны таңдағаныңызға рахмет және Minecraft тәжірибеңізді ұмытылмас ету үшін қолдан келгеннің бәрін жасауға дайынбыз!`,
+    faqPage__weSecondQuestionLabel: "Біздің құндылықтарымыз",
+    faqPage__weSecondAnswerText: `Сапа: Біз өз жобамыздың сапасына үлкен мән береміз. Біз сізге үздіксіз және тегіс ойын әрекетін қамтамасыз етуге тырысамыз, осылайша сіз әр сәттен еш қиындықсыз ләззат аласыз.
+    
+    Кәсібилік: Біз өз жұмысымызға жоғары кәсібилікпен қараймыз. Біздің команда сізге ең жақсы ойын тәжірибесін ұсыну үшін үнемі өз дағдыларын жетілдіретін тәжірибелі мамандардан тұрады.
+    
+    Топтық жұмыс: Мықты команда үлкен нәтижелерге қол жеткізе алады деп сенеміз. Біз өз идеяларымызды тиімді жүзеге асыру және жобамыздың тұрақтылығы мен сапасын қамтамасыз ету үшін тығыз жұмыс істейміз және бір-бірімізге сенеміз.
+    `,
+    faqPage__weThirdQuestionLabel: "Біздің артықшылықтарымыз",
+    faqPage__weThirdAnswerText: `Оңтайландырылған өнімділік: максималды тегіс және жауапты ойын әрекетін қамтамасыз ету үшін жобамызды оңтайландыру бойынша үнемі жұмыс жасаймыз. Ықтимал кідірістерді және қатуды азайту үшін біз әрбір бөлшекке назар аударамыз.
+    
+    Қолдау: Біз ойыншыларымызды бағалаймыз және кез келген мәселелер туындаған жағдайда қолдау көрсетуге дайынбыз. Біздің қолдау көрсету тобы әрқашан сұрақтарыңызға жауап беруге және туындаған қиындықтарды шешуге көмектесуге дайын.
+    
+    Continuous Development: We don't rest on our laurels and continuously strive for improvements. We carefully listen to the feedback of our players and actively implement new features and enhancements to provide you with the most advanced gaming experience.`,
+    faqPage__blockWorkTitle: "Бұл қалай жұмыс істейді?",
+    faqPage__blockFirstQuestionLabel: `Minecraft-та әлемдік ұрпақ қалай жұмыс істейді?`,
+    faqPage__blockFirstAnswerText: `Minecraft-тағы әлемдік ұрпақ виртуалды пейзаждарды жасау үшін күрделі алгоритмдерді пайдалануға негізделген. Жаңа әлемді құру кезінде ойын кездейсоқ жер бедерін, соның ішінде тауларды, ормандарды, өзендерді, шөлдерді және басқа табиғи элементтерді жасайды. Бұл процесс әртүрлі параметрлер мен тұқымдарды пайдаланады, олар әлемдік ұрпақтың бастапқы шарттарын анықтайды.`,
+    faqPage__blockSecondQuestionLabel: `Minecraft-та қолөнер жүйесі қалай жұмыс істейді?`,
+    faqPage__blockSecondAnswerText: `Minecraft-тағы қолөнер жүйесі ойыншыларға қолөнер үстелінде әртүрлі ресурстарды біріктіру арқылы жаңа элементтер мен құралдарды жасауға мүмкіндік береді. Қолөнер кестесі - қажетті элементті алу үшін ресурстарды белгілі бір ретпен орналастыруға болатын негізгі шеберлік құралы. Жаңа элементтерді, қару-жарақтарды, құралдарды және блоктарды жасау үшін әртүрлі ресурстарды дайындау рецепттеріне сәйкес біріктіріңіз.`,
+    faqPage__blockThirdQuestionLabel: `Minecraft-та көп ойыншы ойыны қалай жұмыс істейді?`,
+    faqPage__blockThirdAnswerText: `Minecraft-та көп ойыншы ойыны нақты уақытта басқа ойыншылармен ойнауға мүмкіндік береді. Сіз басқа ойыншы орналастыратын серверге қосыла аласыз немесе достарыңызбен ойнау үшін өз серверіңізді жасай аласыз. Көп ойыншы режимінде ойнаған кезде сіз басқа ойыншылармен өзара әрекеттесе аласыз, құрастыра аласыз, сауда жасай аласыз, күресе аласыз және ортақ жобаларда бірге жұмыс жасай аласыз.`,
+    faqPage__blockFourthQuestionLabel: `Minecraft-та ойын режимі жүйесі қалай жұмыс істейді?`,
+    faqPage__blockFourthAnswerText: `Minecraft әртүрлі ойын режимдерін ұсынады, соның ішінде аман қалу, шығармашылық режим, шытырман оқиға және басқалар. Тірі қалу режимі ресурстарды жинау, аман қалу және дұшпандық тіршілік иелерімен күресу қажет болатын шынайы тәжірибені ұсынады. Шығармашылық режим сізге шексіз ресурстар мен шектеусіз құру мүмкіндігін береді. Ойын режимдері Minecraft-та орындауға болатын негізгі ережелер мен мақсаттарды анықтайды.`,
+    faqPage__blockFifthQuestionLabel: `Minecraft-та модификация (мод) жүйесі қалай жұмыс істейді?`,
+    faqPage__blockFifthAnswerText: `Minecraft-тағы модификациялар немесе модификациялар ойынның функционалдығын өзгертуге және кеңейтуге мүмкіндік береді. Олар жаңа элементтерді, блоктарды, тіршілік иелерін, ойын механикасын және басқа өзгерістерді қосады. Модтарды орнату үшін сізге модификацияларды басқаруға мүмкіндік беретін арнайы модификацияланған қосқыш немесе платформа қажет. Ойындағы жаңа мүмкіндіктер мен мазмұнды пайдалану үшін сізді қызықтыратын режимдерді таңдап, орнату нұсқауларын орындаңыз.`,
+
+    // orderHistoryPage
+    orderHistoryPage__title: "Тапсырыс тарихы",
+    orderHistoryPage__orderTitle: "Тапсырыс",
+    orderHistoryPage__orderDone: "Аяқталды",
+    orderHistoryPage__amount: "Саны:",
+    orderHistoryPage__totalPrice: "Бағасы:",
+    orderHistoryPage__repeatOrderButton: "Қайта реттеу",
+    orderHistoryPage__items: "Өнімдер",
+    orderHistoryPage__itemDuration: "Сатып алу мерзімі:",
+    orderHistoryPage__itemAmount: "Саны:",
+    orderHistoryPage__itemPrice: "Бағасы",
+    orderHistoryPage__overallPrice: "Жалпы баға",
+
+    // productPage
+    productPage__desc: "Өнім Сипаттамасы:",
+    productPage__price: "Бағасы:",
+    productPage__usage: "Сатып алудың жарамдылық мерзімі:",
+    productPage__usage_30: "30 күн",
+    productPage__usage_forever: "Мәңгі",
+    productPage__amount: "Саны:",
+    productPage__button: "Себетке қосу",
+
+    // latestPurchases
+    latestPurchases__title: "Соңғы сатып алулар",
+
+    // loginPage
+    loginPage__title: "Кіру",
+    loginPage__button: "Кіру",
+    loginPage__account: "Есептік жазбаңыз жоқ па?",
+    loginPage__link: "Тіркелу",
+    loginPage__emailPlaceholder: "Сіздің электрондық поштаңыз",
+    loginPage__passwordPlaceholder: "Құпия сөзіңіз",
+    loginPage__codePlaceholder: "Сіздің кодыңыз",
+    loginPage__codeButton: "Жүйеге кіруді растаңыз",
+
+    // signUpPage
+    signUpPage__title: "Тіркелу",
+    signUpPage__emailPlaceholder: "Сіздің электрондық поштаңыз",
+    signUpPage__passwordPlaceholder: "Құпия сөз",
+    signUpPage__repeatPasswordPlaceholder: "Құпия сөзді қайталаңыз",
+    signUpPage__button: "Тіркелу",
+    signUpPage__account: "Сізде бұрыннан тіркелгі бар ма?",
+    signUpPage__link: "Кіру",
+
+    // cartPage
+    cartPage__title: "Себет",
+    cartPage__continueButton: "Сатып алуды жалғастыру",
+    cartPage__allPayment: "Жалпы төленетін",
+    cartPage__nicknamePlaceholder: "Сіздің лақап атыңыз",
+    cartPage__serverText: "Сервер",
+    cartPage__payButton: "Төлеу",
+    cartPage__amount: "Саны:",
+    cartPage__usage: "Сатып алудың жарамдылық мерзімі:",
+    cartPage__usage_30: "30 күн",
+    cartPage__usage_forever: "Мәңгі",
+    cartPage__price: "Бағасы:",
+    cartPage__check_policyInnerHTML: `I have read the <a href="/pages/terms-and-conditions">Terms and Conditions</a> and <a href="/ru/pages/privacy-policy">Құпиялылық саясаты</a> және шарттармен келісіңіз.`,
+
+    // launcherPage
+    launcherPage__title: "МАЙНКРАФТТЫ MODS БАР",
+    launcherPage__desc: `Launcher – ойыншыларға Minecraft ойынын тез және оңай жүктеп алуға мүмкіндік беретін бағдарлама және ойынды біздің модтарымызбен жүктеп алып, іске қосуға арналған. Жалғыз ойыншыда немесе CubixWorld серверлерінде қол жетімді. Ең алдымен компьютерге немесе телефонға Minecraft жүктеп алу керек, ол тегін.`,
+    launcherPage__conclusion: `Өйткені, Launcher көптеген платформаларда, соның ішінде MacOS, Linux және Windows және Android жүйелерінде қол жетімді.`,
+    launcherPage__btn: "Жүктеп алу",
+
+    // rulesPage
+    rulesPage_title: "Ережелер",
+    rulesPage__general_rules_title: "Жалпы ережелер",
+    rulesPage__player_rights_and_duties_title:
+      "Ойыншылардың құқықтары мен міндеттері",
+    rulesPage__admin_rights_and_duties_title:
+      "Әкімшіліктің құқықтары мен міндеттері",
+    rulesPage__explanations_title: "Түсініктемелер",
+    rulesPage__general_rules_text: `
+    1.1 Бұл құжат Шарттар мен Шарттардың бөлігі бола отырып, жобаның ресми регламенті болып табылады.
+    1.2 Осы ережелердің мақсаты пайдаланушылардың мүдделерін қорғау және жобаның барлық ресурстарында тәртіп орнату болып табылады.
+    1.3 Жобаны басқару 2 санатқа бөлінеді: Жобаны басқару (бұдан әрі «Әкімшілік») және персонал.
+    1.4 Кез келген тұлға бір IP мекенжайынан екі рет тіркелуге құқылы.
+    1.5 Кез келген тұлға Жоба ережелерін бұзбаса, жобаға келуге құқылы.
+    1.6 Жобаға тіркелу арқылы сіз осы тізімнің барлық ережелерімен, төменде сипатталған құқықтармен және міндеттемелермен келісесіз.
+    1.6.1 Жобаға тіркелу арқылы сіз Әкімшіліктің сіздің жеке деректеріңізді өңдеуіне келісесіз, яғни, басқалармен қатар келесі әрекеттерді орындау: өңдеу (соның ішінде жинау, жүйелеу, жинақтау, сақтау, нақтылау (жаңарту, өзгерту)) , жеке деректерді пайдалану, иесіздандыру, блоктау, жою).
+    1.7 Жобаның барлық қызметтерін пайдалану құқығын Әкімшілік қосымша функцияларды қоспағанда (ақылы негізде сатып алынған және ойынның серверлік нұсқасында (плагиндер) қосымша мүмкіндіктерді іске қосу арқылы белсендірілген) қоспағанда, тегін ұсынады. Тегін функционалдылықты пайдалану 100% дұрыс жұмыс істеуге кепілдік бермей, оның ағымдағы түрінде қамтамасыз етілген. Ақысыз қызметтердің дұрыс жұмыс істемеуіне байланысты жоғалған ойын заттары, қабілеттер және т.б. қайтарылмайды.
+    1.8 Payment for additional parts of the software product is made only on the official website of the project, located at https://adventuresinminecraft.com (hereinafter "site"). Funds are credited using a payment aggregator in EURO currency.
+    1.9 Сайтқа қате лақап ат енгізілсе, әкімшілік осы лақап атқа бірдеңе сатып алудың салдары үшін жауапты емес.
+    1.10 Пайдаланушының ережелерді бұзуын анықтау әрқашан мүмкін болмағандықтан, соңғы шешімді Жоба әкімшілері қабылдайды.
+    1.11 Өнімнің қосымша бөліктерінің авторлық құқық иелері олардың авторлары болып табылады. Бұл бөліктерді Әкімшіліктің пайдалануы тегін тарату және пайдалану туралы келісімге негізделген.
+    1.12 Осы Ережелерді білмеу жауапкершіліктен босатпайды.
+    `,
+    rulesPage__player_rights_and_duties_text: `
+    2.1 Ойыншы жоба ережелерін бұзбаса, барлық қолжетімді мүмкіндіктерді пайдалануға құқылы.
+    2.2 Ойыншы өз паролінің қауіпсіздігіне және есептік жазбасына кіруге толық жауап береді.
+    2.3 Ойыншы өз еркімен қайырымдылық жасауға құқылы.
+    2.4 Ойыншы жұмсалған қаражаттың қайтарылмайтынымен келіседі.
+    2.5 Серверде әртүрлі артықшылықтарға ие ойыншылар қосымша косметикалық мүмкіндіктерді қоспағанда, қарапайым ойыншылардан еш айырмашылығы жоқ және Жоба ережелеріне толық сәйкес келеді.
+    2.6 Ойыншы бір күнтізбелік айдан артық болмаған жағдайда, олардың барлық деректері, соның ішінде сервердегі ғимараттар, жеке кабинет және т.б. оларға ескертусіз жойылуы мүмкін.
+    2.7 3.6-тармақтан басқа кез келген ойыншы басқа ойыншыларға шағымдана алады.
+    2.8 Ойыншы анықталған қателер мен кемшіліктер туралы Сервер әкімшілігіне хабарлауға міндетті. Егер олар анықталған қателер мен кемшіліктерді әдейі жасырса, Әкімшілік ойыншының есептік жазбасын бұғаттауға немесе толығымен жоюға құқылы.
+    `,
+    rulesPage__admin_rights_and_duties_text: `
+    3.1 Жоба әкімшілігі ерекше жағдайларда осы ережелерден ауытқуы және өз қалауы бойынша әрекет етуі мүмкін жоғары дәрежелі ұйым болып табылады.
+    3.2 Әкімшілік пайдаланушы құпия сөздерін сақтамайды, тек олардың хэш сомасын ғана сақтайды.
+    3.3 Әкімшілік ойыншы тіркелгілері, соның ішінде әлеуметтік инженерия, вирустар, құпия сөзді таңдау және т.б. үшін жауап бермейді.
+    3.4 Әкімшілік шешімдері шағымдануға жатпайды.
+    3.5 Әкімшілік кез келген жазаны қолдануға құқылы.
+    3.6 Әкімшілікке шағымдар қабылданбайды.
+    3.7 Әкімшілік алған барлық қаражат ерікті қайырымдылық болып табылады және қайтарылмайды (2.4 тарауды қараңыз).
+    3.8 Әкімшілік артықшылықтарды жоюға және себебін түсіндірместен ойыншыларға қызмет көрсетуден бас тартуға құқылы.
+    3.9 Әкімшілік ойын артықшылықтарының мүмкіндіктерін ешбір хабарландырусыз жақсы жағына да, жаман жағына да өзгертуге құқылы.
+    3.10 Сайт ережелерін түсіндіруді тек негізгі әкімшілер жүзеге асырады. Кез келген тараптың пайдасына ережелерді түсіндірудің кез келген басқа әрекеттері дұрыс емес болып саналады.
+    3.11 Әкімшілік аккаунтты бұғаттау себептерін түсіндірмеуге құқылы.
+    3.12 Әкімші, егер пайдаланушы өзінің шынайы шыққанын (тыйым салынған қосымша бағдарламалық құралдарды пайдаланбай – алдаулар және т.б.) дәлелдей алмаса, пайдаланушының кез келген мүлкін тәркілей алады.
+    3.13 Әкімшілік қолданыстағы ережелерді пайдаланушыларды ескертпестен біржақты өзгерту құқығын өзіне қалдырады.
+    3.14 Әкімшілік геймплей процестерін және бүкіл жобаны тек өз қалауы бойынша басқарады.
+    3.15 Әкімшілік ойын әлемінің мерзімді жаңартуларын (сүрту) жүргізу құқығын өзіне қалдырады. Майлықтарды әкімшілік уақытша кезеңнен кейін жүзеге асырады, одан кейін геймплей процесінің ерекшеліктеріне байланысты қызметтердің қалыпты жұмыс істеуі мүмкін емес. Жоғарыда аталған уақытша кезеңнің ұзақтығын ағымдағы жағдайды негізге ала отырып, әкімшілік дербес белгілейді. Өшіру ақылы қондырмаларды пайдаланудан бас тарту болып табылмайды, себебі ол бағдарламалық өнімнің бір бөлігіне лицензияны қайтарып алуды немесе сол бөліктің функционалдығын шектеуді көздемейді.
+    4.1 Кез келген режимде кез келген алдауды пайдалану. Жаза: есептік жазбаға тұрақты тыйым салу.
+    4.2 Қателерді жеке пайда үшін пайдалану. Жаза: 1 күндік есептік жазбаға тыйым салу.
+    4.3 Бір режимде 3-тен көп мульти-аккаунтқа ие болуға, оларды пайдакүнемдік мақсатта пайдалануға тыйым салынады. Жаза: IP арқылы тіркелгіге тұрақты тыйым салу.
+    4.4 Есептік жазбаңызды басқа біреуге аудару, сату немесе айырбастау. Жаза: шотқа тұрақты тыйым салу және қайырымдылықты алып тастау.
+    4.5 Нақты ақшаға кез келген нәрсені сату (коммерциялық қызметпен айналысу). Жаза: есептік жазбаға тұрақты тыйым салу.
+    4.6 Ресурстарды үлкен көлемде шашырату, топтардың үлкен санын көбейту, сервердің артта қалуын тудырады. Жаза: 4 сағаттық есептік жазбаға тыйым салу.
+    4.7 PvP аймақтарындағы тыйым салынған командалар (/gm 1, /god, /fly, /speed, /sit, /lay]. Жаза: 30 минуттық есептік жазбаға тыйым салу.
+    4.8 Ойыншы қатысушысы немесе жасаушысы болып табылатын аймақтағы ойын процесіне араласу – Жаза: соққы; егер назар аудармасаңыз - 2 сағаттық есептік жазбаға тыйым салу.
+    4.9 ӘКІМШІЛІК артықшылықтары бар тірі қалу режимінде қайғыру. Жаза: 6 сағаттық есептік жазбаға тыйым салу, ал егер тұзақпен қайғырса, ғимаратты бұзу.
+    4.10 Сізге телепортациялау және өлтіру сияқты MODER деңгейінен жоғары қайырымдылықпен қайғыратын ойыншылар. Жаза: 1 күндік есептік жазбаға тыйым салу, ал егер тұзақпен қайғырса, ғимаратты бұзу.
+    4.12 Басқа ойыншыларды дұрыс емес себеппен немесе жоба ережелерінде рұқсат етілген ең көп блоктау уақытынан ұзағырақ блоктауға тыйым салынады. Жаза: 4 сағаттық есептік жазбаға тыйым салу.
+    4.13 Ойыншылардың чатын дұрыс емес себеппен блоктауға тыйым салынады. Жаза: 2 сағаттық есептік жазбаға тыйым салу.
+    4.14 Ойыншыларды дұрыс емес себеппен тебуге тыйым салынады. Жаза: 1 сағаттық есептік жазбаға тыйым салу.
+    4.15 Ойыншыларға жоба ережелерін бұзудың нақты себебінсіз ескертулер беруге тыйым салынады. Жаза: 30 минуттық есептік жазбаға тыйым салу.
+    4.16 Ереже бұзушының дыбысын дәлелді себепсіз қосу/шығару. Жаза: 3 сағаттық IP есептік жазбасына тыйым салу.
+    4.17 Серверге, сервер әкімшілігіне жала жабу, мысалы, қайырымдылық алаяқтық және т.б. Жаза: 3 сағаттық есептік жазбаға тыйым салу.
+    4.18 Refusal/evasion/ignoring the request of staff to provide evidence of the punishment you imposed. Punishment: 10-day account ban.
+    5.1 Жоба ойыншыларын қорлауға/қорлауға/қорқытуға тыйым салынады. Жаза: 3 сағаттық сөйлесуге тыйым салу.
+    5.2 Жоба әкімшілігін/қызметкерлерін қорлауға/ қорлауға/қорқытуға тыйым салынады. Жаза: 5 сағаттық есептік жазбаға тыйым салу.
+    5.3 Ойыншының туыстарын қорлайтын түрде ренжіту. Жаза: 2 күндік есептік жазбаға тыйым салу.
+    6.1 Су тасқыны (бірдей хабарламалар 2 реттен көп), спамға тыйым салынады. Жаза: 30 минуттық сөйлесуге тыйым салу.
+    6.2 Жалған жеке хабарламалар немесе жазалар. Жаза: 1 сағаттық сөйлесуге тыйым салу.
+    6.3 Кез келген нәрсені сұрау. Жаза: 30 минуттық сөйлесуге тыйым салу.
+    6.4 YouTube арналарын, чаттағы сілтемелерді жарнамалау, жобаға ресми тиесілі немесе YouTube артықшылығы бар болса, қоспағанда. Жаза: 2 күндік IP есептік жазбасына тыйым салу.
+    6.5 Басқа серверлерді жарнамалауға тыйым салынады. Жаза: тұрақты IP тіркелгісіне тыйым салу + қайырымдылықтарды жою.
+    6.6 Басқа ойыншыларды жобадан шығуға ынталандыру, әкімшілікке/қызметкерлерге қарсы көтеріліс ұйымдастыру. Жаза: шотқа тұрақты тыйым салу + қайырымдылықты алып тастау.
+    6.7 Ойыншыларды ойын артықшылықтарын сатып алмауға/қайырымдылық істерін бермеуге шақыру, серверді қорлау. Жаза: тіркелгіге тұрақты тыйым салу.
+    6.8 Қызметкерлерді немесе әкімшілікті көрсету. Жаза: 1 күндік есептік жазбаға тыйым салу.
+    6.9 Хабарландыруларға /кландық чатқа және т.б. жазу арқылы дыбысты өшіруді айналып өту, сервер ережелерін тағы да бұзады. Жаза: 1 сағаттық есептік жазбаға тыйым салу.
+    6.10 /bc, анықтама немесе /afk пәрмені арқылы тасқын. Жаза: 1 сағаттық есептік жазбаға тыйым салу.
+    7.1 Ойыншының аккаунтын алаяқтық жолмен иемдену, оны бұзуға әрекет жасау. Жаза: IP есептік жазбасына тұрақты тыйым салу + қайырымдылықтарды жою.
+    8.1 Үлкен кеңістікті алып жатқан тыйым салынған құрылыстар, мысалы, аспанда орнатылған жәшіктер немесе ені, түпкі жыныстар жиынтығы. Жаза: ғимаратты бұзумен 1 күндік есептік жазбаға тыйым салу.
+    8.2 Аймақтардың үстінен құрылыс салу немесе оларды сумен толтыру. Жаза: 1 күндік есептік жазбаға тыйым салу + қайырымдылықты алып тастау.
+    8.3 Әдепсіз немесе қорлайтын құрылымдар жасау. Мысалы: жыныс мүшелері, өнер немесе 18+ мазмұны бар ғимараттар. Жаза: ғимаратты бұзумен 6 сағаттық есептік жазбаға тыйым салу.
+    8.4 10 млн блоктан асатын аймақтарды жекешелендіру. Жаза: 1 күндік есептік жазбаға тыйым салу + аймақтарды жою.
+    8.5 Сервер жұмысына теріс әсер ететін конструкциялар. Жаза: есептік жазбаға тұрақты тыйым салу.
+    8.6 Уылдырықты зақымдау/өзгерту/бұзу, соның ішінде оны өртеу. Жаза: тіркелгіге тұрақты тыйым салу.
+    8.7 Басқа ойыншының лақап атына ұқсас бүркеншік атын қолдан жасау, біреуге зиян келтіру немесе оны қорлау. Жаза: тіркелгіге тұрақты тыйым салу.
+    `,
+    rulesPage__explanations_text: `
+    [1] Қайғыру – басқа ойыншыларды зақымдау мен бұзуды, сондай-ақ троллингті қамтитын онлайн ойындардағы әрекет түрі. Ойыншыларды өлтіру қайғылы болып саналмайды және жалпы сервер ережелерін бұзбайды; дегенмен, әлеуметтік инженерия арқылы өлтіру (яғни алдау арқылы) қайғыру болып саналады.
+    [2] Мульти тіркелгі – ойыншының қосымша тіркелгі(лері). Бір адамға екіден көп тіркелгілерді, тіпті әртүрлі компьютерлерден және IP мекенжайларынан тіркеуге тыйым салынады.
+    [3] Мүмкіндіктерді пайдакүнемдік мақсатта пайдалану ойын ойнауға және сервер жұмысына теріс әсер етуі мүмкін барлық әрекеттерді білдіреді.
+    `,
+    //
+    donationDescription__title: "Донорлық сипаттама",
+    donationDescription__survival: "Аман қалу",
+    donationDescription__anarchy: "Анархия",
+
+    // modsPage
+    modsPage_h1: "Minecraft mods: unique opportunities for the game",
+    modsPage_p_1: `Егер сіз Minecraft жанкүйері болсаңыз, онда сіз Minecraft модтарымен таныс болуыңыз мүмкін. Модтар ойынға стандартты нұсқада жоқ бірегей мүмкіндіктерді береді. Бұл мәтінде біз Minecraft модтарының не екенін, оларды қайда және қалай жүктеп алуға болатынын және оларды компьютерге немесе мобильді құрылғыға қалай орнату керектігін қарастырамыз.`,
+    modsPage_h2_1: "Minecraft модтары дегеніміз не?",
+    modsPage_p_2: `Minecraft модтары - ойыншыларға оның негізгі параметрлерін өзгертуге, жаңа блоктар мен элементтерді қосуға, графика мен дыбыс дизайнын жақсартуға мүмкіндік беретін ойынға қосымшалар. Нәтижесінде, ойыншылардың шығармашылық пен эксперимент үшін шексіз мүмкіндіктері бар.`,
+    modsPage_h2_2: "Minecraft модтарын қайдан және қалай жүктеуге болады?",
+    modsPage_p_3: `Сіз осы ойынға арналған әртүрлі сайттарда Minecraft үшін модтарды жүктей аласыз. Ең танымал және сенімді сайттардың бірі - CurseForge. Бұл сайтта сіз Minecraft үшін көптеген модтар мен қосымшаларды таба аласыз.`,
+    modsPage_h3_1: "Minecraft үшін тегін модаларды жүктеп алыңыз",
+    modsPage_p_4: `Minecraft үшін көптеген модтерді тегін жүктеп алуға болады. Кейбір модтердің қосымша мүмкіндіктері бар ақылы нұсқасы болуы мүмкін, бірақ әдетте қызықты ойынды қамтамасыз ету үшін тегін нұсқа жеткілікті.`,
+    modsPage_h3_2: "Android үшін Minecraft модтарын жүктеп алыңыз",
+    modsPage_p_5: `Android жүйесінде Minecraft-қа арналған модтерді жүктеу де көп қиындық тудырмайды. Бұл үшін Android-ге арналған Minecraft-қа арналған модульдерді тегін табуға және жүктеп алуға болатын көптеген мамандандырылған сайттар бар. Мысалы, mod-minecraft.net немесе mcpedb.com сайттарын пайдалануға болады. Модты жүктеп алу үшін сайтқа өтіп, қалаған модыңызды тауып, оны құрылғыңызға жүктеңіз. Содан кейін Android құрылғыңыздағы файл менеджерін ашыңыз, «Жүктеулер» қалтасын тауып, жүктелген файлды ашыңыз. Содан кейін мод файлын құрылғыңыздағы Minecraft ойын қалтасына көшіріңіз. Осыдан кейін Minecraft-ты іске қосыңыз, қажетті әлемді таңдаңыз және мод сәтті орнатылғанына және жұмыс істеп тұрғанына көз жеткізіңіз.`,
+    modsPage_h3_3: "Телефоныңызға Minecraft үшін модтарды жүктеп алыңыз",
+    modsPage_p_6: `Телефоныңызға Minecraft модтарын жүктеп алғыңыз келсе, ойынның арнайы нұсқасын - Minecraft Pocket Edition (PE) жүктеп алуыңыз керек. Android құрылғыларында Minecraft PE қолданбасын Google Play дүкенінен, ал iOS құрылғыларында App Store дүкенінен жүктеп алуға болады. Ойынды телефоныңызға орнатқаннан кейін Mod-Minecraft.net, MCPEDL.com немесе ModPE.xyz сияқты мамандандырылған сайттарды пайдаланып модтарды жүктеп алуға болады. Бұл сайттарда сіз Minecraft PE үшін көптеген модульдерді таба аласыз, оларды тегін жүктеп алуға болады. Minecraft PE-ге мод орнату үшін мод файлын жүктеп алып, оны BlockLauncher арнайы қолданбасы арқылы ойынға импорттау керек. Осыдан кейін сіз Minecraft PE бағдарламасын іске қосып, мод сәтті орнатылғанына және жұмыс істеп тұрғанына көз жеткізуіңіз керек.`,
+    modsPage_h2_3: "Minecraft модтарын қалай орнатуға болады?",
+    modsPage_p_7: `Minecraft режимдерін орнату модды Minecraft-тың қай нұсқасына орнатып жатқаныңызға байланысты. Жалпы, модты орнату мод файлын жүктеп алуды және оны дұрыс Minecraft қалтасына орналастыруды қамтиды. Кейбір модификациялар қосымша кітапханаларды немесе орнатуды қажет етуі мүмкін. Арнайы іске қосу құралын пайдалансаңыз, ойынның дұрыс нұсқасын таңдап, кірістірілген мод менеджері арқылы модды орнатуыңыз керек. Модты CurseForge платформасы арқылы орнатсаңыз, сайттан дұрыс модты тауып, оны арнайы Twitch клиенті арқылы орнату керек. Модты қолмен орнатуды шешсеңіз, компьютеріңізден .minecraft қалтасын тауып, mods қалтасын жасап, mod файлын сол жерге орналастыруыңыз керек. Осыдан кейін сіз ойынды іске қосып, модтың сәтті орнатылғанына және жұмыс істеп тұрғанына көз жеткізуіңіз керек.
+    Қорытындылай келе, Minecraft үшін, соның ішінде Android жүйесінде Minecraft PE үшін модтарды жүктеп алуға болатын көптеген ресурстар мен сайттар бар деп айта аламыз. Құрылғыңызға зиянды бағдарламаны орнатпау үшін сенімді және қауіпсіз ресурстарды таңдау маңызды.`,
+    modsPage_button: "Ары қарай оқу",
+
+    // -> mc_pe_1_12_2
+    mc_pe_1_12_2_h1: `Minecraft PE 1.12.2 жүктеп алыңыз: жаңа мүмкіндіктер және тегін кіру`,
+    mc_pe_1_12_2_p1: `Егер сіз мобильді құрылғыда Minecraft Pocket Edition ойнауды ұнататын болсаңыз, онда сіз Minecraft PE 1.12.2 жаңа жаңартуы туралы бұрыннан білетін шығарсыз. Бұл мақалада біз сізге ойында пайда болған жаңа мүмкіндіктер туралы айтып береміз және Android үшін Minecraft PE 1.12.2 нұсқасын қайдан және қалай тегін жүктеп алуға болатыны туралы ақпаратпен бөлісеміз.`,
+    mc_pe_1_12_2_h2_1: `
+    New features in Minecraft PE 1.12.2`,
+    mc_pe_1_12_2_p2: `
+    Ойынның жаңа нұсқасында көзге түсетін бірінші нәрсе - жақсартылған оңтайландыру. Әзірлеушілер ойынды мобильді құрылғыларда тұрақты және жылдам жұмыс істеуі үшін мүмкіндігінше оңтайландыруға тырысты.
+    
+    Сондай-ақ Minecraft PE 1.12.2-де Phantoms деп аталатын жаңа мүмкіндік бар. Фантомдар - түнде ғана пайда болатын және ояу ойыншыларға шабуыл жасайтын аспан жаратылысы. Егер сіз уақытында ұйықтамасаңыз, фантомдар сізге шабуыл жасай бастайды және бұл сіздің өмір сүруіңізге қауіпті болуы мүмкін.
+    
+    Ойынға тағы бір қызықты жаңа қосымша - жаңа блоктардың пайда болуы. Енді сіз жаңа ғимараттар мен әшекейлер жасау үшін бамбук блоктарын пайдалана аласыз. Сондай-ақ ғимараттарды безендіру үшін пайдалануға болатын жаңа гүлдер мен бұталар бар.
+    `,
+    mc_pe_1_12_2_h2_2: `
+    Minecraft PE 1.12.2 нұсқасын Android жүйесіне қалай тегін жүктеп алуға болады`,
+    mc_pe_1_12_2_p3: `
+    Minecraft PE 1.12.2 жүктеп алудың бірнеше жолы бар және олардың барлығын Интернетте оңай табуға болады. Дегенмен, Minecraft PE 1.12.2 жүктеп алу жолдарына кіріспес бұрын, ойынның осы нұсқасы мен оның мүмкіндіктері туралы сөйлесейік.
+    
+    Minecraft PE туралы 1.12.2
+    Minecraft PE 1.12.2 - мобильді құрылғыларға арналған Minecraft Pocket Edition соңғы нұсқаларының бірі. Бұл нұсқа 2019 жылы шығарылды және көптеген жақсартулар мен қателер түзетілді. Minecraft PE 1.12.2 нұсқасына қосылған негізгі мүмкіндіктердің бірі - көптеген жаңа мүмкіндіктер мен жаңартылған ауылдар мен топтарды қосқан жаңа «Village & Pillage» ойын режимі.
+    
+    Minecraft PE 1.12.2 нұсқасына қосылған тағы бір маңызды мүмкіндік - бұл ойыншыларға Xbox Live жүйесінде серверлер жасауға және достарымен ойнауға мүмкіндік беретін Xbox Live қолдауы. Сонымен қатар, осы нұсқада көптеген басқа өзгерістер мен қателер түзетілді, бұл ойынды тұрақты және қызықты етеді.
+    
+    Minecraft PE 1.12.2 жүктеп алу жолдары
+    Minecraft PE 1.12.2 нұсқасын мобильді құрылғыдағы қолданбалар дүкенінен жүктеп алуға болады. Егер сіз Android құрылғысын пайдалансаңыз, Google Play дүкенінен Minecraft PE 1.12.2 қолданбасын таба аласыз. Егер сіз iOS құрылғысын пайдалансаңыз, қолданбаны App Store дүкенінен таба аласыз.
+    
+    Сонымен қатар, сіз Minecraft PE 1.12.2 нұсқасын бейресми веб-сайттар мен пайдаланушылар файлдармен алмасатын форумдардан табуға және жүктеп алуға болады. Дегенмен, біз бұл сайттарды пайдалануды ұсынбаймыз, себебі олар сіздің құрылғыңыз үшін қауіпті және құрамында вирустар болуы мүмкін.
+    
+    Minecraft PE 1.12.2 сауықты нұсқасын жүктеп алған көз жеткізгіңіз келсе, оны ресми Minecraft веб-сайтынан жүктеп алған дұрыссыз. Ол үшін ресми Minecraft веб-сайтындағы жүктеу бетіне өту, Minecraft PE 1.12.2 нұсқасы. Содан кейін операциялық жүйені (Android немесе iOS) таңдап, ойынды орнату үшін экрандағы нұсқауларды орындаңыз.
+    
+    Minecraft 1.12.2 PE ойынды ойыншылар үшін одан да қызықты әрі ыңғайлы ететін бірнеше жақсартулар мен түзетулерге ие. Олардың кейбіреулерін толығырақ қарастырайық:
+    
+    Жаңа блоктар мен элементтер
+    PE 1.12.2 нұсқасының пайда болуымен ойында жаңа блоктар мен элементтер пайда болды, бұл ойыншыларға одан да қызықты және әртүрлі конструкцияларды жасауға мүмкіндік береді. Жаңа блоктардың арасында өрнекті тас кірпіш блоктары бар, олар өте әдемі көрінеді және әртүрлі ғимараттарды безендіруге болады. Сонымен қатар, ойында түрлі-түсті терезелер мен қабырғаларды жасауға мүмкіндік беретін жаңа түсті көзілдірік бар.
+    
+    Графикалық жақсартулар
+    Minecraft 1.12.2 PE-де ойынды одан да әдемі және шынайы ету үшін кейбір графикалық жақсартулар жасалды. Блоктар мен нысандардың текстурасы жақсартылды және ойында шынайы атмосфераны құруға мүмкіндік беретін жаңбыр мен қар әсерлері сияқты жаңа әсерлер қосылды.
+    
+    Интерфейсті жақсартулар
+    1.12.2 PE нұсқасымен ойында ойынды ойыншылар үшін ыңғайлы және интуитивті еткен кейбір интерфейс жақсартулары бар. Түгендеу мәзірі және өңдеу мәзірі сияқты кейбір интерфейс элементтері өзгертілді, бұл ойыншыларға қажетті элементтерді табуға және рецепттерді тезірек жасауға мүмкіндік береді.
+    
+    Қателер мен қателерді түзету
+    Minecraft-тың жаңа нұсқасымен ойынның алдыңғы нұсқаларында болған көптеген қателер мен қателер түзетілді. Осының арқасында ойыншылар ойын механикасы мен функцияларының дұрыс жұмыс істемеуімен байланысты жағымсыз тосынсыйларсыз ойынды тамашалай алады.
+    `,
+    mc_pe_1_12_2_h2_3: `
+    Қорытынды`,
+    mc_pe_1_12_2_p4: `
+    Жалпы, Minecraft 1.12.2 PE - бұл ойыншыларға шығармашылық пен көңіл көтеру үшін көптеген мүмкіндіктерді ұсынатын тамаша ойын. Оны жүктеп алу тегін және көптеген құрылғыларда, соның ішінде Android құрылғыларында қол жетімді. Сізге таңдау және шығармашылық еркіндік беретін ойындар ұнаса, Minecraft 1.12.2 PE сізге арналған ойын. Сіз оны көптеген сайттардан тегін жүктей аласыз. Ойынды Android құрылғыңызға орнатқан кезде белгісіз көздерден қолданбаларды орнату опциясын қосуды ұмытпаңыз. Minecraft PE 1.12.2 орнату немесе ойнау кезінде қандай да бір мәселелер туындаса, сіз әрқашан Minecraft қауымдастығынан көмек сұрай аласыз.
+    
+    `,
+    // -> journeymap-mod
+    journeymap_mod_h1_1:
+      "Minecraft үшін Journey Map режимі: ыңғайлы навигация құралы",
+    journeymap_mod_p1: `Егер сіз Minecraft ойнасаңыз, ойын әлемінде шарлау үшін жақсы картаның болуы қаншалықты маңызды екенін білетін шығарсыз. Бірақ кейде ойынның стандартты картасы тапсырманы орындамауы мүмкін. Мұндай жағдайларда Саяхат картасы деп аталатын модификация көмекке келеді. Бұл мәтінде біз сізге бұл модтың не екенін және оны қалай пайдалану керектігін айтамыз.`,
+    journeymap_mod_h2_1: `
+    Minecraft үшін Journey Map режимі дегеніміз не?`,
+    journeymap_mod_p2: `Саяхат картасы - ойынға ыңғайлы және функционалды карта қосатын Minecraft-тың модификациясы. Бұл ойыншыларға Minecraft әлемінде оңай шарлауға және қажетті орындарды оңай табуға мүмкіндік береді. Модта телепортация, топтар мен ойыншылардың орналасқан жерін көрсету, жолды бақылау және т.б. сияқты көптеген пайдалы мүмкіндіктер бар.`,
+    journeymap_mod_h2_2: `
+    Journey Map режимін қалай жүктеп алып, орнатуға болады?`,
+    journeymap_mod_p3: `Модты CurseForge ресми веб-сайтынан немесе моддер веб-сайтынан жүктеп алуға болады. Мод бетін тауып, Minecraft-тың дұрыс нұсқасын таңдаңыз. Mod файлын жүктеп алып, оны Minecraft ойын қалтасының ішіндегі "mods" қалтасына жылжытыңыз.`,
+    journeymap_mod_h2_3: "Journey Map mod` Journey Map",
+    journeymap_mod_p4: `
+    Нақты уақыт картасы: Minecraft-та нақты уақытта зерттеген барлық орындарды көрсетеді.
+    Ойыншының және топтың орналасқан жерін көрсету: картадағы барлық ойыншылар мен топтардың орнын көрсетеді, бұл достарыңызды табуды және айналаңыздағы әлемді шарлауды жеңілдетеді.
+    Телепортация: ойыншыларға картада оңай қозғалуға мүмкіндік береді. Сіз жай ғана пайда болғыңыз келетін орынды шерте аласыз және сіздің кейіпкеріңіз сол жерде бірден қозғалады.
+    Бақылау жолы: Мод ойыншыларға өз жолдарын қадағалауға және картадағы қозғалысын бақылауға мүмкіндік береді.
+    Түнгі көру: картада түнде көру режимін қосып, ойыншыларға қараңғыда жақсырақ көруге мүмкіндік береді.
+    Орындарды белгілеу: мод ойыншыларға картада жазбалар жасауға және барған жерлерін белгілеуге мүмкіндік береді.
+    
+    Minecraft үшін Journey Map режимін жүктеп алу үшін алдымен оны Интернеттегі тиісті ресурстан табу керек. Осыдан кейін сіз «Жүктеу» түймесін басып, жүктеудің аяқталуын күтуіңіз керек. Жүктеп алғаннан кейін ойынға модты орнату керек.
+    
+    Мод орнатылғаннан кейін ойыншылар әлем карталарын жасау үшін Саяхат картасын пайдалана алады. Модты қалыпты карталарды, сондай-ақ 3D әлем карталарын жасау үшін пайдалануға болады. Сондай-ақ, Journey Map картаның сыртқы түрін өзгертуге, әртүрлі нысандарды көрсетуді реттеуге және картадағы белгілерді көрсетуді реттеуге мүмкіндік беретін көптеген параметрлерге ие.
+    
+    Бұған қоса, Journey Map ойынды одан да қызықты ететін бірқатар ерекше мүмкіндіктерге ие. Мысалы, модтың көмегімен сіз маршруттарды жасай аласыз, картада әртүрлі пайдалы ресурстарды көрсете аласыз, картадағы басқа ойыншылардың орнын бақылай аласыз және т.б.
+    
+    Ойында Journey картасын пайдалану үшін сізге сәйкес режимді жүктеп алып, орнату керек. Мод CurseForge, Planet Minecraft және басқа ұқсас ресурстар сияқты көптеген сайттарда жүктеп алуға болады. Модты осы сайттарда жүктеу мүлдем тегін.
+    
+    Дегенмен, модты ойынға орнатпас бұрын, мод нұсқасы мен ойын нұсқасы бірдей екеніне көз жеткізіңіз. Мысалы, егер ойыншы Minecraft 1.12.2 нұсқасын пайдаланса, ол ойынның осы нұсқасы үшін Journey картасын жүктеп алып, орнатуы керек.
+    
+    Сонымен қатар, Journey Map режимінде бірқатар аппараттық талаптар бар. Модтың дұрыс жұмыс істеуі үшін сізде келесі параметрлері бар ойын компьютері болуы керек: Intel Core i5 процессоры немесе одан жоғары, кемінде 4 ГБ жедел жады, OpenGL 2.1 немесе одан жоғары қолдауы бар бейне карта.
+    
+    Егер сіз Minecraft ойнасаңыз және жиі жаңа модтарды іздесеңіз, сіз навигация мәселесіне тап болған шығарсыз. Шағын картаны пайдалана алмасаңыз, зерттелмеген жерлерде және маңызды нысандар орналасқан жерлерде қалай шарлауға болады? Бұл мәселенің шешімін Journey Map режимінен табуға болады.
+    
+    Саяхат картасы: бұл не?
+    Journey Map - бұл Minecraft-қа арналған мод, ол ойынға ыңғайлы және ақпараттылық әлем картасын қосады, оның көмегімен сіз оңай шарлауға және маңызды нысандарды таба аласыз. Бұл пайдаланушыға ыңғайлы интерфейсі және көптеген пайдалы мүмкіндіктері бар Minecraft-тағы ең танымал карта моддерінің бірі.
+    
+    Модтың негізгі функциялары
+    Саяхат картасы картада ойыншының орналасқан жерін, сондай-ақ сіз өткен маршруттарды көрсетуге мүмкіндік береді. Сонымен қатар, мод картада ауылдар, қалалар, тау жоталары және т.б. сияқты барлық маңызды нысандарды көрсетуге мүмкіндік береді. Кейінірек дұрыс орындарды оңай табу үшін картада өз нүктелеріңізді белгілей аласыз.
+    
+    Мод сонымен қатар саяхат күнделігіне жазбалар жасауға мүмкіндік береді, онда сіз барған жерлер мен маңызды оқиғалар туралы ақпаратты сақтауға болады. Бұл ойын әлемін зерттеуді ұнататындар үшін өте ыңғайлы.
+    
+    Journey Map мүмкіндіктерінің бірі - картаны нақты уақытта қарау мүмкіндігі. Сіз сервердегі басқа ойыншылардың қозғалысын бақылай аласыз, сондай-ақ топтардың қозғалысын бақылай аласыз.
+    
+    Модты қалай орнатуға болады?
+    Егер сізді Саяхат картасы режимі қызықтырса, оны ресми веб-сайттан жүктеп алуға болады. Мод Minecraft 1.12.2 нұсқасымен үйлесімді.
+    
+    Модельді орнату өте қарапайым. Модты жүктеп алып, оны ойын қалтасының ішіндегі mods қалтасына салыңыз. Осыдан кейін ойынды іске қосып, жаңа мүмкіндіктерді пайдаланыңыз.
+    
+    Сонымен қатар, Саяхат картасы режимінде жаңа орындарды зерттейтін ойыншылар үшін өте пайдалы болуы мүмкін автоматты маршрутты сақтау мүмкіндігі бар. Бұл мүмкіндіктің көмегімен маршруттарды сақтауға және оларды кейінірек қызықты жерлерге оралу үшін пайдалануға болады.
+    
+    Саяхат картасы режимін қалай орнатуға болады?
+    
+    Journey Map режимін орнату үшін сізге Minecraft Forge жүктеп алып, орнату қажет, ол Minecraft үшін ең танымал модтардың бірі. Forge орнатқаннан кейін сізге Journey Map режимін жүктеп алып, оны Minecraft каталогындағы mods қалтасына орналастыру керек. Minecraft-ты іске қосқаннан кейін, оны mods мәзірінде таңдау арқылы режимді іске қосуға болады.
+    
+    Егер сіз Journey Map режимін жүктеп алғыңыз келсе, сіз қолданып жатқан Minecraft нұсқасына және мод нұсқасына назар аударуыңыз керек. Модтың кейбір нұсқалары Minecraft-тың белгілі бір нұсқаларымен үйлесімді болмауы мүмкін, сондықтан Minecraft нұсқасы үшін модтың дұрыс нұсқасын таңдау маңызды.
+    
+    Қорытындылай келе, Journey Map режимі - жаңа мүмкіндіктер мен функцияларды қосу арқылы Minecraft ойынын жақсартудың тамаша тәсілі. Оның көмегімен сіз айналаңыздағы әлемді жақсырақ шарлауға көмектесетін егжей-тегжейлі әлем карталарын жасай аласыз және әлемді тезірек айналып өту үшін маршруттарды пайдалана аласыз. Егер сіз Minecraft ойын тәжірибесін жақсартудың жолын іздесеңіз, Journey Map режимін қолданып көруді ұсынамыз.
+    
+    `,
+
+    // -> 1122
+    "1122_h1": `Minecraft 1.12.2 үшін модтар: бірегей модификациялармен ойын әлеміңізді кеңейтіңіз`,
+    patch1122_p_1: `Minecraft 1.12.2 - шығармашылық пен шытырман оқиғаға арналған көптеген мүмкіндіктерді ұсынатын ойынның танымал нұсқасы. Дегенмен, ойынға көбірек әртүрлілік пен қызығушылықты қосу үшін көптеген ойыншылар модификацияларға жүгінеді. Minecraft 1.12.2 үшін модтар ойын әлемін кеңейтуге, жаңа элементтерді, механикаларды, топтарды және т.б. қосуға мүмкіндік береді. Бұл мәтінде біз Meinkraft 1.12.2 үшін бірнеше танымал модульдерді қарастырамыз, бұл сізге ойынды жаңа жолмен сезінуге мүмкіндік береді.`,
+    "1122_h2_1": `Minecraft 1.12.2 үшін модтарды құрастырыңыз: Ойын тәжірибеңізді оңтайландырыңыз`,
+    patch1122_p_2InnerHTML: `Mods for Minecraft 1.12.2 - бұл ойын тәжірибесін жақсарту үшін біріктірілген әртүрлі модификациялар жинағы. Мод құрастырулары арқылы ойынға жаңа блоктарды, құралдарды, кендерді, топтарды және т.б. қосуға болады. Minecraft 1.12.2 үшін танымал мод жинағының бірі - <strong>"Forge"</strong>. Ол модификацияларды орнату және басқару, сондай-ақ олардың бір-бірімен үйлесімділігін қамтамасыз ету үшін ыңғайлы платформаны қамтамасыз етеді.'`,
+    "1122_p_3": `Minecraft 1.12.2 үшін мод жинағын жүктеп алу үшін сіз ресми Forge веб-сайтына кіріп, ойыныңызға сәйкес нұсқаны табуыңыз керек. Содан кейін орнату нұсқауларын орындаңыз және Minecraft-тың жаңа мүмкіндіктерін пайдалана бастаңыз.`,
+    "1122_h2_2": "Minecraft 1.12.2 үшін танымал модтар",
+    "1122_p_4": `Meinkraft 1.12.2 үшін көптеген модтар бар, олардың әрқайсысы ойынға бірегей мүмкіндіктер мен өзгерістер ұсынады. Міне, қарастыруға тұрарлық бірнеше танымал модификациялар:`,
+    "1122_li_1InnerHTML": `<strong>"Industrial Craft 2"</strong> - «IndustrialCraft 2» - MeInkraft 1.12.2-дегі ең танымал модтардың бірі, ол технология мен өнеркәсіп саласындағы ойыншыларға үлкен мүмкіндіктер ашады. Бұл модификатор процестерді автоматтандыруға, энергия жасауға және ойын әлемінде өз салаңызды дамытуға мүмкіндік беретін көптеген технологиялық элементтер мен механизмдерді қосады.`,
+    "1122_li_2InnerHTML": `<strong>"Thaumcraft"</strong> - «Thaumcraft» - бұл Minecraft 1.12.2 үшін қызықты мод, ол сиқыр мен тауматургия әлеміне жол ашады. Ойынға қиял мен жұмбақ элементтерін қосқыңыз келсе, бұл мод тамаша таңдау болады. «Thaumcraft» жаңа білімді үйренуге, сиқырлы заттарды жасауға және заклинаниелерді қолдануға мүмкіндік береді. "Thaumcraft" режимі сіздің ойын әлеміңізде ерекше сиқыр мен құпия атмосферасын жасайды. Ол магия мен тавматургия саласындағы барлау мен дамудың қызықты жолын ұсынады. Егер сіз Minecraft-қа сиқырлы тереңдіктің қосымша қабатын қосқыңыз келсе, "Thaumcraft" сіз үшін тамаша қосымша болады.`,
+    "1122_li_3InnerHTML": `<strong>"Биомалар О' Plenty"</strong> - Minecraft 1.12.2 үшін қызықты мод, ол ойындағы биомалардың әртүрлілігін айтарлықтай кеңейтеді. Егер сіз стандартты пейзаждардан шаршасаңыз және жаңа шытырман оқиғаларға сүңгігіңіз келсе, бұл мод тамаша таңдау болады. Ол көптеген жаңа пейзаждарды, өсімдіктерді, топтарды қосады және ойын әлемінде ерекше атмосфера жасайды.`,
+    "1122_li_4InnerHTML": `<strong>"Ымырт орманы"</strong> - жұмбақ сиқырлы орманға, жаңа бастықтарға, зындандарға және қызықты шытырман оқиғаларға толы параллель әлемге есігін ашатын Meinkraft 1.12.2 үшін қызықты мод. Егер сіз қиял әлеміне еніп, жаңа жұмбақ жерлерді зерттегіңіз келсе, онда бұл мод сіздің ойыныңызға таптырмас қосымша болады.`,
+    "1122_p_5": `Minecraft 1.12.2 үшін осы модтарды жүктеп алу үшін сіз CurseForge немесе Minecraft форумы сияқты әртүрлі платформалардағы модтардың ресми беттеріне кіре аласыз. Онда сіз жүктеп алу сілтемелерін және әр модты орнату туралы егжей-тегжейлі нұсқауларды таба аласыз.`,
+    "1122_h2_3": `Minecraft 1.12.2 үшін модтарды жүктеп алыңыз және ойын шытырман оқиғаңызды кеңейтіңіз`,
+    "1122_p_6": `Егер сіз Minecraft 1.12.2-де ойын ішіндегі шытырман оқиғаңызды кеңейткіңіз келсе, модтар мұны істеудің тамаша тәсілі. Өз қалауларыңызға және қызығушылықтарыңызға сәйкес келетін әртүрлі модификацияларды жүктеп алыңыз және орнатыңыз. Олар сізге Minecraft ойынында жаңа жолдарды жасауға, зерттеуге және ойнауға мүмкіндік береді.`,
+    "1122_p_7": `Модтардың ойын нұсқасымен үйлесімділігін тексеруді ұмытпаңыз және әр мод үшін орнату нұсқауларын орындаңыз. Mynecraft 1.12.2 үшін модтарды жүктеп алу үшін олардың қауіпсіз және дұрыс жұмыс істейтініне көз жеткізу үшін ресми ресурстар мен платформаларды пайдаланыңыз.`,
+    "1122_p_8": `Сондай-ақ, Minecraft-тағы соңғы өзгерістер мен жаңа мүмкіндіктерден хабардар болу үшін модульдер мен жаңа шығарылымдардың жаңартулары туралы үнемі хабардар болыңыз. Кеңейтілген ойын әлемі арқылы саяхатыңыздан ләззат алыңыз!`,
+
+    //1165
+    "1165_h1": "Minecraft 1.16.5 модтары: ойын мүмкіндіктерін кеңейтіңіз",
+    "1165_p_1": `Модификациялар (модтар) - Minecraft функционалдығын кеңейтудің және өзгертудің танымал тәсілі. 1.16.5 нұсқасы үшін жаңа элементтерді, ойын механикасын қосатын және жалпы ойын тәжірибесін жақсартатын әртүрлі қызықты модтар бар. Бұл мақалада біз Minecraft 1.16.5 үшін қолжетімді кейбір қызықты модтарды талқылаймыз.`,
+    "1165_h2_1": '1. "Уақыт және жыл мезгілдері» Мод',
+    "1165_p_2": ` «Уақыт және жыл мезгілдері» режимі Minecraft 1.16.5 үшін қол жетімді қызықты модтардың бірі болып табылады. Ол виртуалды әлемге шынайылық пен әртүрлілікті қоса отырып, ойынның уақыты мен атмосферасын толығымен өзгерту мүмкіндігін ұсынады.'`,
+    "1165_p_3": `Бұл режимнің көмегімен сіз өзіңіздің жыл мезгілдеріңізді жасай аласыз және олардың параметрлерін реттей аласыз. Сіз ойында қай айлар көрсетілетінін таңдай аласыз, сонымен қатар әр маусымның ұзақтығын конфигурациялай аласыз. Бұл жыл мезгіліне байланысты өзгеретін ландшафттардың әртүрлі түрлерін жасауға мүмкіндік береді.`,
+    "1165_p_4": `Сонымен қатар, «Уақыт және жыл мезгілдері» режимі ойындағы күндер мен түндердің ұзақтығын өзгертуге мүмкіндік береді. Құрылысқа немесе барлауға көбірек уақыт бере отырып, қысқа немесе ұзағырақ күнді орнатуға болады. Сондай-ақ күндізгі және түнгі өзгерістер жиілігін реттеуге және күннің шығуы мен батуы сияқты қосымша әсерлерді қосуға болады.`,
+    "1165_p_5": `Бұл режим сонымен қатар сіздің қалауыңыз бойынша ауа-райын өзгерту мүмкіндігін ұсынады. Сіз кез келген уақытта жаңбыр, дауыл немесе шуақты ауа-райын шақыра аласыз. Бұл ойында атмосфералық және әсерлі орындарды құрудың жаңа мүмкіндіктерін ашады.`,
+    "1165_h2_2": '2. "Кеңейтілген мүмкіндіктер" Қарсы',
+    "1165_p_6": `«Кеңейтілген мүмкіндіктер» режимі Minecraft 1.16.5 үшін қол жетімді тағы бір қызықты мод. Ол ойыншыларға ойынның функционалдығы мен мүмкіндіктерін кеңейте отырып, геймплейге көбірек икемділік пен бақылау береді.'`,
+    "1165_p_7": `Бұл режим күрделі және бірегей конструкцияларды жасауға мүмкіндік беретін жаңа құралдарды, блоктарды және элементтерді қосады. Жаңа материалдар мен құралдар сізге Minecraft әлемін салу және безендіру үшін көбірек мүмкіндіктер береді. Сіз осы модуль ұсынған жаңа блоктар мен бөлшектерді пайдаланып керемет құрылымдар жасай аласыз.`,
+    "1165_p_8": `«Сонымен қатар, «Кеңейтілген мүмкіндіктер» режимі ойында автоматтандыру функциясын қамтиды. Ол ресурстарды жинауды, элементтерді өндіруді және басқа да күнделікті тапсырмаларды автоматтандыруға мүмкіндік беретін әртүрлі механизмдер мен құрылғыларды ұсынады. Бұл ойынды жеңілдетеді және ойынның шығармашылық және қызықты аспектілеріне назар аударуға мүмкіндік береді.'`,
+    "1165_h2_3": '3. "Шытырман оқиғалар мен барлау" Қарсы',
+    "1165_p_9": `«Шытырман оқиғалар мен барлау» режимі - Minecraft 1.16.5-те барлау үшін жаңа әлемдерді, биомаларды және зындандарды қосатын қызықты мод. Ол ойыншыларға қызықты тапсырмаларды, тапсырмаларды және оқиғаларды ұсынады, геймплейді кеңейтеді және виртуалды әлемге көбірек шытырман оқиғаларды қосады.'`,
+    "1165_p_10": ` Бұл модтың көмегімен сіз әртүрлі әлемдер мен биомалар арқылы эпикалық саяхатқа шыға аласыз. Сіз ежелгі қирандылар, ұмытылған храмдар, қауіпті зындандар және т.б. сияқты жаңа орындарды табасыз. Сыйақылар алу және жаңа мүмкіндіктерді ашу үшін сіз оларды зерттей аласыз, құбыжықтармен соғыса аласыз және басқатырғыштарды шеше аласыз.`,
+    "1165_p_11": `«Шытырман оқиғалар мен барлау» режимі сонымен қатар ойынға оқиғалар мен қиындықтардың қосымша қабатын қосып, қызықты тапсырмаларды ұсынады. Сізге сюжетті өту және бонустар алу үшін орындау қажет әртүрлі миссиялар беріледі. Бұл ойынға көбірек уақыт бөлуге, оның мазмұнын байытуға және ойынға көбірек алуандық қосуға көмектеседі.'`,
+    "1165_p_12": `Бұл модульдердің әрқайсысы әртүрлі ресурстарда жүктеп алуға болады. Сіз оларды арнайы веб-сайттардан және Minecraft қауымдастығының форумдарынан таба аласыз.`,
+    "1165_p_13": `Айта кету керек, Minecraft 1.16.5 үшін модтарды орнатпас бұрын, мәселе туындаған жағдайда ойынның бастапқы күйіне оралу үшін ойын файлдарының сақтық көшірмесін жасау ұсынылады. Сондай-ақ, жүктелген модтердің Minecraft нұсқасымен үйлесімді екеніне көз жеткізіңіз.`,
+    "1165_p_14": `Модтарды пайдалану ойын өнімділігіне және компьютердегі ресурстарды тұтынуға әсер етуі мүмкін екенін есте сақтаңыз. Егер өнімділік мәселелері туындаса, кейбір модтарды өшіруді қарастырыңыз немесе оңтайландыру бойынша ұсыныстар алу үшін Minecraft қауымдастығынан кеңес алыңыз.`,
+    "1165_p_15": `Қорытындылай келе, Minecraft 1.16.5 модульдері бірегей және тартымды ойын сеанстарын жасау мүмкіндігін ұсынады. Олар ойын әлемін өз талғамыңызға қарай толығымен теңшеуге мүмкіндік беретін жаңа мүмкіндіктерді, блоктарды, элементтерді және механиканы қосады. Minecraft 1.16.5 ойын тәжірибесін жақсарту үшін тәжірибе жасаудан тартынбаңыз және сүйікті модтарыңызды табыңыз!`,
+    // 1122_cars
+    "1122_cars_h1":
+      "Minecraft 1.12.2 Модтары: Ойын әлеміңізді көліктермен кеңейтіңіз",
+    "1122_cars_p": `Егер сіз Minecraft 1.12.2-ге жаңа көлік құралын қосқыңыз келсе және ойынды әртараптандырғыңыз келсе, автомобиль модтары сіз үшін тамаша қосымша болуы мүмкін. Олар әртүрлі көліктердің көмегімен виртуалды әлем арқылы қызықты саяхаттарға шығуға мүмкіндік береді. Бұл мақалада біз Minecraft 1.12.2 нұсқасына арналған кейбір танымал автомобиль модельдерін талқылаймыз және оларды жүктеу және орнату туралы ақпаратпен бөлісеміз.`,
+    "1122_cars_h2_1": "Minecraft 1.12.2 үшін автокөлік мод",
+    "1122_cars_p_2": `Minecraft 1.12.2 үшін ең танымал автомобиль модтарының бірі - Vehicle Mod. Бұл мод ойынға седандар, жол талғамайтын көліктер және жүк көліктері сияқты әртүрлі автомобильдерді қосады. Сіз әр көліктің түсі мен сипаттамаларын реттей аласыз, сонымен қатар оларды Minecraft әлемінде саяхаттау үшін пайдалана аласыз.`,
+    "1122_cars_p_3": `Minecraft 1.12.2 үшін автокөлік режимін жүктеп алу үшін сіз Minecraft форумы немесе CurseForge сияқты ресми ресурстарға кіріп, сәйкес мод бетін табуыңыз керек. Онда сіз мод мұрағатын жүктеп алып, орнату нұсқауларын орындай аласыз.`,
+    "1122_cars_h2_2": "Minecraft 1.12.2 үшін көлік режимі",
+    "1122_cars_p_4": `Көлік құралдарын таңдауда көбірек әртүрлілікке ие болғыңыз келсе, Minecraft 1.12.2 үшін көлік режимі сіз үшін жаңа мүмкіндіктер ашады. Осындай модтардың бірі - Minecraft Transport Simulator. Ол әртүрлі көлік түрлерін, соның ішінде ұшақтарды, пойыздарды, тікұшақтарды және тіпті суасты қайықтарын қосады. Сіз өзіңіздің жеке маршруттарыңызды жасай аласыз және осы бірегей көліктермен Minecraft әлемін зерттей аласыз.`,
+    "1122_cars_p_5": `Minecraft 1.12.2 үшін көлік режимін жүктеп алу үшін сіз ресми CurseForge веб-сайтына кіріп, сәйкес мод бетін таба аласыз. Онда сіз жүктеу сілтемесін және орнату нұсқауларын таба аласыз.`,
+    "1122_cars_h2_3": "Minecraft 1.12.2 үшін автокөлік модтарын жүктеп алыңыз",
+    "1122_cars_p_6": `Егер сізді Minecraft 1.12.2-ге арналған басқа автомобильдік модельдер қызықтырса, Minecraft Forum, Planet Minecraft немесе Minecraft CurseForge сияқты әртүрлі платформалар мен ресурстарға бару ұсынылады. Онда сіз әрқайсысы бірегей көлік түрлерін және тасымалдау мүмкіндіктерін ұсынатын модтардың кең таңдауын таба аласыз.`,
+    "1122_cars_p_7": "Міне, Minecraft 1.12.2 үшін танымал автомобиль модтары:",
+    "1122_cars_li_1": `MrCrayfish's Vehicle Mod - бұл мод жарыс машиналарын, жүк көліктерін және велосипедтерді қоса алғанда, әртүрлі көліктерді қосады.`,
+    "1122_cars_li_2": `Flan's Mod - бұл кеңейтілген мод тек автомобильдерді ғана емес, сонымен қатар ұшақтарды, танктерді және басқа да техника түрлерін қосады.`,
+    "1122_cars_li_3": `Иммерсивті көліктер - бұл мод шынайы автомобильдерді, сонымен қатар өзіңіздің жеке көліктеріңізді жасау мүмкіндігін ұсынады.`,
+    "1122_cars_p_8": `Minecraft 1.12.2 нұсқасына арналған автомобиль модтарын жүктеп алу үшін таңдаған платформаңыздағы сәйкес мод беттеріне өтіп, жүктеу және орнату нұсқауларын орындаңыз.`,
+    "1122_cars_p_9": `Модтар мен Minecraft нұсқасы арасындағы үйлесімділікті тексеруді ұмытпаңыз және әрбір мод ұсынған нұсқауларды орындау арқылы оларды дұрыс орнатқаныңызға көз жеткізіңіз. Автокөлік режимдерін орнатқаннан кейін сіз Minecraft ойын әлемін бұрын-соңды болмағандай жылжытудың және зерттеудің жаңа тәсілдерін пайдалана аласыз!`,
+    "1122_cars_p_10": `Minecraft 1.12.2 үшін автокөлік моддерін жүктеп алу виртуалды әлемде шытырман оқиғалар мен саяхаттардың қызықты мүмкіндіктерін ашады. Таңдалған модтерді орнатыңыз және жеке көліктеріңізбен қызықты саяхаттарға шығыңыз. Түрлі режимдерді қолданып көріңіз және бірегей көлік түрлері мен тасымалдау нұсқаларынан ләззат алыңыз. Minecraft 1.12.2 ойынын тамашалаңыз!`,
+    // 1122_oruzhie
+    "1122_oruzhie_h1":
+      "Minecraft 1.12.2 Модтары: Қызықты шайқастарға арналған қарулар",
+    "1122_oruzhie_p_1": `Minecraft ойын модификациялары ойын тәжірибеңізді кеңейту үшін керемет мүмкіндіктер ұсынады. Егер сіз 1.12.2 нұсқасына арналған қару моддерін іздесеңіз, сіз дұрыс жерге келдіңіз. Бұл мақалада біз сіздің ойыныңызға шайқастар мен шытырман оқиғаларға жаңа мүмкіндіктер қосатын бірнеше танымал қару моддерін талқылаймыз.`,
+    "1122_oruzhie_p_2": `1.12.2 нұсқасына арналған қолөнер қаруының модасы ойыншыларға Minecraft ойынында қолөнерді қолдана отырып, әртүрлі қару түрлерін жасау мүмкіндігін береді. Бұл жаңа қызықты мүмкіндіктерді қосады және ойынды кеңейтеді.`,
+    "1122_oruzhie_p_3": `Сіз қолдануға болатын 1.12.2 нұсқасы үшін бірнеше танымал қолөнер қаруының модалары бар. Міне, олардың кейбіреулері:`,
+    "1122_oruzhie_li_1": `WeaponCraft - бұл режим әртүрлі қару түрлерін, соның ішінде қылыштарды, садақтарды, жебелерді және басқа заттарды жасауға мүмкіндік береді. Ол жаңа қолөнер рецепттерін қосады, осылайша сіз тобырға қарсы шайқаста сізге көмектесетін күшті қару жасай аласыз.`,
+    "1122_oruzhie_li_2": `Craftable Guns - бұл режим атыс қаруына арналған рецепттерді ұсынады. Сіз тапаншаларды, мылтықтарды, шолақ мылтықтарды және атыс қаруының басқа түрлерін жасай аласыз. Бұл мод сіздің жауынгерлік қабілеттеріңізге шынайылық пен әртүрлілікті қосады.`,
+    "1122_oruzhie_p_4": `1.12.2 қолөнер қаруын жүктеп алу және орнату үшін Minecraft модификацияларына мамандандырылған ресми ресурстарға жүгінуге болады. Бұл ресурстарда сіз модульдерді жүктеу және орнату бойынша толық нұсқауларды таба аласыз.`,
+    "1122_oruzhie_p_5": `Қолөнер қаруының режимін орнатпас бұрын ойынның сақтық көшірмесін жасауды ұмытпаңыз және кез келген ықтимал мәселелерді немесе басқа модификациялармен қайшылықтарды болдырмау үшін нұсқауларды мұқият орындаңыз.`,
+    "1122_oruzhie_h2_1": "Minecraft 1.12.2 үшін атыс қаруы",
+    "1122_oruzhie_p_6": `1.12.2 нұсқасына арналған атыс қаруы режимі Minecraft ойынына тамаша қосымша болып табылады, бұл сіздің шытырман оқиғаларыңызда атыс қаруының әртүрлі түрлерін пайдалануға мүмкіндік береді. Бұл мод жаңа ұрыс мүмкіндіктерін қосады және күшті атыс қаруын қолданып жаулармен күресуге мүмкіндік береді.`,
+    "1122_oruzhie_p_7": `Егер сіз Minecraft 1.12.2-де қару-жарақ арсеналын кеңейткіңіз келсе, атыс қаруының модификациялары сізге бұл мүмкіндікті береді. Міне, 1.12.2 нұсқасына арналған кейбір танымал атыс қарулары:`,
+    "1122_oruzhie_li_3": `Заманауи соғыс - бұл мод автоматтар, мергендік мылтықтар, тапаншалар және граната атқыштар сияқты заманауи атыс қаруларының кең спектрін қосады. Сіз бұл қару жүйелерін жаулармен күресу және аумақтарыңызды қорғау үшін пайдалана аласыз.`,
+    "1122_oruzhie_li_4": `Flan's Mod - бұл тарихи, заманауи және футуристік нұсқаларды қоса алғанда, көптеген әртүрлі қаруларды қосатын ең танымал атыс қаруының бірі. Сіз атыс қаруының әртүрлі түрлерін жинай, теңшей және пайдалана аласыз.`,
+    "1122_oruzhie_p_8": `Minecraft 1.12.2 үшін атыс қаруы режимін жүктеп алу үшін Minecraft модификацияларына маманданған ресми ресурстарға жүгіну керек. Онда сіз модульді орнату және пайдалану бойынша егжей-тегжейлі нұсқауларды таба аласыз.`,
+    "1122_oruzhie_p_9": `Ойында атыс қаруын қолдану ойынның тепе-теңдігін және шынайылығын өзгерте алатынын есте сақтаңыз. Мұндай модтерді пайдаланған кезде абай болыңыз және геймплейдің ерекшеліктерін және ойын стилін ескеріңіз.`,
+    "1122_oruzhie_h2_2": "Minecraft 1.12.2 үшін қару моддерін жүктеп алыңыз",
+    "1122_oruzhie_p_10": `Осы ресурстардың біріне өтіп, қажетті қару режимін таңдап, жүктеу және орнату нұсқауларын орындаңыз. Модтарды орнату кейбір техникалық дағдыларды қажет ететінін есте сақтаңыз, сондықтан нұсқауларды мұқият оқып шығыңыз және ұсыныстарды орындаңыз.`,
+    "1122_oruzhie_p_11": `Minecraft 1.12.2-де қару-жарақ режимдерімен жаңа мүмкіндіктер мен қызықты шайқастардан ләззат алыңыз!`,
+
+    // cookie
+    cookie_title: "We use cookies",
+    cookie_textInnerHTML: `We use cookies to ensure you get the best experience on our website. By
+    using this site, you agree to the <a href="/pages/privacy-policy">Privacy Policy</a> and
+    <a href="/pages/terms-and-conditions">Terms of Service</a>`,
+    cookie_button: "Accept & Close",
+    // 404
+    "404Page__title": "Page not found",
+    "404Page__subtitle": "This page never existed or has been deleted",
+    "404Page__home_link": "Return to main page",
+    // privacy policy
+    privacyPolicyPage_contentInnerHTML: `
+    <div class="container">
+    <h1 class="policy__title">PRIVACY POLICY</h1>
+    <p class="policy__update">Effective June 29, 2023</p>
+    <p class="policy__subtitle">What Is This Privacy Policy for?</p>
+    <p class="policy__text">
+    <strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”)
+    respects your privacy and is committed to protecting your personal
+    data. This policy informs you how we look after your personal data
+    and tells you about your privacy rights and how the law protects
+    you. This privacy policy applies to any visitor of the Site/ the
+    user/ the buyer/ the player/ the customer (further “you”, “your”)
+    who uses the Site, registers on it and buys anything in our online
+    store.
+    </p>
+    <p class="policy__text">
+    This Privacy policy is a part of the Agreement between you and us.
+    Before you buy anything in our online store you need to accept our
+    offer. That means that you accept the terms of all the documents
+    that constitute the Agreement. The proper acceptance of the offer in
+    accordance with the law of Estonia is the consistent implementation
+    by you of the following actions: read terms of the Agreement,
+    register on the Site, put a tick in the checkbox that you accept the
+    terms before making a purchase. If you put a tick in the checkbox,
+    you agree with the terms of this Privacy policy in particular.
+    </p>
+    <p class="policy__text">
+    The Site is owned by GalaxyGrip OÜ - a company registered according
+    to legislation of Estonia with its registered number 16776100, whose
+    registered address is Harju maakond, Tallinn, Lasnamäe linnaosa,
+    Katusepapi tn 6-502, 11412.
+    </p>
+    <p class="policy__text">
+    We are the data controller when we collect personal information from
+    our users, buyers, players, customers and clients. We will not pass
+    your personal data on to any third party unless required to do so by
+    law or if you have given us separate written permission to do so.
+    </p>
+    <p class="policy__text">
+    The updated version of this privacy policy is the only one
+    applicable for the duration of the use of the Site until there is no
+    other version that replaces it. We may modify this Privacy policy
+    without notifying you, so please check back often for updates. Any
+    changes made will be available on this page.
+    </p>
+    
+    <p class="policy__subtitle">What Data Do We Collect About You?</p>
+    <p class="policy__text">
+    Personal data, or personal information, means any information about
+    an individual from which that person can be identified. It does not
+    include data where the identity has been removed (anonymous data).
+    We MAY collect, use, store and process different kinds of personal
+    data about you.
+    </p>
+    <p class="policy__text">
+    Your data is collected by the Site. We only ask for an email, when
+    you register on the Site.
+    </p>
+    <p class="policy__text">
+    When you select products in our online store, we ask only your
+    Minecraft nickname and the server.
+    </p>
+    <p class="policy__text">
+    When you have selected the goods and want to pay, you are redirected
+    to the payment page of the BazPay Gateway. The page collects your
+    payment card date in order to process your payment. The payment card
+    data collected by BazPay is your card number, expiry date, your name
+    indicated on the card and your CVV code. We do not collect either
+    keep your payment card information.
+    </p>
+    <p class="policy__subtitle">Third Party Links</p>
+    <p class="policy__text">
+    The Sites practice a link to a payment page provided by the BazPay
+    Gateway in order to collect your payment card information and
+    process your payment request. We guarantee the security of payments
+    when paying by credit or debit card. The BazPay Gateway that
+    provides the service of processing the payment requests complies
+    with PCI DSS requirements for the secure processing of the payer's
+    bank card details.
+    </p>
+    <p class="policy__subtitle">Children</p>
+    <p class="policy__text">
+    This website is not intended for children and we do not knowingly
+    collect data relating to children.
+    </p>
+    <p class="policy__subtitle">Special Category Data</p>
+    <p class="policy__text">
+    We do not anticipate that any special category data will be
+    processed by us in our business relationship with you.
+    </p>
+    <p class="policy__subtitle">What We May Need From You in Addition</p>
+    <p class="policy__text">
+    We may need to request specific information from you to help us
+    confirm your identity and take part in a possible dispute
+    investigation on your purchase or a chargeback. If you apply for a
+    refund, we will need to request additional information/documentation
+    as well.
+    </p>
+    
+    <p class="policy__subtitle">
+    What information we may request from you
+    </p>
+    <p class="policy__text">
+    We may request such personal information from you: your first name,
+    last name, date of birth, registration address, ID code.
+    </p>
+    
+    <p class="policy__subtitle">What documents we may request from you</p>
+    <p class="policy__text">
+    We may request a photo or scan of your ID document (passport, ID
+    card, driving license etc.), a proof of address (it may be a utility
+    bill or bank statement not older than 3 months), photo of your
+    paying card, selfie-photo of your face, selfie-photo of you with
+    your card, selfie-photo of you with your passport. Also we may ask
+    you to provide a payment report that was sent to your email address
+    after you made a purchase in our online store.
+    </p>
+    
+    <p class="policy__subtitle">How do we contact you</p>
+    <p class="policy__text">
+    As long as we have only your email address, we can contact you by
+    email.
+    </p>
+    
+    <p class="policy__subtitle">
+    Under what conditions we request additional information and/or
+    documents
+    </p>
+    <p class="policy__text">
+    If we receive a request from a payment provider, an International
+    Payment Card System or a bank, we may contact you to request your
+    information and/or documents. Usually it pertains to dispute
+    resolutions, fraud investigations, chargebacks.
+    </p>
+    <p class="policy__text">
+    If you apply for a refund, we will need you to provide a payment
+    report and additional documents according to the request of our
+    support team.
+    </p>
+    
+    <p class="policy__subtitle">
+    For What Purpose Do We Process Your Personal Data?
+    </p>
+    <p class="policy__text">
+    The purpose of processing the personal data that may be collected is
+    mainly to facilitate your purchase in our online store. Among other
+    purposes is to manage our relationship with you, to be able to offer
+    you our products in accordance with your interests, to improve your
+    user experience and, where appropriate, for the treatment of your
+    requests.
+    </p>
+    <p class="policy__text">
+    The data provided will be kept as long as the commercial
+    relationship is maintained, as long as the interested party does not
+    request its deletion, or during the years necessary to comply with
+    legal obligations.
+    </p>
+    
+    <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
+    <p class="policy__text">
+    We will only use your personal data when the law allows us to.
+    </p>
+    <p class="policy__text">
+    The BazPay Gateway uses your payment card details to process your
+    payment request.
+    </p>
+    <p class="policy__text">
+    Most commonly, as we only ask for an email, Minecraft nickname and
+    the server, we use it to provide you the opportunity to buy goods in
+    our online store.
+    </p>
+    
+    <p class="policy__subtitle">
+    To Which Recipients Will the Data Be Disclosed?
+    </p>
+    <p class="policy__text">
+    Your personal data may eventually be communicated if communications
+    had to be made to the authorities in the event that the user had
+    carried out actions contrary to the Law; except as provided herein,
+    we will not transfer the data provided to third parties.
+    </p>
+    <p class="policy__text">
+    If we receive a request from a payment provider, an International
+    Payment Card System or a bank, and contact you to request your
+    information and/or documents, we share the information/documents
+    with the party which provided the request. Usually it pertains to
+    dispute resolutions, fraud investigations, chargebacks.
+    </p>
+    <p class="policy__text">
+    We may also have to share your personal data with other third
+    parties where you have given your consent for us to do so.
+    </p>
+    
+    <p class="policy__subtitle">Data Security and Retention</p>
+    <p class="policy__text">
+    GalaxyGrip OÜ has adopted and maintains the necessary technical and
+    organizational security measures to protect the personal information
+    that users provide in order to avoid its alteration, loss, treatment
+    or unauthorized access, taking into account the state of technology,
+    nature of the data stored and the risks to which they are exposed.
+    </p>
+    <p class="policy__text">
+    However, please, bear in mind that the security of computer systems
+    is never absolute. Please note that no transmission over the
+    Internet is 100% secure and no data stored on it is invulnerable. We
+    cannot guarantee the security of our Site, databases or services,
+    nor can we guarantee that the information you submit to us will not
+    be intercepted while you are transmitting it to us over the
+    Internet. We are not responsible for the actions of third parties.
+    </p>
+    <p class="policy__text">
+    As for data retention, we will only retain your personal data for as
+    long as necessary to fulfill the purposes we collected it for,
+    including for the purposes of satisfying any legal, accounting, or
+    reporting requirements.
+    </p>
+    <p class="policy__text">
+    Your payment card details are retained by encryption methods that
+    are PCI DSS compliant because BazPay has a PCI DSS certificate.
+    </p>
+    
+    <p class="policy__subtitle">What Are Your Legal Rights?</p>
+    <p class="policy__text">
+    Under certain circumstances, you have rights under data protection
+    laws in relation to your personal data.
+    </p>
+    <p class="policy__text">You have the right to:</p>
+    <p class="policy__text">
+    Request Access to your personal data. This enables you to receive a
+    copy of the personal data we hold about you and to check that we are
+    lawfully processing it.
+    </p>
+    <p class="policy__text">
+    Request Correction of the personal data that we hold about you. This
+    enables you to have any incomplete or inaccurate data we hold about
+    you corrected, though we may need to verify the accuracy of the new
+    data you provide to us.
+    </p>
+    <p class="policy__text">
+    Request Erasure of your personal data. This enables you to ask us to
+    delete or remove personal data where there is no good reason for us
+    continuing to process it. You also have the right to ask us to
+    delete or remove your personal data where you have successfully
+    exercised your right to object to processing, where we may have
+    processed your information unlawfully or where we are required to
+    erase your personal data to comply with local law. Note, however,
+    that we may not always be able to comply with your request of
+    erasure for specific legal reasons which will be notified to you, if
+    applicable, at the time of your request.
+    </p>
+    <p class="policy__text">
+    Object To Processing of your personal data where we are relying on a
+    legitimate interest (or those of a third party) and there is
+    something about your particular situation which makes you want to
+    object to processing on this ground as you feel it impacts on your
+    fundamental rights and freedoms. You also have the right to object
+    where we are processing your personal data for direct marketing
+    purposes. In some cases, we may demonstrate that we have compelling
+    legitimate grounds to process your information which override your
+    rights and freedoms.
+    </p>
+    <p class="policy__text">
+    Request Restriction of Processing of your personal data. This
+    enables you to ask us to suspend the processing of your personal
+    data in the following scenarios: (a) if you want us to establish the
+    data’s accuracy; (b) where our use of the data is unlawful but you
+    do not want us to erase it; (c) where you need us to hold the data
+    even if we no longer require it as you need it to establish,
+    exercise or defend legal claims; or (d) you have objected to our use
+    of your data but we need to verify whether we have overriding
+    legitimate grounds to use it.
+    </p>
+    <p class="policy__text">
+    Request the Transfer of your personal data to you or to a third
+    party. We will provide to you, or a third party you have chosen,
+    your personal data in a structured, commonly used, machine-readable
+    format. Note that this right only applies to automated information
+    which you initially provided consent for us to use or where we used
+    the information to perform a contract with you.
+    </p>
+    <p class="policy__text">
+    Withdraw Consent at Any Time where we are relying on consent to
+    process your personal data. However, this will not affect the
+    lawfulness of any processing carried out before you withdraw your
+    consent. If you withdraw your consent, we may not be able to provide
+    certain products or services to you. We will advise you if this is
+    the case at the time you withdraw your consent.
+    </p>
+    <p class="policy__text">
+    If you wish to exercise any of the rights set out above, please
+    contact us.
+    </p>
+    <p class="policy__text">
+    No Fee Usually Required. You will not have to pay a fee to access
+    your personal data (or to exercise any of the other rights).
+    However, we may charge a reasonable fee if your request is clearly
+    unfounded, repetitive or excessive. Alternatively, we may refuse to
+    comply with your request in these circumstances.
+    </p>
+    
+    <p class="policy__subtitle">Time Limit Within Which We Respond</p>
+    <p class="policy__text">
+    We try to respond to all legitimate requests within 30 days.
+    Occasionally it may take us longer than a month if your request is
+    particularly complex or if you have made a number of requests. In
+    this case, we will notify you and keep you updated.
+    </p>
+    </div>
+    `,
+    termsConditionsPage_contentInnerHTML: `
+    <div class="container">
+    <h1 class="policy__title">Terms and Conditions</h1>
+    <p class="policy__update">Effective June 29, 2023</p>
+    <p class="policy__text">
+    <strong>Adventures in Minecraft</strong> website
+    <a href="/">https://adventuresinminecraft.com</a> (further
+    the “Site”) is owned by GalaxyGrip OÜ - a company registered
+    according to legislation of Estonia with its registered number
+    16776100, whose registered address is Harju maakond, Tallinn,
+    Lasnamäe linnaosa, Katusepapi tn 6-502, 11412. (further “we”, “us”,
+    “our”).
+    </p>
+    <p class="policy__text">
+    Attention! Please read carefully the present Terms and Conditions
+    before using the Site and its online store. Registration means that
+    you agree with all terms and conditions indicated in this document.
+    If you disagree with the terms and conditions, do not register on
+    the Site and do not buy anything in its online store.
+    </p>
+    <p class="policy__subtitle">The Agreement</p>
+    <p class="policy__text">
+    GalaxyGrip OÜ, from the one side, and the visitor of the Site/ the
+    user/ the buyer/ the player/ the customer (further “you”, “your”),
+    from the other side, conclude the present Terms and Conditions
+    (further “the Agreement”) and agree that the document constitute the
+    Agreement between the parties.
+    </p>
+    <p class="policy__text">
+    Text of the Agreement is posted on the Site and it is available
+    during registration on the Site, it contains all significant terms
+    of the Agreement and it is our offer to any competent individual,
+    who uses the Site, according to all terms of the Agreement. Text of
+    the Agreement is a public offer according to the law of Estonia.
+    </p>
+    <p class="policy__text">
+    The present Terms and Conditions contains such documents posted on
+    the Site: <br />
+    
+    The very text of Terms and Conditions; <br />
+    Privacy Policy
+    <a href="/kz/pages/privacy-policy">https://adventuresinminecraft.com/kz/pages/privacy-policy</a>
+    <br />
+    Cookies Policy
+    <a href="/kz/pages/cookie-policy">https://adventuresinminecraft.com/kz/pages/cookie-policy</a>
+    <br />
+    “Rules”
+    <a href="/kz/pages/rules">https://adventuresinminecraft.com/kz/pages/rules</a>
+    <br />
+    “Description of Donations”
+    <a href="/kz/pages/donation-description">https://adventuresinminecraft.com/kz/pages/donation-description</a>
+    <br />
+    “How to Start Playing?”
+    <a href="/kz/pages/starting-tips">https://adventuresinminecraft.com/kz/pages/starting-tips</a>
+    <br />
+    “Launchers”
+    <a href="/kz/pages/launcher-download">https://adventuresinminecraft.com/kz/pages/launcher-download</a>
+    <br />
+    “Mods” <a href="/kz/pages/mods">https://adventuresinminecraft.com/kz/pages/mods</a>
+    <br />
+    “FAQ” <a href="/kz/pages/faq">https://adventuresinminecraft.com/kz/pages/faq</a>
+    <br />
+    The proper acceptance of this offer in accordance with the law of
+    Estonia is the consistent implementation by you of the following
+    actions: read terms of the Agreement, register on the Site, put a
+    tick in the checkbox that you accept the terms before making a
+    purchase.
+    </p>
+    <p class="policy__text">
+    To register in the Site, please, enter your email address and make
+    up a password. Then enter a verification code sent to your email.
+    Please, remember the email address and the password dialed because
+    you will need them to log in to the Site.
+    </p>
+    <p class="policy__text">
+    All terms and definitions found in the text of the Agreement are
+    interpreted by the parties in accordance with the laws of Estonia
+    and the rules of interpretation of the relevant terms used in the
+    Internet.
+    </p>
+    <p class="policy__text">
+    This Site is offered and available to users who are at least 18
+    years of age and of legal age to form a binding contract. The Site
+    is designed for users from all over the Globe except restricted
+    countries that are States Sponsors of Terrorism, RU, BY. If your
+    card is issued in the restricted GEO or the IP-address of your
+    device is situated there, please, do not use the Site and do not
+    make purchases in its online store. By using the Site, you represent
+    and warrant that you meet all of the eligibility requirements. If
+    you do not meet all of these requirements, you must not access or
+    use the Site.
+    </p>
+    <p class="policy__text">
+    You can send a request to our Customer Support team 24/7 if you have
+    any questions regarding the Site or your purchase. But the team
+    answers during its working hours: Mon-Fri, 10:00-19:00 (Eastern
+    European Time).
+    </p>
+    <p class="policy__text">
+    The original language of these Terms and Conditions, as well as all
+    other texts throughout the Site, is English. We make a translation
+    in Russian available for convenience only. In case of conflicts
+    between the original English version and any translation, the
+    English version shall prevail.
+    </p>
+    
+    <p class="policy__subtitle">The Goods and Prices</p>
+    <p class="policy__text">
+    <strong>The Goods.</strong> We provide an online store available on
+    the Site to sell digital goods (products) to you. The digital goods
+    can be used only by players of Minecraft, who have registered
+    Minecraft nickname(s) on a particular server. The digital goods are
+    add-ons to the game Minecraft that allow players to change its basic
+    parameters, add new blocks and items, and improve the graphics and
+    sound design. As a result, players have unlimited possibilities for
+    creativity and experimentation. These possibilities can be granted
+    either for a certain period of time or forever as it is indicated in
+    the product’s details.
+    </p>
+    <p class="policy__text">
+    Please, consult the documents placed in the Site for further
+    information about the goods and its characteristics as well as rules
+    for players.
+    </p>
+    <p class="policy__text">
+    <strong>“Rules”</strong> gives you official regulation of the
+    project, rights and duties of players and the Administration and
+    explanations of terms.
+    </p>
+    <p class="policy__text">
+    <strong>“Description of Donations”</strong> gives you the details of
+    the products and the value added by buying them.
+    </p>
+    <p class="policy__text">
+    <strong>“How to Start Playing?”</strong> gives you an explanation of
+    3 steps to start playing in Minecraft with your purchase.
+    </p>
+    <p class="policy__text">
+    <strong>“Launchers”</strong> gives you a possibility to download and
+    run the game.
+    </p>
+    <p class="policy__text">
+    <strong>“Modes”</strong> explains what the modes are and what they
+    do with details.
+    </p>
+    <p class="policy__text">
+    <strong>“FAQ”</strong> = “Frequently Asked Questions” tries to
+    answer the most popular questions that arise during the usage of the
+    Site and save time for you and our support team.
+    </p>
+    <p class="policy__text">
+    <strong>The online store.</strong> On the homepage of the Site you
+    see the icons assigned to digital goods that you can buy. You can
+    sort them by price and select the desired digital goods of
+    “Survival” or “Anarchy” type. You can see the price denominated in
+    EUR of each product. If the product is available to be bought, the
+    icon is active. If it is not available, the icon is inactive.
+    Please, press the icon of desired digital goods and you’ll get the
+    description of possibilities that it adds.
+    </p>
+    <p class="policy__text">
+    <strong> The Prices.</strong> Prices are denominated in euros. The
+    price includes all necessary taxes. You do not pay either packaging
+    or delivery costs. The payment gateway which processes payments for
+    the Site charges a 10% processing fee. The fee is not included in
+    the price and is payable additionally. The fee will be deducted from
+    your bank account along with the price. We do not require the player
+    to bear additional expenses on the Site except the price and the
+    processing fee. But please, be aware that the bank-issuer of your
+    card may charge additional fees for online payments. Also if the
+    currency of your card account differs from the currency of the
+    price, a particular exchange rate is applied to the transaction. We
+    do not know the size of the possible additional fees as well as the
+    exchange rate in advance therefore we cannot calculate the exact
+    amount of funds to be withdrawn from your account after you make a
+    purchase on the Site. Please, check the fees of your bank and the
+    currency conversion rules of the International Payment Card Systems
+    by yourself.
+    </p>
+    
+    <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
+    <p class="policy__text">
+    <strong>The Purchase.</strong> If you want to make a purchase in our
+    online store, you need to be registered on the Site. Once you are
+    registered, you log in to the Site. To make a purchase, select a
+    desired product and press the button “Add to Basket”. The product
+    will be added to the basket. Once you have selected all the goods
+    you want to purchase, please, click the “basket” button and proceed
+    to checkout. You enter your Minecraft nickname and the server.
+    Please, check the correctness of the nickname. The nickname you
+    entered should be 100% identical to your Minecraft nickname
+    (including capital letters and spaces). You tick in a checkbox that
+    you accept the terms before making a purchase and press the “Pay”
+    button. You will be redirected to the payment page from the BazPay
+    payment gateway. You enter your card payment details. If your
+    bank-issuer supports the 3DS program, you will need to enter the 3DS
+    code. Once the payment is finalized, you will get a payment report
+    on your email address from your registration details. Please, keep
+    the payment report safely for further reference.
+    </p>
+    <p class="policy__text">
+    <strong>Delivery of the Good.</strong> Once you have paid for the
+    goods, you will receive the mode on your Minecraft account during
+    5-14 working days. We cannot tell you in advance the exact time of
+    the delivery as well as speed up the delivery. Please, be aware of
+    that. The product is considered to be delivered once it becomes
+    available to the player in the Minecraft interface under its
+    nickname.
+    </p>
+    <p class="policy__text">
+    If you have entered the false Minecraft nickname and/or server, but
+    the false nickname exists, the product will be delivered to the
+    nickname and we will not be able to cancel/refund the transaction.
+    </p>
+    <p class="policy__text">
+    If you have entered the false Minecraft nickname and/or server and
+    the false nickname does not exist, you can cancel the purchase and
+    get a refund as well as apply to our support team and get your
+    purchase to be sent to your correct nickname. In this case you will
+    be asked to provide proof of purchase. For this purpose a photo of
+    your card and a transaction report sent to you on email will be
+    sufficient proof.
+    </p>
+    <p class="policy__text">
+    If you have paid for the purchase, but the product was not delivered
+    after 14 working days lapsed, you can claim to our support team and
+    we will check the delivery and fix the problem or refund it.
+    </p>
+    
+    <p class="policy__subtitle">Payment Policy</p>
+    <p class="policy__text">
+    <strong>Payment Method.</strong> You can pay for the purchase by a
+    credit or debit card of either VISA or MasterCard/Maestro online
+    using the BazPay gateway payment page. Other payment methods are not
+    available.
+    </p>
+    <p class="policy__text">
+    <strong>Currencies.</strong> The payment transaction currency is
+    euro. If your payment card’s currency differs from euro, currency
+    conversion is made according to the rules of the International
+    Payment Card Systems. The exchange rate is set by the International
+    Payment Card Systems for blocking the relevant amount on the card
+    and by your bank-issuer of the card for debiting funds from your
+    bank account. Also currency exchange may be charged with a fee by
+    your bank. We do not know the currency conversion rate and fee and
+    do not influence it. Please, check it by yourself. We do not charge
+    the currency exchange fee in our favor.
+    </p>
+    <p class="policy__text">
+    <strong>No discrimination notice.</strong> We honor all valid VISA
+    and MasterCard/Maestro cards without discrimination when properly
+    presented for payment. We maintain a policy that does not
+    discriminate among customers seeking to make purchases with a card.
+    </p>
+    <p class="policy__text">
+    We do not require a minimum or maximum transaction amount in order
+    to accept payment with Visa or Mastercard/Maestro card. There are no
+    restrictions on the cardholder’s rights to dispute payment performed
+    by the payment card.
+    </p>
+    <p class="policy__text">
+    <strong>Security.</strong> In accordance with the recommendations of
+    Payment Card Industry Security Standards Council, customer card
+    details are protected using encryption. The company - a payment
+    gateway - is PCI DSS compliant.
+    </p>
+    <p class="policy__text">
+    <strong>Possible additional fees.</strong> The price comprises
+    taxes. It does not contain a 10% processing fee charged by the
+    payment gateway. We do not charge you with any additional fees,
+    costs, expenses in our favor.
+    </p>
+    <p class="policy__text">
+    But your bank-issuer of the card may charge you with additional fees
+    including transaction processing and currency conversion fee
+    according to its tariffs. We do not know them and we are not
+    responsible for those charges. Please, check them with your bank and
+    be aware of them before you make a purchase.
+    </p>
+    <p class="policy__text">
+    <strong>Acceptance of the Terms and Conditions.</strong> You need to
+    agree with current terms and conditions of the Agreement before you
+    make a purchase on our Site. Please, put a tick in the relevant
+    checkbox which the Site makes available to you before you proceed
+    your purchase to the payment stage.
+    </p>
+    <p class="policy__text">
+    <strong>Credential-on-file.</strong> Credential-on-file transaction
+    is where a cardholder authorizes a merchant to store and
+    subsequently charge a card at a later date, therefore it can be
+    initiated by either the cardholder or the merchant. We do not
+    practice such types of transactions. We do not store your payment
+    information and do not initiate payment transactions.
+    </p>
+    
+    <p class="policy__subtitle">Return/ Refund/ Cancellation Policy</p>
+    <p class="policy__text">
+    <strong>Return of the Product.</strong> Once the product is
+    delivered to you, it cannot be returned to us. If you paid for the
+    product and the product has not been delivered yet, you can request
+    the refund.
+    </p>
+    <p class="policy__text">
+    <strong>Refund.</strong> Completed purchases may be canceled up to
+    14 days after the purchase ONLY if the product has not been
+    delivered to the buyer. You have the right to request a refund, if
+    the purchase is canceled. To get a refund, you must apply to our
+    support team via the contacts indicated in the section Contact us of
+    these Terms and Conditions. You should add a payment report as a
+    proof of purchase that was sent to you to your email and photo of
+    the card. If you paid for the purchase, did not get the product
+    delivered, 14 days did not lapse after the purchase and you applied
+    to our support team, you will be refunded in full during 30 days
+    after the refund application is submitted. Your bank’s charges are
+    not refundable. 10% processing fee is not refundable too. Please, be
+    aware that your bank can set a refund fee. Please, check it for
+    yourself.
+    </p>
+    <p class="policy__text">
+    If you have submitted a wrong nickname or a server while purchasing
+    and the product has not been delivered yet, you can apply for a
+    cancellation of the purchase and full refund.
+    </p>
+    <p class="policy__text">
+    If you have submitted a wrong nickname or a server while purchasing
+    and the product has been already delivered to the wrong nickname,
+    you cannot be refunded. Please, claim to our support team in this
+    case for further assistance.
+    </p>
+    <p class="policy__text">
+    <strong>Complaint.</strong> If you have purchased a product, have
+    got it delivered but you are not satisfied with the product, you can
+    not request a refund. But you can submit a complaint to our support
+    team. We are trying our best to make you happy with the products
+    therefore we will study your complaint carefully and let you know
+    about the result of our investigation.
+    </p>
+    <p class="policy__text">
+    <strong>Cancellation.</strong> You can cancel your purchase at any
+    time during the process of the purchase until the payment is
+    finalized.
+    </p>
+    <p class="policy__text">
+    You can cancel your paid purchase and get a refund during 14 days if
+    you have not got the product delivered.
+    </p>
+    <p class="policy__text">
+    You can cancel your acceptance of the Agreement if you terminate
+    your registration. To terminate your registration, please, apply to
+    our support team.
+    </p>
+    <p class="policy__subtitle">Personal Data</p>
+    <p class="policy__text">
+    We may collect and process personal data of the user. The data
+    collected, purposes and other relevant terms and conditions are
+    indicated in our Privacy Policy. Please, check it before you use the
+    Site.
+    </p>
+    <p class="policy__text">
+    We guarantee the security of payments when paying by credit or debit
+    card. The payment gateway that provides the service of processing
+    the payment requests complies with PCI DSS requirements for the
+    secure processing of the payer's bank card details.
+    </p>
+    
+    <p class="policy__subtitle">Terms of Use of the Site</p>
+    <p class="policy__text">
+    The content of the pages of the Site is for your general information
+    and use only. It is subject to change without notice.
+    </p>
+    <p class="policy__text">
+    We reserve the right to enhance, modify, alter, suspend or
+    permanently discontinue all or any part of the Site and to restrict
+    or prohibit access to it at any time and without notice. We can
+    change the range of goods and prices without prior notice.
+    </p>
+    <p class="policy__text">
+    The Site uses cookies to monitor browsing preferences. Please read
+    the Cookie Policy for further information. If you do allow cookies
+    to be used, the cookie files may be stored by us according to the
+    Cookie Policy.
+    </p>
+    <p class="policy__text">
+    You acknowledge that information and materials placed on the Site
+    pages may contain inaccuracies or errors. If they do, we state that
+    they are put there neither on purpose, nor deliberately. We
+    expressly exclude liability for any such inaccuracies or errors to
+    the fullest extent permitted by law. We do not guarantee as to the
+    accuracy, timeliness, performance, completeness or suitability of
+    the information and materials found or offered on the Site for any
+    particular purpose.
+    </p>
+    <p class="policy__text">
+    Your use of any information on the Site is entirely at your own
+    risk, for which we shall not be liable. It shall be your own
+    responsibility to ensure that any product selled in our online store
+    meets your specific requirements.
+    </p>
+    <p class="policy__text">
+    Materials from the Site which include, but are not limited to, the
+    design, layout, look, appearance and graphics, are owned by us.
+    Reproduction is prohibited. All the copyrights reserved.
+    </p>
+    <p class="policy__text">
+    You may not frame the Site nor link to a page other than the home
+    page without our express permission in writing.
+    </p>
+    <p class="policy__text">
+    You agree that you shall not send, use, copy, post or allow any
+    posting which is defamatory or obscene within the meaning of the
+    obscene publications act or which is abusive, indecent or in breach
+    of the privacy of any person. You shall not use the Site for any
+    illegal purposes. You agree not to send any unsolicited promotional
+    or advertising material, spam or similar materials or any volume
+    messages that may interfere with the operation of the Site or with
+    the enjoyment of the Site by other visitors.
+    </p>
+    <p class="policy__text">
+    Unauthorized use of the Site may give rise to a claim for damages
+    and/or be a criminal offense.
+    </p>
+    <p class="policy__text">
+    Individuals under the age of 18 are not permitted to make purchases
+    in our online store. If it is required you should submit your ID
+    documents and proof of your address as it is indicated in a
+    particular request.
+    </p>
+    <p class="policy__text">
+    From time to time the Site may also include links to other websites.
+    These links are provided for your convenience to provide further
+    information. We have no responsibility for the content of the linked
+    website(s).
+    </p>
+    <p class="policy__text">
+    You hereby agree to indemnify us against any costs, claims, losses
+    and damages (including legal fees) incurred by or awarded against us
+    as a result of your misuse of the Site or your breach of these Terms
+    and Conditions.
+    </p>
+    <p class="policy__text">
+    If you are in breach of these Terms and Conditions or of the Privacy
+    policy we may as its option, suspend or block your access to the
+    Site and refuse to provide you with any further access to it.
+    </p>
+    <p class="policy__text">
+    We may modify these Terms and Conditions without notifying you, so
+    please check back often for updates. Any changes made will be
+    available on this page.
+    </p>
+    <p class="policy__text">
+    In the event that any part of these terms contained in the Terms and
+    Conditions shall be determined by any competent authority to be
+    invalid, unlawful or unenforceable to any extent, such term shall to
+    that extent be severed from the remaining terms which shall continue
+    to be valid and enforceable to the fullest extent permitted by law.
+    </p>
+    <p class="policy__text">
+    These Terms and Conditions shall be governed by and construed in
+    accordance with the laws of Estonia. Any dispute arising out of use
+    of the Site is subject to the laws of Estonia.
+    </p>
+    
+    <p class="policy__subtitle">Limitation of Liability</p>
+    <p class="policy__text">
+    We are not responsible for the user's losses due to the unlawful
+    actions of third parties, including unauthorized access to the Site
+    under the user’s registration. We are not responsible for damages
+    caused to the User as a result of disclosure to third parties
+    credentials required for access to the Site not due to the fault of
+    us.
+    </p>
+    <p class="policy__text">
+    We are not liable if the product purchased was not delivered to the
+    player due to technical problems on the Minecraft’s side.
+    </p>
+    <p class="policy__text">
+    Software and hardware errors like from our side and from your side,
+    leading to the inability to obtain the user's access to the Site
+    and/or our online store, are force majeure, and are the basis for
+    exemption from liability from fulfilling obligations according to
+    the Agreement.
+    </p>
+    <p class="policy__text">
+    Unless another is specified in the Agreement in case of breach of
+    conditions of the Agreement by the user, we may unilaterally refuse
+    to perform the Agreement and to discontinue user's access to the
+    Site. In the event that such a breach has caused damage to third
+    parties, the responsibility for them lies entirely upon the user.
+    </p>
+    <p class="policy__subtitle">Contacts</p>
+    <p class="policy__text">
+    GalaxyGrip OÜ doing business as
+    <strong>Adventures in Minecraft.</strong>
+    </p>
+    <p class="policy__text">Registered number: 16776100</p>
+    <p class="policy__text">
+    Legal address and address for correspondence: Harju maakond,
+    Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.
+    </p>
+    <p class="policy__text">
+    Support team email: galaxy.grip098@gmail.com
+    </p>
+    <p class="policy__text">Telephone number: 37259660269</p>
+    </div>
+    `,
+    cookiePage_contentInnerHTML: `
+    <div class="container">
+    <h1 class="policy__title">COOKIE POLICY</h1>
+    <p class="policy__update">Effective June 29, 2023</p>
+    <h2 class="policy__subtitle">What Is This Cookie Policy for?</h2>
+    <p class="policy__text">
+    This policy describes how Adventures in Minecraft uses cookies and
+    other related technologies (collectively referred to as “cookies'')
+    when you interact with us on
+    <a href="/">https://adventuresinminecraft.com/kz</a> (the
+    “Site”). The Site is owned by GalaxyGrip OÜ - a company registered
+    according to legislation of Estonia with its registered number
+    16776100, whose registered address is Harju maakond, Tallinn,
+    Lasnamäe linnaosa, Katusepapi tn 6-502, 11412 (further “we”, “us”,
+    “our”).
+    </p>
+    <p class="policy__text">
+    By visiting or using the Site, you agree that we can use the cookies
+    described in this Cookie Policy. You can stop or update your cookie
+    preferences by changing the settings in your browser. We may modify
+    this Cookie Policy without notifying you, so please check back often
+    for updates.
+    </p>
+    
+    <p class="policy__subtitle">What Are Cookies?</p>
+    <p class="policy__text">
+    Cookies are small text files containing a string of characters that
+    can be downloaded to your browsing device (such as a computer or
+    smartphone) when you visit a website. Cookies can be recognized by
+    the website that downloaded them, or by other websites that use the
+    same cookies.
+    </p>
+    
+    <p class="policy__subtitle">What Are Cookies Used for?</p>
+    <p class="policy__text">
+    Cookies allow a site or services to know if your computer or device
+    has visited that site or service before. Cookies can then be used to
+    help understand how the site or service is being used, help you
+    navigate between pages efficiently, help remember your preferences,
+    and generally improve your browsing experience. Cookies can also
+    help ensure marketing you see online is more relevant to you and
+    your interests.
+    </p>
+    
+    <p class="policy__subtitle">What Types of Cookies Do We Use?</p>
+    <p class="policy__text">
+    Generally we use four categories of cookies: Strictly Necessary,
+    Performance, Functionality, and Targeting. You are welcome to find
+    out more about each cookie type in the following sections.
+    </p>
+    
+    <p class="policy__text">
+    <strong>Strictly Necessary Cookies</strong> are essential, as they
+    enable you to move around the Site and use its features, such as
+    accessing logged in or secure areas. These cookies cannot be
+    switched off in our Site, because they are necessary for Site
+    functionality. While you can set your browser to block or alert you
+    about these cookies, some or all parts of the Site may not function.
+    </p>
+    <p class="policy__text">
+    <strong>Performance Cookies</strong> collect information about how
+    you have used the site, for example, which pages you have looked at
+    and for how long or if you get error messages from certain pages.
+    These cookies gather only aggregated or anonymous information that
+    does not identify you.
+    </p>
+    <p class="policy__text">
+    <strong>Functionality Cookies</strong> allow us to remember choices
+    you make (for example, the region you are in, your language
+    preferences, and do you opt not to see ads) how and when you’re
+    logged in and out, and allow us to tailor the Site to provide
+    enhanced features and content for you.
+    </p>
+    <p class="policy__text">
+    <strong>Targeting Cookies</strong> are used to deliver
+    advertisements that are more relevant to you and your interests.
+    They are also used to limit the number of times you see an
+    advertisement as well as help measure the effectiveness of an
+    advertising campaign. They remember that you have visited the Site
+    and this information may be shared with other organizations such as
+    advertisers. This means after you have been to the Site you may see
+    some advertisements about our services elsewhere on the Internet.
+    These cookies can remember that your device has visited the Site or
+    service and may also be able to track your device’s browsing
+    activity on other sites.
+    </p>
+    
+    <p class="policy__subtitle">
+    How Long Will Cookies Stay on Your Browsing Device?
+    </p>
+    <p class="policy__text">
+    The length of time a cookie will stay on your browsing device
+    depends on whether it is a “persistent” or “session” cookie. Session
+    cookies will only stay on your device until you stop browsing.
+    Persistent cookies stay on your browsing device until they expire or
+    are deleted.
+    </p>
+    
+    <p class="policy__subtitle">How to Control and Delete Cookies?</p>
+    <p class="policy__text">
+    The browser you are using to view the Site can enable, disable or
+    delete cookies. To do this, follow the instructions provided by your
+    browser. Please note that if you set your browser to disable
+    cookies, you may not be able to access some parts of the Site. You
+    are welcome to find out more information about how to change your
+    browser cookie settings at
+    <a href="www.allaboutcookies.org">www.allaboutcookies.org</a>.
+    </p>
+    <p class="policy__subtitle">Contacting Us</p>
+    <p class="policy__text">
+    If you have any questions about this Cookie Policy, please contact
+    us by mail addressed to GalaxyGrip OÜ: Harju maakond, Tallinn,
     Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.
     </p>
     </div>

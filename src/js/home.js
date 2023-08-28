@@ -23,7 +23,6 @@ import {
   SHOP_ITEM_TIME_USAGE,
   SHOP_ITEM_TYPES,
 } from "./contants/constants.js";
-import { getActiveLocale } from "./services/languageLocalization.js";
 import { getLanguageFromURLWithoutEN } from "./utils/language.js";
 
 // Constants

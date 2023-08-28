@@ -187,4 +187,144 @@ export const errorsLanguageLocalizations = {
       "Продолжительность не может быть изменена для данного предмета.",
     ITEM_DURATION_SUCCESS: "Продолжительность была изменена.",
   },
+  uk: {
+    // USER
+    USER_SHOULD_LOGIN_FIRST: "Спочатку потрібно увійти в систему.",
+    USER_EXISTS_ERROR:
+      "Користувач з такою адресою електронної пошти уже існує.",
+    USER_REGISTERED_SUCCESS: "Користувач успішно зареєстрований.",
+
+    NO_ACTIVE_ORDER_ERROR: "Немає активного замовлення.",
+
+    ACTIVE_CODE_INCORRECT:
+      "Активний обліковий запис з вказаними обліковими даними не знайдено.",
+    FIELD_NOT_EMPTY_ERROR: "Це поле не може бути порожнім.",
+
+    USER_VALID_NICKNAME_ERROR: "Введіть дійсний псевдонім.",
+
+    VALID_EMAIL_ERROR: "Введіть дійсну адресу електронної пошти.",
+    WRONG_EMAIL_CODE_ERROR: "Неправильний код електронної пошти!",
+    INCORRECT_OLD_PASSWORDS_ERROR: "Неправильний старий пароль.",
+    PASSWORDS_NOT_MATCHED_ERROR: "Паролі не співпадають.",
+    PASSWORD_CHANGED_SUCCESS: "Пароль успішно змінений.",
+    EMAIL_CODE_MIN_CHARACTERS_ERROR:
+      "Переконайтеся, що це поле містить принаймні 6 символів.",
+    EMAIL_CODE_MAX_CHARACTERS_ERROR:
+      "Переконайтеся, що це поле містить не більше 6 символів.",
+
+    VALID_PASSWORDS_ERROR: "Паролі не співпадають.",
+    PASSWORD_MIN_CHARACTERS_ERROR:
+      "Переконайтеся, що це поле містить принаймні 4 символи.",
+    PASSWORD_MAX_CHARACTERS_ERROR:
+      "Переконайтеся, що це поле містить не більше 24 символів.",
+
+    // ITEM
+    ITEM_ADDED_TO_CART_SUCCESS: "Предмет успішно доданий до кошика.",
+    ITEM_ADDED_TO_CART_ERROR: "Предмет вже додано до кошика.",
+    ITEM_ADDED_TO_CART_CURRENCY_ERROR:
+      "Неможливо додати товар до кошика з різними валютами. Спочатку видаліть наявну або змініть валюту.",
+    ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
+      `Предмет ‹‹${name}›› вже додано до кошика.`,
+    ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
+      `Предмет ‹‹${name}›› успішно додано до кошика.`,
+    ITEM_DELETED_FROM_CART_SUCCESS: "Предмет успішно видалено з кошика.",
+
+    ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR: "Кількість не може бути змінена.",
+    ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:
+      "Кількість не може бути більше одного.",
+    ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR:
+      "Кількість не може бути менше одного.",
+    ITEM_AMOUNT_CHANGED_SUCCESS: "Кількість було змінено.",
+
+    ITEM_DURATION_ERROR: "Тривалість не може бути змінена для даного предмета.",
+    ITEM_DURATION_SUCCESS: "Тривалість була змінена.",
+  },
+  es: {
+    NO_ACTIVE_ORDER_ERROR: "No hay una orden activa.",
+
+    ACTIVE_CODE_INCORRECT:
+      "No se encontró una cuenta activa con las credenciales proporcionadas.",
+    FIELD_NOT_EMPTY_ERROR: "Este campo no puede estar vacío.",
+
+    USER_VALID_NICKNAME_ERROR: "Ingresa un apodo válido.",
+
+    VALID_EMAIL_ERROR: "Ingresa una dirección de correo electrónico válida.",
+    WRONG_EMAIL_CODE_ERROR: "Código de correo electrónico incorrecto.",
+    INCORRECT_OLD_PASSWORDS_ERROR: "Contraseñas antiguas incorrectas.",
+    PASSWORDS_NOT_MATCHED_ERROR: "Las contraseñas no coinciden.",
+    PASSWORD_CHANGED_SUCCESS: "Contraseña cambiada exitosamente.",
+    EMAIL_CODE_MIN_CHARACTERS_ERROR:
+      "Asegúrate de que este campo contenga al menos 6 caracteres.",
+    EMAIL_CODE_MAX_CHARACTERS_ERROR:
+      "Asegúrate de que este campo contenga como máximo 6 caracteres.",
+
+    VALID_PASSWORDS_ERROR: "Las contraseñas no coinciden.",
+    PASSWORD_MIN_CHARACTERS_ERROR:
+      "Asegúrate de que este campo contenga al menos 4 caracteres.",
+    PASSWORD_MAX_CHARACTERS_ERROR:
+      "Asegúrate de que este campo contenga como máximo 24 caracteres.",
+
+    // ITEM
+    ITEM_ADDED_TO_CART_SUCCESS: "Elemento agregado al carrito exitosamente.",
+    ITEM_ADDED_TO_CART_ERROR: "El elemento ya ha sido agregado al carrito.",
+    ITEM_ADDED_TO_CART_CURRENCY_ERROR:
+      "No se puede agregar un elemento al carrito con diferentes monedas. Primero elimine los existentes o cambie la moneda.",
+    ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
+      `El elemento ‹‹${name}›› ya ha sido agregado al carrito.`,
+    ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
+      `El elemento ‹‹${name}›› ha sido agregado al carrito exitosamente.`,
+    ITEM_DELETED_FROM_CART_SUCCESS:
+      "Elemento eliminado del carrito exitosamente.",
+
+    ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR:
+      "La cantidad no puede ser modificada.",
+    ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:
+      "La cantidad no puede ser mayor a uno.",
+    ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR:
+      "La cantidad no puede ser menor a uno.",
+    ITEM_AMOUNT_CHANGED_SUCCESS: "La cantidad ha sido modificada.",
+
+    ITEM_DURATION_ERROR:
+      "La duración no puede ser modificada para este elemento.",
+    ITEM_DURATION_SUCCESS: "La duración ha sido modificada.",
+  },
+  kz: {
+    USER_SHOULD_LOGIN_FIRST: "Бірінші рет жүйеге кіріңіз.",
+    USER_EXISTS_ERROR:
+      "Мұндай электрондық пошта мекенжайы бар пайдаланушы әлде жасалды.",
+    USER_REGISTERED_SUCCESS: "Пайдаланушы сәтті тіркелді.",
+    NO_ACTIVE_ORDER_ERROR: "Жетістік жоқ.",
+    ACTIVE_CODE_INCORRECT:
+      "Көрсетілген кіру деректеріне ие активті есептік жазба табылмады.",
+    FIELD_NOT_EMPTY_ERROR: "Бұл жол бос болмауы керек.",
+    USER_VALID_NICKNAME_ERROR: "Дұрыс атау теріңіз.",
+    VALID_EMAIL_ERROR: "Дұрыс электрондық пошта мекенжайын енгізіңіз.",
+    WRONG_EMAIL_CODE_ERROR: "Қате электрондық пошта коды!",
+    INCORRECT_OLD_PASSWORDS_ERROR: "Қате ескі құпия сөз.",
+    PASSWORDS_NOT_MATCHED_ERROR: "Құпия сөздер сәйкес келмейді.",
+    PASSWORD_CHANGED_SUCCESS: "Құпия сөз сәтті түзетілді.",
+    EMAIL_CODE_MIN_CHARACTERS_ERROR: "Бұл жолда ен аз 6 таңба болуы керек.",
+    EMAIL_CODE_MAX_CHARACTERS_ERROR:
+      "Бұл жолда ен артық 6 таңба болмауы керек.",
+    VALID_PASSWORDS_ERROR: "Құпия сөздер сәйкес келмейді.",
+    PASSWORD_MIN_CHARACTERS_ERROR: "Бұл жолда ен аз 4 таңба болуы керек.",
+    PASSWORD_MAX_CHARACTERS_ERROR: "Бұл жолда ен артық 24 таңба болмауы керек.",
+    ITEM_ADDED_TO_CART_SUCCESS: "Элемент сәтті себетке қосылды.",
+    ITEM_ADDED_TO_CART_ERROR: "Элемент уже себетке қосылды.",
+    ITEM_ADDED_TO_CART_CURRENCY_ERROR:
+      "Тапсырысқа різді валюта алу мүмкін емес. Алдымен сураныс бар немесе валютаны өзгертіңіз.",
+    ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
+      `Элемент "${name}" бұрыннан себетке қосылды.`,
+    ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
+      `Элемент "${name}" сәтті себетке қосылды.`,
+    ITEM_DELETED_FROM_CART_SUCCESS: "Элемент сәтті себеттен жойылды.",
+    ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR: "Саны өзгертілу мүмкін емес.",
+    ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:
+      "Сан бірден аспауы мүмкін емес.",
+    ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR:
+      "Сан бірнен кем болмауы мүмкін емес.",
+    ITEM_AMOUNT_CHANGED_SUCCESS: "Сан өзгертілді.",
+    ITEM_DURATION_ERROR: "Мерзімділік осы элементте өзгертіле алмайды.",
+    ITEM_DURATION_SUCCESS: "Мерзімділік өзгертілді.",
+  },
 };

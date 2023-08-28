@@ -1,0 +1,305 @@
+{
+    "domain": "https://adventuresinminecraft.com",
+    "home_metadate_title": "Үй | Adventures In Minecraft Server",
+    "home_metadate_description": "Басты бет в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "metadate_og_locale": "kz",
+    "metadate_og_type": "веб-сайт",
+    "metadate_og_contact_title": "Контактілер | Adventures In Minecraft Server",
+    "metadate_og_contact_description": "РљРѕРЅС‚Р°РєС‚С‹ в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ… РџРѕРєСѓРїРєР° РґРѕРЅР°С‚Р° Рё РїСЂРёРІРёР»РµРіРёР№ РЅР° СЃРµСЂРІРµСЂРµ РјР°Р№РЅРєСЂР°С„С‚",
+    "donate_description_metadate_title": "Қайырымдылық сипаттамасы | Adventures In Minecraft Server",
+    "donate_description_metadate_description": "Қайырымдылық сипаттамасы в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "faq_metadate_title": "ЖҚС | Adventures In Minecraft Server",
+    "faq_metadate_description": "ЖҚС в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "launcher_download_metadate_title": "Іске қосушылар | Adventures In Minecraft Server",
+    "launcher_download_metadate_description": "Launchers в‘пёЏ 195.201.168.105 Adventures in Minecraft вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "login_metadate_title": "Кіру | Adventures In Minecraft Server",
+    "login_metadate_description": "Кіру в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "registration_metadate_title": "Тіркеу | Adventures In Minecraft Server",
+    "registration_metadate_description": "Тіркеу в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "mods_metadate_title": "Модтар | Adventures In Minecraft Server",
+    "mods_metadate_description": "Модтар в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "order_history_metadate_title": "Тапсырыс тарихы | Adventures In Minecraft Server",
+    "order_history_metadate_description": "Тапсырыс тарихы в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "product_metadate_title": "Minecraft серверіндегі Adventures қолданбасында жеке {product_name} күйін алыңыз",
+    "product_metadate_description": "Майнкрафттағы Adventures жобасындағы {product_name} дәрежесі мен жұрнағына қол жеткізіңіз вњ... Біздің minecraft серверімізде артықшылықтар жағдайлары кілттерін сатып алу в‘пёЏ 195.201.168.105 вњ…",
+    "rules_metadate_title": "Ережелер | Adventures In Minecraft Server",
+    "rules_metadate_description": "Ережелер в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "starting_tips_metadate_title": "Бастау бойынша кеңестер | Adventures In Minecraft Server",
+    "starting_tips_metadate_description": "Бастау бойынша кеңестер в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "success_payment_metadate_title": "Сәтті төлем | Adventures In Minecraft Server",
+    "success_payment_metadate_description": "Сәтті төлем в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "decline_payment_metadate_title": "Төлемнен бас тарту | Adventures In Minecraft Server",
+    "decline_payment_metadate_description": "Төлемнен бас тарту в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "404_metadate_title": "Бет табылмады | Adventures In Minecraft Server",
+    "404_metadate_description": "Табылмады бет в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "mods_1122_metadate_title": "1.12.2 | Adventures In Minecraft Server",
+    "mods_1122_metadate_description": "1.12.2 в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "mods_1122_cars_metadate_title": "1.12.2 (Автомобильдер) | Adventures In Minecraft Server",
+    "mods_1122_cars_metadate_description": "1.12.2 (Автомобильдер) в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "mods_1122_pe_metadate_title": "Minecraft PE 1.12.2 | Adventures In Minecraft Server",
+    "mods_1122_pe_metadate_description": "Minecraft PE 1.12.2 в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "mods_1122_oruzhie_metadate_title": "1.12.2 (Оружи) | Adventures In Minecraft Server",
+    "mods_1122_oruzhie_metadate_description": "1.12.2 (Oruzhie) в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "mods_1165_metadate_title": "1.16.5 | Adventures In Minecraft Server",
+    "mods_1165_metadate_description": "1.16.5 в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "mods_journeymap_mod_metadate_title": "Саяхат картасы мод | Adventures In Minecraft Server",
+    "mods_journeymap_mod_metadate_description": "Саяхат картасы Mod в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "canonical_home_href": "/kz",
+    "canonical_404_href": "/kz/pages/404",
+    "canonical_cart_href": "/kz/pages/cart-page",
+    "canonical_change_password_href": "/kz/pages/change-password",
+    "canonical_contact_href": "/kz/pages/contact",
+    "canonical_donate_privileges_href": "/kz/pages/donate-privileges",
+    "canonical_donate_description_href": "/kz/pages/donate-description",
+    "canonical_exit_confirmation_page_href": "/kz/pages/exit-confirmation-page",
+    "canonical_faq_href": "/kz/pages/faq",
+    "canonical_launcher_download_href": "/kz/pages/launcher-download",
+    "canonical_login_href": "/kz/pages/login",
+    "canonical_mods_href": "/kz/pages/mods",
+    "canonical_mods_1122_href": "/kz/pages/mods/1122",
+    "canonical_mods_1122_cars_href": "/kz/pages/mods/1122/cars",
+    "canonical_mods_1122_pe_href": "/kz/pages/mods/1122/minecraft-pe-1-12-2",
+    "canonical_mods_1122_oruzhie_href": "/kz/pages/mods/1122/oruzhie",
+    "canonical_mods_journeymap_mod_href": "/kz/pages/mods/journeymap-mod",
+    "canonical_mods_1165_href": "/kz/pages/mods/1165",
+    "canonical_order_history_href": "/kz/pages/order-history-page",
+    "canonical_product_href": "/kz/pages/product",
+    "canonical_registration_href": "/kz/pages/registration",
+    "canonical_rules_href": "/kz/pages/rules",
+    "canonical_starting_tips_href": "/kz/pages/starting-tips",
+    "canonical_success_payment_href": "/kz/pages/success-payment",
+    "canonical_decline_payment_href": "/kz/pages/decline-payment",
+    "canonical_team_href": "/kz/pages/team",
+    "home_page_url": {
+        "en": "/",
+        "ru": "/kz"
+    },
+    "mods_page_url": {
+        "en": "/pages/mods",
+        "ru": "/kz/pages/mods"
+    },
+    "mods_1122_page_url": {
+        "en": "/pages/mods/1122",
+        "ru": "/kz/pages/mods/1122"
+    },
+    "mods_1122_cars_page_url": {
+        "en": "/pages/mods/1122/cars",
+        "ru": "/kz/pages/mods/1122/cars"
+    },
+    "mods_1122_pe_page_url": {
+        "en": "/pages/mods/1122/minecraft-pe-1-12-2",
+        "ru": "/kz/pages/mods/1122/minecraft-pe-1-12-2"
+    },
+    "mods_1122_oruzhie_page_url": {
+        "en": "/pages/mods/1122/oruzhie",
+        "ru": "/kz/pages/mods/1122/oruzhie"
+    },
+    "mods_journeymap_mod_page_url": {
+        "en": "/pages/mods/journeymap-mod",
+        "ru": "/kz/pages/mods/journeymap-mod"
+    },
+    "mods_1165_page_url": {
+        "en": "/pages/mods/1165",
+        "ru": "/kz/pages/mods/1165"
+    },
+    "product_page_url": {
+        "en": "/pages/product",
+        "ru": "/kz/pages/product"
+    },
+    "launcher_download_page_url": {
+        "en": "/pages/launcher-download",
+        "ru": "/kz/pages/launcher-download"
+    },
+    "404_page_url": {
+        "en": "/pages/404",
+        "ru": "/kz/pages/404"
+    },
+    "rules_page_url": {
+        "en": "/pages/rules",
+        "ru": "/kz/pages/rules"
+    },
+    "faq_page_url": {
+        "en": "/pages/faq",
+        "ru": "/kz/pages/faq"
+    },
+    "login_page_url": {
+        "en": "/pages/login",
+        "ru": "/kz/pages/login"
+    },
+    "order_history_page_url": {
+        "en": "/pages/order-history-page",
+        "ru": "/kz/pages/order-history-page"
+    },
+    "registration_page_url": {
+        "en": "/pages/registration",
+        "ru": "/kz/pages/registration"
+    },
+    "contact_page_url": {
+        "en": "/pages/contact",
+        "ru": "/kz/pages/contact"
+    },
+    "starting_tips_page_url": {
+        "en": "/pages/starting-tips",
+        "ru": "/kz/pages/starting-tips"
+    },
+    "donation_page_url": {
+        "en": "/pages/donation-description",
+        "ru": "/kz/pages/donation-description"
+    },
+    "donate_priv_page_url": {
+        "en": "/pages/donate-privileges",
+        "ru": "/kz/pages/donate-privileges"
+    },
+    "change_password_page_url": {
+        "en": "/pages/change-password-page",
+        "ru": "/kz/pages/change-password-page"
+    },
+    "cart_page_url": {
+        "en": "/pages/cart-page",
+        "ru": "/kz/pages/cart-page"
+    },
+    "team_page_url": {
+        "en": "/pages/team",
+        "ru": "/kz/pages/team"
+    },
+    "success_payment_page_url": {
+        "en": "/pages/success_payment",
+        "ru": "/kz/pages/success_payment"
+    },
+    "decline_payment_page_url": {
+        "en": "/pages/decline_payment",
+        "ru": "/kz/pages/decline_payment"
+    },
+    "exit_confirmation_page_url": {
+        "en": "/pages/exit-confirmation-page",
+        "ru": "/kz/pages/exit-confirmation-page"
+    },
+    "privacy_link": {
+        "en": "/pages/privacy-policy",
+        "ru": "/kz/pages/privacy-policy"
+    },
+    "cookie_link": {
+        "en": "/pages/cookie-policy",
+        "ru": "/kz/pages/cookie-policy"
+    },
+    "terms_conditions_link": {
+        "en": "/pages/terms-and-conditions/",
+        "ru": "/kz/pages/terms-and-conditions/"
+    },
+    "meta_cart_title": "Арба | Adventures In Minecraft Server",
+    "meta_cart_desc": "Арба в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "meta_change_password_title": "Парольді өзгерту | Adventures In Minecraft Server",
+    "meta_change_password_desc": "Құпия сөзді өзгерту в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "meta_contact_title": "Контактілер | Adventures In Minecraft Server",
+    "meta_contact_desc": "Байланыстар в‘пёЏ 195.201.168.105 Minecraft-тағы оқиғалар вњ... Біздің minecraft серверімізде артықшылықтар жағдайларының кілттерін сатып алу",
+    "meta_donate_privileges_title": "Артықшылықтарды беру | Adventures In Minecraft Server",
+    "meta_donate_privileges_desc": "Артықшылықтарды сыйға тарту в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "meta_donation_title": "Қайырымдылық сипаттамасы | Adventures In Minecraft Server",
+    "meta_donation_desc": "Қайырымдылық сипаттамасы в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "meta_exit_confirmation_title": "Шығуды растау | Adventures In Minecraft Server",
+    "meta_exit_confirmation_desc": "Шығуды растау в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "meta_faq_title": "ЖҚС | Adventures In Minecraft Server",
+    "meta_faq_desc": "ЖҚС в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "meta_launcher_download_title": "Іске қосушылар | Adventures In Minecraft Server",
+    "meta_launcher_download_desc": "Launchers в‘пёЏ 195.201.168.105 Adventures in Minecraft вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "meta_login_title": "Кіру | Adventures In Minecraft Server",
+    "meta_login_desc": "Кіру в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "meta_mods_title": "Модтар | Adventures In Minecraft Server",
+    "meta_mods_desc": "Модтар в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "meta_order_history_title": "Тапсырыс тарихы | Adventures In Minecraft Server",
+    "meta_order_history_desc": "Тапсырыс тарихы в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "meta_registration_title": "Тіркеу | Adventures In Minecraft Server",
+    "meta_registration_desc": "Тіркелу в‘пёЏ ${serverIP} Minecraft-тағы Adventures вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "meta_rules_title": "Ережелер | Adventures In Minecraft Server",
+    "meta_rules_desc": "Ережелер в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "meta_starting_tips_title": "Бастау бойынша кеңестер | Adventures In Minecraft Server",
+    "meta_starting_tips_desc": "Бастау бойынша кеңестер в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "meta_success_payment_title": "Сәтті төлем | Adventures In Minecraft Server",
+    "meta_success_payment_desc": "Сәтті төлем в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "meta_decline_payment_title": "Төлемнен бас тарту | Adventures In Minecraft Server",
+    "meta_decline_payment_desc": "Төлемнен бас тарту в‘пёЏ 195.201.168.105 Minecraft-тағы шытырман оқиғалар вњ... Біздің minecraft серверінде артықшылықтар жағдайларының кілттерін сатып алу",
+    "meta_product_title": "Adventures In Minecraft Serverда өз мәртебеңізді алыңыз",
+    "meta_product_desc": "Майнкрафттағы Adventures жобасындағы дәреже мен жұрнаққа қол жеткізіңіз «... Біздің minecraft серверімізде артықшылықтар жағдайларының кілттерін сатып алу в‘пёЏ 195.201.168.105 в…",
+    "meta_privacy_title": "Құпиялылық саясаты",
+    "meta_cookie_title": "Cookie саясаты",
+    "meta_terms_conditions_title": "Ережелер мен шарттар",
+    "header_link_1": "/kz",
+    "header_link_2": "/kz/pages/rules",
+    "header_link_3": "/kz/pages/donation-description",
+    "header_link_4": "/kz/pages/faq",
+    "header_link_5": "/kz/pages/starting-tips",
+    "header_link_6": "/kz/pages/contact",
+    "header_link_7": "/kz/pages/login",
+    "header_link_8": "/kz/pages/registration",
+    "header_link_9": "/kz/pages/order-history-page",
+    "header_link_10": "/kz/pages/change-password-page",
+    "header_link_11": "/kz/pages/exit-confirmation-page",
+    "header_link_12": "/kz/pages/cart-page",
+    "footer_link_1": "/kz",
+    "footer_link_2": "/kz/pages/rules",
+    "footer_link_3": "/kz/pages/donation-description",
+    "footer_link_4": "/kz/pages/contact",
+    "footer_link_5": "/kz/pages/faq",
+    "footer_link_6": "/kz/pages/starting-tips",
+    "footer_link_7": "/kz/pages/launcher-download",
+    "footer_link_8": "/kz/pages/mods",
+    "footer_link_9": "/kz/pages/privacy-policy",
+    "footer_link_10": "/kz/pages/cookie-policy",
+    "footer_link_11": "/kz/pages/terms-and-conditions",
+    "product_page_name": "Өнім",
+    "productPage__desc": "Өнім Сипаттамасы:",
+    "header_component": "/ ---- /",
+    "header_shop": "Дүкен",
+    "header_rules": "Ережелер",
+    "header_donate": "Қайырымдылық сипаттамасы",
+    "header_faq": "ЖИІ ҚОЙЫЛАТЫН СҰРАҚТАР",
+    "header_how_to_play": "Ойнауды қалай бастау керек?",
+    "header_contacts": "Байланыстар",
+    "header_enter": "Кіру",
+    "header_signup": "Тіркелу",
+    "header_orders_history": "Тапсырыс тарихы",
+    "header_change_password": "Құпия сөзді өзгерту",
+    "header_logout": "Шығу",
+    "footer_component": "/ ---- /",
+    "footer_store": "Дүкен",
+    "footer_rules": "Ережелер",
+    "footer_donate": "Қайырымдылық сипаттамасы",
+    "footer_contacts": "Байланыстар",
+    "footer_faq": "ЖИІ ҚОЙЫЛАТЫН СҰРАҚТАР",
+    "footer_how_to_start": "Ойнауды қалай бастау керек?",
+    "footer_donate_rules": "Қайырымдылық жеңілдіктері",
+    "footer_launchers": "Іске қосушылар",
+    "footer_team": "Команда",
+    "footer_mods": "Модтар",
+    "footer_privacy": "Құпиялылық саясаты",
+    "footer_cookie": "Cookie саясаты",
+    "footer_terms_and_conditions": "Ережелер мен шарттар",
+    "footer_copiryted": "В© 2023 Adventures in Minecraft - барлық құқықтар қорғалған. Веб-сайт GalaxyGrip OГњ компаниясына тиесілі және оны басқарады, Эстония Республикасының заңымен тіркелген, компания нөмірі 16776100, тіркелген мекенжайы: Харжу Мааконд, Таллин, ЛаснамГе линнаоса, Катусепапит 6-502, 11412.",
+    "/ ----- login_page ----- /": "",
+    "login_forgot_password": "Құпия сөзді ұмыттыңыз ба?",
+    "login_title_forgot_password": "Құпия сөзді калпына келтіру",
+    "login_send_btn_forgot_password": "Код жіберу",
+    "login_send_btn_forgot_password_change": "Құпия сөзді ауыстыру",
+    "login_change_password_code_placeholder": "Сіздің кодыңыз",
+    "/ ----- home_page ----- /": "",
+    "home_title": "Minecraft әлемін ашыңыз",
+    "home_survival": "Тірі қалу",
+    "home_anarchy": "Анархия",
+    "home_server_monitoring_text": "Қазір ойнап жатыр",
+    "home_server_monitoring_status": "Сервер күйі",
+    "home_price_sort": "Бағасы бойынша сұрыптау",
+    "home_price_sort_asc": "Арзаннан қымбатқа",
+    "home_price_sort_desc": "Қымбаттан арзанға",
+    "/ ----- contact_page ----- /": "",
+    "contact_title": "Байланыстар",
+    "contact_text": "Сұрақтарыңыз болса, бізге хабарласыңыз:",
+    "contact_telegram": "Телеграмма",
+    "/ ----- change_password ----- /": "",
+    "change_password_first_step_title": "Құпия сөзді өзгерту үшін \" түймесін басыңыз.Change Password\" түймесі. Электрондық поштаңызға сілтеме жіберіледі, оны басыңыз және жаңа құпия сөзді енгізіңіз",
+    "change_password_title": "Құпия сөзді өзгерту",
+    "change_password_text": "Жаңа құпия сөзді енгізіңіз",
+    "change_password_button": "Құпия сөзді өзгерту",
+    "change_password_oldPasswordPlaceholder": "Ескі Құпия сөз",
+    "change_password_newPasswordPlaceholder": "Жаңа Құпия Сөз",
+    "change_password_repeatPasswordPlaceholder": "Құпия сөзді қайталаңы"
+}
