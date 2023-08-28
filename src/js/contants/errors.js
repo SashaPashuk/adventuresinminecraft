@@ -375,4 +375,89 @@ export const errorsLanguageLocalizations = {
       "Czas trwania nie może być zmieniony dla tego przedmiotu.",
     ITEM_DURATION_SUCCESS: "Czas trwania został zmieniony.",
   },
+  tr: {
+    NO_ACTIVE_ORDER_ERROR: "Aktif bir sipariş bulunmamaktadır.",
+
+    ACTIVE_CODE_INCORRECT:
+      "Verilen kimlik doğrulama bilgilerine sahip aktif bir hesap bulunamadı.",
+    FIELD_NOT_EMPTY_ERROR: "Bu alan boş olamaz.",
+
+    USER_VALID_NICKNAME_ERROR: "Geçerli bir takma ad girin.",
+
+    VALID_EMAIL_ERROR: "Geçerli bir e-posta adresi girin.",
+    WRONG_EMAIL_CODE_ERROR: "Yanlış e-posta kodu!",
+    INCORRECT_OLD_PASSWORDS_ERROR: "Hatalı eski şifreler.",
+    PASSWORDS_NOT_MATCHED_ERROR: "Şifreler eşleşmiyor.",
+    PASSWORD_CHANGED_SUCCESS: "Şifre başarıyla değiştirildi.",
+    EMAIL_CODE_MIN_CHARACTERS_ERROR:
+      "Bu alanın en az 6 karakter içermesinden emin olun.",
+    EMAIL_CODE_MAX_CHARACTERS_ERROR:
+      "Bu alanın en fazla 6 karakter içermemesinden emin olun.",
+
+    VALID_PASSWORDS_ERROR: "Şifreler eşleşmiyor.",
+    PASSWORD_MIN_CHARACTERS_ERROR:
+      "Bu alanın en az 4 karakter içermesinden emin olun.",
+    PASSWORD_MAX_CHARACTERS_ERROR:
+      "Bu alanın en fazla 24 karakter içermemesinden emin olun.",
+
+    // ITEM
+    ITEM_ADDED_TO_CART_SUCCESS: "Bu öğe başarıyla sepete eklendi.",
+    ITEM_ADDED_TO_CART_ERROR: "Öğe zaten sepete eklendi.",
+    ITEM_ADDED_TO_CART_CURRENCY_ERROR:
+      "Farklı para birimlerine sahip bir öğe sepete eklenemez. Önce mevcut öğeyi kaldırın veya para birimini değiştirin.",
+    ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
+      `Bu öğe ‹‹${name}›› zaten sepete eklendi.`,
+    ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
+      `Bu öğe ‹‹${name}›› başarıyla sepete eklendi.`,
+    ITEM_DELETED_FROM_CART_SUCCESS: "Öğe sepetten silindi.",
+
+    ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR: "Miktar değiştirilemez.",
+    ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:
+      "Miktar bir'den büyük olamaz.",
+    ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR: "Miktar bir'den küçük olamaz.",
+    ITEM_AMOUNT_CHANGED_SUCCESS: "Miktar değiştirildi.",
+
+    ITEM_DURATION_ERROR: "Bu öğenin süresi değiştirilemez.",
+    ITEM_DURATION_SUCCESS: "Süre başarıyla değiştirildi.",
+  },
+  fr: {
+    NO_ACTIVE_ORDER_ERROR: "Aucune commande active n'est en cours.",
+    ACTIVE_CODE_INCORRECT:
+      "Aucun compte actif avec les informations d'identification fournies n'a été trouvé.",
+    FIELD_NOT_EMPTY_ERROR: "Ce champ ne peut pas être vide.",
+    USER_VALID_NICKNAME_ERROR: "Veuillez saisir un surnom valide.",
+    VALID_EMAIL_ERROR: "Veuillez saisir une adresse e-mail valide.",
+    WRONG_EMAIL_CODE_ERROR: "Code e-mail incorrect !",
+    INCORRECT_OLD_PASSWORDS_ERROR: "Anciens mots de passe incorrects.",
+    PASSWORDS_NOT_MATCHED_ERROR: "Les mots de passe ne correspondent pas.",
+    PASSWORD_CHANGED_SUCCESS: "Mot de passe modifié avec succès.",
+    EMAIL_CODE_MIN_CHARACTERS_ERROR:
+      "Veuillez vous assurer que ce champ contient au moins 6 caractères.",
+    EMAIL_CODE_MAX_CHARACTERS_ERROR:
+      "Veuillez vous assurer que ce champ ne contient pas plus de 6 caractères.",
+    VALID_PASSWORDS_ERROR: "Les mots de passe ne correspondent pas.",
+    PASSWORD_MIN_CHARACTERS_ERROR:
+      "Veuillez vous assurer que ce champ contient au moins 4 caractères.",
+    PASSWORD_MAX_CHARACTERS_ERROR:
+      "Veuillez vous assurer que ce champ ne contient pas plus de 24 caractères.",
+    ITEM_ADDED_TO_CART_SUCCESS:
+      "Cet article a été ajouté avec succès au panier.",
+    ITEM_ADDED_TO_CART_ERROR: "L'article a déjà été ajouté au panier.",
+    ITEM_ADDED_TO_CART_CURRENCY_ERROR:
+      "Impossible d'ajouter un article avec une devise différente au panier. Veuillez d'abord supprimer l'article existant ou changer la devise.",
+    ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
+      `Cet article, "${name}", a déjà été ajouté au panier.`,
+    ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
+      `Cet article, "${name}", a été ajouté avec succès au panier.`,
+    ITEM_DELETED_FROM_CART_SUCCESS: "L'article a été supprimé du panier.",
+    ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR:
+      "La quantité ne peut pas être modifiée.",
+    ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:
+      "La quantité ne peut pas être supérieure à un.",
+    ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR:
+      "La quantité ne peut pas être inférieure à un.",
+    ITEM_AMOUNT_CHANGED_SUCCESS: "La quantité a été modifiée.",
+    ITEM_DURATION_ERROR: "La durée de cet article ne peut pas être modifiée.",
+    ITEM_DURATION_SUCCESS: "Durée modifiée avec succès.",
+  },
 };

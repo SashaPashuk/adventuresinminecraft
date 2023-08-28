@@ -1,0 +1,305 @@
+{
+    "domain": "https://adventuresinminecraft.com",
+    "home_metadate_title": "Ana Sayfa | Minecraft Sunucularında Maceralar",
+    "home_metadate_description": "Ana Sayfa в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar вњ… Minecraft sunucumuzda ayrıcalık kasa anahtarlarının satın alınması",
+    "metadate_og_locale": "tr",
+    "metadate_og_type": "İnternet sitesi",
+    "metadate_og_contact_title": "Kişiler | Minecraft Sunucusundaki Maceralar",
+    "metadate_og_contact_description": "РљРѕРЅС‚Р°РєС‚С‹ в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ… РџРѕРєСѓРїРєР° РґРѕРЅР°С‚Р° Рё РїСЂРёРІРёР»РµРіРёР№ РЅР° СЃРµСЂРІРµСЂРµ РјР°Р№РЅРєСЂР°С„С‚",
+    "donate_description_metadate_title": "Bağış Açıklaması | Minecraft Sunucusundaki Maceralar",
+    "donate_description_metadate_description": "Bağış Açıklaması в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ➚ Minecraft sunucumuzda ayrıcalık kasa anahtarlarının satın alınması",
+    "faq_metadate_title": "SSS | Minecraft Sunucusundaki Maceralar",
+    "faq_metadate_description": "FAQ в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ⇒ Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "launcher_download_metadate_title": "Başlatıcılar | Minecraft Sunucusundaki Maceralar",
+    "launcher_download_metadate_description": "Launchers в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ⚚… Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "login_metadate_title": "Giriş | Minecraft Sunucusunda Maceralar",
+    "login_metadate_description": "Giriş в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ➚ Minecraft sunucumuzda ayrıcalık kasa anahtarlarının satın alınması",
+    "registration_metadate_title": "Kayıt | Minecraft Sunucusundaki Maceralar",
+    "registration_metadate_description": "Kayıt в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar … Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "mods_metadate_title": "Modlar | Minecraft Sunucusunda Maceralar",
+    "mods_metadate_description": "Mods в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ➚ Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "order_history_metadate_title": "Sipariş Geçmişi | Minecraft Sunucusundaki Maceralar",
+    "order_history_metadate_description": "Sipariş Geçmişi в‘пёЏ 195.201.168.105 Minecraft'taki Maceralar ⚚ Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "product_metadate_title": "Adventures In Minecraft Server'da kendi {product_name} durumunuzu elde edin",
+    "product_metadate_description": "Minecraft'taki Maceralar projesinde {product_name} rütbesine ve son ekine erişin ...",
+    "rules_metadate_title": "Kurallar | Minecraft Sunucusunda Maceralar",
+    "rules_metadate_description": "Kurallar в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ⇒ Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "starting_tips_metadate_title": "Başlangıç ​​İpuçları | Minecraft Sunucusunda Maceralar",
+    "starting_tips_metadate_description": "Başlangıç ​​İpuçları в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ➚ Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "success_payment_metadate_title": "Başarı Ödemesi | Minecraft Sunucusunda Maceralar",
+    "success_payment_metadate_description": "Başarılı Ödeme в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar… Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "decline_payment_metadate_title": "Ödemeyi Reddet | Minecraft Sunucusunda Maceralar",
+    "decline_payment_metadate_description": "Ödemeyi Reddet в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ⚚… Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "404_metadate_title": "Sayfa Bulunamadı | Minecraft Sunucusundaki Maceralar",
+    "404_metadate_description": "Bulunamadı Sayfa в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ➚ Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "mods_1122_metadate_title": "1.12.2 | Minecraft Sunucusunda Maceralar",
+    "mods_1122_metadate_description": "1.12.2 в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar … Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "mods_1122_cars_metadate_title": "1.12.2 (Arabalar) | Minecraft Sunucusunda Maceralar",
+    "mods_1122_cars_metadate_description": "1.12.2 (Arabalar) в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ⇒ Minecraft sunucumuzda ayrıcalık kasa anahtarlarının satın alınması",
+    "mods_1122_pe_metadate_title": "Minecraft PE 1.12.2 | Minecraft Sunucusunda Maceralar",
+    "mods_1122_pe_metadate_description": "Minecraft PE 1.12.2 в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar … Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "mods_1122_oruzhie_metadate_title": "1.12.2 (Oruzhie) | Minecraft Sunucusunda Maceralar",
+    "mods_1122_oruzhie_metadate_description": "1.12.2 (Oruzhie) в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ⇒ Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "mods_1165_metadate_title": "1.16.5 | Minecraft Sunucusunda Maceralar",
+    "mods_1165_metadate_description": "1.16.5 в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ⚚… Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "mods_journeymap_mod_metadate_title": "Yolculuk Haritası Modu | Minecraft Sunucusunda Maceralar",
+    "mods_journeymap_mod_metadate_description": "Yolculuk Haritası Modu в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ⇒ Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "canonical_home_href": "/tr",
+    "canonical_404_href": "/tr/pages/404",
+    "canonical_cart_href": "/tr/pages/cart-page",
+    "canonical_change_password_href": "/tr/pages/change-password",
+    "canonical_contact_href": "/tr/pages/contact",
+    "canonical_donate_privileges_href": "/tr/pages/donate-privileges",
+    "canonical_donate_description_href": "/tr/pages/donate-description",
+    "canonical_exit_confirmation_page_href": "/tr/pages/exit-confirmation-page",
+    "canonical_faq_href": "/tr/pages/faq",
+    "canonical_launcher_download_href": "/tr/pages/launcher-download",
+    "canonical_login_href": "/tr/pages/login",
+    "canonical_mods_href": "/tr/pages/mods",
+    "canonical_mods_1122_href": "/tr/pages/mods/1122",
+    "canonical_mods_1122_cars_href": "/tr/pages/mods/1122/cars",
+    "canonical_mods_1122_pe_href": "/tr/pages/mods/1122/minecraft-pe-1-12-2",
+    "canonical_mods_1122_oruzhie_href": "/tr/pages/mods/1122/oruzhie",
+    "canonical_mods_journeymap_mod_href": "/tr/pages/mods/journeymap-mod",
+    "canonical_mods_1165_href": "/tr/pages/mods/1165",
+    "canonical_order_history_href": "/tr/pages/order-history-page",
+    "canonical_product_href": "/tr/pages/product",
+    "canonical_registration_href": "/tr/pages/registration",
+    "canonical_rules_href": "/tr/pages/rules",
+    "canonical_starting_tips_href": "/tr/pages/starting-tips",
+    "canonical_success_payment_href": "/tr/pages/success-payment",
+    "canonical_decline_payment_href": "/tr/pages/decline-payment",
+    "canonical_team_href": "/tr/pages/team",
+    "home_page_url": {
+        "en": "/",
+        "ru": "/tr"
+    },
+    "mods_page_url": {
+        "en": "/pages/mods",
+        "ru": "/tr/pages/mods"
+    },
+    "mods_1122_page_url": {
+        "en": "/pages/mods/1122",
+        "ru": "/tr/pages/mods/1122"
+    },
+    "mods_1122_cars_page_url": {
+        "en": "/pages/mods/1122/cars",
+        "ru": "/tr/pages/mods/1122/cars"
+    },
+    "mods_1122_pe_page_url": {
+        "en": "/pages/mods/1122/minecraft-pe-1-12-2",
+        "ru": "/tr/pages/mods/1122/minecraft-pe-1-12-2"
+    },
+    "mods_1122_oruzhie_page_url": {
+        "en": "/pages/mods/1122/oruzhie",
+        "ru": "/tr/pages/mods/1122/oruzhie"
+    },
+    "mods_journeymap_mod_page_url": {
+        "en": "/pages/mods/journeymap-mod",
+        "ru": "/tr/pages/mods/journeymap-mod"
+    },
+    "mods_1165_page_url": {
+        "en": "/pages/mods/1165",
+        "ru": "/tr/pages/mods/1165"
+    },
+    "product_page_url": {
+        "en": "/pages/product",
+        "ru": "/tr/pages/product"
+    },
+    "launcher_download_page_url": {
+        "en": "/pages/launcher-download",
+        "ru": "/tr/pages/launcher-download"
+    },
+    "404_page_url": {
+        "en": "/pages/404",
+        "ru": "/tr/pages/404"
+    },
+    "rules_page_url": {
+        "en": "/pages/rules",
+        "ru": "/tr/pages/rules"
+    },
+    "faq_page_url": {
+        "en": "/pages/faq",
+        "ru": "/tr/pages/faq"
+    },
+    "login_page_url": {
+        "en": "/pages/login",
+        "ru": "/tr/pages/login"
+    },
+    "order_history_page_url": {
+        "en": "/pages/order-history-page",
+        "ru": "/tr/pages/order-history-page"
+    },
+    "registration_page_url": {
+        "en": "/pages/registration",
+        "ru": "/tr/pages/registration"
+    },
+    "contact_page_url": {
+        "en": "/pages/contact",
+        "ru": "/tr/pages/contact"
+    },
+    "starting_tips_page_url": {
+        "en": "/pages/starting-tips",
+        "ru": "/tr/pages/starting-tips"
+    },
+    "donation_page_url": {
+        "en": "/pages/donation-description",
+        "ru": "/tr/pages/donation-description"
+    },
+    "donate_priv_page_url": {
+        "en": "/pages/donate-privileges",
+        "ru": "/tr/pages/donate-privileges"
+    },
+    "change_password_page_url": {
+        "en": "/pages/change-password-page",
+        "ru": "/tr/pages/change-password-page"
+    },
+    "cart_page_url": {
+        "en": "/pages/cart-page",
+        "ru": "/tr/pages/cart-page"
+    },
+    "team_page_url": {
+        "en": "/pages/team",
+        "ru": "/tr/pages/team"
+    },
+    "success_payment_page_url": {
+        "en": "/pages/success_payment",
+        "ru": "/tr/pages/success_payment"
+    },
+    "decline_payment_page_url": {
+        "en": "/pages/decline_payment",
+        "ru": "/tr/pages/decline_payment"
+    },
+    "exit_confirmation_page_url": {
+        "en": "/pages/exit-confirmation-page",
+        "ru": "/tr/pages/exit-confirmation-page"
+    },
+    "privacy_link": {
+        "en": "/pages/privacy-policy",
+        "ru": "/tr/pages/privacy-policy"
+    },
+    "cookie_link": {
+        "en": "/pages/cookie-policy",
+        "ru": "/tr/pages/cookie-policy"
+    },
+    "terms_conditions_link": {
+        "en": "/pages/terms-and-conditions/",
+        "ru": "/tr/pages/terms-and-conditions/"
+    },
+    "meta_cart_title": "Sepet | Minecraft Sunucusundaki Maceralar",
+    "meta_cart_desc": "Sepet в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar вњ… Minecraft sunucumuzda ayrıcalık kasa anahtarlarının satın alınması",
+    "meta_change_password_title": "Şifreyi Değiştir | Minecraft Sunucusunda Maceralar",
+    "meta_change_password_desc": "Şifreyi Değiştir в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ⇒ Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "meta_contact_title": "Kişiler | Minecraft Sunucusundaki Maceralar",
+    "meta_contact_desc": "Kişiler в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar вњ…  Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "meta_donate_privileges_title": "Ayrıcalıkları Bağışla | Minecraft Sunucusunda Maceralar",
+    "meta_donate_privileges_desc": "Ayrıcalıkları Bağışla в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar вњ… Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "meta_donation_title": "Bağış Açıklaması | Minecraft Sunucusundaki Maceralar",
+    "meta_donation_desc": "Bağış Açıklaması в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ➚ Minecraft sunucumuzda ayrıcalık kasa anahtarlarının satın alınması",
+    "meta_exit_confirmation_title": "Çıkış Onayı | Minecraft Sunucusunda Maceralar",
+    "meta_exit_confirmation_desc": "Çıkış Onayı в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ⇒ Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "meta_faq_title": "FAQ  | Minecraft Sunucusundaki Maceralar",
+    "meta_faq_desc": "FAQ в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ⇒ Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "meta_launcher_download_title": "Başlatıcılar | Minecraft Sunucusundaki Maceralar",
+    "meta_launcher_download_desc": "Launchers в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ⚚… Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "meta_login_title": "Giriş | Minecraft Sunucusunda Maceralar",
+    "meta_login_desc": "Giriş в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ➚ Minecraft sunucumuzda ayrıcalık kasa anahtarlarının satın alınması",
+    "meta_mods_title": "Modlar | Minecraft Sunucusunda Maceralar",
+    "meta_mods_desc": "Mods в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar ➚ Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "meta_order_history_title": "Sipariş Geçmişi | Minecraft Sunucusundaki Maceralar",
+    "meta_order_history_desc": "Sipariş Geçmişi в‘пёЏ 195.201.168.105 Minecraft'taki Maceralar ⚚ Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "meta_registration_title": "Kayıt | Minecraft Sunucusundaki Maceralar",
+    "meta_registration_desc": "Kayıt в‘пёЏ ${serverIP} Minecraft'ta Maceralar вњ… Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "meta_rules_title": "Kurallar | Minecraft Sunucusunda Maceralar",
+    "meta_rules_desc": "Kurallar в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar вњ… Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "meta_starting_tips_title": "Başlangıç ​​İpuçları | Minecraft Sunucusunda Maceralar",
+    "meta_starting_tips_desc": "Başlangıç ​​İpuçları в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar вњ… Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "meta_success_payment_title": "Başarı Ödemesi | Minecraft Sunucusunda Maceralar",
+    "meta_success_payment_desc": "Başarılı Ödeme в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar… Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "meta_decline_payment_title": "Ödemeyi Reddet | Minecraft Sunucusunda Maceralar",
+    "meta_decline_payment_desc": "Ödemeyi Reddet в‘пёЏ 195.201.168.105 Minecraft'ta Maceralar  вњ… Minecraft sunucumuzda ayrıcalık durum anahtarlarının satın alınması",
+    "meta_product_title": "Adventures In Minecraft Server'da kendi statünüzü alın",
+    "meta_product_desc": "Minecraft'taki Maceralar projesinde rütbeye ve son eke erişin... Minecraft sunucumuzdan ayrıcalık durum anahtarlarının satın alınması 'пёЏ 195.201.168.105 вњ…",
+    "meta_privacy_title": "Gizlilik Politikası",
+    "meta_cookie_title": "Çerez politikası",
+    "meta_terms_conditions_title": "Şartlar ve koşullar",
+    "header_link_1": "/tr",
+    "header_link_2": "/tr/pages/rules",
+    "header_link_3": "/tr/pages/donation-description",
+    "header_link_4": "/tr/pages/faq",
+    "header_link_5": "/tr/pages/starting-tips",
+    "header_link_6": "/tr/pages/contact",
+    "header_link_7": "/tr/pages/login",
+    "header_link_8": "/tr/pages/registration",
+    "header_link_9": "/tr/pages/order-history-page",
+    "header_link_10": "/tr/pages/change-password-page",
+    "header_link_11": "/tr/pages/exit-confirmation-page",
+    "header_link_12": "/tr/pages/cart-page",
+    "footer_link_1": "/tr",
+    "footer_link_2": "/tr/pages/rules",
+    "footer_link_3": "/tr/pages/donation-description",
+    "footer_link_4": "/tr/pages/contact",
+    "footer_link_5": "/tr/pages/faq",
+    "footer_link_6": "/tr/pages/starting-tips",
+    "footer_link_7": "/tr/pages/launcher-download",
+    "footer_link_8": "/tr/pages/mods",
+    "footer_link_9": "/tr/pages/privacy-policy",
+    "footer_link_10": "/tr/pages/cookie-policy",
+    "footer_link_11": "/tr/pages/terms-and-conditions",
+    "product_page_name": "Ürün",
+    "productPage__desc": "Ürün Açıklaması:",
+    "header_component": "/ ---- /",
+    "header_shop": "Mağaza",
+    "header_rules": "Tüzük",
+    "header_donate": "Bağış açıklaması",
+    "header_faq": "FAQ",
+    "header_how_to_play": "Oynamaya nasıl başlanır?",
+    "header_contacts": "Kişiler",
+    "header_enter": "Giriş yapmak",
+    "header_signup": "Üye olmak",
+    "header_orders_history": "Sipariş Geçmişi",
+    "header_change_password": "Şifre değiştir",
+    "header_logout": "Çıkış Yap",
+    "footer_component": "/ ---- /",
+    "footer_store": "Mağaza",
+    "footer_rules": "Tüzük",
+    "footer_donate": "Bağış açıklaması",
+    "footer_contacts": "Kişiler",
+    "footer_faq": "FAQ",
+    "footer_how_to_start": "Oynamaya nasıl başlanır?",
+    "footer_donate_rules": "Bağış ayrıcalıkları",
+    "footer_launchers": "Fırlatıcılar",
+    "footer_team": "Takım",
+    "footer_mods": "Modlar",
+    "footer_privacy": "Gizlilik Politikası",
+    "footer_cookie": "Çerez politikası",
+    "footer_terms_and_conditions": "Şartlar ve koşullar",
+    "footer_copiryted": "В© 2023 Adventures in Minecraft - tüm hakları saklıdır. Web sitesinin sahibi ve işletmecisi GalaxyGrip OГњ, Estonya Cumhuriyeti yasalarına göre kayıtlıdır, şirket numarası 16776100, kayıtlı adres: Harju maakond, Tallinn, LasnamГ¤e linnaosa, Katusepapi tn 6-502, 11412.",
+    "/ ----- login_page ----- /": "",
+    "login_forgot_password": "Şifrenizi mi unuttunuz?",
+    "login_title_forgot_password": "Şifre Kurtarma",
+    "login_send_btn_forgot_password": "Kodu Gönder",
+    "login_send_btn_forgot_password_change": "Şifreyi Değiştir",
+    "login_change_password_code_placeholder": "Kodunuz",
+    "/ ----- home_page ----- /": "",
+    "home_title": "Minecraft dünyasını keşfedin",
+    "home_survival": "Hayatta kalma",
+    "home_anarchy": "Anarşi",
+    "home_server_monitoring_text": "Çalmakta",
+    "home_server_monitoring_status": "Sunucu durumu",
+    "home_price_sort": "Fiyata göre sırala",
+    "home_price_sort_asc": "Ucuzdan pahalıya",
+    "home_price_sort_desc": "Pahalıdan ucuza",
+    "/ ----- contact_page ----- /": "",
+    "contact_title": "Kişiler",
+    "contact_text": "Herhangi bir sorunuz varsa bize ulaşın:",
+    "contact_telegram": "Telegram",
+    "/ ----- change_password ----- /": "",
+    "change_password_first_step_title": "Parolanızı değiştirmek için \" simgesini tıklayınChange Password\" düğmesi. E-postanıza bir bağlantı gönderilecek, üzerine tıklayın ve yeni bir şifre girin",
+    "change_password_title": "Şifre değiştirme",
+    "change_password_text": "Yeni bir şifre gir",
+    "change_password_button": "Şifre değiştir",
+    "change_password_oldPasswordPlaceholder": "Eski Şifre",
+    "change_password_newPasswordPlaceholder": "Yeni Şifre",
+    "change_password_repeatPasswordPlaceholder": "Şifreyi tekrar girin"
+}
