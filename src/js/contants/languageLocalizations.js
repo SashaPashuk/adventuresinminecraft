@@ -8631,8 +8631,8 @@ export const languageLocalizations = {
     // signUpPage
     signUpPage__title: "Kaydol",
     signUpPage__emailPlaceholder: "E-postanız",
-    SignUpPage__passwordPlaceholder: "Şifre",
-    SignUpPage__repeatPasswordPlaceholder: "Şifreyi tekrarla",
+    signUpPage__passwordPlaceholder: "Şifre",
+    signUpPage__repeatPasswordPlaceholder: "Şifreyi tekrarla",
     signUpPage__button: "Kaydol",
     signUpPage__account: "Zaten bir hesabınız var mı?",
     signUpPage__link: "Giriş yap",
