@@ -1,5 +1,5 @@
 export const DEFAULT_LANGUAGE = "ru";
-// do not change order
+// Do not change order
 export const APP_LANGUAGES = [
   "en",
   "ru",
@@ -9,8 +9,8 @@ export const APP_LANGUAGES = [
   "pl",
   "tr",
   "fr",
-  // "de",
-  // "pt",
+  "de",
+  "pt",
   // "it",
   // "ja",
   // "az",
