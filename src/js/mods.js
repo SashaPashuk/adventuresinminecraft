@@ -29,7 +29,7 @@ const mods = [
 
 document.addEventListener("DOMContentLoaded", async () => {
   const activeLocale = getActiveLocale();
-  console.log(activeLocale);
+
   renderListingHTML(
     mods.map((el) => ({
       ...el,

@@ -21168,14 +21168,15 @@ export const languageLocalizations = {
     - 使用优化的材质包和修改。
     - 清除 Minecraft 的临时文件和缓存。
     - 在启动设置中为游戏分配更多 RAM。`,
-    faqPage__third问题标签: "如何解决下载或安装 Minecraft 时出现的问题？",
+    faqPage__thirdQuestionLabel: "如何解决下载或安装 Minecraft 时出现的问题？",
     faqPage__thirdAnswerText: `如果您在下载或安装 Minecraft 时遇到问题，这里有一些建议：
     
     - 确保您的硬盘上有足够的可用存储空间来安装游戏。
     - 检查您的互联网连接，确保您可以毫无问题地下载文件。
     - 暂时禁用可能阻止游戏下载或安装的防病毒软件或防火墙。
     - 如果您购买了游戏的许可副本，请联系 Minecraft 支持以获得进一步帮助。`,
-    faqPage__fourth问题标签: "如果我在登录游戏或帐户时遇到问题，该怎么办？",
+    faqPage__fourthQuestionLabel:
+      "如果我在登录游戏或帐户时遇到问题，该怎么办？",
     faqPage__fourthAnswerText: `如果您在登录游戏或帐户时遇到问题，建议使用 Minecraft 官网的密码恢复功能。如果问题仍未解决，请联系 Minecraft 支持团队，向他们提供有关问题的必要详细信息和信息。`,
     faqPage__blockWeTitle: "我们是谁？",
     faqPage__weFirstQuestionLabel: "关于我们",
@@ -21245,11 +21246,11 @@ export const languageLocalizations = {
     // signUpPage
     signUpPage__title: "注册",
     signUpPage__emailPlaceholder: "您的电子邮件",
-    SignUpPage__passwordPlaceholder: "密码",
-    SignUpPage__repeatPasswordPlaceholder: "重复密码",
-    SignUpPage__button: "注册",
+    signUpPage__passwordPlaceholder: "密码",
+    signUpPage__repeatPasswordPlaceholder: "重复密码",
+    signUpPage__button: "注册",
     signUpPage__account: "您已有帐户吗？",
-    SignUpPage__link: "登录",
+    signUpPage__link: "登录",
 
     // cartPage
     cartPage__title: "购物篮",
