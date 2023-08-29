@@ -460,4 +460,392 @@ export const errorsLanguageLocalizations = {
     ITEM_DURATION_ERROR: "La durée de cet article ne peut pas être modifiée.",
     ITEM_DURATION_SUCCESS: "Durée modifiée avec succès.",
   },
+  de: {
+    NO_ACTIVE_ORDER_ERROR: "Es gibt keine aktive Bestellung.",
+    ACTIVE_CODE_INCORRECT:
+      "Es wurde kein aktives Konto mit den angegebenen Anmeldeinformationen gefunden.",
+    FIELD_NOT_EMPTY_ERROR: "Dieses Feld darf nicht leer sein.",
+    USER_VALID_NICKNAME_ERROR: "Bitte geben Sie einen gültigen Spitznamen ein.",
+    VALID_EMAIL_ERROR: "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    WRONG_EMAIL_CODE_ERROR: "Falscher E-Mail-Code!",
+    INCORRECT_OLD_PASSWORDS_ERROR: "Alte Passwörter sind falsch.",
+    PASSWORDS_NOT_MATCHED_ERROR: "Die Passwörter stimmen nicht überein.",
+    PASSWORD_CHANGED_SUCCESS: "Passwort erfolgreich geändert.",
+    EMAIL_CODE_MIN_CHARACTERS_ERROR:
+      "Bitte stellen Sie sicher, dass dieses Feld mindestens 6 Zeichen enthält.",
+    EMAIL_CODE_MAX_CHARACTERS_ERROR:
+      "Bitte stellen Sie sicher, dass dieses Feld nicht mehr als 6 Zeichen enthält.",
+    VALID_PASSWORDS_ERROR: "Die Passwörter stimmen nicht überein.",
+    PASSWORD_MIN_CHARACTERS_ERROR:
+      "Bitte stellen Sie sicher, dass dieses Feld mindestens 4 Zeichen enthält.",
+    PASSWORD_MAX_CHARACTERS_ERROR:
+      "Bitte stellen Sie sicher, dass dieses Feld nicht mehr als 24 Zeichen enthält.",
+    ITEM_ADDED_TO_CART_SUCCESS:
+      "Dieser Artikel wurde erfolgreich zum Warenkorb hinzugefügt.",
+    ITEM_ADDED_TO_CART_ERROR:
+      "Der Artikel wurde bereits zum Warenkorb hinzugefügt.",
+    ITEM_ADDED_TO_CART_CURRENCY_ERROR:
+      "Ein Artikel mit einer anderen Währung kann nicht zum Warenkorb hinzugefügt werden. Bitte entfernen Sie zuerst den vorhandenen Artikel oder ändern Sie die Währung.",
+    ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
+      `Dieser Artikel "${name}" wurde bereits zum Warenkorb hinzugefügt.`,
+    ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
+      `Dieser Artikel "${name}" wurde erfolgreich zum Warenkorb hinzugefügt.`,
+    ITEM_DELETED_FROM_CART_SUCCESS:
+      "Der Artikel wurde aus dem Warenkorb entfernt.",
+    ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR:
+      "Die Menge kann nicht geändert werden.",
+    ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:
+      "Die Menge darf nicht größer als eins sein.",
+    ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR:
+      "Die Menge darf nicht kleiner als eins sein.",
+    ITEM_AMOUNT_CHANGED_SUCCESS: "Die Menge wurde geändert.",
+    ITEM_DURATION_ERROR:
+      "Die Dauer dieses Artikels kann nicht geändert werden.",
+    ITEM_DURATION_SUCCESS: "Dauer erfolgreich geändert.",
+  },
+  pt: {
+    // USER
+    USER_SHOULD_LOGIN_FIRST: "Você deve fazer login primeiro.",
+    USER_EXISTS_ERROR: "Usuário com este email já existe.",
+    USER_REGISTERED_SUCCESS: "Usuário registrado com sucesso.",
+
+    NO_ACTIVE_ORDER_ERROR: "Não há pedido ativo.",
+    ACTIVE_CODE_INCORRECT:
+      "Nenhuma conta ativa encontrada com as credenciais fornecidas.",
+    FIELD_NOT_EMPTY_ERROR: "Este campo não pode estar vazio.",
+
+    USER_VALID_NICKNAME_ERROR: "Digite um apelido válido.",
+
+    VALID_EMAIL_ERROR: "Digite um endereço de email válido.",
+    WRONG_EMAIL_CODE_ERROR: "Código de email incorreto!",
+    INCORRECT_OLD_PASSWORDS_ERROR: "Senha antiga incorreta.",
+    PASSWORDS_NOT_MATCHED_ERROR: "A senha não corresponde.",
+    PASSWORD_CHANGED_SUCCESS: "Senha alterada com sucesso.",
+    EMAIL_CODE_MIN_CHARACTERS_ERROR:
+      "Verifique se este campo tem pelo menos 6 caracteres.",
+    EMAIL_CODE_MAX_CHARACTERS_ERROR:
+      "Verifique se este campo não tem mais que 6 caracteres.",
+
+    VALID_PASSWORDS_ERROR: "As senhas não correspondem.",
+    PASSWORD_MIN_CHARACTERS_ERROR:
+      "Verifique se este campo tem pelo menos 4 caracteres.",
+    PASSWORD_MAX_CHARACTERS_ERROR:
+      "Verifique se este campo não tem mais que 24 caracteres.",
+
+    // ITEM
+    ITEM_ADDED_TO_CART_SUCCESS:
+      "Este item foi adicionado com sucesso ao seu carrinho.",
+    ITEM_ADDED_TO_CART_ERROR: "Item já adicionado ao carrinho.",
+    ITEM_ADDED_TO_CART_CURRENCY_ERROR:
+      "Não é possível adicionar um item ao carrinho com moedas diferentes. Primeiro, remova o item existente ou mude a moeda.",
+    ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
+      `Este item ‹‹${name}›› já foi adicionado ao seu carrinho.`,
+    ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
+      `Este item ‹‹${name}›› foi adicionado com sucesso ao seu carrinho.`,
+    ITEM_DELETED_FROM_CART_SUCCESS: "O item foi removido do carrinho.",
+
+    ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR: "A quantidade não pode ser alterada.",
+    ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:
+      "A quantidade não pode ser maior que um.",
+    ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR:
+      "A quantidade não pode ser menor que um.",
+    ITEM_AMOUNT_CHANGED_SUCCESS: "A quantidade foi alterada.",
+
+    ITEM_DURATION_ERROR: "A duração deste item não pode ser alterada.",
+    ITEM_DURATION_SUCCESS: "Duração alterada com sucesso.",
+  },
+  it: {
+    // USER
+    USER_SHOULD_LOGIN_FIRST: "Devi effettuare il login prima.",
+    USER_EXISTS_ERROR: "Utente con questa email già esistente.",
+    USER_REGISTERED_SUCCESS: "Utente registrato con successo.",
+
+    NO_ACTIVE_ORDER_ERROR: "Non ci sono ordini attivi.",
+
+    ACTIVE_CODE_INCORRECT:
+      "Nessun account attivo trovato con le credenziali fornite.",
+    FIELD_NOT_EMPTY_ERROR: "Questo campo non può essere vuoto.",
+
+    USER_VALID_NICKNAME_ERROR: "Inserisci un nickname valido.",
+
+    VALID_EMAIL_ERROR: "Inserisci un indirizzo email valido.",
+    WRONG_EMAIL_CODE_ERROR: "Codice email errato!",
+    INCORRECT_OLD_PASSWORDS_ERROR: "Vecchia password non corretta.",
+    PASSWORDS_NOT_MATCHED_ERROR: "Le password non corrispondono.",
+    PASSWORD_CHANGED_SUCCESS: "Password cambiata con successo.",
+    EMAIL_CODE_MIN_CHARACTERS_ERROR:
+      "Assicurati che questo campo abbia almeno 6 caratteri.",
+    EMAIL_CODE_MAX_CHARACTERS_ERROR:
+      "Assicurati che questo campo non abbia più di 6 caratteri.",
+
+    VALID_PASSWORDS_ERROR: "Le password non corrispondono.",
+    PASSWORD_MIN_CHARACTERS_ERROR:
+      "Assicurati che questo campo abbia almeno 4 caratteri.",
+    PASSWORD_MAX_CHARACTERS_ERROR:
+      "Assicurati che questo campo non abbia più di 24 caratteri.",
+
+    // ITEM
+    ITEM_ADDED_TO_CART_SUCCESS:
+      "Questo articolo è stato aggiunto al carrello con successo.",
+    ITEM_ADDED_TO_CART_ERROR: "Articolo già aggiunto al carrello.",
+    ITEM_ADDED_TO_CART_CURRENCY_ERROR:
+      "Non è possibile aggiungere un articolo al carrello con valute diverse. Rimuovi prima gli articoli esistenti o cambia la valuta.",
+    ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
+      `Questo articolo ‹‹${name}›› è già stato aggiunto al carrello.`,
+    ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
+      `Questo articolo ‹‹${name}›› è stato aggiunto al carrello con successo.`,
+    ITEM_DELETED_FROM_CART_SUCCESS: "L'articolo è stato rimosso dal carrello.",
+
+    ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR: "Impossibile modificare la quantità.",
+    ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:
+      "La quantità non può essere superiore a uno.",
+    ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR:
+      "La quantità non può essere inferiore a uno.",
+    ITEM_AMOUNT_CHANGED_SUCCESS: "La quantità è stata modificata.",
+
+    ITEM_DURATION_ERROR:
+      "La durata non può essere modificata per questo articolo.",
+    ITEM_DURATION_SUCCESS: "La durata è stata modificata.",
+  },
+  ja: {
+    // USER
+    USER_SHOULD_LOGIN_FIRST: "最初にログインしてください。",
+    USER_EXISTS_ERROR: "このメールアドレスのユーザーは既に存在しています。",
+    USER_REGISTERED_SUCCESS: "ユーザーが正常に登録されました。",
+    NO_ACTIVE_ORDER_ERROR: "アクティブな注文はありません。",
+
+    ACTIVE_CODE_INCORRECT:
+      "指定された認証情報でアクティブなアカウントが見つかりません。",
+    FIELD_NOT_EMPTY_ERROR: "このフィールドは空白にできません。",
+
+    USER_VALID_NICKNAME_ERROR: "有効なニックネームを入力してください。",
+
+    VALID_EMAIL_ERROR: "有効なメールアドレスを入力してください。",
+    WRONG_EMAIL_CODE_ERROR: "間違ったメールコードです！",
+    INCORRECT_OLD_PASSWORDS_ERROR: "古いパスワードが間違っています。",
+    PASSWORDS_NOT_MATCHED_ERROR: "パスワードが一致しません。",
+    PASSWORD_CHANGED_SUCCESS: "パスワードが正常に変更されました。",
+    EMAIL_CODE_MIN_CHARACTERS_ERROR:
+      "このフィールドには少なくとも6文字を入力してください。",
+    EMAIL_CODE_MAX_CHARACTERS_ERROR:
+      "このフィールドには最大6文字を入力してください。",
+
+    VALID_PASSWORDS_ERROR: "パスワードが一致しません。",
+    PASSWORD_MIN_CHARACTERS_ERROR:
+      "このフィールドには少なくとも4文字を入力してください。",
+    PASSWORD_MAX_CHARACTERS_ERROR:
+      "このフィールドには最大24文字を入力してください。",
+
+    // ITEM
+    ITEM_ADDED_TO_CART_SUCCESS: "このアイテムはカートに正常に追加されました。",
+    ITEM_ADDED_TO_CART_ERROR: "アイテムは既にバスケットに追加されています。",
+    ITEM_ADDED_TO_CART_CURRENCY_ERROR:
+      "異なる通貨のアイテムをバスケットに追加することはできません。まず、既存のアイテムを削除するか通貨を変更してください。",
+    ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
+      `このアイテム ‹‹${name}›› はすでにカートに追加されています。`,
+    ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
+      `このアイテム ‹‹${name}›› がカートに正常に追加されました。`,
+    ITEM_DELETED_FROM_CART_SUCCESS: "アイテムはバスケットから削除されました。",
+
+    ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR: "数量を変更できません。",
+    ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:
+      "数量は1より大きくすることはできません。",
+    ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR:
+      "数量は1未満にすることはできません。",
+    ITEM_AMOUNT_CHANGED_SUCCESS: "数量が変更されました。",
+
+    ITEM_DURATION_ERROR: "このアイテムの期間は変更できません。",
+    ITEM_DURATION_SUCCESS: "期間が変更されました。",
+  },
+  az: {
+    // USER
+    USER_SHOULD_LOGIN_FIRST: "Əvvəlcə daxil olmalısınız.",
+    USER_EXISTS_ERROR: "Bu email ilə istifadəçi artıq mövcuddur.",
+    USER_REGISTERED_SUCCESS: "İstifadəçi uğurla qeydiyyatdan keçdi.",
+    NO_ACTIVE_ORDER_ERROR: "Aktiv sifariş yoxdur.",
+
+    ACTIVE_CODE_INCORRECT: "Verilmiş məlumatlar ilə aktiv hesab tapılmadı.",
+    FIELD_NOT_EMPTY_ERROR: "Bu sahə boş ola bilməz.",
+
+    USER_VALID_NICKNAME_ERROR: "Düzgün nik adı daxil edin.",
+
+    VALID_EMAIL_ERROR: "Düzgün email adresi daxil edin.",
+    WRONG_EMAIL_CODE_ERROR: "Yanlış email kodu!",
+    INCORRECT_OLD_PASSWORDS_ERROR: "Köhnə parol səhvdir.",
+    PASSWORDS_NOT_MATCHED_ERROR: "Parol uyğun gəlmir.",
+    PASSWORD_CHANGED_SUCCESS: "Parol uğurla dəyişdirildi.",
+    EMAIL_CODE_MIN_CHARACTERS_ERROR: "Bu sahədə ən azı 6 simvol olmalıdır.",
+    EMAIL_CODE_MAX_CHARACTERS_ERROR: "Bu sahədə ən çox 6 simvol olmalıdır.",
+
+    VALID_PASSWORDS_ERROR: "Parollar uyğun gəlmir.",
+    PASSWORD_MIN_CHARACTERS_ERROR: "Bu sahədə ən azı 4 simvol olmalıdır.",
+    PASSWORD_MAX_CHARACTERS_ERROR: "Bu sahədə ən çox 24 simvol olmalıdır.",
+
+    // ITEM
+    ITEM_ADDED_TO_CART_SUCCESS: "Bu məhsul səbətinizə uğurla əlavə edildi.",
+    ITEM_ADDED_TO_CART_ERROR: "Məhsul artıq səbətə əlavə edilib.",
+    ITEM_ADDED_TO_CART_CURRENCY_ERROR:
+      "Fərqli valyutalarla məhsulu səbətə əlavə etmək mümkün deyil. İlk olaraq mövcud olanı silin və ya valyutanı dəyişdirin.",
+    ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
+      `Bu məhsul ‹‹${name}›› artıq səbətinizə əlavə edilib.`,
+    ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
+      `Bu məhsul ‹‹${name}›› səbətinizə uğurla əlavə edildi.`,
+    ITEM_DELETED_FROM_CART_SUCCESS: "Məhsul səbətdən silindi.",
+
+    ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR: "Miqdar dəyişdirilə bilməz.",
+    ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:
+      "Miqdar bir-dən böyük ola bilməz.",
+    ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR: "Miqdar bir-dən az ola bilməz.",
+    ITEM_AMOUNT_CHANGED_SUCCESS: "Miqdar dəyişdirildi.",
+
+    ITEM_DURATION_ERROR: "Bu məhsul üçün müddət dəyişdirilə bilməz.",
+    ITEM_DURATION_SUCCESS: "Müddət dəyişdirildi.",
+  },
+  ko: {
+    // USER
+    USER_SHOULD_LOGIN_FIRST: "먼저 로그인해야 합니다.",
+    USER_EXISTS_ERROR: "해당 이메일로 이미 가입된 사용자가 있습니다.",
+    USER_REGISTERED_SUCCESS: "사용자가 성공적으로 등록되었습니다.",
+
+    NO_ACTIVE_ORDER_ERROR: "활성 주문이 없습니다.",
+
+    ACTIVE_CODE_INCORRECT:
+      "해당 자격 증명을 가진 활성 계정을 찾을 수 없습니다.",
+    FIELD_NOT_EMPTY_ERROR: "이 필드는 비워둘 수 없습니다.",
+
+    USER_VALID_NICKNAME_ERROR: "유효한 닉네임을 입력하세요.",
+
+    VALID_EMAIL_ERROR: "유효한 이메일 주소를 입력하세요.",
+    WRONG_EMAIL_CODE_ERROR: "잘못된 이메일 코드입니다!",
+    INCORRECT_OLD_PASSWORDS_ERROR: "잘못된 이전 비밀번호입니다.",
+    PASSWORDS_NOT_MATCHED_ERROR: "비밀번호가 일치하지 않습니다.",
+    PASSWORD_CHANGED_SUCCESS: "비밀번호가 성공적으로 변경되었습니다.",
+    EMAIL_CODE_MIN_CHARACTERS_ERROR: "이 필드에 최소 6자 이상 입력하세요.",
+    EMAIL_CODE_MAX_CHARACTERS_ERROR:
+      "이 필드에 6자를 초과하지 않도록 입력하세요.",
+
+    VALID_PASSWORDS_ERROR: "비밀번호가 일치하지 않습니다.",
+    PASSWORD_MIN_CHARACTERS_ERROR: "이 필드에 최소 4자 이상 입력하세요.",
+    PASSWORD_MAX_CHARACTERS_ERROR:
+      "이 필드에 24자를 초과하지 않도록 입력하세요.",
+
+    // ITEM
+    ITEM_ADDED_TO_CART_SUCCESS:
+      "이 항목이 장바구니에 성공적으로 추가되었습니다.",
+    ITEM_ADDED_TO_CART_ERROR: "항목이 이미 장바구니에 추가되었습니다.",
+    ITEM_ADDED_TO_CART_CURRENCY_ERROR:
+      "다른 통화로 항목을 장바구니에 추가할 수 없습니다. 기존 품목을 제거하거나 통화를 변경하세요.",
+    ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
+      `이 항목 ‹‹${name}››이(가) 이미 장바구니에 추가되었습니다.`,
+    ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
+      `이 항목 ‹‹${name}››이(가) 장바구니에 성공적으로 추가되었습니다.`,
+    ITEM_DELETED_FROM_CART_SUCCESS: "항목이 장바구니에서 제거되었습니다.",
+
+    ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR: "수량을 변경할 수 없습니다.",
+    ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:
+      "수량은 1보다 크게 설정할 수 없습니다.",
+    ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR:
+      "수량은 1보다 작게 설정할 수 없습니다.",
+    ITEM_AMOUNT_CHANGED_SUCCESS: "수량이 변경되었습니다.",
+
+    ITEM_DURATION_ERROR: "해당 항목의 지속 기간은 변경할 수 없습니다.",
+    ITEM_DURATION_SUCCESS: "지속 기간이 변경되었습니다.",
+  },
+  uz: {
+    // USER
+    USER_SHOULD_LOGIN_FIRST: "Avval kirishingiz kerak.",
+    USER_EXISTS_ERROR:
+      "Bu elektron pochta bilan foydalanuvchi allaqachon mavjud.",
+    USER_REGISTERED_SUCCESS:
+      "Foydalanuvchi muvaffaqiyatli ro'yxatdan o'tkazildi.",
+
+    NO_ACTIVE_ORDER_ERROR: "Hech qanday faol buyurtma mavjud emas.",
+
+    ACTIVE_CODE_INCORRECT: "Berilgan ma'lumotlar bilan faol hisob topilmadi.",
+    FIELD_NOT_EMPTY_ERROR: "Bu maydon bo'sh bo'lishi mumkin emas.",
+
+    USER_VALID_NICKNAME_ERROR: "To'g'ri nom kiriting.",
+
+    VALID_EMAIL_ERROR: "To'g'ri elektron pochta manzili kiriting.",
+    WRONG_EMAIL_CODE_ERROR: "Noto'g'ri elektron pochta kodi!",
+    INCORRECT_OLD_PASSWORDS_ERROR: "Noto'g'ri eskirgan parol.",
+    PASSWORDS_NOT_MATCHED_ERROR: "Parollar mos kelmaydi.",
+    PASSWORD_CHANGED_SUCCESS: "Parol muvaffaqiyatli o'zgartirildi.",
+    EMAIL_CODE_MIN_CHARACTERS_ERROR:
+      "Ushbu maydon kamida 6 belgidan iborat bo'lishi kerak.",
+    EMAIL_CODE_MAX_CHARACTERS_ERROR:
+      "Ushbu maydon 6 belgidan ko'p bo'lishi mumkin emas.",
+
+    VALID_PASSWORDS_ERROR: "Parollar mos kelmaydi.",
+    PASSWORD_MIN_CHARACTERS_ERROR:
+      "Ushbu maydon kamida 4 belgidan iborat bo'lishi kerak.",
+    PASSWORD_MAX_CHARACTERS_ERROR:
+      "Ushbu maydon 24 belgidan ko'p bo'lishi mumkin emas.",
+
+    // ITEM
+    ITEM_ADDED_TO_CART_SUCCESS:
+      "Ushbu element muvaffaqiyatli savatchangizga qo'shildi.",
+    ITEM_ADDED_TO_CART_ERROR: "Item already added to busket.",
+    ITEM_ADDED_TO_CART_CURRENCY_ERROR:
+      "Savatchaga turlicha valyutalar bilan element qo'shish mumkin emas. Avval mavjud elementlarni olib tashlang yoki valyutani o'zgartiring.",
+    ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
+      `Bu element ‹‹${name}›› allaqachon savatchangizga qo'shilgan.`,
+    ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
+      `Bu element ‹‹${name}›› muvaffaqiyatli savatchangizga qo'shildi.`,
+    ITEM_DELETED_FROM_CART_SUCCESS: "Element savatchadan olib tashlandi.",
+
+    ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR: "Miqdorni o'zgartirib bo'lmaydi.",
+    ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:
+      "Miqdor bitta dan ko'p bo'lishi mumkin emas.",
+    ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR:
+      "Miqdor bitta dan kam bo'lishi mumkin emas.",
+    ITEM_AMOUNT_CHANGED_SUCCESS: "Miqdor o'zgartirildi.",
+
+    ITEM_DURATION_ERROR: "Bu element uchun davomiylilik o'zgartirib bo'lmaydi.",
+    ITEM_DURATION_SUCCESS: "Davomiylilik o'zgartirildi.",
+  },
+  cn: {
+    // USER
+    USER_SHOULD_LOGIN_FIRST: "您应该先登录。",
+    USER_EXISTS_ERROR: "该电子邮件已经存在的用户。",
+    USER_REGISTERED_SUCCESS: "用户注册成功。",
+
+    NO_ACTIVE_ORDER_ERROR: "没有活动订单。",
+
+    ACTIVE_CODE_INCORRECT: "给定凭据找不到活动帐户。",
+    FIELD_NOT_EMPTY_ERROR: "此字段不能为空。",
+
+    USER_VALID_NICKNAME_ERROR: "输入有效的昵称。",
+
+    VALID_EMAIL_ERROR: "请输入有效的电子邮件地址。",
+    WRONG_EMAIL_CODE_ERROR: "错误的电子邮件代码！",
+    INCORRECT_OLD_PASSWORDS_ERROR: "旧密码不正确。",
+    PASSWORDS_NOT_MATCHED_ERROR: "密码不匹配。",
+    PASSWORD_CHANGED_SUCCESS: "密码修改成功。",
+    EMAIL_CODE_MIN_CHARACTERS_ERROR: "确保此字段至少有6个字符。",
+    EMAIL_CODE_MAX_CHARACTERS_ERROR: "确保此字段不超过6个字符。",
+
+    VALID_PASSWORDS_ERROR: "密码不匹配。",
+    PASSWORD_MIN_CHARACTERS_ERROR: "确保此字段至少有4个字符。",
+    PASSWORD_MAX_CHARACTERS_ERROR: "确保此字段不超过24个字符。",
+
+    // ITEM
+    ITEM_ADDED_TO_CART_SUCCESS: "此物品已成功添加到购物车。",
+    ITEM_ADDED_TO_CART_ERROR: "商品已添加到购物篮中。",
+    ITEM_ADDED_TO_CART_CURRENCY_ERROR:
+      "无法添加具有不同货币的商品到购物篮中。首先删除现有商品或更改货币。",
+    ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
+      `物品  ‹‹${name}›› 已经被添加到您的购物车中。`,
+    ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
+      `物品  ‹‹${name}›› 成功添加到您的购物车中。`,
+    ITEM_DELETED_FROM_CART_SUCCESS: "物品已从购物篮中删除。",
+
+    ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR: "无法更改数量。",
+    ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR: "数量不能大于一。",
+    ITEM_AMOUNT_CAN_NOT_BE_LESS_THEN_ONE_ERROR: "数量不能小于一。",
+    ITEM_AMOUNT_CHANGED_SUCCESS: "数量已更改。",
+
+    ITEM_DURATION_ERROR: "无法更改此物品的持续时间。",
+    ITEM_DURATION_SUCCESS: "持续时间已更改。",
+  },
 };

@@ -39,7 +39,24 @@ function html() {
     )
     .pipe(
       i18n({
-        locales: ["en", "ru", "uk", "es", "kz", "pl", "tr", "fr"],
+        locales: [
+          "en",
+          "ru",
+          "uk",
+          "es",
+          "kz",
+          "pl",
+          "tr",
+          "fr",
+          // "de",
+          // "pt",
+          // "it",
+          // "ja",
+          // "az",
+          // "ko",
+          // "uz",
+          // "cn",
+        ],
         localeDir: "./locales",
       })
     )
