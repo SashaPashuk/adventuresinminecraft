@@ -7140,7 +7140,7 @@ export const languageLocalizations = {
     faqPage__weTitle: "Kim jesteśmy?",
     faqPage__workTitle: "Jak to działa?",
     faqPage__blockTechTitle: "Problemy techniczne",
-    faqPage_firstQuestionLabel:
+    faqPage__firstQuestionLabel:
       "Dlaczego podczas gry doświadczam opóźnień i zawieszeń?",
     faqPage__firstAnswerText: `Opóźnienia i zawieszanie się mogą mieć różne przyczyny, w tym niewystarczające zasoby systemowe, konflikty z innymi programami, problemy z połączeniem internetowym lub niezoptymalizowane ustawienia gry. Zalecane jest sprawdzenie wymagań systemowych gry Minecraft, zamknięcie niepotrzebnych programów, aktualizacja sterowników karty graficznej i upewnienie się, że połączenie internetowe jest stabilne.`,
     faqPage__secondQuestionLabel: "Jak mogę poprawić wydajność gry?",
@@ -7152,7 +7152,7 @@ export const languageLocalizations = {
     - Używaj zoptymalizowanych pakietów tekstur i modyfikacji.
     - Wyczyść pliki tymczasowe i pamięć podręczną Minecraft.
     - Przydziel grze więcej pamięci RAM w opcjach uruchamiania.`,
-    faqPage_thirdQuestionLabel:
+    faqPage__thirdQuestionLabel:
       "Jak rozwiązać problemy z pobieraniem lub instalacją gry Minecraft?",
     faqPage__thirdAnswerText: `Jeśli masz problemy z pobraniem lub instalacją gry Minecraft, oto kilka sugestii:
     
@@ -8516,7 +8516,7 @@ export const languageLocalizations = {
     "starting-tips-page__step-one__description": `Minecraft oynamaya başlamanın ilk adımı oyunun lisanslı bir kopyasını satın almaktır. Oyunu resmi Minecraft web sitesinden veya oyunun platformunuz için mevcut olduğu diğer mağazalardan satın alabilirsiniz.`,
     "starting-tips-page__step-two": "2. Adım: Oyunu yükleyin",
     "starting-tips-page__step-two__description": `Oyunu satın aldıktan sonra platformunuza yüklemeniz gerekecek. Cihazınız için uygun Minecraft sürümünü indirin (örn. PC için Minecraft: Java Edition veya konsollar, mobil cihazlar veya tabletler için Minecraft: Bedrock Edition). İşlemi tamamlamak için kurulum talimatlarını takip edin.`,
-    "starting-tips-page__step-three": `Adım 3: Oyunu başlatın ve bir mod seçin`,
+    "starting-tips-page__step-three": `3. Adım: Oyunu başlatın ve bir mod seçin`,
     "starting-tips-page__step-three__description": `Kurulumdan sonra Minecraft oyununu başlatın. Bir oyun modu seçmeniz istenecektir. Hayatta Kalma Modu, hayatta kalmanız, kaynakları toplamanız ve düşman yaratıklarla savaşmanız gereken yerdir. Yaratıcı Mod size sınırsız kaynak ve sınırlama olmaksızın oluşturma yeteneği sağlar. Tercihlerinize ve oyun hedeflerinize en uygun modu seçin.`,
 
     // successPayment page
@@ -8553,7 +8553,8 @@ export const languageLocalizations = {
     - Optimize edilmiş doku paketlerini ve değişikliklerini kullanın.
     - Minecraft'ın geçici dosyalarını ve önbelleğini temizleyin.
     - Başlatma ayarlarında oyuna daha fazla RAM ayırın.`,
-    faqPage__thirdQuestionLabel: `Minecraft'ı indirme veya yüklemeyle ilgili sorunları nasıl çözerim?`,
+    faqPage__thirdQuestionLabel:
+      "Minecraft'ı indirme veya yüklemeyle ilgili sorunları nasıl çözerim?",
     faqPage__thirdAnswerText: `Minecraft'ı indirme veya yüklemeyle ilgili sorunlarla karşılaşıyorsanız işte bazı öneriler:
     
     - Oyunu yüklemek için sabit diskinizde yeterli boş depolama alanına sahip olduğunuzdan emin olun.
@@ -9975,10 +9976,10 @@ export const languageLocalizations = {
     faqPage__blockWorkTitle: "Comment ça marche ?",
     faqPage__blockFirstQuestionLabel:
       "Comment fonctionne la génération mondiale dans Minecraft ?",
-    faqPage__blockFirstAnswerText: `La génération du monde dans Minecraft est basée sur l'utilisation d'algorithmes complexes pour créer des paysages virtuels. Lors de la création d'un nouveau monde, le jeu génère aléatoirement du terrain, notamment des montagnes, des forêts, des rivières, des déserts et d'autres éléments naturels. Ce processus utilise divers paramètres et graines qui déterminent les conditions initiales de la génération mondiale.
+    faqPage__blockFirstAnswerText: `La génération du monde dans Minecraft est basée sur l'utilisation d'algorithmes complexes pour créer des paysages virtuels. Lors de la création d'un nouveau monde, le jeu génère aléatoirement du terrain, notamment des montagnes, des forêts, des rivières, des déserts et d'autres éléments naturels. Ce processus utilise divers paramètres et graines qui déterminent les conditions initiales de la génération mondiale.`,
     faqPage__blockSecondQuestionLabel:
-    Comment fonctionne le système d'artisanat dans Minecraft ?,
-    faqPage__blockSecondAnswerText: « Le système de fabrication de Minecraft permet aux joueurs de créer de nouveaux objets et outils en combinant différentes ressources au sein d'une table de fabrication. Une table de fabrication est le principal outil de fabrication dans lequel vous pouvez organiser les ressources dans un ordre spécifique pour obtenir l'objet souhaité. Combinez diverses ressources selon des recettes d'artisanat pour créer de nouveaux objets, armes, outils et blocs.`,
+      "Comment fonctionne le système d'artisanat dans Minecraft ?",
+    faqPage__blockSecondAnswerText: `Le système de fabrication de Minecraft permet aux joueurs de créer de nouveaux objets et outils en combinant différentes ressources au sein d'une table de fabrication. Une table de fabrication est le principal outil de fabrication dans lequel vous pouvez organiser les ressources dans un ordre spécifique pour obtenir l'objet souhaité. Combinez diverses ressources selon des recettes d'artisanat pour créer de nouveaux objets, armes, outils et blocs.`,
     faqPage__blockThirdQuestionLabel:
       "Comment fonctionne le jeu multijoueur dans Minecraft ?",
     faqPage__blockThirdAnswerText: `Le gameplay multijoueur dans Minecraft vous permet de jouer avec d'autres joueurs en temps réel. Vous pouvez vous connecter à un serveur hébergé par un autre joueur ou créer votre propre serveur pour jouer avec des amis. Lorsque vous jouez en mode multijoueur, vous pouvez interagir avec d'autres joueurs, construire, échanger, combattre et travailler ensemble sur des projets partagés.`,
@@ -10345,7 +10346,7 @@ export const languageLocalizations = {
     "1122_oruzhie_li_2": `Craftable Guns - ce mod introduit des recettes artisanales pour les armes à feu. Vous pourrez créer des pistolets, des fusils, des fusils de chasse et d'autres types d'armes à feu. Ce mod ajoute du réalisme et de la variété à vos capacités de combat.`,
     "1122_oruzhie_p_4": `Pour télécharger et installer le mod d'arme de fabrication 1.12.2, vous pouvez vous référer aux ressources officielles spécialisées dans les modifications de Minecraft. Sur ces ressources, vous trouverez des instructions détaillées pour télécharger et installer des mods.`,
     "1122_oruzhie_p_5": `N'oubliez pas de faire une sauvegarde de votre jeu avant d'installer le mod d'arme de fabrication et suivez attentivement les instructions pour éviter tout problème potentiel ou conflit avec d'autres modifications.`,
-    "1122_oruzhie_h2_1 ": "Mod d'arme à feu pour Minecraft 1.12.2",
+    "1122_oruzhie_h2_1": "Mod d'arme à feu pour Minecraft 1.12.2",
     "1122_oruzhie_p_6": `Un mod d'arme à feu pour la version 1.12.2 est un excellent ajout au jeu Minecraft, vous permettant d'utiliser différents types d'armes à feu dans vos aventures. Ce mod ajoute de nouvelles possibilités de combat et vous permet de combattre des ennemis à l'aide d'armes à feu puissantes.`,
     "1122_oruzhie_p_7": `Si vous souhaitez étendre votre arsenal d'armes dans Minecraft 1.12.2, les mods d'armes à feu vous offriront cette opportunité. Voici quelques mods d'armes à feu populaires pour la version 1.12.2 :`,
     "1122_oruzhie_li_3": `Modern Warfare - ce mod ajoute une large gamme d'armes à feu modernes, telles que des fusils d'assaut, des fusils de sniper, des pistolets et des lance-grenades. Vous pourrez utiliser ces systèmes d'armes pour combattre les ennemis et protéger vos territoires.`,
