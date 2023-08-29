@@ -1,0 +1,305 @@
+{
+    "domain": "https://adventuresinminecraft.com",
+    "home_metadate_title": "Uy | Adventures In Minecraft Server",
+    "home_metadate_description": "V_X0098_QYAYџYAT 195.201.168.105. Minecraftdagi sarguzashtlar Vњ ... Minecraft Serverda ish haqini sotib olish",
+    "metadate_og_locale": "uz",
+    "metadate_og_type": "Veb-sayt",
+    "metadate_og_contact_title": "Aloqalar | Adventures In Minecraft Server",
+    "metadate_og_contact_description": "РљРѕРЅС‚Р°РєС‚С‹ в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ… РџРѕРєСѓРїРєР° РґРѕРЅР°С‚Р° Рё РїСЂРёРІРёР»РµРіРёР№ РЅР° СЃРµСЂРІРµСЂРµ РјР°Р№РЅРєСЂР°С„С‚",
+    "donate_description_metadate_title": "Uy | Minecraft serveridagi sarguzashtlar",
+    "donate_description_metadate_description": "Xayriya Ta'rif V_X.98_QOYџџ 195.201.168.105. Minecraft-dagi sarguzashtlari Vњ ... Minecraft Serverda ish haqi.",
+    "faq_metadate_title": "FAQ | Adventures In Minecraft Server",
+    "faq_metadate_description": "FAQ V_X.0098_QYAYџ201.166668.105. Minecraft-dagi sarguzashtlari Vњ ... Minecraft Serverda imtiyozlar kalitlari",
+    "launcher_download_metadate_title": "Ishchixonalar | Adventures In Minecraft Server",
+    "launcher_download_metadate_description": "V_X0098_POYY 195.201.16666605. Minecraft-dagi sarguzashtlari Vњ ... Minecraft Serverda ba'zi imtiyozlar kalitlarini sotib olish",
+    "login_metadate_title": "Kirish | Adventures In Minecraft Server",
+    "login_metadate_description": "Kirish V_X0098_POYџ 195.201.1668.105. Minecraftdagi sarguzashtlar Vњ ... Minecraft Serverda ba'zi imtiyozlar kalitlarini sotib olish",
+    "registration_metadate_title": "Ro'yxatdan o'tish | Adventures In Minecraft Server",
+    "registration_metadate_description": "Ro'yxatdan o'tish v -S'POџ 195.201.168.105. Minecraftdagi sarguzashtlar Vњ ... Minecraft Serverda imtiyozlar kalitlari",
+    "mods_metadate_title": "MODS | Adventures In Minecraft Server",
+    "mods_metadate_description": "Mods V_X0098_QOYџYA 195.201.168.105. Minecraftdagi sarguzashtlari Vњ ... Minecraft Serverda ish haqi",
+    "order_history_metadate_title": "Buyurtma tarixi | Adventures In Minecraft Server",
+    "order_history_metadate_description": "Buyurtma tarix V_X0098_QYџџ 195.201.168.1605 yil Minecraft-dagi sarguzashtlar Vњ ... Minecraft Serverda imtiyozlar kalitlarini sotib olish",
+    "product_metadate_title": "Adventures In Minecraft Serverdagi \"{Mahsulot_Name}\" o'zingizning {mahsulot_name} holatini oling ",
+    "product_metadate_description": "Minecraft loyihasi bo'yicha \"{Product_name}\" Sucunce Suctix-ga kiring. V_X.0098_11.201.168.105.",
+    "rules_metadate_title": "Qoidalar | Adventures In Minecraft Server",
+    "rules_metadate_description": "V_X0098_QYABIYA 195.201.1668.105. Minecraft-dagi sarguzashtlar Vњ ... Minecraft Serverda imtiyozlar kalitlarini sotib olish",
+    "starting_tips_metadate_title": "Ishga tushirish bo'yicha maslahatlar | Adventures In Minecraft Server",
+    "starting_tips_metadate_description": "V_X0098_POYџ 195.201.168.105 yillarda Minecraftdagi sarguzashtlari ... Minecraft Server-dagi imtiyozlar kalitlarini sotib olish",
+    "success_payment_metadate_title": "Muvaffaqiyat to'lovi | Adventures In Minecraft Server",
+    "success_payment_metadate_description": "Muvaffaqiyat to'lovi V_X.0098_QYABIYA 195.201.166668.105 Minecraft-dagi sarguzashtlar Vњ ... Minecraft Serverda imtiyozlar kalitlari",
+    "decline_payment_metadate_title": "Kamchilik to'lovi | Adventures In Minecraft Server",
+    "decline_payment_metadate_description": "FOYDALANISH V_X.009_QPTOY 195.201.168.105 yil Minecraftdagi sarguzashtlari ... Minecraft Serverda imtiyozlar kalitlarini sotib olish",
+    "404_metadate_title": "Topilmagan sahifaga | Adventures In Minecraft Server",
+    "404_metadate_description": "Ko'rmayotgan sahifaning V_X0098_POYџ 195.201.168.105. Minecraft-dagi sarguzashtlar Vњ ... Minecraft Serverda imtiyozlar kalitlari",
+    "mods_1122_metadate_title": "1.12.2 | Adventures In Minecraft Server",
+    "mods_1122_metadate_description": "1.12.2 V_X0098_QYAYџYAT 195.201.16666605. Minecraft-dagi sarguzashtlar Vњ ... Minecraft Serverda imtiyozlar kalitlari",
+    "mods_1122_cars_metadate_title": "1.12.2 (CARS) | Adventures In Minecraft Server",
+    "mods_1122_cars_metadate_description": "1.12.2 (CARS) V_X.0098_QYABIYA 195.201.166666605. Minecraft-dagi sarguzashtlar Vњ ... Minecraft Serverda imtiyozlar kalitlari",
+    "mods_1122_pe_metadate_title": "Minecrafte pe 1.12.2 | Minecraft Serverda joylashgan sarguzashtlar",
+    "mods_1122_pe_metadate_description": "Minecrafte pe 1.12.2 V_X.0098_16.668.105. Minecraftdagi sarguzashtlar Vњ ... Minecraft Serverda imtiyozlar kalitlari",
+    "mods_1122_oruzhie_metadate_title": "1.12.2 (Oruzxie) | Adventures In Minecraft Server",
+    "mods_1122_oruzhie_metadate_description": "1.12.2 (Oruzxie) v -S'POџ 195.201.168.105. Minecraftdagi sarguzashtlar Vњ ... Minecraft Serverda imtiyozlar kalitlari.",
+    "mods_1165_metadate_title": "1.16.5 | Adventures In Minecraft Server",
+    "mods_1165_metadate_description": "1.16.5 V_X0098_QYAYAT 195.201.168.105. Minecraft-dagi sarguzashtlari Vњ ... Minecraft Serverda imtiyozlar kalitlarini sotib olish",
+    "mods_journeymap_mod_metadate_title": "Sayohat Map Mod | Adventures In Minecraft Server",
+    "mods_journeymap_mod_metadate_description": "Sayohat Mod V_X0098_QOYџџ 195.201.168.105. Minecraftdagi sarguzashtlar Vњ ... Minecraft Serverda imtiyozlar kalitlari",
+    "canonical_home_href": "/uz",
+    "canonical_404_href": "/uz/pages/404",
+    "canonical_cart_href": "/uz/pages/cart-page",
+    "canonical_change_password_href": "/uz/pages/change-password",
+    "canonical_contact_href": "/uz/pages/contact",
+    "canonical_donate_privileges_href": "/uz/pages/donate-privileges",
+    "canonical_donate_description_href": "/uz/pages/donate-description",
+    "canonical_exit_confirmation_page_href": "/uz/pages/exit-confirmation-page",
+    "canonical_faq_href": "/uz/pages/faq",
+    "canonical_launcher_download_href": "/uz/pages/launcher-download",
+    "canonical_login_href": "/uz/pages/login",
+    "canonical_mods_href": "/uz/pages/mods",
+    "canonical_mods_1122_href": "/uz/pages/mods/1122",
+    "canonical_mods_1122_cars_href": "/uz/pages/mods/1122/cars",
+    "canonical_mods_1122_pe_href": "/uz/pages/mods/1122/minecraft-pe-1-12-2",
+    "canonical_mods_1122_oruzhie_href": "/uz/pages/mods/1122/oruzhie",
+    "canonical_mods_journeymap_mod_href": "/uz/pages/mods/journeymap-mod",
+    "canonical_mods_1165_href": "/uz/pages/mods/1165",
+    "canonical_order_history_href": "/uz/pages/order-history-page",
+    "canonical_product_href": "/uz/pages/product",
+    "canonical_registration_href": "/uz/pages/registration",
+    "canonical_rules_href": "/uz/pages/rules",
+    "canonical_starting_tips_href": "/uz/pages/starting-tips",
+    "canonical_success_payment_href": "/uz/pages/success-payment",
+    "canonical_decline_payment_href": "/uz/pages/decline-payment",
+    "canonical_team_href": "/uz/pages/team",
+    "home_page_url": {
+        "en": "/",
+        "ru": "/uz"
+    },
+    "mods_page_url": {
+        "en": "/pages/mods",
+        "ru": "/uz/pages/mods"
+    },
+    "mods_1122_page_url": {
+        "en": "/pages/mods/1122",
+        "ru": "/uz/pages/mods/1122"
+    },
+    "mods_1122_cars_page_url": {
+        "en": "/pages/mods/1122/cars",
+        "ru": "/uz/pages/mods/1122/cars"
+    },
+    "mods_1122_pe_page_url": {
+        "en": "/pages/mods/1122/minecraft-pe-1-12-2",
+        "ru": "/uz/pages/mods/1122/minecraft-pe-1-12-2"
+    },
+    "mods_1122_oruzhie_page_url": {
+        "en": "/pages/mods/1122/oruzhie",
+        "ru": "/uz/pages/mods/1122/oruzhie"
+    },
+    "mods_journeymap_mod_page_url": {
+        "en": "/pages/mods/journeymap-mod",
+        "ru": "/uz/pages/mods/journeymap-mod"
+    },
+    "mods_1165_page_url": {
+        "en": "/pages/mods/1165",
+        "ru": "/uz/pages/mods/1165"
+    },
+    "product_page_url": {
+        "en": "/pages/product",
+        "ru": "/uz/pages/product"
+    },
+    "launcher_download_page_url": {
+        "en": "/pages/launcher-download",
+        "ru": "/uz/pages/launcher-download"
+    },
+    "404_page_url": {
+        "en": "/pages/404",
+        "ru": "/uz/pages/404"
+    },
+    "rules_page_url": {
+        "en": "/pages/rules",
+        "ru": "/uz/pages/rules"
+    },
+    "faq_page_url": {
+        "en": "/pages/faq",
+        "ru": "/uz/pages/faq"
+    },
+    "login_page_url": {
+        "en": "/pages/login",
+        "ru": "/uz/pages/login"
+    },
+    "order_history_page_url": {
+        "en": "/pages/order-history-page",
+        "ru": "/uz/pages/order-history-page"
+    },
+    "registration_page_url": {
+        "en": "/pages/registration",
+        "ru": "/uz/pages/registration"
+    },
+    "contact_page_url": {
+        "en": "/pages/contact",
+        "ru": "/uz/pages/contact"
+    },
+    "starting_tips_page_url": {
+        "en": "/pages/starting-tips",
+        "ru": "/uz/pages/starting-tips"
+    },
+    "donation_page_url": {
+        "en": "/pages/donation-description",
+        "ru": "/uz/pages/donation-description"
+    },
+    "donate_priv_page_url": {
+        "en": "/pages/donate-privileges",
+        "ru": "/uz/pages/donate-privileges"
+    },
+    "change_password_page_url": {
+        "en": "/pages/change-password-page",
+        "ru": "/uz/pages/change-password-page"
+    },
+    "cart_page_url": {
+        "en": "/pages/cart-page",
+        "ru": "/uz/pages/cart-page"
+    },
+    "team_page_url": {
+        "en": "/pages/team",
+        "ru": "/uz/pages/team"
+    },
+    "success_payment_page_url": {
+        "en": "/pages/success_payment",
+        "ru": "/uz/pages/success_payment"
+    },
+    "decline_payment_page_url": {
+        "en": "/pages/decline_payment",
+        "ru": "/uz/pages/decline_payment"
+    },
+    "exit_confirmation_page_url": {
+        "en": "/pages/exit-confirmation-page",
+        "ru": "/uz/pages/exit-confirmation-page"
+    },
+    "privacy_link": {
+        "en": "/pages/privacy-policy",
+        "ru": "/uz/pages/privacy-policy"
+    },
+    "cookie_link": {
+        "en": "/pages/cookie-policy",
+        "ru": "/uz/pages/cookie-policy"
+    },
+    "terms_conditions_link": {
+        "en": "/pages/terms-and-conditions/",
+        "ru": "/uz/pages/terms-and-conditions/"
+    },
+    "meta_cart_title": "Savat | Adventures In Minecraft Server ",
+    "meta_cart_desc": "Savat V_X.0098_QTOYAT 195.201.168.105. Minecraftdagi sarguzashtlar Vњ ... Minecraft Serverda imtiyozlar kalitlari",
+    "meta_change_password_title": "Parolni o'zgartirish | Adventures In Minecraft Server",
+    "meta_change_password_desc": "V_X0098_POYџ 195.201.168.105. Minecraft-dagi sarguzashtlari ... Minecraft Server-dagi imtiyozlar kalitlarini sotib oling",
+    "meta_contact_title": "Aloqalar | Minecraft Serverda sarguzashtlar",
+    "meta_contact_desc": "V_X0098_POYџ 195.201.1666666.201605 yil Minecraft Vњ ... Minecraft Server-dagi imtiyozlar kalitlarini sotib olish",
+    "meta_donate_privileges_title": "Xayriyat bering imtiyozlar | Adventures In Minecraft Server",
+    "meta_donate_privileges_desc": "X_X0098_POYI 195.201168.201668.105 yillarda Minecraftdagi sarguzashtlar ... Minecraft Serverda imtiyozlar kalitlarini sotib olish",
+    "meta_donation_title": "Xayriya tavsifi | Adventures In Minecraft Server",
+    "meta_donation_desc": "Xayriya Ta'rif V_X.98_QOYџџ 195.201.168.105. Minecraft-dagi sarguzashtlari Vњ ... Minecraft Serverda ish haqi.",
+    "meta_exit_confirmation_title": "Chiqish tasdiqchasi | Adventures In Minecraft Server",
+    "meta_exit_confirmation_desc": "V_X0098_POYџ 195.201.201.168.105 yillarda Minecraftdagi sarguzashtlar ... Minecraft Serverda imtiyozlar kalitlarini sotib olish",
+    "meta_faq_title": "FAQ | Adventures In Minecraft Server",
+    "meta_faq_desc": "FAQ V_X.0098_QYAYџ201.166668.105. Minecraft-dagi sarguzashtlari Vњ ... Minecraft Serverda imtiyozlar kalitlari",
+    "meta_launcher_download_title": "Ishchixonalar | Adventures In Minecraft Server",
+    "meta_launcher_download_desc": "V_X0098_POYY 195.201.16666605. Minecraft-dagi sarguzashtlari Vњ ... Minecraft Serverda ba'zi imtiyozlar kalitlarini sotib olish",
+    "meta_login_title": "Kirish | Adventures In Minecraft Server",
+    "meta_login_desc": "Kirish V_X0098_POYџ 195.201.1668.105. Minecraftdagi sarguzashtlar Vњ ... Minecraft Serverda ba'zi imtiyozlar kalitlarini sotib olish",
+    "meta_mods_title": "MODS | Adventures In Minecraft Server",
+    "meta_mods_desc": "Mods V_X0098_QOYџYA 195.201.168.105. Minecraftdagi sarguzashtlari Vњ ... Minecraft Serverda ish haqi",
+    "meta_order_history_title": "Buyurtma tarixi | Adventures In Minecraft Server",
+    "meta_order_history_desc": "Buyurtma tarix V_X0098_QYџџ 195.201.168.1605 yil Minecraft-dagi sarguzashtlar Vњ ... Minecraft Serverda imtiyozlar kalitlarini sotib olish",
+    "meta_registration_title": "Ro'yxatdan o'tish | Adventures In Minecraft Server",
+    "meta_registration_desc": "Ro'yxatdan o'tish V_X0098_POY $ {SERDIP} Minecraft-dagi Sentgres Vњ ... Minecraft Serverda ba'zi imtiyozlar kalitlarini sotib olish",
+    "meta_rules_title": "Qoidalar | Adventures In Minecraft Server",
+    "meta_rules_desc": "V_X0098_QYABIYA 195.201.1668.105. Minecraft-dagi sarguzashtlar Vњ ... Minecraft Serverda imtiyozlar kalitlarini sotib olish",
+    "meta_starting_tips_title": "Ishga tushirish bo'yicha maslahatlar | Adventures In Minecraft Server",
+    "meta_starting_tips_desc": "V_X0098_POYџ 195.201.168.105 yillarda Minecraftdagi sarguzashtlari ... Minecraft Server-dagi imtiyozlar kalitlarini sotib olish",
+    "meta_success_payment_title": "Muvaffaqiyat to'lovi | Adventures In Minecraft Server",
+    "meta_success_payment_desc": "Muvaffaqiyat to'lovi V_X.0098_QYABIYA 195.201.166668.105 Minecraft-dagi sarguzashtlar Vњ ... Minecraft Serverda imtiyozlar kalitlari",
+    "meta_decline_payment_title": "Kamchilik to'lovi | Adventures In Minecraft Server",
+    "meta_decline_payment_desc": "FOYDALANISH V_X.009_QPTOY 195.201.168.105 yil Minecraftdagi sarguzashtlari ... Minecraft Serverda imtiyozlar kalitlarini sotib olish",
+    "meta_product_title": "Adventures In Minecraft Serverga o'z maqomingizni oling",
+    "meta_product_desc": "Minecraft loyihasi bo'yicha sarguzasht va sarguzashtlarga kirish huquqiga ega bo'ling ... Minecraft Server V_X0098_QTYATYA 195.201.1668.105.",
+    "meta_privacy_title": "Maxfiylik siyosati",
+    "meta_cookie_title": "Cookie siyosati",
+    "meta_terms_conditions_title": "Foydalanish shartlari",
+    "header_link_1": "/uz",
+    "header_link_2": "/uz/pages/rules",
+    "header_link_3": "/uz/pages/donation-description",
+    "header_link_4": "/uz/pages/faq",
+    "header_link_5": "/uz/pages/starting-tips",
+    "header_link_6": "/uz/pages/contact",
+    "header_link_7": "/uz/pages/login",
+    "header_link_8": "/uz/pages/registration",
+    "header_link_9": "/uz/pages/order-history-page",
+    "header_link_10": "/uz/pages/change-password-page",
+    "header_link_11": "/uz/pages/exit-confirmation-page",
+    "header_link_12": "/uz/pages/cart-page",
+    "footer_link_1": "/uz",
+    "footer_link_2": "/uz/pages/rules",
+    "footer_link_3": "/uz/pages/donation-description",
+    "footer_link_4": "/uz/pages/contact",
+    "footer_link_5": "/uz/pages/faq",
+    "footer_link_6": "/uz/pages/starting-tips",
+    "footer_link_7": "/uz/pages/launcher-download",
+    "footer_link_8": "/uz/pages/mods",
+    "footer_link_9": "/uz/pages/privacy-policy",
+    "footer_link_10": "/uz/pages/cookie-policy",
+    "footer_link_11": "/uz/pages/terms-and-conditions",
+    "product_page_name": "Mahsulot",
+    "productPage__desc": "Mahsulot tavsifi:",
+    "header_component": "/ --- /",
+    "header_shop": "Do'kon",
+    "header_rules": "Qoidalar",
+    "header_donate": "Xayriya tavsifi",
+    "header_faq": "TSS",
+    "header_how_to_play": "Qanday o'ynashni boshlash kerak?",
+    "header_contacts": "Kontaktlar",
+    "header_enter": "Tizimga kirish",
+    "header_signup": "Ro'yxatdan o'tish",
+    "header_orders_history": "Buyurtma tarixi",
+    "header_change_password": "Parolni o'zgartirish",
+    "header_logout": "Chiqish",
+    "footer_component": "/ --- /",
+    "footer_store": "Do'kon",
+    "footer_rules": "Qoidalar",
+    "footer_donate": "Xayriya tavsifi",
+    "footer_contacts": "Kontaktlar",
+    "footer_faq": "TSS",
+    "footer_how_to_start": "Qanday o'ynashni boshlash kerak?",
+    "footer_donate_rules": "Xayriya imtiyozlari",
+    "footer_launchers": "Ishchilar",
+    "footer_team": "Jamoa",
+    "footer_mods": "Mods",
+    "footer_privacy": "Maxfiylik siyosati",
+    "footer_cookie": "Cookie siyosati",
+    "footer_terms_and_conditions": "Foydalanish shartlari",
+    "footer_copiryted": "V © 2023 Minecraftdagi sarguzashtlar - Barcha huquqlar himoyalangan. Saytga tegishli va boshqariladi, veb-saytga tegishli va amalga oshiriladi.6-502, 11412.",
+    "/ ----- login_page ----- /": "",
+    "login_forgot_password": "Parolingizni unutdingizmi?",
+    "login_title_forgot_password": "Parol tiklash",
+    "login_send_btn_forgot_password": "Kodni yuborish",
+    "login_send_btn_forgot_password_change": "Parolni o'zgartirish",
+    "login_change_password_code_placeholder": "Sizning kodingiz",
+    "/ ----- home_page ----- /": "",
+    "home_title": "Minecraft dunyosini kashf eting",
+    "home_survival": "Qashillash",
+    "home_anarchy": "Anarxiya",
+    "home_server_monitoring_text": "Hozirda o'ynaydi",
+    "home_server_monitoring_status": "Server holati",
+    "home_price_sort": "Narx bilan saralash",
+    "home_price_sort_asc": "Arzon narxgacha",
+    "home_price_sort_desc": "Qimmatbaho narxdan",
+    "/ ----- contact_page ----- /": "",
+    "contact_title": "Kontaktlar",
+    "contact_text": "Agar biron bir savolingiz bo'lsa, biz bilan bog'laning:",
+    "contact_telegram": "Telegram",
+    "/ ----- change_password ----- /": "",
+    "change_password_first_step_title": "Parolingizni o'zgartirish uchun ni bosing \"Change Password\"tugmasini bosing. Elektron pochtangizga havolani yuboradi, uni bosing va yangi parolni kiriting",
+    "change_password_title": "Parolni o'zgartirish",
+    "change_password_text": "Yangi parolni kiriting",
+    "change_password_button": "Parolni o'zgartirish",
+    "change_password_oldPasswordPlaceholder": "Eski parol",
+    "change_password_newPasswordPlaceholder": "Yangi parol",
+    "change_password_repeatPasswordPlaceholder": "Parolni qayta kiriting"
+}

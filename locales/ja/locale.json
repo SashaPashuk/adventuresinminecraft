@@ -1,0 +1,305 @@
+{
+    "domain": "https://adventuresinminecraft.com",
+    "home_metadate_title": "ホーム | Adventures In Minecraft Server",
+    "home_metadate_description": "ホーム в‘пёЏ 195.201.168.105 Adventures In Minecraft Ś… Minecraft サーバーで特権ケース キーを購入してください",
+    "metadate_og_locale": "ja",
+    "metadate_og_type": "Webサイト",
+    "metadate_og_contact_title": "連絡先 | Adventures In Minecraft Server",
+    "metadate_og_contact_description": "РљРѕРЅС‚Р°РєС‚С‹ в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ… РџРѕРєСѓРїРєР° РґРѕРЅР°С‚Р° Рё РїСЂРёРІРёР»РµРіРёР№ РЅР° СЃРµСЂРІРµСЂРµ РјР°Р№РЅРєСЂР°С„С‚",
+    "donate_description_metadate_title": "寄付の説明 | Adventures In Minecraft Server",
+    "donate_description_metadate_description": "寄付の説明 в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーでの特権ケース キーの購入",
+    "faq_metadate_title": "よくある質問 | Adventures In Minecraft Server",
+    "faq_metadate_description": "FAQ в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーでの特権ケース キーの購入",
+    "launcher_download_metadate_title": "ランチャー | Adventures In Minecraft Server",
+    "launcher_download_metadate_description": "ランチャー в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーで特権ケース キーを購入してください",
+    "login_metadate_title": "ログイン | Adventures In Minecraft Server",
+    "login_metadate_description": "ログイン в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーで特権ケース キーを購入してください",
+    "registration_metadate_title": "登録 | Adventures In Minecraft Server",
+    "registration_metadate_description": "登録 в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーで特権ケース キーを購入してください。",
+    "mods_metadate_title": "MOD | Adventures In Minecraft Server",
+    "mods_metadate_description": "Mods в‘пёЏ 195.201.168.105 Adventures In Minecraft Ś… Minecraft サーバーで特権ケース キーを購入してください",
+    "order_history_metadate_title": "注文履歴 | Adventures In Minecraft Server",
+    "order_history_metadate_description": "注文履歴 в‘пёЏ 195.201.168.105 Adventures In Minecraft Ś… Minecraft サーバーで特典ケース キーを購入してください",
+    "product_metadate_title": "Adventures In Minecraft サーバーで独自の {product_name} ステータスを取得します",
+    "product_metadate_description": "Adventures In Minecraft プロジェクトの {product_name} ランクとサフィックスにアクセスします。… Minecraft サーバーで特権ケース キーを購入します。 • 195.201.168.105…",
+    "rules_metadate_title": "ルール | Adventures In Minecraft Server",
+    "rules_metadate_description": "ルール в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーでの特権ケース キーの購入",
+    "starting_tips_metadate_title": "開始のヒント | Adventures In Minecraft Server",
+    "starting_tips_metadate_description": "開始のヒント «‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーで特権ケース キーを購入する",
+    "success_payment_metadate_title": "成功の支払い | Adventures In Minecraft Server",
+    "success_payment_metadate_description": "支払い成功 в‘пёЏ 195.201.168.105 Adventures In Minecraft Ś… Minecraft サーバーでの特権ケース キーの購入",
+    "decline_payment_metadate_title": "支払いの拒否 | Adventures In Minecraft Server",
+    "decline_payment_metadate_description": "支払いの辞退 в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーで特権ケース キーを購入してください。",
+    "404_metadate_title": "ページが見つかりません | Adventures In Minecraft Server",
+    "404_metadate_description": "ページが見つかりません в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーで特権ケース キーを購入してください",
+    "mods_1122_metadate_title": "1.12.2 | Adventures In Minecraft Server",
+    "mods_1122_metadate_description": "1.12.2 в‘пёЏ 195.201.168.105 Adventures In Minecraft Ś… Minecraft サーバーで特権ケース キーを購入してください",
+    "mods_1122_cars_metadate_title": "1.12.2 (車) | Adventures In Minecraft Server",
+    "mods_1122_cars_metadate_description": "1.12.2 (車) в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ… Minecraft サーバーで特権ケース キーを購入してください",
+    "mods_1122_pe_metadate_title": "Minecraft PE 1.12.2 | Adventures In Minecraft Server",
+    "mods_1122_pe_metadate_description": "Minecraft PE 1.12.2 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ… Minecraft サーバーで特権ケース キーを購入してください",
+    "mods_1122_oruzhie_metadate_title": "1.12.2 (Oruzhie) | Adventures In Minecraft Server",
+    "mods_1122_oruzhie_metadate_description": "1.12.2 (Oruzhie) в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ… Minecraft サーバーで特権ケース キーを購入してください",
+    "mods_1165_metadate_title": "1.16.5 | Adventures In Minecraft Server",
+    "mods_1165_metadate_description": "1.16.5 в‘пёЏ 195.201.168.105 Adventures In Minecraft Ś… Minecraft サーバーで特権ケース キーを購入してください",
+    "mods_journeymap_mod_metadate_title": "Journey Map Mod | Adventures In Minecraft Server",
+    "mods_journeymap_mod_metadate_description": "Journey Map Mod в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ… Minecraft サーバーで特権ケース キーを購入してください",
+    "canonical_home_href": "/ja",
+    "canonical_404_href": "/ja/pages/404",
+    "canonical_cart_href": "/ja/pages/cart-page",
+    "canonical_change_password_href": "/ja/pages/change-password",
+    "canonical_contact_href": "/ja/pages/contact",
+    "canonical_donate_privileges_href": "/ja/pages/donate-privileges",
+    "canonical_donate_description_href": "/ja/pages/donate-description",
+    "canonical_exit_confirmation_page_href": "/ja/pages/exit-confirmation-page",
+    "canonical_faq_href": "/ja/pages/faq",
+    "canonical_launcher_download_href": "/ja/pages/launcher-download",
+    "canonical_login_href": "/ja/pages/login",
+    "canonical_mods_href": "/ja/pages/mods",
+    "canonical_mods_1122_href": "/ja/pages/mods/1122",
+    "canonical_mods_1122_cars_href": "/ja/pages/mods/1122/cars",
+    "canonical_mods_1122_pe_href": "/ja/pages/mods/1122/minecraft-pe-1-12-2",
+    "canonical_mods_1122_oruzhie_href": "/ja/pages/mods/1122/oruzhie",
+    "canonical_mods_journeymap_mod_href": "/ja/pages/mods/journeymap-mod",
+    "canonical_mods_1165_href": "/ja/pages/mods/1165",
+    "canonical_order_history_href": "/ja/pages/order-history-page",
+    "canonical_product_href": "/ja/pages/product",
+    "canonical_registration_href": "/ja/pages/registration",
+    "canonical_rules_href": "/ja/pages/rules",
+    "canonical_starting_tips_href": "/ja/pages/starting-tips",
+    "canonical_success_payment_href": "/ja/pages/success-payment",
+    "canonical_decline_payment_href": "/ja/pages/decline-payment",
+    "canonical_team_href": "/ja/pages/team",
+    "home_page_url": {
+        "en": "/",
+        "ru": "/ja"
+    },
+    "mods_page_url": {
+        "en": "/pages/mods",
+        "ru": "/ja/pages/mods"
+    },
+    "mods_1122_page_url": {
+        "en": "/pages/mods/1122",
+        "ru": "/ja/pages/mods/1122"
+    },
+    "mods_1122_cars_page_url": {
+        "en": "/pages/mods/1122/cars",
+        "ru": "/ja/pages/mods/1122/cars"
+    },
+    "mods_1122_pe_page_url": {
+        "en": "/pages/mods/1122/minecraft-pe-1-12-2",
+        "ru": "/ja/pages/mods/1122/minecraft-pe-1-12-2"
+    },
+    "mods_1122_oruzhie_page_url": {
+        "en": "/pages/mods/1122/oruzhie",
+        "ru": "/ja/pages/mods/1122/oruzhie"
+    },
+    "mods_journeymap_mod_page_url": {
+        "en": "/pages/mods/journeymap-mod",
+        "ru": "/ja/pages/mods/journeymap-mod"
+    },
+    "mods_1165_page_url": {
+        "en": "/pages/mods/1165",
+        "ru": "/ja/pages/mods/1165"
+    },
+    "product_page_url": {
+        "en": "/pages/product",
+        "ru": "/ja/pages/product"
+    },
+    "launcher_download_page_url": {
+        "en": "/pages/launcher-download",
+        "ru": "/ja/pages/launcher-download"
+    },
+    "404_page_url": {
+        "en": "/pages/404",
+        "ru": "/ja/pages/404"
+    },
+    "rules_page_url": {
+        "en": "/pages/rules",
+        "ru": "/ja/pages/rules"
+    },
+    "faq_page_url": {
+        "en": "/pages/faq",
+        "ru": "/ja/pages/faq"
+    },
+    "login_page_url": {
+        "en": "/pages/login",
+        "ru": "/ja/pages/login"
+    },
+    "order_history_page_url": {
+        "en": "/pages/order-history-page",
+        "ru": "/ja/pages/order-history-page"
+    },
+    "registration_page_url": {
+        "en": "/pages/registration",
+        "ru": "/ja/pages/registration"
+    },
+    "contact_page_url": {
+        "en": "/pages/contact",
+        "ru": "/ja/pages/contact"
+    },
+    "starting_tips_page_url": {
+        "en": "/pages/starting-tips",
+        "ru": "/ja/pages/starting-tips"
+    },
+    "donation_page_url": {
+        "en": "/pages/donation-description",
+        "ru": "/ja/pages/donation-description"
+    },
+    "donate_priv_page_url": {
+        "en": "/pages/donate-privileges",
+        "ru": "/ja/pages/donate-privileges"
+    },
+    "change_password_page_url": {
+        "en": "/pages/change-password-page",
+        "ru": "/ja/pages/change-password-page"
+    },
+    "cart_page_url": {
+        "en": "/pages/cart-page",
+        "ru": "/ja/pages/cart-page"
+    },
+    "team_page_url": {
+        "en": "/pages/team",
+        "ru": "/ja/pages/team"
+    },
+    "success_payment_page_url": {
+        "en": "/pages/success_payment",
+        "ru": "/ja/pages/success_payment"
+    },
+    "decline_payment_page_url": {
+        "en": "/pages/decline_payment",
+        "ru": "/ja/pages/decline_payment"
+    },
+    "exit_confirmation_page_url": {
+        "en": "/pages/exit-confirmation-page",
+        "ru": "/ja/pages/exit-confirmation-page"
+    },
+    "privacy_link": {
+        "en": "/pages/privacy-policy",
+        "ru": "/ja/pages/privacy-policy"
+    },
+    "cookie_link": {
+        "en": "/pages/cookie-policy",
+        "ru": "/ja/pages/cookie-policy"
+    },
+    "terms_conditions_link": {
+        "en": "/pages/terms-and-conditions/",
+        "ru": "/ja/pages/terms-and-conditions/"
+    },
+    "meta_cart_title": "カート | Adventures In Minecraft Server",
+    "meta_cart_desc": "カート в‘пёЏ 195.201.168.105 Adventures In Minecraft Ś… Minecraft サーバーで特権ケース キーを購入してください",
+    "meta_change_password_title": "パスワードの変更 | Adventures In Minecraft Server",
+    "meta_change_password_desc": "パスワード変更 в‘пёЏ 195.201.168.105 Adventures In Minecraft Ś… Minecraft サーバーで特権ケース キーを購入してください",
+    "meta_contact_title": "連絡先 | Adventures In Minecraft Server",
+    "meta_contact_desc": "連絡先 в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーで特権ケース キーを購入してください。",
+    "meta_donate_privileges_title": "特典を寄付する | Adventures In Minecraft Server",
+    "meta_donate_privileges_desc": "特権を寄付する в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーで特権ケースのキーを購入する",
+    "meta_donation_title": "寄付の説明 | Adventures In Minecraft Server",
+    "meta_donation_desc": "寄付の説明 в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーでの特権ケース キーの購入",
+    "meta_exit_confirmation_title": "終了確認 | Adventures In Minecraft Server",
+    "meta_exit_confirmation_desc": "終了確認 в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーで特権ケース キーを購入してください",
+    "meta_faq_title": "よくある質問 | Adventures In Minecraft Server",
+    "meta_faq_desc": "FAQ в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーでの特権ケース キーの購入",
+    "meta_launcher_download_title": "ランチャー | Adventures In Minecraft Server",
+    "meta_launcher_download_desc": "ランチャー в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーで特権ケース キーを購入してください",
+    "meta_login_title": "ログイン | Adventures In Minecraft Server",
+    "meta_login_desc": "ログイン в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーで特権ケース キーを購入してください",
+    "meta_mods_title": "MOD | Adventures In Minecraft Server",
+    "meta_mods_desc": "Mods в‘пёЏ 195.201.168.105 Adventures In Minecraft Ś… Minecraft サーバーで特権ケース キーを購入してください",
+    "meta_order_history_title": "注文履歴 | Adventures In Minecraft Server",
+    "meta_order_history_desc": "注文履歴 в‘пёЏ 195.201.168.105 Adventures In Minecraft Ś… Minecraft サーバーで特典ケース キーを購入してください",
+    "meta_registration_title": "登録 | Adventures In Minecraft Server",
+    "meta_registration_desc": "登録 в‘пёЏ ${serverIP} Adventures In Minecraft «... Minecraft サーバーでの特権ケース キーの購入",
+    "meta_rules_title": "ルール | Adventures In Minecraft Server",
+    "meta_rules_desc": "ルール в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーでの特権ケース キーの購入",
+    "meta_starting_tips_title": "開始のヒント | Adventures In Minecraft Server",
+    "meta_starting_tips_desc": "開始のヒント «‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーで特権ケース キーを購入する",
+    "meta_success_payment_title": "成功の支払い | Adventures In Minecraft Server",
+    "meta_success_payment_desc": "支払い成功 в‘пёЏ 195.201.168.105 Adventures In Minecraft Ś… Minecraft サーバーでの特権ケース キーの購入",
+    "meta_decline_payment_title": "支払いの拒否 | Adventures In Minecraft Server",
+    "meta_decline_payment_desc": "支払いの辞退 в‘пёЏ 195.201.168.105 Adventures In Minecraft «... Minecraft サーバーで特権ケース キーを購入してください。",
+    "meta_product_title": "Adventures In Minecraft サーバーで自分のステータスを取得しましょう",
+    "meta_product_desc": "Adventures In Minecraft プロジェクトのランクとサフィックスにアクセスします。… Minecraft サーバーで特権ケース キーを購入します。 в‘пёЏ 195.201.168.105 вњ…",
+    "meta_privacy_title": "プライバシーポリシー",
+    "meta_cookie_title": "クッキーポリシー",
+    "meta_terms_conditions_title": "利用規約",
+    "header_link_1": "/ja",
+    "header_link_2": "/ja/pages/rules",
+    "header_link_3": "/ja/pages/donation-description",
+    "header_link_4": "/ja/pages/faq",
+    "header_link_5": "/ja/pages/starting-tips",
+    "header_link_6": "/ja/pages/contact",
+    "header_link_7": "/ja/pages/login",
+    "header_link_8": "/ja/pages/registration",
+    "header_link_9": "/ja/pages/order-history-page",
+    "header_link_10": "/ja/pages/change-password-page",
+    "header_link_11": "/ja/pages/exit-confirmation-page",
+    "header_link_12": "/ja/pages/cart-page",
+    "footer_link_1": "/ja",
+    "footer_link_2": "/ja/pages/rules",
+    "footer_link_3": "/ja/pages/donation-description",
+    "footer_link_4": "/ja/pages/contact",
+    "footer_link_5": "/ja/pages/faq",
+    "footer_link_6": "/ja/pages/starting-tips",
+    "footer_link_7": "/ja/pages/launcher-download",
+    "footer_link_8": "/ja/pages/mods",
+    "footer_link_9": "/ja/pages/privacy-policy",
+    "footer_link_10": "/ja/pages/cookie-policy",
+    "footer_link_11": "/ja/pages/terms-and-conditions",
+    "product_page_name": "製品",
+    "productPage__desc": "製品説明：",
+    "header_component": "/----/",
+    "header_shop": "店",
+    "header_rules": "ルール",
+    "header_donate": "寄付金の説明",
+    "header_faq": "よくある質問",
+    "header_how_to_play": "どうやってプレイを始めればいいの？",
+    "header_contacts": "連絡先",
+    "header_enter": "ログイン",
+    "header_signup": "サインアップ",
+    "header_orders_history": "注文履歴",
+    "header_change_password": "パスワードを変更する",
+    "header_logout": "ログアウト",
+    "footer_component": "/----/",
+    "footer_store": "店",
+    "footer_rules": "ルール",
+    "footer_donate": "寄付金の説明",
+    "footer_contacts": "連絡先",
+    "footer_faq": "よくある質問",
+    "footer_how_to_start": "どうやってプレイを始めればいいの？",
+    "footer_donate_rules": "『寄付特典』",
+    "footer_launchers": "ランチャー",
+    "footer_team": "チーム",
+    "footer_mods": "モッズ",
+    "footer_privacy": "プライバシーポリシー",
+    "footer_cookie": "クッキーポリシー",
+    "footer_terms_and_conditions": "利用規約",
+    "footer_copiryted": "В© 2023 Adventures in Minecraft - 全著作権所有。ウェブサイトは GalaxyGrip OГњ によって所有および運営されており、エストニア共和国の法律によって登録されています。会社番号 16776100、登録住所: Harju maakond, Tallinn, LasnamГ¤e linnaosa, Katusepapi tn 6-502、11412。",
+    "/ ----- login_page ----- /": "",
+    "login_forgot_password": "パスワードを忘れましたか？",
+    "login_title_forgot_password": "パスワードの回復",
+    "login_send_btn_forgot_password": "コードを送信する",
+    "login_send_btn_forgot_password_change": "パスワードを変更する",
+    "login_change_password_code_placeholder": "コードを入力してください",
+    "/ ----- home_page ----- /": "",
+    "home_title": "マインクラフトの世界を発見しよう",
+    "home_survival": "サバイバル",
+    "home_anarchy": "アナーキー",
+    "home_server_monitoring_text": "現在プレイ中",
+    "home_server_monitoring_status": "サーバーステータス",
+    "home_price_sort": "価格順に並べ替える",
+    "home_price_sort_asc": "安いものから高いものまで",
+    "home_price_sort_desc": "高いものから安いものまで",
+    "/ ----- contact_page ----- /": "",
+    "contact_title": "連絡先",
+    "contact_text": "ご不明な点がございましたら、お問い合わせください。",
+    "contact_telegram": "Telegram",
+    "/ ----- change_password ----- /": "",
+    "change_password_first_step_title": "パスワードを変更するには、 をクリックしてください。\"Change Password\"ボタン。メールアドレスにリンクが送信されますので、それをクリックして新しいパスワードを入力してください。",
+    "change_password_title": "パスワードを変更する",
+    "change_password_text": "新しいパスワードを入力",
+    "change_password_button": "パスワードを変更する",
+    "change_password_oldPasswordPlaceholder": "以前のパスワード",
+    "change_password_newPasswordPlaceholder": "新しいパスワード",
+    "change_password_repeatPasswordPlaceholder": "パスワードを再度入力してください"
+}

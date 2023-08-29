@@ -11,12 +11,12 @@ export const APP_LANGUAGES = [
   "fr",
   "de",
   "pt",
-  // "it",
-  // "ja",
-  // "az",
-  // "ko",
-  // "uz",
-  // "cn",
+  "it",
+  "ja",
+  "az",
+  "ko",
+  "uz",
+  "cn",
 ];
 
 export const SHOP_ITEM_TIME_USAGE = {
