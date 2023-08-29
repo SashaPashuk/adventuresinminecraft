@@ -17077,9 +17077,10 @@ export const languageLocalizations = {
     launcherPage__btn: "Yükləmə",
 
     // rulesPage
-    rulePage_title: "Qaydalar",
+    rulesPage_title: "Qaydalar",
     rulesPage__general_rules_title: "Ümumi qaydalar",
-    rulePage__player_rights_and_duties_title: "Oyunçuların hüquq və vəzifələri",
+    rulesPage__player_rights_and_duties_title:
+      "Oyunçuların hüquq və vəzifələri",
     rulesPage__admin_rights_and_duties_title: "İdarənin hüquq və vəzifələri",
     rulesPage__explanations_title: "İzahlar",
     rulesPage__general_rules_text: `
@@ -17311,11 +17312,12 @@ export const languageLocalizations = {
     patch1122_p_1: `Minecraft 1.12.2 yaradıcılıq və macəra üçün çoxlu imkanlar təklif edən oyunun məşhur versiyasıdır. Bununla belə, oyuna daha çox müxtəliflik və maraq əlavə etmək üçün bir çox oyunçu dəyişikliklərə müraciət edir. Minecraft 1.12.2 üçün modlar oyun dünyanızı genişləndirməyə, yeni elementlər, mexanika, dəstələr və s. əlavə etməyə imkan verir. Bu mətndə Meinkraft 1.12.2 üçün bir neçə məşhur modifikasiyaya nəzər salacağıq ki, bu da sizə oyunu yeni şəkildə yaşamağa imkan verəcək.`,
     "1122_h2_1":
       "Minecraft 1.12.2 üçün modlar yaradın: Oyun təcrübənizi optimallaşdırın",
-    patch1122_p_2InnerHTML: "Minecraft"`1.12.2 üçün modlar oyun təcrübəsini yaxşılaşdırmaq üçün bir araya gətirilən müxtəlif modifikasiyaların toplusudur. Mod quruluşları ilə siz oyuna yeni bloklar, alətlər, filizlər, dəstələr və s. əlavə edə bilərsiniz. Minecraft 1.12.2 üçün məşhur mod dəstlərindən biri -<strong>"Dəmir"</strong>. O, modifikasiyaları quraşdırmaq və idarə etmək, habelə onların bir-biri ilə uyğunluğunu təmin etmək üçün əlverişli platforma təqdim edir.`,
+    patch1122_p_2InnerHTML: `Minecraft 1.12.2 üçün modlar oyun təcrübəsini yaxşılaşdırmaq üçün bir araya gətirilən müxtəlif modifikasiyaların toplusudur. Mod quruluşları ilə siz oyuna yeni bloklar, alətlər, filizlər, dəstələr və s. əlavə edə bilərsiniz. Minecraft 1.12.2 üçün məşhur mod dəstlərindən biri -<strong>"Dəmir"</strong>. O, modifikasiyaları quraşdırmaq və idarə etmək, habelə onların bir-biri ilə uyğunluğunu təmin etmək üçün əlverişli platforma təqdim edir.`,
     "1122_p_3":
       "Minecraft 1.12.2 üçün mod kompilyasiyasını yükləmək üçün rəsmi Forge veb saytına daxil olmalı və oyununuz üçün uyğun versiyanı tapmalısınız. Sonra modların quruluşunu fərdiləşdirmək üçün quraşdırma təlimatlarına əməl edin və Minecraft-da yeni xüsusiyyətlərdən həzz almağa başlayın.",
     "1122_h2_2": "Minecraft 1.12.2 üçün məşhur modlar",
-    "1122_p_4": "Meinkraft"`1.12.2 üçün çoxlu sayda mod var, hər biri oyunda unikal xüsusiyyətlər və dəyişikliklər təklif edir. Baxmağa dəyər bir neçə məşhur modifikasiya var:`,
+    "1122_p_4":
+      "Meinkraft 1.12.2 üçün çoxlu sayda mod var, hər biri oyunda unikal xüsusiyyətlər və dəyişikliklər təklif edir. Baxmağa dəyər bir neçə məşhur modifikasiya var:",
     "1122_li_1InnerHTML": `<strong>"IndustrialCraft 2"</strong>- "IndustrialCraft 2" texnologiya və sənaye sahəsində oyunçular üçün böyük imkanlar açan MeInkraft 1.12.2-də ən populyar modlardan biridir. Bu modifikator sizə prosesləri avtomatlaşdırmağa, enerji yaratmağa və oyun dünyasında öz sənayenizi inkişaf etdirməyə imkan verən bir çox texnoloji elementlər və mexanizmlər əlavə edir.`,
     "1122_li_2InnerHTML": `<strong>"Thaumcraft"</strong>- "Thaumcraft" - sehr və taumaturgiya dünyasına qapı açan Minecraft 1.12.2 üçün füsunkar moddur. Oyuna fantaziya və sirr elementləri əlavə etmək istəyirsinizsə, bu mod mükəmməl seçim olacaq. "Thaumcraft" özünüzü yeni biliklər öyrənməyə, sehrli əşyalar yaratmağa və sehrlərdən istifadə etməyə imkan verir. "Thaumcraft" modu oyun dünyanızda unikal sehr və sirr atmosferi yaradır. Sehr və tavmaturgiya sahəsində maraqlı kəşfiyyat və inkişaf yolu təklif edir. Minecraft-a əlavə sehrli dərinlik qatı əlavə etmək istəyirsinizsə, "Thaumcraft" sizin üçün əla əlavə olacaq.`,
     "1122_li_3InnerHTML": `<strong>"Biomes O' Plenty"</strong>- Minecraft 1.12.2 üçün oyundakı biomların müxtəlifliyini xeyli genişləndirən maraqlı moddur. Standart mənzərələrdən bezmisinizsə və yeni sərgüzəştlərə dalmaq istəyirsinizsə, bu mod əla seçim olacaq. O, çoxlu sayda yeni mənzərələr, bitkilər, dəstələr əlavə edir və oyun dünyanızda unikal atmosfer yaradır.`,
