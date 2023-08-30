@@ -7211,19 +7211,19 @@ export const languageLocalizations = {
     orderHistoryPage__overallPrice: "Cena całkowita",
 
     // productPage
-    produktPage__desc: "Opis produktu:",
-    productPage_price: "Cena:",
+    productPage__desc: "Opis produktu:",
+    productPage__price: "Cena:",
     productPage__usage: "Data ważności zakupu:",
-    produktPage__usage_30: "30 dni",
-    produktPage__usage_forever: "Na zawsze",
-    produktPage_amount: "Kwota:",
+    productPage__usage_30: "30 dni",
+    productPage__usage_forever: "Na zawsze",
+    productPage__amount: "Kwota:",
     productPage__button: "Dodaj do koszyka",
 
     // latestPurchases
     latestPurchases__title: "Najnowsze zakupy",
 
     // loginPage
-    loginPage_title: "Zaloguj się",
+    loginPage__title: "Zaloguj się",
     loginPage__button: "Zaloguj się",
     loginPage__account: "Nie masz konta?",
     loginPage__link: "Zarejestruj się",
@@ -7258,7 +7258,7 @@ export const languageLocalizations = {
     // launcherPage
     launcherPage__title: "URUCHOM MINECRAFT Z MODAMI",
     launcherPage__desc: `Launcher to program, który pozwala graczom szybko i łatwo pobrać grę Minecraft i którego zadaniem jest pobieranie i uruchamianie gry z naszymi modami. Dostępna jest możliwość pojedynczej gry lub na serwerach CubixWorld. Przede wszystkim musisz pobrać Minecraft na komputer lub telefon, to nic nie kosztuje.`,
-    launcherPage_conclusion: `Ponieważ program uruchamiający jest dostępny na wielu platformach, w tym MacOS, Linux i Windows, Android.`,
+    launcherPage__conclusion: `Ponieważ program uruchamiający jest dostępny na wielu platformach, w tym MacOS, Linux i Windows, Android.`,
     launcherPage__btn: "Pobierz",
 
     // rulesPage
@@ -17026,11 +17026,11 @@ export const languageLocalizations = {
 
     // productPage
     productPage__desc: "Məhsul təsviri:",
-    məhsulPage__price: "Qiymət:",
+    productPage__price: "Qiymət:",
     productPage__usage: "Satın alma müddəti:",
     productPage__usage_30: "30 Gün",
     productPage__usage_forever: "Əbədi",
-    məhsulPage__amount: "Kəmiyyət:",
+    productPage__amount: "Kəmiyyət:",
     productPage__button: "Səbətə əlavə et",
 
     // latestPurchases
@@ -19826,7 +19826,7 @@ export const languageLocalizations = {
 
     // productPage
     productPage__desc: "Mahsulot tavsifi:",
-    productPage__narxi: "Narx:",
+    productPage__price: "Narx:",
     productPage__usage: "Xaridning amal qilish muddati:",
     productPage__usage_30: "30 kun",
     productPage__usage_forever: "abadiy",
@@ -19838,7 +19838,7 @@ export const languageLocalizations = {
 
     // loginPage
     loginPage__title: "Kirish",
-    loginPage__tugmasi: "Kirish",
+    loginPage__button: "Kirish",
     loginPage__account: "Hisobingiz yo'qmi?",
     loginPage__link: "Ro'yxatdan o'tish",
     loginPage__emailPlaceholder: "Sizning elektron pochtangiz",
