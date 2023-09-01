@@ -525,314 +525,86 @@ export const languageLocalizations = {
     "404Page__home_link": "Return to main page",
     // privacy policy
     privacyPolicyPage_contentInnerHTML: `
-        <div class="container">
-        <h1 class="policy__title">PRIVACY POLICY</h1>
-        <p class="policy__update">Effective June 29, 2023</p>
-        <p class="policy__subtitle">What Is This Privacy Policy for?</p>
-        <p class="policy__text">
-          <strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”)
-          respects your privacy and is committed to protecting your personal
-          data. This policy informs you how we look after your personal data
-          and tells you about your privacy rights and how the law protects
-          you. This privacy policy applies to any visitor of the Site/ the
-          user/ the buyer/ the player/ the customer (further “you”, “your”)
-          who uses the Site, registers on it and buys anything in our online
-          store.
-        </p>
-        <p class="policy__text">
-          This Privacy policy is a part of the Agreement between you and us.
-          Before you buy anything in our online store you need to accept our
-          offer. That means that you accept the terms of all the documents
-          that constitute the Agreement. The proper acceptance of the offer in
-          accordance with the law of Estonia is the consistent implementation
-          by you of the following actions: read terms of the Agreement,
-          register on the Site, put a tick in the checkbox that you accept the
-          terms before making a purchase. If you put a tick in the checkbox,
-          you agree with the terms of this Privacy policy in particular.
-        </p>
-        <p class="policy__text">
-          The Site is owned by GalaxyGrip OÜ - a company registered according
-          to legislation of Estonia with its registered number 16776100, whose
-          registered address is Harju maakond, Tallinn, Lasnamäe linnaosa,
-          Katusepapi tn 6-502, 11412.
-        </p>
-        <p class="policy__text">
-          We are the data controller when we collect personal information from
-          our users, buyers, players, customers and clients. We will not pass
-          your personal data on to any third party unless required to do so by
-          law or if you have given us separate written permission to do so.
-        </p>
-        <p class="policy__text">
-          The updated version of this privacy policy is the only one
-          applicable for the duration of the use of the Site until there is no
-          other version that replaces it. We may modify this Privacy policy
-          without notifying you, so please check back often for updates. Any
-          changes made will be available on this page.
-        </p>
-  
-        <p class="policy__subtitle">What Data Do We Collect About You?</p>
-        <p class="policy__text">
-          Personal data, or personal information, means any information about
-          an individual from which that person can be identified. It does not
-          include data where the identity has been removed (anonymous data).
-          We MAY collect, use, store and process different kinds of personal
-          data about you.
-        </p>
-        <p class="policy__text">
-          Your data is collected by the Site. We only ask for an email, when
-          you register on the Site.
-        </p>
-        <p class="policy__text">
-          When you select products in our online store, we ask only your
-          Minecraft nickname and the server.
-        </p>
-        <p class="policy__text">
-          When you have selected the goods and want to pay, you are redirected
-          to the payment page of the BazPay Gateway. The page collects your
-          payment card date in order to process your payment. The payment card
-          data collected by BazPay is your card number, expiry date, your name
-          indicated on the card and your CVV code. We do not collect either
-          keep your payment card information.
-        </p>
-        <p class="policy__subtitle">Third Party Links</p>
-        <p class="policy__text">
-          The Sites practice a link to a payment page provided by the BazPay
-          Gateway in order to collect your payment card information and
-          process your payment request. We guarantee the security of payments
-          when paying by credit or debit card. The BazPay Gateway that
-          provides the service of processing the payment requests complies
-          with PCI DSS requirements for the secure processing of the payer's
-          bank card details.
-        </p>
-        <p class="policy__subtitle">Children</p>
-        <p class="policy__text">
-          This website is not intended for children and we do not knowingly
-          collect data relating to children.
-        </p>
-        <p class="policy__subtitle">Special Category Data</p>
-        <p class="policy__text">
-          We do not anticipate that any special category data will be
-          processed by us in our business relationship with you.
-        </p>
-        <p class="policy__subtitle">What We May Need From You in Addition</p>
-        <p class="policy__text">
-          We may need to request specific information from you to help us
-          confirm your identity and take part in a possible dispute
-          investigation on your purchase or a chargeback. If you apply for a
-          refund, we will need to request additional information/documentation
-          as well.
-        </p>
-  
-        <p class="policy__subtitle">
-          What information we may request from you
-        </p>
-        <p class="policy__text">
-          We may request such personal information from you: your first name,
-          last name, date of birth, registration address, ID code.
-        </p>
-  
-        <p class="policy__subtitle">What documents we may request from you</p>
-        <p class="policy__text">
-          We may request a photo or scan of your ID document (passport, ID
-          card, driving license etc.), a proof of address (it may be a utility
-          bill or bank statement not older than 3 months), photo of your
-          paying card, selfie-photo of your face, selfie-photo of you with
-          your card, selfie-photo of you with your passport. Also we may ask
-          you to provide a payment report that was sent to your email address
-          after you made a purchase in our online store.
-        </p>
-  
-        <p class="policy__subtitle">How do we contact you</p>
-        <p class="policy__text">
-          As long as we have only your email address, we can contact you by
-          email.
-        </p>
-  
-        <p class="policy__subtitle">
-          Under what conditions we request additional information and/or
-          documents
-        </p>
-        <p class="policy__text">
-          If we receive a request from a payment provider, an International
-          Payment Card System or a bank, we may contact you to request your
-          information and/or documents. Usually it pertains to dispute
-          resolutions, fraud investigations, chargebacks.
-        </p>
-        <p class="policy__text">
-          If you apply for a refund, we will need you to provide a payment
-          report and additional documents according to the request of our
-          support team.
-        </p>
-  
-        <p class="policy__subtitle">
-          For What Purpose Do We Process Your Personal Data?
-        </p>
-        <p class="policy__text">
-          The purpose of processing the personal data that may be collected is
-          mainly to facilitate your purchase in our online store. Among other
-          purposes is to manage our relationship with you, to be able to offer
-          you our products in accordance with your interests, to improve your
-          user experience and, where appropriate, for the treatment of your
-          requests.
-        </p>
-        <p class="policy__text">
-          The data provided will be kept as long as the commercial
-          relationship is maintained, as long as the interested party does not
-          request its deletion, or during the years necessary to comply with
-          legal obligations.
-        </p>
-  
-        <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
-        <p class="policy__text">
-          We will only use your personal data when the law allows us to.
-        </p>
-        <p class="policy__text">
-          The BazPay Gateway uses your payment card details to process your
-          payment request.
-        </p>
-        <p class="policy__text">
-          Most commonly, as we only ask for an email, Minecraft nickname and
-          the server, we use it to provide you the opportunity to buy goods in
-          our online store.
-        </p>
-  
-        <p class="policy__subtitle">
-          To Which Recipients Will the Data Be Disclosed?
-        </p>
-        <p class="policy__text">
-          Your personal data may eventually be communicated if communications
-          had to be made to the authorities in the event that the user had
-          carried out actions contrary to the Law; except as provided herein,
-          we will not transfer the data provided to third parties.
-        </p>
-        <p class="policy__text">
-          If we receive a request from a payment provider, an International
-          Payment Card System or a bank, and contact you to request your
-          information and/or documents, we share the information/documents
-          with the party which provided the request. Usually it pertains to
-          dispute resolutions, fraud investigations, chargebacks.
-        </p>
-        <p class="policy__text">
-          We may also have to share your personal data with other third
-          parties where you have given your consent for us to do so.
-        </p>
-  
-        <p class="policy__subtitle">Data Security and Retention</p>
-        <p class="policy__text">
-          GalaxyGrip OÜ has adopted and maintains the necessary technical and
-          organizational security measures to protect the personal information
-          that users provide in order to avoid its alteration, loss, treatment
-          or unauthorized access, taking into account the state of technology,
-          nature of the data stored and the risks to which they are exposed.
-        </p>
-        <p class="policy__text">
-          However, please, bear in mind that the security of computer systems
-          is never absolute. Please note that no transmission over the
-          Internet is 100% secure and no data stored on it is invulnerable. We
-          cannot guarantee the security of our Site, databases or services,
-          nor can we guarantee that the information you submit to us will not
-          be intercepted while you are transmitting it to us over the
-          Internet. We are not responsible for the actions of third parties.
-        </p>
-        <p class="policy__text">
-          As for data retention, we will only retain your personal data for as
-          long as necessary to fulfill the purposes we collected it for,
-          including for the purposes of satisfying any legal, accounting, or
-          reporting requirements.
-        </p>
-        <p class="policy__text">
-          Your payment card details are retained by encryption methods that
-          are PCI DSS compliant because BazPay has a PCI DSS certificate.
-        </p>
-  
-        <p class="policy__subtitle">What Are Your Legal Rights?</p>
-        <p class="policy__text">
-          Under certain circumstances, you have rights under data protection
-          laws in relation to your personal data.
-        </p>
-        <p class="policy__text">You have the right to:</p>
-        <p class="policy__text">
-          Request Access to your personal data. This enables you to receive a
-          copy of the personal data we hold about you and to check that we are
-          lawfully processing it.
-        </p>
-        <p class="policy__text">
-          Request Correction of the personal data that we hold about you. This
-          enables you to have any incomplete or inaccurate data we hold about
-          you corrected, though we may need to verify the accuracy of the new
-          data you provide to us.
-        </p>
-        <p class="policy__text">
-          Request Erasure of your personal data. This enables you to ask us to
-          delete or remove personal data where there is no good reason for us
-          continuing to process it. You also have the right to ask us to
-          delete or remove your personal data where you have successfully
-          exercised your right to object to processing, where we may have
-          processed your information unlawfully or where we are required to
-          erase your personal data to comply with local law. Note, however,
-          that we may not always be able to comply with your request of
-          erasure for specific legal reasons which will be notified to you, if
-          applicable, at the time of your request.
-        </p>
-        <p class="policy__text">
-          Object To Processing of your personal data where we are relying on a
-          legitimate interest (or those of a third party) and there is
-          something about your particular situation which makes you want to
-          object to processing on this ground as you feel it impacts on your
-          fundamental rights and freedoms. You also have the right to object
-          where we are processing your personal data for direct marketing
-          purposes. In some cases, we may demonstrate that we have compelling
-          legitimate grounds to process your information which override your
-          rights and freedoms.
-        </p>
-        <p class="policy__text">
-          Request Restriction of Processing of your personal data. This
-          enables you to ask us to suspend the processing of your personal
-          data in the following scenarios: (a) if you want us to establish the
-          data’s accuracy; (b) where our use of the data is unlawful but you
-          do not want us to erase it; (c) where you need us to hold the data
-          even if we no longer require it as you need it to establish,
-          exercise or defend legal claims; or (d) you have objected to our use
-          of your data but we need to verify whether we have overriding
-          legitimate grounds to use it.
-        </p>
-        <p class="policy__text">
-          Request the Transfer of your personal data to you or to a third
-          party. We will provide to you, or a third party you have chosen,
-          your personal data in a structured, commonly used, machine-readable
-          format. Note that this right only applies to automated information
-          which you initially provided consent for us to use or where we used
-          the information to perform a contract with you.
-        </p>
-        <p class="policy__text">
-          Withdraw Consent at Any Time where we are relying on consent to
-          process your personal data. However, this will not affect the
-          lawfulness of any processing carried out before you withdraw your
-          consent. If you withdraw your consent, we may not be able to provide
-          certain products or services to you. We will advise you if this is
-          the case at the time you withdraw your consent.
-        </p>
-        <p class="policy__text">
-          If you wish to exercise any of the rights set out above, please
-          contact us.
-        </p>
-        <p class="policy__text">
-          No Fee Usually Required. You will not have to pay a fee to access
-          your personal data (or to exercise any of the other rights).
-          However, we may charge a reasonable fee if your request is clearly
-          unfounded, repetitive or excessive. Alternatively, we may refuse to
-          comply with your request in these circumstances.
-        </p>
-  
-        <p class="policy__subtitle">Time Limit Within Which We Respond</p>
-        <p class="policy__text">
-          We try to respond to all legitimate requests within 30 days.
-          Occasionally it may take us longer than a month if your request is
-          particularly complex or if you have made a number of requests. In
-          this case, we will notify you and keep you updated.
-        </p>
-      </div>
-      `,
+    <div class="container">
+      <h1 class="policy__title">PRIVACY POLICY</h1>
+
+      <p class="policy__update">Effective June 29, 2023</p>
+
+      <p class="policy__subtitle">What Is This Privacy Policy for?</p>
+      <p class="policy__text"><strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. This policy informs you how we look after your personal data and tells you about your privacy rights and how the law protects you. This privacy policy applies to any visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”) who uses the Site, registers on it and buys anything in our online store.</p>
+      <p class="policy__text">This Privacy policy is a part of the Agreement between you and us. Before you buy anything in our online store you need to accept our offer. That means that you accept the terms of all the documents that constitute the Agreement. The proper acceptance of the offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase.  If you put a tick in the checkbox, you agree with the terms of this Privacy policy in particular.</p>
+      <p class="policy__text">The Site is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
+      <p class="policy__text">We are the data controller when we collect personal information from our users, buyers, players, customers and clients. We will not pass your personal data on to any third party unless required to do so by law or if you have given us separate written permission to do so.</p>
+      <p class="policy__text">The updated version of this privacy policy is the only one applicable for the duration of the use of the Site until there is no other version that replaces it. We may modify this Privacy policy without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
+      
+      <p class="policy__subtitle">What Data Do We Collect About You?</p>
+      <p class="policy__text">Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data). We MAY collect, use, store and process different kinds of personal data about you.</p>
+      <p class="policy__text">Your data is collected by the Site. We only ask for an email, when you register on the Site.</p>
+      <p class="policy__text">When you select products in our online store, we ask only your Minecraft nickname and the server.</p>
+      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the PayAdmit Gateway. The page collects your payment card date in order to process your payment. The payment card data collected by PayAdmit is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect either keep your payment card information.</p>
+
+      <p class="policy__subtitle">Third Party Links</p>
+      <p class="policy__text">The Sites practice a link to a payment page provided by the PayAdmit Gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The PayAdmit Gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+
+      <p class="policy__subtitle">Children</p>
+      <p class="policy__text">This website is not intended for children and we do not knowingly collect data relating to children.</p>
+
+      <p class="policy__subtitle">Special Category Data</p>
+      <p class="policy__text">We do not anticipate that any special category data will be processed by us in our business relationship with you.</p>
+
+      <p class="policy__subtitle">What We May Need From You in Addition</p>
+      <p class="policy__text">We may need to request specific information from you to help us confirm your identity and take part in a possible dispute investigation on your purchase or a chargeback. If you apply for a refund, we will need to request additional information/documentation as well.</p>
+      
+      <p class="policy__subtitle">What information we may request from you</p>
+      <p class="policy__text">We may request such personal information from you: your first name, last name, date of birth, registration address, ID code.</p>
+      
+      <p class="policy__subtitle">What documents we may request from you</p>
+      <p class="policy__text">We may request a photo or scan of your ID document (passport, ID card, driving license etc.), a proof of address (it may be a utility bill or bank statement not older than 3 months), photo of your paying card, selfie-photo of your face, selfie-photo of you with your card, selfie-photo of you with your passport. Also we may ask you to provide a payment report that was sent to your email address after you made a purchase in our online store.</p>
+      
+      <p class="policy__subtitle">How do we contact you</p>
+      <p class="policy__text">As long as we have only your email address, we can contact you by email.</p>
+      
+      <p class="policy__subtitle">Under what conditions we request additional information and/or documents</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, we may contact you to request your information and/or documents. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">If you apply for a refund, we will need you to provide a payment report and additional documents according to the request of our support team.</p>
+      
+      <p class="policy__subtitle">For What Purpose Do We Process Your Personal Data?</p>
+      <p class="policy__text">The purpose of processing the personal data that may be collected is mainly to facilitate your purchase in our online store. Among other purposes is to manage our relationship with you, to be able to offer you our products in accordance with your interests, to improve your user experience and, where appropriate, for the treatment of your requests.</p>
+      <p class="policy__text">The data provided will be kept as long as the commercial relationship is maintained, as long as the interested party does not request its deletion, or during the years necessary to comply with legal obligations.</p>
+      
+      <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
+      <p class="policy__text">We will only use your personal data when the law allows us to.</p>
+      <p class="policy__text">The PayAdmit Gateway uses your payment card details to process your payment request.</p>
+      <p class="policy__text">Most commonly, as we only ask for an email, Minecraft nickname and the server, we use it to provide you the opportunity to buy goods in our online store.</p>
+      
+      <p class="policy__subtitle">To Which Recipients Will the Data Be Disclosed?</p>
+      <p class="policy__text">Your personal data may eventually be communicated if communications had to be made to the authorities in the event that the user had carried out actions contrary to the Law; except as provided herein, we will not transfer the data provided to third parties.</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, and contact you to request your information and/or documents, we share the information/documents with the party which provided the request. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">We may also have to share your personal data with other third parties where you have given your consent for us to do so.</p>
+      
+      <p class="policy__subtitle">Data Security and Retention</p>
+      <p class="policy__text">GalaxyGrip OÜ has adopted and maintains the necessary technical and organizational security measures to protect the personal information that users provide in order to avoid its alteration, loss, treatment or unauthorized access, taking into account the state of technology, nature of the data stored and the risks to which they are exposed.</p>
+      <p class="policy__text">However, please, bear in mind that the security of computer systems is never absolute. Please note that no transmission over the Internet is 100% secure and no data stored on it is invulnerable. We cannot guarantee the security of our Site, databases or services, nor can we guarantee that the information you submit to us will not be intercepted while you are transmitting it to us over the Internet. We are not responsible for the actions of third parties.</p>
+      <p class="policy__text">As for data retention, we will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because PayAdmit has a PCI DSS certificate.</p>
+      
+      <p class="policy__subtitle">What Are Your Legal Rights?</p>
+      <p class="policy__text">Under certain circumstances, you have rights under data protection laws in relation to your personal data.</p>
+      <p class="policy__text">You have the right to:</p>
+      <p class="policy__text">Request Access to your personal data. This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+      <p class="policy__text">Request Correction of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
+      <p class="policy__text">Request Erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing, where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
+      <p class="policy__text">Object To Processing of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
+      <p class="policy__text">Request Restriction of Processing of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data’s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
+      <p class="policy__text">Request the Transfer of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
+      <p class="policy__text">Withdraw Consent at Any Time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
+      <p class="policy__text">If you wish to exercise any of the rights set out above, please contact us.</p>
+      <p class="policy__text">No Fee Usually Required. You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
+      
+      <p class="policy__subtitle">Time Limit Within Which We Respond</p>
+      <p class="policy__text">We try to respond to all legitimate requests within 30 days. Occasionally it may take us longer than a month if your request is particularly complex or if you have made a number of requests. In this case, we will notify you and keep you updated.</p>
+    </div>
+    `,
     termsConditionsPage_contentInnerHTML: `
       <div class="container">
       <h1 class="policy__title">Terms and Conditions</h1>
@@ -2863,7 +2635,7 @@ export const languageLocalizations = {
     "starting-tips-page__step-one__description": `Першим кроком, щоб почати грати в Minecraft, є придбання ліцензійної копії гри. Ви можете купити гру на офіційному сайті Minecraft або в інших магазинах, де гра доступна для вашої платформи.`,
     "starting-tips-page__step-two": "Крок 2: Встановіть гру",
     "starting-tips-page__step-two__description": `Після покупки гри вам потрібно буде встановити її на свою платформу. Завантажте відповідну версію Minecraft для свого пристрою (наприклад, Minecraft: Java Edition для ПК або Minecraft: Bedrock Edition для консолей, мобільних пристроїв або планшетів). Дотримуйтесь інструкцій зі встановлення, щоб завершити процес.`,
-    "starting-tips-page__step-three": "Step 3: Запустіть гру і виберіть режим",
+    "starting-tips-page__step-three": "Крок 3: Запустіть гру і виберіть режим",
     "starting-tips-page__step-three__description": `Після установки запустіть гру Minecraft. Вам буде запропоновано вибрати режим гри. У режимі виживання вам потрібно виживати, збирати ресурси та битися з ворожими істотами. Творчий режим надає вам необмежені ресурси та можливість будувати без обмежень. Виберіть режим, який найкраще відповідає вашим уподобанням і ігровим цілям.`,
 
     // successPayment page
@@ -3370,314 +3142,86 @@ export const languageLocalizations = {
     "404Page__home_link": "Return to main page",
     // privacy policy
     privacyPolicyPage_contentInnerHTML: `
-  <div class="container">
-  <h1 class="policy__title">PRIVACY POLICY</h1>
-  <p class="policy__update">Effective June 29, 2023</p>
-  <p class="policy__subtitle">What Is This Privacy Policy for?</p>
-  <p class="policy__text">
-  <strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”)
-  respects your privacy and is committed to protecting your personal
-  data. This policy informs you how we look after your personal data
-  and tells you about your privacy rights and how the law protects
-  you. This privacy policy applies to any visitor of the Site/ the
-  user/ the buyer/ the player/ the customer (further “you”, “your”)
-  who uses the Site, registers on it and buys anything in our online
-  store.
-  </p>
-  <p class="policy__text">
-  This Privacy policy is a part of the Agreement between you and us.
-  Before you buy anything in our online store you need to accept our
-  offer. That means that you accept the terms of all the documents
-  that constitute the Agreement. The proper acceptance of the offer in
-  accordance with the law of Estonia is the consistent implementation
-  by you of the following actions: read terms of the Agreement,
-  register on the Site, put a tick in the checkbox that you accept the
-  terms before making a purchase. If you put a tick in the checkbox,
-  you agree with the terms of this Privacy policy in particular.
-  </p>
-  <p class="policy__text">
-  The Site is owned by GalaxyGrip OÜ - a company registered according
-  to legislation of Estonia with its registered number 16776100, whose
-  registered address is Harju maakond, Tallinn, Lasnamäe linnaosa,
-  Katusepapi tn 6-502, 11412.
-  </p>
-  <p class="policy__text">
-  We are the data controller when we collect personal information from
-  our users, buyers, players, customers and clients. We will not pass
-  your personal data on to any third party unless required to do so by
-  law or if you have given us separate written permission to do so.
-  </p>
-  <p class="policy__text">
-  The updated version of this privacy policy is the only one
-  applicable for the duration of the use of the Site until there is no
-  other version that replaces it. We may modify this Privacy policy
-  without notifying you, so please check back often for updates. Any
-  changes made will be available on this page.
-  </p>
-  
-  <p class="policy__subtitle">What Data Do We Collect About You?</p>
-  <p class="policy__text">
-  Personal data, or personal information, means any information about
-  an individual from which that person can be identified. It does not
-  include data where the identity has been removed (anonymous data).
-  We MAY collect, use, store and process different kinds of personal
-  data about you.
-  </p>
-  <p class="policy__text">
-  Your data is collected by the Site. We only ask for an email, when
-  you register on the Site.
-  </p>
-  <p class="policy__text">
-  When you select products in our online store, we ask only your
-  Minecraft nickname and the server.
-  </p>
-  <p class="policy__text">
-  When you have selected the goods and want to pay, you are redirected
-  to the payment page of the BazPay Gateway. The page collects your
-  payment card date in order to process your payment. The payment card
-  data collected by BazPay is your card number, expiry date, your name
-  indicated on the card and your CVV code. We do not collect either
-  keep your payment card information.
-  </p>
-  <p class="policy__subtitle">Third Party Links</p>
-  <p class="policy__text">
-  The Sites practice a link to a payment page provided by the BazPay
-  Gateway in order to collect your payment card information and
-  process your payment request. We guarantee the security of payments
-  when paying by credit or debit card. The BazPay Gateway that
-  provides the service of processing the payment requests complies
-  with PCI DSS requirements for the secure processing of the payer's
-  bank card details.
-  </p>
-  <p class="policy__subtitle">Children</p>
-  <p class="policy__text">
-  This website is not intended for children and we do not knowingly
-  collect data relating to children.
-  </p>
-  <p class="policy__subtitle">Special Category Data</p>
-  <p class="policy__text">
-  We do not anticipate that any special category data will be
-  processed by us in our business relationship with you.
-  </p>
-  <p class="policy__subtitle">What We May Need From You in Addition</p>
-  <p class="policy__text">
-  We may need to request specific information from you to help us
-  confirm your identity and take part in a possible dispute
-  investigation on your purchase or a chargeback. If you apply for a
-  refund, we will need to request additional information/documentation
-  as well.
-  </p>
-  
-  <p class="policy__subtitle">
-  What information we may request from you
-  </p>
-  <p class="policy__text">
-  We may request such personal information from you: your first name,
-  last name, date of birth, registration address, ID code.
-  </p>
-  
-  <p class="policy__subtitle">What documents we may request from you</p>
-  <p class="policy__text">
-  We may request a photo or scan of your ID document (passport, ID
-  card, driving license etc.), a proof of address (it may be a utility
-  bill or bank statement not older than 3 months), photo of your
-  paying card, selfie-photo of your face, selfie-photo of you with
-  your card, selfie-photo of you with your passport. Also we may ask
-  you to provide a payment report that was sent to your email address
-  after you made a purchase in our online store.
-  </p>
-  
-  <p class="policy__subtitle">How do we contact you</p>
-  <p class="policy__text">
-  As long as we have only your email address, we can contact you by
-  email.
-  </p>
-  
-  <p class="policy__subtitle">
-  Under what conditions we request additional information and/or
-  documents
-  </p>
-  <p class="policy__text">
-  If we receive a request from a payment provider, an International
-  Payment Card System or a bank, we may contact you to request your
-  information and/or documents. Usually it pertains to dispute
-  resolutions, fraud investigations, chargebacks.
-  </p>
-  <p class="policy__text">
-  If you apply for a refund, we will need you to provide a payment
-  report and additional documents according to the request of our
-  support team.
-  </p>
-  
-  <p class="policy__subtitle">
-  For What Purpose Do We Process Your Personal Data?
-  </p>
-  <p class="policy__text">
-  The purpose of processing the personal data that may be collected is
-  mainly to facilitate your purchase in our online store. Among other
-  purposes is to manage our relationship with you, to be able to offer
-  you our products in accordance with your interests, to improve your
-  user experience and, where appropriate, for the treatment of your
-  requests.
-  </p>
-  <p class="policy__text">
-  The data provided will be kept as long as the commercial
-  relationship is maintained, as long as the interested party does not
-  request its deletion, or during the years necessary to comply with
-  legal obligations.
-  </p>
-  
-  <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
-  <p class="policy__text">
-  We will only use your personal data when the law allows us to.
-  </p>
-  <p class="policy__text">
-  The BazPay Gateway uses your payment card details to process your
-  payment request.
-  </p>
-  <p class="policy__text">
-  Most commonly, as we only ask for an email, Minecraft nickname and
-  the server, we use it to provide you the opportunity to buy goods in
-  our online store.
-  </p>
-  
-  <p class="policy__subtitle">
-  To Which Recipients Will the Data Be Disclosed?
-  </p>
-  <p class="policy__text">
-  Your personal data may eventually be communicated if communications
-  had to be made to the authorities in the event that the user had
-  carried out actions contrary to the Law; except as provided herein,
-  we will not transfer the data provided to third parties.
-  </p>
-  <p class="policy__text">
-  If we receive a request from a payment provider, an International
-  Payment Card System or a bank, and contact you to request your
-  information and/or documents, we share the information/documents
-  with the party which provided the request. Usually it pertains to
-  dispute resolutions, fraud investigations, chargebacks.
-  </p>
-  <p class="policy__text">
-  We may also have to share your personal data with other third
-  parties where you have given your consent for us to do so.
-  </p>
-  
-  <p class="policy__subtitle">Data Security and Retention</p>
-  <p class="policy__text">
-  GalaxyGrip OÜ has adopted and maintains the necessary technical and
-  organizational security measures to protect the personal information
-  that users provide in order to avoid its alteration, loss, treatment
-  or unauthorized access, taking into account the state of technology,
-  nature of the data stored and the risks to which they are exposed.
-  </p>
-  <p class="policy__text">
-  However, please, bear in mind that the security of computer systems
-  is never absolute. Please note that no transmission over the
-  Internet is 100% secure and no data stored on it is invulnerable. We
-  cannot guarantee the security of our Site, databases or services,
-  nor can we guarantee that the information you submit to us will not
-  be intercepted while you are transmitting it to us over the
-  Internet. We are not responsible for the actions of third parties.
-  </p>
-  <p class="policy__text">
-  As for data retention, we will only retain your personal data for as
-  long as necessary to fulfill the purposes we collected it for,
-  including for the purposes of satisfying any legal, accounting, or
-  reporting requirements.
-  </p>
-  <p class="policy__text">
-  Your payment card details are retained by encryption methods that
-  are PCI DSS compliant because BazPay has a PCI DSS certificate.
-  </p>
-  
-  <p class="policy__subtitle">What Are Your Legal Rights?</p>
-  <p class="policy__text">
-  Under certain circumstances, you have rights under data protection
-  laws in relation to your personal data.
-  </p>
-  <p class="policy__text">You have the right to:</p>
-  <p class="policy__text">
-  Request Access to your personal data. This enables you to receive a
-  copy of the personal data we hold about you and to check that we are
-  lawfully processing it.
-  </p>
-  <p class="policy__text">
-  Request Correction of the personal data that we hold about you. This
-  enables you to have any incomplete or inaccurate data we hold about
-  you corrected, though we may need to verify the accuracy of the new
-  data you provide to us.
-  </p>
-  <p class="policy__text">
-  Request Erasure of your personal data. This enables you to ask us to
-  delete or remove personal data where there is no good reason for us
-  continuing to process it. You also have the right to ask us to
-  delete or remove your personal data where you have successfully
-  exercised your right to object to processing, where we may have
-  processed your information unlawfully or where we are required to
-  erase your personal data to comply with local law. Note, however,
-  that we may not always be able to comply with your request of
-  erasure for specific legal reasons which will be notified to you, if
-  applicable, at the time of your request.
-  </p>
-  <p class="policy__text">
-  Object To Processing of your personal data where we are relying on a
-  legitimate interest (or those of a third party) and there is
-  something about your particular situation which makes you want to
-  object to processing on this ground as you feel it impacts on your
-  fundamental rights and freedoms. You also have the right to object
-  where we are processing your personal data for direct marketing
-  purposes. In some cases, we may demonstrate that we have compelling
-  legitimate grounds to process your information which override your
-  rights and freedoms.
-  </p>
-  <p class="policy__text">
-  Request Restriction of Processing of your personal data. This
-  enables you to ask us to suspend the processing of your personal
-  data in the following scenarios: (a) if you want us to establish the
-  data’s accuracy; (b) where our use of the data is unlawful but you
-  do not want us to erase it; (c) where you need us to hold the data
-  even if we no longer require it as you need it to establish,
-  exercise or defend legal claims; or (d) you have objected to our use
-  of your data but we need to verify whether we have overriding
-  legitimate grounds to use it.
-  </p>
-  <p class="policy__text">
-  Request the Transfer of your personal data to you or to a third
-  party. We will provide to you, or a third party you have chosen,
-  your personal data in a structured, commonly used, machine-readable
-  format. Note that this right only applies to automated information
-  which you initially provided consent for us to use or where we used
-  the information to perform a contract with you.
-  </p>
-  <p class="policy__text">
-  Withdraw Consent at Any Time where we are relying on consent to
-  process your personal data. However, this will not affect the
-  lawfulness of any processing carried out before you withdraw your
-  consent. If you withdraw your consent, we may not be able to provide
-  certain products or services to you. We will advise you if this is
-  the case at the time you withdraw your consent.
-  </p>
-  <p class="policy__text">
-  If you wish to exercise any of the rights set out above, please
-  contact us.
-  </p>
-  <p class="policy__text">
-  No Fee Usually Required. You will not have to pay a fee to access
-  your personal data (or to exercise any of the other rights).
-  However, we may charge a reasonable fee if your request is clearly
-  unfounded, repetitive or excessive. Alternatively, we may refuse to
-  comply with your request in these circumstances.
-  </p>
-  
-  <p class="policy__subtitle">Time Limit Within Which We Respond</p>
-  <p class="policy__text">
-  We try to respond to all legitimate requests within 30 days.
-  Occasionally it may take us longer than a month if your request is
-  particularly complex or if you have made a number of requests. In
-  this case, we will notify you and keep you updated.
-  </p>
-  </div>
-  `,
+    <div class="container">
+      <h1 class="policy__title">PRIVACY POLICY</h1>
+
+      <p class="policy__update">Effective June 29, 2023</p>
+
+      <p class="policy__subtitle">What Is This Privacy Policy for?</p>
+      <p class="policy__text"><strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. This policy informs you how we look after your personal data and tells you about your privacy rights and how the law protects you. This privacy policy applies to any visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”) who uses the Site, registers on it and buys anything in our online store.</p>
+      <p class="policy__text">This Privacy policy is a part of the Agreement between you and us. Before you buy anything in our online store you need to accept our offer. That means that you accept the terms of all the documents that constitute the Agreement. The proper acceptance of the offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase.  If you put a tick in the checkbox, you agree with the terms of this Privacy policy in particular.</p>
+      <p class="policy__text">The Site is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
+      <p class="policy__text">We are the data controller when we collect personal information from our users, buyers, players, customers and clients. We will not pass your personal data on to any third party unless required to do so by law or if you have given us separate written permission to do so.</p>
+      <p class="policy__text">The updated version of this privacy policy is the only one applicable for the duration of the use of the Site until there is no other version that replaces it. We may modify this Privacy policy without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
+      
+      <p class="policy__subtitle">What Data Do We Collect About You?</p>
+      <p class="policy__text">Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data). We MAY collect, use, store and process different kinds of personal data about you.</p>
+      <p class="policy__text">Your data is collected by the Site. We only ask for an email, when you register on the Site.</p>
+      <p class="policy__text">When you select products in our online store, we ask only your Minecraft nickname and the server.</p>
+      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the PayAdmit Gateway. The page collects your payment card date in order to process your payment. The payment card data collected by PayAdmit is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect either keep your payment card information.</p>
+
+      <p class="policy__subtitle">Third Party Links</p>
+      <p class="policy__text">The Sites practice a link to a payment page provided by the PayAdmit Gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The PayAdmit Gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+
+      <p class="policy__subtitle">Children</p>
+      <p class="policy__text">This website is not intended for children and we do not knowingly collect data relating to children.</p>
+
+      <p class="policy__subtitle">Special Category Data</p>
+      <p class="policy__text">We do not anticipate that any special category data will be processed by us in our business relationship with you.</p>
+
+      <p class="policy__subtitle">What We May Need From You in Addition</p>
+      <p class="policy__text">We may need to request specific information from you to help us confirm your identity and take part in a possible dispute investigation on your purchase or a chargeback. If you apply for a refund, we will need to request additional information/documentation as well.</p>
+      
+      <p class="policy__subtitle">What information we may request from you</p>
+      <p class="policy__text">We may request such personal information from you: your first name, last name, date of birth, registration address, ID code.</p>
+      
+      <p class="policy__subtitle">What documents we may request from you</p>
+      <p class="policy__text">We may request a photo or scan of your ID document (passport, ID card, driving license etc.), a proof of address (it may be a utility bill or bank statement not older than 3 months), photo of your paying card, selfie-photo of your face, selfie-photo of you with your card, selfie-photo of you with your passport. Also we may ask you to provide a payment report that was sent to your email address after you made a purchase in our online store.</p>
+      
+      <p class="policy__subtitle">How do we contact you</p>
+      <p class="policy__text">As long as we have only your email address, we can contact you by email.</p>
+      
+      <p class="policy__subtitle">Under what conditions we request additional information and/or documents</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, we may contact you to request your information and/or documents. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">If you apply for a refund, we will need you to provide a payment report and additional documents according to the request of our support team.</p>
+      
+      <p class="policy__subtitle">For What Purpose Do We Process Your Personal Data?</p>
+      <p class="policy__text">The purpose of processing the personal data that may be collected is mainly to facilitate your purchase in our online store. Among other purposes is to manage our relationship with you, to be able to offer you our products in accordance with your interests, to improve your user experience and, where appropriate, for the treatment of your requests.</p>
+      <p class="policy__text">The data provided will be kept as long as the commercial relationship is maintained, as long as the interested party does not request its deletion, or during the years necessary to comply with legal obligations.</p>
+      
+      <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
+      <p class="policy__text">We will only use your personal data when the law allows us to.</p>
+      <p class="policy__text">The PayAdmit Gateway uses your payment card details to process your payment request.</p>
+      <p class="policy__text">Most commonly, as we only ask for an email, Minecraft nickname and the server, we use it to provide you the opportunity to buy goods in our online store.</p>
+      
+      <p class="policy__subtitle">To Which Recipients Will the Data Be Disclosed?</p>
+      <p class="policy__text">Your personal data may eventually be communicated if communications had to be made to the authorities in the event that the user had carried out actions contrary to the Law; except as provided herein, we will not transfer the data provided to third parties.</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, and contact you to request your information and/or documents, we share the information/documents with the party which provided the request. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">We may also have to share your personal data with other third parties where you have given your consent for us to do so.</p>
+      
+      <p class="policy__subtitle">Data Security and Retention</p>
+      <p class="policy__text">GalaxyGrip OÜ has adopted and maintains the necessary technical and organizational security measures to protect the personal information that users provide in order to avoid its alteration, loss, treatment or unauthorized access, taking into account the state of technology, nature of the data stored and the risks to which they are exposed.</p>
+      <p class="policy__text">However, please, bear in mind that the security of computer systems is never absolute. Please note that no transmission over the Internet is 100% secure and no data stored on it is invulnerable. We cannot guarantee the security of our Site, databases or services, nor can we guarantee that the information you submit to us will not be intercepted while you are transmitting it to us over the Internet. We are not responsible for the actions of third parties.</p>
+      <p class="policy__text">As for data retention, we will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because PayAdmit has a PCI DSS certificate.</p>
+      
+      <p class="policy__subtitle">What Are Your Legal Rights?</p>
+      <p class="policy__text">Under certain circumstances, you have rights under data protection laws in relation to your personal data.</p>
+      <p class="policy__text">You have the right to:</p>
+      <p class="policy__text">Request Access to your personal data. This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+      <p class="policy__text">Request Correction of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
+      <p class="policy__text">Request Erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing, where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
+      <p class="policy__text">Object To Processing of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
+      <p class="policy__text">Request Restriction of Processing of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data’s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
+      <p class="policy__text">Request the Transfer of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
+      <p class="policy__text">Withdraw Consent at Any Time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
+      <p class="policy__text">If you wish to exercise any of the rights set out above, please contact us.</p>
+      <p class="policy__text">No Fee Usually Required. You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
+      
+      <p class="policy__subtitle">Time Limit Within Which We Respond</p>
+      <p class="policy__text">We try to respond to all legitimate requests within 30 days. Occasionally it may take us longer than a month if your request is particularly complex or if you have made a number of requests. In this case, we will notify you and keep you updated.</p>
+    </div>
+    `,
     termsConditionsPage_contentInnerHTML: `
   <div class="container">
   <h1 class="policy__title">Terms and Conditions</h1>
@@ -4716,7 +4260,7 @@ export const languageLocalizations = {
     "1165_h1": "Minecraft 1.16.5 Mods: amplía las posibilidades de tu juego",
     "1165_p_1":
       "Las modificaciones (mods) son una forma popular de ampliar y modificar la funcionalidad de Minecraft. Para la versión 1.16.5, también hay una variedad de modificaciones emocionantes que agregan nuevos elementos, mecánicas de juego y mejoran la experiencia de juego en general. En este artículo, discutiremos algunas modificaciones interesantes disponibles para Minecraft 1.16.5.",
-    "1165_h2_1": `1. Modo "Tiempo y estaciones"`,
+    "1165_h2_1": `1. Mod "Tiempo y estaciones"`,
     "1165_p_2": `El mod "Time and Seasons" es uno de los emocionantes mods disponibles para Minecraft 1.16.5. Ofrece la posibilidad de cambiar por completo el tiempo y la atmósfera del juego, añadiendo realismo y variedad al mundo virtual.`,
     "1165_p_3": `Con este mod, puedes crear tus propias temporadas y personalizar sus parámetros. Puedes elegir qué meses estarán representados en el juego, así como configurar la duración de cada temporada. Esto te permitirá crear diferentes tipos de paisajes que cambian según la época del año.`,
     "1165_p_4": `Además, el mod 'Time and Seasons' te permite cambiar la duración de los días y las noches en el juego. Puede establecer un día más corto o más largo, lo que le da más tiempo para construir o explorar. También puede ajustar la frecuencia de los cambios de día y noche y agregar efectos adicionales como amaneceres y atardeceres.`,
@@ -4788,311 +4332,83 @@ export const languageLocalizations = {
     // privacy policy
     privacyPolicyPage_contentInnerHTML: `
     <div class="container">
-    <h1 class="policy__title">PRIVACY POLICY</h1>
-    <p class="policy__update">Effective June 29, 2023</p>
-    <p class="policy__subtitle">What Is This Privacy Policy for?</p>
-    <p class="policy__text">
-    <strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”)
-    respects your privacy and is committed to protecting your personal
-    data. This policy informs you how we look after your personal data
-    and tells you about your privacy rights and how the law protects
-    you. This privacy policy applies to any visitor of the Site/ the
-    user/ the buyer/ the player/ the customer (further “you”, “your”)
-    who uses the Site, registers on it and buys anything in our online
-    store.
-    </p>
-    <p class="policy__text">
-    This Privacy policy is a part of the Agreement between you and us.
-    Before you buy anything in our online store you need to accept our
-    offer. That means that you accept the terms of all the documents
-    that constitute the Agreement. The proper acceptance of the offer in
-    accordance with the law of Estonia is the consistent implementation
-    by you of the following actions: read terms of the Agreement,
-    register on the Site, put a tick in the checkbox that you accept the
-    terms before making a purchase. If you put a tick in the checkbox,
-    you agree with the terms of this Privacy policy in particular.
-    </p>
-    <p class="policy__text">
-    The Site is owned by GalaxyGrip OÜ - a company registered according
-    to legislation of Estonia with its registered number 16776100, whose
-    registered address is Harju maakond, Tallinn, Lasnamäe linnaosa,
-    Katusepapi tn 6-502, 11412.
-    </p>
-    <p class="policy__text">
-    We are the data controller when we collect personal information from
-    our users, buyers, players, customers and clients. We will not pass
-    your personal data on to any third party unless required to do so by
-    law or if you have given us separate written permission to do so.
-    </p>
-    <p class="policy__text">
-    The updated version of this privacy policy is the only one
-    applicable for the duration of the use of the Site until there is no
-    other version that replaces it. We may modify this Privacy policy
-    without notifying you, so please check back often for updates. Any
-    changes made will be available on this page.
-    </p>
-    
-    <p class="policy__subtitle">What Data Do We Collect About You?</p>
-    <p class="policy__text">
-    Personal data, or personal information, means any information about
-    an individual from which that person can be identified. It does not
-    include data where the identity has been removed (anonymous data).
-    We MAY collect, use, store and process different kinds of personal
-    data about you.
-    </p>
-    <p class="policy__text">
-    Your data is collected by the Site. We only ask for an email, when
-    you register on the Site.
-    </p>
-    <p class="policy__text">
-    When you select products in our online store, we ask only your
-    Minecraft nickname and the server.
-    </p>
-    <p class="policy__text">
-    When you have selected the goods and want to pay, you are redirected
-    to the payment page of the BazPay Gateway. The page collects your
-    payment card date in order to process your payment. The payment card
-    data collected by BazPay is your card number, expiry date, your name
-    indicated on the card and your CVV code. We do not collect either
-    keep your payment card information.
-    </p>
-    <p class="policy__subtitle">Third Party Links</p>
-    <p class="policy__text">
-    Los Sitios practican un enlace a una página de pago proporcionada por BazPay
-    Gateway para recopilar la información de su tarjeta de pago y
-    procesar su solicitud de pago. Garantizamos la seguridad de los pagos
-    al pagar con tarjeta de crédito o débito. El portal BazPay que
-    presta el servicio de tramitación de las solicitudes de pago cumple
-    con los requisitos de PCI DSS para el procesamiento seguro de los pagos del pagador
-    datos de la tarjeta bancaria.
-    </p>
-    <p class="policy__subtitle">Niños</p>
-    <p class="policy__text">
-    Este sitio web no está destinado a niños y, a sabiendas, no
-    recopilar datos relativos a los niños.
-    </p>
-    <p class="policy__subtitle">Datos de categoría especial</p>
-    <p class="policy__text">
-    No anticipamos que ningún dato de categoría especial será
-    procesada por nosotros en nuestra relación comercial con usted.
-    </p>
-    <p class="policy__subtitle">Lo que podemos necesitar de usted además</p>
-    <p class="policy__text">
-    Es posible que necesitemos solicitarle información específica para ayudarnos
-    confirmar su identidad y participar en una posible disputa
-    investigación sobre su compra o una devolución de cargo. Si solicita un
-    reembolso, tendremos que solicitar información/documentación adicional
-    también.
-    </p>
-    
-    <p class="política__subtítulo">
-    Qué información podemos solicitarle
-    </p>
-    <p class="policy__text">
-    Podemos solicitarle dicha información personal: su nombre,
-    apellido, fecha de nacimiento, dirección de registro, código de identificación.
-    </p>
-    
-    <p class="policy__subtitle">Qué documentos podemos solicitarle</p>
-    <p class="policy__text">
-    Podemos solicitar una foto o escaneo de su documento de identificación (pasaporte, DNI
-    carné, carné de conducir, etc.), un comprobante de domicilio (puede ser una utilidad
-    factura o extracto bancario no mayor a 3 meses), foto de su
-    tarjeta de pago, selfie-foto de tu cara, selfie-foto tuya con
-    tu tarjeta, selfie-foto tuya con tu pasaporte. También podemos preguntar
-    que proporcione un informe de pago que se envió a su dirección de correo electrónico
-    después de haber realizado una compra en nuestra tienda online.
-    </p>
-    
-    <p class="policy__subtitle">Cómo nos comunicamos con usted</p>
-    <p class="policy__text">
-    Siempre que solo tengamos su dirección de correo electrónico, podemos comunicarnos con usted por
-    correo electrónico.
-    </p>
-    
-    <p class="política__subtítulo">
-    En qué condiciones solicitamos información adicional y/o
-    documentos
-    </p>
-    <p class="policy__text">
-    Si recibimos una solicitud de un proveedor de pago, un International
-    Sistema de tarjeta de pago o un banco, podemos comunicarnos con usted para solicitar su
-    información y/o documentos. Por lo general, se refiere a la disputa
-    resoluciones, investigaciones de fraude, contracargos.
-    </p>
-    <p class="policy__text">
-    Si solicita un reembolso, necesitaremos que proporcione un pago
-    informe y documentos adicionales de acuerdo a la solicitud de nuestro
-    equipo de apoyo.
-    </p>
-    
-    <p class="policy__subtitle">
-    ¿Con qué finalidad tratamos sus datos personales?
-    </p>
-    <p class="policy__text">
-    La finalidad del tratamiento de los datos personales que puedan ser recabados es
-    principalmente para facilitar su compra en nuestra tienda online. Entre otros
-    finalidades es gestionar nuestra relación con usted, para poder ofrecerle
-    nuestros productos de acuerdo con sus intereses, para mejorar su
-    experiencia de usuario y, en su caso, para el tratamiento de sus
-    peticiones.
-    </p>
-    <p class="policy__text">
-    Los datos proporcionados se conservarán mientras el comercial
-    se mantenga la relación, mientras el interesado no
-    solicitar su supresión, o durante los años necesarios para cumplir con
-    obligaciones legales.
-    </p>
-    
-    <p class="policy__subtitle">¿Cómo usamos sus datos personales?</p>
-    <p class="policy__text">
-    Solo utilizaremos sus datos personales cuando la ley nos lo permita.
-    </p>
-    <p class="policy__text">
-    BazPay Gateway utiliza los detalles de su tarjeta de pago para procesar su
-    solicitud de pago.
-    </p>
-    <p class="policy__text">
-    Más comúnmente, ya que solo solicitamos un correo electrónico, un apodo de Minecraft y
-    el servidor, lo usamos para brindarle la oportunidad de comprar productos en
-    nuestra tienda en línea.
-    </p>
-    
-    <p class="policy__subtitle">
-    ¿A qué destinatarios se comunicarán los datos?
-    </p>
-    <p class="policy__text">
-    Sus datos personales podrán eventualmente ser comunicados si las comunicaciones
-    tenía que hacerse a las autoridades en caso de que el usuario hubiera
-    realizó acciones contrarias a la Ley; salvo lo dispuesto en el presente,
-    no cederemos los datos facilitados a terceros.
-    </p>
-    <p class="policy__text">
-    Si recibimos una solicitud de un proveedor de pago, un International
-    Sistema de pago con tarjeta o un banco, y contactarlo para solicitar su
-    información y/o documentos, compartimos la información/documentos
-    con la parte que presentó la solicitud. Por lo general, se refiere a
-    resolución de disputas, investigaciones de fraude, contracargos.
-    </p>
-    <p class="policy__text">
-    También es posible que tengamos que compartir sus datos personales con otros terceros
-    terceros en los que nos haya dado su consentimiento para que lo hagamos.
-    </p>
-    
-    <p class="policy__subtitle">Seguridad y retención de datos</p>
-    <p class="policy__text">
-    GalaxyGrip OÜ has adopted and maintains the necessary technical and
-    organizational security measures to protect the personal information
-    that users provide in order to avoid its alteration, loss, treatment
-    or unauthorized access, taking into account the state of technology,
-    nature of the data stored and the risks to which they are exposed.
-    </p>
-    <p class="policy__text">
-    However, please, bear in mind that the security of computer systems
-    is never absolute. Please note that no transmission over the
-    Internet is 100% secure and no data stored on it is invulnerable. We
-    cannot guarantee the security of our Site, databases or services,
-    nor can we guarantee that the information you submit to us will not
-    be intercepted while you are transmitting it to us over the
-    Internet. We are not responsible for the actions of third parties.
-    </p>
-    <p class="policy__text">
-    As for data retention, we will only retain your personal data for as
-    long as necessary to fulfill the purposes we collected it for,
-    including for the purposes of satisfying any legal, accounting, or
-    reporting requirements.
-    </p>
-    <p class="policy__text">
-    Your payment card details are retained by encryption methods that
-    are PCI DSS compliant because BazPay has a PCI DSS certificate.
-    </p>
-    
-    <p class="policy__subtitle">What Are Your Legal Rights?</p>
-    <p class="policy__text">
-    Under certain circumstances, you have rights under data protection
-    laws in relation to your personal data.
-    </p>
-    <p class="policy__text">You have the right to:</p>
-    <p class="policy__text">
-    Solicitar Acceso a sus datos personales. Esto le permite recibir una
-    copia de los datos personales que tenemos sobre usted y para comprobar que estamos
-    procesarlo lícitamente.
-    </p>
-    <p class="policy__text">
-    Solicitar la corrección de los datos personales que tenemos sobre usted. Este
-    le permite tener cualquier dato incompleto o inexacto que tengamos sobre
-    usted corrigió, aunque es posible que necesitemos verificar la precisión de la nueva
-    datos que nos proporciona.
-    </p>
-    <p class="policy__text">
-    Solicitar el borrado de sus datos personales. Esto le permite pedirnos que
-    eliminar o eliminar datos personales cuando no haya una buena razón para nosotros
-    seguir procesándolo. También tiene derecho a pedirnos que
-    eliminar o eliminar sus datos personales donde haya tenido éxito
-    ejerció su derecho a oponerse al procesamiento, donde podemos haber
-    procesó su información ilegalmente o cuando estamos obligados a
-    borrar sus datos personales para cumplir con la legislación local. Tenga en cuenta, sin embargo,
-    que no siempre podamos cumplir con su solicitud de
-    borrado por razones legales específicas que le serán notificadas, si
-    aplicable, en el momento de su solicitud.
-    </p>
-    <p class="policy__text">
-    Oponerse al procesamiento de sus datos personales cuando dependamos de un
-    interés legítimo (o de un tercero) y existe
-    algo sobre tu situación particular que te hace querer
-    objetar el procesamiento por este motivo, ya que cree que afecta a su
-    derechos y libertades fundamentales. También tiene derecho a oponerse
-    donde estamos procesando sus datos personales para marketing directo
-    propósitos En algunos casos, podemos demostrar que tenemos
-    motivos legítimos para procesar su información que anulan su
-    derechos y libertades.
-    </p>
-    <p class="policy__text">
-    Solicitar Restricción del Tratamiento de sus datos personales. Este
-    le permite solicitarnos que suspendamos el procesamiento de sus datos personales
-    datos en los siguientes escenarios: (a) si desea que establezcamos la
-    la precisión de los datos; (b) cuando nuestro uso de los datos sea ilegal pero usted
-    no quieras que lo borremos; (c) dónde necesita que conservemos los datos
-    incluso si ya no lo requerimos como usted lo necesita para establecer,
-    ejercer o defender reclamaciones legales; o (d) se ha opuesto a nuestro uso
-    de sus datos, pero necesitamos verificar si tenemos anulación
-    motivos legítimos para utilizarlo.
-    </p>
-    <p class="policy__text">
-    Solicitar la Transferencia de sus datos personales a usted o a un tercero
-    fiesta. Le proporcionaremos a usted, o a un tercero que haya elegido,
-    sus datos personales en un formato estructurado, de uso común y legible por máquina
-    formato. Tenga en cuenta que este derecho solo se aplica a la información automatizada
-    que inicialmente nos dio su consentimiento para usar o donde usamos
-    la información para realizar un contrato con usted.
-    </p>
-    <p class="policy__text">
-    Retirar el consentimiento en cualquier momento cuando dependamos del consentimiento para
-    procesar sus datos personales. Sin embargo, esto no afectará la
-    legalidad de cualquier procesamiento llevado a cabo antes de que usted retire su
-    consentir. Si retira su consentimiento, es posible que no podamos proporcionarle
-    ciertos productos o servicios para usted. Le informaremos si esto es
-    el caso en el momento en que retire su consentimiento.
-    </p>
-    <p class="policy__text">
-    Si desea ejercer cualquiera de los derechos establecidos anteriormente, por favor
-    Contáctenos.
-    </p>
-    <p class="policy__text">
-    No se requiere tarifa por lo general. No tendrás que pagar ninguna cuota para acceder
-    sus datos personales (o para ejercer cualquiera de los otros derechos).
-    Sin embargo, podemos cobrar una tarifa razonable si su solicitud es claramente
-    infundado, repetitivo o excesivo. Alternativamente, podemos negarnos a
-    cumplir con su solicitud en estas circunstancias.
-    </p>
-    
-    <p class="policy__subtitle">Límite de tiempo dentro del cual respondemos</p>
-    <p class="policy__text">
-    Tratamos de responder a todas las solicitudes legítimas dentro de los 30 días.
-    Ocasionalmente, puede llevarnos más de un mes si su solicitud es
-    particularmente complejo o si ha realizado una serie de solicitudes. En
-    este caso, le notificaremos y lo mantendremos informado.
-    </p>
+      <h1 class="policy__title">PRIVACY POLICY</h1>
+
+      <p class="policy__update">Effective June 29, 2023</p>
+
+      <p class="policy__subtitle">What Is This Privacy Policy for?</p>
+      <p class="policy__text"><strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. This policy informs you how we look after your personal data and tells you about your privacy rights and how the law protects you. This privacy policy applies to any visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”) who uses the Site, registers on it and buys anything in our online store.</p>
+      <p class="policy__text">This Privacy policy is a part of the Agreement between you and us. Before you buy anything in our online store you need to accept our offer. That means that you accept the terms of all the documents that constitute the Agreement. The proper acceptance of the offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase.  If you put a tick in the checkbox, you agree with the terms of this Privacy policy in particular.</p>
+      <p class="policy__text">The Site is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
+      <p class="policy__text">We are the data controller when we collect personal information from our users, buyers, players, customers and clients. We will not pass your personal data on to any third party unless required to do so by law or if you have given us separate written permission to do so.</p>
+      <p class="policy__text">The updated version of this privacy policy is the only one applicable for the duration of the use of the Site until there is no other version that replaces it. We may modify this Privacy policy without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
+      
+      <p class="policy__subtitle">What Data Do We Collect About You?</p>
+      <p class="policy__text">Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data). We MAY collect, use, store and process different kinds of personal data about you.</p>
+      <p class="policy__text">Your data is collected by the Site. We only ask for an email, when you register on the Site.</p>
+      <p class="policy__text">When you select products in our online store, we ask only your Minecraft nickname and the server.</p>
+      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the PayAdmit Gateway. The page collects your payment card date in order to process your payment. The payment card data collected by PayAdmit is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect either keep your payment card information.</p>
+
+      <p class="policy__subtitle">Third Party Links</p>
+      <p class="policy__text">The Sites practice a link to a payment page provided by the PayAdmit Gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The PayAdmit Gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+
+      <p class="policy__subtitle">Children</p>
+      <p class="policy__text">This website is not intended for children and we do not knowingly collect data relating to children.</p>
+
+      <p class="policy__subtitle">Special Category Data</p>
+      <p class="policy__text">We do not anticipate that any special category data will be processed by us in our business relationship with you.</p>
+
+      <p class="policy__subtitle">What We May Need From You in Addition</p>
+      <p class="policy__text">We may need to request specific information from you to help us confirm your identity and take part in a possible dispute investigation on your purchase or a chargeback. If you apply for a refund, we will need to request additional information/documentation as well.</p>
+      
+      <p class="policy__subtitle">What information we may request from you</p>
+      <p class="policy__text">We may request such personal information from you: your first name, last name, date of birth, registration address, ID code.</p>
+      
+      <p class="policy__subtitle">What documents we may request from you</p>
+      <p class="policy__text">We may request a photo or scan of your ID document (passport, ID card, driving license etc.), a proof of address (it may be a utility bill or bank statement not older than 3 months), photo of your paying card, selfie-photo of your face, selfie-photo of you with your card, selfie-photo of you with your passport. Also we may ask you to provide a payment report that was sent to your email address after you made a purchase in our online store.</p>
+      
+      <p class="policy__subtitle">How do we contact you</p>
+      <p class="policy__text">As long as we have only your email address, we can contact you by email.</p>
+      
+      <p class="policy__subtitle">Under what conditions we request additional information and/or documents</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, we may contact you to request your information and/or documents. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">If you apply for a refund, we will need you to provide a payment report and additional documents according to the request of our support team.</p>
+      
+      <p class="policy__subtitle">For What Purpose Do We Process Your Personal Data?</p>
+      <p class="policy__text">The purpose of processing the personal data that may be collected is mainly to facilitate your purchase in our online store. Among other purposes is to manage our relationship with you, to be able to offer you our products in accordance with your interests, to improve your user experience and, where appropriate, for the treatment of your requests.</p>
+      <p class="policy__text">The data provided will be kept as long as the commercial relationship is maintained, as long as the interested party does not request its deletion, or during the years necessary to comply with legal obligations.</p>
+      
+      <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
+      <p class="policy__text">We will only use your personal data when the law allows us to.</p>
+      <p class="policy__text">The PayAdmit Gateway uses your payment card details to process your payment request.</p>
+      <p class="policy__text">Most commonly, as we only ask for an email, Minecraft nickname and the server, we use it to provide you the opportunity to buy goods in our online store.</p>
+      
+      <p class="policy__subtitle">To Which Recipients Will the Data Be Disclosed?</p>
+      <p class="policy__text">Your personal data may eventually be communicated if communications had to be made to the authorities in the event that the user had carried out actions contrary to the Law; except as provided herein, we will not transfer the data provided to third parties.</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, and contact you to request your information and/or documents, we share the information/documents with the party which provided the request. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">We may also have to share your personal data with other third parties where you have given your consent for us to do so.</p>
+      
+      <p class="policy__subtitle">Data Security and Retention</p>
+      <p class="policy__text">GalaxyGrip OÜ has adopted and maintains the necessary technical and organizational security measures to protect the personal information that users provide in order to avoid its alteration, loss, treatment or unauthorized access, taking into account the state of technology, nature of the data stored and the risks to which they are exposed.</p>
+      <p class="policy__text">However, please, bear in mind that the security of computer systems is never absolute. Please note that no transmission over the Internet is 100% secure and no data stored on it is invulnerable. We cannot guarantee the security of our Site, databases or services, nor can we guarantee that the information you submit to us will not be intercepted while you are transmitting it to us over the Internet. We are not responsible for the actions of third parties.</p>
+      <p class="policy__text">As for data retention, we will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because PayAdmit has a PCI DSS certificate.</p>
+      
+      <p class="policy__subtitle">What Are Your Legal Rights?</p>
+      <p class="policy__text">Under certain circumstances, you have rights under data protection laws in relation to your personal data.</p>
+      <p class="policy__text">You have the right to:</p>
+      <p class="policy__text">Request Access to your personal data. This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+      <p class="policy__text">Request Correction of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
+      <p class="policy__text">Request Erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing, where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
+      <p class="policy__text">Object To Processing of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
+      <p class="policy__text">Request Restriction of Processing of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data’s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
+      <p class="policy__text">Request the Transfer of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
+      <p class="policy__text">Withdraw Consent at Any Time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
+      <p class="policy__text">If you wish to exercise any of the rights set out above, please contact us.</p>
+      <p class="policy__text">No Fee Usually Required. You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
+      
+      <p class="policy__subtitle">Time Limit Within Which We Respond</p>
+      <p class="policy__text">We try to respond to all legitimate requests within 30 days. Occasionally it may take us longer than a month if your request is particularly complex or if you have made a number of requests. In this case, we will notify you and keep you updated.</p>
     </div>
     `,
     termsConditionsPage_contentInnerHTML: `
@@ -6178,311 +5494,83 @@ export const languageLocalizations = {
     // privacy policy
     privacyPolicyPage_contentInnerHTML: `
     <div class="container">
-    <h1 class="policy__title">PRIVACY POLICY</h1>
-    <p class="policy__update">Effective June 29, 2023</p>
-    <p class="policy__subtitle">What Is This Privacy Policy for?</p>
-    <p class="policy__text">
-    <strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”)
-    respects your privacy and is committed to protecting your personal
-    data. This policy informs you how we look after your personal data
-    and tells you about your privacy rights and how the law protects
-    you. This privacy policy applies to any visitor of the Site/ the
-    user/ the buyer/ the player/ the customer (further “you”, “your”)
-    who uses the Site, registers on it and buys anything in our online
-    store.
-    </p>
-    <p class="policy__text">
-    This Privacy policy is a part of the Agreement between you and us.
-    Before you buy anything in our online store you need to accept our
-    offer. That means that you accept the terms of all the documents
-    that constitute the Agreement. The proper acceptance of the offer in
-    accordance with the law of Estonia is the consistent implementation
-    by you of the following actions: read terms of the Agreement,
-    register on the Site, put a tick in the checkbox that you accept the
-    terms before making a purchase. If you put a tick in the checkbox,
-    you agree with the terms of this Privacy policy in particular.
-    </p>
-    <p class="policy__text">
-    The Site is owned by GalaxyGrip OÜ - a company registered according
-    to legislation of Estonia with its registered number 16776100, whose
-    registered address is Harju maakond, Tallinn, Lasnamäe linnaosa,
-    Katusepapi tn 6-502, 11412.
-    </p>
-    <p class="policy__text">
-    We are the data controller when we collect personal information from
-    our users, buyers, players, customers and clients. We will not pass
-    your personal data on to any third party unless required to do so by
-    law or if you have given us separate written permission to do so.
-    </p>
-    <p class="policy__text">
-    The updated version of this privacy policy is the only one
-    applicable for the duration of the use of the Site until there is no
-    other version that replaces it. We may modify this Privacy policy
-    without notifying you, so please check back often for updates. Any
-    changes made will be available on this page.
-    </p>
-    
-    <p class="policy__subtitle">What Data Do We Collect About You?</p>
-    <p class="policy__text">
-    Personal data, or personal information, means any information about
-    an individual from which that person can be identified. It does not
-    include data where the identity has been removed (anonymous data).
-    We MAY collect, use, store and process different kinds of personal
-    data about you.
-    </p>
-    <p class="policy__text">
-    Your data is collected by the Site. We only ask for an email, when
-    you register on the Site.
-    </p>
-    <p class="policy__text">
-    When you select products in our online store, we ask only your
-    Minecraft nickname and the server.
-    </p>
-    <p class="policy__text">
-    When you have selected the goods and want to pay, you are redirected
-    to the payment page of the BazPay Gateway. The page collects your
-    payment card date in order to process your payment. The payment card
-    data collected by BazPay is your card number, expiry date, your name
-    indicated on the card and your CVV code. We do not collect either
-    keep your payment card information.
-    </p>
-    <p class="policy__subtitle">Third Party Links</p>
-    <p class="policy__text">
-    The Sites practice a link to a payment page provided by the BazPay
-    Gateway in order to collect your payment card information and
-    process your payment request. We guarantee the security of payments
-    when paying by credit or debit card. The BazPay Gateway that
-    provides the service of processing the payment requests complies
-    with PCI DSS requirements for the secure processing of the payer's
-    bank card details.
-    </p>
-    <p class="policy__subtitle">Children</p>
-    <p class="policy__text">
-    This website is not intended for children and we do not knowingly
-    collect data relating to children.
-    </p>
-    <p class="policy__subtitle">Special Category Data</p>
-    <p class="policy__text">
-    We do not anticipate that any special category data will be
-    processed by us in our business relationship with you.
-    </p>
-    <p class="policy__subtitle">What We May Need From You in Addition</p>
-    <p class="policy__text">
-    We may need to request specific information from you to help us
-    confirm your identity and take part in a possible dispute
-    investigation on your purchase or a chargeback. If you apply for a
-    refund, we will need to request additional information/documentation
-    as well.
-    </p>
-    
-    <p class="policy__subtitle">
-    What information we may request from you
-    </p>
-    <p class="policy__text">
-    We may request such personal information from you: your first name,
-    last name, date of birth, registration address, ID code.
-    </p>
-    
-    <p class="policy__subtitle">What documents we may request from you</p>
-    <p class="policy__text">
-    We may request a photo or scan of your ID document (passport, ID
-    card, driving license etc.), a proof of address (it may be a utility
-    bill or bank statement not older than 3 months), photo of your
-    paying card, selfie-photo of your face, selfie-photo of you with
-    your card, selfie-photo of you with your passport. Also we may ask
-    you to provide a payment report that was sent to your email address
-    after you made a purchase in our online store.
-    </p>
-    
-    <p class="policy__subtitle">How do we contact you</p>
-    <p class="policy__text">
-    As long as we have only your email address, we can contact you by
-    email.
-    </p>
-    
-    <p class="policy__subtitle">
-    Under what conditions we request additional information and/or
-    documents
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, we may contact you to request your
-    information and/or documents. Usually it pertains to dispute
-    resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    If you apply for a refund, we will need you to provide a payment
-    report and additional documents according to the request of our
-    support team.
-    </p>
-    
-    <p class="policy__subtitle">
-    For What Purpose Do We Process Your Personal Data?
-    </p>
-    <p class="policy__text">
-    The purpose of processing the personal data that may be collected is
-    mainly to facilitate your purchase in our online store. Among other
-    purposes is to manage our relationship with you, to be able to offer
-    you our products in accordance with your interests, to improve your
-    user experience and, where appropriate, for the treatment of your
-    requests.
-    </p>
-    <p class="policy__text">
-    The data provided will be kept as long as the commercial
-    relationship is maintained, as long as the interested party does not
-    request its deletion, or during the years necessary to comply with
-    legal obligations.
-    </p>
-    
-    <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
-    <p class="policy__text">
-    We will only use your personal data when the law allows us to.
-    </p>
-    <p class="policy__text">
-    The BazPay Gateway uses your payment card details to process your
-    payment request.
-    </p>
-    <p class="policy__text">
-    Most commonly, as we only ask for an email, Minecraft nickname and
-    the server, we use it to provide you the opportunity to buy goods in
-    our online store.
-    </p>
-    
-    <p class="policy__subtitle">
-    To Which Recipients Will the Data Be Disclosed?
-    </p>
-    <p class="policy__text">
-    Your personal data may eventually be communicated if communications
-    had to be made to the authorities in the event that the user had
-    carried out actions contrary to the Law; except as provided herein,
-    we will not transfer the data provided to third parties.
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, and contact you to request your
-    information and/or documents, we share the information/documents
-    with the party which provided the request. Usually it pertains to
-    dispute resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    We may also have to share your personal data with other third
-    parties where you have given your consent for us to do so.
-    </p>
-    
-    <p class="policy__subtitle">Data Security and Retention</p>
-    <p class="policy__text">
-    GalaxyGrip OÜ has adopted and maintains the necessary technical and
-    organizational security measures to protect the personal information
-    that users provide in order to avoid its alteration, loss, treatment
-    or unauthorized access, taking into account the state of technology,
-    nature of the data stored and the risks to which they are exposed.
-    </p>
-    <p class="policy__text">
-    However, please, bear in mind that the security of computer systems
-    is never absolute. Please note that no transmission over the
-    Internet is 100% secure and no data stored on it is invulnerable. We
-    cannot guarantee the security of our Site, databases or services,
-    nor can we guarantee that the information you submit to us will not
-    be intercepted while you are transmitting it to us over the
-    Internet. We are not responsible for the actions of third parties.
-    </p>
-    <p class="policy__text">
-    As for data retention, we will only retain your personal data for as
-    long as necessary to fulfill the purposes we collected it for,
-    including for the purposes of satisfying any legal, accounting, or
-    reporting requirements.
-    </p>
-    <p class="policy__text">
-    Your payment card details are retained by encryption methods that
-    are PCI DSS compliant because BazPay has a PCI DSS certificate.
-    </p>
-    
-    <p class="policy__subtitle">What Are Your Legal Rights?</p>
-    <p class="policy__text">
-    Under certain circumstances, you have rights under data protection
-    laws in relation to your personal data.
-    </p>
-    <p class="policy__text">You have the right to:</p>
-    <p class="policy__text">
-    Request Access to your personal data. This enables you to receive a
-    copy of the personal data we hold about you and to check that we are
-    lawfully processing it.
-    </p>
-    <p class="policy__text">
-    Request Correction of the personal data that we hold about you. This
-    enables you to have any incomplete or inaccurate data we hold about
-    you corrected, though we may need to verify the accuracy of the new
-    data you provide to us.
-    </p>
-    <p class="policy__text">
-    Request Erasure of your personal data. This enables you to ask us to
-    delete or remove personal data where there is no good reason for us
-    continuing to process it. You also have the right to ask us to
-    delete or remove your personal data where you have successfully
-    exercised your right to object to processing, where we may have
-    processed your information unlawfully or where we are required to
-    erase your personal data to comply with local law. Note, however,
-    that we may not always be able to comply with your request of
-    erasure for specific legal reasons which will be notified to you, if
-    applicable, at the time of your request.
-    </p>
-    <p class="policy__text">
-    Object To Processing of your personal data where we are relying on a
-    legitimate interest (or those of a third party) and there is
-    something about your particular situation which makes you want to
-    object to processing on this ground as you feel it impacts on your
-    fundamental rights and freedoms. You also have the right to object
-    where we are processing your personal data for direct marketing
-    purposes. In some cases, we may demonstrate that we have compelling
-    legitimate grounds to process your information which override your
-    rights and freedoms.
-    </p>
-    <p class="policy__text">
-    Request Restriction of Processing of your personal data. This
-    enables you to ask us to suspend the processing of your personal
-    data in the following scenarios: (a) if you want us to establish the
-    data’s accuracy; (b) where our use of the data is unlawful but you
-    do not want us to erase it; (c) where you need us to hold the data
-    even if we no longer require it as you need it to establish,
-    exercise or defend legal claims; or (d) you have objected to our use
-    of your data but we need to verify whether we have overriding
-    legitimate grounds to use it.
-    </p>
-    <p class="policy__text">
-    Request the Transfer of your personal data to you or to a third
-    party. We will provide to you, or a third party you have chosen,
-    your personal data in a structured, commonly used, machine-readable
-    format. Note that this right only applies to automated information
-    which you initially provided consent for us to use or where we used
-    the information to perform a contract with you.
-    </p>
-    <p class="policy__text">
-    Withdraw Consent at Any Time where we are relying on consent to
-    process your personal data. However, this will not affect the
-    lawfulness of any processing carried out before you withdraw your
-    consent. If you withdraw your consent, we may not be able to provide
-    certain products or services to you. We will advise you if this is
-    the case at the time you withdraw your consent.
-    </p>
-    <p class="policy__text">
-    If you wish to exercise any of the rights set out above, please
-    contact us.
-    </p>
-    <p class="policy__text">
-    No Fee Usually Required. You will not have to pay a fee to access
-    your personal data (or to exercise any of the other rights).
-    However, we may charge a reasonable fee if your request is clearly
-    unfounded, repetitive or excessive. Alternatively, we may refuse to
-    comply with your request in these circumstances.
-    </p>
-    
-    <p class="policy__subtitle">Time Limit Within Which We Respond</p>
-    <p class="policy__text">
-    We try to respond to all legitimate requests within 30 days.
-    Occasionally it may take us longer than a month if your request is
-    particularly complex or if you have made a number of requests. In
-    this case, we will notify you and keep you updated.
-    </p>
+      <h1 class="policy__title">PRIVACY POLICY</h1>
+
+      <p class="policy__update">Effective June 29, 2023</p>
+
+      <p class="policy__subtitle">What Is This Privacy Policy for?</p>
+      <p class="policy__text"><strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. This policy informs you how we look after your personal data and tells you about your privacy rights and how the law protects you. This privacy policy applies to any visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”) who uses the Site, registers on it and buys anything in our online store.</p>
+      <p class="policy__text">This Privacy policy is a part of the Agreement between you and us. Before you buy anything in our online store you need to accept our offer. That means that you accept the terms of all the documents that constitute the Agreement. The proper acceptance of the offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase.  If you put a tick in the checkbox, you agree with the terms of this Privacy policy in particular.</p>
+      <p class="policy__text">The Site is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
+      <p class="policy__text">We are the data controller when we collect personal information from our users, buyers, players, customers and clients. We will not pass your personal data on to any third party unless required to do so by law or if you have given us separate written permission to do so.</p>
+      <p class="policy__text">The updated version of this privacy policy is the only one applicable for the duration of the use of the Site until there is no other version that replaces it. We may modify this Privacy policy without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
+      
+      <p class="policy__subtitle">What Data Do We Collect About You?</p>
+      <p class="policy__text">Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data). We MAY collect, use, store and process different kinds of personal data about you.</p>
+      <p class="policy__text">Your data is collected by the Site. We only ask for an email, when you register on the Site.</p>
+      <p class="policy__text">When you select products in our online store, we ask only your Minecraft nickname and the server.</p>
+      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the PayAdmit Gateway. The page collects your payment card date in order to process your payment. The payment card data collected by PayAdmit is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect either keep your payment card information.</p>
+
+      <p class="policy__subtitle">Third Party Links</p>
+      <p class="policy__text">The Sites practice a link to a payment page provided by the PayAdmit Gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The PayAdmit Gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+
+      <p class="policy__subtitle">Children</p>
+      <p class="policy__text">This website is not intended for children and we do not knowingly collect data relating to children.</p>
+
+      <p class="policy__subtitle">Special Category Data</p>
+      <p class="policy__text">We do not anticipate that any special category data will be processed by us in our business relationship with you.</p>
+
+      <p class="policy__subtitle">What We May Need From You in Addition</p>
+      <p class="policy__text">We may need to request specific information from you to help us confirm your identity and take part in a possible dispute investigation on your purchase or a chargeback. If you apply for a refund, we will need to request additional information/documentation as well.</p>
+      
+      <p class="policy__subtitle">What information we may request from you</p>
+      <p class="policy__text">We may request such personal information from you: your first name, last name, date of birth, registration address, ID code.</p>
+      
+      <p class="policy__subtitle">What documents we may request from you</p>
+      <p class="policy__text">We may request a photo or scan of your ID document (passport, ID card, driving license etc.), a proof of address (it may be a utility bill or bank statement not older than 3 months), photo of your paying card, selfie-photo of your face, selfie-photo of you with your card, selfie-photo of you with your passport. Also we may ask you to provide a payment report that was sent to your email address after you made a purchase in our online store.</p>
+      
+      <p class="policy__subtitle">How do we contact you</p>
+      <p class="policy__text">As long as we have only your email address, we can contact you by email.</p>
+      
+      <p class="policy__subtitle">Under what conditions we request additional information and/or documents</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, we may contact you to request your information and/or documents. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">If you apply for a refund, we will need you to provide a payment report and additional documents according to the request of our support team.</p>
+      
+      <p class="policy__subtitle">For What Purpose Do We Process Your Personal Data?</p>
+      <p class="policy__text">The purpose of processing the personal data that may be collected is mainly to facilitate your purchase in our online store. Among other purposes is to manage our relationship with you, to be able to offer you our products in accordance with your interests, to improve your user experience and, where appropriate, for the treatment of your requests.</p>
+      <p class="policy__text">The data provided will be kept as long as the commercial relationship is maintained, as long as the interested party does not request its deletion, or during the years necessary to comply with legal obligations.</p>
+      
+      <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
+      <p class="policy__text">We will only use your personal data when the law allows us to.</p>
+      <p class="policy__text">The PayAdmit Gateway uses your payment card details to process your payment request.</p>
+      <p class="policy__text">Most commonly, as we only ask for an email, Minecraft nickname and the server, we use it to provide you the opportunity to buy goods in our online store.</p>
+      
+      <p class="policy__subtitle">To Which Recipients Will the Data Be Disclosed?</p>
+      <p class="policy__text">Your personal data may eventually be communicated if communications had to be made to the authorities in the event that the user had carried out actions contrary to the Law; except as provided herein, we will not transfer the data provided to third parties.</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, and contact you to request your information and/or documents, we share the information/documents with the party which provided the request. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">We may also have to share your personal data with other third parties where you have given your consent for us to do so.</p>
+      
+      <p class="policy__subtitle">Data Security and Retention</p>
+      <p class="policy__text">GalaxyGrip OÜ has adopted and maintains the necessary technical and organizational security measures to protect the personal information that users provide in order to avoid its alteration, loss, treatment or unauthorized access, taking into account the state of technology, nature of the data stored and the risks to which they are exposed.</p>
+      <p class="policy__text">However, please, bear in mind that the security of computer systems is never absolute. Please note that no transmission over the Internet is 100% secure and no data stored on it is invulnerable. We cannot guarantee the security of our Site, databases or services, nor can we guarantee that the information you submit to us will not be intercepted while you are transmitting it to us over the Internet. We are not responsible for the actions of third parties.</p>
+      <p class="policy__text">As for data retention, we will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because PayAdmit has a PCI DSS certificate.</p>
+      
+      <p class="policy__subtitle">What Are Your Legal Rights?</p>
+      <p class="policy__text">Under certain circumstances, you have rights under data protection laws in relation to your personal data.</p>
+      <p class="policy__text">You have the right to:</p>
+      <p class="policy__text">Request Access to your personal data. This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+      <p class="policy__text">Request Correction of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
+      <p class="policy__text">Request Erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing, where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
+      <p class="policy__text">Object To Processing of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
+      <p class="policy__text">Request Restriction of Processing of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data’s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
+      <p class="policy__text">Request the Transfer of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
+      <p class="policy__text">Withdraw Consent at Any Time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
+      <p class="policy__text">If you wish to exercise any of the rights set out above, please contact us.</p>
+      <p class="policy__text">No Fee Usually Required. You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
+      
+      <p class="policy__subtitle">Time Limit Within Which We Respond</p>
+      <p class="policy__text">We try to respond to all legitimate requests within 30 days. Occasionally it may take us longer than a month if your request is particularly complex or if you have made a number of requests. In this case, we will notify you and keep you updated.</p>
     </div>
     `,
     termsConditionsPage_contentInnerHTML: `
@@ -7580,311 +6668,83 @@ export const languageLocalizations = {
     // privacy policy
     privacyPolicyPage_contentInnerHTML: `
     <div class="container">
-    <h1 class="policy__title">PRIVACY POLICY</h1>
-    <p class="policy__update">Effective June 29, 2023</p>
-    <p class="policy__subtitle">What Is This Privacy Policy for?</p>
-    <p class="policy__text">
-    <strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”)
-    respects your privacy and is committed to protecting your personal
-    data. This policy informs you how we look after your personal data
-    and tells you about your privacy rights and how the law protects
-    you. This privacy policy applies to any visitor of the Site/ the
-    user/ the buyer/ the player/ the customer (further “you”, “your”)
-    who uses the Site, registers on it and buys anything in our online
-    store.
-    </p>
-    <p class="policy__text">
-    This Privacy policy is a part of the Agreement between you and us.
-    Before you buy anything in our online store you need to accept our
-    offer. That means that you accept the terms of all the documents
-    that constitute the Agreement. The proper acceptance of the offer in
-    accordance with the law of Estonia is the consistent implementation
-    by you of the following actions: read terms of the Agreement,
-    register on the Site, put a tick in the checkbox that you accept the
-    terms before making a purchase. If you put a tick in the checkbox,
-    you agree with the terms of this Privacy policy in particular.
-    </p>
-    <p class="policy__text">
-    The Site is owned by GalaxyGrip OÜ - a company registered according
-    to legislation of Estonia with its registered number 16776100, whose
-    registered address is Harju maakond, Tallinn, Lasnamäe linnaosa,
-    Katusepapi tn 6-502, 11412.
-    </p>
-    <p class="policy__text">
-    We are the data controller when we collect personal information from
-    our users, buyers, players, customers and clients. We will not pass
-    your personal data on to any third party unless required to do so by
-    law or if you have given us separate written permission to do so.
-    </p>
-    <p class="policy__text">
-    The updated version of this privacy policy is the only one
-    applicable for the duration of the use of the Site until there is no
-    other version that replaces it. We may modify this Privacy policy
-    without notifying you, so please check back often for updates. Any
-    changes made will be available on this page.
-    </p>
-    
-    <p class="policy__subtitle">What Data Do We Collect About You?</p>
-    <p class="policy__text">
-    Personal data, or personal information, means any information about
-    an individual from which that person can be identified. It does not
-    include data where the identity has been removed (anonymous data).
-    We MAY collect, use, store and process different kinds of personal
-    data about you.
-    </p>
-    <p class="policy__text">
-    Your data is collected by the Site. We only ask for an email, when
-    you register on the Site.
-    </p>
-    <p class="policy__text">
-    When you select products in our online store, we ask only your
-    Minecraft nickname and the server.
-    </p>
-    <p class="policy__text">
-    When you have selected the goods and want to pay, you are redirected
-    to the payment page of the BazPay Gateway. The page collects your
-    payment card date in order to process your payment. The payment card
-    data collected by BazPay is your card number, expiry date, your name
-    indicated on the card and your CVV code. We do not collect either
-    keep your payment card information.
-    </p>
-    <p class="policy__subtitle">Third Party Links</p>
-    <p class="policy__text">
-    The Sites practice a link to a payment page provided by the BazPay
-    Gateway in order to collect your payment card information and
-    process your payment request. We guarantee the security of payments
-    when paying by credit or debit card. The BazPay Gateway that
-    provides the service of processing the payment requests complies
-    with PCI DSS requirements for the secure processing of the payer's
-    bank card details.
-    </p>
-    <p class="policy__subtitle">Children</p>
-    <p class="policy__text">
-    This website is not intended for children and we do not knowingly
-    collect data relating to children.
-    </p>
-    <p class="policy__subtitle">Special Category Data</p>
-    <p class="policy__text">
-    We do not anticipate that any special category data will be
-    processed by us in our business relationship with you.
-    </p>
-    <p class="policy__subtitle">What We May Need From You in Addition</p>
-    <p class="policy__text">
-    We may need to request specific information from you to help us
-    confirm your identity and take part in a possible dispute
-    investigation on your purchase or a chargeback. If you apply for a
-    refund, we will need to request additional information/documentation
-    as well.
-    </p>
-    
-    <p class="policy__subtitle">
-    What information we may request from you
-    </p>
-    <p class="policy__text">
-    We may request such personal information from you: your first name,
-    last name, date of birth, registration address, ID code.
-    </p>
-    
-    <p class="policy__subtitle">What documents we may request from you</p>
-    <p class="policy__text">
-    We may request a photo or scan of your ID document (passport, ID
-    card, driving license etc.), a proof of address (it may be a utility
-    bill or bank statement not older than 3 months), photo of your
-    paying card, selfie-photo of your face, selfie-photo of you with
-    your card, selfie-photo of you with your passport. Also we may ask
-    you to provide a payment report that was sent to your email address
-    after you made a purchase in our online store.
-    </p>
-    
-    <p class="policy__subtitle">How do we contact you</p>
-    <p class="policy__text">
-    As long as we have only your email address, we can contact you by
-    email.
-    </p>
-    
-    <p class="policy__subtitle">
-    Under what conditions we request additional information and/or
-    documents
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, we may contact you to request your
-    information and/or documents. Usually it pertains to dispute
-    resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    If you apply for a refund, we will need you to provide a payment
-    report and additional documents according to the request of our
-    support team.
-    </p>
-    
-    <p class="policy__subtitle">
-    For What Purpose Do We Process Your Personal Data?
-    </p>
-    <p class="policy__text">
-    The purpose of processing the personal data that may be collected is
-    mainly to facilitate your purchase in our online store. Among other
-    purposes is to manage our relationship with you, to be able to offer
-    you our products in accordance with your interests, to improve your
-    user experience and, where appropriate, for the treatment of your
-    requests.
-    </p>
-    <p class="policy__text">
-    The data provided will be kept as long as the commercial
-    relationship is maintained, as long as the interested party does not
-    request its deletion, or during the years necessary to comply with
-    legal obligations.
-    </p>
-    
-    <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
-    <p class="policy__text">
-    We will only use your personal data when the law allows us to.
-    </p>
-    <p class="policy__text">
-    The BazPay Gateway uses your payment card details to process your
-    payment request.
-    </p>
-    <p class="policy__text">
-    Most commonly, as we only ask for an email, Minecraft nickname and
-    the server, we use it to provide you the opportunity to buy goods in
-    our online store.
-    </p>
-    
-    <p class="policy__subtitle">
-    To Which Recipients Will the Data Be Disclosed?
-    </p>
-    <p class="policy__text">
-    Your personal data may eventually be communicated if communications
-    had to be made to the authorities in the event that the user had
-    carried out actions contrary to the Law; except as provided herein,
-    we will not transfer the data provided to third parties.
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, and contact you to request your
-    information and/or documents, we share the information/documents
-    with the party which provided the request. Usually it pertains to
-    dispute resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    We may also have to share your personal data with other third
-    parties where you have given your consent for us to do so.
-    </p>
-    
-    <p class="policy__subtitle">Data Security and Retention</p>
-    <p class="policy__text">
-    GalaxyGrip OÜ has adopted and maintains the necessary technical and
-    organizational security measures to protect the personal information
-    that users provide in order to avoid its alteration, loss, treatment
-    or unauthorized access, taking into account the state of technology,
-    nature of the data stored and the risks to which they are exposed.
-    </p>
-    <p class="policy__text">
-    However, please, bear in mind that the security of computer systems
-    is never absolute. Please note that no transmission over the
-    Internet is 100% secure and no data stored on it is invulnerable. We
-    cannot guarantee the security of our Site, databases or services,
-    nor can we guarantee that the information you submit to us will not
-    be intercepted while you are transmitting it to us over the
-    Internet. We are not responsible for the actions of third parties.
-    </p>
-    <p class="policy__text">
-    As for data retention, we will only retain your personal data for as
-    long as necessary to fulfill the purposes we collected it for,
-    including for the purposes of satisfying any legal, accounting, or
-    reporting requirements.
-    </p>
-    <p class="policy__text">
-    Your payment card details are retained by encryption methods that
-    are PCI DSS compliant because BazPay has a PCI DSS certificate.
-    </p>
-    
-    <p class="policy__subtitle">What Are Your Legal Rights?</p>
-    <p class="policy__text">
-    Under certain circumstances, you have rights under data protection
-    laws in relation to your personal data.
-    </p>
-    <p class="policy__text">You have the right to:</p>
-    <p class="policy__text">
-    Request Access to your personal data. This enables you to receive a
-    copy of the personal data we hold about you and to check that we are
-    lawfully processing it.
-    </p>
-    <p class="policy__text">
-    Request Correction of the personal data that we hold about you. This
-    enables you to have any incomplete or inaccurate data we hold about
-    you corrected, though we may need to verify the accuracy of the new
-    data you provide to us.
-    </p>
-    <p class="policy__text">
-    Request Erasure of your personal data. This enables you to ask us to
-    delete or remove personal data where there is no good reason for us
-    continuing to process it. You also have the right to ask us to
-    delete or remove your personal data where you have successfully
-    exercised your right to object to processing, where we may have
-    processed your information unlawfully or where we are required to
-    erase your personal data to comply with local law. Note, however,
-    that we may not always be able to comply with your request of
-    erasure for specific legal reasons which will be notified to you, if
-    applicable, at the time of your request.
-    </p>
-    <p class="policy__text">
-    Object To Processing of your personal data where we are relying on a
-    legitimate interest (or those of a third party) and there is
-    something about your particular situation which makes you want to
-    object to processing on this ground as you feel it impacts on your
-    fundamental rights and freedoms. You also have the right to object
-    where we are processing your personal data for direct marketing
-    purposes. In some cases, we may demonstrate that we have compelling
-    legitimate grounds to process your information which override your
-    rights and freedoms.
-    </p>
-    <p class="policy__text">
-    Request Restriction of Processing of your personal data. This
-    enables you to ask us to suspend the processing of your personal
-    data in the following scenarios: (a) if you want us to establish the
-    data’s accuracy; (b) where our use of the data is unlawful but you
-    do not want us to erase it; (c) where you need us to hold the data
-    even if we no longer require it as you need it to establish,
-    exercise or defend legal claims; or (d) you have objected to our use
-    of your data but we need to verify whether we have overriding
-    legitimate grounds to use it.
-    </p>
-    <p class="policy__text">
-    Request the Transfer of your personal data to you or to a third
-    party. We will provide to you, or a third party you have chosen,
-    your personal data in a structured, commonly used, machine-readable
-    format. Note that this right only applies to automated information
-    which you initially provided consent for us to use or where we used
-    the information to perform a contract with you.
-    </p>
-    <p class="policy__text">
-    Withdraw Consent at Any Time where we are relying on consent to
-    process your personal data. However, this will not affect the
-    lawfulness of any processing carried out before you withdraw your
-    consent. If you withdraw your consent, we may not be able to provide
-    certain products or services to you. We will advise you if this is
-    the case at the time you withdraw your consent.
-    </p>
-    <p class="policy__text">
-    If you wish to exercise any of the rights set out above, please
-    contact us.
-    </p>
-    <p class="policy__text">
-    No Fee Usually Required. You will not have to pay a fee to access
-    your personal data (or to exercise any of the other rights).
-    However, we may charge a reasonable fee if your request is clearly
-    unfounded, repetitive or excessive. Alternatively, we may refuse to
-    comply with your request in these circumstances.
-    </p>
-    
-    <p class="policy__subtitle">Time Limit Within Which We Respond</p>
-    <p class="policy__text">
-    We try to respond to all legitimate requests within 30 days.
-    Occasionally it may take us longer than a month if your request is
-    particularly complex or if you have made a number of requests. In
-    this case, we will notify you and keep you updated.
-    </p>
+      <h1 class="policy__title">PRIVACY POLICY</h1>
+
+      <p class="policy__update">Effective June 29, 2023</p>
+
+      <p class="policy__subtitle">What Is This Privacy Policy for?</p>
+      <p class="policy__text"><strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. This policy informs you how we look after your personal data and tells you about your privacy rights and how the law protects you. This privacy policy applies to any visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”) who uses the Site, registers on it and buys anything in our online store.</p>
+      <p class="policy__text">This Privacy policy is a part of the Agreement between you and us. Before you buy anything in our online store you need to accept our offer. That means that you accept the terms of all the documents that constitute the Agreement. The proper acceptance of the offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase.  If you put a tick in the checkbox, you agree with the terms of this Privacy policy in particular.</p>
+      <p class="policy__text">The Site is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
+      <p class="policy__text">We are the data controller when we collect personal information from our users, buyers, players, customers and clients. We will not pass your personal data on to any third party unless required to do so by law or if you have given us separate written permission to do so.</p>
+      <p class="policy__text">The updated version of this privacy policy is the only one applicable for the duration of the use of the Site until there is no other version that replaces it. We may modify this Privacy policy without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
+      
+      <p class="policy__subtitle">What Data Do We Collect About You?</p>
+      <p class="policy__text">Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data). We MAY collect, use, store and process different kinds of personal data about you.</p>
+      <p class="policy__text">Your data is collected by the Site. We only ask for an email, when you register on the Site.</p>
+      <p class="policy__text">When you select products in our online store, we ask only your Minecraft nickname and the server.</p>
+      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the PayAdmit Gateway. The page collects your payment card date in order to process your payment. The payment card data collected by PayAdmit is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect either keep your payment card information.</p>
+
+      <p class="policy__subtitle">Third Party Links</p>
+      <p class="policy__text">The Sites practice a link to a payment page provided by the PayAdmit Gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The PayAdmit Gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+
+      <p class="policy__subtitle">Children</p>
+      <p class="policy__text">This website is not intended for children and we do not knowingly collect data relating to children.</p>
+
+      <p class="policy__subtitle">Special Category Data</p>
+      <p class="policy__text">We do not anticipate that any special category data will be processed by us in our business relationship with you.</p>
+
+      <p class="policy__subtitle">What We May Need From You in Addition</p>
+      <p class="policy__text">We may need to request specific information from you to help us confirm your identity and take part in a possible dispute investigation on your purchase or a chargeback. If you apply for a refund, we will need to request additional information/documentation as well.</p>
+      
+      <p class="policy__subtitle">What information we may request from you</p>
+      <p class="policy__text">We may request such personal information from you: your first name, last name, date of birth, registration address, ID code.</p>
+      
+      <p class="policy__subtitle">What documents we may request from you</p>
+      <p class="policy__text">We may request a photo or scan of your ID document (passport, ID card, driving license etc.), a proof of address (it may be a utility bill or bank statement not older than 3 months), photo of your paying card, selfie-photo of your face, selfie-photo of you with your card, selfie-photo of you with your passport. Also we may ask you to provide a payment report that was sent to your email address after you made a purchase in our online store.</p>
+      
+      <p class="policy__subtitle">How do we contact you</p>
+      <p class="policy__text">As long as we have only your email address, we can contact you by email.</p>
+      
+      <p class="policy__subtitle">Under what conditions we request additional information and/or documents</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, we may contact you to request your information and/or documents. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">If you apply for a refund, we will need you to provide a payment report and additional documents according to the request of our support team.</p>
+      
+      <p class="policy__subtitle">For What Purpose Do We Process Your Personal Data?</p>
+      <p class="policy__text">The purpose of processing the personal data that may be collected is mainly to facilitate your purchase in our online store. Among other purposes is to manage our relationship with you, to be able to offer you our products in accordance with your interests, to improve your user experience and, where appropriate, for the treatment of your requests.</p>
+      <p class="policy__text">The data provided will be kept as long as the commercial relationship is maintained, as long as the interested party does not request its deletion, or during the years necessary to comply with legal obligations.</p>
+      
+      <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
+      <p class="policy__text">We will only use your personal data when the law allows us to.</p>
+      <p class="policy__text">The PayAdmit Gateway uses your payment card details to process your payment request.</p>
+      <p class="policy__text">Most commonly, as we only ask for an email, Minecraft nickname and the server, we use it to provide you the opportunity to buy goods in our online store.</p>
+      
+      <p class="policy__subtitle">To Which Recipients Will the Data Be Disclosed?</p>
+      <p class="policy__text">Your personal data may eventually be communicated if communications had to be made to the authorities in the event that the user had carried out actions contrary to the Law; except as provided herein, we will not transfer the data provided to third parties.</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, and contact you to request your information and/or documents, we share the information/documents with the party which provided the request. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">We may also have to share your personal data with other third parties where you have given your consent for us to do so.</p>
+      
+      <p class="policy__subtitle">Data Security and Retention</p>
+      <p class="policy__text">GalaxyGrip OÜ has adopted and maintains the necessary technical and organizational security measures to protect the personal information that users provide in order to avoid its alteration, loss, treatment or unauthorized access, taking into account the state of technology, nature of the data stored and the risks to which they are exposed.</p>
+      <p class="policy__text">However, please, bear in mind that the security of computer systems is never absolute. Please note that no transmission over the Internet is 100% secure and no data stored on it is invulnerable. We cannot guarantee the security of our Site, databases or services, nor can we guarantee that the information you submit to us will not be intercepted while you are transmitting it to us over the Internet. We are not responsible for the actions of third parties.</p>
+      <p class="policy__text">As for data retention, we will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because PayAdmit has a PCI DSS certificate.</p>
+      
+      <p class="policy__subtitle">What Are Your Legal Rights?</p>
+      <p class="policy__text">Under certain circumstances, you have rights under data protection laws in relation to your personal data.</p>
+      <p class="policy__text">You have the right to:</p>
+      <p class="policy__text">Request Access to your personal data. This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+      <p class="policy__text">Request Correction of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
+      <p class="policy__text">Request Erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing, where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
+      <p class="policy__text">Object To Processing of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
+      <p class="policy__text">Request Restriction of Processing of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data’s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
+      <p class="policy__text">Request the Transfer of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
+      <p class="policy__text">Withdraw Consent at Any Time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
+      <p class="policy__text">If you wish to exercise any of the rights set out above, please contact us.</p>
+      <p class="policy__text">No Fee Usually Required. You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
+      
+      <p class="policy__subtitle">Time Limit Within Which We Respond</p>
+      <p class="policy__text">We try to respond to all legitimate requests within 30 days. Occasionally it may take us longer than a month if your request is particularly complex or if you have made a number of requests. In this case, we will notify you and keep you updated.</p>
     </div>
     `,
     termsConditionsPage_contentInnerHTML: `
@@ -8973,311 +7833,83 @@ export const languageLocalizations = {
     // privacy policy
     privacyPolicyPage_contentInnerHTML: `
     <div class="container">
-    <h1 class="policy__title">PRIVACY POLICY</h1>
-    <p class="policy__update">Effective June 29, 2023</p>
-    <p class="policy__subtitle">What Is This Privacy Policy for?</p>
-    <p class="policy__text">
-    <strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”)
-    respects your privacy and is committed to protecting your personal
-    data. This policy informs you how we look after your personal data
-    and tells you about your privacy rights and how the law protects
-    you. This privacy policy applies to any visitor of the Site/ the
-    user/ the buyer/ the player/ the customer (further “you”, “your”)
-    who uses the Site, registers on it and buys anything in our online
-    store.
-    </p>
-    <p class="policy__text">
-    This Privacy policy is a part of the Agreement between you and us.
-    Before you buy anything in our online store you need to accept our
-    offer. That means that you accept the terms of all the documents
-    that constitute the Agreement. The proper acceptance of the offer in
-    accordance with the law of Estonia is the consistent implementation
-    by you of the following actions: read terms of the Agreement,
-    register on the Site, put a tick in the checkbox that you accept the
-    terms before making a purchase. If you put a tick in the checkbox,
-    you agree with the terms of this Privacy policy in particular.
-    </p>
-    <p class="policy__text">
-    The Site is owned by GalaxyGrip OÜ - a company registered according
-    to legislation of Estonia with its registered number 16776100, whose
-    registered address is Harju maakond, Tallinn, Lasnamäe linnaosa,
-    Katusepapi tn 6-502, 11412.
-    </p>
-    <p class="policy__text">
-    We are the data controller when we collect personal information from
-    our users, buyers, players, customers and clients. We will not pass
-    your personal data on to any third party unless required to do so by
-    law or if you have given us separate written permission to do so.
-    </p>
-    <p class="policy__text">
-    The updated version of this privacy policy is the only one
-    applicable for the duration of the use of the Site until there is no
-    other version that replaces it. We may modify this Privacy policy
-    without notifying you, so please check back often for updates. Any
-    changes made will be available on this page.
-    </p>
-    
-    <p class="policy__subtitle">What Data Do We Collect About You?</p>
-    <p class="policy__text">
-    Personal data, or personal information, means any information about
-    an individual from which that person can be identified. It does not
-    include data where the identity has been removed (anonymous data).
-    We MAY collect, use, store and process different kinds of personal
-    data about you.
-    </p>
-    <p class="policy__text">
-    Your data is collected by the Site. We only ask for an email, when
-    you register on the Site.
-    </p>
-    <p class="policy__text">
-    When you select products in our online store, we ask only your
-    Minecraft nickname and the server.
-    </p>
-    <p class="policy__text">
-    When you have selected the goods and want to pay, you are redirected
-    to the payment page of the BazPay Gateway. The page collects your
-    payment card date in order to process your payment. The payment card
-    data collected by BazPay is your card number, expiry date, your name
-    indicated on the card and your CVV code. We do not collect either
-    keep your payment card information.
-    </p>
-    <p class="policy__subtitle">Third Party Links</p>
-    <p class="policy__text">
-    The Sites practice a link to a payment page provided by the BazPay
-    Gateway in order to collect your payment card information and
-    process your payment request. We guarantee the security of payments
-    when paying by credit or debit card. The BazPay Gateway that
-    provides the service of processing the payment requests complies
-    with PCI DSS requirements for the secure processing of the payer's
-    bank card details.
-    </p>
-    <p class="policy__subtitle">Children</p>
-    <p class="policy__text">
-    This website is not intended for children and we do not knowingly
-    collect data relating to children.
-    </p>
-    <p class="policy__subtitle">Special Category Data</p>
-    <p class="policy__text">
-    We do not anticipate that any special category data will be
-    processed by us in our business relationship with you.
-    </p>
-    <p class="policy__subtitle">What We May Need From You in Addition</p>
-    <p class="policy__text">
-    We may need to request specific information from you to help us
-    confirm your identity and take part in a possible dispute
-    investigation on your purchase or a chargeback. If you apply for a
-    refund, we will need to request additional information/documentation
-    as well.
-    </p>
-    
-    <p class="policy__subtitle">
-    What information we may request from you
-    </p>
-    <p class="policy__text">
-    We may request such personal information from you: your first name,
-    last name, date of birth, registration address, ID code.
-    </p>
-    
-    <p class="policy__subtitle">What documents we may request from you</p>
-    <p class="policy__text">
-    We may request a photo or scan of your ID document (passport, ID
-    card, driving license etc.), a proof of address (it may be a utility
-    bill or bank statement not older than 3 months), photo of your
-    paying card, selfie-photo of your face, selfie-photo of you with
-    your card, selfie-photo of you with your passport. Also we may ask
-    you to provide a payment report that was sent to your email address
-    after you made a purchase in our online store.
-    </p>
-    
-    <p class="policy__subtitle">How do we contact you</p>
-    <p class="policy__text">
-    As long as we have only your email address, we can contact you by
-    email.
-    </p>
-    
-    <p class="policy__subtitle">
-    Under what conditions we request additional information and/or
-    documents
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, we may contact you to request your
-    information and/or documents. Usually it pertains to dispute
-    resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    If you apply for a refund, we will need you to provide a payment
-    report and additional documents according to the request of our
-    support team.
-    </p>
-    
-    <p class="policy__subtitle">
-    For What Purpose Do We Process Your Personal Data?
-    </p>
-    <p class="policy__text">
-    The purpose of processing the personal data that may be collected is
-    mainly to facilitate your purchase in our online store. Among other
-    purposes is to manage our relationship with you, to be able to offer
-    you our products in accordance with your interests, to improve your
-    user experience and, where appropriate, for the treatment of your
-    requests.
-    </p>
-    <p class="policy__text">
-    The data provided will be kept as long as the commercial
-    relationship is maintained, as long as the interested party does not
-    request its deletion, or during the years necessary to comply with
-    legal obligations.
-    </p>
-    
-    <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
-    <p class="policy__text">
-    We will only use your personal data when the law allows us to.
-    </p>
-    <p class="policy__text">
-    The BazPay Gateway uses your payment card details to process your
-    payment request.
-    </p>
-    <p class="policy__text">
-    Most commonly, as we only ask for an email, Minecraft nickname and
-    the server, we use it to provide you the opportunity to buy goods in
-    our online store.
-    </p>
-    
-    <p class="policy__subtitle">
-    To Which Recipients Will the Data Be Disclosed?
-    </p>
-    <p class="policy__text">
-    Your personal data may eventually be communicated if communications
-    had to be made to the authorities in the event that the user had
-    carried out actions contrary to the Law; except as provided herein,
-    we will not transfer the data provided to third parties.
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, and contact you to request your
-    information and/or documents, we share the information/documents
-    with the party which provided the request. Usually it pertains to
-    dispute resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    We may also have to share your personal data with other third
-    parties where you have given your consent for us to do so.
-    </p>
-    
-    <p class="policy__subtitle">Data Security and Retention</p>
-    <p class="policy__text">
-    GalaxyGrip OÜ has adopted and maintains the necessary technical and
-    organizational security measures to protect the personal information
-    that users provide in order to avoid its alteration, loss, treatment
-    or unauthorized access, taking into account the state of technology,
-    nature of the data stored and the risks to which they are exposed.
-    </p>
-    <p class="policy__text">
-    However, please, bear in mind that the security of computer systems
-    is never absolute. Please note that no transmission over the
-    Internet is 100% secure and no data stored on it is invulnerable. We
-    cannot guarantee the security of our Site, databases or services,
-    nor can we guarantee that the information you submit to us will not
-    be intercepted while you are transmitting it to us over the
-    Internet. We are not responsible for the actions of third parties.
-    </p>
-    <p class="policy__text">
-    As for data retention, we will only retain your personal data for as
-    long as necessary to fulfill the purposes we collected it for,
-    including for the purposes of satisfying any legal, accounting, or
-    reporting requirements.
-    </p>
-    <p class="policy__text">
-    Your payment card details are retained by encryption methods that
-    are PCI DSS compliant because BazPay has a PCI DSS certificate.
-    </p>
-    
-    <p class="policy__subtitle">What Are Your Legal Rights?</p>
-    <p class="policy__text">
-    Under certain circumstances, you have rights under data protection
-    laws in relation to your personal data.
-    </p>
-    <p class="policy__text">You have the right to:</p>
-    <p class="policy__text">
-    Request Access to your personal data. This enables you to receive a
-    copy of the personal data we hold about you and to check that we are
-    lawfully processing it.
-    </p>
-    <p class="policy__text">
-    Request Correction of the personal data that we hold about you. This
-    enables you to have any incomplete or inaccurate data we hold about
-    you corrected, though we may need to verify the accuracy of the new
-    data you provide to us.
-    </p>
-    <p class="policy__text">
-    Request Erasure of your personal data. This enables you to ask us to
-    delete or remove personal data where there is no good reason for us
-    continuing to process it. You also have the right to ask us to
-    delete or remove your personal data where you have successfully
-    exercised your right to object to processing, where we may have
-    processed your information unlawfully or where we are required to
-    erase your personal data to comply with local law. Note, however,
-    that we may not always be able to comply with your request of
-    erasure for specific legal reasons which will be notified to you, if
-    applicable, at the time of your request.
-    </p>
-    <p class="policy__text">
-    Object To Processing of your personal data where we are relying on a
-    legitimate interest (or those of a third party) and there is
-    something about your particular situation which makes you want to
-    object to processing on this ground as you feel it impacts on your
-    fundamental rights and freedoms. You also have the right to object
-    where we are processing your personal data for direct marketing
-    purposes. In some cases, we may demonstrate that we have compelling
-    legitimate grounds to process your information which override your
-    rights and freedoms.
-    </p>
-    <p class="policy__text">
-    Request Restriction of Processing of your personal data. This
-    enables you to ask us to suspend the processing of your personal
-    data in the following scenarios: (a) if you want us to establish the
-    data’s accuracy; (b) where our use of the data is unlawful but you
-    do not want us to erase it; (c) where you need us to hold the data
-    even if we no longer require it as you need it to establish,
-    exercise or defend legal claims; or (d) you have objected to our use
-    of your data but we need to verify whether we have overriding
-    legitimate grounds to use it.
-    </p>
-    <p class="policy__text">
-    Request the Transfer of your personal data to you or to a third
-    party. We will provide to you, or a third party you have chosen,
-    your personal data in a structured, commonly used, machine-readable
-    format. Note that this right only applies to automated information
-    which you initially provided consent for us to use or where we used
-    the information to perform a contract with you.
-    </p>
-    <p class="policy__text">
-    Withdraw Consent at Any Time where we are relying on consent to
-    process your personal data. However, this will not affect the
-    lawfulness of any processing carried out before you withdraw your
-    consent. If you withdraw your consent, we may not be able to provide
-    certain products or services to you. We will advise you if this is
-    the case at the time you withdraw your consent.
-    </p>
-    <p class="policy__text">
-    If you wish to exercise any of the rights set out above, please
-    contact us.
-    </p>
-    <p class="policy__text">
-    No Fee Usually Required. You will not have to pay a fee to access
-    your personal data (or to exercise any of the other rights).
-    However, we may charge a reasonable fee if your request is clearly
-    unfounded, repetitive or excessive. Alternatively, we may refuse to
-    comply with your request in these circumstances.
-    </p>
-    
-    <p class="policy__subtitle">Time Limit Within Which We Respond</p>
-    <p class="policy__text">
-    We try to respond to all legitimate requests within 30 days.
-    Occasionally it may take us longer than a month if your request is
-    particularly complex or if you have made a number of requests. In
-    this case, we will notify you and keep you updated.
-    </p>
+      <h1 class="policy__title">PRIVACY POLICY</h1>
+
+      <p class="policy__update">Effective June 29, 2023</p>
+
+      <p class="policy__subtitle">What Is This Privacy Policy for?</p>
+      <p class="policy__text"><strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. This policy informs you how we look after your personal data and tells you about your privacy rights and how the law protects you. This privacy policy applies to any visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”) who uses the Site, registers on it and buys anything in our online store.</p>
+      <p class="policy__text">This Privacy policy is a part of the Agreement between you and us. Before you buy anything in our online store you need to accept our offer. That means that you accept the terms of all the documents that constitute the Agreement. The proper acceptance of the offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase.  If you put a tick in the checkbox, you agree with the terms of this Privacy policy in particular.</p>
+      <p class="policy__text">The Site is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
+      <p class="policy__text">We are the data controller when we collect personal information from our users, buyers, players, customers and clients. We will not pass your personal data on to any third party unless required to do so by law or if you have given us separate written permission to do so.</p>
+      <p class="policy__text">The updated version of this privacy policy is the only one applicable for the duration of the use of the Site until there is no other version that replaces it. We may modify this Privacy policy without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
+      
+      <p class="policy__subtitle">What Data Do We Collect About You?</p>
+      <p class="policy__text">Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data). We MAY collect, use, store and process different kinds of personal data about you.</p>
+      <p class="policy__text">Your data is collected by the Site. We only ask for an email, when you register on the Site.</p>
+      <p class="policy__text">When you select products in our online store, we ask only your Minecraft nickname and the server.</p>
+      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the PayAdmit Gateway. The page collects your payment card date in order to process your payment. The payment card data collected by PayAdmit is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect either keep your payment card information.</p>
+
+      <p class="policy__subtitle">Third Party Links</p>
+      <p class="policy__text">The Sites practice a link to a payment page provided by the PayAdmit Gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The PayAdmit Gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+
+      <p class="policy__subtitle">Children</p>
+      <p class="policy__text">This website is not intended for children and we do not knowingly collect data relating to children.</p>
+
+      <p class="policy__subtitle">Special Category Data</p>
+      <p class="policy__text">We do not anticipate that any special category data will be processed by us in our business relationship with you.</p>
+
+      <p class="policy__subtitle">What We May Need From You in Addition</p>
+      <p class="policy__text">We may need to request specific information from you to help us confirm your identity and take part in a possible dispute investigation on your purchase or a chargeback. If you apply for a refund, we will need to request additional information/documentation as well.</p>
+      
+      <p class="policy__subtitle">What information we may request from you</p>
+      <p class="policy__text">We may request such personal information from you: your first name, last name, date of birth, registration address, ID code.</p>
+      
+      <p class="policy__subtitle">What documents we may request from you</p>
+      <p class="policy__text">We may request a photo or scan of your ID document (passport, ID card, driving license etc.), a proof of address (it may be a utility bill or bank statement not older than 3 months), photo of your paying card, selfie-photo of your face, selfie-photo of you with your card, selfie-photo of you with your passport. Also we may ask you to provide a payment report that was sent to your email address after you made a purchase in our online store.</p>
+      
+      <p class="policy__subtitle">How do we contact you</p>
+      <p class="policy__text">As long as we have only your email address, we can contact you by email.</p>
+      
+      <p class="policy__subtitle">Under what conditions we request additional information and/or documents</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, we may contact you to request your information and/or documents. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">If you apply for a refund, we will need you to provide a payment report and additional documents according to the request of our support team.</p>
+      
+      <p class="policy__subtitle">For What Purpose Do We Process Your Personal Data?</p>
+      <p class="policy__text">The purpose of processing the personal data that may be collected is mainly to facilitate your purchase in our online store. Among other purposes is to manage our relationship with you, to be able to offer you our products in accordance with your interests, to improve your user experience and, where appropriate, for the treatment of your requests.</p>
+      <p class="policy__text">The data provided will be kept as long as the commercial relationship is maintained, as long as the interested party does not request its deletion, or during the years necessary to comply with legal obligations.</p>
+      
+      <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
+      <p class="policy__text">We will only use your personal data when the law allows us to.</p>
+      <p class="policy__text">The PayAdmit Gateway uses your payment card details to process your payment request.</p>
+      <p class="policy__text">Most commonly, as we only ask for an email, Minecraft nickname and the server, we use it to provide you the opportunity to buy goods in our online store.</p>
+      
+      <p class="policy__subtitle">To Which Recipients Will the Data Be Disclosed?</p>
+      <p class="policy__text">Your personal data may eventually be communicated if communications had to be made to the authorities in the event that the user had carried out actions contrary to the Law; except as provided herein, we will not transfer the data provided to third parties.</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, and contact you to request your information and/or documents, we share the information/documents with the party which provided the request. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">We may also have to share your personal data with other third parties where you have given your consent for us to do so.</p>
+      
+      <p class="policy__subtitle">Data Security and Retention</p>
+      <p class="policy__text">GalaxyGrip OÜ has adopted and maintains the necessary technical and organizational security measures to protect the personal information that users provide in order to avoid its alteration, loss, treatment or unauthorized access, taking into account the state of technology, nature of the data stored and the risks to which they are exposed.</p>
+      <p class="policy__text">However, please, bear in mind that the security of computer systems is never absolute. Please note that no transmission over the Internet is 100% secure and no data stored on it is invulnerable. We cannot guarantee the security of our Site, databases or services, nor can we guarantee that the information you submit to us will not be intercepted while you are transmitting it to us over the Internet. We are not responsible for the actions of third parties.</p>
+      <p class="policy__text">As for data retention, we will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because PayAdmit has a PCI DSS certificate.</p>
+      
+      <p class="policy__subtitle">What Are Your Legal Rights?</p>
+      <p class="policy__text">Under certain circumstances, you have rights under data protection laws in relation to your personal data.</p>
+      <p class="policy__text">You have the right to:</p>
+      <p class="policy__text">Request Access to your personal data. This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+      <p class="policy__text">Request Correction of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
+      <p class="policy__text">Request Erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing, where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
+      <p class="policy__text">Object To Processing of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
+      <p class="policy__text">Request Restriction of Processing of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data’s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
+      <p class="policy__text">Request the Transfer of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
+      <p class="policy__text">Withdraw Consent at Any Time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
+      <p class="policy__text">If you wish to exercise any of the rights set out above, please contact us.</p>
+      <p class="policy__text">No Fee Usually Required. You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
+      
+      <p class="policy__subtitle">Time Limit Within Which We Respond</p>
+      <p class="policy__text">We try to respond to all legitimate requests within 30 days. Occasionally it may take us longer than a month if your request is particularly complex or if you have made a number of requests. In this case, we will notify you and keep you updated.</p>
     </div>
     `,
     termsConditionsPage_contentInnerHTML: `
@@ -10370,311 +9002,83 @@ export const languageLocalizations = {
     // privacy policy
     privacyPolicyPage_contentInnerHTML: `
     <div class="container">
-    <h1 class="policy__title">PRIVACY POLICY</h1>
-    <p class="policy__update">Effective June 29, 2023</p>
-    <p class="policy__subtitle">What Is This Privacy Policy for?</p>
-    <p class="policy__text">
-    <strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”)
-    respects your privacy and is committed to protecting your personal
-    data. This policy informs you how we look after your personal data
-    and tells you about your privacy rights and how the law protects
-    you. This privacy policy applies to any visitor of the Site/ the
-    user/ the buyer/ the player/ the customer (further “you”, “your”)
-    who uses the Site, registers on it and buys anything in our online
-    store.
-    </p>
-    <p class="policy__text">
-    This Privacy policy is a part of the Agreement between you and us.
-    Before you buy anything in our online store you need to accept our
-    offer. That means that you accept the terms of all the documents
-    that constitute the Agreement. The proper acceptance of the offer in
-    accordance with the law of Estonia is the consistent implementation
-    by you of the following actions: read terms of the Agreement,
-    register on the Site, put a tick in the checkbox that you accept the
-    terms before making a purchase. If you put a tick in the checkbox,
-    you agree with the terms of this Privacy policy in particular.
-    </p>
-    <p class="policy__text">
-    The Site is owned by GalaxyGrip OÜ - a company registered according
-    to legislation of Estonia with its registered number 16776100, whose
-    registered address is Harju maakond, Tallinn, Lasnamäe linnaosa,
-    Katusepapi tn 6-502, 11412.
-    </p>
-    <p class="policy__text">
-    We are the data controller when we collect personal information from
-    our users, buyers, players, customers and clients. We will not pass
-    your personal data on to any third party unless required to do so by
-    law or if you have given us separate written permission to do so.
-    </p>
-    <p class="policy__text">
-    The updated version of this privacy policy is the only one
-    applicable for the duration of the use of the Site until there is no
-    other version that replaces it. We may modify this Privacy policy
-    without notifying you, so please check back often for updates. Any
-    changes made will be available on this page.
-    </p>
-    
-    <p class="policy__subtitle">What Data Do We Collect About You?</p>
-    <p class="policy__text">
-    Personal data, or personal information, means any information about
-    an individual from which that person can be identified. It does not
-    include data where the identity has been removed (anonymous data).
-    We MAY collect, use, store and process different kinds of personal
-    data about you.
-    </p>
-    <p class="policy__text">
-    Your data is collected by the Site. We only ask for an email, when
-    you register on the Site.
-    </p>
-    <p class="policy__text">
-    When you select products in our online store, we ask only your
-    Minecraft nickname and the server.
-    </p>
-    <p class="policy__text">
-    When you have selected the goods and want to pay, you are redirected
-    to the payment page of the BazPay Gateway. The page collects your
-    payment card date in order to process your payment. The payment card
-    data collected by BazPay is your card number, expiry date, your name
-    indicated on the card and your CVV code. We do not collect either
-    keep your payment card information.
-    </p>
-    <p class="policy__subtitle">Third Party Links</p>
-    <p class="policy__text">
-    The Sites practice a link to a payment page provided by the BazPay
-    Gateway in order to collect your payment card information and
-    process your payment request. We guarantee the security of payments
-    when paying by credit or debit card. The BazPay Gateway that
-    provides the service of processing the payment requests complies
-    with PCI DSS requirements for the secure processing of the payer's
-    bank card details.
-    </p>
-    <p class="policy__subtitle">Children</p>
-    <p class="policy__text">
-    This website is not intended for children and we do not knowingly
-    collect data relating to children.
-    </p>
-    <p class="policy__subtitle">Special Category Data</p>
-    <p class="policy__text">
-    We do not anticipate that any special category data will be
-    processed by us in our business relationship with you.
-    </p>
-    <p class="policy__subtitle">What We May Need From You in Addition</p>
-    <p class="policy__text">
-    We may need to request specific information from you to help us
-    confirm your identity and take part in a possible dispute
-    investigation on your purchase or a chargeback. If you apply for a
-    refund, we will need to request additional information/documentation
-    as well.
-    </p>
-    
-    <p class="policy__subtitle">
-    What information we may request from you
-    </p>
-    <p class="policy__text">
-    We may request such personal information from you: your first name,
-    last name, date of birth, registration address, ID code.
-    </p>
-    
-    <p class="policy__subtitle">What documents we may request from you</p>
-    <p class="policy__text">
-    We may request a photo or scan of your ID document (passport, ID
-    card, driving license etc.), a proof of address (it may be a utility
-    bill or bank statement not older than 3 months), photo of your
-    paying card, selfie-photo of your face, selfie-photo of you with
-    your card, selfie-photo of you with your passport. Also we may ask
-    you to provide a payment report that was sent to your email address
-    after you made a purchase in our online store.
-    </p>
-    
-    <p class="policy__subtitle">How do we contact you</p>
-    <p class="policy__text">
-    As long as we have only your email address, we can contact you by
-    email.
-    </p>
-    
-    <p class="policy__subtitle">
-    Under what conditions we request additional information and/or
-    documents
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, we may contact you to request your
-    information and/or documents. Usually it pertains to dispute
-    resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    If you apply for a refund, we will need you to provide a payment
-    report and additional documents according to the request of our
-    support team.
-    </p>
-    
-    <p class="policy__subtitle">
-    For What Purpose Do We Process Your Personal Data?
-    </p>
-    <p class="policy__text">
-    The purpose of processing the personal data that may be collected is
-    mainly to facilitate your purchase in our online store. Among other
-    purposes is to manage our relationship with you, to be able to offer
-    you our products in accordance with your interests, to improve your
-    user experience and, where appropriate, for the treatment of your
-    requests.
-    </p>
-    <p class="policy__text">
-    The data provided will be kept as long as the commercial
-    relationship is maintained, as long as the interested party does not
-    request its deletion, or during the years necessary to comply with
-    legal obligations.
-    </p>
-    
-    <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
-    <p class="policy__text">
-    We will only use your personal data when the law allows us to.
-    </p>
-    <p class="policy__text">
-    The BazPay Gateway uses your payment card details to process your
-    payment request.
-    </p>
-    <p class="policy__text">
-    Most commonly, as we only ask for an email, Minecraft nickname and
-    the server, we use it to provide you the opportunity to buy goods in
-    our online store.
-    </p>
-    
-    <p class="policy__subtitle">
-    To Which Recipients Will the Data Be Disclosed?
-    </p>
-    <p class="policy__text">
-    Your personal data may eventually be communicated if communications
-    had to be made to the authorities in the event that the user had
-    carried out actions contrary to the Law; except as provided herein,
-    we will not transfer the data provided to third parties.
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, and contact you to request your
-    information and/or documents, we share the information/documents
-    with the party which provided the request. Usually it pertains to
-    dispute resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    We may also have to share your personal data with other third
-    parties where you have given your consent for us to do so.
-    </p>
-    
-    <p class="policy__subtitle">Data Security and Retention</p>
-    <p class="policy__text">
-    GalaxyGrip OÜ has adopted and maintains the necessary technical and
-    organizational security measures to protect the personal information
-    that users provide in order to avoid its alteration, loss, treatment
-    or unauthorized access, taking into account the state of technology,
-    nature of the data stored and the risks to which they are exposed.
-    </p>
-    <p class="policy__text">
-    However, please, bear in mind that the security of computer systems
-    is never absolute. Please note that no transmission over the
-    Internet is 100% secure and no data stored on it is invulnerable. We
-    cannot guarantee the security of our Site, databases or services,
-    nor can we guarantee that the information you submit to us will not
-    be intercepted while you are transmitting it to us over the
-    Internet. We are not responsible for the actions of third parties.
-    </p>
-    <p class="policy__text">
-    As for data retention, we will only retain your personal data for as
-    long as necessary to fulfill the purposes we collected it for,
-    including for the purposes of satisfying any legal, accounting, or
-    reporting requirements.
-    </p>
-    <p class="policy__text">
-    Your payment card details are retained by encryption methods that
-    are PCI DSS compliant because BazPay has a PCI DSS certificate.
-    </p>
-    
-    <p class="policy__subtitle">What Are Your Legal Rights?</p>
-    <p class="policy__text">
-    Under certain circumstances, you have rights under data protection
-    laws in relation to your personal data.
-    </p>
-    <p class="policy__text">You have the right to:</p>
-    <p class="policy__text">
-    Request Access to your personal data. This enables you to receive a
-    copy of the personal data we hold about you and to check that we are
-    lawfully processing it.
-    </p>
-    <p class="policy__text">
-    Request Correction of the personal data that we hold about you. This
-    enables you to have any incomplete or inaccurate data we hold about
-    you corrected, though we may need to verify the accuracy of the new
-    data you provide to us.
-    </p>
-    <p class="policy__text">
-    Request Erasure of your personal data. This enables you to ask us to
-    delete or remove personal data where there is no good reason for us
-    continuing to process it. You also have the right to ask us to
-    delete or remove your personal data where you have successfully
-    exercised your right to object to processing, where we may have
-    processed your information unlawfully or where we are required to
-    erase your personal data to comply with local law. Note, however,
-    that we may not always be able to comply with your request of
-    erasure for specific legal reasons which will be notified to you, if
-    applicable, at the time of your request.
-    </p>
-    <p class="policy__text">
-    Object To Processing of your personal data where we are relying on a
-    legitimate interest (or those of a third party) and there is
-    something about your particular situation which makes you want to
-    object to processing on this ground as you feel it impacts on your
-    fundamental rights and freedoms. You also have the right to object
-    where we are processing your personal data for direct marketing
-    purposes. In some cases, we may demonstrate that we have compelling
-    legitimate grounds to process your information which override your
-    rights and freedoms.
-    </p>
-    <p class="policy__text">
-    Request Restriction of Processing of your personal data. This
-    enables you to ask us to suspend the processing of your personal
-    data in the following scenarios: (a) if you want us to establish the
-    data’s accuracy; (b) where our use of the data is unlawful but you
-    do not want us to erase it; (c) where you need us to hold the data
-    even if we no longer require it as you need it to establish,
-    exercise or defend legal claims; or (d) you have objected to our use
-    of your data but we need to verify whether we have overriding
-    legitimate grounds to use it.
-    </p>
-    <p class="policy__text">
-    Request the Transfer of your personal data to you or to a third
-    party. We will provide to you, or a third party you have chosen,
-    your personal data in a structured, commonly used, machine-readable
-    format. Note that this right only applies to automated information
-    which you initially provided consent for us to use or where we used
-    the information to perform a contract with you.
-    </p>
-    <p class="policy__text">
-    Withdraw Consent at Any Time where we are relying on consent to
-    process your personal data. However, this will not affect the
-    lawfulness of any processing carried out before you withdraw your
-    consent. If you withdraw your consent, we may not be able to provide
-    certain products or services to you. We will advise you if this is
-    the case at the time you withdraw your consent.
-    </p>
-    <p class="policy__text">
-    If you wish to exercise any of the rights set out above, please
-    contact us.
-    </p>
-    <p class="policy__text">
-    No Fee Usually Required. You will not have to pay a fee to access
-    your personal data (or to exercise any of the other rights).
-    However, we may charge a reasonable fee if your request is clearly
-    unfounded, repetitive or excessive. Alternatively, we may refuse to
-    comply with your request in these circumstances.
-    </p>
-    
-    <p class="policy__subtitle">Time Limit Within Which We Respond</p>
-    <p class="policy__text">
-    We try to respond to all legitimate requests within 30 days.
-    Occasionally it may take us longer than a month if your request is
-    particularly complex or if you have made a number of requests. In
-    this case, we will notify you and keep you updated.
-    </p>
+      <h1 class="policy__title">PRIVACY POLICY</h1>
+
+      <p class="policy__update">Effective June 29, 2023</p>
+
+      <p class="policy__subtitle">What Is This Privacy Policy for?</p>
+      <p class="policy__text"><strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. This policy informs you how we look after your personal data and tells you about your privacy rights and how the law protects you. This privacy policy applies to any visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”) who uses the Site, registers on it and buys anything in our online store.</p>
+      <p class="policy__text">This Privacy policy is a part of the Agreement between you and us. Before you buy anything in our online store you need to accept our offer. That means that you accept the terms of all the documents that constitute the Agreement. The proper acceptance of the offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase.  If you put a tick in the checkbox, you agree with the terms of this Privacy policy in particular.</p>
+      <p class="policy__text">The Site is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
+      <p class="policy__text">We are the data controller when we collect personal information from our users, buyers, players, customers and clients. We will not pass your personal data on to any third party unless required to do so by law or if you have given us separate written permission to do so.</p>
+      <p class="policy__text">The updated version of this privacy policy is the only one applicable for the duration of the use of the Site until there is no other version that replaces it. We may modify this Privacy policy without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
+      
+      <p class="policy__subtitle">What Data Do We Collect About You?</p>
+      <p class="policy__text">Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data). We MAY collect, use, store and process different kinds of personal data about you.</p>
+      <p class="policy__text">Your data is collected by the Site. We only ask for an email, when you register on the Site.</p>
+      <p class="policy__text">When you select products in our online store, we ask only your Minecraft nickname and the server.</p>
+      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the PayAdmit Gateway. The page collects your payment card date in order to process your payment. The payment card data collected by PayAdmit is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect either keep your payment card information.</p>
+
+      <p class="policy__subtitle">Third Party Links</p>
+      <p class="policy__text">The Sites practice a link to a payment page provided by the PayAdmit Gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The PayAdmit Gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+
+      <p class="policy__subtitle">Children</p>
+      <p class="policy__text">This website is not intended for children and we do not knowingly collect data relating to children.</p>
+
+      <p class="policy__subtitle">Special Category Data</p>
+      <p class="policy__text">We do not anticipate that any special category data will be processed by us in our business relationship with you.</p>
+
+      <p class="policy__subtitle">What We May Need From You in Addition</p>
+      <p class="policy__text">We may need to request specific information from you to help us confirm your identity and take part in a possible dispute investigation on your purchase or a chargeback. If you apply for a refund, we will need to request additional information/documentation as well.</p>
+      
+      <p class="policy__subtitle">What information we may request from you</p>
+      <p class="policy__text">We may request such personal information from you: your first name, last name, date of birth, registration address, ID code.</p>
+      
+      <p class="policy__subtitle">What documents we may request from you</p>
+      <p class="policy__text">We may request a photo or scan of your ID document (passport, ID card, driving license etc.), a proof of address (it may be a utility bill or bank statement not older than 3 months), photo of your paying card, selfie-photo of your face, selfie-photo of you with your card, selfie-photo of you with your passport. Also we may ask you to provide a payment report that was sent to your email address after you made a purchase in our online store.</p>
+      
+      <p class="policy__subtitle">How do we contact you</p>
+      <p class="policy__text">As long as we have only your email address, we can contact you by email.</p>
+      
+      <p class="policy__subtitle">Under what conditions we request additional information and/or documents</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, we may contact you to request your information and/or documents. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">If you apply for a refund, we will need you to provide a payment report and additional documents according to the request of our support team.</p>
+      
+      <p class="policy__subtitle">For What Purpose Do We Process Your Personal Data?</p>
+      <p class="policy__text">The purpose of processing the personal data that may be collected is mainly to facilitate your purchase in our online store. Among other purposes is to manage our relationship with you, to be able to offer you our products in accordance with your interests, to improve your user experience and, where appropriate, for the treatment of your requests.</p>
+      <p class="policy__text">The data provided will be kept as long as the commercial relationship is maintained, as long as the interested party does not request its deletion, or during the years necessary to comply with legal obligations.</p>
+      
+      <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
+      <p class="policy__text">We will only use your personal data when the law allows us to.</p>
+      <p class="policy__text">The PayAdmit Gateway uses your payment card details to process your payment request.</p>
+      <p class="policy__text">Most commonly, as we only ask for an email, Minecraft nickname and the server, we use it to provide you the opportunity to buy goods in our online store.</p>
+      
+      <p class="policy__subtitle">To Which Recipients Will the Data Be Disclosed?</p>
+      <p class="policy__text">Your personal data may eventually be communicated if communications had to be made to the authorities in the event that the user had carried out actions contrary to the Law; except as provided herein, we will not transfer the data provided to third parties.</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, and contact you to request your information and/or documents, we share the information/documents with the party which provided the request. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">We may also have to share your personal data with other third parties where you have given your consent for us to do so.</p>
+      
+      <p class="policy__subtitle">Data Security and Retention</p>
+      <p class="policy__text">GalaxyGrip OÜ has adopted and maintains the necessary technical and organizational security measures to protect the personal information that users provide in order to avoid its alteration, loss, treatment or unauthorized access, taking into account the state of technology, nature of the data stored and the risks to which they are exposed.</p>
+      <p class="policy__text">However, please, bear in mind that the security of computer systems is never absolute. Please note that no transmission over the Internet is 100% secure and no data stored on it is invulnerable. We cannot guarantee the security of our Site, databases or services, nor can we guarantee that the information you submit to us will not be intercepted while you are transmitting it to us over the Internet. We are not responsible for the actions of third parties.</p>
+      <p class="policy__text">As for data retention, we will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because PayAdmit has a PCI DSS certificate.</p>
+      
+      <p class="policy__subtitle">What Are Your Legal Rights?</p>
+      <p class="policy__text">Under certain circumstances, you have rights under data protection laws in relation to your personal data.</p>
+      <p class="policy__text">You have the right to:</p>
+      <p class="policy__text">Request Access to your personal data. This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+      <p class="policy__text">Request Correction of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
+      <p class="policy__text">Request Erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing, where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
+      <p class="policy__text">Object To Processing of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
+      <p class="policy__text">Request Restriction of Processing of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data’s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
+      <p class="policy__text">Request the Transfer of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
+      <p class="policy__text">Withdraw Consent at Any Time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
+      <p class="policy__text">If you wish to exercise any of the rights set out above, please contact us.</p>
+      <p class="policy__text">No Fee Usually Required. You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
+      
+      <p class="policy__subtitle">Time Limit Within Which We Respond</p>
+      <p class="policy__text">We try to respond to all legitimate requests within 30 days. Occasionally it may take us longer than a month if your request is particularly complex or if you have made a number of requests. In this case, we will notify you and keep you updated.</p>
     </div>
     `,
     termsConditionsPage_contentInnerHTML: `
@@ -11777,311 +10181,83 @@ export const languageLocalizations = {
     // privacy policy
     privacyPolicyPage_contentInnerHTML: `
     <div class="container">
-    <h1 class="policy__title">PRIVACY POLICY</h1>
-    <p class="policy__update">Effective June 29, 2023</p>
-    <p class="policy__subtitle">What Is This Privacy Policy for?</p>
-    <p class="policy__text">
-    <strong>Adventures in Minecraft</strong> (further "we”, "us”, "our”)
-    respects your privacy and is committed to protecting your personal
-    data. This policy informs you how we look after your personal data
-    and tells you about your privacy rights and how the law protects
-    you. This privacy policy applies to any visitor of the Site/ the
-    user/ the buyer/ the player/ the customer (further "you”, "your”)
-    who uses the Site, registers on it and buys anything in our online
-    store.
-    </p>
-    <p class="policy__text">
-    This Privacy policy is a part of the Agreement between you and us.
-    Before you buy anything in our online store you need to accept our
-    offer. That means that you accept the terms of all the documents
-    that constitute the Agreement. The proper acceptance of the offer in
-    accordance with the law of Estonia is the consistent implementation
-    by you of the following actions: read terms of the Agreement,
-    register on the Site, put a tick in the checkbox that you accept the
-    terms before making a purchase. If you put a tick in the checkbox,
-    you agree with the terms of this Privacy policy in particular.
-    </p>
-    <p class="policy__text">
-    The Site is owned by GalaxyGrip OÜ - a company registered according
-    to legislation of Estonia with its registered number 16776100, whose
-    registered address is Harju maakond, Tallinn, Lasnamäe linnaosa,
-    Katusepapi tn 6-502, 11412.
-    </p>
-    <p class="policy__text">
-    We are the data controller when we collect personal information from
-    our users, buyers, players, customers and clients. We will not pass
-    your personal data on to any third party unless required to do so by
-    law or if you have given us separate written permission to do so.
-    </p>
-    <p class="policy__text">
-    The updated version of this privacy policy is the only one
-    applicable for the duration of the use of the Site until there is no
-    other version that replaces it. We may modify this Privacy policy
-    without notifying you, so please check back often for updates. Any
-    changes made will be available on this page.
-    </p>
-    
-    <p class="policy__subtitle">What Data Do We Collect About You?</p>
-    <p class="policy__text">
-    Personal data, or personal information, means any information about
-    an individual from which that person can be identified. It does not
-    include data where the identity has been removed (anonymous data).
-    We MAY collect, use, store and process different kinds of personal
-    data about you.
-    </p>
-    <p class="policy__text">
-    Your data is collected by the Site. We only ask for an email, when
-    you register on the Site.
-    </p>
-    <p class="policy__text">
-    When you select products in our online store, we ask only your
-    Minecraft nickname and the server.
-    </p>
-    <p class="policy__text">
-    When you have selected the goods and want to pay, you are redirected
-    to the payment page of the BazPay Gateway. The page collects your
-    payment card date in order to process your payment. The payment card
-    data collected by BazPay is your card number, expiry date, your name
-    indicated on the card and your CVV code. We do not collect either
-    keep your payment card information.
-    </p>
-    <p class="policy__subtitle">Third Party Links</p>
-    <p class="policy__text">
-    The Sites practice a link to a payment page provided by the BazPay
-    Gateway in order to collect your payment card information and
-    process your payment request. We guarantee the security of payments
-    when paying by credit or debit card. The BazPay Gateway that
-    provides the service of processing the payment requests complies
-    with PCI DSS requirements for the secure processing of the payer's
-    bank card details.
-    </p>
-    <p class="policy__subtitle">Children</p>
-    <p class="policy__text">
-    This website is not intended for children and we do not knowingly
-    collect data relating to children.
-    </p>
-    <p class="policy__subtitle">Special Category Data</p>
-    <p class="policy__text">
-    We do not anticipate that any special category data will be
-    processed by us in our business relationship with you.
-    </p>
-    <p class="policy__subtitle">What We May Need From You in Addition</p>
-    <p class="policy__text">
-    We may need to request specific information from you to help us
-    confirm your identity and take part in a possible dispute
-    investigation on your purchase or a chargeback. If you apply for a
-    refund, we will need to request additional information/documentation
-    as well.
-    </p>
-    
-    <p class="policy__subtitle">
-    What information we may request from you
-    </p>
-    <p class="policy__text">
-    We may request such personal information from you: your first name,
-    last name, date of birth, registration address, ID code.
-    </p>
-    
-    <p class="policy__subtitle">What documents we may request from you</p>
-    <p class="policy__text">
-    We may request a photo or scan of your ID document (passport, ID
-    card, driving license etc.), a proof of address (it may be a utility
-    bill or bank statement not older than 3 months), photo of your
-    paying card, selfie-photo of your face, selfie-photo of you with
-    your card, selfie-photo of you with your passport. Also we may ask
-    you to provide a payment report that was sent to your email address
-    after you made a purchase in our online store.
-    </p>
-    
-    <p class="policy__subtitle">How do we contact you</p>
-    <p class="policy__text">
-    As long as we have only your email address, we can contact you by
-    email.
-    </p>
-    
-    <p class="policy__subtitle">
-    Under what conditions we request additional information and/or
-    documents
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, we may contact you to request your
-    information and/or documents. Usually it pertains to dispute
-    resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    If you apply for a refund, we will need you to provide a payment
-    report and additional documents according to the request of our
-    support team.
-    </p>
-    
-    <p class="policy__subtitle">
-    For What Purpose Do We Process Your Personal Data?
-    </p>
-    <p class="policy__text">
-    The purpose of processing the personal data that may be collected is
-    mainly to facilitate your purchase in our online store. Among other
-    purposes is to manage our relationship with you, to be able to offer
-    you our products in accordance with your interests, to improve your
-    user experience and, where appropriate, for the treatment of your
-    requests.
-    </p>
-    <p class="policy__text">
-    The data provided will be kept as long as the commercial
-    relationship is maintained, as long as the interested party does not
-    request its deletion, or during the years necessary to comply with
-    legal obligations.
-    </p>
-    
-    <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
-    <p class="policy__text">
-    We will only use your personal data when the law allows us to.
-    </p>
-    <p class="policy__text">
-    The BazPay Gateway uses your payment card details to process your
-    payment request.
-    </p>
-    <p class="policy__text">
-    Most commonly, as we only ask for an email, Minecraft nickname and
-    the server, we use it to provide you the opportunity to buy goods in
-    our online store.
-    </p>
-    
-    <p class="policy__subtitle">
-    To Which Recipients Will the Data Be Disclosed?
-    </p>
-    <p class="policy__text">
-    Your personal data may eventually be communicated if communications
-    had to be made to the authorities in the event that the user had
-    carried out actions contrary to the Law; except as provided herein,
-    we will not transfer the data provided to third parties.
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, and contact you to request your
-    information and/or documents, we share the information/documents
-    with the party which provided the request. Usually it pertains to
-    dispute resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    We may also have to share your personal data with other third
-    parties where you have given your consent for us to do so.
-    </p>
-    
-    <p class="policy__subtitle">Data Security and Retention</p>
-    <p class="policy__text">
-    GalaxyGrip OÜ has adopted and maintains the necessary technical and
-    organizational security measures to protect the personal information
-    that users provide in order to avoid its alteration, loss, treatment
-    or unauthorized access, taking into account the state of technology,
-    nature of the data stored and the risks to which they are exposed.
-    </p>
-    <p class="policy__text">
-    However, please, bear in mind that the security of computer systems
-    is never absolute. Please note that no transmission over the
-    Internet is 100% secure and no data stored on it is invulnerable. We
-    cannot guarantee the security of our Site, databases or services,
-    nor can we guarantee that the information you submit to us will not
-    be intercepted while you are transmitting it to us over the
-    Internet. We are not responsible for the actions of third parties.
-    </p>
-    <p class="policy__text">
-    As for data retention, we will only retain your personal data for as
-    long as necessary to fulfill the purposes we collected it for,
-    including for the purposes of satisfying any legal, accounting, or
-    reporting requirements.
-    </p>
-    <p class="policy__text">
-    Your payment card details are retained by encryption methods that
-    are PCI DSS compliant because BazPay has a PCI DSS certificate.
-    </p>
-    
-    <p class="policy__subtitle">What Are Your Legal Rights?</p>
-    <p class="policy__text">
-    Under certain circumstances, you have rights under data protection
-    laws in relation to your personal data.
-    </p>
-    <p class="policy__text">You have the right to:</p>
-    <p class="policy__text">
-    Request Access to your personal data. This enables you to receive a
-    copy of the personal data we hold about you and to check that we are
-    lawfully processing it.
-    </p>
-    <p class="policy__text">
-    Request Correction of the personal data that we hold about you. This
-    enables you to have any incomplete or inaccurate data we hold about
-    you corrected, though we may need to verify the accuracy of the new
-    data you provide to us.
-    </p>
-    <p class="policy__text">
-    Request Erasure of your personal data. This enables you to ask us to
-    delete or remove personal data where there is no good reason for us
-    continuing to process it. You also have the right to ask us to
-    delete or remove your personal data where you have successfully
-    exercised your right to object to processing, where we may have
-    processed your information unlawfully or where we are required to
-    erase your personal data to comply with local law. Note, however,
-    that we may not always be able to comply with your request of
-    erasure for specific legal reasons which will be notified to you, if
-    applicable, at the time of your request.
-    </p>
-    <p class="policy__text">
-    Object To Processing of your personal data where we are relying on a
-    legitimate interest (or those of a third party) and there is
-    something about your particular situation which makes you want to
-    object to processing on this ground as you feel it impacts on your
-    fundamental rights and freedoms. You also have the right to object
-    where we are processing your personal data for direct marketing
-    purposes. In some cases, we may demonstrate that we have compelling
-    legitimate grounds to process your information which override your
-    rights and freedoms.
-    </p>
-    <p class="policy__text">
-    Request Restriction of Processing of your personal data. This
-    enables you to ask us to suspend the processing of your personal
-    data in the following scenarios: (a) if you want us to establish the
-    data’s accuracy; (b) where our use of the data is unlawful but you
-    do not want us to erase it; (c) where you need us to hold the data
-    even if we no longer require it as you need it to establish,
-    exercise or defend legal claims; or (d) you have objected to our use
-    of your data but we need to verify whether we have overriding
-    legitimate grounds to use it.
-    </p>
-    <p class="policy__text">
-    Request the Transfer of your personal data to you or to a third
-    party. We will provide to you, or a third party you have chosen,
-    your personal data in a structured, commonly used, machine-readable
-    format. Note that this right only applies to automated information
-    which you initially provided consent for us to use or where we used
-    the information to perform a contract with you.
-    </p>
-    <p class="policy__text">
-    Withdraw Consent at Any Time where we are relying on consent to
-    process your personal data. However, this will not affect the
-    lawfulness of any processing carried out before you withdraw your
-    consent. If you withdraw your consent, we may not be able to provide
-    certain products or services to you. We will advise you if this is
-    the case at the time you withdraw your consent.
-    </p>
-    <p class="policy__text">
-    If you wish to exercise any of the rights set out above, please
-    contact us.
-    </p>
-    <p class="policy__text">
-    No Fee Usually Required. You will not have to pay a fee to access
-    your personal data (or to exercise any of the other rights).
-    However, we may charge a reasonable fee if your request is clearly
-    unfounded, repetitive or excessive. Alternatively, we may refuse to
-    comply with your request in these circumstances.
-    </p>
-    
-    <p class="policy__subtitle">Time Limit Within Which We Respond</p>
-    <p class="policy__text">
-    We try to respond to all legitimate requests within 30 days.
-    Occasionally it may take us longer than a month if your request is
-    particularly complex or if you have made a number of requests. In
-    this case, we will notify you and keep you updated.
-    </p>
+      <h1 class="policy__title">PRIVACY POLICY</h1>
+
+      <p class="policy__update">Effective June 29, 2023</p>
+
+      <p class="policy__subtitle">What Is This Privacy Policy for?</p>
+      <p class="policy__text"><strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. This policy informs you how we look after your personal data and tells you about your privacy rights and how the law protects you. This privacy policy applies to any visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”) who uses the Site, registers on it and buys anything in our online store.</p>
+      <p class="policy__text">This Privacy policy is a part of the Agreement between you and us. Before you buy anything in our online store you need to accept our offer. That means that you accept the terms of all the documents that constitute the Agreement. The proper acceptance of the offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase.  If you put a tick in the checkbox, you agree with the terms of this Privacy policy in particular.</p>
+      <p class="policy__text">The Site is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
+      <p class="policy__text">We are the data controller when we collect personal information from our users, buyers, players, customers and clients. We will not pass your personal data on to any third party unless required to do so by law or if you have given us separate written permission to do so.</p>
+      <p class="policy__text">The updated version of this privacy policy is the only one applicable for the duration of the use of the Site until there is no other version that replaces it. We may modify this Privacy policy without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
+      
+      <p class="policy__subtitle">What Data Do We Collect About You?</p>
+      <p class="policy__text">Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data). We MAY collect, use, store and process different kinds of personal data about you.</p>
+      <p class="policy__text">Your data is collected by the Site. We only ask for an email, when you register on the Site.</p>
+      <p class="policy__text">When you select products in our online store, we ask only your Minecraft nickname and the server.</p>
+      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the PayAdmit Gateway. The page collects your payment card date in order to process your payment. The payment card data collected by PayAdmit is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect either keep your payment card information.</p>
+
+      <p class="policy__subtitle">Third Party Links</p>
+      <p class="policy__text">The Sites practice a link to a payment page provided by the PayAdmit Gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The PayAdmit Gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+
+      <p class="policy__subtitle">Children</p>
+      <p class="policy__text">This website is not intended for children and we do not knowingly collect data relating to children.</p>
+
+      <p class="policy__subtitle">Special Category Data</p>
+      <p class="policy__text">We do not anticipate that any special category data will be processed by us in our business relationship with you.</p>
+
+      <p class="policy__subtitle">What We May Need From You in Addition</p>
+      <p class="policy__text">We may need to request specific information from you to help us confirm your identity and take part in a possible dispute investigation on your purchase or a chargeback. If you apply for a refund, we will need to request additional information/documentation as well.</p>
+      
+      <p class="policy__subtitle">What information we may request from you</p>
+      <p class="policy__text">We may request such personal information from you: your first name, last name, date of birth, registration address, ID code.</p>
+      
+      <p class="policy__subtitle">What documents we may request from you</p>
+      <p class="policy__text">We may request a photo or scan of your ID document (passport, ID card, driving license etc.), a proof of address (it may be a utility bill or bank statement not older than 3 months), photo of your paying card, selfie-photo of your face, selfie-photo of you with your card, selfie-photo of you with your passport. Also we may ask you to provide a payment report that was sent to your email address after you made a purchase in our online store.</p>
+      
+      <p class="policy__subtitle">How do we contact you</p>
+      <p class="policy__text">As long as we have only your email address, we can contact you by email.</p>
+      
+      <p class="policy__subtitle">Under what conditions we request additional information and/or documents</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, we may contact you to request your information and/or documents. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">If you apply for a refund, we will need you to provide a payment report and additional documents according to the request of our support team.</p>
+      
+      <p class="policy__subtitle">For What Purpose Do We Process Your Personal Data?</p>
+      <p class="policy__text">The purpose of processing the personal data that may be collected is mainly to facilitate your purchase in our online store. Among other purposes is to manage our relationship with you, to be able to offer you our products in accordance with your interests, to improve your user experience and, where appropriate, for the treatment of your requests.</p>
+      <p class="policy__text">The data provided will be kept as long as the commercial relationship is maintained, as long as the interested party does not request its deletion, or during the years necessary to comply with legal obligations.</p>
+      
+      <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
+      <p class="policy__text">We will only use your personal data when the law allows us to.</p>
+      <p class="policy__text">The PayAdmit Gateway uses your payment card details to process your payment request.</p>
+      <p class="policy__text">Most commonly, as we only ask for an email, Minecraft nickname and the server, we use it to provide you the opportunity to buy goods in our online store.</p>
+      
+      <p class="policy__subtitle">To Which Recipients Will the Data Be Disclosed?</p>
+      <p class="policy__text">Your personal data may eventually be communicated if communications had to be made to the authorities in the event that the user had carried out actions contrary to the Law; except as provided herein, we will not transfer the data provided to third parties.</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, and contact you to request your information and/or documents, we share the information/documents with the party which provided the request. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">We may also have to share your personal data with other third parties where you have given your consent for us to do so.</p>
+      
+      <p class="policy__subtitle">Data Security and Retention</p>
+      <p class="policy__text">GalaxyGrip OÜ has adopted and maintains the necessary technical and organizational security measures to protect the personal information that users provide in order to avoid its alteration, loss, treatment or unauthorized access, taking into account the state of technology, nature of the data stored and the risks to which they are exposed.</p>
+      <p class="policy__text">However, please, bear in mind that the security of computer systems is never absolute. Please note that no transmission over the Internet is 100% secure and no data stored on it is invulnerable. We cannot guarantee the security of our Site, databases or services, nor can we guarantee that the information you submit to us will not be intercepted while you are transmitting it to us over the Internet. We are not responsible for the actions of third parties.</p>
+      <p class="policy__text">As for data retention, we will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because PayAdmit has a PCI DSS certificate.</p>
+      
+      <p class="policy__subtitle">What Are Your Legal Rights?</p>
+      <p class="policy__text">Under certain circumstances, you have rights under data protection laws in relation to your personal data.</p>
+      <p class="policy__text">You have the right to:</p>
+      <p class="policy__text">Request Access to your personal data. This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+      <p class="policy__text">Request Correction of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
+      <p class="policy__text">Request Erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing, where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
+      <p class="policy__text">Object To Processing of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
+      <p class="policy__text">Request Restriction of Processing of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data’s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
+      <p class="policy__text">Request the Transfer of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
+      <p class="policy__text">Withdraw Consent at Any Time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
+      <p class="policy__text">If you wish to exercise any of the rights set out above, please contact us.</p>
+      <p class="policy__text">No Fee Usually Required. You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
+      
+      <p class="policy__subtitle">Time Limit Within Which We Respond</p>
+      <p class="policy__text">We try to respond to all legitimate requests within 30 days. Occasionally it may take us longer than a month if your request is particularly complex or if you have made a number of requests. In this case, we will notify you and keep you updated.</p>
     </div>
     `,
     termsConditionsPage_contentInnerHTML: `
@@ -13183,311 +11359,83 @@ export const languageLocalizations = {
     // privacy policy
     privacyPolicyPage_contentInnerHTML: `
     <div class="container">
-    <h1 class="policy__title">PRIVACY POLICY</h1>
-    <p class="policy__update">Effective June 29, 2023</p>
-    <p class="policy__subtitle">What Is This Privacy Policy for?</p>
-    <p class="policy__text">
-    <strong>Adventures in Minecraft</strong> (further "we”, "us”, "our”)
-    respects your privacy and is committed to protecting your personal
-    data. This policy informs you how we look after your personal data
-    and tells you about your privacy rights and how the law protects
-    you. This privacy policy applies to any visitor of the Site/ the
-    user/ the buyer/ the player/ the customer (further "you”, "your”)
-    who uses the Site, registers on it and buys anything in our online
-    store.
-    </p>
-    <p class="policy__text">
-    This Privacy policy is a part of the Agreement between you and us.
-    Before you buy anything in our online store you need to accept our
-    offer. That means that you accept the terms of all the documents
-    that constitute the Agreement. The proper acceptance of the offer in
-    accordance with the law of Estonia is the consistent implementation
-    by you of the following actions: read terms of the Agreement,
-    register on the Site, put a tick in the checkbox that you accept the
-    terms before making a purchase. If you put a tick in the checkbox,
-    you agree with the terms of this Privacy policy in particular.
-    </p>
-    <p class="policy__text">
-    The Site is owned by GalaxyGrip OÜ - a company registered according
-    to legislation of Estonia with its registered number 16776100, whose
-    registered address is Harju maakond, Tallinn, Lasnamäe linnaosa,
-    Katusepapi tn 6-502, 11412.
-    </p>
-    <p class="policy__text">
-    We are the data controller when we collect personal information from
-    our users, buyers, players, customers and clients. We will not pass
-    your personal data on to any third party unless required to do so by
-    law or if you have given us separate written permission to do so.
-    </p>
-    <p class="policy__text">
-    The updated version of this privacy policy is the only one
-    applicable for the duration of the use of the Site until there is no
-    other version that replaces it. We may modify this Privacy policy
-    without notifying you, so please check back often for updates. Any
-    changes made will be available on this page.
-    </p>
-    
-    <p class="policy__subtitle">What Data Do We Collect About You?</p>
-    <p class="policy__text">
-    Personal data, or personal information, means any information about
-    an individual from which that person can be identified. It does not
-    include data where the identity has been removed (anonymous data).
-    We MAY collect, use, store and process different kinds of personal
-    data about you.
-    </p>
-    <p class="policy__text">
-    Your data is collected by the Site. We only ask for an email, when
-    you register on the Site.
-    </p>
-    <p class="policy__text">
-    When you select products in our online store, we ask only your
-    Minecraft nickname and the server.
-    </p>
-    <p class="policy__text">
-    When you have selected the goods and want to pay, you are redirected
-    to the payment page of the BazPay Gateway. The page collects your
-    payment card date in order to process your payment. The payment card
-    data collected by BazPay is your card number, expiry date, your name
-    indicated on the card and your CVV code. We do not collect either
-    keep your payment card information.
-    </p>
-    <p class="policy__subtitle">Third Party Links</p>
-    <p class="policy__text">
-    The Sites practice a link to a payment page provided by the BazPay
-    Gateway in order to collect your payment card information and
-    process your payment request. We guarantee the security of payments
-    when paying by credit or debit card. The BazPay Gateway that
-    provides the service of processing the payment requests complies
-    with PCI DSS requirements for the secure processing of the payer's
-    bank card details.
-    </p>
-    <p class="policy__subtitle">Children</p>
-    <p class="policy__text">
-    This website is not intended for children and we do not knowingly
-    collect data relating to children.
-    </p>
-    <p class="policy__subtitle">Special Category Data</p>
-    <p class="policy__text">
-    We do not anticipate that any special category data will be
-    processed by us in our business relationship with you.
-    </p>
-    <p class="policy__subtitle">What We May Need From You in Addition</p>
-    <p class="policy__text">
-    We may need to request specific information from you to help us
-    confirm your identity and take part in a possible dispute
-    investigation on your purchase or a chargeback. If you apply for a
-    refund, we will need to request additional information/documentation
-    as well.
-    </p>
-    
-    <p class="policy__subtitle">
-    What information we may request from you
-    </p>
-    <p class="policy__text">
-    We may request such personal information from you: your first name,
-    last name, date of birth, registration address, ID code.
-    </p>
-    
-    <p class="policy__subtitle">What documents we may request from you</p>
-    <p class="policy__text">
-    We may request a photo or scan of your ID document (passport, ID
-    card, driving license etc.), a proof of address (it may be a utility
-    bill or bank statement not older than 3 months), photo of your
-    paying card, selfie-photo of your face, selfie-photo of you with
-    your card, selfie-photo of you with your passport. Also we may ask
-    you to provide a payment report that was sent to your email address
-    after you made a purchase in our online store.
-    </p>
-    
-    <p class="policy__subtitle">How do we contact you</p>
-    <p class="policy__text">
-    As long as we have only your email address, we can contact you by
-    email.
-    </p>
-    
-    <p class="policy__subtitle">
-    Under what conditions we request additional information and/or
-    documents
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, we may contact you to request your
-    information and/or documents. Usually it pertains to dispute
-    resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    If you apply for a refund, we will need you to provide a payment
-    report and additional documents according to the request of our
-    support team.
-    </p>
-    
-    <p class="policy__subtitle">
-    For What Purpose Do We Process Your Personal Data?
-    </p>
-    <p class="policy__text">
-    The purpose of processing the personal data that may be collected is
-    mainly to facilitate your purchase in our online store. Among other
-    purposes is to manage our relationship with you, to be able to offer
-    you our products in accordance with your interests, to improve your
-    user experience and, where appropriate, for the treatment of your
-    requests.
-    </p>
-    <p class="policy__text">
-    The data provided will be kept as long as the commercial
-    relationship is maintained, as long as the interested party does not
-    request its deletion, or during the years necessary to comply with
-    legal obligations.
-    </p>
-    
-    <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
-    <p class="policy__text">
-    We will only use your personal data when the law allows us to.
-    </p>
-    <p class="policy__text">
-    The BazPay Gateway uses your payment card details to process your
-    payment request.
-    </p>
-    <p class="policy__text">
-    Most commonly, as we only ask for an email, Minecraft nickname and
-    the server, we use it to provide you the opportunity to buy goods in
-    our online store.
-    </p>
-    
-    <p class="policy__subtitle">
-    To Which Recipients Will the Data Be Disclosed?
-    </p>
-    <p class="policy__text">
-    Your personal data may eventually be communicated if communications
-    had to be made to the authorities in the event that the user had
-    carried out actions contrary to the Law; except as provided herein,
-    we will not transfer the data provided to third parties.
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, and contact you to request your
-    information and/or documents, we share the information/documents
-    with the party which provided the request. Usually it pertains to
-    dispute resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    We may also have to share your personal data with other third
-    parties where you have given your consent for us to do so.
-    </p>
-    
-    <p class="policy__subtitle">Data Security and Retention</p>
-    <p class="policy__text">
-    GalaxyGrip OÜ has adopted and maintains the necessary technical and
-    organizational security measures to protect the personal information
-    that users provide in order to avoid its alteration, loss, treatment
-    or unauthorized access, taking into account the state of technology,
-    nature of the data stored and the risks to which they are exposed.
-    </p>
-    <p class="policy__text">
-    However, please, bear in mind that the security of computer systems
-    is never absolute. Please note that no transmission over the
-    Internet is 100% secure and no data stored on it is invulnerable. We
-    cannot guarantee the security of our Site, databases or services,
-    nor can we guarantee that the information you submit to us will not
-    be intercepted while you are transmitting it to us over the
-    Internet. We are not responsible for the actions of third parties.
-    </p>
-    <p class="policy__text">
-    As for data retention, we will only retain your personal data for as
-    long as necessary to fulfill the purposes we collected it for,
-    including for the purposes of satisfying any legal, accounting, or
-    reporting requirements.
-    </p>
-    <p class="policy__text">
-    Your payment card details are retained by encryption methods that
-    are PCI DSS compliant because BazPay has a PCI DSS certificate.
-    </p>
-    
-    <p class="policy__subtitle">What Are Your Legal Rights?</p>
-    <p class="policy__text">
-    Under certain circumstances, you have rights under data protection
-    laws in relation to your personal data.
-    </p>
-    <p class="policy__text">You have the right to:</p>
-    <p class="policy__text">
-    Request Access to your personal data. This enables you to receive a
-    copy of the personal data we hold about you and to check that we are
-    lawfully processing it.
-    </p>
-    <p class="policy__text">
-    Request Correction of the personal data that we hold about you. This
-    enables you to have any incomplete or inaccurate data we hold about
-    you corrected, though we may need to verify the accuracy of the new
-    data you provide to us.
-    </p>
-    <p class="policy__text">
-    Request Erasure of your personal data. This enables you to ask us to
-    delete or remove personal data where there is no good reason for us
-    continuing to process it. You also have the right to ask us to
-    delete or remove your personal data where you have successfully
-    exercised your right to object to processing, where we may have
-    processed your information unlawfully or where we are required to
-    erase your personal data to comply with local law. Note, however,
-    that we may not always be able to comply with your request of
-    erasure for specific legal reasons which will be notified to you, if
-    applicable, at the time of your request.
-    </p>
-    <p class="policy__text">
-    Object To Processing of your personal data where we are relying on a
-    legitimate interest (or those of a third party) and there is
-    something about your particular situation which makes you want to
-    object to processing on this ground as you feel it impacts on your
-    fundamental rights and freedoms. You also have the right to object
-    where we are processing your personal data for direct marketing
-    purposes. In some cases, we may demonstrate that we have compelling
-    legitimate grounds to process your information which override your
-    rights and freedoms.
-    </p>
-    <p class="policy__text">
-    Request Restriction of Processing of your personal data. This
-    enables you to ask us to suspend the processing of your personal
-    data in the following scenarios: (a) if you want us to establish the
-    data’s accuracy; (b) where our use of the data is unlawful but you
-    do not want us to erase it; (c) where you need us to hold the data
-    even if we no longer require it as you need it to establish,
-    exercise or defend legal claims; or (d) you have objected to our use
-    of your data but we need to verify whether we have overriding
-    legitimate grounds to use it.
-    </p>
-    <p class="policy__text">
-    Request the Transfer of your personal data to you or to a third
-    party. We will provide to you, or a third party you have chosen,
-    your personal data in a structured, commonly used, machine-readable
-    format. Note that this right only applies to automated information
-    which you initially provided consent for us to use or where we used
-    the information to perform a contract with you.
-    </p>
-    <p class="policy__text">
-    Withdraw Consent at Any Time where we are relying on consent to
-    process your personal data. However, this will not affect the
-    lawfulness of any processing carried out before you withdraw your
-    consent. If you withdraw your consent, we may not be able to provide
-    certain products or services to you. We will advise you if this is
-    the case at the time you withdraw your consent.
-    </p>
-    <p class="policy__text">
-    If you wish to exercise any of the rights set out above, please
-    contact us.
-    </p>
-    <p class="policy__text">
-    No Fee Usually Required. You will not have to pay a fee to access
-    your personal data (or to exercise any of the other rights).
-    However, we may charge a reasonable fee if your request is clearly
-    unfounded, repetitive or excessive. Alternatively, we may refuse to
-    comply with your request in these circumstances.
-    </p>
-    
-    <p class="policy__subtitle">Time Limit Within Which We Respond</p>
-    <p class="policy__text">
-    We try to respond to all legitimate requests within 30 days.
-    Occasionally it may take us longer than a month if your request is
-    particularly complex or if you have made a number of requests. In
-    this case, we will notify you and keep you updated.
-    </p>
+      <h1 class="policy__title">PRIVACY POLICY</h1>
+
+      <p class="policy__update">Effective June 29, 2023</p>
+
+      <p class="policy__subtitle">What Is This Privacy Policy for?</p>
+      <p class="policy__text"><strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. This policy informs you how we look after your personal data and tells you about your privacy rights and how the law protects you. This privacy policy applies to any visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”) who uses the Site, registers on it and buys anything in our online store.</p>
+      <p class="policy__text">This Privacy policy is a part of the Agreement between you and us. Before you buy anything in our online store you need to accept our offer. That means that you accept the terms of all the documents that constitute the Agreement. The proper acceptance of the offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase.  If you put a tick in the checkbox, you agree with the terms of this Privacy policy in particular.</p>
+      <p class="policy__text">The Site is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
+      <p class="policy__text">We are the data controller when we collect personal information from our users, buyers, players, customers and clients. We will not pass your personal data on to any third party unless required to do so by law or if you have given us separate written permission to do so.</p>
+      <p class="policy__text">The updated version of this privacy policy is the only one applicable for the duration of the use of the Site until there is no other version that replaces it. We may modify this Privacy policy without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
+      
+      <p class="policy__subtitle">What Data Do We Collect About You?</p>
+      <p class="policy__text">Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data). We MAY collect, use, store and process different kinds of personal data about you.</p>
+      <p class="policy__text">Your data is collected by the Site. We only ask for an email, when you register on the Site.</p>
+      <p class="policy__text">When you select products in our online store, we ask only your Minecraft nickname and the server.</p>
+      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the PayAdmit Gateway. The page collects your payment card date in order to process your payment. The payment card data collected by PayAdmit is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect either keep your payment card information.</p>
+
+      <p class="policy__subtitle">Third Party Links</p>
+      <p class="policy__text">The Sites practice a link to a payment page provided by the PayAdmit Gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The PayAdmit Gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+
+      <p class="policy__subtitle">Children</p>
+      <p class="policy__text">This website is not intended for children and we do not knowingly collect data relating to children.</p>
+
+      <p class="policy__subtitle">Special Category Data</p>
+      <p class="policy__text">We do not anticipate that any special category data will be processed by us in our business relationship with you.</p>
+
+      <p class="policy__subtitle">What We May Need From You in Addition</p>
+      <p class="policy__text">We may need to request specific information from you to help us confirm your identity and take part in a possible dispute investigation on your purchase or a chargeback. If you apply for a refund, we will need to request additional information/documentation as well.</p>
+      
+      <p class="policy__subtitle">What information we may request from you</p>
+      <p class="policy__text">We may request such personal information from you: your first name, last name, date of birth, registration address, ID code.</p>
+      
+      <p class="policy__subtitle">What documents we may request from you</p>
+      <p class="policy__text">We may request a photo or scan of your ID document (passport, ID card, driving license etc.), a proof of address (it may be a utility bill or bank statement not older than 3 months), photo of your paying card, selfie-photo of your face, selfie-photo of you with your card, selfie-photo of you with your passport. Also we may ask you to provide a payment report that was sent to your email address after you made a purchase in our online store.</p>
+      
+      <p class="policy__subtitle">How do we contact you</p>
+      <p class="policy__text">As long as we have only your email address, we can contact you by email.</p>
+      
+      <p class="policy__subtitle">Under what conditions we request additional information and/or documents</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, we may contact you to request your information and/or documents. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">If you apply for a refund, we will need you to provide a payment report and additional documents according to the request of our support team.</p>
+      
+      <p class="policy__subtitle">For What Purpose Do We Process Your Personal Data?</p>
+      <p class="policy__text">The purpose of processing the personal data that may be collected is mainly to facilitate your purchase in our online store. Among other purposes is to manage our relationship with you, to be able to offer you our products in accordance with your interests, to improve your user experience and, where appropriate, for the treatment of your requests.</p>
+      <p class="policy__text">The data provided will be kept as long as the commercial relationship is maintained, as long as the interested party does not request its deletion, or during the years necessary to comply with legal obligations.</p>
+      
+      <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
+      <p class="policy__text">We will only use your personal data when the law allows us to.</p>
+      <p class="policy__text">The PayAdmit Gateway uses your payment card details to process your payment request.</p>
+      <p class="policy__text">Most commonly, as we only ask for an email, Minecraft nickname and the server, we use it to provide you the opportunity to buy goods in our online store.</p>
+      
+      <p class="policy__subtitle">To Which Recipients Will the Data Be Disclosed?</p>
+      <p class="policy__text">Your personal data may eventually be communicated if communications had to be made to the authorities in the event that the user had carried out actions contrary to the Law; except as provided herein, we will not transfer the data provided to third parties.</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, and contact you to request your information and/or documents, we share the information/documents with the party which provided the request. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">We may also have to share your personal data with other third parties where you have given your consent for us to do so.</p>
+      
+      <p class="policy__subtitle">Data Security and Retention</p>
+      <p class="policy__text">GalaxyGrip OÜ has adopted and maintains the necessary technical and organizational security measures to protect the personal information that users provide in order to avoid its alteration, loss, treatment or unauthorized access, taking into account the state of technology, nature of the data stored and the risks to which they are exposed.</p>
+      <p class="policy__text">However, please, bear in mind that the security of computer systems is never absolute. Please note that no transmission over the Internet is 100% secure and no data stored on it is invulnerable. We cannot guarantee the security of our Site, databases or services, nor can we guarantee that the information you submit to us will not be intercepted while you are transmitting it to us over the Internet. We are not responsible for the actions of third parties.</p>
+      <p class="policy__text">As for data retention, we will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because PayAdmit has a PCI DSS certificate.</p>
+      
+      <p class="policy__subtitle">What Are Your Legal Rights?</p>
+      <p class="policy__text">Under certain circumstances, you have rights under data protection laws in relation to your personal data.</p>
+      <p class="policy__text">You have the right to:</p>
+      <p class="policy__text">Request Access to your personal data. This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+      <p class="policy__text">Request Correction of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
+      <p class="policy__text">Request Erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing, where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
+      <p class="policy__text">Object To Processing of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
+      <p class="policy__text">Request Restriction of Processing of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data’s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
+      <p class="policy__text">Request the Transfer of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
+      <p class="policy__text">Withdraw Consent at Any Time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
+      <p class="policy__text">If you wish to exercise any of the rights set out above, please contact us.</p>
+      <p class="policy__text">No Fee Usually Required. You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
+      
+      <p class="policy__subtitle">Time Limit Within Which We Respond</p>
+      <p class="policy__text">We try to respond to all legitimate requests within 30 days. Occasionally it may take us longer than a month if your request is particularly complex or if you have made a number of requests. In this case, we will notify you and keep you updated.</p>
     </div>
     `,
     termsConditionsPage_contentInnerHTML: `
@@ -14588,311 +12536,83 @@ export const languageLocalizations = {
     // privacy policy
     privacyPolicyPage_contentInnerHTML: `
     <div class="container">
-    <h1 class="policy__title">PRIVACY POLICY</h1>
-    <p class="policy__update">Effective June 29, 2023</p>
-    <p class="policy__subtitle">What Is This Privacy Policy for?</p>
-    <p class="policy__text">
-    <strong>Adventures in Minecraft</strong> (further "we”, "us”, "our”)
-    respects your privacy and is committed to protecting your personal
-    data. This policy informs you how we look after your personal data
-    and tells you about your privacy rights and how the law protects
-    you. This privacy policy applies to any visitor of the Site/ the
-    user/ the buyer/ the player/ the customer (further "you”, "your”)
-    who uses the Site, registers on it and buys anything in our online
-    store.
-    </p>
-    <p class="policy__text">
-    This Privacy policy is a part of the Agreement between you and us.
-    Before you buy anything in our online store you need to accept our
-    offer. That means that you accept the terms of all the documents
-    that constitute the Agreement. The proper acceptance of the offer in
-    accordance with the law of Estonia is the consistent implementation
-    by you of the following actions: read terms of the Agreement,
-    register on the Site, put a tick in the checkbox that you accept the
-    terms before making a purchase. If you put a tick in the checkbox,
-    you agree with the terms of this Privacy policy in particular.
-    </p>
-    <p class="policy__text">
-    The Site is owned by GalaxyGrip OÜ - a company registered according
-    to legislation of Estonia with its registered number 16776100, whose
-    registered address is Harju maakond, Tallinn, Lasnamäe linnaosa,
-    Katusepapi tn 6-502, 11412.
-    </p>
-    <p class="policy__text">
-    We are the data controller when we collect personal information from
-    our users, buyers, players, customers and clients. We will not pass
-    your personal data on to any third party unless required to do so by
-    law or if you have given us separate written permission to do so.
-    </p>
-    <p class="policy__text">
-    The updated version of this privacy policy is the only one
-    applicable for the duration of the use of the Site until there is no
-    other version that replaces it. We may modify this Privacy policy
-    without notifying you, so please check back often for updates. Any
-    changes made will be available on this page.
-    </p>
-    
-    <p class="policy__subtitle">What Data Do We Collect About You?</p>
-    <p class="policy__text">
-    Personal data, or personal information, means any information about
-    an individual from which that person can be identified. It does not
-    include data where the identity has been removed (anonymous data).
-    We MAY collect, use, store and process different kinds of personal
-    data about you.
-    </p>
-    <p class="policy__text">
-    Your data is collected by the Site. We only ask for an email, when
-    you register on the Site.
-    </p>
-    <p class="policy__text">
-    When you select products in our online store, we ask only your
-    Minecraft nickname and the server.
-    </p>
-    <p class="policy__text">
-    When you have selected the goods and want to pay, you are redirected
-    to the payment page of the BazPay Gateway. The page collects your
-    payment card date in order to process your payment. The payment card
-    data collected by BazPay is your card number, expiry date, your name
-    indicated on the card and your CVV code. We do not collect either
-    keep your payment card information.
-    </p>
-    <p class="policy__subtitle">Third Party Links</p>
-    <p class="policy__text">
-    The Sites practice a link to a payment page provided by the BazPay
-    Gateway in order to collect your payment card information and
-    process your payment request. We guarantee the security of payments
-    when paying by credit or debit card. The BazPay Gateway that
-    provides the service of processing the payment requests complies
-    with PCI DSS requirements for the secure processing of the payer's
-    bank card details.
-    </p>
-    <p class="policy__subtitle">Children</p>
-    <p class="policy__text">
-    This website is not intended for children and we do not knowingly
-    collect data relating to children.
-    </p>
-    <p class="policy__subtitle">Special Category Data</p>
-    <p class="policy__text">
-    We do not anticipate that any special category data will be
-    processed by us in our business relationship with you.
-    </p>
-    <p class="policy__subtitle">What We May Need From You in Addition</p>
-    <p class="policy__text">
-    We may need to request specific information from you to help us
-    confirm your identity and take part in a possible dispute
-    investigation on your purchase or a chargeback. If you apply for a
-    refund, we will need to request additional information/documentation
-    as well.
-    </p>
-    
-    <p class="policy__subtitle">
-    What information we may request from you
-    </p>
-    <p class="policy__text">
-    We may request such personal information from you: your first name,
-    last name, date of birth, registration address, ID code.
-    </p>
-    
-    <p class="policy__subtitle">What documents we may request from you</p>
-    <p class="policy__text">
-    We may request a photo or scan of your ID document (passport, ID
-    card, driving license etc.), a proof of address (it may be a utility
-    bill or bank statement not older than 3 months), photo of your
-    paying card, selfie-photo of your face, selfie-photo of you with
-    your card, selfie-photo of you with your passport. Also we may ask
-    you to provide a payment report that was sent to your email address
-    after you made a purchase in our online store.
-    </p>
-    
-    <p class="policy__subtitle">How do we contact you</p>
-    <p class="policy__text">
-    As long as we have only your email address, we can contact you by
-    email.
-    </p>
-    
-    <p class="policy__subtitle">
-    Under what conditions we request additional information and/or
-    documents
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, we may contact you to request your
-    information and/or documents. Usually it pertains to dispute
-    resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    If you apply for a refund, we will need you to provide a payment
-    report and additional documents according to the request of our
-    support team.
-    </p>
-    
-    <p class="policy__subtitle">
-    For What Purpose Do We Process Your Personal Data?
-    </p>
-    <p class="policy__text">
-    The purpose of processing the personal data that may be collected is
-    mainly to facilitate your purchase in our online store. Among other
-    purposes is to manage our relationship with you, to be able to offer
-    you our products in accordance with your interests, to improve your
-    user experience and, where appropriate, for the treatment of your
-    requests.
-    </p>
-    <p class="policy__text">
-    The data provided will be kept as long as the commercial
-    relationship is maintained, as long as the interested party does not
-    request its deletion, or during the years necessary to comply with
-    legal obligations.
-    </p>
-    
-    <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
-    <p class="policy__text">
-    We will only use your personal data when the law allows us to.
-    </p>
-    <p class="policy__text">
-    The BazPay Gateway uses your payment card details to process your
-    payment request.
-    </p>
-    <p class="policy__text">
-    Most commonly, as we only ask for an email, Minecraft nickname and
-    the server, we use it to provide you the opportunity to buy goods in
-    our online store.
-    </p>
-    
-    <p class="policy__subtitle">
-    To Which Recipients Will the Data Be Disclosed?
-    </p>
-    <p class="policy__text">
-    Your personal data may eventually be communicated if communications
-    had to be made to the authorities in the event that the user had
-    carried out actions contrary to the Law; except as provided herein,
-    we will not transfer the data provided to third parties.
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, and contact you to request your
-    information and/or documents, we share the information/documents
-    with the party which provided the request. Usually it pertains to
-    dispute resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    We may also have to share your personal data with other third
-    parties where you have given your consent for us to do so.
-    </p>
-    
-    <p class="policy__subtitle">Data Security and Retention</p>
-    <p class="policy__text">
-    GalaxyGrip OÜ has adopted and maintains the necessary technical and
-    organizational security measures to protect the personal information
-    that users provide in order to avoid its alteration, loss, treatment
-    or unauthorized access, taking into account the state of technology,
-    nature of the data stored and the risks to which they are exposed.
-    </p>
-    <p class="policy__text">
-    However, please, bear in mind that the security of computer systems
-    is never absolute. Please note that no transmission over the
-    Internet is 100% secure and no data stored on it is invulnerable. We
-    cannot guarantee the security of our Site, databases or services,
-    nor can we guarantee that the information you submit to us will not
-    be intercepted while you are transmitting it to us over the
-    Internet. We are not responsible for the actions of third parties.
-    </p>
-    <p class="policy__text">
-    As for data retention, we will only retain your personal data for as
-    long as necessary to fulfill the purposes we collected it for,
-    including for the purposes of satisfying any legal, accounting, or
-    reporting requirements.
-    </p>
-    <p class="policy__text">
-    Your payment card details are retained by encryption methods that
-    are PCI DSS compliant because BazPay has a PCI DSS certificate.
-    </p>
-    
-    <p class="policy__subtitle">What Are Your Legal Rights?</p>
-    <p class="policy__text">
-    Under certain circumstances, you have rights under data protection
-    laws in relation to your personal data.
-    </p>
-    <p class="policy__text">You have the right to:</p>
-    <p class="policy__text">
-    Request Access to your personal data. This enables you to receive a
-    copy of the personal data we hold about you and to check that we are
-    lawfully processing it.
-    </p>
-    <p class="policy__text">
-    Request Correction of the personal data that we hold about you. This
-    enables you to have any incomplete or inaccurate data we hold about
-    you corrected, though we may need to verify the accuracy of the new
-    data you provide to us.
-    </p>
-    <p class="policy__text">
-    Request Erasure of your personal data. This enables you to ask us to
-    delete or remove personal data where there is no good reason for us
-    continuing to process it. You also have the right to ask us to
-    delete or remove your personal data where you have successfully
-    exercised your right to object to processing, where we may have
-    processed your information unlawfully or where we are required to
-    erase your personal data to comply with local law. Note, however,
-    that we may not always be able to comply with your request of
-    erasure for specific legal reasons which will be notified to you, if
-    applicable, at the time of your request.
-    </p>
-    <p class="policy__text">
-    Object To Processing of your personal data where we are relying on a
-    legitimate interest (or those of a third party) and there is
-    something about your particular situation which makes you want to
-    object to processing on this ground as you feel it impacts on your
-    fundamental rights and freedoms. You also have the right to object
-    where we are processing your personal data for direct marketing
-    purposes. In some cases, we may demonstrate that we have compelling
-    legitimate grounds to process your information which override your
-    rights and freedoms.
-    </p>
-    <p class="policy__text">
-    Request Restriction of Processing of your personal data. This
-    enables you to ask us to suspend the processing of your personal
-    data in the following scenarios: (a) if you want us to establish the
-    data’s accuracy; (b) where our use of the data is unlawful but you
-    do not want us to erase it; (c) where you need us to hold the data
-    even if we no longer require it as you need it to establish,
-    exercise or defend legal claims; or (d) you have objected to our use
-    of your data but we need to verify whether we have overriding
-    legitimate grounds to use it.
-    </p>
-    <p class="policy__text">
-    Request the Transfer of your personal data to you or to a third
-    party. We will provide to you, or a third party you have chosen,
-    your personal data in a structured, commonly used, machine-readable
-    format. Note that this right only applies to automated information
-    which you initially provided consent for us to use or where we used
-    the information to perform a contract with you.
-    </p>
-    <p class="policy__text">
-    Withdraw Consent at Any Time where we are relying on consent to
-    process your personal data. However, this will not affect the
-    lawfulness of any processing carried out before you withdraw your
-    consent. If you withdraw your consent, we may not be able to provide
-    certain products or services to you. We will advise you if this is
-    the case at the time you withdraw your consent.
-    </p>
-    <p class="policy__text">
-    If you wish to exercise any of the rights set out above, please
-    contact us.
-    </p>
-    <p class="policy__text">
-    No Fee Usually Required. You will not have to pay a fee to access
-    your personal data (or to exercise any of the other rights).
-    However, we may charge a reasonable fee if your request is clearly
-    unfounded, repetitive or excessive. Alternatively, we may refuse to
-    comply with your request in these circumstances.
-    </p>
-    
-    <p class="policy__subtitle">Time Limit Within Which We Respond</p>
-    <p class="policy__text">
-    We try to respond to all legitimate requests within 30 days.
-    Occasionally it may take us longer than a month if your request is
-    particularly complex or if you have made a number of requests. In
-    this case, we will notify you and keep you updated.
-    </p>
+      <h1 class="policy__title">PRIVACY POLICY</h1>
+
+      <p class="policy__update">Effective June 29, 2023</p>
+
+      <p class="policy__subtitle">What Is This Privacy Policy for?</p>
+      <p class="policy__text"><strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. This policy informs you how we look after your personal data and tells you about your privacy rights and how the law protects you. This privacy policy applies to any visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”) who uses the Site, registers on it and buys anything in our online store.</p>
+      <p class="policy__text">This Privacy policy is a part of the Agreement between you and us. Before you buy anything in our online store you need to accept our offer. That means that you accept the terms of all the documents that constitute the Agreement. The proper acceptance of the offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase.  If you put a tick in the checkbox, you agree with the terms of this Privacy policy in particular.</p>
+      <p class="policy__text">The Site is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
+      <p class="policy__text">We are the data controller when we collect personal information from our users, buyers, players, customers and clients. We will not pass your personal data on to any third party unless required to do so by law or if you have given us separate written permission to do so.</p>
+      <p class="policy__text">The updated version of this privacy policy is the only one applicable for the duration of the use of the Site until there is no other version that replaces it. We may modify this Privacy policy without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
+      
+      <p class="policy__subtitle">What Data Do We Collect About You?</p>
+      <p class="policy__text">Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data). We MAY collect, use, store and process different kinds of personal data about you.</p>
+      <p class="policy__text">Your data is collected by the Site. We only ask for an email, when you register on the Site.</p>
+      <p class="policy__text">When you select products in our online store, we ask only your Minecraft nickname and the server.</p>
+      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the PayAdmit Gateway. The page collects your payment card date in order to process your payment. The payment card data collected by PayAdmit is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect either keep your payment card information.</p>
+
+      <p class="policy__subtitle">Third Party Links</p>
+      <p class="policy__text">The Sites practice a link to a payment page provided by the PayAdmit Gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The PayAdmit Gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+
+      <p class="policy__subtitle">Children</p>
+      <p class="policy__text">This website is not intended for children and we do not knowingly collect data relating to children.</p>
+
+      <p class="policy__subtitle">Special Category Data</p>
+      <p class="policy__text">We do not anticipate that any special category data will be processed by us in our business relationship with you.</p>
+
+      <p class="policy__subtitle">What We May Need From You in Addition</p>
+      <p class="policy__text">We may need to request specific information from you to help us confirm your identity and take part in a possible dispute investigation on your purchase or a chargeback. If you apply for a refund, we will need to request additional information/documentation as well.</p>
+      
+      <p class="policy__subtitle">What information we may request from you</p>
+      <p class="policy__text">We may request such personal information from you: your first name, last name, date of birth, registration address, ID code.</p>
+      
+      <p class="policy__subtitle">What documents we may request from you</p>
+      <p class="policy__text">We may request a photo or scan of your ID document (passport, ID card, driving license etc.), a proof of address (it may be a utility bill or bank statement not older than 3 months), photo of your paying card, selfie-photo of your face, selfie-photo of you with your card, selfie-photo of you with your passport. Also we may ask you to provide a payment report that was sent to your email address after you made a purchase in our online store.</p>
+      
+      <p class="policy__subtitle">How do we contact you</p>
+      <p class="policy__text">As long as we have only your email address, we can contact you by email.</p>
+      
+      <p class="policy__subtitle">Under what conditions we request additional information and/or documents</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, we may contact you to request your information and/or documents. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">If you apply for a refund, we will need you to provide a payment report and additional documents according to the request of our support team.</p>
+      
+      <p class="policy__subtitle">For What Purpose Do We Process Your Personal Data?</p>
+      <p class="policy__text">The purpose of processing the personal data that may be collected is mainly to facilitate your purchase in our online store. Among other purposes is to manage our relationship with you, to be able to offer you our products in accordance with your interests, to improve your user experience and, where appropriate, for the treatment of your requests.</p>
+      <p class="policy__text">The data provided will be kept as long as the commercial relationship is maintained, as long as the interested party does not request its deletion, or during the years necessary to comply with legal obligations.</p>
+      
+      <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
+      <p class="policy__text">We will only use your personal data when the law allows us to.</p>
+      <p class="policy__text">The PayAdmit Gateway uses your payment card details to process your payment request.</p>
+      <p class="policy__text">Most commonly, as we only ask for an email, Minecraft nickname and the server, we use it to provide you the opportunity to buy goods in our online store.</p>
+      
+      <p class="policy__subtitle">To Which Recipients Will the Data Be Disclosed?</p>
+      <p class="policy__text">Your personal data may eventually be communicated if communications had to be made to the authorities in the event that the user had carried out actions contrary to the Law; except as provided herein, we will not transfer the data provided to third parties.</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, and contact you to request your information and/or documents, we share the information/documents with the party which provided the request. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">We may also have to share your personal data with other third parties where you have given your consent for us to do so.</p>
+      
+      <p class="policy__subtitle">Data Security and Retention</p>
+      <p class="policy__text">GalaxyGrip OÜ has adopted and maintains the necessary technical and organizational security measures to protect the personal information that users provide in order to avoid its alteration, loss, treatment or unauthorized access, taking into account the state of technology, nature of the data stored and the risks to which they are exposed.</p>
+      <p class="policy__text">However, please, bear in mind that the security of computer systems is never absolute. Please note that no transmission over the Internet is 100% secure and no data stored on it is invulnerable. We cannot guarantee the security of our Site, databases or services, nor can we guarantee that the information you submit to us will not be intercepted while you are transmitting it to us over the Internet. We are not responsible for the actions of third parties.</p>
+      <p class="policy__text">As for data retention, we will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because PayAdmit has a PCI DSS certificate.</p>
+      
+      <p class="policy__subtitle">What Are Your Legal Rights?</p>
+      <p class="policy__text">Under certain circumstances, you have rights under data protection laws in relation to your personal data.</p>
+      <p class="policy__text">You have the right to:</p>
+      <p class="policy__text">Request Access to your personal data. This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+      <p class="policy__text">Request Correction of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
+      <p class="policy__text">Request Erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing, where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
+      <p class="policy__text">Object To Processing of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
+      <p class="policy__text">Request Restriction of Processing of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data’s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
+      <p class="policy__text">Request the Transfer of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
+      <p class="policy__text">Withdraw Consent at Any Time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
+      <p class="policy__text">If you wish to exercise any of the rights set out above, please contact us.</p>
+      <p class="policy__text">No Fee Usually Required. You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
+      
+      <p class="policy__subtitle">Time Limit Within Which We Respond</p>
+      <p class="policy__text">We try to respond to all legitimate requests within 30 days. Occasionally it may take us longer than a month if your request is particularly complex or if you have made a number of requests. In this case, we will notify you and keep you updated.</p>
     </div>
     `,
     termsConditionsPage_contentInnerHTML: `
@@ -15991,311 +13711,83 @@ export const languageLocalizations = {
     // privacy policy
     privacyPolicyPage_contentInnerHTML: `
     <div class="container">
-    <h1 class="policy__title">PRIVACY POLICY</h1>
-    <p class="policy__update">Effective June 29, 2023</p>
-    <p class="policy__subtitle">What Is This Privacy Policy for?</p>
-    <p class="policy__text">
-    <strong>Adventures in Minecraft</strong> (further "we”, "us”, "our”)
-    respects your privacy and is committed to protecting your personal
-    data. This policy informs you how we look after your personal data
-    and tells you about your privacy rights and how the law protects
-    you. This privacy policy applies to any visitor of the Site/ the
-    user/ the buyer/ the player/ the customer (further "you”, "your”)
-    who uses the Site, registers on it and buys anything in our online
-    store.
-    </p>
-    <p class="policy__text">
-    This Privacy policy is a part of the Agreement between you and us.
-    Before you buy anything in our online store you need to accept our
-    offer. That means that you accept the terms of all the documents
-    that constitute the Agreement. The proper acceptance of the offer in
-    accordance with the law of Estonia is the consistent implementation
-    by you of the following actions: read terms of the Agreement,
-    register on the Site, put a tick in the checkbox that you accept the
-    terms before making a purchase. If you put a tick in the checkbox,
-    you agree with the terms of this Privacy policy in particular.
-    </p>
-    <p class="policy__text">
-    The Site is owned by GalaxyGrip OÜ - a company registered according
-    to legislation of Estonia with its registered number 16776100, whose
-    registered address is Harju maakond, Tallinn, Lasnamäe linnaosa,
-    Katusepapi tn 6-502, 11412.
-    </p>
-    <p class="policy__text">
-    We are the data controller when we collect personal information from
-    our users, buyers, players, customers and clients. We will not pass
-    your personal data on to any third party unless required to do so by
-    law or if you have given us separate written permission to do so.
-    </p>
-    <p class="policy__text">
-    The updated version of this privacy policy is the only one
-    applicable for the duration of the use of the Site until there is no
-    other version that replaces it. We may modify this Privacy policy
-    without notifying you, so please check back often for updates. Any
-    changes made will be available on this page.
-    </p>
-    
-    <p class="policy__subtitle">What Data Do We Collect About You?</p>
-    <p class="policy__text">
-    Personal data, or personal information, means any information about
-    an individual from which that person can be identified. It does not
-    include data where the identity has been removed (anonymous data).
-    We MAY collect, use, store and process different kinds of personal
-    data about you.
-    </p>
-    <p class="policy__text">
-    Your data is collected by the Site. We only ask for an email, when
-    you register on the Site.
-    </p>
-    <p class="policy__text">
-    When you select products in our online store, we ask only your
-    Minecraft nickname and the server.
-    </p>
-    <p class="policy__text">
-    When you have selected the goods and want to pay, you are redirected
-    to the payment page of the BazPay Gateway. The page collects your
-    payment card date in order to process your payment. The payment card
-    data collected by BazPay is your card number, expiry date, your name
-    indicated on the card and your CVV code. We do not collect either
-    keep your payment card information.
-    </p>
-    <p class="policy__subtitle">Third Party Links</p>
-    <p class="policy__text">
-    The Sites practice a link to a payment page provided by the BazPay
-    Gateway in order to collect your payment card information and
-    process your payment request. We guarantee the security of payments
-    when paying by credit or debit card. The BazPay Gateway that
-    provides the service of processing the payment requests complies
-    with PCI DSS requirements for the secure processing of the payer's
-    bank card details.
-    </p>
-    <p class="policy__subtitle">Children</p>
-    <p class="policy__text">
-    This website is not intended for children and we do not knowingly
-    collect data relating to children.
-    </p>
-    <p class="policy__subtitle">Special Category Data</p>
-    <p class="policy__text">
-    We do not anticipate that any special category data will be
-    processed by us in our business relationship with you.
-    </p>
-    <p class="policy__subtitle">What We May Need From You in Addition</p>
-    <p class="policy__text">
-    We may need to request specific information from you to help us
-    confirm your identity and take part in a possible dispute
-    investigation on your purchase or a chargeback. If you apply for a
-    refund, we will need to request additional information/documentation
-    as well.
-    </p>
-    
-    <p class="policy__subtitle">
-    What information we may request from you
-    </p>
-    <p class="policy__text">
-    We may request such personal information from you: your first name,
-    last name, date of birth, registration address, ID code.
-    </p>
-    
-    <p class="policy__subtitle">What documents we may request from you</p>
-    <p class="policy__text">
-    We may request a photo or scan of your ID document (passport, ID
-    card, driving license etc.), a proof of address (it may be a utility
-    bill or bank statement not older than 3 months), photo of your
-    paying card, selfie-photo of your face, selfie-photo of you with
-    your card, selfie-photo of you with your passport. Also we may ask
-    you to provide a payment report that was sent to your email address
-    after you made a purchase in our online store.
-    </p>
-    
-    <p class="policy__subtitle">How do we contact you</p>
-    <p class="policy__text">
-    As long as we have only your email address, we can contact you by
-    email.
-    </p>
-    
-    <p class="policy__subtitle">
-    Under what conditions we request additional information and/or
-    documents
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, we may contact you to request your
-    information and/or documents. Usually it pertains to dispute
-    resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    If you apply for a refund, we will need you to provide a payment
-    report and additional documents according to the request of our
-    support team.
-    </p>
-    
-    <p class="policy__subtitle">
-    For What Purpose Do We Process Your Personal Data?
-    </p>
-    <p class="policy__text">
-    The purpose of processing the personal data that may be collected is
-    mainly to facilitate your purchase in our online store. Among other
-    purposes is to manage our relationship with you, to be able to offer
-    you our products in accordance with your interests, to improve your
-    user experience and, where appropriate, for the treatment of your
-    requests.
-    </p>
-    <p class="policy__text">
-    The data provided will be kept as long as the commercial
-    relationship is maintained, as long as the interested party does not
-    request its deletion, or during the years necessary to comply with
-    legal obligations.
-    </p>
-    
-    <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
-    <p class="policy__text">
-    We will only use your personal data when the law allows us to.
-    </p>
-    <p class="policy__text">
-    The BazPay Gateway uses your payment card details to process your
-    payment request.
-    </p>
-    <p class="policy__text">
-    Most commonly, as we only ask for an email, Minecraft nickname and
-    the server, we use it to provide you the opportunity to buy goods in
-    our online store.
-    </p>
-    
-    <p class="policy__subtitle">
-    To Which Recipients Will the Data Be Disclosed?
-    </p>
-    <p class="policy__text">
-    Your personal data may eventually be communicated if communications
-    had to be made to the authorities in the event that the user had
-    carried out actions contrary to the Law; except as provided herein,
-    we will not transfer the data provided to third parties.
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, and contact you to request your
-    information and/or documents, we share the information/documents
-    with the party which provided the request. Usually it pertains to
-    dispute resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    We may also have to share your personal data with other third
-    parties where you have given your consent for us to do so.
-    </p>
-    
-    <p class="policy__subtitle">Data Security and Retention</p>
-    <p class="policy__text">
-    GalaxyGrip OÜ has adopted and maintains the necessary technical and
-    organizational security measures to protect the personal information
-    that users provide in order to avoid its alteration, loss, treatment
-    or unauthorized access, taking into account the state of technology,
-    nature of the data stored and the risks to which they are exposed.
-    </p>
-    <p class="policy__text">
-    However, please, bear in mind that the security of computer systems
-    is never absolute. Please note that no transmission over the
-    Internet is 100% secure and no data stored on it is invulnerable. We
-    cannot guarantee the security of our Site, databases or services,
-    nor can we guarantee that the information you submit to us will not
-    be intercepted while you are transmitting it to us over the
-    Internet. We are not responsible for the actions of third parties.
-    </p>
-    <p class="policy__text">
-    As for data retention, we will only retain your personal data for as
-    long as necessary to fulfill the purposes we collected it for,
-    including for the purposes of satisfying any legal, accounting, or
-    reporting requirements.
-    </p>
-    <p class="policy__text">
-    Your payment card details are retained by encryption methods that
-    are PCI DSS compliant because BazPay has a PCI DSS certificate.
-    </p>
-    
-    <p class="policy__subtitle">What Are Your Legal Rights?</p>
-    <p class="policy__text">
-    Under certain circumstances, you have rights under data protection
-    laws in relation to your personal data.
-    </p>
-    <p class="policy__text">You have the right to:</p>
-    <p class="policy__text">
-    Request Access to your personal data. This enables you to receive a
-    copy of the personal data we hold about you and to check that we are
-    lawfully processing it.
-    </p>
-    <p class="policy__text">
-    Request Correction of the personal data that we hold about you. This
-    enables you to have any incomplete or inaccurate data we hold about
-    you corrected, though we may need to verify the accuracy of the new
-    data you provide to us.
-    </p>
-    <p class="policy__text">
-    Request Erasure of your personal data. This enables you to ask us to
-    delete or remove personal data where there is no good reason for us
-    continuing to process it. You also have the right to ask us to
-    delete or remove your personal data where you have successfully
-    exercised your right to object to processing, where we may have
-    processed your information unlawfully or where we are required to
-    erase your personal data to comply with local law. Note, however,
-    that we may not always be able to comply with your request of
-    erasure for specific legal reasons which will be notified to you, if
-    applicable, at the time of your request.
-    </p>
-    <p class="policy__text">
-    Object To Processing of your personal data where we are relying on a
-    legitimate interest (or those of a third party) and there is
-    something about your particular situation which makes you want to
-    object to processing on this ground as you feel it impacts on your
-    fundamental rights and freedoms. You also have the right to object
-    where we are processing your personal data for direct marketing
-    purposes. In some cases, we may demonstrate that we have compelling
-    legitimate grounds to process your information which override your
-    rights and freedoms.
-    </p>
-    <p class="policy__text">
-    Request Restriction of Processing of your personal data. This
-    enables you to ask us to suspend the processing of your personal
-    data in the following scenarios: (a) if you want us to establish the
-    data’s accuracy; (b) where our use of the data is unlawful but you
-    do not want us to erase it; (c) where you need us to hold the data
-    even if we no longer require it as you need it to establish,
-    exercise or defend legal claims; or (d) you have objected to our use
-    of your data but we need to verify whether we have overriding
-    legitimate grounds to use it.
-    </p>
-    <p class="policy__text">
-    Request the Transfer of your personal data to you or to a third
-    party. We will provide to you, or a third party you have chosen,
-    your personal data in a structured, commonly used, machine-readable
-    format. Note that this right only applies to automated information
-    which you initially provided consent for us to use or where we used
-    the information to perform a contract with you.
-    </p>
-    <p class="policy__text">
-    Withdraw Consent at Any Time where we are relying on consent to
-    process your personal data. However, this will not affect the
-    lawfulness of any processing carried out before you withdraw your
-    consent. If you withdraw your consent, we may not be able to provide
-    certain products or services to you. We will advise you if this is
-    the case at the time you withdraw your consent.
-    </p>
-    <p class="policy__text">
-    If you wish to exercise any of the rights set out above, please
-    contact us.
-    </p>
-    <p class="policy__text">
-    No Fee Usually Required. You will not have to pay a fee to access
-    your personal data (or to exercise any of the other rights).
-    However, we may charge a reasonable fee if your request is clearly
-    unfounded, repetitive or excessive. Alternatively, we may refuse to
-    comply with your request in these circumstances.
-    </p>
-    
-    <p class="policy__subtitle">Time Limit Within Which We Respond</p>
-    <p class="policy__text">
-    We try to respond to all legitimate requests within 30 days.
-    Occasionally it may take us longer than a month if your request is
-    particularly complex or if you have made a number of requests. In
-    this case, we will notify you and keep you updated.
-    </p>
+      <h1 class="policy__title">PRIVACY POLICY</h1>
+
+      <p class="policy__update">Effective June 29, 2023</p>
+
+      <p class="policy__subtitle">What Is This Privacy Policy for?</p>
+      <p class="policy__text"><strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. This policy informs you how we look after your personal data and tells you about your privacy rights and how the law protects you. This privacy policy applies to any visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”) who uses the Site, registers on it and buys anything in our online store.</p>
+      <p class="policy__text">This Privacy policy is a part of the Agreement between you and us. Before you buy anything in our online store you need to accept our offer. That means that you accept the terms of all the documents that constitute the Agreement. The proper acceptance of the offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase.  If you put a tick in the checkbox, you agree with the terms of this Privacy policy in particular.</p>
+      <p class="policy__text">The Site is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
+      <p class="policy__text">We are the data controller when we collect personal information from our users, buyers, players, customers and clients. We will not pass your personal data on to any third party unless required to do so by law or if you have given us separate written permission to do so.</p>
+      <p class="policy__text">The updated version of this privacy policy is the only one applicable for the duration of the use of the Site until there is no other version that replaces it. We may modify this Privacy policy without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
+      
+      <p class="policy__subtitle">What Data Do We Collect About You?</p>
+      <p class="policy__text">Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data). We MAY collect, use, store and process different kinds of personal data about you.</p>
+      <p class="policy__text">Your data is collected by the Site. We only ask for an email, when you register on the Site.</p>
+      <p class="policy__text">When you select products in our online store, we ask only your Minecraft nickname and the server.</p>
+      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the PayAdmit Gateway. The page collects your payment card date in order to process your payment. The payment card data collected by PayAdmit is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect either keep your payment card information.</p>
+
+      <p class="policy__subtitle">Third Party Links</p>
+      <p class="policy__text">The Sites practice a link to a payment page provided by the PayAdmit Gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The PayAdmit Gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+
+      <p class="policy__subtitle">Children</p>
+      <p class="policy__text">This website is not intended for children and we do not knowingly collect data relating to children.</p>
+
+      <p class="policy__subtitle">Special Category Data</p>
+      <p class="policy__text">We do not anticipate that any special category data will be processed by us in our business relationship with you.</p>
+
+      <p class="policy__subtitle">What We May Need From You in Addition</p>
+      <p class="policy__text">We may need to request specific information from you to help us confirm your identity and take part in a possible dispute investigation on your purchase or a chargeback. If you apply for a refund, we will need to request additional information/documentation as well.</p>
+      
+      <p class="policy__subtitle">What information we may request from you</p>
+      <p class="policy__text">We may request such personal information from you: your first name, last name, date of birth, registration address, ID code.</p>
+      
+      <p class="policy__subtitle">What documents we may request from you</p>
+      <p class="policy__text">We may request a photo or scan of your ID document (passport, ID card, driving license etc.), a proof of address (it may be a utility bill or bank statement not older than 3 months), photo of your paying card, selfie-photo of your face, selfie-photo of you with your card, selfie-photo of you with your passport. Also we may ask you to provide a payment report that was sent to your email address after you made a purchase in our online store.</p>
+      
+      <p class="policy__subtitle">How do we contact you</p>
+      <p class="policy__text">As long as we have only your email address, we can contact you by email.</p>
+      
+      <p class="policy__subtitle">Under what conditions we request additional information and/or documents</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, we may contact you to request your information and/or documents. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">If you apply for a refund, we will need you to provide a payment report and additional documents according to the request of our support team.</p>
+      
+      <p class="policy__subtitle">For What Purpose Do We Process Your Personal Data?</p>
+      <p class="policy__text">The purpose of processing the personal data that may be collected is mainly to facilitate your purchase in our online store. Among other purposes is to manage our relationship with you, to be able to offer you our products in accordance with your interests, to improve your user experience and, where appropriate, for the treatment of your requests.</p>
+      <p class="policy__text">The data provided will be kept as long as the commercial relationship is maintained, as long as the interested party does not request its deletion, or during the years necessary to comply with legal obligations.</p>
+      
+      <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
+      <p class="policy__text">We will only use your personal data when the law allows us to.</p>
+      <p class="policy__text">The PayAdmit Gateway uses your payment card details to process your payment request.</p>
+      <p class="policy__text">Most commonly, as we only ask for an email, Minecraft nickname and the server, we use it to provide you the opportunity to buy goods in our online store.</p>
+      
+      <p class="policy__subtitle">To Which Recipients Will the Data Be Disclosed?</p>
+      <p class="policy__text">Your personal data may eventually be communicated if communications had to be made to the authorities in the event that the user had carried out actions contrary to the Law; except as provided herein, we will not transfer the data provided to third parties.</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, and contact you to request your information and/or documents, we share the information/documents with the party which provided the request. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">We may also have to share your personal data with other third parties where you have given your consent for us to do so.</p>
+      
+      <p class="policy__subtitle">Data Security and Retention</p>
+      <p class="policy__text">GalaxyGrip OÜ has adopted and maintains the necessary technical and organizational security measures to protect the personal information that users provide in order to avoid its alteration, loss, treatment or unauthorized access, taking into account the state of technology, nature of the data stored and the risks to which they are exposed.</p>
+      <p class="policy__text">However, please, bear in mind that the security of computer systems is never absolute. Please note that no transmission over the Internet is 100% secure and no data stored on it is invulnerable. We cannot guarantee the security of our Site, databases or services, nor can we guarantee that the information you submit to us will not be intercepted while you are transmitting it to us over the Internet. We are not responsible for the actions of third parties.</p>
+      <p class="policy__text">As for data retention, we will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because PayAdmit has a PCI DSS certificate.</p>
+      
+      <p class="policy__subtitle">What Are Your Legal Rights?</p>
+      <p class="policy__text">Under certain circumstances, you have rights under data protection laws in relation to your personal data.</p>
+      <p class="policy__text">You have the right to:</p>
+      <p class="policy__text">Request Access to your personal data. This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+      <p class="policy__text">Request Correction of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
+      <p class="policy__text">Request Erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing, where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
+      <p class="policy__text">Object To Processing of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
+      <p class="policy__text">Request Restriction of Processing of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data’s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
+      <p class="policy__text">Request the Transfer of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
+      <p class="policy__text">Withdraw Consent at Any Time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
+      <p class="policy__text">If you wish to exercise any of the rights set out above, please contact us.</p>
+      <p class="policy__text">No Fee Usually Required. You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
+      
+      <p class="policy__subtitle">Time Limit Within Which We Respond</p>
+      <p class="policy__text">We try to respond to all legitimate requests within 30 days. Occasionally it may take us longer than a month if your request is particularly complex or if you have made a number of requests. In this case, we will notify you and keep you updated.</p>
     </div>
     `,
     termsConditionsPage_contentInnerHTML: `
@@ -17401,311 +14893,83 @@ export const languageLocalizations = {
     // privacy policy
     privacyPolicyPage_contentInnerHTML: `
     <div class="container">
-    <h1 class="policy__title">PRIVACY POLICY</h1>
-    <p class="policy__update">Effective June 29, 2023</p>
-    <p class="policy__subtitle">What Is This Privacy Policy for?</p>
-    <p class="policy__text">
-    <strong>Adventures in Minecraft</strong> (further "we”, "us”, "our”)
-    respects your privacy and is committed to protecting your personal
-    data. This policy informs you how we look after your personal data
-    and tells you about your privacy rights and how the law protects
-    you. This privacy policy applies to any visitor of the Site/ the
-    user/ the buyer/ the player/ the customer (further "you”, "your”)
-    who uses the Site, registers on it and buys anything in our online
-    store.
-    </p>
-    <p class="policy__text">
-    This Privacy policy is a part of the Agreement between you and us.
-    Before you buy anything in our online store you need to accept our
-    offer. That means that you accept the terms of all the documents
-    that constitute the Agreement. The proper acceptance of the offer in
-    accordance with the law of Estonia is the consistent implementation
-    by you of the following actions: read terms of the Agreement,
-    register on the Site, put a tick in the checkbox that you accept the
-    terms before making a purchase. If you put a tick in the checkbox,
-    you agree with the terms of this Privacy policy in particular.
-    </p>
-    <p class="policy__text">
-    The Site is owned by GalaxyGrip OÜ - a company registered according
-    to legislation of Estonia with its registered number 16776100, whose
-    registered address is Harju maakond, Tallinn, Lasnamäe linnaosa,
-    Katusepapi tn 6-502, 11412.
-    </p>
-    <p class="policy__text">
-    We are the data controller when we collect personal information from
-    our users, buyers, players, customers and clients. We will not pass
-    your personal data on to any third party unless required to do so by
-    law or if you have given us separate written permission to do so.
-    </p>
-    <p class="policy__text">
-    The updated version of this privacy policy is the only one
-    applicable for the duration of the use of the Site until there is no
-    other version that replaces it. We may modify this Privacy policy
-    without notifying you, so please check back often for updates. Any
-    changes made will be available on this page.
-    </p>
-    
-    <p class="policy__subtitle">What Data Do We Collect About You?</p>
-    <p class="policy__text">
-    Personal data, or personal information, means any information about
-    an individual from which that person can be identified. It does not
-    include data where the identity has been removed (anonymous data).
-    We MAY collect, use, store and process different kinds of personal
-    data about you.
-    </p>
-    <p class="policy__text">
-    Your data is collected by the Site. We only ask for an email, when
-    you register on the Site.
-    </p>
-    <p class="policy__text">
-    When you select products in our online store, we ask only your
-    Minecraft nickname and the server.
-    </p>
-    <p class="policy__text">
-    When you have selected the goods and want to pay, you are redirected
-    to the payment page of the BazPay Gateway. The page collects your
-    payment card date in order to process your payment. The payment card
-    data collected by BazPay is your card number, expiry date, your name
-    indicated on the card and your CVV code. We do not collect either
-    keep your payment card information.
-    </p>
-    <p class="policy__subtitle">Third Party Links</p>
-    <p class="policy__text">
-    The Sites practice a link to a payment page provided by the BazPay
-    Gateway in order to collect your payment card information and
-    process your payment request. We guarantee the security of payments
-    when paying by credit or debit card. The BazPay Gateway that
-    provides the service of processing the payment requests complies
-    with PCI DSS requirements for the secure processing of the payer's
-    bank card details.
-    </p>
-    <p class="policy__subtitle">Children</p>
-    <p class="policy__text">
-    This website is not intended for children and we do not knowingly
-    collect data relating to children.
-    </p>
-    <p class="policy__subtitle">Special Category Data</p>
-    <p class="policy__text">
-    We do not anticipate that any special category data will be
-    processed by us in our business relationship with you.
-    </p>
-    <p class="policy__subtitle">What We May Need From You in Addition</p>
-    <p class="policy__text">
-    We may need to request specific information from you to help us
-    confirm your identity and take part in a possible dispute
-    investigation on your purchase or a chargeback. If you apply for a
-    refund, we will need to request additional information/documentation
-    as well.
-    </p>
-    
-    <p class="policy__subtitle">
-    What information we may request from you
-    </p>
-    <p class="policy__text">
-    We may request such personal information from you: your first name,
-    last name, date of birth, registration address, ID code.
-    </p>
-    
-    <p class="policy__subtitle">What documents we may request from you</p>
-    <p class="policy__text">
-    We may request a photo or scan of your ID document (passport, ID
-    card, driving license etc.), a proof of address (it may be a utility
-    bill or bank statement not older than 3 months), photo of your
-    paying card, selfie-photo of your face, selfie-photo of you with
-    your card, selfie-photo of you with your passport. Also we may ask
-    you to provide a payment report that was sent to your email address
-    after you made a purchase in our online store.
-    </p>
-    
-    <p class="policy__subtitle">How do we contact you</p>
-    <p class="policy__text">
-    As long as we have only your email address, we can contact you by
-    email.
-    </p>
-    
-    <p class="policy__subtitle">
-    Under what conditions we request additional information and/or
-    documents
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, we may contact you to request your
-    information and/or documents. Usually it pertains to dispute
-    resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    If you apply for a refund, we will need you to provide a payment
-    report and additional documents according to the request of our
-    support team.
-    </p>
-    
-    <p class="policy__subtitle">
-    For What Purpose Do We Process Your Personal Data?
-    </p>
-    <p class="policy__text">
-    The purpose of processing the personal data that may be collected is
-    mainly to facilitate your purchase in our online store. Among other
-    purposes is to manage our relationship with you, to be able to offer
-    you our products in accordance with your interests, to improve your
-    user experience and, where appropriate, for the treatment of your
-    requests.
-    </p>
-    <p class="policy__text">
-    The data provided will be kept as long as the commercial
-    relationship is maintained, as long as the interested party does not
-    request its deletion, or during the years necessary to comply with
-    legal obligations.
-    </p>
-    
-    <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
-    <p class="policy__text">
-    We will only use your personal data when the law allows us to.
-    </p>
-    <p class="policy__text">
-    The BazPay Gateway uses your payment card details to process your
-    payment request.
-    </p>
-    <p class="policy__text">
-    Most commonly, as we only ask for an email, Minecraft nickname and
-    the server, we use it to provide you the opportunity to buy goods in
-    our online store.
-    </p>
-    
-    <p class="policy__subtitle">
-    To Which Recipients Will the Data Be Disclosed?
-    </p>
-    <p class="policy__text">
-    Your personal data may eventually be communicated if communications
-    had to be made to the authorities in the event that the user had
-    carried out actions contrary to the Law; except as provided herein,
-    we will not transfer the data provided to third parties.
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, and contact you to request your
-    information and/or documents, we share the information/documents
-    with the party which provided the request. Usually it pertains to
-    dispute resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    We may also have to share your personal data with other third
-    parties where you have given your consent for us to do so.
-    </p>
-    
-    <p class="policy__subtitle">Data Security and Retention</p>
-    <p class="policy__text">
-    GalaxyGrip OÜ has adopted and maintains the necessary technical and
-    organizational security measures to protect the personal information
-    that users provide in order to avoid its alteration, loss, treatment
-    or unauthorized access, taking into account the state of technology,
-    nature of the data stored and the risks to which they are exposed.
-    </p>
-    <p class="policy__text">
-    However, please, bear in mind that the security of computer systems
-    is never absolute. Please note that no transmission over the
-    Internet is 100% secure and no data stored on it is invulnerable. We
-    cannot guarantee the security of our Site, databases or services,
-    nor can we guarantee that the information you submit to us will not
-    be intercepted while you are transmitting it to us over the
-    Internet. We are not responsible for the actions of third parties.
-    </p>
-    <p class="policy__text">
-    As for data retention, we will only retain your personal data for as
-    long as necessary to fulfill the purposes we collected it for,
-    including for the purposes of satisfying any legal, accounting, or
-    reporting requirements.
-    </p>
-    <p class="policy__text">
-    Your payment card details are retained by encryption methods that
-    are PCI DSS compliant because BazPay has a PCI DSS certificate.
-    </p>
-    
-    <p class="policy__subtitle">What Are Your Legal Rights?</p>
-    <p class="policy__text">
-    Under certain circumstances, you have rights under data protection
-    laws in relation to your personal data.
-    </p>
-    <p class="policy__text">You have the right to:</p>
-    <p class="policy__text">
-    Request Access to your personal data. This enables you to receive a
-    copy of the personal data we hold about you and to check that we are
-    lawfully processing it.
-    </p>
-    <p class="policy__text">
-    Request Correction of the personal data that we hold about you. This
-    enables you to have any incomplete or inaccurate data we hold about
-    you corrected, though we may need to verify the accuracy of the new
-    data you provide to us.
-    </p>
-    <p class="policy__text">
-    Request Erasure of your personal data. This enables you to ask us to
-    delete or remove personal data where there is no good reason for us
-    continuing to process it. You also have the right to ask us to
-    delete or remove your personal data where you have successfully
-    exercised your right to object to processing, where we may have
-    processed your information unlawfully or where we are required to
-    erase your personal data to comply with local law. Note, however,
-    that we may not always be able to comply with your request of
-    erasure for specific legal reasons which will be notified to you, if
-    applicable, at the time of your request.
-    </p>
-    <p class="policy__text">
-    Object To Processing of your personal data where we are relying on a
-    legitimate interest (or those of a third party) and there is
-    something about your particular situation which makes you want to
-    object to processing on this ground as you feel it impacts on your
-    fundamental rights and freedoms. You also have the right to object
-    where we are processing your personal data for direct marketing
-    purposes. In some cases, we may demonstrate that we have compelling
-    legitimate grounds to process your information which override your
-    rights and freedoms.
-    </p>
-    <p class="policy__text">
-    Request Restriction of Processing of your personal data. This
-    enables you to ask us to suspend the processing of your personal
-    data in the following scenarios: (a) if you want us to establish the
-    data’s accuracy; (b) where our use of the data is unlawful but you
-    do not want us to erase it; (c) where you need us to hold the data
-    even if we no longer require it as you need it to establish,
-    exercise or defend legal claims; or (d) you have objected to our use
-    of your data but we need to verify whether we have overriding
-    legitimate grounds to use it.
-    </p>
-    <p class="policy__text">
-    Request the Transfer of your personal data to you or to a third
-    party. We will provide to you, or a third party you have chosen,
-    your personal data in a structured, commonly used, machine-readable
-    format. Note that this right only applies to automated information
-    which you initially provided consent for us to use or where we used
-    the information to perform a contract with you.
-    </p>
-    <p class="policy__text">
-    Withdraw Consent at Any Time where we are relying on consent to
-    process your personal data. However, this will not affect the
-    lawfulness of any processing carried out before you withdraw your
-    consent. If you withdraw your consent, we may not be able to provide
-    certain products or services to you. We will advise you if this is
-    the case at the time you withdraw your consent.
-    </p>
-    <p class="policy__text">
-    If you wish to exercise any of the rights set out above, please
-    contact us.
-    </p>
-    <p class="policy__text">
-    No Fee Usually Required. You will not have to pay a fee to access
-    your personal data (or to exercise any of the other rights).
-    However, we may charge a reasonable fee if your request is clearly
-    unfounded, repetitive or excessive. Alternatively, we may refuse to
-    comply with your request in these circumstances.
-    </p>
-    
-    <p class="policy__subtitle">Time Limit Within Which We Respond</p>
-    <p class="policy__text">
-    We try to respond to all legitimate requests within 30 days.
-    Occasionally it may take us longer than a month if your request is
-    particularly complex or if you have made a number of requests. In
-    this case, we will notify you and keep you updated.
-    </p>
+      <h1 class="policy__title">PRIVACY POLICY</h1>
+
+      <p class="policy__update">Effective June 29, 2023</p>
+
+      <p class="policy__subtitle">What Is This Privacy Policy for?</p>
+      <p class="policy__text"><strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. This policy informs you how we look after your personal data and tells you about your privacy rights and how the law protects you. This privacy policy applies to any visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”) who uses the Site, registers on it and buys anything in our online store.</p>
+      <p class="policy__text">This Privacy policy is a part of the Agreement between you and us. Before you buy anything in our online store you need to accept our offer. That means that you accept the terms of all the documents that constitute the Agreement. The proper acceptance of the offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase.  If you put a tick in the checkbox, you agree with the terms of this Privacy policy in particular.</p>
+      <p class="policy__text">The Site is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
+      <p class="policy__text">We are the data controller when we collect personal information from our users, buyers, players, customers and clients. We will not pass your personal data on to any third party unless required to do so by law or if you have given us separate written permission to do so.</p>
+      <p class="policy__text">The updated version of this privacy policy is the only one applicable for the duration of the use of the Site until there is no other version that replaces it. We may modify this Privacy policy without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
+      
+      <p class="policy__subtitle">What Data Do We Collect About You?</p>
+      <p class="policy__text">Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data). We MAY collect, use, store and process different kinds of personal data about you.</p>
+      <p class="policy__text">Your data is collected by the Site. We only ask for an email, when you register on the Site.</p>
+      <p class="policy__text">When you select products in our online store, we ask only your Minecraft nickname and the server.</p>
+      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the PayAdmit Gateway. The page collects your payment card date in order to process your payment. The payment card data collected by PayAdmit is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect either keep your payment card information.</p>
+
+      <p class="policy__subtitle">Third Party Links</p>
+      <p class="policy__text">The Sites practice a link to a payment page provided by the PayAdmit Gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The PayAdmit Gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+
+      <p class="policy__subtitle">Children</p>
+      <p class="policy__text">This website is not intended for children and we do not knowingly collect data relating to children.</p>
+
+      <p class="policy__subtitle">Special Category Data</p>
+      <p class="policy__text">We do not anticipate that any special category data will be processed by us in our business relationship with you.</p>
+
+      <p class="policy__subtitle">What We May Need From You in Addition</p>
+      <p class="policy__text">We may need to request specific information from you to help us confirm your identity and take part in a possible dispute investigation on your purchase or a chargeback. If you apply for a refund, we will need to request additional information/documentation as well.</p>
+      
+      <p class="policy__subtitle">What information we may request from you</p>
+      <p class="policy__text">We may request such personal information from you: your first name, last name, date of birth, registration address, ID code.</p>
+      
+      <p class="policy__subtitle">What documents we may request from you</p>
+      <p class="policy__text">We may request a photo or scan of your ID document (passport, ID card, driving license etc.), a proof of address (it may be a utility bill or bank statement not older than 3 months), photo of your paying card, selfie-photo of your face, selfie-photo of you with your card, selfie-photo of you with your passport. Also we may ask you to provide a payment report that was sent to your email address after you made a purchase in our online store.</p>
+      
+      <p class="policy__subtitle">How do we contact you</p>
+      <p class="policy__text">As long as we have only your email address, we can contact you by email.</p>
+      
+      <p class="policy__subtitle">Under what conditions we request additional information and/or documents</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, we may contact you to request your information and/or documents. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">If you apply for a refund, we will need you to provide a payment report and additional documents according to the request of our support team.</p>
+      
+      <p class="policy__subtitle">For What Purpose Do We Process Your Personal Data?</p>
+      <p class="policy__text">The purpose of processing the personal data that may be collected is mainly to facilitate your purchase in our online store. Among other purposes is to manage our relationship with you, to be able to offer you our products in accordance with your interests, to improve your user experience and, where appropriate, for the treatment of your requests.</p>
+      <p class="policy__text">The data provided will be kept as long as the commercial relationship is maintained, as long as the interested party does not request its deletion, or during the years necessary to comply with legal obligations.</p>
+      
+      <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
+      <p class="policy__text">We will only use your personal data when the law allows us to.</p>
+      <p class="policy__text">The PayAdmit Gateway uses your payment card details to process your payment request.</p>
+      <p class="policy__text">Most commonly, as we only ask for an email, Minecraft nickname and the server, we use it to provide you the opportunity to buy goods in our online store.</p>
+      
+      <p class="policy__subtitle">To Which Recipients Will the Data Be Disclosed?</p>
+      <p class="policy__text">Your personal data may eventually be communicated if communications had to be made to the authorities in the event that the user had carried out actions contrary to the Law; except as provided herein, we will not transfer the data provided to third parties.</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, and contact you to request your information and/or documents, we share the information/documents with the party which provided the request. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">We may also have to share your personal data with other third parties where you have given your consent for us to do so.</p>
+      
+      <p class="policy__subtitle">Data Security and Retention</p>
+      <p class="policy__text">GalaxyGrip OÜ has adopted and maintains the necessary technical and organizational security measures to protect the personal information that users provide in order to avoid its alteration, loss, treatment or unauthorized access, taking into account the state of technology, nature of the data stored and the risks to which they are exposed.</p>
+      <p class="policy__text">However, please, bear in mind that the security of computer systems is never absolute. Please note that no transmission over the Internet is 100% secure and no data stored on it is invulnerable. We cannot guarantee the security of our Site, databases or services, nor can we guarantee that the information you submit to us will not be intercepted while you are transmitting it to us over the Internet. We are not responsible for the actions of third parties.</p>
+      <p class="policy__text">As for data retention, we will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because PayAdmit has a PCI DSS certificate.</p>
+      
+      <p class="policy__subtitle">What Are Your Legal Rights?</p>
+      <p class="policy__text">Under certain circumstances, you have rights under data protection laws in relation to your personal data.</p>
+      <p class="policy__text">You have the right to:</p>
+      <p class="policy__text">Request Access to your personal data. This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+      <p class="policy__text">Request Correction of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
+      <p class="policy__text">Request Erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing, where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
+      <p class="policy__text">Object To Processing of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
+      <p class="policy__text">Request Restriction of Processing of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data’s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
+      <p class="policy__text">Request the Transfer of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
+      <p class="policy__text">Withdraw Consent at Any Time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
+      <p class="policy__text">If you wish to exercise any of the rights set out above, please contact us.</p>
+      <p class="policy__text">No Fee Usually Required. You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
+      
+      <p class="policy__subtitle">Time Limit Within Which We Respond</p>
+      <p class="policy__text">We try to respond to all legitimate requests within 30 days. Occasionally it may take us longer than a month if your request is particularly complex or if you have made a number of requests. In this case, we will notify you and keep you updated.</p>
     </div>
     `,
     termsConditionsPage_contentInnerHTML: `
@@ -18799,311 +16063,83 @@ export const languageLocalizations = {
     // privacy policy
     privacyPolicyPage_contentInnerHTML: `
     <div class="container">
-    <h1 class="policy__title">PRIVACY POLICY</h1>
-    <p class="policy__update">Effective June 29, 2023</p>
-    <p class="policy__subtitle">What Is This Privacy Policy for?</p>
-    <p class="policy__text">
-    <strong>Adventures in Minecraft</strong> (further "we”, "us”, "our”)
-    respects your privacy and is committed to protecting your personal
-    data. This policy informs you how we look after your personal data
-    and tells you about your privacy rights and how the law protects
-    you. This privacy policy applies to any visitor of the Site/ the
-    user/ the buyer/ the player/ the customer (further "you”, "your”)
-    who uses the Site, registers on it and buys anything in our online
-    store.
-    </p>
-    <p class="policy__text">
-    This Privacy policy is a part of the Agreement between you and us.
-    Before you buy anything in our online store you need to accept our
-    offer. That means that you accept the terms of all the documents
-    that constitute the Agreement. The proper acceptance of the offer in
-    accordance with the law of Estonia is the consistent implementation
-    by you of the following actions: read terms of the Agreement,
-    register on the Site, put a tick in the checkbox that you accept the
-    terms before making a purchase. If you put a tick in the checkbox,
-    you agree with the terms of this Privacy policy in particular.
-    </p>
-    <p class="policy__text">
-    The Site is owned by GalaxyGrip OÜ - a company registered according
-    to legislation of Estonia with its registered number 16776100, whose
-    registered address is Harju maakond, Tallinn, Lasnamäe linnaosa,
-    Katusepapi tn 6-502, 11412.
-    </p>
-    <p class="policy__text">
-    We are the data controller when we collect personal information from
-    our users, buyers, players, customers and clients. We will not pass
-    your personal data on to any third party unless required to do so by
-    law or if you have given us separate written permission to do so.
-    </p>
-    <p class="policy__text">
-    The updated version of this privacy policy is the only one
-    applicable for the duration of the use of the Site until there is no
-    other version that replaces it. We may modify this Privacy policy
-    without notifying you, so please check back often for updates. Any
-    changes made will be available on this page.
-    </p>
-    
-    <p class="policy__subtitle">What Data Do We Collect About You?</p>
-    <p class="policy__text">
-    Personal data, or personal information, means any information about
-    an individual from which that person can be identified. It does not
-    include data where the identity has been removed (anonymous data).
-    We MAY collect, use, store and process different kinds of personal
-    data about you.
-    </p>
-    <p class="policy__text">
-    Your data is collected by the Site. We only ask for an email, when
-    you register on the Site.
-    </p>
-    <p class="policy__text">
-    When you select products in our online store, we ask only your
-    Minecraft nickname and the server.
-    </p>
-    <p class="policy__text">
-    When you have selected the goods and want to pay, you are redirected
-    to the payment page of the BazPay Gateway. The page collects your
-    payment card date in order to process your payment. The payment card
-    data collected by BazPay is your card number, expiry date, your name
-    indicated on the card and your CVV code. We do not collect either
-    keep your payment card information.
-    </p>
-    <p class="policy__subtitle">Third Party Links</p>
-    <p class="policy__text">
-    The Sites practice a link to a payment page provided by the BazPay
-    Gateway in order to collect your payment card information and
-    process your payment request. We guarantee the security of payments
-    when paying by credit or debit card. The BazPay Gateway that
-    provides the service of processing the payment requests complies
-    with PCI DSS requirements for the secure processing of the payer's
-    bank card details.
-    </p>
-    <p class="policy__subtitle">Children</p>
-    <p class="policy__text">
-    This website is not intended for children and we do not knowingly
-    collect data relating to children.
-    </p>
-    <p class="policy__subtitle">Special Category Data</p>
-    <p class="policy__text">
-    We do not anticipate that any special category data will be
-    processed by us in our business relationship with you.
-    </p>
-    <p class="policy__subtitle">What We May Need From You in Addition</p>
-    <p class="policy__text">
-    We may need to request specific information from you to help us
-    confirm your identity and take part in a possible dispute
-    investigation on your purchase or a chargeback. If you apply for a
-    refund, we will need to request additional information/documentation
-    as well.
-    </p>
-    
-    <p class="policy__subtitle">
-    What information we may request from you
-    </p>
-    <p class="policy__text">
-    We may request such personal information from you: your first name,
-    last name, date of birth, registration address, ID code.
-    </p>
-    
-    <p class="policy__subtitle">What documents we may request from you</p>
-    <p class="policy__text">
-    We may request a photo or scan of your ID document (passport, ID
-    card, driving license etc.), a proof of address (it may be a utility
-    bill or bank statement not older than 3 months), photo of your
-    paying card, selfie-photo of your face, selfie-photo of you with
-    your card, selfie-photo of you with your passport. Also we may ask
-    you to provide a payment report that was sent to your email address
-    after you made a purchase in our online store.
-    </p>
-    
-    <p class="policy__subtitle">How do we contact you</p>
-    <p class="policy__text">
-    As long as we have only your email address, we can contact you by
-    email.
-    </p>
-    
-    <p class="policy__subtitle">
-    Under what conditions we request additional information and/or
-    documents
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, we may contact you to request your
-    information and/or documents. Usually it pertains to dispute
-    resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    If you apply for a refund, we will need you to provide a payment
-    report and additional documents according to the request of our
-    support team.
-    </p>
-    
-    <p class="policy__subtitle">
-    For What Purpose Do We Process Your Personal Data?
-    </p>
-    <p class="policy__text">
-    The purpose of processing the personal data that may be collected is
-    mainly to facilitate your purchase in our online store. Among other
-    purposes is to manage our relationship with you, to be able to offer
-    you our products in accordance with your interests, to improve your
-    user experience and, where appropriate, for the treatment of your
-    requests.
-    </p>
-    <p class="policy__text">
-    The data provided will be kept as long as the commercial
-    relationship is maintained, as long as the interested party does not
-    request its deletion, or during the years necessary to comply with
-    legal obligations.
-    </p>
-    
-    <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
-    <p class="policy__text">
-    We will only use your personal data when the law allows us to.
-    </p>
-    <p class="policy__text">
-    The BazPay Gateway uses your payment card details to process your
-    payment request.
-    </p>
-    <p class="policy__text">
-    Most commonly, as we only ask for an email, Minecraft nickname and
-    the server, we use it to provide you the opportunity to buy goods in
-    our online store.
-    </p>
-    
-    <p class="policy__subtitle">
-    To Which Recipients Will the Data Be Disclosed?
-    </p>
-    <p class="policy__text">
-    Your personal data may eventually be communicated if communications
-    had to be made to the authorities in the event that the user had
-    carried out actions contrary to the Law; except as provided herein,
-    we will not transfer the data provided to third parties.
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, and contact you to request your
-    information and/or documents, we share the information/documents
-    with the party which provided the request. Usually it pertains to
-    dispute resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    We may also have to share your personal data with other third
-    parties where you have given your consent for us to do so.
-    </p>
-    
-    <p class="policy__subtitle">Data Security and Retention</p>
-    <p class="policy__text">
-    GalaxyGrip OÜ has adopted and maintains the necessary technical and
-    organizational security measures to protect the personal information
-    that users provide in order to avoid its alteration, loss, treatment
-    or unauthorized access, taking into account the state of technology,
-    nature of the data stored and the risks to which they are exposed.
-    </p>
-    <p class="policy__text">
-    However, please, bear in mind that the security of computer systems
-    is never absolute. Please note that no transmission over the
-    Internet is 100% secure and no data stored on it is invulnerable. We
-    cannot guarantee the security of our Site, databases or services,
-    nor can we guarantee that the information you submit to us will not
-    be intercepted while you are transmitting it to us over the
-    Internet. We are not responsible for the actions of third parties.
-    </p>
-    <p class="policy__text">
-    As for data retention, we will only retain your personal data for as
-    long as necessary to fulfill the purposes we collected it for,
-    including for the purposes of satisfying any legal, accounting, or
-    reporting requirements.
-    </p>
-    <p class="policy__text">
-    Your payment card details are retained by encryption methods that
-    are PCI DSS compliant because BazPay has a PCI DSS certificate.
-    </p>
-    
-    <p class="policy__subtitle">What Are Your Legal Rights?</p>
-    <p class="policy__text">
-    Under certain circumstances, you have rights under data protection
-    laws in relation to your personal data.
-    </p>
-    <p class="policy__text">You have the right to:</p>
-    <p class="policy__text">
-    Request Access to your personal data. This enables you to receive a
-    copy of the personal data we hold about you and to check that we are
-    lawfully processing it.
-    </p>
-    <p class="policy__text">
-    Request Correction of the personal data that we hold about you. This
-    enables you to have any incomplete or inaccurate data we hold about
-    you corrected, though we may need to verify the accuracy of the new
-    data you provide to us.
-    </p>
-    <p class="policy__text">
-    Request Erasure of your personal data. This enables you to ask us to
-    delete or remove personal data where there is no good reason for us
-    continuing to process it. You also have the right to ask us to
-    delete or remove your personal data where you have successfully
-    exercised your right to object to processing, where we may have
-    processed your information unlawfully or where we are required to
-    erase your personal data to comply with local law. Note, however,
-    that we may not always be able to comply with your request of
-    erasure for specific legal reasons which will be notified to you, if
-    applicable, at the time of your request.
-    </p>
-    <p class="policy__text">
-    Object To Processing of your personal data where we are relying on a
-    legitimate interest (or those of a third party) and there is
-    something about your particular situation which makes you want to
-    object to processing on this ground as you feel it impacts on your
-    fundamental rights and freedoms. You also have the right to object
-    where we are processing your personal data for direct marketing
-    purposes. In some cases, we may demonstrate that we have compelling
-    legitimate grounds to process your information which override your
-    rights and freedoms.
-    </p>
-    <p class="policy__text">
-    Request Restriction of Processing of your personal data. This
-    enables you to ask us to suspend the processing of your personal
-    data in the following scenarios: (a) if you want us to establish the
-    data’s accuracy; (b) where our use of the data is unlawful but you
-    do not want us to erase it; (c) where you need us to hold the data
-    even if we no longer require it as you need it to establish,
-    exercise or defend legal claims; or (d) you have objected to our use
-    of your data but we need to verify whether we have overriding
-    legitimate grounds to use it.
-    </p>
-    <p class="policy__text">
-    Request the Transfer of your personal data to you or to a third
-    party. We will provide to you, or a third party you have chosen,
-    your personal data in a structured, commonly used, machine-readable
-    format. Note that this right only applies to automated information
-    which you initially provided consent for us to use or where we used
-    the information to perform a contract with you.
-    </p>
-    <p class="policy__text">
-    Withdraw Consent at Any Time where we are relying on consent to
-    process your personal data. However, this will not affect the
-    lawfulness of any processing carried out before you withdraw your
-    consent. If you withdraw your consent, we may not be able to provide
-    certain products or services to you. We will advise you if this is
-    the case at the time you withdraw your consent.
-    </p>
-    <p class="policy__text">
-    If you wish to exercise any of the rights set out above, please
-    contact us.
-    </p>
-    <p class="policy__text">
-    No Fee Usually Required. You will not have to pay a fee to access
-    your personal data (or to exercise any of the other rights).
-    However, we may charge a reasonable fee if your request is clearly
-    unfounded, repetitive or excessive. Alternatively, we may refuse to
-    comply with your request in these circumstances.
-    </p>
-    
-    <p class="policy__subtitle">Time Limit Within Which We Respond</p>
-    <p class="policy__text">
-    We try to respond to all legitimate requests within 30 days.
-    Occasionally it may take us longer than a month if your request is
-    particularly complex or if you have made a number of requests. In
-    this case, we will notify you and keep you updated.
-    </p>
+      <h1 class="policy__title">PRIVACY POLICY</h1>
+
+      <p class="policy__update">Effective June 29, 2023</p>
+
+      <p class="policy__subtitle">What Is This Privacy Policy for?</p>
+      <p class="policy__text"><strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. This policy informs you how we look after your personal data and tells you about your privacy rights and how the law protects you. This privacy policy applies to any visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”) who uses the Site, registers on it and buys anything in our online store.</p>
+      <p class="policy__text">This Privacy policy is a part of the Agreement between you and us. Before you buy anything in our online store you need to accept our offer. That means that you accept the terms of all the documents that constitute the Agreement. The proper acceptance of the offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase.  If you put a tick in the checkbox, you agree with the terms of this Privacy policy in particular.</p>
+      <p class="policy__text">The Site is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
+      <p class="policy__text">We are the data controller when we collect personal information from our users, buyers, players, customers and clients. We will not pass your personal data on to any third party unless required to do so by law or if you have given us separate written permission to do so.</p>
+      <p class="policy__text">The updated version of this privacy policy is the only one applicable for the duration of the use of the Site until there is no other version that replaces it. We may modify this Privacy policy without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
+      
+      <p class="policy__subtitle">What Data Do We Collect About You?</p>
+      <p class="policy__text">Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data). We MAY collect, use, store and process different kinds of personal data about you.</p>
+      <p class="policy__text">Your data is collected by the Site. We only ask for an email, when you register on the Site.</p>
+      <p class="policy__text">When you select products in our online store, we ask only your Minecraft nickname and the server.</p>
+      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the PayAdmit Gateway. The page collects your payment card date in order to process your payment. The payment card data collected by PayAdmit is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect either keep your payment card information.</p>
+
+      <p class="policy__subtitle">Third Party Links</p>
+      <p class="policy__text">The Sites practice a link to a payment page provided by the PayAdmit Gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The PayAdmit Gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+
+      <p class="policy__subtitle">Children</p>
+      <p class="policy__text">This website is not intended for children and we do not knowingly collect data relating to children.</p>
+
+      <p class="policy__subtitle">Special Category Data</p>
+      <p class="policy__text">We do not anticipate that any special category data will be processed by us in our business relationship with you.</p>
+
+      <p class="policy__subtitle">What We May Need From You in Addition</p>
+      <p class="policy__text">We may need to request specific information from you to help us confirm your identity and take part in a possible dispute investigation on your purchase or a chargeback. If you apply for a refund, we will need to request additional information/documentation as well.</p>
+      
+      <p class="policy__subtitle">What information we may request from you</p>
+      <p class="policy__text">We may request such personal information from you: your first name, last name, date of birth, registration address, ID code.</p>
+      
+      <p class="policy__subtitle">What documents we may request from you</p>
+      <p class="policy__text">We may request a photo or scan of your ID document (passport, ID card, driving license etc.), a proof of address (it may be a utility bill or bank statement not older than 3 months), photo of your paying card, selfie-photo of your face, selfie-photo of you with your card, selfie-photo of you with your passport. Also we may ask you to provide a payment report that was sent to your email address after you made a purchase in our online store.</p>
+      
+      <p class="policy__subtitle">How do we contact you</p>
+      <p class="policy__text">As long as we have only your email address, we can contact you by email.</p>
+      
+      <p class="policy__subtitle">Under what conditions we request additional information and/or documents</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, we may contact you to request your information and/or documents. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">If you apply for a refund, we will need you to provide a payment report and additional documents according to the request of our support team.</p>
+      
+      <p class="policy__subtitle">For What Purpose Do We Process Your Personal Data?</p>
+      <p class="policy__text">The purpose of processing the personal data that may be collected is mainly to facilitate your purchase in our online store. Among other purposes is to manage our relationship with you, to be able to offer you our products in accordance with your interests, to improve your user experience and, where appropriate, for the treatment of your requests.</p>
+      <p class="policy__text">The data provided will be kept as long as the commercial relationship is maintained, as long as the interested party does not request its deletion, or during the years necessary to comply with legal obligations.</p>
+      
+      <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
+      <p class="policy__text">We will only use your personal data when the law allows us to.</p>
+      <p class="policy__text">The PayAdmit Gateway uses your payment card details to process your payment request.</p>
+      <p class="policy__text">Most commonly, as we only ask for an email, Minecraft nickname and the server, we use it to provide you the opportunity to buy goods in our online store.</p>
+      
+      <p class="policy__subtitle">To Which Recipients Will the Data Be Disclosed?</p>
+      <p class="policy__text">Your personal data may eventually be communicated if communications had to be made to the authorities in the event that the user had carried out actions contrary to the Law; except as provided herein, we will not transfer the data provided to third parties.</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, and contact you to request your information and/or documents, we share the information/documents with the party which provided the request. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">We may also have to share your personal data with other third parties where you have given your consent for us to do so.</p>
+      
+      <p class="policy__subtitle">Data Security and Retention</p>
+      <p class="policy__text">GalaxyGrip OÜ has adopted and maintains the necessary technical and organizational security measures to protect the personal information that users provide in order to avoid its alteration, loss, treatment or unauthorized access, taking into account the state of technology, nature of the data stored and the risks to which they are exposed.</p>
+      <p class="policy__text">However, please, bear in mind that the security of computer systems is never absolute. Please note that no transmission over the Internet is 100% secure and no data stored on it is invulnerable. We cannot guarantee the security of our Site, databases or services, nor can we guarantee that the information you submit to us will not be intercepted while you are transmitting it to us over the Internet. We are not responsible for the actions of third parties.</p>
+      <p class="policy__text">As for data retention, we will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because PayAdmit has a PCI DSS certificate.</p>
+      
+      <p class="policy__subtitle">What Are Your Legal Rights?</p>
+      <p class="policy__text">Under certain circumstances, you have rights under data protection laws in relation to your personal data.</p>
+      <p class="policy__text">You have the right to:</p>
+      <p class="policy__text">Request Access to your personal data. This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+      <p class="policy__text">Request Correction of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
+      <p class="policy__text">Request Erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing, where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
+      <p class="policy__text">Object To Processing of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
+      <p class="policy__text">Request Restriction of Processing of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data’s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
+      <p class="policy__text">Request the Transfer of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
+      <p class="policy__text">Withdraw Consent at Any Time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
+      <p class="policy__text">If you wish to exercise any of the rights set out above, please contact us.</p>
+      <p class="policy__text">No Fee Usually Required. You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
+      
+      <p class="policy__subtitle">Time Limit Within Which We Respond</p>
+      <p class="policy__text">We try to respond to all legitimate requests within 30 days. Occasionally it may take us longer than a month if your request is particularly complex or if you have made a number of requests. In this case, we will notify you and keep you updated.</p>
     </div>
     `,
     termsConditionsPage_contentInnerHTML: `
@@ -20194,311 +17230,83 @@ export const languageLocalizations = {
     // privacy policy
     privacyPolicyPage_contentInnerHTML: `
     <div class="container">
-    <h1 class="policy__title">PRIVACY POLICY</h1>
-    <p class="policy__update">Effective June 29, 2023</p>
-    <p class="policy__subtitle">What Is This Privacy Policy for?</p>
-    <p class="policy__text">
-    <strong>Adventures in Minecraft</strong> (further "we”, "us”, "our”)
-    respects your privacy and is committed to protecting your personal
-    data. This policy informs you how we look after your personal data
-    and tells you about your privacy rights and how the law protects
-    you. This privacy policy applies to any visitor of the Site/ the
-    user/ the buyer/ the player/ the customer (further "you”, "your”)
-    who uses the Site, registers on it and buys anything in our online
-    store.
-    </p>
-    <p class="policy__text">
-    This Privacy policy is a part of the Agreement between you and us.
-    Before you buy anything in our online store you need to accept our
-    offer. That means that you accept the terms of all the documents
-    that constitute the Agreement. The proper acceptance of the offer in
-    accordance with the law of Estonia is the consistent implementation
-    by you of the following actions: read terms of the Agreement,
-    register on the Site, put a tick in the checkbox that you accept the
-    terms before making a purchase. If you put a tick in the checkbox,
-    you agree with the terms of this Privacy policy in particular.
-    </p>
-    <p class="policy__text">
-    The Site is owned by GalaxyGrip OÜ - a company registered according
-    to legislation of Estonia with its registered number 16776100, whose
-    registered address is Harju maakond, Tallinn, Lasnamäe linnaosa,
-    Katusepapi tn 6-502, 11412.
-    </p>
-    <p class="policy__text">
-    We are the data controller when we collect personal information from
-    our users, buyers, players, customers and clients. We will not pass
-    your personal data on to any third party unless required to do so by
-    law or if you have given us separate written permission to do so.
-    </p>
-    <p class="policy__text">
-    The updated version of this privacy policy is the only one
-    applicable for the duration of the use of the Site until there is no
-    other version that replaces it. We may modify this Privacy policy
-    without notifying you, so please check back often for updates. Any
-    changes made will be available on this page.
-    </p>
-    
-    <p class="policy__subtitle">What Data Do We Collect About You?</p>
-    <p class="policy__text">
-    Personal data, or personal information, means any information about
-    an individual from which that person can be identified. It does not
-    include data where the identity has been removed (anonymous data).
-    We MAY collect, use, store and process different kinds of personal
-    data about you.
-    </p>
-    <p class="policy__text">
-    Your data is collected by the Site. We only ask for an email, when
-    you register on the Site.
-    </p>
-    <p class="policy__text">
-    When you select products in our online store, we ask only your
-    Minecraft nickname and the server.
-    </p>
-    <p class="policy__text">
-    When you have selected the goods and want to pay, you are redirected
-    to the payment page of the BazPay Gateway. The page collects your
-    payment card date in order to process your payment. The payment card
-    data collected by BazPay is your card number, expiry date, your name
-    indicated on the card and your CVV code. We do not collect either
-    keep your payment card information.
-    </p>
-    <p class="policy__subtitle">Third Party Links</p>
-    <p class="policy__text">
-    The Sites practice a link to a payment page provided by the BazPay
-    Gateway in order to collect your payment card information and
-    process your payment request. We guarantee the security of payments
-    when paying by credit or debit card. The BazPay Gateway that
-    provides the service of processing the payment requests complies
-    with PCI DSS requirements for the secure processing of the payer's
-    bank card details.
-    </p>
-    <p class="policy__subtitle">Children</p>
-    <p class="policy__text">
-    This website is not intended for children and we do not knowingly
-    collect data relating to children.
-    </p>
-    <p class="policy__subtitle">Special Category Data</p>
-    <p class="policy__text">
-    We do not anticipate that any special category data will be
-    processed by us in our business relationship with you.
-    </p>
-    <p class="policy__subtitle">What We May Need From You in Addition</p>
-    <p class="policy__text">
-    We may need to request specific information from you to help us
-    confirm your identity and take part in a possible dispute
-    investigation on your purchase or a chargeback. If you apply for a
-    refund, we will need to request additional information/documentation
-    as well.
-    </p>
-    
-    <p class="policy__subtitle">
-    What information we may request from you
-    </p>
-    <p class="policy__text">
-    We may request such personal information from you: your first name,
-    last name, date of birth, registration address, ID code.
-    </p>
-    
-    <p class="policy__subtitle">What documents we may request from you</p>
-    <p class="policy__text">
-    We may request a photo or scan of your ID document (passport, ID
-    card, driving license etc.), a proof of address (it may be a utility
-    bill or bank statement not older than 3 months), photo of your
-    paying card, selfie-photo of your face, selfie-photo of you with
-    your card, selfie-photo of you with your passport. Also we may ask
-    you to provide a payment report that was sent to your email address
-    after you made a purchase in our online store.
-    </p>
-    
-    <p class="policy__subtitle">How do we contact you</p>
-    <p class="policy__text">
-    As long as we have only your email address, we can contact you by
-    email.
-    </p>
-    
-    <p class="policy__subtitle">
-    Under what conditions we request additional information and/or
-    documents
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, we may contact you to request your
-    information and/or documents. Usually it pertains to dispute
-    resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    If you apply for a refund, we will need you to provide a payment
-    report and additional documents according to the request of our
-    support team.
-    </p>
-    
-    <p class="policy__subtitle">
-    For What Purpose Do We Process Your Personal Data?
-    </p>
-    <p class="policy__text">
-    The purpose of processing the personal data that may be collected is
-    mainly to facilitate your purchase in our online store. Among other
-    purposes is to manage our relationship with you, to be able to offer
-    you our products in accordance with your interests, to improve your
-    user experience and, where appropriate, for the treatment of your
-    requests.
-    </p>
-    <p class="policy__text">
-    The data provided will be kept as long as the commercial
-    relationship is maintained, as long as the interested party does not
-    request its deletion, or during the years necessary to comply with
-    legal obligations.
-    </p>
-    
-    <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
-    <p class="policy__text">
-    We will only use your personal data when the law allows us to.
-    </p>
-    <p class="policy__text">
-    The BazPay Gateway uses your payment card details to process your
-    payment request.
-    </p>
-    <p class="policy__text">
-    Most commonly, as we only ask for an email, Minecraft nickname and
-    the server, we use it to provide you the opportunity to buy goods in
-    our online store.
-    </p>
-    
-    <p class="policy__subtitle">
-    To Which Recipients Will the Data Be Disclosed?
-    </p>
-    <p class="policy__text">
-    Your personal data may eventually be communicated if communications
-    had to be made to the authorities in the event that the user had
-    carried out actions contrary to the Law; except as provided herein,
-    we will not transfer the data provided to third parties.
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, and contact you to request your
-    information and/or documents, we share the information/documents
-    with the party which provided the request. Usually it pertains to
-    dispute resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    We may also have to share your personal data with other third
-    parties where you have given your consent for us to do so.
-    </p>
-    
-    <p class="policy__subtitle">Data Security and Retention</p>
-    <p class="policy__text">
-    GalaxyGrip OÜ has adopted and maintains the necessary technical and
-    organizational security measures to protect the personal information
-    that users provide in order to avoid its alteration, loss, treatment
-    or unauthorized access, taking into account the state of technology,
-    nature of the data stored and the risks to which they are exposed.
-    </p>
-    <p class="policy__text">
-    However, please, bear in mind that the security of computer systems
-    is never absolute. Please note that no transmission over the
-    Internet is 100% secure and no data stored on it is invulnerable. We
-    cannot guarantee the security of our Site, databases or services,
-    nor can we guarantee that the information you submit to us will not
-    be intercepted while you are transmitting it to us over the
-    Internet. We are not responsible for the actions of third parties.
-    </p>
-    <p class="policy__text">
-    As for data retention, we will only retain your personal data for as
-    long as necessary to fulfill the purposes we collected it for,
-    including for the purposes of satisfying any legal, accounting, or
-    reporting requirements.
-    </p>
-    <p class="policy__text">
-    Your payment card details are retained by encryption methods that
-    are PCI DSS compliant because BazPay has a PCI DSS certificate.
-    </p>
-    
-    <p class="policy__subtitle">What Are Your Legal Rights?</p>
-    <p class="policy__text">
-    Under certain circumstances, you have rights under data protection
-    laws in relation to your personal data.
-    </p>
-    <p class="policy__text">You have the right to:</p>
-    <p class="policy__text">
-    Request Access to your personal data. This enables you to receive a
-    copy of the personal data we hold about you and to check that we are
-    lawfully processing it.
-    </p>
-    <p class="policy__text">
-    Request Correction of the personal data that we hold about you. This
-    enables you to have any incomplete or inaccurate data we hold about
-    you corrected, though we may need to verify the accuracy of the new
-    data you provide to us.
-    </p>
-    <p class="policy__text">
-    Request Erasure of your personal data. This enables you to ask us to
-    delete or remove personal data where there is no good reason for us
-    continuing to process it. You also have the right to ask us to
-    delete or remove your personal data where you have successfully
-    exercised your right to object to processing, where we may have
-    processed your information unlawfully or where we are required to
-    erase your personal data to comply with local law. Note, however,
-    that we may not always be able to comply with your request of
-    erasure for specific legal reasons which will be notified to you, if
-    applicable, at the time of your request.
-    </p>
-    <p class="policy__text">
-    Object To Processing of your personal data where we are relying on a
-    legitimate interest (or those of a third party) and there is
-    something about your particular situation which makes you want to
-    object to processing on this ground as you feel it impacts on your
-    fundamental rights and freedoms. You also have the right to object
-    where we are processing your personal data for direct marketing
-    purposes. In some cases, we may demonstrate that we have compelling
-    legitimate grounds to process your information which override your
-    rights and freedoms.
-    </p>
-    <p class="policy__text">
-    Request Restriction of Processing of your personal data. This
-    enables you to ask us to suspend the processing of your personal
-    data in the following scenarios: (a) if you want us to establish the
-    data’s accuracy; (b) where our use of the data is unlawful but you
-    do not want us to erase it; (c) where you need us to hold the data
-    even if we no longer require it as you need it to establish,
-    exercise or defend legal claims; or (d) you have objected to our use
-    of your data but we need to verify whether we have overriding
-    legitimate grounds to use it.
-    </p>
-    <p class="policy__text">
-    Request the Transfer of your personal data to you or to a third
-    party. We will provide to you, or a third party you have chosen,
-    your personal data in a structured, commonly used, machine-readable
-    format. Note that this right only applies to automated information
-    which you initially provided consent for us to use or where we used
-    the information to perform a contract with you.
-    </p>
-    <p class="policy__text">
-    Withdraw Consent at Any Time where we are relying on consent to
-    process your personal data. However, this will not affect the
-    lawfulness of any processing carried out before you withdraw your
-    consent. If you withdraw your consent, we may not be able to provide
-    certain products or services to you. We will advise you if this is
-    the case at the time you withdraw your consent.
-    </p>
-    <p class="policy__text">
-    If you wish to exercise any of the rights set out above, please
-    contact us.
-    </p>
-    <p class="policy__text">
-    No Fee Usually Required. You will not have to pay a fee to access
-    your personal data (or to exercise any of the other rights).
-    However, we may charge a reasonable fee if your request is clearly
-    unfounded, repetitive or excessive. Alternatively, we may refuse to
-    comply with your request in these circumstances.
-    </p>
-    
-    <p class="policy__subtitle">Time Limit Within Which We Respond</p>
-    <p class="policy__text">
-    We try to respond to all legitimate requests within 30 days.
-    Occasionally it may take us longer than a month if your request is
-    particularly complex or if you have made a number of requests. In
-    this case, we will notify you and keep you updated.
-    </p>
+      <h1 class="policy__title">PRIVACY POLICY</h1>
+
+      <p class="policy__update">Effective June 29, 2023</p>
+
+      <p class="policy__subtitle">What Is This Privacy Policy for?</p>
+      <p class="policy__text"><strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. This policy informs you how we look after your personal data and tells you about your privacy rights and how the law protects you. This privacy policy applies to any visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”) who uses the Site, registers on it and buys anything in our online store.</p>
+      <p class="policy__text">This Privacy policy is a part of the Agreement between you and us. Before you buy anything in our online store you need to accept our offer. That means that you accept the terms of all the documents that constitute the Agreement. The proper acceptance of the offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase.  If you put a tick in the checkbox, you agree with the terms of this Privacy policy in particular.</p>
+      <p class="policy__text">The Site is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
+      <p class="policy__text">We are the data controller when we collect personal information from our users, buyers, players, customers and clients. We will not pass your personal data on to any third party unless required to do so by law or if you have given us separate written permission to do so.</p>
+      <p class="policy__text">The updated version of this privacy policy is the only one applicable for the duration of the use of the Site until there is no other version that replaces it. We may modify this Privacy policy without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
+      
+      <p class="policy__subtitle">What Data Do We Collect About You?</p>
+      <p class="policy__text">Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data). We MAY collect, use, store and process different kinds of personal data about you.</p>
+      <p class="policy__text">Your data is collected by the Site. We only ask for an email, when you register on the Site.</p>
+      <p class="policy__text">When you select products in our online store, we ask only your Minecraft nickname and the server.</p>
+      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the PayAdmit Gateway. The page collects your payment card date in order to process your payment. The payment card data collected by PayAdmit is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect either keep your payment card information.</p>
+
+      <p class="policy__subtitle">Third Party Links</p>
+      <p class="policy__text">The Sites practice a link to a payment page provided by the PayAdmit Gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The PayAdmit Gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+
+      <p class="policy__subtitle">Children</p>
+      <p class="policy__text">This website is not intended for children and we do not knowingly collect data relating to children.</p>
+
+      <p class="policy__subtitle">Special Category Data</p>
+      <p class="policy__text">We do not anticipate that any special category data will be processed by us in our business relationship with you.</p>
+
+      <p class="policy__subtitle">What We May Need From You in Addition</p>
+      <p class="policy__text">We may need to request specific information from you to help us confirm your identity and take part in a possible dispute investigation on your purchase or a chargeback. If you apply for a refund, we will need to request additional information/documentation as well.</p>
+      
+      <p class="policy__subtitle">What information we may request from you</p>
+      <p class="policy__text">We may request such personal information from you: your first name, last name, date of birth, registration address, ID code.</p>
+      
+      <p class="policy__subtitle">What documents we may request from you</p>
+      <p class="policy__text">We may request a photo or scan of your ID document (passport, ID card, driving license etc.), a proof of address (it may be a utility bill or bank statement not older than 3 months), photo of your paying card, selfie-photo of your face, selfie-photo of you with your card, selfie-photo of you with your passport. Also we may ask you to provide a payment report that was sent to your email address after you made a purchase in our online store.</p>
+      
+      <p class="policy__subtitle">How do we contact you</p>
+      <p class="policy__text">As long as we have only your email address, we can contact you by email.</p>
+      
+      <p class="policy__subtitle">Under what conditions we request additional information and/or documents</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, we may contact you to request your information and/or documents. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">If you apply for a refund, we will need you to provide a payment report and additional documents according to the request of our support team.</p>
+      
+      <p class="policy__subtitle">For What Purpose Do We Process Your Personal Data?</p>
+      <p class="policy__text">The purpose of processing the personal data that may be collected is mainly to facilitate your purchase in our online store. Among other purposes is to manage our relationship with you, to be able to offer you our products in accordance with your interests, to improve your user experience and, where appropriate, for the treatment of your requests.</p>
+      <p class="policy__text">The data provided will be kept as long as the commercial relationship is maintained, as long as the interested party does not request its deletion, or during the years necessary to comply with legal obligations.</p>
+      
+      <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
+      <p class="policy__text">We will only use your personal data when the law allows us to.</p>
+      <p class="policy__text">The PayAdmit Gateway uses your payment card details to process your payment request.</p>
+      <p class="policy__text">Most commonly, as we only ask for an email, Minecraft nickname and the server, we use it to provide you the opportunity to buy goods in our online store.</p>
+      
+      <p class="policy__subtitle">To Which Recipients Will the Data Be Disclosed?</p>
+      <p class="policy__text">Your personal data may eventually be communicated if communications had to be made to the authorities in the event that the user had carried out actions contrary to the Law; except as provided herein, we will not transfer the data provided to third parties.</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, and contact you to request your information and/or documents, we share the information/documents with the party which provided the request. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">We may also have to share your personal data with other third parties where you have given your consent for us to do so.</p>
+      
+      <p class="policy__subtitle">Data Security and Retention</p>
+      <p class="policy__text">GalaxyGrip OÜ has adopted and maintains the necessary technical and organizational security measures to protect the personal information that users provide in order to avoid its alteration, loss, treatment or unauthorized access, taking into account the state of technology, nature of the data stored and the risks to which they are exposed.</p>
+      <p class="policy__text">However, please, bear in mind that the security of computer systems is never absolute. Please note that no transmission over the Internet is 100% secure and no data stored on it is invulnerable. We cannot guarantee the security of our Site, databases or services, nor can we guarantee that the information you submit to us will not be intercepted while you are transmitting it to us over the Internet. We are not responsible for the actions of third parties.</p>
+      <p class="policy__text">As for data retention, we will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because PayAdmit has a PCI DSS certificate.</p>
+      
+      <p class="policy__subtitle">What Are Your Legal Rights?</p>
+      <p class="policy__text">Under certain circumstances, you have rights under data protection laws in relation to your personal data.</p>
+      <p class="policy__text">You have the right to:</p>
+      <p class="policy__text">Request Access to your personal data. This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+      <p class="policy__text">Request Correction of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
+      <p class="policy__text">Request Erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing, where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
+      <p class="policy__text">Object To Processing of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
+      <p class="policy__text">Request Restriction of Processing of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data’s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
+      <p class="policy__text">Request the Transfer of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
+      <p class="policy__text">Withdraw Consent at Any Time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
+      <p class="policy__text">If you wish to exercise any of the rights set out above, please contact us.</p>
+      <p class="policy__text">No Fee Usually Required. You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
+      
+      <p class="policy__subtitle">Time Limit Within Which We Respond</p>
+      <p class="policy__text">We try to respond to all legitimate requests within 30 days. Occasionally it may take us longer than a month if your request is particularly complex or if you have made a number of requests. In this case, we will notify you and keep you updated.</p>
     </div>
     `,
     termsConditionsPage_contentInnerHTML: `
@@ -21584,311 +18392,83 @@ export const languageLocalizations = {
     // privacy policy
     privacyPolicyPage_contentInnerHTML: `
     <div class="container">
-    <h1 class="policy__title">PRIVACY POLICY</h1>
-    <p class="policy__update">Effective June 29, 2023</p>
-    <p class="policy__subtitle">What Is This Privacy Policy for?</p>
-    <p class="policy__text">
-    <strong>Adventures in Minecraft</strong> (further "we”, "us”, "our”)
-    respects your privacy and is committed to protecting your personal
-    data. This policy informs you how we look after your personal data
-    and tells you about your privacy rights and how the law protects
-    you. This privacy policy applies to any visitor of the Site/ the
-    user/ the buyer/ the player/ the customer (further "you”, "your”)
-    who uses the Site, registers on it and buys anything in our online
-    store.
-    </p>
-    <p class="policy__text">
-    This Privacy policy is a part of the Agreement between you and us.
-    Before you buy anything in our online store you need to accept our
-    offer. That means that you accept the terms of all the documents
-    that constitute the Agreement. The proper acceptance of the offer in
-    accordance with the law of Estonia is the consistent implementation
-    by you of the following actions: read terms of the Agreement,
-    register on the Site, put a tick in the checkbox that you accept the
-    terms before making a purchase. If you put a tick in the checkbox,
-    you agree with the terms of this Privacy policy in particular.
-    </p>
-    <p class="policy__text">
-    The Site is owned by GalaxyGrip OÜ - a company registered according
-    to legislation of Estonia with its registered number 16776100, whose
-    registered address is Harju maakond, Tallinn, Lasnamäe linnaosa,
-    Katusepapi tn 6-502, 11412.
-    </p>
-    <p class="policy__text">
-    We are the data controller when we collect personal information from
-    our users, buyers, players, customers and clients. We will not pass
-    your personal data on to any third party unless required to do so by
-    law or if you have given us separate written permission to do so.
-    </p>
-    <p class="policy__text">
-    The updated version of this privacy policy is the only one
-    applicable for the duration of the use of the Site until there is no
-    other version that replaces it. We may modify this Privacy policy
-    without notifying you, so please check back often for updates. Any
-    changes made will be available on this page.
-    </p>
-    
-    <p class="policy__subtitle">What Data Do We Collect About You?</p>
-    <p class="policy__text">
-    Personal data, or personal information, means any information about
-    an individual from which that person can be identified. It does not
-    include data where the identity has been removed (anonymous data).
-    We MAY collect, use, store and process different kinds of personal
-    data about you.
-    </p>
-    <p class="policy__text">
-    Your data is collected by the Site. We only ask for an email, when
-    you register on the Site.
-    </p>
-    <p class="policy__text">
-    When you select products in our online store, we ask only your
-    Minecraft nickname and the server.
-    </p>
-    <p class="policy__text">
-    When you have selected the goods and want to pay, you are redirected
-    to the payment page of the BazPay Gateway. The page collects your
-    payment card date in order to process your payment. The payment card
-    data collected by BazPay is your card number, expiry date, your name
-    indicated on the card and your CVV code. We do not collect either
-    keep your payment card information.
-    </p>
-    <p class="policy__subtitle">Third Party Links</p>
-    <p class="policy__text">
-    The Sites practice a link to a payment page provided by the BazPay
-    Gateway in order to collect your payment card information and
-    process your payment request. We guarantee the security of payments
-    when paying by credit or debit card. The BazPay Gateway that
-    provides the service of processing the payment requests complies
-    with PCI DSS requirements for the secure processing of the payer's
-    bank card details.
-    </p>
-    <p class="policy__subtitle">Children</p>
-    <p class="policy__text">
-    This website is not intended for children and we do not knowingly
-    collect data relating to children.
-    </p>
-    <p class="policy__subtitle">Special Category Data</p>
-    <p class="policy__text">
-    We do not anticipate that any special category data will be
-    processed by us in our business relationship with you.
-    </p>
-    <p class="policy__subtitle">What We May Need From You in Addition</p>
-    <p class="policy__text">
-    We may need to request specific information from you to help us
-    confirm your identity and take part in a possible dispute
-    investigation on your purchase or a chargeback. If you apply for a
-    refund, we will need to request additional information/documentation
-    as well.
-    </p>
-    
-    <p class="policy__subtitle">
-    What information we may request from you
-    </p>
-    <p class="policy__text">
-    We may request such personal information from you: your first name,
-    last name, date of birth, registration address, ID code.
-    </p>
-    
-    <p class="policy__subtitle">What documents we may request from you</p>
-    <p class="policy__text">
-    We may request a photo or scan of your ID document (passport, ID
-    card, driving license etc.), a proof of address (it may be a utility
-    bill or bank statement not older than 3 months), photo of your
-    paying card, selfie-photo of your face, selfie-photo of you with
-    your card, selfie-photo of you with your passport. Also we may ask
-    you to provide a payment report that was sent to your email address
-    after you made a purchase in our online store.
-    </p>
-    
-    <p class="policy__subtitle">How do we contact you</p>
-    <p class="policy__text">
-    As long as we have only your email address, we can contact you by
-    email.
-    </p>
-    
-    <p class="policy__subtitle">
-    Under what conditions we request additional information and/or
-    documents
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, we may contact you to request your
-    information and/or documents. Usually it pertains to dispute
-    resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    If you apply for a refund, we will need you to provide a payment
-    report and additional documents according to the request of our
-    support team.
-    </p>
-    
-    <p class="policy__subtitle">
-    For What Purpose Do We Process Your Personal Data?
-    </p>
-    <p class="policy__text">
-    The purpose of processing the personal data that may be collected is
-    mainly to facilitate your purchase in our online store. Among other
-    purposes is to manage our relationship with you, to be able to offer
-    you our products in accordance with your interests, to improve your
-    user experience and, where appropriate, for the treatment of your
-    requests.
-    </p>
-    <p class="policy__text">
-    The data provided will be kept as long as the commercial
-    relationship is maintained, as long as the interested party does not
-    request its deletion, or during the years necessary to comply with
-    legal obligations.
-    </p>
-    
-    <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
-    <p class="policy__text">
-    We will only use your personal data when the law allows us to.
-    </p>
-    <p class="policy__text">
-    The BazPay Gateway uses your payment card details to process your
-    payment request.
-    </p>
-    <p class="policy__text">
-    Most commonly, as we only ask for an email, Minecraft nickname and
-    the server, we use it to provide you the opportunity to buy goods in
-    our online store.
-    </p>
-    
-    <p class="policy__subtitle">
-    To Which Recipients Will the Data Be Disclosed?
-    </p>
-    <p class="policy__text">
-    Your personal data may eventually be communicated if communications
-    had to be made to the authorities in the event that the user had
-    carried out actions contrary to the Law; except as provided herein,
-    we will not transfer the data provided to third parties.
-    </p>
-    <p class="policy__text">
-    If we receive a request from a payment provider, an International
-    Payment Card System or a bank, and contact you to request your
-    information and/or documents, we share the information/documents
-    with the party which provided the request. Usually it pertains to
-    dispute resolutions, fraud investigations, chargebacks.
-    </p>
-    <p class="policy__text">
-    We may also have to share your personal data with other third
-    parties where you have given your consent for us to do so.
-    </p>
-    
-    <p class="policy__subtitle">Data Security and Retention</p>
-    <p class="policy__text">
-    GalaxyGrip OÜ has adopted and maintains the necessary technical and
-    organizational security measures to protect the personal information
-    that users provide in order to avoid its alteration, loss, treatment
-    or unauthorized access, taking into account the state of technology,
-    nature of the data stored and the risks to which they are exposed.
-    </p>
-    <p class="policy__text">
-    However, please, bear in mind that the security of computer systems
-    is never absolute. Please note that no transmission over the
-    Internet is 100% secure and no data stored on it is invulnerable. We
-    cannot guarantee the security of our Site, databases or services,
-    nor can we guarantee that the information you submit to us will not
-    be intercepted while you are transmitting it to us over the
-    Internet. We are not responsible for the actions of third parties.
-    </p>
-    <p class="policy__text">
-    As for data retention, we will only retain your personal data for as
-    long as necessary to fulfill the purposes we collected it for,
-    including for the purposes of satisfying any legal, accounting, or
-    reporting requirements.
-    </p>
-    <p class="policy__text">
-    Your payment card details are retained by encryption methods that
-    are PCI DSS compliant because BazPay has a PCI DSS certificate.
-    </p>
-    
-    <p class="policy__subtitle">What Are Your Legal Rights?</p>
-    <p class="policy__text">
-    Under certain circumstances, you have rights under data protection
-    laws in relation to your personal data.
-    </p>
-    <p class="policy__text">You have the right to:</p>
-    <p class="policy__text">
-    Request Access to your personal data. This enables you to receive a
-    copy of the personal data we hold about you and to check that we are
-    lawfully processing it.
-    </p>
-    <p class="policy__text">
-    Request Correction of the personal data that we hold about you. This
-    enables you to have any incomplete or inaccurate data we hold about
-    you corrected, though we may need to verify the accuracy of the new
-    data you provide to us.
-    </p>
-    <p class="policy__text">
-    Request Erasure of your personal data. This enables you to ask us to
-    delete or remove personal data where there is no good reason for us
-    continuing to process it. You also have the right to ask us to
-    delete or remove your personal data where you have successfully
-    exercised your right to object to processing, where we may have
-    processed your information unlawfully or where we are required to
-    erase your personal data to comply with local law. Note, however,
-    that we may not always be able to comply with your request of
-    erasure for specific legal reasons which will be notified to you, if
-    applicable, at the time of your request.
-    </p>
-    <p class="policy__text">
-    Object To Processing of your personal data where we are relying on a
-    legitimate interest (or those of a third party) and there is
-    something about your particular situation which makes you want to
-    object to processing on this ground as you feel it impacts on your
-    fundamental rights and freedoms. You also have the right to object
-    where we are processing your personal data for direct marketing
-    purposes. In some cases, we may demonstrate that we have compelling
-    legitimate grounds to process your information which override your
-    rights and freedoms.
-    </p>
-    <p class="policy__text">
-    Request Restriction of Processing of your personal data. This
-    enables you to ask us to suspend the processing of your personal
-    data in the following scenarios: (a) if you want us to establish the
-    data’s accuracy; (b) where our use of the data is unlawful but you
-    do not want us to erase it; (c) where you need us to hold the data
-    even if we no longer require it as you need it to establish,
-    exercise or defend legal claims; or (d) you have objected to our use
-    of your data but we need to verify whether we have overriding
-    legitimate grounds to use it.
-    </p>
-    <p class="policy__text">
-    Request the Transfer of your personal data to you or to a third
-    party. We will provide to you, or a third party you have chosen,
-    your personal data in a structured, commonly used, machine-readable
-    format. Note that this right only applies to automated information
-    which you initially provided consent for us to use or where we used
-    the information to perform a contract with you.
-    </p>
-    <p class="policy__text">
-    Withdraw Consent at Any Time where we are relying on consent to
-    process your personal data. However, this will not affect the
-    lawfulness of any processing carried out before you withdraw your
-    consent. If you withdraw your consent, we may not be able to provide
-    certain products or services to you. We will advise you if this is
-    the case at the time you withdraw your consent.
-    </p>
-    <p class="policy__text">
-    If you wish to exercise any of the rights set out above, please
-    contact us.
-    </p>
-    <p class="policy__text">
-    No Fee Usually Required. You will not have to pay a fee to access
-    your personal data (or to exercise any of the other rights).
-    However, we may charge a reasonable fee if your request is clearly
-    unfounded, repetitive or excessive. Alternatively, we may refuse to
-    comply with your request in these circumstances.
-    </p>
-    
-    <p class="policy__subtitle">Time Limit Within Which We Respond</p>
-    <p class="policy__text">
-    We try to respond to all legitimate requests within 30 days.
-    Occasionally it may take us longer than a month if your request is
-    particularly complex or if you have made a number of requests. In
-    this case, we will notify you and keep you updated.
-    </p>
+      <h1 class="policy__title">PRIVACY POLICY</h1>
+
+      <p class="policy__update">Effective June 29, 2023</p>
+
+      <p class="policy__subtitle">What Is This Privacy Policy for?</p>
+      <p class="policy__text"><strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. This policy informs you how we look after your personal data and tells you about your privacy rights and how the law protects you. This privacy policy applies to any visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”) who uses the Site, registers on it and buys anything in our online store.</p>
+      <p class="policy__text">This Privacy policy is a part of the Agreement between you and us. Before you buy anything in our online store you need to accept our offer. That means that you accept the terms of all the documents that constitute the Agreement. The proper acceptance of the offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase.  If you put a tick in the checkbox, you agree with the terms of this Privacy policy in particular.</p>
+      <p class="policy__text">The Site is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
+      <p class="policy__text">We are the data controller when we collect personal information from our users, buyers, players, customers and clients. We will not pass your personal data on to any third party unless required to do so by law or if you have given us separate written permission to do so.</p>
+      <p class="policy__text">The updated version of this privacy policy is the only one applicable for the duration of the use of the Site until there is no other version that replaces it. We may modify this Privacy policy without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
+      
+      <p class="policy__subtitle">What Data Do We Collect About You?</p>
+      <p class="policy__text">Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data). We MAY collect, use, store and process different kinds of personal data about you.</p>
+      <p class="policy__text">Your data is collected by the Site. We only ask for an email, when you register on the Site.</p>
+      <p class="policy__text">When you select products in our online store, we ask only your Minecraft nickname and the server.</p>
+      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the PayAdmit Gateway. The page collects your payment card date in order to process your payment. The payment card data collected by PayAdmit is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect either keep your payment card information.</p>
+
+      <p class="policy__subtitle">Third Party Links</p>
+      <p class="policy__text">The Sites practice a link to a payment page provided by the PayAdmit Gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The PayAdmit Gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+
+      <p class="policy__subtitle">Children</p>
+      <p class="policy__text">This website is not intended for children and we do not knowingly collect data relating to children.</p>
+
+      <p class="policy__subtitle">Special Category Data</p>
+      <p class="policy__text">We do not anticipate that any special category data will be processed by us in our business relationship with you.</p>
+
+      <p class="policy__subtitle">What We May Need From You in Addition</p>
+      <p class="policy__text">We may need to request specific information from you to help us confirm your identity and take part in a possible dispute investigation on your purchase or a chargeback. If you apply for a refund, we will need to request additional information/documentation as well.</p>
+      
+      <p class="policy__subtitle">What information we may request from you</p>
+      <p class="policy__text">We may request such personal information from you: your first name, last name, date of birth, registration address, ID code.</p>
+      
+      <p class="policy__subtitle">What documents we may request from you</p>
+      <p class="policy__text">We may request a photo or scan of your ID document (passport, ID card, driving license etc.), a proof of address (it may be a utility bill or bank statement not older than 3 months), photo of your paying card, selfie-photo of your face, selfie-photo of you with your card, selfie-photo of you with your passport. Also we may ask you to provide a payment report that was sent to your email address after you made a purchase in our online store.</p>
+      
+      <p class="policy__subtitle">How do we contact you</p>
+      <p class="policy__text">As long as we have only your email address, we can contact you by email.</p>
+      
+      <p class="policy__subtitle">Under what conditions we request additional information and/or documents</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, we may contact you to request your information and/or documents. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">If you apply for a refund, we will need you to provide a payment report and additional documents according to the request of our support team.</p>
+      
+      <p class="policy__subtitle">For What Purpose Do We Process Your Personal Data?</p>
+      <p class="policy__text">The purpose of processing the personal data that may be collected is mainly to facilitate your purchase in our online store. Among other purposes is to manage our relationship with you, to be able to offer you our products in accordance with your interests, to improve your user experience and, where appropriate, for the treatment of your requests.</p>
+      <p class="policy__text">The data provided will be kept as long as the commercial relationship is maintained, as long as the interested party does not request its deletion, or during the years necessary to comply with legal obligations.</p>
+      
+      <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
+      <p class="policy__text">We will only use your personal data when the law allows us to.</p>
+      <p class="policy__text">The PayAdmit Gateway uses your payment card details to process your payment request.</p>
+      <p class="policy__text">Most commonly, as we only ask for an email, Minecraft nickname and the server, we use it to provide you the opportunity to buy goods in our online store.</p>
+      
+      <p class="policy__subtitle">To Which Recipients Will the Data Be Disclosed?</p>
+      <p class="policy__text">Your personal data may eventually be communicated if communications had to be made to the authorities in the event that the user had carried out actions contrary to the Law; except as provided herein, we will not transfer the data provided to third parties.</p>
+      <p class="policy__text">If we receive a request from a payment provider, an International Payment Card System or a bank, and contact you to request your information and/or documents, we share the information/documents with the party which provided the request. Usually it pertains to dispute resolutions, fraud investigations, chargebacks.</p>
+      <p class="policy__text">We may also have to share your personal data with other third parties where you have given your consent for us to do so.</p>
+      
+      <p class="policy__subtitle">Data Security and Retention</p>
+      <p class="policy__text">GalaxyGrip OÜ has adopted and maintains the necessary technical and organizational security measures to protect the personal information that users provide in order to avoid its alteration, loss, treatment or unauthorized access, taking into account the state of technology, nature of the data stored and the risks to which they are exposed.</p>
+      <p class="policy__text">However, please, bear in mind that the security of computer systems is never absolute. Please note that no transmission over the Internet is 100% secure and no data stored on it is invulnerable. We cannot guarantee the security of our Site, databases or services, nor can we guarantee that the information you submit to us will not be intercepted while you are transmitting it to us over the Internet. We are not responsible for the actions of third parties.</p>
+      <p class="policy__text">As for data retention, we will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because PayAdmit has a PCI DSS certificate.</p>
+      
+      <p class="policy__subtitle">What Are Your Legal Rights?</p>
+      <p class="policy__text">Under certain circumstances, you have rights under data protection laws in relation to your personal data.</p>
+      <p class="policy__text">You have the right to:</p>
+      <p class="policy__text">Request Access to your personal data. This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+      <p class="policy__text">Request Correction of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
+      <p class="policy__text">Request Erasure of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing, where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
+      <p class="policy__text">Object To Processing of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
+      <p class="policy__text">Request Restriction of Processing of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data’s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
+      <p class="policy__text">Request the Transfer of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
+      <p class="policy__text">Withdraw Consent at Any Time where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
+      <p class="policy__text">If you wish to exercise any of the rights set out above, please contact us.</p>
+      <p class="policy__text">No Fee Usually Required. You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
+      
+      <p class="policy__subtitle">Time Limit Within Which We Respond</p>
+      <p class="policy__text">We try to respond to all legitimate requests within 30 days. Occasionally it may take us longer than a month if your request is particularly complex or if you have made a number of requests. In this case, we will notify you and keep you updated.</p>
     </div>
     `,
     termsConditionsPage_contentInnerHTML: `
