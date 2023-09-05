@@ -3479,7 +3479,7 @@ export const languageLocalizations = {
     </div>
     `,
   },
-  kz: {
+  kk: {
     // starting tips page
     "starting-tips-page__title": "Ойнауды қалай бастау керек?",
     "starting-tips-page__button": "Қазір бастаңыз",
@@ -12593,7 +12593,7 @@ export const languageLocalizations = {
     </div>
     `,
   },
-  cn: {
+  "zh-hant": {
     // starting tips page
     "starting-tips-page__title": "如何开始玩？",
     "starting-tips-page__button": "立即开始",

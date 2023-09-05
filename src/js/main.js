@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const detectedLanguage = window.location.pathname.includes("/ru/")
     ? "ru"
     : localStorage.getItem("language") || DEFAULT_LANGUAGE;
-
+  console.log("detectedLanguage", detectedLanguage);
   if (detectedLanguage === "ru" && window.location.pathname === "/") {
     window.open(`${window.location.origin}/ru`, "_self");
   }
