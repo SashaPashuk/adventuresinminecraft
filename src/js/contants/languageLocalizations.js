@@ -5505,26 +5505,26 @@ export const languageLocalizations = {
     
     The very text of Terms and Conditions; <br />
     Privacy Policy
-    <a href="/kz/pages/privacy-policy">https://adventuresinminecraft.com/kz/pages/privacy-policy</a>
+    <a href="/kk/pages/privacy-policy">https://adventuresinminecraft.com/kk/pages/privacy-policy</a>
     <br />
     Cookies Policy
-    <a href="/kz/pages/cookie-policy">https://adventuresinminecraft.com/kz/pages/cookie-policy</a>
+    <a href="/kk/pages/cookie-policy">https://adventuresinminecraft.com/kk/pages/cookie-policy</a>
     <br />
     “Rules”
-    <a href="/kz/pages/rules">https://adventuresinminecraft.com/kz/pages/rules</a>
+    <a href="/kk/pages/rules">https://adventuresinminecraft.com/kk/pages/rules</a>
     <br />
     “Description of Donations”
-    <a href="/kz/pages/donation-description">https://adventuresinminecraft.com/kz/pages/donation-description</a>
+    <a href="/kk/pages/donation-description">https://adventuresinminecraft.com/kk/pages/donation-description</a>
     <br />
     “How to Start Playing?”
-    <a href="/kz/pages/starting-tips">https://adventuresinminecraft.com/kz/pages/starting-tips</a>
+    <a href="/kk/pages/starting-tips">https://adventuresinminecraft.com/kk/pages/starting-tips</a>
     <br />
     “Launchers”
-    <a href="/kz/pages/launcher-download">https://adventuresinminecraft.com/kz/pages/launcher-download</a>
+    <a href="/kk/pages/launcher-download">https://adventuresinminecraft.com/kk/pages/launcher-download</a>
     <br />
-    “Mods” <a href="/kz/pages/mods">https://adventuresinminecraft.com/kz/pages/mods</a>
+    “Mods” <a href="/kk/pages/mods">https://adventuresinminecraft.com/kk/pages/mods</a>
     <br />
-    “FAQ” <a href="/kz/pages/faq">https://adventuresinminecraft.com/kz/pages/faq</a>
+    “FAQ” <a href="/kk/pages/faq">https://adventuresinminecraft.com/kk/pages/faq</a>
     <br />
     The proper acceptance of this offer in accordance with the law of
     Estonia is the consistent implementation by you of the following
@@ -5978,7 +5978,7 @@ export const languageLocalizations = {
     This policy describes how Adventures in Minecraft uses cookies and
     other related technologies (collectively referred to as “cookies'')
     when you interact with us on
-    <a href="/">https://adventuresinminecraft.com/kz</a> (the
+    <a href="/">https://adventuresinminecraft.com/kk</a> (the
     “Site”). The Site is owned by GalaxyGrip OÜ - a company registered
     according to legislation of Estonia with its registered number
     16776100, whose registered address is Harju maakond, Tallinn,
@@ -14718,7 +14718,7 @@ export const languageLocalizations = {
     "1165_p_3": `Bu modla siz öz fəsillərinizi yarada və onların parametrlərini düzəldə bilərsiniz. Siz oyunda hansı ayların təmsil olunacağını seçə, həmçinin hər mövsümün müddətini konfiqurasiya edə bilərsiniz. Bu, ilin vaxtından asılı olaraq dəyişən müxtəlif növ mənzərələr yaratmağa imkan verəcəkdir.`,
     "1165_p_4": `Bundan əlavə, "Vaxt və Fəsillər" modu oyunda gün və gecələrin uzunluğunu dəyişməyə imkan verir. Siz tikinti və ya kəşfiyyat üçün daha çox vaxt verən daha qısa və ya daha uzun bir gün təyin edə bilərsiniz. Siz həmçinin gündüz və gecə dəyişikliklərinin tezliyini tənzimləyə və günəşin çıxması və qürub kimi əlavə effektlər əlavə edə bilərsiniz.`,
     "1165_p_5": `Bu mod həm də öz mülahizənizlə havanı dəyişmək imkanı verir. İstənilən vaxt yağış, fırtına və ya günəşli hava çağıra bilərsiniz. Bu, oyunda atmosfer və təsir edici yerlər yaratmaq üçün yeni imkanlar açır.`,
-    "1165_h2_2": '2. "Genişləndirilmiş İmkanlar" Modu',
+    "1165_h2_2": '2. "Genişləndirilmiş İmkanlar" Mod',
     "1165_p_6": `"Genişləndirilmiş İmkanlar" modu Minecraft 1.16.5 üçün mövcud olan başqa bir maraqlı moddur. Bu, oyunçulara daha çox çeviklik və oyun üzərində nəzarət təmin edərək, oyunun funksionallığını və imkanlarını genişləndirir.`,
     "1165_p_7": `Bu mod sizə daha mürəkkəb və unikal konstruksiyalar yaratmağa imkan verən yeni alətlər, bloklar və elementlər əlavə edir. Yeni materiallar və alətlər sizə Minecraft dünyanızı qurmaq və bəzəmək üçün daha çox seçim imkanı verir. Bu mod tərəfindən təqdim olunan yeni bloklardan və detallardan istifadə edərək heyrətamiz strukturlar yarada bilərsiniz.`,
     "1165_p_8": `Üstəlik, "Genişləndirilmiş İmkanlar" moduna oyunda avtomatlaşdırma funksiyası daxildir. O, resurs toplama, məhsul istehsalını və digər gündəlik işləri avtomatlaşdırmağa imkan verən müxtəlif mexanizmlər və cihazlar təklif edir. Bu, oyunu asanlaşdırır və diqqətinizi oyunun daha yaradıcı və maraqlı tərəflərinə yönəltməyə imkan verir.`,
@@ -18254,7 +18254,7 @@ export const languageLocalizations = {
     "1122_oruzhie_p_1": `Minecraft 游戏修改为扩展您的游戏体验提供了惊人的可能性。如果您正在寻找 1.12.2 版本的武器模组，那么您来对地方了。在本文中，我们将讨论几种流行的武器模组，它们将为您的游戏增加新的战斗和冒险机会。`,
     "1122_oruzhie_p_2": `版本 1.12.2 的制作武器模组让玩家能够在 Minecraft 游戏中使用制作来创建各种类型的武器。这增加了新的令人兴奋的可能性并扩展了游戏玩法。`,
     "1122_oruzhie_p_3": `您可以使用 1.12.2 版本中的几种流行的制作武器模组。这里是其中的一些：`,
-    "1122_oruzhie_li_1": `WeaponCraft - 此模组允许您创建各种类型的武器，包括剑、弓、箭和其他物品。它添加了新的制作配方，因此您可以制造强大的武器来帮助您对抗暴徒。`,
+    "1122_oruzhie_li_1": `武器工艺 - 此模组允许您创建各种类型的武器，包括剑、弓、箭和其他物品。它添加了新的制作配方，因此您可以制造强大的武器来帮助您对抗暴徒。`,
     "1122_oruzhie_li_2": `可制作的枪支 - 该模组引入了枪支的可制作配方。您将能够制造手枪、步枪、霰弹枪和其他类型的枪支。这个模组增加了你的战斗能力的真实感和多样性。`,
     "1122_oruzhie_p_4": `要下载并安装制作武器模组1.12.2，您可以参考专门针对Minecraft修改的官方资源。在这些资源中，您将找到下载和安装模组的详细说明。`,
     "1122_oruzhie_p_5": `在安装制作武器模组之前，不要忘记备份您的游戏，并仔细按照说明进行操作，以避免任何潜在问题或与其他修改发生冲突。`,
@@ -18368,7 +18368,7 @@ export const languageLocalizations = {
     <p class="policy__update">Effective June 29, 2023</p>
     <p class="policy__text">
     <strong>Adventures in Minecraft</strong> website
-    <a href="/">https://adventuresinminecraft.com/cn</a> (further
+    <a href="/">https://adventuresinminecraft.com/zh-hant</a> (further
     the "Site”) is owned by GalaxyGrip OÜ - a company registered
     according to legislation of Estonia with its registered number
     16776100, whose registered address is Harju maakond, Tallinn,
@@ -18403,26 +18403,26 @@ export const languageLocalizations = {
     
     The very text of Terms and Conditions; <br />
     Privacy Policy
-    <a href="/cn/pages/privacy-policy">https://adventuresinminecraft.com/cn/pages/privacy-policy</a>
+    <a href="/zh-hant/pages/privacy-policy">https://adventuresinminecraft.com/zh-hant/pages/privacy-policy</a>
     <br />
     Cookies Policy
-    <a href="/cn/pages/cookie-policy">https://adventuresinminecraft.com/cn/pages/cookie-policy</a>
+    <a href="/zh-hant/pages/cookie-policy">https://adventuresinminecraft.com/zh-hant/pages/cookie-policy</a>
     <br />
     "Rules”
-    <a href="/cn/pages/rules">https://adventuresinminecraft.com/cn/pages/rules</a>
+    <a href="/zh-hant/pages/rules">https://adventuresinminecraft.com/zh-hant/pages/rules</a>
     <br />
     "Description of Donations”
-    <a href="/cn/pages/donation-description">https://adventuresinminecraft.com/cn/pages/donation-description</a>
+    <a href="/zh-hant/pages/donation-description">https://adventuresinminecraft.com/zh-hant/pages/donation-description</a>
     <br />
     "How to Start Playing?”
-    <a href="/cn/pages/starting-tips">https://adventuresinminecraft.com/cn/pages/starting-tips</a>
+    <a href="/zh-hant/pages/starting-tips">https://adventuresinminecraft.com/zh-hant/pages/starting-tips</a>
     <br />
     "Launchers”
-    <a href="/cn/pages/launcher-download">https://adventuresinminecraft.com/cn/pages/launcher-download</a>
+    <a href="/zh-hant/pages/launcher-download">https://adventuresinminecraft.com/zh-hant/pages/launcher-download</a>
     <br />
-    "Mods” <a href="/cn/pages/mods">https://adventuresinminecraft.com/cn/pages/mods</a>
+    "Mods” <a href="/zh-hant/pages/mods">https://adventuresinminecraft.com/zh-hant/pages/mods</a>
     <br />
-    "FAQ” <a href="/cn/pages/faq">https://adventuresinminecraft.com/cn/pages/faq</a>
+    "FAQ” <a href="/zh-hant/pages/faq">https://adventuresinminecraft.com/zh-hant/pages/faq</a>
     <br />
     The proper acceptance of this offer in accordance with the law of
     Estonia is the consistent implementation by you of the following
@@ -18876,7 +18876,7 @@ export const languageLocalizations = {
     This policy describes how Adventures in Minecraft uses cookies and
     other related technologies (collectively referred to as "cookies'')
     when you interact with us on
-    <a href="/">https://adventuresinminecraft.com/cn</a> (the
+    <a href="/">https://adventuresinminecraft.com/zh-hant</a> (the
     "Site”). The Site is owned by GalaxyGrip OÜ - a company registered
     according to legislation of Estonia with its registered number
     16776100, whose registered address is Harju maakond, Tallinn,

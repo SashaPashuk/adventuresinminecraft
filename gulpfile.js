@@ -44,7 +44,7 @@ function html() {
           "ru",
           "uk",
           "es",
-          "kz",
+          "kk",
           "pl",
           "tr",
           "fr",
@@ -55,7 +55,7 @@ function html() {
           "az",
           "ko",
           "uz",
-          "cn",
+          "zh-hant",
         ],
         localeDir: "./locales",
       })

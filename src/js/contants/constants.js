@@ -5,7 +5,7 @@ export const APP_LANGUAGES = [
   "ru",
   "uk",
   "es",
-  "kz",
+  "kk",
   "pl",
   "tr",
   "fr",
@@ -16,7 +16,7 @@ export const APP_LANGUAGES = [
   "az",
   "ko",
   "uz",
-  "cn",
+  "zh-hant",
 ];
 
 export const SHOP_ITEM_TIME_USAGE = {

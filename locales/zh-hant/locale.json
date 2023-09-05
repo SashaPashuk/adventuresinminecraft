@@ -1,0 +1,305 @@
+{
+  "domain": "https://adventuresinminecraft.com",
+  "home_metadate_title": "主页 | Adventures In Minecraft Server",
+  "home_metadate_description": "主页 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "metadate_og_locale": "cn",
+  "metadate_og_type": "网站",
+  "metadate_og_contact_title": "联系人 | Adventures In Minecraft Server",
+  "metadate_og_contact_description": "РљРѕРЅС‚Р°РєС‚С‹ в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ… РџРѕРєСѓРїРєР° РґРѕРЅР°С‚Р° Рё РїСЂРёРІРёР»РµРіРёР№ РЅР° СЃРµСЂРІРµСЂРµ РјР°Р№РЅРєСЂР°С„С‚",
+  "donate_description_metadate_title": "捐赠说明 | 我的世界服务器历险记",
+  "donate_description_metadate_description": "捐赠说明 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权箱密钥",
+  "faq_metadate_title": "常见问题解答 | Adventures In Minecraft Server",
+  "faq_metadate_description": "常见问题解答 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "launcher_download_metadate_title": "启动器 | Adventures In Minecraft Server",
+  "launcher_download_metadate_description": "启动器 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "login_metadate_title": "登录 | Adventures In Minecraft Server",
+  "login_metadate_description": "登录 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "registration_metadate_title": "注册 | Adventures In Minecraft Server",
+  "registration_metadate_description": "注册 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "mods_metadate_title": "模组 | Adventures In Minecraft Server",
+  "mods_metadate_description": "Mods в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "order_history_metadate_title": "订单历史记录 | Adventures In Minecraft Server",
+  "order_history_metadate_description": "订单历史记录 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "product_metadate_title": "在 Adventures In Minecraft Server 上获取您自己的 {product_name} 状态",
+  "product_metadate_description": "获取《我的世界历险记》项目的 {product_name} 排名和后缀 вњ…在我们的 Minecraft 服务器购买特权案例密钥 в‘пёЏ 195.201.168.105 вњ…",
+  "rules_metadate_title": "规则 | Adventures In Minecraft Server",
+  "rules_metadate_description": "规则 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "starting_tips_metadate_title": "入门技巧 | Adventures In Minecraft Server",
+  "starting_tips_metadate_description": "启动提示 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "success_payment_metadate_title": "支付成功 | 我的世界服务器历险记",
+  "success_payment_metadate_description": "付款成功 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "decline_payment_metadate_title": "拒绝付款 | Adventures In Minecraft Server",
+  "decline_payment_metadate_description": "拒绝付款 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "404_metadate_title": "未找到页面 | Adventures In Minecraft Server",
+  "404_metadate_description": "未找到页面 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "mods_1122_metadate_title": "1.12.2 | Adventures In Minecraft Server",
+  "mods_1122_metadate_description": "1.12.2 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "mods_1122_cars_metadate_title": "1.12.2（汽车总动员）| Adventures In Minecraft Server",
+  "mods_1122_cars_metadate_description": "1.12.2（汽车）в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权箱密钥",
+  "mods_1122_pe_metadate_title": "Minecraft PE 1.12.2 | Adventures In Minecraft Server",
+  "mods_1122_pe_metadate_description": "Minecraft PE 1.12.2 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "mods_1122_oruzhie_metadate_title": "1.12.2（Oruzhie）| Adventures In Minecraft Server",
+  "mods_1122_oruzhie_metadate_description": "1.12.2 (Oruzhie) в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "mods_1165_metadate_title": "1.16.5 | Adventures In Minecraft Server",
+  "mods_1165_metadate_description": "1.16.5 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "mods_journeymap_mod_metadate_title": "旅程地图 Mod | Adventures In Minecraft Server",
+  "mods_journeymap_mod_metadate_description": "旅程地图 Mod в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "canonical_home_href": "/zh-hant",
+  "canonical_404_href": "/zh-hant/pages/404",
+  "canonical_cart_href": "/zh-hant/pages/cart-page",
+  "canonical_change_password_href": "/zh-hant/pages/change-password",
+  "canonical_contact_href": "/zh-hant/pages/contact",
+  "canonical_donate_privileges_href": "/zh-hant/pages/donate-privileges",
+  "canonical_donate_description_href": "/zh-hant/pages/donate-description",
+  "canonical_exit_confirmation_page_href": "/zh-hant/pages/exit-confirmation-page",
+  "canonical_faq_href": "/zh-hant/pages/faq",
+  "canonical_launcher_download_href": "/zh-hant/pages/launcher-download",
+  "canonical_login_href": "/zh-hant/pages/login",
+  "canonical_mods_href": "/zh-hant/pages/mods",
+  "canonical_mods_1122_href": "/zh-hant/pages/mods/1122",
+  "canonical_mods_1122_cars_href": "/zh-hant/pages/mods/1122/cars",
+  "canonical_mods_1122_pe_href": "/zh-hant/pages/mods/1122/minecraft-pe-1-12-2",
+  "canonical_mods_1122_oruzhie_href": "/zh-hant/pages/mods/1122/oruzhie",
+  "canonical_mods_journeymap_mod_href": "/zh-hant/pages/mods/journeymap-mod",
+  "canonical_mods_1165_href": "/zh-hant/pages/mods/1165",
+  "canonical_order_history_href": "/zh-hant/pages/order-history-page",
+  "canonical_product_href": "/zh-hant/pages/product",
+  "canonical_registration_href": "/zh-hant/pages/registration",
+  "canonical_rules_href": "/zh-hant/pages/rules",
+  "canonical_starting_tips_href": "/zh-hant/pages/starting-tips",
+  "canonical_success_payment_href": "/zh-hant/pages/success-payment",
+  "canonical_decline_payment_href": "/zh-hant/pages/decline-payment",
+  "canonical_team_href": "/zh-hant/pages/team",
+  "home_page_url": {
+    "en": "/",
+    "ru": "/zh-hant"
+  },
+  "mods_page_url": {
+    "en": "/pages/mods",
+    "ru": "/zh-hant/pages/mods"
+  },
+  "mods_1122_page_url": {
+    "en": "/pages/mods/1122",
+    "ru": "/zh-hant/pages/mods/1122"
+  },
+  "mods_1122_cars_page_url": {
+    "en": "/pages/mods/1122/cars",
+    "ru": "/zh-hant/pages/mods/1122/cars"
+  },
+  "mods_1122_pe_page_url": {
+    "en": "/pages/mods/1122/minecraft-pe-1-12-2",
+    "ru": "/zh-hant/pages/mods/1122/minecraft-pe-1-12-2"
+  },
+  "mods_1122_oruzhie_page_url": {
+    "en": "/pages/mods/1122/oruzhie",
+    "ru": "/zh-hant/pages/mods/1122/oruzhie"
+  },
+  "mods_journeymap_mod_page_url": {
+    "en": "/pages/mods/journeymap-mod",
+    "ru": "/zh-hant/pages/mods/journeymap-mod"
+  },
+  "mods_1165_page_url": {
+    "en": "/pages/mods/1165",
+    "ru": "/zh-hant/pages/mods/1165"
+  },
+  "product_page_url": {
+    "en": "/pages/product",
+    "ru": "/zh-hant/pages/product"
+  },
+  "launcher_download_page_url": {
+    "en": "/pages/launcher-download",
+    "ru": "/zh-hant/pages/launcher-download"
+  },
+  "404_page_url": {
+    "en": "/pages/404",
+    "ru": "/zh-hant/pages/404"
+  },
+  "rules_page_url": {
+    "en": "/pages/rules",
+    "ru": "/zh-hant/pages/rules"
+  },
+  "faq_page_url": {
+    "en": "/pages/faq",
+    "ru": "/zh-hant/pages/faq"
+  },
+  "login_page_url": {
+    "en": "/pages/login",
+    "ru": "/zh-hant/pages/login"
+  },
+  "order_history_page_url": {
+    "en": "/pages/order-history-page",
+    "ru": "/zh-hant/pages/order-history-page"
+  },
+  "registration_page_url": {
+    "en": "/pages/registration",
+    "ru": "/zh-hant/pages/registration"
+  },
+  "contact_page_url": {
+    "en": "/pages/contact",
+    "ru": "/zh-hant/pages/contact"
+  },
+  "starting_tips_page_url": {
+    "en": "/pages/starting-tips",
+    "ru": "/zh-hant/pages/starting-tips"
+  },
+  "donation_page_url": {
+    "en": "/pages/donation-description",
+    "ru": "/zh-hant/pages/donation-description"
+  },
+  "donate_priv_page_url": {
+    "en": "/pages/donate-privileges",
+    "ru": "/zh-hant/pages/donate-privileges"
+  },
+  "change_password_page_url": {
+    "en": "/pages/change-password-page",
+    "ru": "/zh-hant/pages/change-password-page"
+  },
+  "cart_page_url": {
+    "en": "/pages/cart-page",
+    "ru": "/zh-hant/pages/cart-page"
+  },
+  "team_page_url": {
+    "en": "/pages/team",
+    "ru": "/zh-hant/pages/team"
+  },
+  "success_payment_page_url": {
+    "en": "/pages/success_payment",
+    "ru": "/zh-hant/pages/success_payment"
+  },
+  "decline_payment_page_url": {
+    "en": "/pages/decline_payment",
+    "ru": "/zh-hant/pages/decline_payment"
+  },
+  "exit_confirmation_page_url": {
+    "en": "/pages/exit-confirmation-page",
+    "ru": "/zh-hant/pages/exit-confirmation-page"
+  },
+  "privacy_link": {
+    "en": "/pages/privacy-policy",
+    "ru": "/zh-hant/pages/privacy-policy"
+  },
+  "cookie_link": {
+    "en": "/pages/cookie-policy",
+    "ru": "/zh-hant/pages/cookie-policy"
+  },
+  "terms_conditions_link": {
+    "en": "/pages/terms-and-conditions/",
+    "ru": "/zh-hant/pages/terms-and-conditions/"
+  },
+  "meta_cart_title": "购物车 | Adventures In Minecraft Server",
+  "meta_cart_desc": "购物车 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "meta_change_password_title": "更改密码 | Adventures In Minecraft Server",
+  "meta_change_password_desc": "更改密码 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "meta_contact_title": "联系人 | Adventures In Minecraft Server",
+  "meta_contact_desc": "联系人 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "meta_donate_privileges_title": "捐赠特权 | Adventures In Minecraft Server",
+  "meta_donate_privileges_desc": "捐赠特权 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "meta_donation_title": "捐赠说明 | 我的世界服务器历险记",
+  "meta_donation_desc": "捐赠说明 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权箱密钥",
+  "meta_exit_confirmation_title": "退出确认 | Adventures In Minecraft Server",
+  "meta_exit_confirmation_desc": "退出确认 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "meta_faq_title": "常见问题解答 | Adventures In Minecraft Server",
+  "meta_faq_desc": "常见问题解答 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "meta_launcher_download_title": "启动器 | Adventures In Minecraft Server",
+  "meta_launcher_download_desc": "启动器 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "meta_login_title": "登录 | Adventures In Minecraft Server",
+  "meta_login_desc": "登录 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "meta_mods_title": "模组 | Adventures In Minecraft Server",
+  "meta_mods_desc": "Mods в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "meta_order_history_title": "订单历史记录 | Adventures In Minecraft Server",
+  "meta_order_history_desc": "订单历史记录 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "meta_registration_title": "注册 | Adventures In Minecraft Server",
+  "meta_registration_desc": "注册 в‘пёЏ ${serverIP} Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "meta_rules_title": "规则 | Adventures In Minecraft Server",
+  "meta_rules_desc": "规则 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "meta_starting_tips_title": "入门技巧 | Adventures In Minecraft Server",
+  "meta_starting_tips_desc": "启动提示 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "meta_success_payment_title": "支付成功 | 我的世界服务器历险记",
+  "meta_success_payment_desc": "付款成功 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "meta_decline_payment_title": "拒绝付款 | Adventures In Minecraft Server",
+  "meta_decline_payment_desc": "拒绝付款 в‘пёЏ 195.201.168.105 Adventures In Minecraft вњ…在我们的 Minecraft 服务器上购买特权案例密钥",
+  "meta_product_title": "在 Adventures In Minecraft Server 上获取您自己的状态",
+  "meta_product_desc": "获取《我的世界历险记》项目的排名和后缀…在我们的 Minecraft 服务器上购买特权箱密钥 в‘пёЏ 195.201.168.105…",
+  "meta_privacy_title": "隐私政策",
+  "meta_cookie_title": "Cookie 政策",
+  "meta_terms_conditions_title": "条款和条件",
+  "header_link_1": "/zh-hant",
+  "header_link_2": "/zh-hant/pages/rules",
+  "header_link_3": "/zh-hant/pages/donation-description",
+  "header_link_4": "/zh-hant/pages/faq",
+  "header_link_5": "/zh-hant/pages/starting-tips",
+  "header_link_6": "/zh-hant/pages/contact",
+  "header_link_7": "/zh-hant/pages/login",
+  "header_link_8": "/zh-hant/pages/registration",
+  "header_link_9": "/zh-hant/pages/order-history-page",
+  "header_link_10": "/zh-hant/pages/change-password-page",
+  "header_link_11": "/zh-hant/pages/exit-confirmation-page",
+  "header_link_12": "/zh-hant/pages/cart-page",
+  "footer_link_1": "/zh-hant",
+  "footer_link_2": "/zh-hant/pages/rules",
+  "footer_link_3": "/zh-hant/pages/donation-description",
+  "footer_link_4": "/zh-hant/pages/contact",
+  "footer_link_5": "/zh-hant/pages/faq",
+  "footer_link_6": "/zh-hant/pages/starting-tips",
+  "footer_link_7": "/zh-hant/pages/launcher-download",
+  "footer_link_8": "/zh-hant/pages/mods",
+  "footer_link_9": "/zh-hant/pages/privacy-policy",
+  "footer_link_10": "/zh-hant/pages/cookie-policy",
+  "footer_link_11": "/zh-hant/pages/terms-and-conditions",
+  "product_page_name": "产品",
+  "productPage__desc": "产品描述：",
+  "header_component": "/----/",
+  "header_shop": "店铺",
+  "header_rules": "「规则」",
+  "header_donate": "捐赠说明",
+  "header_faq": "FAQ",
+  "header_how_to_play": "如何开始玩？",
+  "header_contacts": "联系人",
+  "header_enter": "登录",
+  "header_signup": "报名",
+  "header_orders_history": "订单历史",
+  "header_change_password": "更改密码",
+  "header_logout": "登出",
+  "footer_component": "/----/",
+  "footer_store": "店铺",
+  "footer_rules": "「规则」",
+  "footer_donate": "捐赠说明",
+  "footer_contacts": "联系人",
+  "footer_faq": "FAQ",
+  "footer_how_to_start": "如何开始玩？",
+  "footer_donate_rules": "「捐赠特权」",
+  "footer_launchers": "发射器",
+  "footer_team": "团队",
+  "footer_mods": "模组",
+  "footer_privacy": "隐私政策",
+  "footer_cookie": "Cookie 政策",
+  "footer_terms_and_conditions": "条款和条件",
+  "footer_copiryted": "В© 2023 Adventures in Minecraft - 保留所有权利。该网站由 GalaxyGrip OГњ 拥有和运营，根据爱沙尼亚共和国法律注册，公司编号 16776100，注册地址：Harju maakond, Tallinn, LasnamГ¤e linnaosa, Katusepapi tn 6-502、11412。",
+  "/ ----- login_page ----- /": "",
+  "login_forgot_password": "忘记密码？",
+  "login_title_forgot_password": "密码恢复",
+  "login_send_btn_forgot_password": "发送验证码",
+  "login_send_btn_forgot_password_change": "更改密码",
+  "login_change_password_code_placeholder": "您的验证码",
+  "/ ----- home_page ----- /": "",
+  "home_title": "探索 Minecraft 的世界",
+  "home_survival": "生存",
+  "home_anarchy": "无政府状态",
+  "home_server_monitoring_text": "当前正在播放",
+  "home_server_monitoring_status": "服务器状态",
+  "home_price_sort": "按价格排序",
+  "home_price_sort_asc": "从便宜到贵",
+  "home_price_sort_desc": "从贵到便宜",
+  "/ ----- contact_page ----- /": "",
+  "contact_title": "联系人",
+  "contact_text": "如有任何问题，请联系我们：",
+  "contact_telegram": "Telegram",
+  "/ ----- change_password ----- /": "",
+  "change_password_first_step_title": "要更改密码，请单击\"Change Password\"按钮。链接将发送到您的电子邮件，单击它并输入新密码",
+  "change_password_title": "更改密码",
+  "change_password_text": "输入新的密码",
+  "change_password_button": "更改密码",
+  "change_password_oldPasswordPlaceholder": "旧密码",
+  "change_password_newPasswordPlaceholder": "新密码",
+  "change_password_repeatPasswordPlaceholder": "重复输入密码"
+}
