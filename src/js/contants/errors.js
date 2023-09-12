@@ -288,7 +288,7 @@ export const errorsLanguageLocalizations = {
       "La duración no puede ser modificada para este elemento.",
     ITEM_DURATION_SUCCESS: "La duración ha sido modificada.",
   },
-  kz: {
+  kk: {
     USER_SHOULD_LOGIN_FIRST: "Бірінші рет жүйеге кіріңіз.",
     USER_EXISTS_ERROR:
       "Мұндай электрондық пошта мекенжайы бар пайдаланушы әлде жасалды.",
@@ -804,7 +804,7 @@ export const errorsLanguageLocalizations = {
     ITEM_DURATION_ERROR: "Bu element uchun davomiylilik o'zgartirib bo'lmaydi.",
     ITEM_DURATION_SUCCESS: "Davomiylilik o'zgartirildi.",
   },
-  cn: {
+  "zh-hant": {
     // USER
     USER_SHOULD_LOGIN_FIRST: "您应该先登录。",
     USER_EXISTS_ERROR: "该电子邮件已经存在的用户。",

@@ -8,7 +8,6 @@ import { APP_LANGUAGES, DEFAULT_LANGUAGE } from "../contants/constants.js";
 export const getLanguageFromUrl = (url = window.location) => {
   const urlParts = new URL(url);
   const pathnameParts = urlParts.pathname.split("/");
-  console.log("pathnameParts", pathnameParts);
   const languageIndex = pathnameParts.findIndex((part) =>
     /^[a-z]{2}(-[a-zA-Z]+)?$/.test(part)
   );
@@ -48,7 +47,6 @@ const getDefaultLanguage = () => {
     localStorage.getItem("language") ||
     browserUserLanguageSupportedInApp ||
     DEFAULT_LANGUAGE;
-  console.log("defaultLang", defaultLang);
   return defaultLang;
 };
 
