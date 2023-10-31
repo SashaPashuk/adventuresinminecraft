@@ -199,7 +199,7 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
     <div class="container">
       <h1 class="policy__title">PRIVACY POLICY</h1>
 
-      <p class="policy__update">Effective June 29, 2023</p>
+      <p class="policy__update">Effective October 27, 2023</p>
 
       <p class="policy__subtitle">What Is This Privacy Policy for?</p>
       <p class="policy__text"><strong>Adventures in Minecraft</strong> (further “we”, “us”, “our”) respects your privacy and is committed to protecting your personal data. This policy informs you how we look after your personal data and tells you about your privacy rights and how the law protects you. This privacy policy applies to any visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”) who uses the Site, registers on it and buys anything in our online store.</p>
@@ -212,10 +212,10 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
       <p class="policy__text">Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data). We MAY collect, use, store and process different kinds of personal data about you.</p>
       <p class="policy__text">Your data is collected by the Site. We only ask for an email, when you register on the Site.</p>
       <p class="policy__text">When you select products in our online store, we ask only your Minecraft nickname and the server.</p>
-      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the PayAdmit Gateway. The page collects your payment card date in order to process your payment. The payment card data collected by PayAdmit is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect either keep your payment card information.</p>
+      <p class="policy__text">When you have selected the goods and want to pay, you are redirected to the payment page of the payment gateway. The logo of the payment gateway is stated on the payment page in order to inform you which payment gateway provides the payment page. The page collects your payment card date in order to process your payment. The payment card data collected by the payment gateway is your card number, expiry date, your name indicated on the card and your CVV code. We do not collect or keep your payment card information. </p>
 
       <p class="policy__subtitle">Third Party Links</p>
-      <p class="policy__text">The Sites practice a link to a payment page provided by the PayAdmit Gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The PayAdmit Gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+      <p class="policy__text">The Sites practice a link to a payment page provided by the payment gateway in order to collect your payment card information and process your payment request. We guarantee the security of payments when paying by credit or debit card. The payment gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
 
       <p class="policy__subtitle">Children</p>
       <p class="policy__text">This website is not intended for children and we do not knowingly collect data relating to children.</p>
@@ -245,7 +245,7 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
       
       <p class="policy__subtitle">How Do We Use Your Personal Data?</p>
       <p class="policy__text">We will only use your personal data when the law allows us to.</p>
-      <p class="policy__text">The PayAdmit Gateway uses your payment card details to process your payment request.</p>
+      <p class="policy__text">The payment gateway uses your payment card details to process your payment request.</p>
       <p class="policy__text">Most commonly, as we only ask for an email, Minecraft nickname and the server, we use it to provide you the opportunity to buy goods in our online store.</p>
       
       <p class="policy__subtitle">To Which Recipients Will the Data Be Disclosed?</p>
@@ -257,7 +257,7 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
       <p class="policy__text">GalaxyGrip OÜ has adopted and maintains the necessary technical and organizational security measures to protect the personal information that users provide in order to avoid its alteration, loss, treatment or unauthorized access, taking into account the state of technology, nature of the data stored and the risks to which they are exposed.</p>
       <p class="policy__text">However, please, bear in mind that the security of computer systems is never absolute. Please note that no transmission over the Internet is 100% secure and no data stored on it is invulnerable. We cannot guarantee the security of our Site, databases or services, nor can we guarantee that the information you submit to us will not be intercepted while you are transmitting it to us over the Internet. We are not responsible for the actions of third parties.</p>
       <p class="policy__text">As for data retention, we will only retain your personal data for as long as necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
-      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because PayAdmit has a PCI DSS certificate.</p>
+      <p class="policy__text">Your payment card details are retained by encryption methods that are PCI DSS compliant because the payment gateway has a PCI DSS certificate.</p>
       
       <p class="policy__subtitle">What Are Your Legal Rights?</p>
       <p class="policy__text">Under certain circumstances, you have rights under data protection laws in relation to your personal data.</p>
@@ -276,166 +276,167 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
       <p class="policy__text">We try to respond to all legitimate requests within 30 days. Occasionally it may take us longer than a month if your request is particularly complex or if you have made a number of requests. In this case, we will notify you and keep you updated.</p>
     </div>
     `,termsConditionsPage_contentInnerHTML:`
-      <div class="container">
-        <h1 class="policy__title">Terms and Conditions</h1>
-        <p class="policy__update">Effective June 29, 2023</p>
-        <p class="policy__text">
-          <strong>Adventures in Minecraft</strong> website <a href="/">https://adventuresinminecraft.com</a> (further the “Site”) is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412. (further “we”, “us”, “our”). 
-        </p>
-        <p class="policy__text">Attention! Please read carefully the present Terms and Conditions before using the Site and its online store. Registration means that you agree with all terms and conditions indicated in this document. If you disagree with the terms and conditions, do not register on the Site and do not buy anything in its online store. </p>
+    <div class="container">
+      <h1 class="policy__title">Terms and Conditions</h1>
+      <p class="policy__update">Effective October 27, 2023</p>
+      <p class="policy__text">
+        <strong>Adventures in Minecraft</strong> website <a href="/">https://adventuresinminecraft.com</a> (further the “Site”) is owned by GalaxyGrip OÜ - a company registered according to legislation of Estonia with its registered number 16776100, whose registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412. (further “we”, “us”, “our”). 
+      </p>
+      <p class="policy__text">Attention! Please read carefully the present Terms and Conditions before using the Site and its online store. Registration means that you agree with all terms and conditions indicated in this document. If you disagree with the terms and conditions, do not register on the Site and do not buy anything in its online store.</p>
 
-        <p class="policy__subtitle">The Agreement</p>
-        <p class="policy__text">GalaxyGrip OÜ, from the one side, and the visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”), from the other side, conclude the present Terms and Conditions (further “the Agreement”) and agree that the document constitute the Agreement between the parties. </p>
-        <p class="policy__text">Text of the Agreement is posted on the Site and it is available during registration on the Site, it contains all significant terms of the Agreement and it is our offer to any competent individual, who uses the Site, according to all terms of the Agreement. Text of the Agreement is a public offer according to the law of Estonia.</p>
-        <p class="policy__text">
-          The present Terms and Conditions contains such documents posted on the Site: 
-          <br />
+      <p class="policy__subtitle">The Agreement</p>
+      <p class="policy__text">GalaxyGrip OÜ, from the one side, and the visitor of the Site/ the user/ the buyer/ the player/ the customer (further “you”, “your”), from the other side, conclude the present Terms and Conditions (further “the Agreement”) and agree that the document constitute the Agreement between the parties.</p>
+      <p class="policy__text">Text of the Agreement is posted on the Site and it is available during registration on the Site, it contains all significant terms of the Agreement and it is our offer to any competent individual, who uses the Site, according to all terms of the Agreement. Text of the Agreement is a public offer according to the law of Estonia.</p>
+      <p class="policy__text">
+        The present Terms and Conditions contains such documents posted on the Site: 
+        <br />
 
-          The very text of Terms and Conditions; 
-          <br />
-          Privacy Policy
-          <a href="/pages/privacy-policy">https://adventuresinminecraft.com/pages/privacy-policy</a>
-          <br />
-          Cookies Policy
-          <a href="/pages/cookie-policy">https://adventuresinminecraft.com/pages/cookie-policy</a>
-          <br />
-          “Rules” 
-          <a href="/pages/rules">https://adventuresinminecraft.com/pages/rules</a>
-          <br />
-          “Product description”
-          <a href="/pages/donation-description">https://adventuresinminecraft.com/pages/donation-description</a>
-          <br />
-          “How to Start Playing?”
-          <a href="/pages/starting-tips">https://adventuresinminecraft.com/pages/starting-tips</a>
-          <br />
-          “Mods” <a href="/pages/mods">https://adventuresinminecraft.com/pages/mods</a>
-          <br />
-          “FAQ” <a href="/pages/faq">https://adventuresinminecraft.com/pages/faq</a>
-          <br />
-          The proper acceptance of this offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase. 
-        </p>
-        <p class="policy__text">To register in the Site, please, enter your email address and make up a password. Then enter a verification code sent to your email. Please, remember the email address and the password dialed because you will need them to log in to the Site. </p>
-        <p class="policy__text">All terms and definitions found in the text of the Agreement are interpreted by the parties in accordance with the laws of Estonia and the rules of interpretation of the relevant terms used in the Internet.</p>
-        <p class="policy__text">This Site is offered and available to users who are at least 18 years of age and of legal age to form a binding contract. The Site is designed for users from all over the Globe except restricted countries that are States Sponsors of Terrorism, RU, BY. If your card is issued in the restricted GEO or the IP-address of your device is situated there, please, do not use the Site and do not make purchases in its online store. By using the Site, you represent and warrant that you meet all of the eligibility requirements. If you do not meet all of these requirements, you must not access or use the Site.</p>
-        <p class="policy__text">You can send a request to our Customer Support team 24/7 if you have any questions regarding the Site or your purchase. But the team answers during its working hours: Mon-Fri, 10:00-19:00 (Eastern European Time). </p>
-        <p class="policy__text">The original language of these Terms and Conditions, as well as all other texts throughout the Site, is English. We make a translation in other languages available for convenience only. You can choose the language in the upper right corner of the screen. In case of conflicts between the original English version and any translation, the English version shall prevail.</p>
+        The very text of Terms and Conditions; 
+        <br />
+        Privacy Policy
+        <a href="/pages/privacy-policy">https://adventuresinminecraft.com/pages/privacy-policy</a>
+        <br />
+        Cookies Policy
+        <a href="/pages/cookie-policy">https://adventuresinminecraft.com/pages/cookie-policy</a>
+        <br />
+        “Rules” 
+        <a href="/pages/rules">https://adventuresinminecraft.com/pages/rules</a>
+        <br />
+        “Product description”
+        <a href="/pages/donation-description">https://adventuresinminecraft.com/pages/donation-description</a>
+        <br />
+        “How to Start Playing?”
+        <a href="/pages/starting-tips">https://adventuresinminecraft.com/pages/starting-tips</a>
+        <br />
+        “Mods” <a href="/pages/mods">https://adventuresinminecraft.com/pages/mods</a>
+        <br />
+        “FAQ” <a href="/pages/faq">https://adventuresinminecraft.com/pages/faq</a>
+        <br />
+        The proper acceptance of this offer in accordance with the law of Estonia is the consistent implementation by you of the following actions: read terms of the Agreement, register on the Site, put a tick in the checkbox that you accept the terms before making a purchase.  
+      </p>
+      <p class="policy__text">To register in the Site, please, enter your email address and make up a password. Then enter a verification code sent to your email. Please, remember the email address and the password dialed because you will need them to log in to the Site.</p>
+      <p class="policy__text">All terms and definitions found in the text of the Agreement are interpreted by the parties in accordance with the laws of Estonia and the rules of interpretation of the relevant terms used in the Internet.</p>
+      <p class="policy__text">This Site is offered and available to users who are at least 18 years of age and of legal age to form a binding contract. The Site is designed for users from all over the Globe except restricted countries that are States Sponsors of Terrorism, RU, BY. If your card is issued in the restricted GEO or the IP-address of your device is situated there, please, do not use the Site and do not make purchases in its online store. By using the Site, you represent and warrant that you meet all of the eligibility requirements. If you do not meet all of these requirements, you must not access or use the Site.</p>
+      <p class="policy__text">You can send a request to our Customer Support team 24/7 if you have any questions regarding the Site or your purchase. But the team answers during its working hours: Mon-Fri, 10:00-19:00 (Eastern European Time). </p>
+      <p class="policy__text">The original language of these Terms and Conditions, as well as all other texts throughout the Site, is English. We make a translation in other languages available for convenience only. You can choose the language in the upper right corner of the screen. In case of conflicts between the original English version and any translation, the English version shall prevail.</p>
 
-        <p class="policy__subtitle">The Goods and Prices</p>
-        <p class="policy__text">
-          <strong>The Goods.</strong> We provide an online store available on the Site to sell digital goods (products) to you. The digital goods can be used only by players of Minecraft, who have registered Minecraft nickname(s) on a particular server.  The digital goods are add-ons to the game Minecraft that allow players to change its basic parameters, add new blocks and items, and improve the graphics and sound design. As a result, players have unlimited possibilities for creativity and experimentation. These possibilities can be granted either for a certain period of time or forever as it is indicated in the product’s details.
-        </p>
-        <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
-        <p class="policy__text">
-          <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
-        </p>
-        <p class="policy__text">
-          <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
-        </p>
-        <p class="policy__text">
-          <strong>“How to Start Playing?”</strong> gives you an explanation of 3 steps to start playing in Minecraft with your purchase.
-        </p>
-        <p class="policy__text">
-          <strong>“Modes”</strong> explains what the modes are and what they do with details.
-        </p>
-        <p class="policy__text">
-          <strong>“FAQ”</strong> = “Frequently Asked Questions” tries to answer the most popular questions that arise during the usage of the Site and save time for you and our support team.
-        </p>
-        <p class="policy__text">
-          <strong>The online store.</strong> On the homepage of the Site you see the icons assigned to digital goods that you can buy. You can sort them by price and select the desired digital goods of “Survival” or “Anarchy” type. You choose a currency in the up right corner of the screen and you can see the price denominated in the currency that you have chosen for each product. If the product is available to be bought, the icon is active. If it is not available, the icon is inactive. Please, press the icon of desired digital goods and you’ll get the description of possibilities that it adds.
-        </p>
-        <p class="policy__text">
-          <strong>The Prices.</strong> Prices are denominated in different currencies. You choose a currency in the up right corner of the screen. The price includes all necessary taxes. You do not pay either packaging or delivery costs. The payment gateway which processes payments for the Site charges a 10% processing fee. The fee is not included in the price and is payable additionally. The fee will be deducted from your bank account along with the price.  We do not require the player to bear additional expenses on the Site except the price and the processing fee. But please, be aware that the bank-issuer of your card may charge additional fees for online payments. Also if the currency of your card account differs from the currency of the price, a particular exchange rate is applied to the transaction. We do not know the size of the possible additional fees as well as the exchange rate in advance therefore we cannot calculate the exact amount of funds to be withdrawn from your account after you make a purchase on the Site. Please, check the fees of your bank and the currency conversion rules of the International Payment Card Systems by yourself.
-        </p>
+      <p class="policy__subtitle">The Goods and Prices</p>
+      <p class="policy__text">
+        <strong>The Goods.</strong> We provide an online store available on the Site to sell digital goods (products) to you. The digital goods can be used only by players of Minecraft, who have registered Minecraft nickname(s) on a particular server. We grant access to the server only to those players who have bought a genuine paid-for version of Minecraft. Pirated or “cracked” games are not allowed. The digital goods are add-ons to the game Minecraft that allow players to change its basic parameters, add new blocks and items, and improve the graphics and sound design. As a result, players have unlimited possibilities for creativity and experimentation. These possibilities can be granted either for a certain period of time or forever as it is indicated in the product’s details.
+      </p>
+      <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
+      <p class="policy__text">There are a few in-game items that stand for buying in-game currency. Once the in-game currency balance is topped up, there is no opportunity to convert in-game currency back to real-world money. A player cannot cash the in-game currency out, or sell it back. There is no reimbursement for in-game currency, if, for example, the player terminates his/her access to the server. There are no transfers of in-game currency across servers. </p>
+      <p class="policy__text">
+        <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
+      </p>
+      <p class="policy__text">
+        <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
+      </p>
+      <p class="policy__text">
+        <strong>“How to Start Playing?”</strong> gives you an explanation of 3 steps to start playing in Minecraft with your purchase.
+      </p>
+      <p class="policy__text">
+        <strong>“Modes”</strong> explains what the modes are and what they do with details.
+      </p>
+      <p class="policy__text">
+        <strong>“FAQ”</strong> = “Frequently Asked Questions” tries to answer the most popular questions that arise during the usage of the Site and save time for you and our support team.
+      </p>
+      <p class="policy__text">
+        <strong>The online store.</strong> On the homepage of the Site you see the icons assigned to digital goods that you can buy. You can sort them by price and select the desired digital goods of “Survival” or “Anarchy” type. You choose a currency in the up right corner of the screen and you can see the price denominated in the currency that you have chosen for each product. If the product is available to be bought, the icon is active. If it is not available, the icon is inactive. Please, press the icon of desired digital goods and you’ll get the description of possibilities that it adds.
+      </p>
+      <p class="policy__text">
+        <strong>The Prices.</strong> Prices are denominated in different currencies. You choose a currency in the up right corner of the screen. The price includes all necessary taxes. You do not pay either packaging or delivery costs. The payment gateway which processes payments for the Site charges a 10% processing fee. The fee is not included in the price and is payable additionally. The fee will be deducted from your bank account along with the price.  We do not require the player to bear additional expenses on the Site except the price and the processing fee. But please, be aware that the bank-issuer of your card may charge additional fees for online payments. Also if the currency of your card account differs from the currency of the price, a particular exchange rate is applied to the transaction. We do not know the size of the possible additional fees as well as the exchange rate in advance therefore we cannot calculate the exact amount of funds to be withdrawn from your account after you make a purchase on the Site. Please, check the fees of your bank and the currency conversion rules of the International Payment Card Systems by yourself. 
+      </p>
 
-        <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
-        <p class="policy__text">
-          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
-        </p>
-        <p class="policy__text">
-          <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the mode on your Minecraft account during 5-14 working days. We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname.
-        </p>
-        <p class="policy__text">If you have entered the false Minecraft nickname and/or server, but the false nickname exists, the product will be delivered to the nickname and we will not be able to cancel/refund the transaction.</p>
-        <p class="policy__text">If you have entered the false Minecraft nickname and/or server and the false nickname does not exist, you can cancel the purchase and get a refund as well as apply to our support team and get your purchase to be sent to your correct nickname. In this case you will be asked to provide proof of purchase. For this purpose a photo of your card and a transaction report sent to you on email will be sufficient proof.</p>
-        <p class="policy__text">If you have paid for the purchase, but the product was not delivered after 14 working days lapsed, you can claim to our support team and we will check the delivery and fix the problem or refund it.</p>
+      <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
+      <p class="policy__text">
+        <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the payment gateway. The logo of the payment gateway is stated on the payment page. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference. 
+      </p>
+      <p class="policy__text">
+        <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the in-game item on your Minecraft account during <span style="text-decoration: underline;">5-14 working days.</span> We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname. 
+      </p>
+      <p class="policy__text">If you have entered the false Minecraft nickname and/or server, but the false nickname exists, the product will be delivered to the nickname and we will not be able to cancel/refund the transaction.</p>
+      <p class="policy__text">If you have entered the false Minecraft nickname and/or server and the false nickname does not exist, you can cancel the purchase and get a refund as well as apply to our support team and get your purchase to be sent to your correct nickname. In this case you will be asked to provide proof of purchase. For this purpose a photo of your card and a transaction report sent to you on email will be sufficient proof. </p>
+      <p class="policy__text">If you have paid for the purchase, but the product was not delivered after 14 working days lapsed, you can claim to our support team and we will check the delivery and fix the problem or refund it.</p>
 
-        <p class="policy__subtitle">Payment Policy</p>
-        <p class="policy__text">
-          <strong>Payment Method.</strong> You can pay for the purchase by a credit or debit card of either VISA or MasterCard/Maestro online using the PayAdmit gateway payment page. Other payment methods are not available.
-        </p>
-        <p class="policy__text">
-          <strong>Currencies.</strong> The payment transaction currency is the currency that you choose in the up right corner of the screen. If your payment card’s currency differs from the currency chosen, currency conversion is made according to the rules of the International Payment Card Systems. The exchange rate is set by the International Payment Card Systems for blocking the relevant amount on the card and by your bank-issuer of the card for debiting funds from your bank account. Also currency exchange may be charged with a fee by your bank. We do not know the currency conversion rate and fee and do not influence it. Please, check it by yourself. We do not charge the currency exchange fee in our favor.
-        </p>
-        <p class="policy__text">
-          <strong>No discrimination notice.</strong> We honor all valid VISA and MasterCard/Maestro cards without discrimination when properly presented for payment. We maintain a policy that does not discriminate among customers seeking to make purchases with a card.
-        </p>
-        <p class="policy__text">We do not require a minimum or maximum transaction amount in order to accept payment with Visa or Mastercard/Maestro card. There are no restrictions on the cardholder’s rights to dispute payment performed by the payment card.</p>
-        <p class="policy__text">
-          <strong>Security.</strong> In accordance with the recommendations of Payment Card Industry Security Standards Council, customer card details are protected using encryption. The company - a payment gateway - is PCI DSS compliant.
-        </p>
-        <p class="policy__text">
-          <strong>Possible additional fees.</strong> The price comprises taxes. It does not contain a 10% processing fee charged by the payment gateway. We do not charge you with any additional fees, costs, expenses in our favor.
-        </p>
-        <p class="policy__text">But your bank-issuer of the card may charge you with additional fees including transaction processing and currency conversion fee according to its tariffs. We do not know them and we are not responsible for those charges. Please, check them with your bank and be aware of them before you make a purchase.</p>
-        <p class="policy__text">
-          <strong>Acceptance of the Terms and Conditions.</strong> You need to agree with current terms and conditions of the Agreement before you make a purchase on our Site. Please, put a tick in the relevant checkbox which the Site makes available to you before you proceed your purchase to the payment stage.
-        </p>
-        <p class="policy__text">
-          <strong>Credential-on-file.</strong> Credential-on-file transaction is where a cardholder authorizes a merchant to store and subsequently charge a card at a later date, therefore it can be initiated by either the cardholder or the merchant. We do not practice such types of transactions. We do not store your payment information and do not initiate payment transactions.
-        </p>
+      <p class="policy__subtitle">Payment Policy</p>
+      <p class="policy__text">
+        <strong>Payment Method.</strong> You can pay for the purchase by a credit or debit card of either VISA or MasterCard/Maestro online using the payment page of the payment gateway. Other payment methods are not available.
+      </p>
+      <p class="policy__text">
+        <strong>Currencies.</strong> The payment transaction currency is the currency that you choose in the up right corner of the screen. If your payment card’s currency differs from the currency chosen, currency conversion is made according to the rules of the International Payment Card Systems. The exchange rate is set by the International Payment Card Systems for blocking the relevant amount on the card and by your bank-issuer of the card for debiting funds from your bank account. Also currency exchange may be charged with a fee by your bank. We do not know the currency conversion rate and fee and do not influence it. Please, check it by yourself. We do not charge the currency exchange fee in our favor. 
+      </p>
+      <p class="policy__text">
+        <strong>No discrimination notice.</strong> We honor all valid VISA and MasterCard/Maestro cards without discrimination when properly presented for payment. We maintain a policy that does not discriminate among customers seeking to make purchases with a card.
+      </p>
+      <p class="policy__text">We do not require a minimum or maximum transaction amount in order to accept payment with Visa or Mastercard/Maestro card. There are no restrictions on the cardholder’s rights to dispute payment performed by the payment card.</p>
+      <p class="policy__text">
+        <strong>Security.</strong> In accordance with the recommendations of Payment Card Industry Security Standards Council, customer card details are protected using encryption. The company - a payment gateway - is PCI DSS compliant.
+      </p>
+      <p class="policy__text">
+        <strong>Possible additional fees.</strong> The price comprises taxes. It does not contain a 10% processing fee charged by the payment gateway. We do not charge you with any additional fees, costs, expenses in our favor. 
+      </p>
+      <p class="policy__text">But your bank-issuer of the card may charge you with additional fees including transaction processing and currency conversion fee according to its tariffs. We do not know them and we are not responsible for those charges. Please, check them with your bank and be aware of them before you make a purchase.</p>
+      <p class="policy__text">
+        <strong>Acceptance of the Terms and Conditions.</strong> You need to agree with current terms and conditions of the Agreement before you make a purchase on our Site. Please, put a tick in the relevant checkbox which the Site makes available to you before you proceed your purchase to the payment stage.
+      </p>
+      <p class="policy__text">
+        <strong>Credential-on-file.</strong> Credential-on-file transaction is where a cardholder authorizes a merchant to store and subsequently charge a card at a later date, therefore it can be initiated by either the cardholder or the merchant. We do not practice such types of transactions. We do not store your payment information and do not initiate payment transactions.
+      </p>
 
-        <p class="policy__subtitle">Return/ Refund/ Cancellation Policy</p>
-        <p class="policy__text">
-          <strong>Return of the Product.</strong> Once the product is delivered to you, it cannot be returned to us. If you paid for the product and the product has not been delivered yet, you can request the refund.
-        </p>
-        <p class="policy__text">
-          <strong>Refund.</strong> Completed purchases may be canceled up to 14 days after the purchase ONLY if the product has not been delivered to the buyer. You have the right to request a refund, if the purchase is canceled. To get a refund, you must apply to our support team via the contacts indicated in the section Contact us of these Terms and Conditions. You should add a payment report as a proof of purchase that was sent to you to your email and photo of the card. If you paid for the purchase, did not get the product delivered, 14 days did not lapse after the purchase and you applied to our support team, you will be refunded in full during 30 days after the refund application is submitted. Your bank’s charges are not refundable. 10% processing fee is not refundable too. Please, be aware that your bank can set a refund fee. Please, check it for yourself.
-        </p>
-        <p class="policy__text">If you have submitted a wrong nickname or a server while purchasing and the product has not been delivered yet, you can apply for a cancellation of the purchase and full refund.</p>
-        <p class="policy__text">If you have submitted a wrong nickname or a server while purchasing and the product has been already delivered to the wrong nickname, you cannot be refunded. Please, claim to our support team in this case for further assistance.</p>
-        <p class="policy__text">
-          <strong>Complaint.</strong> If you have purchased a product, have got it delivered but you are not satisfied with the product, you can not request a refund. But you can submit a complaint to our support team. We are trying our best to make you happy with the products therefore we will study your complaint carefully and let you know about the result of our investigation.</p>
-        <p class="policy__text">
-          <strong>Cancellation.</strong> You can cancel your purchase at any time during the process of the purchase until the payment is finalized.</p>
-        <p class="policy__text">You can cancel your paid purchase and get a refund during 14 days if you have not got the product delivered.</p>
-        <p class="policy__text">You can cancel your acceptance of the Agreement if you terminate your registration. To terminate your registration, please, apply to our support team.</p>
+      <p class="policy__subtitle">Return/ Refund/ Cancellation Policy</p>
+      <p class="policy__text">
+        <strong>Return of the Product.</strong> Once the product is delivered to you, it cannot be returned to us. If you paid for the product and the product has not been delivered yet, you can request the refund.
+      </p>
+      <p class="policy__text">
+        <strong>Refund.</strong> Completed purchases may be canceled up to 14 days after the purchase ONLY if the product has not been delivered to the buyer. You have the right to request a refund, if the purchase is canceled. To get a refund, you must apply to our support team via the contacts indicated in the section Contact us of these Terms and Conditions. You should add a payment report as a proof of purchase that was sent to you to your email and photo of the card. If you paid for the purchase, did not get the product delivered, 14 days did not lapse after the purchase and you applied to our support team, you will be refunded in full during 30 days after the refund application is submitted. Your bank’s charges are not refundable. 10% processing fee is not refundable too. Please, be aware that your bank can set a refund fee. Please, check it for yourself.
+      </p>
+      <p class="policy__text">If you have submitted a wrong nickname or a server while purchasing and the product has not been delivered yet, you can apply for a cancellation of the purchase and full refund. </p>
+      <p class="policy__text">If you have submitted a wrong nickname or a server while purchasing and the product has been already delivered to the wrong nickname, you cannot be refunded. Please, claim to our support team in this case for further assistance.</p>
+      <p class="policy__text">
+        <strong>Complaint.</strong> If you have purchased a product, have got it delivered but you are not satisfied with the product, you can not request a refund. But you can submit a complaint to our support team. We are trying our best to make you happy with the products therefore we will study your complaint carefully and let you know about the result of our investigation.</p>
+      <p class="policy__text">
+        <strong>Cancellation.</strong> You can cancel your purchase at any time during the process of the purchase until the payment is finalized.</p>
+      <p class="policy__text">You can cancel your paid purchase and get a refund during 14 days if you have not got the product delivered.</p>
+      <p class="policy__text">You can cancel your acceptance of the Agreement if you terminate your registration. To terminate your registration, please, apply to our support team. </p>
 
-        <p class="policy__subtitle">Personal Data</p>
-        <p class="policy__text">We may collect and process personal data of the user. The data collected, purposes and other relevant terms and conditions are indicated in our <strong>Privacy Policy</strong>. Please, check it before you use the Site.
-        </p>
-        <p class="policy__text">We guarantee the security of payments when paying by credit or debit card. The payment gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
+      <p class="policy__subtitle">Personal Data</p>
+      <p class="policy__text">We may collect and process personal data of the user. The data collected, purposes and other relevant terms and conditions are indicated in our <strong>Privacy Policy</strong>. Please, check it before you use the Site.
+      </p>
+      <p class="policy__text">We guarantee the security of payments when paying by credit or debit card. The payment gateway that provides the service of processing the payment requests complies with PCI DSS requirements for the secure processing of the payer's bank card details.</p>
 
-        <p class="policy__subtitle">Terms of Use of the Site</p>
-        <p class="policy__text">The content of the pages of the Site is for your general information and use only. It is subject to change without notice.</p>
-        <p class="policy__text">We reserve the right to enhance, modify, alter, suspend or permanently discontinue all or any part of the Site and to restrict or prohibit access to it at any time and without notice. We can change the range of goods and prices without prior notice.</p>
-        <p class="policy__text">The Site uses cookies to monitor browsing preferences. Please read the <strong>Cookie Policy</strong> for further information. If you do allow cookies to be used, the cookie files may be stored by us according to the Cookie Policy.</p>
-        <p class="policy__text">You acknowledge that information and materials placed on the Site pages may contain inaccuracies or errors. If they do, we state that they are put there neither on purpose, nor deliberately.  We expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law. We do not guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on the Site for any particular purpose.</p>
-        <p class="policy__text">Your use of any information on the Site is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any product selled in our online store meets your specific requirements.</p>
-        <p class="policy__text">Materials from the Site which include, but are not limited to, the design, layout, look, appearance and graphics, are owned by us. Reproduction is prohibited. All the copyrights reserved.</p>
-        <p class="policy__text">You may not frame the Site nor link to a page other than the home page without our express permission in writing.</p>
-        <p class="policy__text">You agree that you shall not send, use, copy, post or allow any posting which is defamatory or obscene within the meaning of the obscene publications act or which is abusive, indecent or in breach of the privacy of any person. You shall not use the Site for any illegal purposes. You agree not to send any unsolicited promotional or advertising material, spam or similar materials or any volume messages that may interfere with the operation of the Site or with the enjoyment of the Site by other visitors.</p>
-        <p class="policy__text">Unauthorized use of the Site may give rise to a claim for damages and/or be a criminal offense.</p>
-        <p class="policy__text">Individuals under the age of 18 are not permitted to make purchases in our online store. If it is required you should submit your ID documents and proof of your address as it is indicated in a particular request.</p>
-        <p class="policy__text">From time to time the Site may also include links to other websites. These links are provided for your convenience to provide further information. We have no responsibility for the content of the linked website(s).</p>
-        <p class="policy__text">You hereby agree to indemnify us against any costs, claims, losses and damages (including legal fees) incurred by or awarded against us as a result of your misuse of the Site or your breach of these Terms and Conditions.</p>
-        <p class="policy__text">If you are in breach of these Terms and Conditions or of the Privacy policy we may as its option, suspend or block your access to the Site and refuse to provide you with any further access to it.</p>
-        <p class="policy__text">We may modify these Terms and Conditions without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
-        <p class="policy__text">In the event that any part of these terms contained in the Terms and Conditions shall be determined by any competent authority to be invalid, unlawful or unenforceable to any extent, such term shall to that extent be severed from the remaining terms which shall continue to be valid and enforceable to the fullest extent permitted by law.</p>
-        <p class="policy__text">These Terms and Conditions shall be governed by and construed in accordance with the laws of Estonia. Any dispute arising out of use of the Site is subject to the laws of Estonia.</p>
+      <p class="policy__subtitle">Terms of Use of the Site</p>
+      <p class="policy__text">The content of the pages of the Site is for your general information and use only. It is subject to change without notice.</p>
+      <p class="policy__text">We reserve the right to enhance, modify, alter, suspend or permanently discontinue all or any part of the Site and to restrict or prohibit access to it at any time and without notice. We can change the range of goods and prices without prior notice.</p>
+      <p class="policy__text">The Site uses cookies to monitor browsing preferences. Please read the <strong>Cookie Policy</strong> for further information. If you do allow cookies to be used, the cookie files may be stored by us according to the Cookie Policy.</p>
+      <p class="policy__text">You acknowledge that information and materials placed on the Site pages may contain inaccuracies or errors. If they do, we state that they are put there neither on purpose, nor deliberately.  We expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law. We do not guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on the Site for any particular purpose.</p>
+      <p class="policy__text">Your use of any information on the Site is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any product selled in our online store meets your specific requirements.</p>
+      <p class="policy__text">Materials from the Site which include, but are not limited to, the design, layout, look, appearance and graphics, are owned by us. Reproduction is prohibited. All the copyrights reserved.</p>
+      <p class="policy__text">You may not frame the Site nor link to a page other than the home page without our express permission in writing.</p>
+      <p class="policy__text">You agree that you shall not send, use, copy, post or allow any posting which is defamatory or obscene within the meaning of the obscene publications act or which is abusive, indecent or in breach of the privacy of any person. You shall not use the Site for any illegal purposes. You agree not to send any unsolicited promotional or advertising material, spam or similar materials or any volume messages that may interfere with the operation of the Site or with the enjoyment of the Site by other visitors.</p>
+      <p class="policy__text">Unauthorized use of the Site may give rise to a claim for damages and/or be a criminal offense.</p>
+      <p class="policy__text">Individuals under the age of 18 are not permitted to make purchases in our online store. If it is required you should submit your ID documents and proof of your address as it is indicated in a particular request.</p>
+      <p class="policy__text">From time to time the Site may also include links to other websites. These links are provided for your convenience to provide further information. We have no responsibility for the content of the linked website(s).</p>
+      <p class="policy__text">You hereby agree to indemnify us against any costs, claims, losses and damages (including legal fees) incurred by or awarded against us as a result of your misuse of the Site or your breach of these Terms and Conditions.</p>
+      <p class="policy__text">If you are in breach of these Terms and Conditions or of the Privacy policy we may as its option, suspend or block your access to the Site and refuse to provide you with any further access to it.</p>
+      <p class="policy__text">We may modify these Terms and Conditions without notifying you, so please check back often for updates. Any changes made will be available on this page.</p>
+      <p class="policy__text">In the event that any part of these terms contained in the Terms and Conditions shall be determined by any competent authority to be invalid, unlawful or unenforceable to any extent, such term shall to that extent be severed from the remaining terms which shall continue to be valid and enforceable to the fullest extent permitted by law.</p>
+      <p class="policy__text">These Terms and Conditions shall be governed by and construed in accordance with the laws of Estonia. Any dispute arising out of use of the Site is subject to the laws of Estonia.</p>
 
-        <p class="policy__subtitle">Limitation of Liability</p>
-        <p class="policy__text">We are not responsible for the user's losses due to the unlawful actions of third parties, including unauthorized access to the Site under the user’s registration. We are not responsible for damages caused to the User as a result of disclosure to third parties credentials required for access to the Site not due to the fault of us.</p>
-        <p class="policy__text">We are not liable if the product purchased was not delivered to the player due to technical problems on a third party’s side.</p>
-        <p class="policy__text">Software and hardware errors like from our side and from your side, leading to the inability to obtain the user's access to the Site and/or our online store, are force majeure, and are the basis for exemption from liability from fulfilling obligations according to the Agreement.</p>
-        <p class="policy__text">Unless another is specified in the Agreement in case of breach of conditions of the Agreement by the user, we may unilaterally refuse to perform the Agreement and to discontinue user's access to the Site. In the event that such a breach has caused damage to third parties, the responsibility for them lies entirely upon the user.</p>
+      <p class="policy__subtitle">Limitation of Liability</p>
+      <p class="policy__text">We are not responsible for the user's losses due to the unlawful actions of third parties, including unauthorized access to the Site under the user’s registration. We are not responsible for damages caused to the User as a result of disclosure to third parties credentials required for access to the Site not due to the fault of us.</p>
+      <p class="policy__text">We are not liable if the product purchased was not delivered to the player due to technical problems on a third party’s side.</p>
+      <p class="policy__text">Software and hardware errors like from our side and from your side, leading to the inability to obtain the user's access to the Site and/or our online store, are force majeure, and are the basis for exemption from liability from fulfilling obligations according to the Agreement.</p>
+      <p class="policy__text">Unless another is specified in the Agreement in case of breach of conditions of the Agreement by the user, we may unilaterally refuse to perform the Agreement and to discontinue user's access to the Site. In the event that such a breach has caused damage to third parties, the responsibility for them lies entirely upon the user.</p>
 
-        <p class="policy__subtitle">Contacts</p>
-        <p class="policy__text">GalaxyGrip OÜ doing business as <strong>Adventures in Minecraft.</strong></p>
-        <p class="policy__text">Registered number: 16776100</p>
-        <p class="policy__text">Legal address and address for correspondence: Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
-        <p class="policy__text">Support team email: galaxy.grip098@gmail.com</p>
-        <p class="policy__text">Telephone number: 37259660269</p>
-      </div>
-    `,cookiePage_contentInnerHTML:`
+      <p class="policy__subtitle">Contacts</p>
+      <p class="policy__text">GalaxyGrip OÜ doing business as <strong>Adventures in Minecraft.</strong></p>
+      <p class="policy__text">Registered number: 16776100</p>
+      <p class="policy__text">Legal address and address for correspondence: Harju maakond, Tallinn, Lasnamäe linnaosa, Katusepapi tn 6-502, 11412.</p>
+      <p class="policy__text">Support team email: galaxy.grip098@gmail.com</p>
+      <p class="policy__text">Telephone number: 37259660269</p>
+    </div>
+  `,cookiePage_contentInnerHTML:`
       <div class="container">
       <h1 class="policy__title">COOKIE POLICY</h1>
       <p class="policy__update">Effective June 29, 2023</p>
@@ -751,7 +752,7 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
       <div class="container">
       <h1 class="policy__title">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h1>
 
-      <p class="policy__update">Дата обновления: 29 июня 2023</p>
+      <p class="policy__update">Дата обновления: 27 октября 2023</p>
 
       <p class="policy__subtitle">Для чего нужна эта Политика конфиденциальности?</p>
       <p class="policy__text"><strong>Adventures in Minecraft</strong> (далее «мы», «нас», «наш») уважает вашу конфиденциальность и обязуется защищать ваши личные данные. Эта политика информирует вас о том, как мы заботимся о ваших личных данных, и рассказывает вам о ваших правах на неприкосновенность частной жизни и о том, как закон защищает вас. Эта Политика конфиденциальности распространяется на любого посетителя Сайта/пользователя/покупателя/игрока (далее «Вы», «Ваш», «Вам»), который использует Сайт, регистрируется на нем и покупает что-либо в нашем интернет-магазине.</p>
@@ -764,10 +765,10 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
       <p class="policy__text">Персональные данные, или личная информация, означают любую информацию о физическом лице, по которой это лицо может быть идентифицировано. Они не включают данные, где не понятна личность владельца (анонимные данные). Мы можем собирать, использовать, хранить и обрабатывать различные виды персональных данных о Вас.</p>
       <p class="policy__text">Ваши данные собираются на Сайте. Мы запрашиваем у Вас только адрес электронной почты при регистрации на Сайте.</p>
       <p class="policy__text">Когда Вы выбираете товары в нашем интернет-магазине, мы запрашиваем только ваш ник Minecraft и сервер.</p>
-      <p class="policy__text">Когда вы выбрали товар и хотите оплатить, Вы перенаправляетесь на страницу оплаты PayAdmit Gateway. Страница собирает данные Вашей платежной карты для обработки Вашего платежа. Данные платежной карты, собираемые PayAdmit, — это номер Вашей карты, срок действия, Ваше имя, указанное на карте, и CVV-код. GalaxyGrip OÜ не собирает и не хранит информацию о Вашей платежной карте.</p>
+      <p class="policy__text">Когда вы выбрали товар и хотите оплатить, Вы перенаправляетесь на страницу оплаты платежного шлюза. Логотип платежного шлюза указан на странице оплаты, чтобы Вы знали, какой платежный шлюз предоставил платежную страницу. Страница собирает данные Вашей платежной карты для обработки Вашего платежа. Данные платежной карты, собираемые платежным шлюзом, — это номер Вашей карты, срок действия, Ваше имя, указанное на карте, и CVV-код. GalaxyGrip OÜ не собирает и не хранит информацию о Вашей платежной карте.</p>
 
       <p class="policy__subtitle">Ссылки на сайты третьих лиц</p>
-      <p class="policy__text">Сайт использует ссылку на платежную страницу, предоставляемую PayAdmit Gateway, для сбора информации о Вашей платежной карте и обработки Вашего платежного запроса. Мы гарантируем безопасность платежей при оплате кредитной или дебетовой картой. Шлюз PayAdmit, предоставляющий услугу обработки платежных запросов, соответствует требованиям PCI DSS по безопасной обработке реквизитов банковской карты плательщика.</p>
+      <p class="policy__text">Сайт использует ссылку на платежную страницу, предоставляемую платежным шлюзом, для сбора информации о Вашей платежной карте и обработки Вашего платежного запроса. Мы гарантируем безопасность платежей при оплате кредитной или дебетовой картой. Платежный шлюз, предоставляющий услугу обработки платежных запросов, соответствует требованиям PCI DSS по безопасной обработке реквизитов банковской карты плательщика.</p>
 
       <p class="policy__subtitle">Дети</p>
       <p class="policy__text">Этот Сайт не предназначен для детей, и мы сознательно не собираем данные, касающиеся детей.</p>
@@ -797,7 +798,7 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
 
       <p class="policy__subtitle">Как мы используем Ваши персональные данные?</p>
       <p class="policy__text">Мы будем использовать Ваши личные данные только в том случае, если это разрешено законом.</p>
-      <p class="policy__text">PayAdmit Gateway использует данные Вашей платежной карты для обработки Вашего платежного запроса.</p>
+      <p class="policy__text">Платежный шлюз использует данные Вашей платежной карты для обработки Вашего платежного запроса.</p>
       <p class="policy__text">Чаще всего, поскольку мы запрашиваем только адрес электронной почты, никнейм Minecraft и сервер, мы используем его, чтобы предоставить Вам возможность покупать товары в нашем интернет-магазине.</p>
 
       <p class="policy__subtitle">Кому мы можем раскрыть Ваши персональные данные?</p>
@@ -810,7 +811,7 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
       <p class="policy__text">Компания GalaxyGrip OÜ приняла и поддерживает необходимые технические и организационные меры безопасности для защиты личной информации, предоставляемой пользователями, во избежание ее изменения, утраты, обработки или несанкционированного доступа с учетом уровня техники, характера хранимых данных и рисков, которым они подвержены.</p>
       <p class="policy__text">Однако имейте в виду, что безопасность компьютерных систем никогда не бывает абсолютной. Обратите внимание, что никакая передача через Интернет не является на 100% безопасной, и никакие данные, хранящиеся в ней, не могут считаться неуязвимыми. Мы не можем гарантировать безопасность нашего Сайта и баз данных, а также не можем гарантировать, что информация, которую Вы предоставляете нам, не будет перехвачена, когда Вы передаете ее нам через Интернет. Мы не несем ответственности за действия третьих лиц.</p>
       <p class="policy__text">Что касается хранения данных, мы будем хранить Ваши личные данные только до тех пор, пока это необходимо для достижения целей, для которых мы их собрали, в том числе для целей удовлетворения любых юридических требований, требований бухгалтерского учета или отчетности.</p>
-      <p class="policy__text">Данные Вашей платежной карты передаются с помощью методов шифрования, соответствующих стандарту PCI DSS, поскольку PayAdmit имеет сертификат PCI DSS.</p>
+      <p class="policy__text">Данные Вашей платежной карты передаются с помощью методов шифрования, соответствующих стандарту PCI DSS, поскольку платежный шлюз имеет сертификат PCI DSS.</p>
 
       <p class="policy__subtitle">Каковы Ваши права?</p>
       <p class="policy__text">
@@ -830,11 +831,6 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
       <p class="policy__text">Плата обычно не требуется. Вам не нужно будет платить за доступ к вашим личным данным (или за осуществление любых других прав). Однако мы можем взимать разумную плату, если Ваш запрос является явно необоснованным, повторяющимся или чрезмерным. Кроме того, мы можем отказаться выполнять Ваш запрос в этих обстоятельствах.</p>
 
       <p class="policy__subtitle">В течении какого времени мы отвечаем на запросы?</p>
-      <p class="policy__text">
-        Если вы не предоставите персональные данные, мы понадобятся для выполнения контракта, то мы не сможем выполнить это обязательство. Если вы не предоставите свои персональные данные, которые необходимы по закону, мы можем не иметь права предоставлять вам запрашиваемую услугу.
-      </p>
-
-      <p class="policy__subtitle">Ссылки на другие сайты</p>
       <p class="policy__text">Мы стараемся отвечать на все законные запросы в течение 30 календарных дней. Иногда это может занять больше месяца, если Ваш запрос особенно сложный или если Вы сделали несколько запросов. В этом случае мы уведомим Вас и будем держать Вас в курсе.</p>
     `,termsConditionsPage_contentInnerHTML:`
       <div class="container">
@@ -875,8 +871,10 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
       <p class="policy__text">Основным языком Соглашения, а также всех других текстов на Сайте является английский. Мы делаем перевод на другие языки доступными только для удобства. Язык можно выбрать в правом верхнем углу экрана. В случае противоречий между оригинальной английской версией и каким-либо переводом английская версия имеет преимущественную силу.</p>
 
       <p class="policy__subtitle">Товары и цены</p>
-      <p class="policy__text"><strong>Товары.</strong> Мы предоставляем интернет-магазин, доступный на Сайте, для продажи Вам цифровых товаров (продуктов). Цифровые товары могут использовать только игроки Minecraft, которые зарегистрировали никнейм в Minecraft на определенном сервере. Цифровые товары — это дополнения к игре Minecraft, позволяющие игрокам изменять ее основные параметры, добавлять новые блоки и предметы, улучшать графику и звуковое оформление. В результате у игроков есть неограниченные возможности для творчества и экспериментов. Эти возможности могут быть предоставлены как на определенный период времени, так и навсегда, согласно описанию продукта.</p>
+      <p class="policy__text"><strong>Товары.</strong> Мы предоставляем интернет-магазин, доступный на Сайте, для продажи Вам цифровых товаров (продуктов). Цифровые товары могут использовать только игроки Minecraft, которые зарегистрировали никнейм в Minecraft на определенном сервере. Мы предоставляем доступ к серверу только тем игрокам, которые купили официальную платную версию Майнкрафт. Использовать пиратские и «взломанные» игры запрещено.</p>
+      <p class="policy__text">Цифровые товары — это дополнения к игре Minecraft, позволяющие игрокам изменять ее основные параметры, добавлять новые блоки и предметы, улучшать графику и звуковое оформление. В результате у игроков есть неограниченные возможности для творчества и экспериментов. Эти возможности могут быть предоставлены как на определенный период времени, так и навсегда, согласно описанию продукта.</p>
       <p class="policy__text">Пожалуйста, ознакомьтесь с документами, размещенными на Сайте, для получения дополнительной информации о товаре и его характеристиках, а также правилах для игроков.</p>
+      <p class="policy__text">Есть несколько цифровых товаров, предназначенных для покупки внутриигровой валюты. После пополнения баланса внутриигровой валюты возможность конвертировать внутриигровую валюту обратно в реальные деньги отсутствует. Игрок не может обналичить внутриигровую валюту или продать ее обратно. Выкуп внутриигровой валюты у игрока не производится, если, например, игрок прекращает доступ к серверу. Трансфер внутриигровой валюты между серверами невозможен. </p>
       <p class="policy__text">В документе <strong>«Правила»</strong> собраны основные правила, регламентирующие проект, права и обязанности игроков и Администрации и разъяснения терминов.</p>
       <p class="policy__text"><strong>«Описание товаров»</strong> дает вам подробную информацию о продуктах и тех возможностях, которые они добавляют игрокам в процессе игры.</p>
       <p class="policy__text"><strong>«Как начать играть?»</strong> предлагает схематичное описание 3 шагов, сделав которые Вы можете легко начать играть в Minecraft с вашей покупкой.</p>
@@ -884,19 +882,16 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
       <p class="policy__text">Документ <strong>“FAQ”</strong> = «Часто задаваемые вопросы» пытается ответить на самые популярные вопросы, возникающие при использовании Сайта, и сэкономить время Вам и нашей службе поддержки.</p>
 
       <p class="policy__text"><strong>Интернет-магазин</strong> На главной странице Сайта Вы видите иконки, присвоенные цифровым товарам, которые Вы можете купить. Можно отсортировать их по цене и выбрать нужный продукт типа «Выживание» или «Анархия». Вы можете выбрать валюту в верхнем правом углу экрана, и цену товара будет выражаться в выбранной Вами валюте. Если товар доступен для покупки, значок активен. Если он недоступен, значок неактивен. Пожалуйста, нажмите на иконку нужного товара, и Вы получите описание возможностей, которые добавляет его покупка.</p>
-      <p class="policy__text"><strong>Цены.</strong> Цены могут быть указаны в разных валютах. Вы можете выбрать валюту в правом верхнем углу экрана. Цена включает в себя все необходимые налоги. Вы не оплачиваете ни упаковку, ни доставку. Платежный шлюз, который обрабатывает платежи для Сайта, взимает комиссию за обработку в размере 10%. Комиссия не входит в стоимость и оплачивается дополнительно. Комиссия будет списана с Вашего банковского счета вместе с ценой. Мы не требуем от игрока дополнительных расходов на Сайте, кроме цены и платы за обработку. Но имейте в виду, что банк-эмитент Вашей карты может взимать дополнительную комиссию за онлайн-платежи. Также, если валюта Вашего карточного счета отличается от валюты цены, к транзакции применяется определенный обменный курс. Мы заранее не знаем размер возможных дополнительных комиссий, а также курс обмена, поэтому мы не можем рассчитать точную сумму средств, которые будут сняты с Вашего счета после совершения покупки на Сайте. Пожалуйста, проверьте комиссии Вашего банка и правила конвертации валют международных систем платежных карт самостоятельно.</p>
-
       <p class="policy__subtitle">Покупка и доставка товара.</p>
-      <p class="policy__text">Если Вы хотите совершить покупку в нашем интернет-магазине, Вам необходимо зарегистрироваться на Сайте. После регистрации вы авторизуетесь на Сайте. Для совершения покупки выберите нужный товар и нажмите кнопку «В корзину». Товар будет добавлен в корзину. После того, как Вы выбрали все товары, которые хотите приобрести, нажмите кнопку «Корзина» (в правом верхнем углу с иконкой магазинной корзинки) и перейдите к оформлению заказа. Вам необходимо ввести свой никнейм Minecraft и сервер. Пожалуйста, проверьте правильность никнейма. Введенный вами никнейм должен быть на 100% идентичен вашему никнейму Minecraft (включая заглавные буквы и пробелы). Вам необходимо поставить галочку о том, что Вы принимаете условия Соглашения перед совершением покупки, в окне, которое Вам предложит Сайт. Потом нажмите кнопку «Оплатить». Вы будете перенаправлены на страницу оплаты платежного шлюза PayAdmit. У Вас запросят платежные данные карты. Если Ваш банк-эмитент поддерживает программу 3DS, Вам потребуется ввести код 3DS. Как только платеж будет завершен, Вы получите отчет об оплате на свой адрес электронной почты из ваших регистрационных данных. Пожалуйста, сохраните отчет об оплате для дальнейшего использования.</p>
-
-      <p class="policy__text"><strong>Доставка товара.</strong> После оплаты товара вы получите мод на свой аккаунт Minecraft в течение 5-14 рабочих дней. Мы не можем заранее сказать Вам точное время доставки, а также ускорить доставку. Пожалуйста, имейте это в виду. Товар считается доставленным после того, как он станет доступен игроку в интерфейсе Minecraft под своим ником.</p>
+      <p class="policy__text"><strong>Покупка.</strong> Если Вы хотите совершить покупку в нашем интернет-магазине, Вам необходимо зарегистрироваться на Сайте. После регистрации вы авторизуетесь на Сайте. Для совершения покупки выберите нужный товар и нажмите кнопку «В корзину». Товар будет добавлен в корзину. После того, как Вы выбрали все товары, которые хотите приобрести, нажмите кнопку «Корзина» (в правом верхнем углу с иконкой магазинной корзинки) и перейдите к оформлению заказа. Вам необходимо ввести свой никнейм Minecraft и сервер. Пожалуйста, проверьте правильность никнейма. Введенный вами никнейм должен быть на 100% идентичен вашему никнейму Minecraft (включая заглавные буквы и пробелы). Вам необходимо поставить галочку о том, что Вы принимаете условия Соглашения перед совершением покупки, в окне, которое Вам предложит Сайт. Потом нажмите кнопку «Оплатить». Вы будете перенаправлены на страницу оплаты платежного шлюза. Логотип платежного шлюза указан на платежной странице. У Вас запросят платежные данные карты. Если Ваш банк-эмитент поддерживает программу 3DS, Вам потребуется ввести код 3DS. Как только платеж будет завершен, Вы получите отчет об оплате на свой адрес электронной почты из ваших регистрационных данных. Пожалуйста, сохраните отчет об оплате для дальнейшего использования.</p>
+      <p class="policy__text"><strong>Доставка товара.</strong> После оплаты товара вы получите цифровой товар на свой аккаунт Minecraft в течение 5-14 рабочих дней. Мы не можем заранее сказать Вам точное время доставки, а также ускорить доставку. Пожалуйста, имейте это в виду. Товар считается доставленным после того, как он станет доступен игроку в интерфейсе Minecraft под своим ником.</p>
       <p class="policy__text">Если Вы ввели ложный никнейм и/или сервер Minecraft, но ложный никнейм существует, товар будет доставлен на указанный никнейм, и мы не сможем отменить/возвратить транзакцию.</p>
       <p class="policy__text">Если Вы ввели ложный никнейм и/или сервер Minecraft, и ложный никнейм не существует, Вы можете отменить покупку и получить возмещение или обратиться в нашу службу поддержки и получить покупку, которая будет отправлена на Ваш правильный никнейм. В этом случае Вас попросят предоставить подтверждение покупки. Для этого фото Вашей карты и отчет о транзакции, отправленный вам по электронной почте, будет достаточным доказательством.</p>
       <p class="policy__text">Если Вы оплатили покупку, но товар не был доставлен по истечении 14 рабочих дней, Вы можете обратиться в нашу службу поддержки, и мы проверим доставку и исправим проблему или вернем деньги.</p>
 
       <p class="policy__subtitle">Политика проведения платежей</p>
       <p class="policy__text">
-        <strong>Способ оплаты.</strong>  Вы можете оплатить покупку кредитной или дебетовой картой VISA или MasterCard/Maestro онлайн, используя платежную страницу шлюза PayAdmit. Другие способы оплаты недоступны.
+        <strong>Способ оплаты.</strong> Вы можете оплатить покупку кредитной или дебетовой картой VISA или MasterCard/Maestro онлайн, используя платежную страницу платежного шлюза. Другие способы оплаты недоступны.
       </p>
       <p class="policy__text">
         <strong>Валюта.</strong> Валюта платежной операции это та валюта, которую Вы выбираете в правом верхнем углу экрана. Если валюта Вашей платежной карты отличается от евро, конвертация валюты производится в соответствии с правилами Международных систем платежных карт. Курс обмена устанавливается Международной системой платежных карт для блокировки соответствующей суммы на карте и Вашим банком-эмитентом карты для списания средств с Вашего банковского счета. Также за обмен валюты может взиматься комиссия Вашим банком. Мы не знаем курс конвертации валюты и комиссию и не влияем на нее. Пожалуйста, проверьте это сами. Мы не взимаем комиссию за обмен валюты в свою пользу.
@@ -962,13 +957,13 @@ const languageLocalizations={en:{"starting-tips-page__title":"How to start playi
       <p class="policy__text">Мы не несем ответственности за убытки пользователя вследствие неправомерных действий третьих лиц, в том числе несанкционированного доступа к Сайту под регистрацией пользователя. Мы не несем ответственности за ущерб, причиненный Пользователю в результате разглашения третьим лицам учетных данных, необходимых для доступа к Сайту, не по нашей вине.</p>
       <p class="policy__text">Мы не несем ответственности, если купленный товар не был доставлен игроку из-за технических проблем на стороне третьего лица.</p>
       <p class="policy__text">Программно ошибки как с нашей стороны, так и с Вашей стороны, приводящие к невозможности получения пользователем доступа к Сайту и/или нашему Интернет-магазину, являются обстоятельствами непреодолимой силы, и являются основанием для освобождения от ответственности и исполнения обязательств согласно Соглашения.</p>
-      <p class="policy__text">Если иное не указано в Соглашении, в случае нарушения пользователем условий Соглашения, мы вправе в одностороннем порядке отказаться от исполнения Соглашения и прекратить доступ пользователя к Сайту. В случае если такое нарушение нанесло ущерб третьим лицам, ответственность за них полностью лежит </p>
+      <p class="policy__text">Если иное не указано в Соглашении, в случае нарушения пользователем условий Соглашения, мы вправе в одностороннем порядке отказаться от исполнения Соглашения и прекратить доступ пользователя к Сайту. В случае если такое нарушение нанесло ущерб третьим лицам, ответственность за них полностью лежит на пользователе.</p>
 
       <p class="policy__subtitle">Связаться с нами</p>
       <p class="policy__text">GalaxyGrip OÜ представлена брендом <strong>Adventures in Minecraft</strong>.</p>
       <p class="policy__text">Регистрационный номер: 16776100</p>
       <p class="policy__text">Юридический адрес и адрес для корреспонденции: Харью мааконд, Таллин, район Ласнамяэ, улица Катусепапи, дом 6-502, 11412</p>
-      <p class="policy__text">Электронная почта службы поддержки galaxy.grip098@gmail.com</p>
+      <p class="policy__text">Электронная почта службы поддержки: galaxy.grip098@gmail.com</p>
       <p class="policy__text">Номер телефона: 37259660269</p>
     </div>
     `,cookiePage_contentInnerHTML:`
