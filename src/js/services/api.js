@@ -238,7 +238,7 @@ export default {
   addShopItemToCart: (body) => {
     return sendAPIRequest({
       method: "POST",
-      pathname: `/shop/add_to_basket/`,
+      pathname: `/shop/add_to_cart/`,
       body,
       hasToken: true,
     });
@@ -250,7 +250,7 @@ export default {
   deleteShopItemFromCart: (itemId) => {
     return sendAPIRequest({
       method: "POST",
-      pathname: `/shop/delete_from_basket/${itemId}/`,
+      pathname: `/shop/delete_from_cart/${itemId}/`,
       hasToken: true,
     });
   },

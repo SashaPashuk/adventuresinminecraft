@@ -28,10 +28,10 @@ export const PASSWORD_MAX_CHARACTERS_ERROR =
 // ITEM
 export const ITEM_ADDED_TO_CART_ERROR = "Item already added to busket.";
 export const ITEM_ADDED_TO_CART_CURRENCY_ERROR =
-  "Cannot add an item to the basket with different currencies. First, remove existing or change currency.";
-export const ITEM_ADDED_TO_CART_SUCCESS = "Item has been added to basket.";
+  "Cannot add an item to the cart with different currencies. First, remove existing or change currency.";
+export const ITEM_ADDED_TO_CART_SUCCESS = "Item has been added to cart.";
 export const ITEM_DELETED_FROM_CART_SUCCESS =
-  "Item has been removed from the basket.";
+  "Item has been removed from the cart.";
 
 export const ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR = "Amount cannot be changed.";
 export const ITEM_AMOUNT_CHANGED_SUCCESS = "Amount has been changed.";
@@ -117,12 +117,12 @@ export const errorsLanguageLocalizations = {
       "This item was successfully added to your cart.",
     ITEM_ADDED_TO_CART_ERROR: "Item already added to busket.",
     ITEM_ADDED_TO_CART_CURRENCY_ERROR:
-      "Cannot add an item to the basket with different currencies. First, remove existing or change currency.",
+      "Cannot add an item to the cart with different currencies. First, remove existing or change currency.",
     ITEM_ALREADY_ADDED_TO_CART_WITH_NAME: (name) =>
       `This item  ‹‹${name}›› has already been added to your cart.`,
     ITEM_ADDED_TO_CART_WITH_NAME_SUCCESS: (name) =>
       `This item  ‹‹${name}›› was successfully added to your cart.`,
-    ITEM_DELETED_FROM_CART_SUCCESS: "Item has been removed from the basket.",
+    ITEM_DELETED_FROM_CART_SUCCESS: "Item has been removed from the cart.",
 
     ITEM_AMOUNT_CAN_NOT_BE_CHANGED_ERROR: "Amount cannot be changed.",
     ITEM_AMOUNT_CAN_NOT_BE_BIGGER_THEN_ONE_ERROR:

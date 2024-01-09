@@ -111,7 +111,7 @@ export const languageLocalizations = {
     productPage__usage_30: "30 Days",
     productPage__usage_forever: "Forever",
     productPage__amount: "Quantity:",
-    productPage__button: "Add to basket",
+    productPage__button: "Add to cart",
 
     // latestPurchases
     latestPurchases__title: "Recent purchases",
@@ -136,7 +136,7 @@ export const languageLocalizations = {
     signUpPage__link: "Log in",
 
     // cartPage
-    cartPage__title: "Basket",
+    cartPage__title: "Cart",
     cartPage__continueButton: "Continue Shopping",
     cartPage__allPayment: "Total payable",
     cartPage__nicknamePlaceholder: "Your nickname",
@@ -158,9 +158,9 @@ export const languageLocalizations = {
     // rulesPage
     rulesPage_title: "Rules",
     rulesPage__general_rules_title: "General rules",
-    rulesPage__player_rights_and_duties_title: "Rights and duties of players",
+    rulesPage__player_rights_and_duties_title: "Rights and responsibilities of players",
     rulesPage__admin_rights_and_duties_title:
-      "Rights and duties of administration",
+      "Rights and responsibilities of administration",
     rulesPage__explanations_title: "Explanations",
     rulesPage__general_rules_text: `
     1.1 This document is the official regulation of the project, being a part of Terms and Conditions.
@@ -658,7 +658,7 @@ export const languageLocalizations = {
       <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
       <p class="policy__text">There are a few in-game items that stand for buying in-game currency. Once the in-game currency balance is topped up, there is no opportunity to convert in-game currency back to real-world money. A player cannot cash the in-game currency out, or sell it back. There is no reimbursement for in-game currency, if, for example, the player terminates his/her access to the server. There are no transfers of in-game currency across servers. </p>
       <p class="policy__text">
-        <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
+        <strong>“Rules”</strong> gives you official regulation of the project, rights and responsibilities of players and the Administration and explanations of terms.
       </p>
       <p class="policy__text">
         <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
@@ -681,7 +681,7 @@ export const languageLocalizations = {
 
       <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
       <p class="policy__text">
-        <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the payment gateway. The logo of the payment gateway is stated on the payment page. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference. 
+        <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to cart”. The product will be added to the cart. Once you have selected all the goods you want to purchase, please, click the “cart” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the payment gateway. The logo of the payment gateway is stated on the payment page. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference. 
       </p>
       <p class="policy__text">
         <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the in-game item on your Minecraft account during <span style="text-decoration: underline;">5-14 working days.</span> We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname. 
@@ -2404,7 +2404,7 @@ export const languageLocalizations = {
         </p>
         <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
         <p class="policy__text">
-          <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
+          <strong>“Rules”</strong> gives you official regulation of the project, rights and responsibilities of players and the Administration and explanations of terms.
         </p>
         <p class="policy__text">
           <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
@@ -2427,7 +2427,7 @@ export const languageLocalizations = {
 
         <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
         <p class="policy__text">
-          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
+          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to cart”. The product will be added to the cart. Once you have selected all the goods you want to purchase, please, click the “cart” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
         </p>
         <p class="policy__text">
           <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the mode on your Minecraft account during 5-14 working days. We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname.
@@ -3249,7 +3249,7 @@ export const languageLocalizations = {
         </p>
         <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
         <p class="policy__text">
-          <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
+          <strong>“Rules”</strong> gives you official regulation of the project, rights and responsibilities of players and the Administration and explanations of terms.
         </p>
         <p class="policy__text">
           <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
@@ -3272,7 +3272,7 @@ export const languageLocalizations = {
 
         <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
         <p class="policy__text">
-          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
+          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to cart”. The product will be added to the cart. Once you have selected all the goods you want to purchase, please, click the “cart” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
         </p>
         <p class="policy__text">
           <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the mode on your Minecraft account during 5-14 working days. We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname.
@@ -4067,7 +4067,7 @@ export const languageLocalizations = {
         </p>
         <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
         <p class="policy__text">
-          <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
+          <strong>“Rules”</strong> gives you official regulation of the project, rights and responsibilities of players and the Administration and explanations of terms.
         </p>
         <p class="policy__text">
           <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
@@ -4090,7 +4090,7 @@ export const languageLocalizations = {
 
         <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
         <p class="policy__text">
-          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
+          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to cart”. The product will be added to the cart. Once you have selected all the goods you want to purchase, please, click the “cart” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
         </p>
         <p class="policy__text">
           <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the mode on your Minecraft account during 5-14 working days. We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname.
@@ -4897,7 +4897,7 @@ export const languageLocalizations = {
         </p>
         <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
         <p class="policy__text">
-          <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
+          <strong>“Rules”</strong> gives you official regulation of the project, rights and responsibilities of players and the Administration and explanations of terms.
         </p>
         <p class="policy__text">
           <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
@@ -4920,7 +4920,7 @@ export const languageLocalizations = {
 
         <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
         <p class="policy__text">
-          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
+          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to cart”. The product will be added to the cart. Once you have selected all the goods you want to purchase, please, click the “cart” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
         </p>
         <p class="policy__text">
           <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the mode on your Minecraft account during 5-14 working days. We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname.
@@ -5718,7 +5718,7 @@ export const languageLocalizations = {
         </p>
         <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
         <p class="policy__text">
-          <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
+          <strong>“Rules”</strong> gives you official regulation of the project, rights and responsibilities of players and the Administration and explanations of terms.
         </p>
         <p class="policy__text">
           <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
@@ -5741,7 +5741,7 @@ export const languageLocalizations = {
 
         <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
         <p class="policy__text">
-          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
+          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to cart”. The product will be added to the cart. Once you have selected all the goods you want to purchase, please, click the “cart” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
         </p>
         <p class="policy__text">
           <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the mode on your Minecraft account during 5-14 working days. We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname.
@@ -6543,7 +6543,7 @@ export const languageLocalizations = {
         </p>
         <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
         <p class="policy__text">
-          <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
+          <strong>“Rules”</strong> gives you official regulation of the project, rights and responsibilities of players and the Administration and explanations of terms.
         </p>
         <p class="policy__text">
           <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
@@ -6566,7 +6566,7 @@ export const languageLocalizations = {
 
         <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
         <p class="policy__text">
-          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
+          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to cart”. The product will be added to the cart. Once you have selected all the goods you want to purchase, please, click the “cart” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
         </p>
         <p class="policy__text">
           <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the mode on your Minecraft account during 5-14 working days. We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname.
@@ -7378,7 +7378,7 @@ export const languageLocalizations = {
         </p>
         <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
         <p class="policy__text">
-          <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
+          <strong>“Rules”</strong> gives you official regulation of the project, rights and responsibilities of players and the Administration and explanations of terms.
         </p>
         <p class="policy__text">
           <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
@@ -7401,7 +7401,7 @@ export const languageLocalizations = {
 
         <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
         <p class="policy__text">
-          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
+          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to cart”. The product will be added to the cart. Once you have selected all the goods you want to purchase, please, click the “cart” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
         </p>
         <p class="policy__text">
           <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the mode on your Minecraft account during 5-14 working days. We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname.
@@ -8212,7 +8212,7 @@ export const languageLocalizations = {
         </p>
         <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
         <p class="policy__text">
-          <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
+          <strong>“Rules”</strong> gives you official regulation of the project, rights and responsibilities of players and the Administration and explanations of terms.
         </p>
         <p class="policy__text">
           <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
@@ -8235,7 +8235,7 @@ export const languageLocalizations = {
 
         <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
         <p class="policy__text">
-          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
+          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to cart”. The product will be added to the cart. Once you have selected all the goods you want to purchase, please, click the “cart” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
         </p>
         <p class="policy__text">
           <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the mode on your Minecraft account during 5-14 working days. We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname.
@@ -9045,7 +9045,7 @@ export const languageLocalizations = {
         </p>
         <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
         <p class="policy__text">
-          <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
+          <strong>“Rules”</strong> gives you official regulation of the project, rights and responsibilities of players and the Administration and explanations of terms.
         </p>
         <p class="policy__text">
           <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
@@ -9068,7 +9068,7 @@ export const languageLocalizations = {
 
         <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
         <p class="policy__text">
-          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
+          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to cart”. The product will be added to the cart. Once you have selected all the goods you want to purchase, please, click the “cart” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
         </p>
         <p class="policy__text">
           <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the mode on your Minecraft account during 5-14 working days. We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname.
@@ -9876,7 +9876,7 @@ export const languageLocalizations = {
         </p>
         <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
         <p class="policy__text">
-          <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
+          <strong>“Rules”</strong> gives you official regulation of the project, rights and responsibilities of players and the Administration and explanations of terms.
         </p>
         <p class="policy__text">
           <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
@@ -9899,7 +9899,7 @@ export const languageLocalizations = {
 
         <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
         <p class="policy__text">
-          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
+          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to cart”. The product will be added to the cart. Once you have selected all the goods you want to purchase, please, click the “cart” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
         </p>
         <p class="policy__text">
           <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the mode on your Minecraft account during 5-14 working days. We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname.
@@ -10714,7 +10714,7 @@ export const languageLocalizations = {
         </p>
         <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
         <p class="policy__text">
-          <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
+          <strong>“Rules”</strong> gives you official regulation of the project, rights and responsibilities of players and the Administration and explanations of terms.
         </p>
         <p class="policy__text">
           <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
@@ -10737,7 +10737,7 @@ export const languageLocalizations = {
 
         <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
         <p class="policy__text">
-          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
+          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to cart”. The product will be added to the cart. Once you have selected all the goods you want to purchase, please, click the “cart” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
         </p>
         <p class="policy__text">
           <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the mode on your Minecraft account during 5-14 working days. We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname.
@@ -11540,7 +11540,7 @@ export const languageLocalizations = {
         </p>
         <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
         <p class="policy__text">
-          <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
+          <strong>“Rules”</strong> gives you official regulation of the project, rights and responsibilities of players and the Administration and explanations of terms.
         </p>
         <p class="policy__text">
           <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
@@ -11563,7 +11563,7 @@ export const languageLocalizations = {
 
         <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
         <p class="policy__text">
-          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
+          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to cart”. The product will be added to the cart. Once you have selected all the goods you want to purchase, please, click the “cart” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
         </p>
         <p class="policy__text">
           <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the mode on your Minecraft account during 5-14 working days. We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname.
@@ -12363,7 +12363,7 @@ export const languageLocalizations = {
         </p>
         <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
         <p class="policy__text">
-          <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
+          <strong>“Rules”</strong> gives you official regulation of the project, rights and responsibilities of players and the Administration and explanations of terms.
         </p>
         <p class="policy__text">
           <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
@@ -12386,7 +12386,7 @@ export const languageLocalizations = {
 
         <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
         <p class="policy__text">
-          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
+          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to cart”. The product will be added to the cart. Once you have selected all the goods you want to purchase, please, click the “cart” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
         </p>
         <p class="policy__text">
           <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the mode on your Minecraft account during 5-14 working days. We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname.
@@ -13181,7 +13181,7 @@ export const languageLocalizations = {
         </p>
         <p class="policy__text">Please, consult the documents placed in the Site for further information about the goods and its characteristics as well as rules for players.</p>
         <p class="policy__text">
-          <strong>“Rules”</strong> gives you official regulation of the project, rights and duties of players and the Administration and explanations of terms.
+          <strong>“Rules”</strong> gives you official regulation of the project, rights and responsibilities of players and the Administration and explanations of terms.
         </p>
         <p class="policy__text">
           <strong>“Product Description”</strong> gives you the details of the products and the value added by buying them.
@@ -13204,7 +13204,7 @@ export const languageLocalizations = {
 
         <p class="policy__subtitle">The Purchase and Delivery of the Good.</p>
         <p class="policy__text">
-          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to Basket”. The product will be added to the basket. Once you have selected all the goods you want to purchase, please, click the “basket” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
+          <strong>The Purchase.</strong> If you want to make a purchase in our online store, you need to be registered on the Site. Once you are registered, you log in to the Site. To make a purchase, select a desired product and press the button “Add to cart”. The product will be added to the cart. Once you have selected all the goods you want to purchase, please, click the “cart” button and proceed to checkout. You enter your Minecraft nickname and the server. Please, check the correctness of the nickname. The nickname you entered should be 100% identical to your Minecraft nickname (including capital letters and spaces). You tick in a checkbox that you accept the terms before making a purchase and press the “Pay” button. You will be redirected to the payment page from the PayAdmit payment gateway. You enter your card payment details. If your bank-issuer supports the 3DS program, you will need to enter the 3DS code. Once the payment is finalized, you will get a payment report on your email address from your registration details. Please, keep the payment report safely for further reference.
         </p>
         <p class="policy__text">
           <strong>Delivery of the Good.</strong> Once you have paid for the goods, you will receive the mode on your Minecraft account during 5-14 working days. We cannot tell you in advance the exact time of the delivery as well as speed up the delivery. Please, be aware of that. The product is considered to be delivered once it becomes available to the player in the Minecraft interface under its nickname.
