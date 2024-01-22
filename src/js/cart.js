@@ -19,7 +19,7 @@ import {
   NO_ACTIVE_ORDER_ERROR,
   errorsLanguageLocalizationsEnum,
 } from "./contants/errors.js";
-import { SHOP_ITEM_TIME_USAGE } from "./contants/constants.js";
+import { SHOP_ITEM_TIME_USAGE, CURRENCIES } from "./contants/constants.js";
 
 // Constants
 const lsTokens = localStorage.getItem("tokens");
@@ -598,8 +598,14 @@ const addOrderItemsUsageButtonsEventListener = (items) => {
 
 const renderOverallPaymentSumHTML = (data) => {
   const sum = data.reduce((acc, cur) => (acc += Number(cur.sum_item_price)), 0);
+  const currency = data[0].currency;
+
+  const currencyContainer = document.querySelector(
+    ".cartPage-summary-payment-currency"
+  );
   const sumContainer = document.querySelector(".cartPage-summary-payment-sum");
 
+  currencyContainer.innerHTML = getCurrencySign(currency);
   sumContainer.innerHTML = Number(sum).toFixed(2);
 };
 
@@ -616,4 +622,8 @@ const modifyOverallPaymentSumHTML = (action, amount) => {
     default:
       break;
   }
+};
+
+export const getCurrencySign = (currencyAbbr) => {
+  return CURRENCIES.find((el) => el.abbr === currencyAbbr)?.sign;
 };
